@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 508ba3cd803aee877e022d447f061e6e3d495e51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97e2e745b59a22110f6392e2cd6fec1aea0a667a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750227"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: muitas amostras de kernel
 |||  
@@ -33,12 +34,12 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  Uma parte significativa dos exemplos de pilha de chamadas coletados para o aplicativo estavam sendo executados em modo kernel. Considere a criação de perfil para o aplicativo usando um método de criação de perfil diferente.  
   
-## <a name="rule-description"></a>Descrição da Regra  
- No Windows, o código pode ser executado no modo kernel ou no modo de usuário. (o modo kernel também é conhecido como modo privilegiado.) Somente o código de sistema de baixo nível, como drivers de dispositivo, executa no modo kernel. Um aplicativo de modo de usuário pode fazer a transição para o modo kernel para executar operações de E/S, aguardar os primitivos de sincronização de thread ou de processo ou fazer chamadas do sistema.  
+## <a name="rule-description"></a>Descrição da regra  
+ No Windows, o código pode ser executado no modo kernel ou no modo de usuário. (o modo kernel também é conhecido como modo privilegiado.) Somente o código de sistema de baixo nível, como um driver de dispositivo, é executado no modo kernel. Um aplicativo de modo de usuário pode fazer a transição para o modo kernel para executar operações de E/S, aguardar os primitivos de sincronização de thread ou de processo ou fazer chamadas do sistema.  
   
  A amostragem é a maneira mais eficaz ao criar perfis para aplicativos que passam a maior parte do tempo em modo de usuário. O número de amostras coletadas quando o aplicativo estava sendo executado no modo kernel pode indicar operações de E/S frequentes ou que esse alternâncias de contexto estão ocorrendo. Nenhuma dessas operações podem ser investigadas usando o método de amostragem. Caso muitas amostras do modo kernel forem usadas, os dados de amostragem podem não conter amostras suficientes de modo de usuário para serem estatisticamente significativos.  
   
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+## <a name="how-to-fix-violations"></a>Como corrigir violações  
  Considere criar um novo perfil para o aplicativo usando uma das opções a seguir:  
   
 -   Crie perfis usando o método de instrumentação.  

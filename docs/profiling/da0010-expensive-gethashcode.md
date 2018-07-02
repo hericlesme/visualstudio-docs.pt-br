@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add91942b6a97bf9da496d1664b2a799a9c50d1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749954"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: função GetHashCode dispendiosa
 |||  
@@ -33,8 +34,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  As chamadas para o método GetHashCode do tipo são uma parte significativa dos dados de criação de perfil ou do método de alocação de memória.  
   
-## <a name="rule-description"></a>Descrição da Regra  
- O hash é uma técnica para localizar rapidamente um item específico em uma coleção grande. As tabelas de hash podem ser enormes e dão suporte às altas taxas de acesso e, por isso, são muito eficientes. No entanto, uma implicação desse requisito é que os métodos GetHashCode no .NET Framework não devem alocar memória. A alocação de memória aumenta a carga no coletor de lixo e expõe o método para possíveis atrasos se for necessário executar de uma coleta de lixo como um resultado da solicitação de alocação.  
+## <a name="rule-description"></a>Descrição da regra  
+ O hash é uma técnica para localizar rapidamente um item específico em uma coleção grande. As tabelas de hash podem ser grandes e dão suporte às altas taxas de acesso e, por isso, devem ser eficientes. No entanto, uma implicação desse requisito é que os métodos GetHashCode no .NET Framework não devem alocar memória. A alocação de memória aumentará a carga no coletor de lixo e exporá o método a possíveis atrasos se for necessário executar de uma coleta de lixo como um resultado da solicitação de alocação.  
   
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+## <a name="how-to-fix-violations"></a>Como corrigir violações  
  Reduza a complexidade do método.

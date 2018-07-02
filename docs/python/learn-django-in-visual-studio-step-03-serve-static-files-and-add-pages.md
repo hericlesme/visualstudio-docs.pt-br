@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750328"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3 do tutorial: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -40,8 +41,6 @@ Para ver os modelos disponíveis, vá para **Gerenciador de Soluções**, clique
 ![Caixa de diálogo Adicionar Novo Item no Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Para usar um modelo, selecione o modelo desejado, especifique um nome para o arquivo e selecione **OK**. A adição de um item dessa maneira adiciona automaticamente o arquivo ao projeto do Visual Studio e marca as alterações para controle do código-fonte.
-
-O Visual Studio também acrescenta algumas opções usadas com frequência diretamente no menu **Adicionar**. Em um projeto em Python, por exemplo, talvez você veja os comandos **Página HTML** ou **Folha de Estilo** na parte inferior do menu **Adicionar**, que solicita um nome e cria o arquivo.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pergunta: Como o Visual Studio sabe quais modelos de item oferecer?
 
@@ -187,7 +186,7 @@ Um modelo de base delineia blocos usando as marcas `{% block <block_name> %}` e 
 
 As etapas a seguir demonstram a herança:
 
-1. Na pasta `templates/HelloDjangoApp` do aplicativo, crie um novo arquivo HTML (usando o menu de contexto **Adicionar** > **Novo item** ou **Adicionar** > **Página HTML**) chamado `layout.html` e cole no conteúdo abaixo. Veja que esse modelo contém um bloco chamado "conteúdo", que representa tudo o que as páginas de referência precisam substituir:
+1. Na pasta `templates/HelloDjangoApp` do aplicativo, crie um novo arquivo HTML (usando o menu de contexto **Adicionar** > **Novo item** ou **Adicionar** > **Página HTML**) chamado `layout.html` e substitua-o pela marcação abaixo. Veja que esse modelo contém um bloco chamado "conteúdo", que representa tudo o que as páginas de referência precisam substituir:
 
     ```html
     <!DOCTYPE html>

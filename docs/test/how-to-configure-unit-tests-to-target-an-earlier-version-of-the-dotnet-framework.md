@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750734"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para direcionar uma versão anterior do .NET Framework
 
@@ -63,11 +64,11 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 5.  Na guia **Compilar** escolha **Opções de Compilação Avançadas** conforme mostrado na ilustração a seguir.
 
-     ![Opções de compilação Avançadas](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Opções compiladas avançadas](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Use a lista suspensa **Estrutura de destino (todas as configurações)** para alterar a estrutura de destino para **.NET Framework 3.5** ou uma versão posterior, conforme mostrado no texto explicativo B na ilustração a seguir. Não especifique uma versão de cliente.
 
-     ![Lista de lista suspensa de estrutura de destino](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Lista suspensa da estrutura de destino](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Redirecionar para uma versão específica do .NET Framework para projetos de teste de unidade do Visual C#
 
@@ -85,7 +86,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 5.  Na guia **Aplicativo**, escolha **Estrutura de destino**. Na lista suspensa, escolha **.NET Framework 3.5** ou uma versão posterior, conforme mostra a ilustração a seguir. Não especifique uma versão de cliente.
 
-     ![Lista de lista suspensa de estrutura de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Lista suspensa da estrutura de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Redirecionar para uma versão específica do .NET Framework para projetos de teste de unidade do C++/CLI
 

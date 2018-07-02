@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750721"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 
@@ -72,17 +73,17 @@ Quando executar um teste de IU codificado com as modificações no arquivo **QTA
 
 4.  Clique no link **Saída** nos resultados do Gerenciador de Testes.
 
-     ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png)
 
      Essa ação exibe a saída do teste, que inclui um link ao log de ações.
 
-     ![Resultados e links de saída do teste de interface do usuário codificada](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Resultados e links de saída do teste de IU codificado](../test/media/cuit_htmlactionlog2.png)
 
 5.  Escolha o link *UITestActionLog.html*.
 
      O log é exibido em seu navegador da Web.
 
-     ![Arquivo de log de teste de IU codificado](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Arquivo de log do teste de IU codificado](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Consulte também
 

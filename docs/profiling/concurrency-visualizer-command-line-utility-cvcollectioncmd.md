@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691141"
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
-É possível usar o utilitário de linha de comanda Visualização Simultânea (CVCollectionCmd.exe) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.  
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)
+É possível usar o utilitário de linha de comando do Visualização Simultânea (*CVCollectionCmd.exe*) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.  
   
 > [!NOTE]
->  A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ela havia sido incluída no Visual Studio.) É possível baixar a [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) no Centro de Download.  
+>  A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ela havia sido incluída no Visual Studio.) É possível baixar as [ferramentas de coleção da Visualização Simultânea para o Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) do Centro de Download.  
   
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Baixar o utilitário de linha de comando Visualização Simultânea  
- Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) e siga as instruções. Por padrão, CVCollectionCmd.exe é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Baixar o utilitário de linha de comando da Visualização Simultânea  
+ Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) e siga as instruções. Por padrão, *CVCollectionCmd.exe* é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Coletar um rastreamento usando CVCollectionCmd  
  Você pode coletar um rastreamento iniciando o aplicativo com CVCollectionCmd ou se conectando a ele. Consulte a referência aos comandos abaixo para ver as opções. Por exemplo  
@@ -51,15 +52,15 @@ ms.lasthandoff: 05/14/2018
 |Processo|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|nenhuma.|  
 |Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|nenhuma.|  
   
-## <a name="customizing-configuration-settings"></a>Personalizando definições de configuração  
+## <a name="customize-configuration-settings"></a>Personalizar configurações  
  Se você usar CVCollectionCmd para coletar rastreamentos e quiser personalizar as configurações de coleta, use um arquivo de configuração para especificá-las.  
   
 > [!NOTE]
 >  Ao usar o Visual Studio para coletar rastreamentos, não modifique diretamente o arquivo de configuração.  Em vez disso, use a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para modificar as configurações.  
   
- Para modificar configurações de coleta, crie um arquivo de configuração no computador em que o utilitário CVCollectionCmd será executado. É possível criar o arquivo de configuração do zero ou copiá-lo no computador com o Visual Studio instalado e modificar isso. O arquivo se chama `UserConfig.xml` e fica localizado na pasta **AppData Local**. Ao executar o utilitário, use a opção Config com o comando Inicializar, Anexar ou Analisar.  No parâmetro associado à opção Config, especifique o caminho do arquivo de configuração.  
+ Para modificar configurações de coleta, crie um arquivo de configuração no computador em que o utilitário CVCollectionCmd será executado. É possível criar o arquivo de configuração do zero ou copiá-lo no computador com o Visual Studio instalado e modificar isso. O arquivo se chama *UserConfig.xml* e está localizado na pasta *AppData Local*. Ao executar o utilitário, use a opção Config com o comando Inicializar, Anexar ou Analisar.  No parâmetro associado à opção Config, especifique o caminho do arquivo de configuração.  
   
-### <a name="configuration-file-tags"></a>Marcas do arquivo de configuração  
+### <a name="configuration-file-tags"></a>Marcas de arquivo de configuração  
  O arquivo de configuração se baseia em XML. Seguem as marcas e os valores válidos:  
   
 |Marca|Descrição|Valores|  

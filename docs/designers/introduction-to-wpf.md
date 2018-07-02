@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747275"
 ---
 # <a name="introduction-to-wpf"></a>Introdução ao WPF
 
@@ -67,7 +68,7 @@ O XAML é uma linguagem de marcação baseada em XML que é usada para implement
 
  A figura a seguir mostra a IU (interface do usuário) que é definida pelo XAML no exemplo anterior.
 
- ![Uma janela que contém um botão](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![Uma janela que contém um botão](../designers/media/wpfintrofigure10.png)
 
  Já que o XAML é baseado em XML, a interface do usuário que você escreve com ele é montada em uma hierarquia de elementos aninhados conhecida como uma [árvore de elementos](/dotnet/framework/wpf/advanced/trees-in-wpf). A árvore de elementos fornece uma maneira lógica e intuitiva para criar e gerenciar interfaces do usuário.
 
@@ -300,7 +301,7 @@ Os objetos <xref:System.Windows.Shapes.Path> podem ser usados para desenhar form
 
 Os objetos <xref:System.Windows.Media.Geometry> podem ser usados para recorte, teste de clique e renderização de dados gráficos 2D.
 
-![Vários usos de um caminho](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Vários usos de um caminho](../designers/media/wpfintrofigure5.png)
 
 Para obter mais informações, consulte [Visão geral de geometria](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -308,7 +309,7 @@ Para obter mais informações, consulte [Visão geral de geometria](/dotnet/fram
 
 Um subconjunto de funcionalidades 2D do WPF inclui efeitos visuais como gradientes, bitmaps, desenhos, pintura com vídeos, rotação, dimensionamento e distorção. Eles são todas obtidos com pincéis; a figura a seguir mostra alguns exemplos.
 
-![Ilustração de diferentes pincéis](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![Ilustração de diferentes pincéis](../designers/media/wpfintrofigure6.png)
 
 Para obter mais informações, consulte [Visão geral de pincéis do WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
@@ -316,7 +317,7 @@ Para obter mais informações, consulte [Visão geral de pincéis do WPF](/dotne
 
 O WPF também inclui funcionalidades de renderização 3D que se integram com elementos gráficos em 2D para permitir a criação de interfaces do usuário mais interessantes e empolgantes. Por exemplo, a figura a seguir mostra imagens 2D renderizadas em formas 3D.
 
-![Captura de tela de exemplo do Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Captura de tela de exemplo do Visual3D](../designers/media/wpfintrofigure13.png)
 
 Para obter mais informações, consulte [Visão geral de elementos gráficos 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -324,7 +325,7 @@ Para obter mais informações, consulte [Visão geral de elementos gráficos 3D]
 
 O suporte a animação do WPF permite que você faça os controles crescerem, tremerem, rodarem e esmaecerem, para criar transições de página interessantes e muito mais. Você pode animar a maioria das classes do WPF, até mesmo classes personalizadas. A figura a seguir mostra uma animação simples em ação.
 
-![Imagens de um cubo animado](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![Imagens de um cubo animado](../designers/media/wpfintrofigure7.png)
 
 Para obter mais informações, consulte [Visão geral de animação](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -336,7 +337,7 @@ Uma maneira de transmitir conteúdo rico é pelo uso de mídia audiovisual. O WP
 
 Imagens são comuns à maioria dos aplicativos e o WPF fornece várias maneiras de usá-las. A figura a seguir mostra uma interface do usuário com uma caixa de listagem que contém imagens em miniatura. Quando uma miniatura é selecionada, a imagem é mostrada em tamanho normal.
 
-![Imagens em miniatura e uma imagem em tamanho normal](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![Imagens em miniatura e uma imagem em tamanho original](../designers/media/wpfintrofigure8.png)
 
 Para obter mais informações, consulte [Visão geral de geração de imagens](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
@@ -348,7 +349,7 @@ O controle <xref:System.Windows.Controls.MediaElement> é capaz de executar áud
 
 A janela na figura a seguir mostra o controle <xref:System.Windows.Controls.MediaElement> em ação.
 
-![Um controle MediaElement com áudio e vídeo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![Um controle MediaElement com áudio e vídeo](../designers/media/wpfintrofigure1.png)
 
 Para obter mais informações, consulte [Graphics and Multimedia](/dotnet/framework/wpf/graphics-multimedia) (Elementos gráficos e multimídia).
 
@@ -397,7 +398,7 @@ O principal objetivo da maioria dos controles WPF é exibir conteúdo. No WPF, o
 
 A figura a seguir mostra o resultado.
 
-![Um controle de caixa de texto que contém texto](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![Um Controle TextBox que contém texto](../designers/media/wpfintrofigure21.png)
 
 Outros controles, entretanto, podem conter vários itens de diferentes tipos de conteúdo. O conteúdo de um <xref:System.Windows.Controls.Button>, especificado pela propriedade <xref:System.Windows.Controls.ContentControl.Content%2A>, pode conter uma variedade de itens, incluindo controles de layout, texto, imagens e formas. O exemplo a seguir mostra um <xref:System.Windows.Controls.Button> com conteúdo que inclui um <xref:System.Windows.Controls.DockPanel>, um <xref:System.Windows.Controls.Label>, um <xref:System.Windows.Controls.Border> e um <xref:System.Windows.Controls.MediaElement>.
 
@@ -423,7 +424,7 @@ Outros controles, entretanto, podem conter vários itens de diferentes tipos de 
 
 A figura a seguir mostra o conteúdo desse botão.
 
-![Um botão que contém vários tipos de conteúdo](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![Um botão que contém vários tipos de conteúdo](../designers/media/wpfintrofigure22.png)
 
 Para obter mais informações sobre os tipos de conteúdo com suporte pelos diversos controles, consulte [Modelo de conteúdo do WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
@@ -452,7 +453,7 @@ Neste exemplo, a interface do usuário padrão do botão foi substituída por um
 
 Enquanto um modelo de controle permite que você especifique a aparência de um controle, um modelo de dados permite que você especifique a aparência do conteúdo de um controle. Modelos de dados são frequentemente usados para aprimorar o modo como os dados associados são exibidos. A figura a seguir mostra a aparência padrão de um <xref:System.Windows.Controls.ListBox> que está associado a uma coleção de objetos `Task`, em que cada tarefa tem um nome, uma descrição e uma prioridade.
 
-![Uma caixa de listagem com a aparência padrão](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![Uma caixa de listagem com a aparência padrão](../designers/media/wpfintrofigure18.png)
 
 A aparência padrão é o que seria esperado de <xref:System.Windows.Controls.ListBox>. No entanto, a aparência padrão de cada tarefa contém somente o nome da tarefa. Para mostrar o nome da tarefa, a descrição e a prioridade, a aparência padrão dos itens da lista associada ao controle <xref:System.Windows.Controls.ListBox> deve ser alterada usando um <xref:System.Windows.DataTemplate>. O XAML a seguir define um <xref:System.Windows.DataTemplate> desse, que é aplicado a cada tarefa usando o atributo <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.
 
@@ -649,7 +650,7 @@ O exemplo a seguir mostra um controle numérico para cima/para baixo personaliza
 
  A figura a seguir mostra o controle `NumericUpDown` hospedado em um <xref:System.Windows.Window>.
 
- ![Um UserControl personalizado](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![Um UserControl personalizado](../designers/media/wpfintrofigure3.png)
 
 Para obter mais informações sobre controles personalizados, consulte [Visão geral de criação de controles](/dotnet/framework/wpf/controls/control-authoring-overview).
 

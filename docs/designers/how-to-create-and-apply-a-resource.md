@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746641"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, consulte [Guia de início rápido: definindo o estilo dos controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Guia de início rápido: modelos de controle](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -32,7 +33,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
      A caixa de diálogo apropriada para criar um recurso é exibida. Esta caixa de diálogo é exibida quando você cria um recurso com um pincel:
 
-     ![Criar caixa de diálogo Recurso](../designers/media/xaml_create_resource.png "xaml_create_resource")
+     ![Caixa de diálogo Criar recurso](../designers/media/xaml_create_resource.png)
 
 3.  Na caixa **Nome (Chave)**, insira um nome de chave. Este é o nome que você pode usar quando quer que outros elementos façam referência ao recurso.
 

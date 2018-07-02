@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750877"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
 
@@ -45,7 +46,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 2.  (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, consulte [Como ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Controle de zoom de exibição de gráfico](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
 3.  No gráfico que deseja copiar no documento do Microsoft Word, clique com o botão direito do mouse e selecione **Copiar**.
 

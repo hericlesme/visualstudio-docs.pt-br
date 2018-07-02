@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750279"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (Código Gerenciado)
 
@@ -32,7 +33,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
-2. Em **Visual C#** ou **Visual Basic**, escolha **Área de trabalho clássica do Windows**e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**.
+2. Em **Visual C#** ou **Visual Basic**, escolha **Área de trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**.
 
 3. Digite um nome como **MyProfilerApp** e clique em **OK**.
 
@@ -40,14 +41,14 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
 2. Abra Program.cs e substitua todo o código pelo código a seguir:
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -55,10 +56,10 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -68,8 +69,8 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -77,7 +78,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -90,14 +91,14 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -105,21 +106,21 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -127,15 +128,15 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -144,13 +145,13 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -159,8 +160,8 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     > [!NOTE]
     > No Visual Basic, verifique se o objeto de inicialização é definido como `Sub Main` (**Propriedades > Aplicativo > Objeto de Inicialização**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Etapa 1: Coletar dados de criação de perfil 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Etapa 1: Coletar dados de criação de perfil
+
 1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código na função `Main`:
 
     `for (int i = 0; i < 200; i++)`
@@ -177,7 +178,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
-  
+
 3.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar/Windows/Mostrar Ferramentas de Diagnóstico**.
 
 4.  Clique em **Depurar/Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
@@ -197,7 +198,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
 
      O criador de perfil começa a preparar os dados de thread. Aguarde sua conclusão.
-  
+
      A ferramenta de Uso de CPU exibe o relatório na guia **Uso da CPU**.
 
      Neste ponto, você pode começar a analisar os dados.
@@ -215,7 +216,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
 2. Na lista de função, clique duas vezes na função `ServerClass::GetNumber`.
 
-    Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo. 
+    Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo.
 
     ![Exibição Chamador/Computador Chamado da Chamada das Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -234,7 +235,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 - [Analisar o uso da CPU](../profiling/cpu-usage.md) para obter informações mais detalhadas sobre a ferramenta de uso de CPU.
 - Analise o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
 
- [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)

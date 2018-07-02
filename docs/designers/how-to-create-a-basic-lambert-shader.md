@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748199"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
 
@@ -41,13 +42,13 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 > [!NOTE]
 > Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador. Um jogo ou um aplicativo pode usar esse parâmetro para fornecer um valor de cor exclusivo para cada objeto. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
 
- ![O grafo de sombreador e uma visualização do seu efeito.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")
+ ![O grafo de sombreador e uma versão prévia de seu efeito.](../designers/media/digit-lambert-effect-graph.png)
 
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
 
  A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a um modelo 3D.
 
- ![Iluminação Lambert aplicada a um modelo.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")
+ ![Iluminação Lambert aplicada a um modelo.](../designers/media/digit-lambert-effect-result.png)
 
  Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

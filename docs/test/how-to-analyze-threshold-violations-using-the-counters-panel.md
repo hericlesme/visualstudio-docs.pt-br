@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751800"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Como analisar violações de limite usando o painel Contadores no Analisador de Teste de Carga
 
@@ -22,21 +23,21 @@ O painel Contadores permanece visível na exibição Gráficos e na exibição T
 
  As violações de limite são associadas a contadores de desempenho específicos e indicam que o contador de desempenho excedeu ou ficou abaixo de um valor de limite definido. Os ícones no painel de contadores informam as violações de limite.
 
- ![Nó de computador do painel de contador](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Nó de computador do painel de contador](../test/media/ltest_compnode.png)
 
  O ícone de uma violação de limite é propagado do nó da árvore em que reside o contador com falha até a raiz. O ícone alerta o usuário para uma violação em um contador que talvez não esteja visível na árvore porque a árvore não foi expandida. Um exemplo do ícone pode ser visto no **Nó Computadores** do painel Contadores na ilustração anterior.
 
  O ícone será um dos seguintes:
 
- ![Nenhuma violação de limite](../test/media/icon_ltest_1.gif "Icon_LTest_1") Nenhuma violação de limite.
+ ![Sem violação de limite](../test/media/icon_ltest_1.gif) Sem violação de limite.
 
- ![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Uma violação de limite crítica no último intervalo.
+ ![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif) Uma violação de limite crítica ocorreu no último intervalo.
 
- ![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif "Icon_LTest_3") Uma violação de limite crítica em um intervalo anterior.
+ ![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif) Uma violação de limite crítica ocorreu em um intervalo anterior.
 
- ![Uma violação de limite com aviso no último intervalo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Uma violação de limite com aviso no último intervalo.
+ ![Uma violação de limite de aviso no último intervalo](../test/media/icon_ltest_4.gif) Uma violação de limite de aviso ocorreu no último intervalo.
 
- ![Uma violação de limite com aviso em um intervalo anterior](../test/media/icon_ltest_5.gif "Icon_LTest_5") Uma violação de limite com aviso em um intervalo anterior.
+ ![Uma violação de limite de aviso em um intervalo anterior](../test/media/icon_ltest_5.gif) Uma violação de limite de aviso ocorreu em um intervalo anterior.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Para analisar violações de limite no painel Contadores
 

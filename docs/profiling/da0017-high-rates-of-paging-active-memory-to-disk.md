@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e962cfe761af48f5c7aa02d1e476c33e1bf9f4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 60dfbba96a7b52ff271e1633528cf0934e347b6e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749837"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: taxas elevadas de paginação de memória ativa em disco
 |||  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  Os dados de desempenho do sistema coletados na execução de criação de perfil indicam que ocorreu uma taxa alta de paginação de memória ativa do ou no disco durante a execução de criação de perfil. Normalmente, taxas de paginação nesse nível afetarão a capacidade de resposta e o desempenho do aplicativo. Considere a redução das alocações de memória revisando os algoritmos. Talvez você também precise considerar os requisitos de memória do aplicativo.  
   
-## <a name="rule-description"></a>Descrição da Regra  
+## <a name="rule-description"></a>Descrição da regra  
   
 > [!NOTE]
 >  Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: taxas extremamente altas de paginação de memória ativa em disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é acionada.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
   
  Com frequência, as páginas são lidas do disco ou gravadas no disco em operações de paginação em massa. O número de Saída de páginas/s é geralmente muito maior do que o número de Gravações de página/s, por exemplo. Pois a Saída de páginas/s também inclui as páginas de dados alterados do cache de arquivos do sistema. No entanto, nem sempre é fácil determinar qual processo é diretamente responsável pela paginação e por quê.  
   
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+## <a name="how-to-fix-violations"></a>Como corrigir violações  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição [Marcas](../profiling/marks-view.md). Encontre a coluna **Memória\Páginas/s**. Determine se há fases específicas da execução do programa em que a atividade de E/S de paginação é mais pesada do que em outras.  
   
  Se estiver coletando dados de perfil para um aplicativo ASP.NET em um cenário de teste de carga, tente executar novamente o teste de carga em um computador configurado com memória física (ou RAM) adicional.  

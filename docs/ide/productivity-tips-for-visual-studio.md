@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752657"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -69,7 +70,7 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 - **Localizar caixas de diálogo, comandos de menu e opções**. Na caixa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), digite palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir `new project`:
 
-    ![Resultados de Início Rápido para 'novo projeto'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity_quicklaunch.png)
 
     O **Início Rápido** exibe links para a caixa de diálogo **Novo Projeto**, a caixa de diálogo **Adicionar Novo Item** e a página **Projetos e Soluções** na caixa de diálogo **Opções**, entre outros. Os resultados do Início Rápido também podem incluir arquivos de projeto e janelas de ferramenta.
 
@@ -79,7 +80,7 @@ A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a ac
 
 - **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.
 
-    ![Selecionar as opções de depuração do navegador da Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Selecionar opções de depuração de navegador da Web](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Definir pontos de interrupção temporários**. Você pode criar um ponto de interrupção temporário na linha de código atual e iniciar o depurador simultaneamente. Quando você atinge esta linha de código, o depurador entra em modo de interrupção. Para obter mais informações, confira [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).
 

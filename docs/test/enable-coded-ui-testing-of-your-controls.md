@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751748"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
 Implemente o suporte à estrutura de teste de IU codificado para que seu controle possa ser testado. É possível adicionar níveis crescentes de suporte incrementalmente. Comece com o suporte ao registro e reprodução e à validação de propriedade. Em seguida, baseie-se nele para habilitar o construtor de teste de IU codificado a reconhecer as propriedades personalizadas do controle. Forneça classes personalizadas para acessar essas propriedades do código gerado. Você também pode ajudar o construtor de teste de IU codificado a capturar ações da maneira mais próxima à intenção da ação que está sendo registrada.
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade
 
 O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emite as ações nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar a ação. Se não implementar a acessibilidade para o controle, talvez você veja falhas de teste se o teste for reproduzido em configurações de tela diferentes, em ambientes diferentes ou quando o layout da IU for alterada.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  Se você implementar a acessibilidade, o construtor de teste de IU codificado usará isso para capturar informações sobre seu controle quando registrar um teste. Em seguida, quando você executar o teste, o código gerado reproduzirá esses eventos em relação ao seu controle, mesmo que ele esteja em outro lugar na interface do usuário. Os autores do teste também podem criar asserções usando as propriedades básicas do controle.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para dar suporte à gravação e reprodução, validação de propriedade e navegação para controle do Windows Forms
  Implemente a acessibilidade para seu controle conforme descrito no procedimento a seguir e explicado em detalhes em <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.
 
@@ -74,11 +75,11 @@ O construtor de teste de IU codificado captura informações sobre os controles 
 
 Depois de implementar o suporte básico para registro e reprodução e validação de propriedade, você poderá disponibilizar as propriedades personalizadas do controle para testes de IU codificados implementando um plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por exemplo, o procedimento a seguir cria um provedor de propriedade que permite que os testes de IU codificados acessem a propriedade State dos controles filho de CurveLegend do controle do gráfico:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Para dar suporte à validação de propriedade personalizada
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. Substitua a propriedade <xref:System.Windows.Forms.AccessibleObject.Description%2A> do objeto acessível da curva de legenda para passar valores de propriedade avançada na cadeia de caracteres de descrição. Separe vários valores com ponto-e-vírgula (;).
 
@@ -146,7 +147,7 @@ Se você já implementou um provedor de propriedade para conceder acesso às pro
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para adicionar uma classe especializada para acessar seu controle
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Implemente uma classe que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> e adicione o tipo do controle à coleção de propriedades de pesquisa no construtor.
 
@@ -162,7 +163,7 @@ Se você já implementou um provedor de propriedade para conceder acesso às pro
 
 ### <a name="to-support-intent-aware-actions"></a>Para dar suporte a ações com reconhecimento de intenção
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
 1. Implemente uma classe de filtro de ação que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, substituindo as propriedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 

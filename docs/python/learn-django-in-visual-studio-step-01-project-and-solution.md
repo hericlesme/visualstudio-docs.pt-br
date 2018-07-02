@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750292"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Etapa 1 do tutorial: Introdução à estrutura da Web do Django no Visual Studio
 
@@ -33,11 +34,13 @@ Neste tutorial, você aprenderá como:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Visual Studio 2017 com as seguintes opções:
+- Visual Studio 2017 no Windows com as seguintes opções:
   - A carga de trabalho **desenvolvimento do Python** (guia **Carga de Trabalho** no instalador). Para ver instruções, confira [Como instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md).
   - **GIT para Windows** e **Extensão GitHub para Visual Studio** na guia **Componentes individuais** em **Code Tools**.
 
 Os modelos de projeto do Django também estão incluídos em todas as versões anteriores das Ferramentas Python para Visual Studio, embora os detalhes possam ser diferentes dos que são discutidos neste tutorial (especialmente diferentes nas versões anteriores da estrutura do Django).
+
+No momento, não há suporte para o desenvolvimento do Python no Visual Studio para Mac. No Mac e no Linux, use a [Extensão Python no Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>"Projetos do Visual Studio" e "Projetos do Django"
 
@@ -116,7 +119,7 @@ Resposta: Sim. Para desabilitar a confirmação automática, vá para a página 
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Etapa 1-3: Criar o ambiente virtual e excluí-lo do controle do código-fonte
 
-Agora que você configurou o controle do código-fonte para o projeto, você pode criar no ambiente virtual os pacotes necessários do Django que o projeto exige. Você pode usar o **Team Explorer** para excluir a pasta do ambiente do controle do código-fonte.
+Agora que você configurou o controle do código-fonte para o projeto, é possível criar o ambiente virtual que contém os pacotes necessários do Django para o projeto. Você pode usar o **Team Explorer** para excluir a pasta do ambiente do controle do código-fonte.
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó **Ambientes do Python** e escolha **Adicionar Ambiente Virtual**.
 

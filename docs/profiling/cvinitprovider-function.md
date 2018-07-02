@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e3b082c57e48d7c70fdda22c68c1a9d8980f71
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750097"
 ---
 # <a name="cvinitprovider-function"></a>Função CvInitProvider
-Inicializa o provedor de marcador. Deve ser chamado antes das outras funções do SDK da Visualização Simultânea.  
+Inicializa o provedor de marcador. Deve ser chamada antes das outras funções do SDK da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -43,7 +44,7 @@ HRESULT CvInitProvider(
  S_OK quando o provedor é inicializado com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** cvmarkers.h  
+ **Cabeçalho:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de biblioteca C++](../profiling/cpp-library-reference.md)

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751527"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
@@ -39,7 +40,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
 
  A ilustração a seguir é um exemplo de um relatório que mostra uma correlação entre uma redução na velocidade de transação (Atualizar Carrinho) e a degeneração do contador (% do Processador). Isso aponta para um possível problema no código do aplicativo, em vez do banco de dados ou da rede, e é um candidato adequado para diagnosticar usando o Criador de Perfis do ASP.NET.
 
- ![Possível problema no código do aplicativo](../test/media/lt_excel.png "LT_Excel")
+ ![Possível problema no código do aplicativo](../test/media/lt_excel.png)
 
  Os relatórios do Excel podem ser gerados no Analisador de Teste de Carga, usando o botão **Criar relatório no Excel** na barra de ferramentas ou no Excel usando a opção **Relatório do Teste de Carga** na guia de **Teste de Carga** de faixa de opções do Office.
 

@@ -1,7 +1,7 @@
 ---
 title: Modelos de aplicativo Web para Python
 description: Uma visão geral dos modelos do Visual Studio para aplicativos Web escritos em Python usando as estruturas Bottle, Flask e Django, incluindo configurações de depuração e publicação no Serviço de Aplicativo do Azure.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752034"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -41,7 +42,7 @@ Todos os modelos de "Projeto Web (estrutura) em branco" criam um projeto com um 
 | --- | --- |
 | Projeto Web em branco do Bottle | Gera um aplicativo mínimo no `app.py` com uma página inicial do `/` e uma página `/hello/<name>` que exibe `<name>` usando um modelo de página embutido muito curto. |
 | Projeto Web em branco do Django | Gera um projeto Django com a estrutura do site principal do Django, mas não aplicativos Django. Para obter mais informações, consulte [Django templates](python-django-web-application-project-template.md) (Modelos do Django) e [Learning Django Step 1](learn-django-in-visual-studio-step-01-project-and-solution.md) (Etapa 1 da Aprendizagem do Django). |
-| Projeto Web em Branco do Flask | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Este aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início rápido: use o Visual Studio para criar seu primeiro aplicativo Web Python](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Projeto Web em Branco do Flask | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Este aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início rápido: use o Visual Studio para criar seu primeiro aplicativo Web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Confira também [Learning Flask Step 1](learn-flask-visual-studio-step-01-project-solution.md) (Conhecendo o Flask Etapa 1).
 
 ### <a name="web-group"></a>Grupo da Web
 
@@ -51,19 +52,19 @@ Todos os modelos "Projeto Web da (Estrutura)" criam um aplicativo Web de início
 | --- | --- |
 | Projeto Web do Bottle | Gera um aplicativo cujos arquivos estáticos estão contidos na pasta `static` e são manipulados por meio de código no `app.py`. O roteamento para as páginas individuais está contido no `routes.py`, e a pasta `views` contém modelos de página.|
 | Projeto Web do Django | Gera um projeto e um aplicativo do Django com três páginas, suporte de autenticação e um banco de dados SQLite (mas nenhum modelo de dados). Para obter mais informações, consulte [Django templates](python-django-web-application-project-template.md) (Modelos do Django) e [Learning Django Step 4](learn-django-in-visual-studio-step-04-full-django-project-template.md) (Etapa 4 da Aprendizagem do Django). |
-| Projeto Web do Flask | Gera um aplicativo cujos arquivos estáticos estão contidos na pasta `static`. O código no `views.py` manipula o roteamento, com modelos de página que usam o mecanismo Jinja contido na pasta `templates`. O arquivo `runserver.py` fornece o código de inicialização. |
-| Projeto Web do Flask/Jade | Gera o mesmo aplicativo que com o modelo "Projeto Web do Flask", mas usando o mecanismo de modelagem do Jade. |
+| Projeto Web do Flask | Gera um aplicativo cujos arquivos estáticos estão contidos na pasta `static`. O código no `views.py` manipula o roteamento, com modelos de página que usam o mecanismo Jinja contido na pasta `templates`. O arquivo `runserver.py` fornece o código de inicialização. Confira [Learning Flask Step 4](learn-flask-visual-studio-step-04-full-flask-project-template.md) (Conhecendo o Flask Etapa 4). |
+| Projeto Web do Flask/Jade | Gera o mesmo aplicativo que com o modelo "Projeto Web do Flask", mas usando a extensão do Jade para o mecanismo de modelagem do Jinja. |
 
 ### <a name="polls-group"></a>Grupo de pesquisas
 
-Os modelos "Pesquisas Projeto Web do (estrutura)" criam um aplicativo Web de início por meio do qual os usuários podem votar em diferentes perguntas de pesquisa. Cada aplicativo é criado sobre a estrutura dos modelos de projeto da "Web" para usar um banco de dados para gerenciar as pesquisas e as respostas do usuário. Os aplicativos incluem modelos de dados adequados e uma página de aplicativo especial ("/semente") que carrega pesquisas de um arquivo `samples.json`.
+Os modelos "Pesquisas Projeto Web do (estrutura)" criam um aplicativo Web de início por meio do qual os usuários podem votar em diferentes perguntas de pesquisa. Cada aplicativo é criado sobre a estrutura dos modelos de projeto da "Web" para usar um banco de dados para gerenciar as pesquisas e as respostas do usuário. Os aplicativos incluem modelos de dados adequados e uma página de aplicativo especial (/seed) que carrega votações de um arquivo `samples.json`.
 
 | Modelo | Descrição |
 | --- | --- |
 | Pesquisas Projeto Web do Bottle | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta `models`, e o arquivo `settings.py` contém o código para determinar qual armazenamento de dados é usado. |
 | Pesquisas Projeto Web do Django | Gera um projeto e um aplicativo do Django com três páginas e um banco de dados SQLite. Inclui personalizações na interface administrativa do Django para permitir que um administrador autenticado crie e gerencie pesquisas. Para obter mais informações, consulte [Django templates](python-django-web-application-project-template.md) (Modelos do Django) e [Learning Django Step 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) (Etapa 6 da Aprendizagem do Django). |
-| Pesquisas Projeto Web do Flask | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta `models`, e o arquivo `settings.py` contém o código para determinar qual armazenamento de dados é usado. O aplicativo usa o mecanismo Jinja para modelos de página. |
-| Pesquisas Projeto Web do Flask/Jade | Gera o mesmo aplicativo que com o modelo "Pesquisas Projeto Web do Flask", mas usando o mecanismo de modelagem do Jade. |
+| Pesquisas Projeto Web do Flask | Gera um aplicativo que pode ser executado em um banco de dados em memória, no MongoDB ou no Armazenamento de Tabelas do Azure, configurado usando a variável de ambiente do `REPOSITORY_NAME`. Os modelos de dados e o código do armazenamento de dados estão contidos na pasta `models`, e o arquivo `settings.py` contém o código para determinar qual armazenamento de dados é usado. O aplicativo usa o mecanismo Jinja para modelos de página. Confira [Learning Flask Step 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) (Conhecendo o Flask Etapa 5). |
+| Pesquisas Projeto Web do Flask/Jade | Gera o mesmo aplicativo que com o modelo "Pesquisa Projeto Web de Flask", mas usando a extensão do Jade para o mecanismo de modelagem do Jinja. |
 
 ## <a name="installing-project-requirements"></a>Instalando os requisitos do projeto
 
@@ -71,7 +72,7 @@ Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de
 
 ![Caixa de diálogo que instala os pacotes necessários para um modelo de projeto](media/template-web-requirements-txt-wizard.png)
 
-Se estiver usando o controle do código-fonte, normalmente você omitirá a pasta de ambiente virtual, pois esse ambiente poderá ser recriado usando apenas o `requirements.txt`. A melhor maneira de excluir a pasta é primeiro selecionar **Eu os instalarei sozinho** no prompt mostrado acima. Em seguida, desabilite a confirmação automática antes de criar o ambiente virtual. Para obter detalhes, consulte [Tutorial de Aprendizagem do Django – Etapas 1-2 e 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Se estiver usando o controle do código-fonte, normalmente você omitirá a pasta de ambiente virtual, pois esse ambiente poderá ser recriado usando apenas o `requirements.txt`. A melhor maneira de excluir a pasta é primeiro selecionar **Eu os instalarei sozinho** no prompt mostrado acima. Em seguida, desabilite a confirmação automática antes de criar o ambiente virtual. Para obter detalhes, confira [Learning Django Tutorial – Steps 1-2 and 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) (Tutorial Conhecendo o Django – Etapas 1-2 e 1-3) e [Learning Flask Tutorial – Steps 1-2 and 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) (Tutorial Conhecendo o Flask – Etapas 1-2 e 1-3)
 
 Ao implantar o Serviço de Aplicativo do Microsoft Azure, selecione uma versão do Python como uma [extensão de site](https://aka.ms/PythonOnAppService) e instalar os pacotes manualmente. Além disso, como o Serviço de Aplicativo do Azure **não** instala pacotes automaticamente de um arquivo `requirements.txt` quando implantado por meio do Visual Studio, siga os detalhes de configuração em [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 

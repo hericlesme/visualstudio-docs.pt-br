@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745943"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
 
@@ -52,7 +53,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     -   Para adicionar um menu, escolha o botão **Adicionar Novo Menu**, escolha o botão **Modificar Seleção** e nomeie o menu que você deseja adicionar.
 
-        ![Personalizar a caixa de diálogo mostrando como adicionar um menu](../ide/media/addmenu.png "AddMenu")
+        ![Personalizar a caixa de diálogo mostrando como adicionar um menu](../ide/media/addmenu.png)
 
     -   Para remover um menu, selecione-o na lista **Controles** e escolha o botão **Excluir**.
 
@@ -68,7 +69,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     -   Para adicionar uma barra de ferramentas, escolha o botão **Novo**, especifique um nome para a barra de ferramentas que você deseja adicionar e escolha o botão **OK**.
 
-        ![Personalizar a caixa de diálogo mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png "AddToolbar")
+        ![Personalizar a caixa de diálogo mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png)
 
     -   Para remover uma barra de ferramentas personalizada, selecione-a na lista **Barras de Ferramentas** e escolha o botão **Excluir**.
 
@@ -96,7 +97,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
         Na caixa de diálogo **Adicionar Comando**, escolha um item na lista **Categorias**, escolha um item na lista **Comandos** e escolha o botão **OK**.
 
-        ![Adicionar caixa de diálogo Comando no Visual Studio](../ide/media/addcommand.png "AddCommand")
+        ![Adicionar caixa de diálogo Comando no Visual Studio](../ide/media/addcommand.png)
 
     -   Para excluir um comando, escolha-o na lista **Controles** e escolha o botão **Excluir**.
 

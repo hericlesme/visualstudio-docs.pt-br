@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751995"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados de teste de carga
 
@@ -37,7 +38,7 @@ Para obter mais informações sobre agentes, consulte [Controladores e agentes d
 
 2.  Na barra de ferramentas **Teste de Carga**, selecione **Gerenciar Controladores de Teste**. A caixa de diálogo Gerenciar Controlador de Teste é exibida. Se você estiver usando um agente remotamente, selecione um controlador.
 
-     ![Propriedades de conexão de repositório de resultados de teste de carga](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") Propriedades de conexão de repositório de resultados de teste de carga
+     ![Propriedades de conexão de repositório de resultados de teste de carga](../test/media/loadtestconnectionproperties.png) Propriedades de conexão de repositório de resultados de teste de carga
 
 3.  No **Repositório de resultados de testes de carga**, clique em (…) para exibir a caixa de diálogo **Propriedades da Conexão**.
 

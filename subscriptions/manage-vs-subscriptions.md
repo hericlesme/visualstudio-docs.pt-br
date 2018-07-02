@@ -9,11 +9,12 @@ description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Stud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548717"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -118,3 +119,21 @@ Para adicionar uma conta alternativa:
 ![Conta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.  
+
+## <a name="frequently-asked-questions"></a>Perguntas frequentes   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: se eu não renovar minha assinatura, por quanto tempo Microsoft manterá meus dados?
+R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
+
+| Canal                                                | Duração (dias) |
+|--------------------------------------------------------|-----------------|
+|    Varejo (por exemplo, por meio da Microsoft Store)               |    360          |
+|    VLSC (Centro de Serviços de Licenciamento por Volume)              |    180          |
+|    MPSA (Contrato de Produtos e Serviços da Microsoft)    |    180          |
+|    Assinaturas na nuvem do Visual Studio                   |    180          |
+|    Programa (por exemplo, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Proibida a revenda (por exemplo, MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Se optar por fechar sua conta Microsoft ou o Azure AD, seus dados pessoais serão tornados anônimos imediatamente.  
+> - Não removeremos completamente todos os seus dados pessoais se você tiver assinaturas ativas. 

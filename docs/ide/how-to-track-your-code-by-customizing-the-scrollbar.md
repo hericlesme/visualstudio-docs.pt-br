@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34445965"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745731"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como acompanhar o código personalizando a barra de rolagem
 
@@ -34,11 +34,11 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
 
     Esta é a aparência da barra de rolagem após o usuário pesquisar por uma cadeia de caracteres. Observe que todas as instâncias da cadeia de caracteres são exibidas.
 
-    ![A barra de rolagem após pesquisar por uma cadeia de caracteres. ] (../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![A barra de rolagem após pesquisar uma cadeia de caracteres.](../ide/media/enhancedscrollbarsearch.png)
 
     Esta é a barra de rolagem após a substituição de todas as instâncias da cadeia de caracteres. Você pode ver imediatamente que a operação causou alguns problemas.
 
-    ![A barra de rolagem após a substituição de uma cadeia de caracteres com erros](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![A barra de rolagem após a substituição de uma cadeia de caracteres com erros](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Para definir o modo de exibição para a barra de rolagem
 
@@ -48,11 +48,11 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
 
     Veja qual é a aparência do exemplo de pesquisa quando o modo de mapa está ativado e a largura está definida como **Médio**:
 
-    ![A barra de rolagem no modo de mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![A barra de rolagem no modo de mapa](../ide/media/enhancedscrollbar.png)
 
 2. No modo de mapa, para habilitar visualizações do código quando você move o cursor para cima e para baixo na barra de rolagem, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. Veja como deve ser sua aparência:
 
-    ![A barra de rolagem com uma dica de ferramenta](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![A barra de rolagem com uma dica de ferramenta](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Se quiser manter o comportamento de rolagem do modo de mapa e a dica de ferramenta de visualização, mas não quiser ter a visão geral do código-fonte, defina a **Visualização da fonte** como **Desativada**.
 

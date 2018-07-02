@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750965"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como ampliar uma região do gráfico em resultados de teste de carga
 
@@ -39,7 +40,7 @@ Após a conclusão de um teste de carga, você poderá usar as barras de zoom pa
 > [!TIP]
 > É possível usar **Sincronizar controles de zoom horizontal** na barra de ferramentas para ativar ou desativar a sincronização de zoom horizontal automática. Com a sincronização ativada, qualquer zoom que você aplicar a um gráfico também será aplicado a qualquer outro gráfico na Exibição de Gráficos.
 
- ![Controle de zoom de exibição de gráfico](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") Controle de zoom de exibição de gráfico
+ ![Controle de zoom do modo de exibição de grafo](../test/media/ltest_zoomcontrol.png) Controle de zoom do modo de exibição de grafo
 
  Na ilustração anterior, foi aplicado zoom no gráfico Sistema em Teste para investigação de problemas de limite. As violações de limite foram habilitadas usando **Mostrar violações de limite no gráfico** no menu suspenso **Opções de gráfico** na barra de ferramentas.
 

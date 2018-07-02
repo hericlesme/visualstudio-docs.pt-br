@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449176"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752073"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -52,19 +52,19 @@ As seções a seguir mostram as etapas básicas para começar os testes de unida
 
 Defina e execute testes dentro de um ou mais projetos de teste que estão na mesma solução do código que você deseja testar. Para adicionar um novo projeto de teste a uma solução existente, clique com o botão direito do mouse no nó Solução, no **Gerenciador de Soluções** e escolha **Adicionar | Novo Projeto**. Em seguida, no painel à esquerda, clique em **Teste, no nó Visual C++** e escolha um dos tipos de projeto no painel central. A ilustração a seguir mostra os projetos de teste disponibilizados quando a carga de trabalho **Desenvolvimento de Área de Trabalho com C++** é instalada:
 
-![Projetos de Teste C++](media/cpp-new-test-project.png "Novos modelos de projeto de teste C++")
+![Projetos de teste C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Criar referências a outros projetos na solução
 
 Para habilitar o código de teste a acessar as funções no projeto a ser testado, adicione uma referência ao projeto no projeto de teste. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó Projeto de Teste e escolha **Adicionar | Referência**. Em seguida, na caixa de diálogo, escolha os projetos que deseja testar.
 
-![Adicionar referência](media/cpp-add-ref-test-project.png "Teste C++ adicionar uma referência aos projetos a serem testados")
+![Adicionar referência](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Adicionar diretivas de inclusão aos arquivos de cabeçalho
 
 Em seguida, no arquivo .cpp do teste de unidade, adicione uma diretiva `#include` a todos os arquivos de cabeçalho que declaram os tipos e funções que você deseja testar. Digite `#include "` e, depois, o IntelliSense será ativado para ajudá-lo a escolher. Repita essas etapas nos outros cabeçalhos.
 
-![Adicionar diretivas de inclusão](media/cpp-add-includes-test-project.png "Teste C++ adicionar inclusão aos arquivos de cabeçalho")
+![Adicionar diretivas de inclusão](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Gravar métodos de teste
 
@@ -73,7 +73,7 @@ Em seguida, no arquivo .cpp do teste de unidade, adicione uma diretiva `#include
 
 O arquivo .cpp no projeto de teste tem um método e uma classe stub definidos para você como um exemplo de como gravar código de teste. As assinaturas usam as macros TEST_CLASS e TEST_METHOD, o que possibilita a descoberta dos métodos por meio da janela Gerenciador de Testes.
 
-![Adicionar diretivas de inclusão](media/cpp-write-test-methods.png "Teste C++ adicionar inclusão aos arquivos de cabeçalho")
+![Adicionar diretivas de inclusão](media/cpp-write-test-methods.png)
 
 TEST_CLASS e TEST_METHOD fazem parte do [Framework de Teste Nativo da Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). O **Gerenciador de Testes** descobre os métodos de teste em outras estruturas com suporte, de maneira semelhante.
 
@@ -95,7 +95,7 @@ No exemplo anterior, o resultado da chamada `Assert::AreEqual` determina o resul
 
 1. No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**. A ilustração a seguir mostra um projeto de teste cujos testes ainda não foram executados.
 
-   ![Gerenciador de Testes antes dos testes serem executados](media/cpp-test-explorer.png "Gerenciador de Testes para C++")
+   ![Gerenciador de Testes antes da execução dos testes](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > A integração do CTest com o **Gerenciador de Testes** ainda não está disponível. Execute testes de CTest no menu principal do CMake.
@@ -104,7 +104,7 @@ No exemplo anterior, o resultado da chamada `Assert::AreEqual` determina o resul
 
 1. No Gerenciador de Testes, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados. Depois de executar todos os testes, a janela mostrará quais testes foram aprovados e quais falharam:
 
-![Gerenciador de Testes depois que os testes são executados](media/cpp-test-explorer-passed.png "C++ Gerenciador de Testes depois de executar os testes")
+![Gerenciador de Testes depois da execução dos testes](media/cpp-test-explorer-passed.png)
 
 Para testes com falha, a mensagem mostra detalhes que ajudam a diagnosticar a causa. É possível clicar com o botão direito do mouse no teste com falha e selecione **Depurar Testes Selecionados** para ver a etapa da função em que a falha ocorreu.
 

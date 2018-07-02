@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751417"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento Orientado por Testes com o Gerenciador de Testes
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   Consulte todas as informações que você precisa em uma janela.
 
 ## <a name="using-test-explorer"></a>Usando o Gerenciador de Testes
- ![Gerenciador de Testes de unidade mostrando o Botão Executar Todos](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Gerenciador de Testes de Unidade mostrando o botão Executar Todos](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.
 
-2.  Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+2.  Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 3.  Na barra de menus, escolha **Teste**, **Executar testes de unidade**, **Todos os testes**.
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
     -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.
 
-         ![Novos projetos de código e teste](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png)
 
 3.  Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  Selecione os itens em **Rastreamento de pilha** para ver onde o teste falhou.
 
- ![Gerenciador de Testes de unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Gerenciador de Testes de Unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png)
 
  Neste ponto, você criou um teste e um stub que você modificará para que o teste seja aprovado.
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
      O teste é aprovado.
 
-     ![Gerenciador de Testes de unidade mostrando teste com aprovação.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Gerenciador de Testes de Unidade mostrando teste aprovado.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Adicionar testes para estender o intervalo de entradas
 
@@ -288,4 +289,4 @@ ms.lasthandoff: 04/26/2018
 
      Todos os testes ainda são aprovados.
 
-     ![Gerenciador de Testes de unidade mostrando 3 testes com aprovação.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Gerenciador de Testes de Unidade mostrando 3 testes aprovados.](../test/media/unittestexplorerwalkthrough4.png)

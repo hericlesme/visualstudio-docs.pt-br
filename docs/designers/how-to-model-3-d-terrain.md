@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745572"
 ---
 # <a name="how-to-model-3d-terrain"></a>Como modelar um terreno 3D
 
@@ -26,7 +27,7 @@ Você pode criar um terreno 3D subdividindo um plano para fazer faces adicionais
 
 Ao terminar, o modelo deve ter esta aparência:
 
-![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png)
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
@@ -52,7 +53,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
 O modelo de terreno está concluído. Aqui está o modelo final novamente, com sombreamento Phong aplicado:
 
-![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png)
 
 Você pode usar esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente com base na geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

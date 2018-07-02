@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752405"
 ---
 # <a name="findcommand-box"></a>Caixa Localizar/Comando
 
@@ -27,7 +28,7 @@ Para executar um comando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 
 A caixa **Localizar/Comando** retém os últimos 20 itens inseridos e os exibe em uma lista suspensa. É possível navegar pela lista escolhendo as **teclas de direção**.
 
-![Caixa Localizar&#47;Comando](../ide/media/findcommandbox.png "FindCommandBox")
+![Caixa Localizar&#47;Comando](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>Pesquisando texto
 

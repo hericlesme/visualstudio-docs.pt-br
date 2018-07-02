@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 023f61c3c20e47b48f975e247ad2c649bbbf7f38
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 697a060399fa17321f30ccb92ad3617e99ca106f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749327"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: coleções de GC2 frequentes
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  Um número alto de objetos de memória do .NET está sendo recuperado na coleta de lixo de geração 2.  
   
-## <a name="rule-description"></a>Descrição da Regra  
+## <a name="rule-description"></a>Descrição da regra  
  O CLR (Common Language Runtime) do Microsoft .NET fornece um mecanismo de gerenciamento automático de memória que usa um coletor de lixo para recuperar a memória de objetos que não são mais usados pelo aplicativo. O coletor de lixo é orientado a geração, com base na suposição de que muitas alocações são de curta duração. Variáveis locais, por exemplo, devem ser de curta duração. Os objetos recém-criados iniciam na geração 0 (ger 0), em seguida, progridem para a geração 1 quando sobrevivem a uma execução da coleta de lixo e, por fim, fazem a transição para a geração 2 se ainda são usados pelo aplicativo.  
   
  Objetos na geração 0 são coletados com frequência e, em geral, de forma muito eficiente. Objetos na geração 1 são coletados com menos frequência e de forma menos eficiente. Por fim, objetos de longa duração na geração 2 devem ser coletados com uma frequência ainda menor. A coleta da geração 2, que é uma execução de coleta de lixo completa, também é a operação mais cara.  

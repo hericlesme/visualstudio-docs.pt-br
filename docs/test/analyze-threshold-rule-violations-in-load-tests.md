@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750903"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -53,15 +54,15 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 
  O ícone será um dos seguintes:
 
- ![Nenhuma violação de limite](../test/media/icon_ltest_1.gif "Icon_LTest_1") Nenhuma violação de limite.
+ ![Sem violação de limite](../test/media/icon_ltest_1.gif) Sem violação de limite.
 
- ![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Uma violação de limite crítica no último intervalo.
+ ![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif) Uma violação de limite crítica ocorreu no último intervalo.
 
- ![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif "Icon_LTest_3") Uma violação de limite crítica em um intervalo anterior.
+ ![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif) Uma violação de limite crítica ocorreu em um intervalo anterior.
 
- ![Uma violação de limite com aviso no último intervalo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Uma violação de limite com aviso no último intervalo.
+ ![Uma violação de limite de aviso no último intervalo](../test/media/icon_ltest_4.gif) Uma violação de limite de aviso ocorreu no último intervalo.
 
- ![Uma violação de limite com aviso em um intervalo anterior](../test/media/icon_ltest_5.gif "Icon_LTest_5") Uma violação de limite com aviso em um intervalo anterior.
+ ![Uma violação de limite de aviso em um intervalo anterior](../test/media/icon_ltest_5.gif) Uma violação de limite de aviso ocorreu em um intervalo anterior.
 
  Se desejar, as violações de limite também podem ser mostradas no gráfico. O ícone de limite é exibido no gráfico ao lado do ponto de dados onde a violação de limite ocorreu.
 

@@ -12,13 +12,14 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749454"
 ---
-# <a name="custom-native-etw-heap-events"></a>Eventos de heap ETW nativo personalizado
+# <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
 O Visual Studio contém uma variedade de [ferramentas de criação de perfil e diagnóstico](../profiling/profiling-tools.md), incluindo um criador de perfil de memória nativa.  Esse criador de perfil vincula [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) do provedor de heap e fornece uma análise de como a memória está sendo alocada e utilizada.  Por padrão, essa ferramenta só pode analisar alocações feitas do heap padrão do Windows e todas as alocações fora desse heap nativo não serão exibidas.
 
@@ -136,7 +137,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Acompanhando o uso de memória
+## <a name="track-memory-usage"></a>Rastrear uso de memória
 Com essas chamadas implementadas, o uso de heap personalizado agora pode ser acompanhado usando a ferramenta padrão **Uso de Memória** no Visual Studio.  Para obter mais informações sobre como usar essa ferramenta, consulte a documentação [Uso de memória](../profiling/memory-usage.md). Verifique se você habilitou a de criação de perfil de heap com instantâneos; caso contrário, você não verá o uso de heap personalizado exibido. 
 
 ![Habilitar a criação de perfil de heap](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Para exibir o acompanhamento de heap personalizado, use o menu suspenso **Heap**
 
 ![Seleção de heap](media/heap-example-custom-heap.png)
 
-Usando o exemplo de código acima, com `MemoryPool` criando um objeto `VSHeapTracker::CHeapTracker` e nosso próprio método `allocate` agora chamando o método `AllocateEvent`, agora é possível ver o resultado da alocação personalizada, mostrando 3 instâncias que totalizam 24 bytes, todos do tipo `Foo`.
+Usando o exemplo de código acima, com `MemoryPool` criando um objeto `VSHeapTracker::CHeapTracker` e nosso próprio método `allocate` agora chamando o método `AllocateEvent`, agora é possível ver o resultado da alocação personalizada, mostrando três instâncias que totalizam 24 bytes, todos do tipo `Foo`.
 
 O heap padrão *Heap NT* tem a mesma aparência que anteriormente, com a adição de nosso objeto `CHeapTracker`.
 
@@ -154,7 +155,7 @@ O heap padrão *Heap NT* tem a mesma aparência que anteriormente, com a adiçã
 Assim como ocorre com o heap padrão do Windows, também é possível usar essa ferramenta para comparar instantâneos e procurar perdas e danos no heap personalizado, que é descrito na documentação principal [Uso de memória](../profiling/memory-usage.md).
 
 > [!TIP]
-> O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar > Criador de Perfil de Desempenho** ou na combinação de teclas **Alt+F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar > Windows > Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl+Alt+ F2**, contém essa funcionalidade.
+> O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar**>**Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar**>**Windows**>**Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
 ## <a name="see-also"></a>Consulte também
 [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)  

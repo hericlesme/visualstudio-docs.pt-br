@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6f293633bb64b06f5374a21fbc9382d58b0bc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5a5982fd194f86d2cfe2b63a564c0ce1ce90f8a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749821"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: volume significativo de reflexão
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  Chamadas aos métodos System.Reflection como InvokeMember e GetMember ou a métodos Type como MemberInvoke são uma proporção significativa dos dados de criação de perfil. Quando possível, considere a substituição desses métodos pela associação antecipada aos métodos de assemblies dependentes.  
   
-## <a name="rule-description"></a>Descrição da Regra  
+## <a name="rule-description"></a>Descrição da regra  
  A reflexão é um recurso flexível do .NET Framework que pode ser usado para realizar a associação tardia do aplicativo a um Assembly dependente em tempo de execução ou para criar e executar dinamicamente novos tipos durante o tempo de execução. No entanto, essas técnicas podem diminuir o desempenho se forem usadas com frequência ou chamadas em loops estreitos.  
   
  Para obter mais informações, consulte a seção [Reflection and Late Binding](http://go.microsoft.com/fwlink/?LinkId=177826) (Reflexão e associação tardia) de Chapter 5 — Improving Managed Code Performance (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume Improving .NET Application Performance and Scalability (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft) no MSDN.  

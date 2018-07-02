@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f2b7f930a4e58eb3c14380df16892e92a870f5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749353"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Função CvReleaseMarkerSeries
 Libera a série de marcador. Não use um objeto de série de marcador após a liberação; caso contrário, o aplicativo poderá falhar. A falha ao liberar a série de marcador causa uma perda de memória.  
@@ -39,7 +40,7 @@ HRESULT CvReleaseMarkerSeries(
  S_OK quando a série de marcador é liberada com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** cvmarkers.h  
+ **Cabeçalho:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de biblioteca C++](../profiling/cpp-library-reference.md)

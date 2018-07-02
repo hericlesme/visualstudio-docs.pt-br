@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750084"
 ---
 # <a name="crosssession"></a>CrossSession
-A opção **CrossSession** do VSPerfCmd.exe permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.  
+A opção *VSPerfCmd.exe* **CrossSession** permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.  
   
  Você pode usar a abreviação **CS** no lugar de **CrossSession**.  
   
@@ -52,6 +53,6 @@ VSPerfCmd.exe /Attach:12345 /CS
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
+ [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

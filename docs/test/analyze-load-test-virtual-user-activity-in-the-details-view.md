@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750832"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade de usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
 
 **Gráfico de atividade do usuário virtual**
 
- ![Gráfico de atividade do usuário virtual](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Gráfico de Atividade de Usuário Virtual](../test/media/virtual_actchart.png)
 
  A exibição Detalhes mostra o Gráfico de Atividade de Usuário Virtual, que é usado para analisar visualmente o que os usuários virtuais individuais fizeram durante o teste de carga. O Gráfico de Atividade de Usuário Virtual permite ver os padrões de atividade do usuário, os padrões de carga, a correlação de testes reprovados ou lentos, bem como as solicitações com outra atividade de usuário virtual. O Gráfico de Atividade de Usuário Virtual também pode ajudar a determinar picos de uso da CPU, quedas em solicitações por segundo e quais testes ou páginas estavam em execução durante os picos e as quedas.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Painel de legenda de detalhes**
 
- ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png)
 
  O painel de legenda de detalhes está visível no Gráfico de Atividade de Usuário Virtual. O painel permite filtrar testes, páginas e transações com base em vários critérios diferentes. Por exemplo, você pode remover alguns testes da exibição, ou remover todos os testes com êxito, ou remover testes reprovados com determinadas falhas. Também é possível remover todos os testes que não possuem logs.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Painel Filtrar resultados**
 
- ![Painel Filtrar resultados](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Painel Filtrar resultados](../test/media/ltest_filterresults.png)
 
  O painel Resultados do filtro está visível no Gráfico de Atividade de Usuário Virtual. Esse painel pode filtrar o seguinte:
 

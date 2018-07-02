@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752690"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
@@ -33,13 +34,13 @@ As ferramentas a seguir estão disponíveis por padrão na guia HTML.
 
 **Ponteiro**
 
-![Ponteiro de HTMLpage do Designer de Dispositivo Móvel do ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Ponteiro de página HTML do Designer de Dispositivo Móvel do ASP.NET](../../ide/reference/media/vxpointer.gif)
 
 Essa ferramenta é selecionada por padrão quando uma guia da Caixa de ferramentas é aberta. Não pode ser excluído. O ponteiro permite arrastar objetos para a superfície do modo de exibição de Design, redimensioná-los e reposicioná-los na página ou no formulário. Para saber mais, confira [Caixa de Ferramentas](../../ide/reference/toolbox.md).
 
 **Entrada (Botão)**
 
-![Botão da página da Web HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Botão da página da Web HTML](../../ide/reference/media/vxbutton.gif)
 
 Insere um elemento `input` igual a `type="button"`. Para alterar o texto exibido, edite a propriedade `name`. Por padrão, `id="Button1"` é inserido para o primeiro botão, `id="Button2"` para o segundo e assim por diante.
 
@@ -51,7 +52,7 @@ Ao arrastar **Entrada (Botão)** para a superfície do modo de exibição de Des
 
 **Entrada (Redefinição)**
 
-![Captura de tela de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
+![Captura de tela de HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Insere um elemento `input` igual a `type="reset"`. Para alterar o texto exibido, edite a propriedade `name`. Por padrão, `id="Reset1"` é inserido para o primeiro botão de redefinição, `id="Reset2"` para o segundo e assim por diante.
 
@@ -63,7 +64,7 @@ Ao arrastar **Entrada (Redefinição)** para a superfície do modo de exibição
 
 **Entrada (Enviar)**
 
-![Captura de tela de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![Captura de tela de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Insere um elemento `input` igual a `type="submit"`. Para alterar o texto exibido, edite a propriedade `name`. Por padrão, `id="Submit1"` é inserido para o primeiro botão de envio, `id="Submit2"` para o segundo e assim por diante.
 
@@ -75,7 +76,7 @@ Ao arrastar **Entrada (Envio)** para a superfície do modo de exibição de Desi
 
 **Entrada (Texto)**
 
-![Captura de tela de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![Captura de tela de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Insere um elemento `input` igual a `type="text"` no documento. Para alterar o texto padrão exibido, edite o atributo `value`. Por padrão, `id="Text1"` é inserido para o primeiro campo de texto, `id="Text2"` para o segundo e assim por diante.
 
@@ -90,7 +91,7 @@ Ao arrastar **Entrada (Texto)** para a superfície do modo de exibição de Desi
 
 **Entrada (Arquivo)**
 
-![Campo de arquivo de paginação HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Campo de arquivo de paginação HTML](../../ide/reference/media/vxfilefield.gif)
 
 Insere um elemento `input` igual a `type="file"` no documento. Por padrão, `id="File1"` é inserido para o primeiro campo de arquivo, `id="File2"` para o segundo e assim por diante.
 
@@ -105,7 +106,7 @@ Ao arrastar **Entrada (Arquivo)** para a superfície do modo de exibição de De
 
 **Entrada (Senha)**
 
-![Campo de senha do Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Campo de senha do Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Insere um elemento `input` igual a `type="password"`. Por padrão, `id="Password1"` é inserido para o primeiro campo de senha, `id="Password2"` para o segundo e assim por diante.
 
@@ -120,7 +121,7 @@ Ao arrastar **Entrada (Senha)** para a superfície do modo de exibição de Desi
 
 **Entrada (caixa de seleção)**
 
-![Opção Caixa de seleção da caixa de ferramentas da página da Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Opção Caixa de seleção da caixa de ferramentas da página da Web HTML](../../ide/reference/media/vxcheckbox.gif)
 
 Insere um elemento `input` igual a `type="checkbox"`. Para alterar o texto exibido, edite a propriedade `name`. Por padrão, `id="Checkbox1"` é inserido para a primeira caixa de seleção, `id="Checkbox2"` para a segunda e assim por diante.
 
@@ -132,7 +133,7 @@ Ao arrastar **Entrada (Caixa de seleção)** para a superfície do modo de exibi
 
 **Entrada (Opção)**
 
-![Captura de tela de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
+![Captura de tela de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Insere um elemento `input` igual a `type="radio"`. Para alterar o texto exibido, edite a propriedade `name`. Por padrão, `id="Radio1"` é inserido para o primeiro botão de opção, `id="Radio2"` para o segundo e assim por diante.
 
@@ -144,7 +145,7 @@ Ao arrastar **Entrada (Botão de opção)** para a superfície do modo de exibi�
 
 **Entrada (Oculta)**
 
-![Item Oculto da página HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Item Oculto da página HTML](../../ide/reference/media/vxhidden.gif)
 
 Insere um elemento `input` igual a `type="hidden"`. Por padrão, `id="Hidden1"` é inserido para o primeiro campo oculto, `id="Hidden2"` para o segundo e assim por diante.
 
@@ -156,7 +157,7 @@ Ao arrastar **Entrada (Oculta)** para a superfície do modo de exibição de Des
 
 **Área de texto**
 
-![Área de texto da barra de ferramentas de HTMLpage](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Área de texto da barra de ferramentas da página HTML](../../ide/reference/media/vxtextarea.gif)
 
 Insere um elemento `textarea`. É possível redimensionar a área de texto ou usar as barras de rolagem para exibir o texto que se estende além da área de exibição. Para alterar o texto padrão exibido, edite o atributo `value`. Por padrão, `id="textarea1"` é inserido para a primeira área de texto, `id=" textarea 2"` para a segunda e assim por diante.
 
@@ -171,7 +172,7 @@ Ao arrastar **Área de texto** para a superfície do modo de exibição de Desig
 
 **Tabela**
 
-![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")
+![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Insere um elemento `table`.
 
@@ -183,7 +184,7 @@ Ao arrastar **Tabela** para a superfície do modo de exibição de Design, uma m
 
 **Image**
 
-![Item Imagem da página HTML](../../ide/reference/media/vximage.gif "vxImage")
+![Item Imagem da página HTML](../../ide/reference/media/vximage.gif)
 
 Insere um elemento `img`. Edite esse elemento para especificar seu `src` e seu texto `alt`.
 
@@ -195,7 +196,7 @@ Ao arrastar **Imagem** para a superfície do modo de exibição de Design, uma m
 
 **Selecionar**
 
-![Lista suspensa da caixa de ferramentas da página HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Lista suspensa da caixa de ferramentas da página HTML](../../ide/reference/media/vxdropdown.gif)
 
 Insere um elemento `select` suspenso (sem um atributo `size`). Por padrão, `id="select1"` é inserido para a primeira caixa de listagem, `id="select2"` para a segunda e assim por diante.
 
@@ -209,7 +210,7 @@ Ao arrastar **Selecionar** para a superfície do modo de exibição de Design, u
 
 **Régua horizontal**
 
-![Item Regra Horizontal da página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Item de Régua Horizontal da página HTML](../../ide/reference/media/vxhorizontal.gif)
 
 Insere um elemento `hr`. Para aumentar a espessura da linha, edite o atributo `size`.
 
@@ -221,7 +222,7 @@ Ao arrastar **Régua Horizontal** para a superfície do modo de exibição de De
 
 **Div**
 
-![Rótulo da página HTML](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Rótulo da página HTML](../../ide/reference/media/vxlabel.gif)
 
 Insere um elemento `div` inclui um atributo `ms_positioning="FlowLayout"`. Com exceção da largura e da altura, esse item é idêntico a um Painel de Layout de Fluxo. Para formatar o texto contido em um elemento `div`, adicione um atributo `class="stylename"` à marcação de abertura.
 

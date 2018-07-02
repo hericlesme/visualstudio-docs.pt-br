@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748732"
 ---
-# <a name="cpu-and-windows-counters"></a>Contadores da CPU e do Windows
+# <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
 O Criador de Perfil do Visual Studio permite coletar dados de desempenho que foram gerados pelo sistema operacional (contadores do Windows) e dados de desempenho que foram gerados pela unidade do processador (contadores da CPU).
 
@@ -45,9 +46,9 @@ O criador de perfil do Visual Studio continua dando suporte a eventos específic
 
 Eventos portáteis são um grupo de contadores da CPU que não são específicos a um processador específico. Todos os outros contadores da CPU são chamados de eventos da plataforma e podem não ter suporte em várias plataformas.
 
- Contadores para os eventos portáteis e da plataforma são definidos em arquivos .XML, em que valores específicos relacionados aos contadores são fornecidos. Há vários arquivos para CPUs diferentes, pois os dados para CPUs Intel e AMD, por exemplo, são diferentes. O Criador de Perfil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa essas informações para apresentar contadores apropriados, portáteis e da plataforma, ao usuário para medição de desempenho.
+ Contadores para os eventos portáteis e da plataforma são definidos em arquivos .*xml*, em que valores específicos relacionados aos contadores são fornecidos. Há vários arquivos para CPUs diferentes, pois os dados para CPUs Intel e AMD, por exemplo, são diferentes. O Criador de Perfil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa essas informações para apresentar contadores apropriados, portáteis e da plataforma, ao usuário para medição de desempenho.
 
-### <a name="portable-events"></a>Eventos Portáteis
+### <a name="portable-events"></a>Eventos portáteis
 
 Os eventos portáteis contêm os seguintes eventos:
 
@@ -78,7 +79,7 @@ Os eventos portáteis contêm os seguintes eventos:
 |Erros de Leitura de Cache L2|Indica o número de perdas de leitura do cache de segundo nível.|
 |Referências de Leitura de Cache L2|Indica o número de referências de leitura do cache de segundo nível. Inclui perdas de carga e perdas e ocorrências de RFO (leitura de propriedade).|
 
-## <a name="viewing-available-counters"></a>Exibindo os contadores disponíveis
+## <a name="view-available-counters"></a>Exibir contadores disponíveis
 
 É possível listar os contadores da CPU disponíveis na IDE do Visual Studio em uma janela do Prompt de Comando.
 
@@ -114,7 +115,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
      **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
 
-### <a name="command-line"></a>Linha de Comando
+### <a name="command-line"></a>Linha de comando
 
 Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é possível listar os contadores da CPU disponíveis em um computador por meio da linha de comando.
 
@@ -126,9 +127,9 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     em que **\<Visual Studio Performance Tools Directory>** é o caminho para o diretório das Ferramentas de Desempenho de sua instalação do Visual Studio, geralmente
+     em que *\<Visual Studio Performance Tools Directory>* é o caminho para o diretório das Ferramentas de Desempenho de sua instalação do Visual Studio, geralmente
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Arquivos de Programas\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>Consulte também
 

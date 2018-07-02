@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264450"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691018"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrigir problemas de desempenho relacionados à interação com o aplicativo em aplicativos XAML. Essa ferramenta ajuda a melhorar o desempenho de aplicativos XAML fornecendo uma exibição detalhada do consumo de recursos dos aplicativos. Você pode analisar o tempo gasto pelo seu aplicativo para preparar quadros de interface do usuário (layout e renderização), atender a solicitações de rede e de disco e em cenários como Inicialização de Aplicativo, Carregamento de Página e redimensionamento do Windows.  
@@ -35,10 +35,10 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 5.  Windows 7  
   
 > [!NOTE]
->  Você pode coletar e analisar os dados de uso da CPU e os dados de consumo de energia junto a dados da **ApplicationTimeline**. Consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Você pode coletar e analisar os dados de uso da CPU e os dados de consumo de energia junto a dados da **ApplicationTimeline**. Consulte [Executar Ferramentas de Criação de Perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Coletar dados da Linha do Tempo do Aplicativo  
- Você pode criar o perfil de capacidade de resposta de seu aplicativo em seu computador local, dispositivo conectado, emuladores ou simulador do Visual Studio ou em um dispositivo remoto. Consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+## <a name="collect-application-timeline-data"></a>Coletar dados da Linha do Tempo do Aplicativo  
+ Você pode criar o perfil de capacidade de resposta de seu aplicativo em seu computador local, dispositivo conectado, emuladores ou simulador do Visual Studio ou em um dispositivo remoto. Consulte [Executar Ferramentas de Criação de Perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Se possível, execute o aplicativo diretamente no dispositivo. O desempenho do aplicativo observado no simulador ou por uma conexão de área de trabalho remota pode não igual ao desempenho real no dispositivo. Por outro lado, a coleta de dados usando as Ferramentas Remotas do Visual Studio não afeta os dados de desempenho.  
@@ -52,7 +52,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 3.  Selecione **Linha do tempo do aplicativo** e, em seguida, clique em **Iniciar** na parte inferior da janela.  
   
     > [!NOTE]
-    >  Você pode ver uma janela de Controle de Conta de Usuário solicitando sua permissão para executar VsEtwCollector.exe. Clique em **Sim**.  
+    >  Talvez você veja uma janela Controle de Conta de Usuário solicitando sua permissão para executar *VsEtwCollector.exe*. Clique em **Sim**.  
   
 4.  Execute o cenário cujo perfil você está interessado em criar em seu aplicativo para coletar dados de desempenho.  
   
@@ -62,7 +62,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
      ![Relatório do criador de perfil de linha do tempo](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analisar dados de criação de perfil de linha do tempo  
+## <a name="analyze-timeline-profiling-data"></a>Analisar dados de criação de perfil de linha do tempo  
  Depois de coletar os dados para a criação de perfil, você pode usar estas etapas para iniciar a análise:  
   
 1.  Examine as informações nos gráficos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.  
@@ -113,12 +113,12 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 |-|-|  
 |**Classificar por**|Classifique por hora de início ou o duração de eventos.|  
 |![Agrupar eventos por quadro](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|  
-|![Filtrar lista de detalhes da Linha do Tempo](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra a lista pelas categorias selecionadas e a duração dos eventos.|  
-|![Personalizar informações detalhadas sobre a Linha do Tempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar as anotações para eventos.|  
+|![Filtrar lista de detalhes da linha do tempo](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra a lista pelas categorias selecionadas e a duração dos eventos.|  
+|![Personalizar informações detalhadas da linha do tempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar as anotações para eventos.|  
   
 ## <a name="see-also"></a>Consulte também  
  [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx) (Blog da equipe WPF: Nova ferramenta de análise de desempenho da interface do usuário para aplicativos WPF)  
  [Práticas recomendadas de desempenho para aplicativos UWP em C++, C# e Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Otimizando o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
+ [Otimizar o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
  [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)

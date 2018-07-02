@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747727"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 Talvez você queira usar os editores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para trabalhar de forma independente nos arquivos de um projeto ou de uma solução. Enquanto você tiver uma solução aberta, pode abrir e modificar arquivos sem adicioná-los a uma solução ou um projeto. Os arquivos com os quais você deseja trabalhar independentemente dos contêineres são chamados de arquivos diversos. Os arquivos diversos são externos às soluções e projetos, não estão incluídos em builds e não podem ser incluídos com uma solução sob controle do código-fonte.
 
  Abrir arquivos independentemente de um contêiner é útil para uma variedade de razões. Você pode ter um arquivo que deseja exibir enquanto desenvolve uma solução baseada em projeto, mas que não é parte integrante do desenvolvimento da solução. Exemplos comuns incluem instruções ou anotações de desenvolvimento, esquema de banco de dados e fragmentos de código. Além disso, você talvez queira criar um arquivo autônomo.
 
- ![Projetos de soluções](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![Projetos de soluções](../../ide/reference/media/projects_solutions_misc.gif)
 
  O Gerenciador de Soluções poderá exibir uma pasta Arquivos Diversos para os arquivos se as opções para a pasta estiverem habilitadas. As opções podem ser definidas em [Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md). Depois de fechar um arquivo diverso, ele não é associado a nenhuma solução ou projeto específico, a menos que uma opção seja habilitada para isso também.
 

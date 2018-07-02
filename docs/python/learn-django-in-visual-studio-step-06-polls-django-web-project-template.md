@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750487"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Tutorial, etapa 6: Usar o modelo de pesquisas do Projeto Web do Django
 
@@ -111,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a Pesquisa no banco de dados; o campo `total_votes` é calculado em tempo de execução.
+Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a Votação no banco de dados; o campo `total_votes` é calculado em tempo de execução.
 
 Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O campo `votes_percentage` é calculado em tempo de execução e não foi encontrado no banco de dados.
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Se você não estiver familiarizado com as expressões regulares mais complexas usadas aqui, poderá colar a expressão em [regex101.com](https://regex101.com/) para obter uma explicação em linguagem simples. (Você precisará escapar as barras invertidas `/` adicionando uma barra invertida, `\`h antes delas; o escape não é necessário no Python devido ao prefixo `r` na cadeia de caracteres, que significa "bruto").
+Se você não estiver familiarizado com as expressões regulares mais complexas usadas aqui, poderá colar a expressão em [regex101.com](https://regex101.com/) para obter uma explicação em linguagem simples. (Será necessário escapar as barras invertidas `/` adicionando uma barra invertida, `\` antes delas; o escape não é necessário no Python devido ao prefixo `r` na cadeia de caracteres, que significa "bruto").
 
 No Django, a sintaxe `?P<name>pattern` cria um grupo chamado `name`, que é passado como argumentos para exibições na ordem em que aparecem. No código mostrado anteriormente, `PollsDetailView` e `PollsResultsView` recebem um argumento denominado `pk` e `app.views.vote` recebe um argumento denominado `poll_id`.
 

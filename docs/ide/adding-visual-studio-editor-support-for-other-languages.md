@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746120"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -32,7 +33,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 
 Os recursos no editor do Visual Studio como colorização de sintaxe, preenchimento de declaração e Navegar até podem ajudá-lo a ler, criar e editar seu código mais facilmente. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a criar código de maneira mais rápida e fácil.
 
-![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png)
 
 No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem favorita não estiver na tabela, não se preocupe – é possível adicioná-la.
 

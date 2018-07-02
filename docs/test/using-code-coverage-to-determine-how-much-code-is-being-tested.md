@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752086"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -84,7 +85,7 @@ Em algumas situações, os blocos diferentes em seu código serão usados depend
 
  Por exemplo, suponhamos que, ao executar um teste com a entrada “2 ", você descobre que 50% de uma função específica está coberta. Quando você executa o teste uma segunda vez com a entrada “- 2 " você consulta a exibição de cores de cobertura que a outra 50% da função está coberto. Agora você mescla os resultados das duas execuções de testes, e a exibição do relatório e da coloração de cobertura mostra que 100% da função foi coberta.
 
- Use o ![ícone do botão de Mesclagem na janela Cobertura de Código](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Mesclar resultados da cobertura de código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
+ Use ![ícone do botão Mesclar na janela Cobertura de Código](../test/media/codecoverage-mergeicon.png)**Mesclar Resultados da Cobertura de Código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
 
  Use **Exportar Resultados da Cobertura de Código** para salvar os resultados de uma operação de mesclagem.
 
@@ -258,7 +259,7 @@ Quando você faz check-in de seu código, os testes serão executados no servido
 
    Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.
 
-   ![Configurar a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")
+   ![Configurando a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Se não houver um campo chamado **Tipo de configurações de execução**, altere a propriedade **Executor de Teste**. Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.

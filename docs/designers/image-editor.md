@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747304"
 ---
 # <a name="image-editor"></a>Editor de imagem
 
@@ -92,7 +93,7 @@ As barras de ferramentas do Editor de Imagens contêm comandos que ajudam a trab
 
  Esta é a barra de ferramentas do **Modo do Editor de Imagens**:
 
- ![A barra de ferramentas modal do Editor de Imagens.](../designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")
+ ![A barra de ferramentas modal do Editor de Imagens.](../designers/media/digit-tre-modal-toolbar.png)
 
  Esta tabela descreve os itens na barra de ferramentas **Modo do Editor de Imagens**, que são listados na ordem em que aparecem, da esquerda para a direita.
 
@@ -116,7 +117,7 @@ As barras de ferramentas do Editor de Imagens contêm comandos que ajudam a trab
 
  Esta é a barra de ferramentas do **Editor de Imagens**.
 
- ![Barra de ferramentas do Editor de Imagens](../designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")
+ ![Barra de ferramentas do editor de imagens](../designers/media/digit-tre-toolbar.png)
 
  A tabela a seguir descreve os itens da barra de ferramentas **Editor de Imagens**, que são listados na ordem em que aparecem, de cima para baixo.
 

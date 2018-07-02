@@ -1,6 +1,6 @@
 - name: Controle de versão
   href: /visualstudio/version-control/index
-- name: Visão Geral
+- name: Visão geral
   items:
     - name: Saber mais sobre o Git
       href: /vsts/git/tutorial/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Recursos
   items:
-    - name: Aprender sobre o Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: O que é o Git?
+      href: /azure/devops/git/what-is-git

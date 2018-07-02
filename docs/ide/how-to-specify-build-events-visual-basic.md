@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746202"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
 
@@ -128,7 +129,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 1.  Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 
-2.  Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Área de Trabalho Clássica do Windows** e, em seguida, o modelo **Aplicativo do Windows Forms**. Nomeie o projeto `VBWinApp`.
+2.  Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Área de Trabalho do Windows** e, em seguida, o modelo **Aplicativo do Windows Forms**. Nomeie o projeto `VBWinApp`.
 3.  Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
 4.  No **Designer de Projeto**, acesse a página **Publicar** e defina o **Local de publicação** como *C:\TEMP*.

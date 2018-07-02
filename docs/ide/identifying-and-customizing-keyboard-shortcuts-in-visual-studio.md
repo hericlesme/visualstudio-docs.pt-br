@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747223"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar e personalizar atalhos de teclado no Visual Studio
 
@@ -48,7 +49,7 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
 2. Expanda **Ambiente** e escolha **Teclado**.
 
-   ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png)
 
 3. Na caixa **Mostrar comandos que contenham**, digite todo ou parte do nome do comando sem espaços.
 
@@ -60,7 +61,7 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
 5. Se o comando tiver um atalho de teclado, ele será exibido na lista **Atalho(s) para o comando selecionado**.
 
-   ![Exibir um atalho para um comando especificado](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Exibir um atalho para um comando especificado](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizar um atalho de teclado
 
@@ -86,7 +87,7 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
      Se um atalho já estiver atribuído a outro comando, ele aparecerá na caixa **Atalho usado atualmente por**. Nesse caso, escolha a tecla **Backspace** para excluir esse atalho antes de tentar outro.
 
-    ![Especificar um atalho diferente para um comando](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Especificar um atalho diferente para um comando](../ide/media/reassignshortcut.png)
 
 7. Escolha o botão **Atribuir**.
 
@@ -107,7 +108,7 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 4. Marque a caixa de seleção **Teclado** e escolha o botão **Avançar**.
 
-    ![Exportar apenas atalhos de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Exportar apenas atalhos de teclado personalizados](../ide/media/exportshortcuts.png)
 
 5. Nas caixas **Que nome deseja dar a seu arquivo de configurações?** e **Armazenar meu arquivo de configurações neste diretório**, deixe os valores padrão ou especifique valores diferentes e escolha o botão **Finalizar**.
 
@@ -129,7 +130,7 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 7. Marque a caixa de seleção **Teclado** e escolha o botão **Finalizar**.
 
-    ![Importar apenas atalhos de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importar apenas atalhos de teclado personalizados](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Consulte também
 

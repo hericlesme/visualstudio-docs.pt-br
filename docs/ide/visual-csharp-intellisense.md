@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748225"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ A operação **Adicionar usando** do IntelliSense adiciona automaticamente a dir
 
 Para iniciar a operação **Adicionar usando**, posicione o cursor em uma referência de tipo que não pode ser resolvida. Por exemplo, quando você cria um aplicativo de console e, em seguida, adiciona `XmlTextReader` ao corpo do método `Main`, um rabisco vermelho aparece nessa linha de código, porque a referência de tipo não pode ser resolvida. Em seguida, você pode invocar a operação **Adicionar usando** por meio da **Ação Rápida**. A **Ação Rápida** fica visível apenas quando o cursor está posicionado no tipo não associado.
 
-![Adicionar usando, imagem expandida da ação rápida](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![Adicionar usando, imagem expandida da ação rápida](../ide/media/addusing-quickaction.png)
 
 Clique no ícone de lâmpada e, em seguida, escolha **using System.Xml;** para adicionar automaticamente a diretiva using.
 
@@ -143,11 +144,11 @@ No editor de códigos, o IntelliSense pode ajudá-lo a vincular métodos (manipu
 
 Ao digitar o operador `+=` após um campo de evento em um arquivo *.cs*, o IntelliSense mostra a opção de pressionar a tecla **Tab**. Isso insere uma nova instância de um delegado que aponta para o método que manipula o evento.
 
-![Botão Vínculo Automático](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Botão Vínculo Automático](../ide/media/vxautohookup.gif)
 
 Se você pressionar a tecla **Tab**, o IntelliSense concluirá a instrução para você automaticamente e exibirá a referência do manipulador de eventos como um texto selecionado no editor de códigos. Para concluir o vínculo automático de evento, o IntelliSense solicita que você pressione a tecla **Guia** novamente para criar um stub vazio para o manipulador de eventos.
 
-![Gerar manipulador de eventos](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Gerar manipulador de eventos](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Se um novo delegado criado pelo IntelliSense referenciar um manipulador de eventos existente, o IntelliSense comunicará essas informações na dica de ferramenta. Em seguida, você pode modificar essa referência; o texto já está selecionado no editor de códigos. Caso contrário, o vínculo automático de evento será concluído nesse ponto.

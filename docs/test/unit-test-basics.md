@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751511"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -41,7 +42,7 @@ Para obter uma introdução ao teste de unidade que leva você diretamente para 
 
 Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são escritos em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
 
- ![Solução MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![Solução MyBank](../test/media/ute_mybanksolution.png)
 
  Nossa primeira tentativa de um projeto para o aplicativo `MyBank` inclui um componente de contas, que representa uma conta individual e suas transações com o banco, e um componente de banco de dados, que representa a funcionalidade de agregação e gerenciamento das contas individuais.
 
@@ -85,15 +86,15 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
 
 1.  Na janela do editor de código, clique com botão direito do mouse e escolha **Criar Testes de Unidade** no menu de contexto.
 
-     ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
 
 2.  Clique em OK para aceitar os padrões e criar testes de unidade ou altere os valores usados para criar e nomear o teste de unidade de projeto e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.
 
-     ![Clique com o botão direito do mouse no editor e escolha Criar Testes de Unidade](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Clique com o botão direito do mouse no editor e escolha Criar Testes de Unidade](../test/media/createunittestsdialog.png)
 
 3.  Os stubs de teste de unidade são criados em um novo projeto de teste de unidade para todos os métodos na classe.
 
-     ![Os testes de unidade são criados](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Os testes de unidade são criados](../test/media/createunittestsstubs.png)
 
 4.  Agora, avance para saber como [adicionar código aos métodos de teste de unidade](#BKMK_Writing_your_tests) a fim de fazer o teste de unidade ser relevante ou outros testes de unidade extra que você queira adicionar para testar seu código.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
- ![Gerenciador de testes de unidade](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
 
  Conforme você executa, grava e executa novamente os testes, o modo de exibição padrão do Gerenciador de Testes exibe os resultados em grupos **Testes Reprovados**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode escolher um cabeçalho de grupo para abrir o modo de exibição que exibe todos os testes no grupo.
 
@@ -214,11 +215,11 @@ Quando você compila o projeto de teste, os testes são exibidos no Gerenciador 
 
 A barra de ferramentas do Gerenciador de Testes ajuda você a descobrir, organizar e executar os testes desejados.
 
- ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png)
 
  Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois de executar um conjunto de testes, um resumo da execução do teste é exibido na parte inferior da janela do Gerenciador de Testes. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu de contexto (Teclado: F12) para exibir o código-fonte do teste selecionado.
 
- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+ Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 
@@ -227,17 +228,17 @@ A barra de ferramentas do Gerenciador de Testes ajuda você a descobrir, organiz
 
 |||
 |-|-|
-|![Executar após a compilação](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Para executar os testes de unidade após cada compilação local, escolha **Teste** no menu padrão e escolha **Executar testes após compilação** na barra de ferramentas do Gerenciador de Testes.|
+|![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada compilação local, escolha **Teste** no menu padrão e escolha **Executar testes após compilação** na barra de ferramentas do Gerenciador de Testes.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar e agrupar a lista de teste
 
 Quando você tiver um grande número de testes, pode digitar na caixa de pesquisa do Gerenciador de Testes para filtrar a lista por cadeia de caracteres especificada. Você pode restringir seu evento de filtro ainda mais escolhendo na lista de filtros.
 
- ![Categorias de filtro de pesquisa](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Pesquisar categorias de filtro](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
+|![Botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png)|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
 
  Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
 
@@ -260,7 +261,7 @@ Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging
 
  **R:** use o IntelliSense para gerar classes e métodos no código do seu projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.
 
- ![Gerar menu Intellisense do Stub de Método](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Gerar o menu do IntelliSense de stub do método](../test/media/ute_generatemethodstubintellisense.png)
 
  **P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
 
@@ -304,7 +305,7 @@ O método atribuído é executado uma vez para cada linha na tabela. O Gerenciad
 
  Os resultados da cobertura aparecem na janela Resultados de Cobertura de Código.
 
- ![Resultados de Cobertura de Código](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Resultados da cobertura de código](../test/media/ute_codecoverageresults.png)
 
  Saiba mais sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -326,6 +327,6 @@ Saiba mais sobre [como isolar métodos de teste de unidade com o Microsoft Fakes
 
  **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md). Depois de reiniciar o Visual Studio, reabra a solução para criar testes de unidade e selecione suas estruturas instaladas aqui:
 
- ![Selecione outra estrutura de teste de unidade instalada](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Selecionar outra estrutura de teste de unidade instalada](../test/media/createunittestsdialogextensions.png)
 
  Seu stubs de teste de unidade serão criados usando a estrutura selecionada.

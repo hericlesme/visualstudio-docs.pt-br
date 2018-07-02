@@ -2,7 +2,7 @@
 title: Guia do administrador do Visual Studio
 description: Saiba mais sobre como implantar o Visual Studio em um ambiente corporativo.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691112"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guia do administrador do Visual Studio 2017
 
 Em ambientes corporativos, é comum que administradores de sistema implantem instalações para os usuários finais de um compartilhamento de rede ou usando software de gerenciamento de sistemas. Projetamos o mecanismo de instalação do Visual Studio para dar suporte à implantação corporativa, permitindo que os administradores de sistema tenham a capacidade de criar um local de instalação de rede, pré-configurar padrões de instalação, implantar chaves de produto durante o processo de instalação e gerenciar atualizações de produto depois de uma implementação com êxito. Este guia do administrador fornece orientações com base em cenários para implantações corporativas em ambientes de rede.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Implantação do Visual Studio 2017 em um ambiente corporativo
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Implantar o Visual Studio 2017 em um ambiente empresarial
 
 Você pode implantar o Visual Studio 2017 para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
 
@@ -49,12 +50,26 @@ Você pode implantar o Visual Studio 2017 para estações de trabalho cliente, c
 > [!IMPORTANT]
 > Observe que as instalações de um compartilhamento de rede se “lembrarão” do seu local de origem. Isso significa que um reparo de um computador cliente pode ter que retornar para o compartilhamento de rede do qual o cliente foi instalado originalmente. Escolha cuidadosamente seu local de rede para que ele se alinhe com o tempo de vida esperado de execução de clientes do Visual Studio 2017 na sua organização.
 
-## <a name="visual-studio-tools"></a>Ferramentas do Visual Studio
+## <a name="use-visual-studio-tools"></a>Usar ferramentas do Visual Studio
 
 Temos várias ferramentas disponíveis para ajudar você a [detectar e gerenciar instâncias do Visual Studio instaladas](tools-for-managing-visual-studio-instances.md) em computadores cliente.
 
 > [!TIP]
 > Além da documentação no guia do administrador, uma boa fonte de informações sobre a instalação do Visual Studio 2017 é o [blog de Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+
+## <a name="specify-customer-feedback-settings"></a>Especificar configurações de comentários do cliente
+
+Por padrão, a instalação do Visual Studio habilita os comentários do cliente. Quando você habilita a Política de Grupo, é possível configurar o Visual Studio para desabilitar os comentários do cliente em computadores individuais. Para fazer isso, defina uma política baseada no Registro na seguinte chave:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Entrada = **OptIn**
+
+Valor = (DWORD)
+* **0** é recusado
+* **1** é aceito
+
+Para obter mais informações sobre configurações dos comentários do cliente, confira a página [Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio](../ide/visual-studio-experience-improvement-program.md).
 
 ## <a name="get-support"></a>Obter suporte
 

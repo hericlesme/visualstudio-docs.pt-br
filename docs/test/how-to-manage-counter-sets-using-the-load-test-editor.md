@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22897b072d7051eef5c08d27fc3235050474da60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751982"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como gerenciar conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -30,7 +31,7 @@ Quando cria um teste de carga com o **Novo Assistente de Teste de Carga**, você
 
 Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do qual você deseja coletar dados de desempenho e atribuir um conjunto de contadores para coletar de cada computador individualmente. Você gerencia os contadores no **Editor de Teste de Carga**.
 
-![Gerenciando conjuntos de contadores](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Gerenciando conjuntos de contadores](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>Para gerenciar conjuntos de contadores
 

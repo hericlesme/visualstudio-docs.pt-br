@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262901"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548655"
 ---
-# <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação entre camadas por meio da linha de comando
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
 
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução síncronos que o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] chama em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados.
 
@@ -80,7 +80,7 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
     vsperfclrenv /off
     ```
 
-Para saber mais, confira [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Para obter mais informações, confira [Profile stand-alone applications](../profiling/command-line-profiling-of-stand-alone-applications.md) (Criação de perfil de aplicativos autônomos).
 
 ## <a name="profile-services"></a>Serviços de perfil
 
@@ -142,9 +142,9 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 Para obter mais informações, consulte um dos seguintes tópicos:
 
-[Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
+[Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 
 ## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Adicionar dados de interação de camadas com VSPerfASPNETCmd
 
@@ -156,4 +156,4 @@ Para adicionar interação de camadas a dados de criação de perfil coletados u
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Para obter mais informações sobre o VSPerfASPNETCmd, consulte [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Para saber mais sobre o VSPerfASPNETCmd, confira [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

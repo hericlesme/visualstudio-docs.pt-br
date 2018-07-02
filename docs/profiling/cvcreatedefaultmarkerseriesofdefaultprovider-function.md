@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6198cfc874eb8a547b77bfabe8b3fb3473fa92ef
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 6c68c7870430033d9ff20b94f51e516038c9eba6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749181"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Função CvCreateDefaultMarkerSeriesOfDefaultProvider
 Cria a série de marcador padrão de um provedor padrão.  
@@ -43,7 +44,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  S_OK quando o provedor e a série de marcador são criados com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** cvmarkers.h  
+ **Cabeçalho:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de biblioteca C++](../profiling/cpp-library-reference.md)

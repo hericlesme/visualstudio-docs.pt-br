@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751027"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Como usar o CTest para C++ no Visual Studio
 
@@ -29,7 +30,7 @@ No Visual Studio 2017 versão 15.6, o CTest é totalmente integrado ao **Gerenci
 
 A ilustração a seguir mostra os resultados de uma execução de CTest usando a estrutura do Google Test:
 
-![CTest com a Estrutura do Google Test na VS2017 15.6](media/ctest-test-explorer.png "CTest e Google Test no Gerenciador de Teste")
+![CTest com a Estrutura do Google Test no VS2017 15.6](media/ctest-test-explorer.png)
 
 Se você estiver usando CTest, mas não os adaptadores do Google ou Boost, verá resultados no nível de CTest em vez do nível de método de teste individual. Você pode depurar e percorrer executáveis apenas de CTest, mas os rastreamentos de pilha em testes individuais não têm suporte.
 
@@ -37,7 +38,7 @@ Se você estiver usando CTest, mas não os adaptadores do Google ou Boost, verá
 
 No **Visual Studio 2017 versão 15.5**, o CTest não está integrado ao **Gerenciador de Testes**. É possível executar testes do menu principal do CMake ou do menu de contexto em um arquivo **CMakeLists.txt** no **Gerenciador de Soluções**. Os resultados de teste são direcionados para a **Janela de Saída** do Visual Studio.
 
-![Executar testes de CTest na VS2017 15.5](media/cpp-cmake-run-tests.png "Executar testes de CTest na 15.5")
+![Executar testes de CTest no VS2017 15.5](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>Consulte também
 

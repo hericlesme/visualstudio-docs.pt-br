@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691037"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-A `CommentMarkProfile` função insere um marcador numérico e uma cadeia de texto no arquivo .vsp. Para que a marcação e o comentário sejam inseridos, a criação de perfil para o thread que contém a função `CommentMarkProfile` deve ser ON.  
+A função `CommentMarkProfile` insere um marcador numérico e uma cadeia de caracteres de texto no arquivo .*vsp*. Para que a marcação e o comentário sejam inseridos, a criação de perfil para o thread que contém a função `CommentMarkProfile` deve ser ON.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,7 +40,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
  Ponteiro para a cadeia de texto para inserir. A cadeia de caracteres deve ser menor que 256 caracteres, incluindo o terminador NULO.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Comentários  
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ligado quando as marcas e os comentários são inseridos com o comando VSInstr Mark ou com as funções (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).  
   
- Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .vsp.  
+ Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .*vsp*.  
   
 > [!IMPORTANT]
 >  O método CommentMarkProfile só pode ser usado com a instrumentação.  

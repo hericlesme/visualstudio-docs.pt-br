@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748745"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guia de produtividade do Visual Studio 2017 para desenvolvedores do .NET
 
@@ -88,7 +89,7 @@ O Visual Studio 2017 vem com muitas refatorações, ações de geração de cód
   - [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Refatorações no Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Refatorações no Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Preciso Localizar Usos, Ir Para Implementação, Navegar para Assemblies Descompiladas
 O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar em sua base de código. Leia mais sobre os [recursos de Navegação de código](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Nós adicionamos inúmeros recursos de depuração novos no Visual Studio 2017.
 - A opção [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
 - A opção [Depuração de instantâneo](/azure/application-insights/app-insights-snapshot-debugger) permite investigar o estado de um aplicativo Web online no momento em que uma exceção foi gerada (é necessário estar no Azure).
 
-![Novo auxiliar de exceção no VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Novo Auxiliar de Exceção no VS2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Desejo usar o controle de versão com meus projetos.
 Você pode usar o Git ou o TFVC para armazenar e atualizar seu código no Visual Studio.

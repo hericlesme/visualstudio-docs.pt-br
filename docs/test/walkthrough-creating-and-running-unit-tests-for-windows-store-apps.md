@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751709"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Passo a passo: criar e executar testes de unidade para aplicativos da UWP
 
@@ -45,11 +46,11 @@ Os procedimentos a seguir descrevem as etapas para criar, executar e depurar tes
 
 6.  Deixe a opção **Criar diretório para solução** selecionada e escolha o botão **OK**.
 
-     ![Biblioteca de Testes de Unidade Adaptados](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Biblioteca de teste de unidade adaptada](../test/media/unit_test_win8_1.png)
 
      O Gerenciador de Soluções é preenchido com o novo projeto de teste de unidade da UWP e o editor de código exibe o teste de unidade padrão intitulado UnitTest1.
 
-     ![Novo projeto de teste de unidade adaptado](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Novo projeto de teste de unidade adaptado](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Editar o arquivo de manifesto do aplicativo da UWP do projeto de teste de unidade
 
@@ -99,7 +100,7 @@ No Editor de Código, edite o teste de unidade e adicione as declarações e a l
     >
     > Além disso, você pode optar por **Depurar os Testes Selecionados**, **Abrir Teste**e usar a opção **Propriedades**.
     >
-    > ![Gerenciador de Testes de unidade &#45; menu de contexto do teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Gerenciador de Testes de Unidade &#8211; menu de contexto de teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     O teste de unidade é executado. Após a conclusão, o Gerenciador de Testes exibirá o status do teste, o tempo decorrido e fornecerá um link para a fonte.
 

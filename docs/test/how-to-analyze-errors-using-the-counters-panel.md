@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751878"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Como analisar erros usando o painel Contadores
 
@@ -22,7 +23,7 @@ O painel Contadores permanece visível na exibição Gráficos e na exibição T
 
  O nó **Erros** no painel Contadores contém todos os erros detectados durante o teste de carga. O nó Erros contém vários nós de erro da subcategoria que são específicos a diferentes tipos de erro. Por exemplo, **Exceções** e **Erros de HTTP**.
 
- ![Nó de erro do painel de contadores](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Nó de erro do painel de contadores](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>Para analisar erros no painel Contadores
 

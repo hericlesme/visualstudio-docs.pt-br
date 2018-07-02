@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056df5c589fe74ad43fdfab6abbf450d3149e74d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747411"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de teclado uma ação que normalmente exigiria vários cliques com o botão do mouse. Os atalhos de teclado no [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] estão divididos em duas categorias:
@@ -23,13 +24,13 @@ Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de 
 
      Para usar essas teclas, primeiro pressione ALT ou F10 para exibir os sublinhados e depois pressione a letra correspondente do item de menu ou caixa de diálogo específico. Como alternativa, você pode navegar através de um menu ou de uma caixa de diálogo usando a tecla TAB ou as teclas de direção. Por exemplo, se você pressionar a tecla ALT no [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)], um sublinhado será exibido sob a letra **Q** no menu **Arquivo** para identificá-la como uma tecla de acesso. Para abrir um projeto, você pode pressionar e segurar ALT, pressionar Q e depois pressionar A.
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Teclas de acesso que aparecem com um sublinhado depois que você pressiona ALT
+     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) Teclas de acesso que aparecem com um sublinhado depois que você pressiona ALT
 
 -   **Teclas de atalho** Você pode usar teclas de atalho para realizar uma ação (como selecionar um comando de menu ou modificar o comportamento de uma ferramenta) pressionando um atalho de teclado.
 
      A maioria dos atalhos de teclado é fácil de identificar na interface do usuário do [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]. Esses atalhos são exibidos à direita de comandos de menu. Por exemplo, no menu **Arquivo**, o comando de menu **Abrir Projeto** inclui o atalho de teclado CTRL+SHIFT+A. Para ver as teclas de atalho para uma ferramenta no painel **Ferramentas**, passe o ponteiro sobre a ferramenta.
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Teclas de atalho que aparecem ao lado de itens de menu que têm atalhos
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) Teclas de atalho que aparecem ao lado de itens de menu que têm atalhos
 
  Para obter mais informações sobre acessibilidade e recursos, consulte [Acessibilidade na Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).
 

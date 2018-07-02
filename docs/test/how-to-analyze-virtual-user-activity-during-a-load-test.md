@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751228"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
@@ -75,7 +76,7 @@ Os procedimentos a seguir demonstram como exibir o Gráfico de atividade do usu�
 
      **Painel de Legenda de detalhes**
 
-     ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png)
 
 2.  Marque ou desmarque as caixas de seleção dos erros, logs, testes, pesquisas e páginas aspx associados ao teste de carga.
 
@@ -87,7 +88,7 @@ Os procedimentos a seguir demonstram como exibir o Gráfico de atividade do usu�
 
      **Painel Filtrar resultados**
 
-     ![Painel Filtrar resultados](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Painel Filtrar resultados](../test/media/ltest_filterresults.png)
 
 3.  Em Filtrar resultados, marque ou desmarque as caixas de seleção das seguintes opções de filtro:
 

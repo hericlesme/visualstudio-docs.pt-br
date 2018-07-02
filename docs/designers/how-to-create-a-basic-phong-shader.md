@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746579"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
 
@@ -45,7 +46,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 > [!NOTE]
 > Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
 
- ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![Grafo de sombreador e uma versão prévia de seu efeito](../designers/media/digit-lighting-graph.png)
 
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md)
 
@@ -56,7 +57,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 >
 > A propriedade **MaterialSpecularPower** determina a intensidade dos realces especulares. Alta potência especular simula realces mais opacos e localizados. A potência especular muito baixa simula realces intensos e abrangentes que podem saturar e ocultar a cor da superfície inteira.
 
- ![Iluminação de Phong aplicada a um modelo](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![Iluminação Phong aplicada a um modelo](../designers/media/digit-lighting-model.png)
 
  Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

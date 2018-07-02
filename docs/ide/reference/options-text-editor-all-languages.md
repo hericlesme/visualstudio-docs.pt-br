@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749223"
 ---
 # <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.
@@ -70,7 +71,7 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
 
  Quando selecionada, um indicador de seta d retorno é exibido no ponto em que uma linha longa quebra-se para uma segunda linha.
 
- ![Captura de tela de LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")
+ ![Captura de tela de LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
  Desmarque esta opção se preferir não exibir esses indicadores.
 

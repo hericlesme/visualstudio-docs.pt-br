@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448435"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751598"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
 
@@ -43,7 +43,7 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 
  A propriedade de **Número máximo de iterações de teste** é útil para diversas situações. Alguns testadores de carga preferem executar testes baseados em iteração, enquanto outros preferem executar testes baseados em duração.
 
- ![Especificando iterações de teste em um cenário](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Especificando iterações de teste em um cenário](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Para especificar o máximo de iterações de teste
 

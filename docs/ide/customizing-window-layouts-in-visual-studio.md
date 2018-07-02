@@ -25,11 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2cd35623f1c90dbfa47204d901fdaa48340fc5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746839"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -94,23 +95,23 @@ Para retornar uma janela do documento ou de ferramentas para seu local encaixado
 
 A ilustração a seguir mostra o losango do guia para janelas de documentos, que só podem ser encaixadas dentro do quadro de edição:
 
-![Losango do guia da janela do documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+![Losango do guia da janela do documento](../ide/media/documentwindowguidediamonds.png)
 
 As janelas de ferramentas podem ser fixadas em um lado de um quadro no IDE ou dentro do quadro de edição. Um guia do losango será exibido quando você arrastar uma janela de ferramentas para outro lugar para ajudá-lo a reencaixar a janela facilmente.
 
 Losango do guia para janelas de ferramentas
 
-![Losangos do guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+![Losangos do guia da janela de ferramentas](../ide/media/vs10guidediamond.png)
 
 A ilustração a seguir mostra o **Gerenciador de Soluções** que está sendo encaixado em um novo local, mostrado pela área sombreada azul:
 
-![Encaixando o Gerenciador de Soluções em uma nova posição](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")
+![Encaixando o Gerenciador de Soluções em uma nova posição](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Fechar e ocultar automaticamente janelas de ferramentas
 
 É possível fechar uma janela de ferramentas clicando no **X** na parte superior da barra de título. Para reabrir a janela, use seu atalho de teclado ou o comando de menu. As janelas de ferramentas dão suporte a um recurso denominado *ocultar automaticamente*, que faz com que uma janela saia da frente quando você usa uma janela diferente. Quando uma janela é ocultada automaticamente, o nome dela é exibido em uma guia na borda do IDE. Para usar a janela novamente, aponte para a guia para que a janela volte a ser exibida.
 
-![Ocultar Automaticamente](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")
+![Ocultar automaticamente](../ide/media/vs2015_auto_hide.png)
 
 > [!NOTE]
 > Para definir se ocultar automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
@@ -167,7 +168,7 @@ Primeiro, crie uma solução de teste que tem dois projetos, cada um com um layo
 
 Para mudar entre layouts, use os atalhos de teclado ou, no menu principal, escolha **Janela** > **Aplicar Layout de Janela**.
 
-![Aplicar menu de layout de janela](../ide/media/vs2015_applywindowlayout.png "VS2017_ApplyWindowLayout")
+![Aplicar menu de layout de janela](../ide/media/vs2015_applywindowlayout.png)
 
 Depois de aplicar o layout da interface do usuário, observe como ele é preservado tanto no modo de edição quanto no modo de depuração.
 
@@ -180,7 +181,7 @@ Se você tiver vários monitores no trabalho e um laptop de um só monitor em ca
 
 É possível remover, renomear ou reordenar seu layout personalizado escolhendo **Janela** > **Gerenciar Layouts de Janela**. Se você mover um layout, a associação de teclas será ajustada automaticamente para refletir a nova posição na lista. Do contrário, as associações não poderão ser modificadas e, assim, será possível armazenar, no máximo, 10 layouts por vez.
 
-![Gerenciar layouts de janela](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+![Gerenciar layouts de janelas](../ide/media/managewindowlayouts.png)
 
 Para se lembrar de qual atalho de teclado foi atribuído a qual layout, escolha **Janela** > **Aplicar Layout de Janela**.
 

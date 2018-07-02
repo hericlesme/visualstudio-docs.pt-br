@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692295"
 ---
-# <a name="concurrency-visualizer-markers"></a>Marcadores do Visualizador de Simultaneidade
+# <a name="concurrency-visualizer-markers"></a>Marcadores da Visualização Simultânea
 Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e tempos de execução que o aplicativo usa.  
   
 ## <a name="kinds-of-markers"></a>Tipos de marcadores  
@@ -34,7 +35,7 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
  Cada thread que gera marcadores tem um canal separado de linha do tempo.  A ID do thread responsável por gerar os eventos de marcador é mostrada ao lado da descrição do canal do marcador.  A ID mostrada no lado esquerdo do canal do marcador corresponde à ID de outro thread no processo atual.  
   
 ## <a name="marker-importance"></a>Importância do marcador  
- Os marcadores podem ter um dos quatro níveis de importância: baixa, normal, alta e crítica.  É possível filtrar as fontes de marcadores com base no nível de importância.  Por exemplo, se você só desejar ver os marcadores de uma fonte específica que tem importância normal ou crítica, será possível configurar o filtro na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A importância de um marcador é exibida em sua dica de ferramenta e no [Relatório de Marcadores](../profiling/markers-report.md).  
+ Os marcadores podem ter um dos quatro níveis de importância: baixa, normal, alta e crítica.  É possível filtrar as fontes de marcadores com base no nível de importância.  Por exemplo, se você só desejar ver os marcadores de uma fonte específica que tem importância normal ou crítica, será possível configurar o filtro na caixa de diálogo [Configurações avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A importância de um marcador é exibida em sua dica de ferramenta e no [Relatório de Marcadores](../profiling/markers-report.md).  
   
 ## <a name="marker-category"></a>Categoria de marcador  
  Uma categoria de marcador indica um grupo de eventos de marcador que vêm da mesma fonte.  A Visualização Simultânea usa cor para diferenciar diferentes categorias de sinalizadores e intervalos. É possível configurar a Visualização Simultânea para usar categorias para filtrar os eventos de marcador em um provedor de eventos específico.  Use a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para configurar o filtro.  
@@ -59,10 +60,10 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
  É possível usar a guia Marcadores na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar se os marcadores de várias fontes são exibidos na Visualização Simultânea e é possível filtrá-los com base na importância e na categoria.  
   
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
- A Visualização Simultânea também pode exibir eventos EventSource.  Para obter mais informações, consulte [Visualizando eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
+ A Visualização Simultânea também pode exibir eventos EventSource.  Para obter mais informações, confira [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Marcadores de sinalizador](../profiling/flag-markers.md)   
  [Marcadores de mensagem](../profiling/message-markers.md)   
  [Marcadores de intervalo](../profiling/span-markers.md)   
- [Visualizando eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md)
+ [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md)

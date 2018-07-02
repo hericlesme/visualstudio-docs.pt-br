@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751813"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como criar uma configuração de teste para um teste de carga distribuída
 
@@ -74,7 +75,7 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      A página **Funções** é exibida.
 
-     ![Função de configuração de teste](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Função de configuração de teste](../test/media/load_testtestrole.png)
 
 10. Para executar testes remotamente ou executar testes e coletar dados remotamente, use a lista suspensa **Método de execução de teste** e selecione **Execução remota**.
 
@@ -108,7 +109,7 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      A página **Dados e Diagnósticos** é exibida.
 
-     ![Dados e diagnósticos da configuração de teste](../test/media/load_testtest.png "Load_TestTest")
+     ![Dados e diagnósticos da configuração de teste](../test/media/load_testtest.png)
 
 18. Na página **Dados e Diagnóstico**, você define o que a função realiza ao selecionar os *adaptadores de dados de diagnóstico* que a função usará para coletar dados. Portanto, se um ou mais adaptadores de dados e de diagnóstico forem habilitados para a função, o controlador de teste escolherá um computador agente de teste disponível para coletar dados para os dados especificados e adaptadores de diagnóstico baseados nos atributos que você definiu para a função. Para selecionar os dados e os adaptadores de dados de diagnóstico que você deseja coletar para cada função, selecione a função. Para cada função, selecione os adaptadores de dados de diagnóstico de acordo com as necessidades de teste. Para configurar cada adaptador de dados de diagnóstico que você selecionou para cada função, escolha **Configurar**.
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750689"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um Editor de Corpo HTTP Personalizado para o Editor de Testes de Desempenho Web
 
@@ -52,7 +53,7 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
 
 5.  Da **Caixa de Ferramentas**, na categoria **Controles Comuns**, arraste uma <xref:System.Windows.Forms.RichTextBox> para a superfície de UserControl1.
 
-6.  Escolha o glifo de marca de ação (![Glifo de marcação inteligente](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) no canto superior direito do controle <xref:System.Windows.Forms.RichTextBox> e, em seguida, selecione **Encaixar no Contêiner Pai**.
+6.  Escolha o glifo de marcação de ação (![Glifo de Marcação Inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do controle <xref:System.Windows.Forms.RichTextBox> e, em seguida, selecione **Encaixar no Contêiner Pai**.
 
 7.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto da Biblioteca do Windows Forms e selecione **Propriedades**.
 

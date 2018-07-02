@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745989"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 
@@ -30,14 +31,14 @@ Se você ainda não fez isso, entre no Visual Studio antes de relatar um problem
 2. Se você não estiver conectado, selecione **Entrar**; essa opção está do lado direito da ferramenta, conforme mostrado na captura de tela a seguir.
 3. Siga as instruções na tela para se conectar.
 
- ![Conectar para relatar um problema](../ide/media/sign-in-new-ux.png "Conectar para relatar um problema")
+ ![Entrar para relatar um problema](../ide/media/sign-in-new-ux.png)
 
 ## Pesquisar e votar em problemas semelhantes <a name="search_and_vote"></a>
 
 1. Pesquise o problema e veja se outros usuários também já o relataram.
 2. Se alguém tiver relatado, "vote como positivo" para nos informar.
 
-  ![Pesquisar e votar em problemas semelhantes](../ide/media/search-and-vote.png "Pesquisar e votar em problemas semelhantes")
+  ![Pesquisar e votar em problemas semelhantes](../ide/media/search-and-vote.png)
 
 ## Relatar um problema novo <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Se você ainda não fez isso, entre no Visual Studio antes de relatar um problem
 2. Crie um título descritivo para o problema que nos ajude a encaminhá-lo à equipe correta do Visual Studio.
 3. Forneça todos os detalhes adicionais e, se possível, forneça as etapas para reproduzir o problema.
 
-  ![Relatar um problema novo](../ide/media/report-new-problem.png "Relatar um problema novo")
+  ![Relatar um problema novo](../ide/media/report-new-problem.png)
 
 ## Fornecer uma captura de tela e anexos (opcional) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 1. Escolha a guia **Gravar**.
 2. Escolha **Iniciar Gravação**. Conceda permissão para executar a ferramenta.
 
-  ![Escolha “Iniciar Gravação” para fornecer um arquivo de despejo de heap e rastreamento ](../ide/media/record-dialog-box.png "Fornecer arquivo de despejo de heap e rastreamento")
+  ![Escolha “Iniciar gravação” para fornecer um arquivo de despejo de heap e rastreamento ](../ide/media/record-dialog-box.png)
 
 3. Quando a ferramenta **Gravador de Passos** aparecer, execute as etapas que reproduzem o problema.
 4. Ao terminar, escolha o botão **Parar Gravação**.

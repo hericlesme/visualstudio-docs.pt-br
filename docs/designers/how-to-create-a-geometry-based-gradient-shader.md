@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745770"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como criar um sombreador de gradiente com base na geometria
 
@@ -49,13 +50,13 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 > [!NOTE]
 > Nesta ilustração é especificada uma cor laranja para demonstrar melhor o efeito do sombreador, mas como a forma de visualização não tem posição no espaço de mundo, o sombreador não pode ser visualizado totalmente no Designer de Sombreador. O sombreador deve ser visualizado em uma cena real para demonstrar o efeito completo.
 
- ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![Grafo de sombreador e uma versão prévia de seu efeito](../designers/media/digit-gradient-effect-graph.png)
 
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter informações sobre como visualizar sombreadores no Designer de Sombreador, consulte **Visualização de Sombreadores** em [Designer de Sombreador](../designers/shader-designer.md)
 
  A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a uma cena 3D que é demonstrada em [Como modelar terreno 3D](../designers/how-to-model-3-d-terrain.md). A intensidade da cor aumenta com a altura do ponto no mundo.
 
- ![Efeito de gradiente aplicado a um modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![Efeito de gradiente aplicado a um modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
  Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

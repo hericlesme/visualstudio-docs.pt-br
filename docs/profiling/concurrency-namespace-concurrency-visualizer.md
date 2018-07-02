@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548132"
 ---
-# <a name="concurrency-namespace-concurrency-visualizer"></a>Namespace de simultaneidade (Visualizador de Simultaneidade)
+# <a name="concurrency-namespace-concurrency-visualizer"></a>Namespace de simultaneidade (Visualização Simultânea)
 O namespace `Concurrency` oferece classes e funções que permitem que você acesse o Tempo de execução de simultaneidade, uma estrutura de programação simultânea para C++. Para obter mais informações, consulte [Tempo de Execução de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime).  
   
 ## <a name="syntax"></a>Sintaxe  

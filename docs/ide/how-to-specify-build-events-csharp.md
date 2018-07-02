@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746254"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
 
@@ -148,7 +149,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 1.  Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Área de Trabalho Clássica do Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Nomeie o projeto `CSWinApp`.
+2.  Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Área de Trabalho do Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Nomeie o projeto `CSWinApp`.
 
 3.  Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 

@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751618"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Como usar o Boost.Test para C++ no Visual Studio
 
 No **Visual Studio 2017 versão 15.5** e posterior, o adaptador de teste Boost.Test está integrado ao IDE do Visual Studio como um componente da carga de trabalho **Desenvolvimento para desktop com C++**.
 
-![Adaptador de teste para Boost.Test](media/cpp-boost-component.png "Adaptador de teste para o componente Boost.Test")
+![Adaptador de Teste para Boost.Test](media/cpp-boost-component.png)
 
 Se a carga de trabalho **Desenvolvimento para desktop com C++** não estiver instalada, abra o **Instalador do Visual Studio** e selecione **Modificar**. Selecione a carga de trabalho **Desenvolvimento para desktop com C++** e escolha o botão **Modificar**.
 
@@ -43,7 +44,7 @@ O Boost.Test exige o [Boost](http://www.boost.org/)! Se o Boost não estiver ins
 
 1. Para criar um arquivo .cpp para seus testes, clique com o botão direito nó do projeto no **Gerenciador de Soluções** e escolha **Adicionar Novo Item**.
 
-   ![Modelo de Item Boost.Test](media/boost_test_item_template.png "Modelo de Item Boost.Test")
+   ![Modelo de item Boost.Test](media/boost_test_item_template.png)
 
 1. O novo arquivo contém um método de teste de exemplo. Compile o projeto para habilitar o **Gerenciador de Testes** e descobrir o método.
 
@@ -87,7 +88,7 @@ No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste o
 
 1. No arquivo .cpp de teste, adicione quaisquer diretivas `#include` necessárias para que os tipos e as funções do programa sejam visíveis para o código de teste. Normalmente, o programa está um nível acima na hierarquia de pastas. Se você digitar `#include "../"`, uma janela do IntelliSense será exibida e permitirá que você selecione o caminho completo para o arquivo de cabeçalho.
 
-   ![Adicionar diretivas de inclusão](media/cpp-gtest-includes.png "Adicionar diretivas de inclusão ao arquivo .cpp de teste")
+   ![Adicionar diretivas de #inclusão](media/cpp-gtest-includes.png)
 
    Você pode usar a biblioteca autônoma com:
 

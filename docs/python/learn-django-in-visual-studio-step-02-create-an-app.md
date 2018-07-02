@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454682"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750500"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2 do tutorial: Criar um aplicativo do Django com modos de exibição e modelos de página
 
@@ -107,7 +107,7 @@ Neste ponto, se você executar novamente o projeto no Visual Studio (usando o bo
 
 Como você já fez alterações no seu código e as testou com êxito, agora é o momento ideal para revisar e confirmar as alterações ao controle do código-fonte. Etapas posteriores neste tutorial lembram o momento apropriado para confirmar o controle do código-fonte novamente e encaminham você de volta para esta seção.
 
-1. Selecione o botão de alterações na parte inferior do Visual Studio (círculos abaixo), que encaminha para o **Team Explorer**.
+1. Selecione o botão de alterações na parte inferior do Visual Studio (circulado abaixo), que encaminha para o **Team Explorer**.
 
     ![Botão de alterações de controle do código-fonte na barra de status do Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ As etapas a seguir demonstram o uso de modelos de página:
 
 1. Execute o projeto e observe o resultado. Você deve ver uma mensagem semelhante àquela vista na etapa 2-2, indicando que o modelo funciona.
 
-    Observe, no entanto, que o HTML usado na propriedade `content` é processado apenas como texto simples, porque a função `render` escapa automaticamente esse HTML. Embora você possa fazer escapes, o ideal é evitar o uso de HTML embutido. A formatação e o estilo são melhor mantidos no modelo de página, não no código, e é simples criar variáveis adicionais quando necessário.
-
-    Por exemplo, altere `templates/index.html` para corresponder à seguinte marcação, que adiciona um título de página e mantém toda a formatação no modelo de página:
+    Observe, no entanto, que o HTML usado na propriedade `content` é processado apenas como texto simples, porque a função `render` escapa automaticamente esse HTML. O escape automático impede vulnerabilidades acidentais em ataques de injeção: os desenvolvedores geralmente coletam a entrada de uma página e a usam como um valor em outra por meio de um espaço reservado de modelo. O escape também funciona como um lembrete de que é melhor novamente manter o HTML no modelo da página e fora do código. Felizmente, é simples criar variáveis adicionais quando necessário. Por exemplo, altere `templates/index.html` para corresponder à seguinte marcação, que adiciona um título de página e mantém toda a formatação no modelo de página:
 
     ```html
     <html>

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747112"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
 
@@ -41,7 +42,7 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 > [!NOTE]
 > Na ilustração foi especificada uma cor laranja para demonstrar melhor o efeito do sombreador.
 
-![Grafo de sombreador e seu resultado em um modelo 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![Grafo de sombreador e seu resultado em um modelo 3D](../designers/media/digit-flat-color-effect.png)
 
 Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md).
 

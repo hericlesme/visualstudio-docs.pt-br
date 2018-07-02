@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750929"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
 
@@ -36,7 +37,7 @@ Ao criar um novo cenário usando o Novo Assistente de Teste de Carga, você pode
 
 Você pode adicionar mais testes de unidade e desempenho na Web à combinação de texto do cenário usando o Editor de testes de carga.
 
-![Adicionando um teste a um teste de carga existente](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Adicionando um teste a um teste de carga existente](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Para adicionar mais testes a um cenário existente
 
@@ -55,7 +56,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 5.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, consulte [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Removendo testes de um cenário
- ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para remover testes de um cenário
 

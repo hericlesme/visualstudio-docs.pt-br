@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba328ae4b54728422e032741e20543b99f49d5ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 862e70c104db08f147c6a608adf1cf022b642025
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749773"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
   
  A Regra é acionada apenas para aplicativos de 32 bits em execução em computadores de 32 bits.  
   
-## <a name="rule-description"></a>Descrição da Regra  
+## <a name="rule-description"></a>Descrição da regra  
  O CLR (Common Language Runtime) do Microsoft .NET fornece um mecanismo de gerenciamento automático de memória que usa um coletor de lixo para recuperar a memória de objetos que não são mais usados pelo aplicativo. O coletor de lixo é orientado a geração, com base na suposição de que muitas alocações são de curta duração. Variáveis locais, por exemplo, devem ser de curta duração. Os objetos recém-criados iniciam na geração 0 (ger 0), em seguida, progridem para a geração 1 quando sobrevivem a uma execução da coleta de lixo e, por fim, fazem a transição para a geração 2 se ainda são usados pelo aplicativo.  
   
  Objetos gerenciados maiores que 85 KB são alocados no Heap de Objetos Grandes, no qual estão sujeitos à coleta de lixo e à compactação menos frequentes do que objetos menores. objetos grandes são gerenciados separadamente porque se presume que são mais persistentes e porque combinar objetos persistentes e grandes com objetos menores frequentemente alocados pode produzir a pior fragmentação do heap.  

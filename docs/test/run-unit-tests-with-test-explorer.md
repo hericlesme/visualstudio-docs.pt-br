@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752060"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -29,13 +30,13 @@ O **Gerenciador de Testes** pode executar testes de vários projetos de teste em
 
 Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
-![Gerenciador de testes de unidade](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
 
 Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados nos grupos padrão de **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode alterar a forma como o Gerenciador de Testes agrupa seus testes.
 
 Você pode executar a maior parte do trabalho de encontrar, organizar e executar testes usando a barra de ferramentas do Gerenciador de Testes.
 
-![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Executar testes
 
@@ -47,7 +48,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 - Selecione os testes individuais que deseja executar, abra o menu de contexto para um teste selecionado e escolha **Executar Testes Selecionados**.
 
-- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 
@@ -65,7 +66,7 @@ Conforme você executa, grava e executa novamente os testes, o Gerenciador de Te
 
 Para exibir os detalhes de um teste individual, selecione o teste.
 
-![Detalhes da execução do teste](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Detalhes da execução do teste](../test/media/ute_testdetails.png)
 
 O painel de detalhes de teste exibe as seguintes informações:
 
@@ -91,9 +92,9 @@ O Gerenciador de Testes permite agrupar os testes em categorias predefinidas. A 
 
 ### <a name="group-tests-in-the-test-list"></a>Agrupar testes na lista de testes
 
- Para alterar a maneira que testes são organizados, escolha a seta para baixo ao lado do botão **Agrupar por** ![botão de agrupar o Gerenciador de Testes](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") e selecione novos critérios de agrupamento.
+ Para alterar a maneira como os testes são organizados, escolha a seta para baixo ao lado do botão **Agrupar por** ![botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png) e selecione novos critérios de agrupamento.
 
- ![Agrupar testes por categoria no Gerenciador de testes](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Agrupar testes por categoria no Gerenciador de Testes](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
@@ -135,7 +136,7 @@ Para filtrar por um critério diferente:
 
 3. Insira o valor do filtro entre aspas.
 
-![Filtrar testes no Gerenciador de testes](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtrar testes no Gerenciador de Testes](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
@@ -162,7 +163,7 @@ Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes 
 
  É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Ao selecionar uma lista de reprodução, os testes na lista são exibidos no Gerenciador de Testes. É possível adicionar um teste a mais de uma lista de reprodução e todos os testes no projeto estarão disponíveis quando você escolher a lista de reprodução **Todos os Testes**.
 
- ![Escolha uma lista de reprodução](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Escolher uma playlist](../test/media/ute_playlist.png)
 
  **Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de contexto, escolha **Adicionar à lista de reprodução**, **NewPlaylist**. Salve o arquivo com o nome e local que você especificar na caixa de diálogo **Criar nova lista de reprodução**.
 
@@ -170,7 +171,7 @@ Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes 
 
  **Para abrir uma lista de reprodução**, escolha o teste, a lista de reprodução no menu do Visual Studio e escolha na lista de listas de reprodução usadas recentemente ou escolha Abrir a lista de reprodução para especificar o nome e o local da lista de reprodução.
 
- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+ Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Depurar e analisar testes de unidade
 

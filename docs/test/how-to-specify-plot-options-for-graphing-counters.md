@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8e17d0f9e25616f70e1d5f74cd0ed4916efc7b8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750916"
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>Como especificar opções de plotagem para contadores de representação gráfica
 
 A caixa de diálogo **Opções de Plotagem** permite alterar a cor e o estilo de linha de um contador plotado em um gráfico. Você também pode corrigir o intervalo em um valor específico ou definir o intervalo para ser ajustado automaticamente com base nos dados da amostra.
 
-![Caixa de diálogo Opções de Plotagem](../test/media/ltest_plotoptions.png "LTest_PlotOptions")
+![Caixa de diálogo Opções de Plotagem](../test/media/ltest_plotoptions.png)
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Para especificar opções de plotagem para gráficos
 

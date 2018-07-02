@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747861"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
@@ -59,7 +60,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      Quando você digita o ponto (.) após `randomizer` no código, uma janela do IntelliSense é aberta e mostra todos os métodos do objeto Random que você pode chamar. Por exemplo, o IntelliSense lista o método `Next()`, como segue.
 
-     ![Próximo método](../ide/media/express_randomwhite.png "Express_RandomWhite") Próximo método
+     ![Próximo método](../ide/media/express_randomwhite.png) Próximo método
 
      Quando você inseri um ponto depois de um objeto, o IntelliSense exibe uma lista de membros do objeto, como propriedades, métodos e eventos.
 
@@ -88,7 +89,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      Um problema aleatório de adição aparece, conforme mostra a ilustração a seguir.
 
-     ![Problema aleatório de adição](../ide/media/express_additionproblem.png "Express_AdditionProblem") Problema aleatório de adição
+     ![Problema aleatório de adição](../ide/media/express_additionproblem.png) Problema aleatório de adição
 
      Na próxima etapa do tutorial, você adicionará o resultado.
 

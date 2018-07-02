@@ -1,26 +1,28 @@
 ---
 title: Assinaturas do Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327184"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946920"
 ---
 # <a name="visual-studio-subscriptions"></a>Assinaturas do Visual Studio
+
 As assinaturas do Visual Studio são um conjunto abrangente de recursos para criar, implantar e gerenciar grandes aplicativos em suas plataformas e dispositivos preferidos, incluindo Windows, iOS, Android e Linux.  Os benefícios das assinaturas são: acesso a ferramentas para desenvolvedores, serviços de nuvem e software, treinamento e suporte para necessidades de desenvolvimento e teste.
 
-##  <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Introdução
+
 Os administradores entram em [https://manage.visualstudio.com](https://manage.visualstudio.com) para atribuir assinaturas às suas equipes.<br>
 Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.com) para acessar os benefícios da assinatura.
 
@@ -134,6 +136,12 @@ Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.co
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>O que há de novo
+
+Para tornar sua assinatura ainda mais útil, podemos adicionar e atualizar os benefícios de assinatura com frequência. Para saber mais, veja a página [Novidades em assinaturas](whats-new-in-subscriptions.md).
 
 ---
 

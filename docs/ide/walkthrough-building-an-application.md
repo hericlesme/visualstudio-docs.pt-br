@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748212"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -33,31 +34,31 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
 1. Abra a caixa de diálogo **Configuration Manager**.
 
-   ![Menu Build, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Menu Compilar, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. Na lista **Configuração da solução ativa**, escolha **\<Nova....\>**.
 
 1. Na caixa de diálogo **Nova Configuração da Solução**, dê à nova configuração o nome `Test`, copie as configurações da configuração **Depuração** existente e, em seguida, escolha o botão **OK**.
 
-   ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. Na lista **Plataforma da solução ativa**, escolha **\<Nova...\>**.
 
 1. Na caixa de diálogo **Nova Plataforma de Solução**, escolha **x64** e não copie as configurações da plataforma x86.
 
-   ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Escolha o botão **OK**.
 
    A configuração da solução ativa foi alterada para **Teste** com a plataforma da solução ativa definida como x64.
 
-   ![Configuration Manager com a configuração de Teste](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager com configuração de Teste](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Escolha **Fechar**.
 
 É possível verificar ou alterar de forma rápida a configuração da solução ativa usando a lista **Configurações da Solução** na barra de ferramentas **Padrão**.
 
-![Opção de Configuração da Solução na barra de ferramentas Padrão](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Configuração de solução opção Barra de ferramentas padrão](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Compilar o aplicativo
 
@@ -83,9 +84,9 @@ Em seguida, apresentaremos alguns códigos que fazem com que um aviso seja gerad
 
 A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido, mas foram gerados avisos:
 
-![Janela de Saída do Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Janela de Saída Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Janela de Saída do Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Janela de Saída do Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Temporariamente, é possível ocultar determinadas mensagens de aviso durante um build, em vez de deixá-las acumular a saída do build.
 
@@ -99,7 +100,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Escolha a página **Build** e, em seguida, na caixa **Suprimir avisos**, especifique o número de aviso **0168**.
 
-     ![Página Build, Designer de Projeto](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Página Build, Designer de Projeto](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Para obter mais informações, consulte [Página Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      A Janela de **Saída** exibe apenas informações de resumo do build.
 
-     ![Janela de Saída, Avisos de Build do Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Janela de Saída, Visual C&#35; Avisos de build](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Suprimir todos os avisos de build do Visual Basic
 
@@ -119,7 +120,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Na página **Compilar**, marque a caixa de seleção **Desabilitar todos os avisos**.
 
-     ![Página Compilar, Designer de Projeto](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Página Compilar, Designer de Projeto](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Para obter mais informações, consulte [Configurar avisos no Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
  A Janela de **Saída** exibe apenas informações de resumo do build.
 
- ![Janela de Saída, Avisos de Build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Janela de Saída, Avisos de build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Para obter mais informações, consulte [Como suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Abra a caixa de diálogo **Opções**.
 
-     ![Comando Opções no menu Ferramentas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+     ![Comando Opções no menu Ferramentas](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Escolha a categoria **Projetos e Soluções** e, em seguida, a página **Compilar e Executar**.
 
@@ -174,7 +175,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 1. Abra o **Designer de Projeto**.
 
-     ![Menu Exibir, comando Páginas de Propriedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menu Exibir, comando Páginas de propriedade](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Escolha a página **Compilar**.
 
@@ -191,13 +192,13 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 1. Compile o aplicativo.
 
-     ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Especificar um build de versão para o C# #
 
 1. Abra o **Designer de Projeto**.
 
-     ![Menu Exibir, comando Páginas de Propriedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menu Exibir, comando Páginas de propriedade](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Escolha a página **Build**.
 
@@ -216,7 +217,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 1. Compile o aplicativo.
 
-     ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png)
 
    O arquivo executável é copiado para o caminho de rede especificado. Seu caminho será `\\myserver\builds\\FileName.exe`.
 

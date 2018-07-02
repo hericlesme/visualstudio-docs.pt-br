@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448331"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748186"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
 
@@ -42,7 +42,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 3.  No painel central, escolha **Projeto de Teste de Unidade** e aceite o nome padrão `UnitTestProject1`. A ilustração a seguir mostra a caixa de diálogo quando ele for exibido em [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], a caixa de diálogo tem aparência semelhante.
 
-     ![Caixa de diálogo Novo Projeto de Teste](../ide/media/newproject_test.png "NewProject_Test")
+     ![Caixa de diálogo Novo projeto de teste](../ide/media/newproject_test.png)
 
 4.  Escolha **OK** para fechar a caixa de diálogo **Novo Projeto**.
 
@@ -67,9 +67,9 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 3.  Localize o método `TestMethod1()` e renomeie-o para `DefaultAutomobileIsInitializedCorrectly()`. Dentro desse método, crie uma nova instância de uma classe chamada `Automobile`, conforme mostrado nas capturas de tela a seguir. Um sublinhado ondulado é exibido, indicando um erro em tempo de compilação e uma lâmpada de [Ações Rápidas](../ide/quick-actions.md) aparece na margem esquerda (somente no C#) ou diretamente abaixo do rabisco, se você passa o mouse sobre ele.
 
-     ![Ações Rápidas no Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Ações rápidas no Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Ações rápidas no C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Ações rápidas em C&#35;](../ide/media/genclass_underline.png)
 
 4.  Escolha ou clique na lâmpada **Ações Rápidas**. Você verá uma mensagem de erro afirmando que o tipo `Automobile` não está definido. Você também verá algumas possíveis soluções.
 
@@ -77,7 +77,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 6. Na lista **Projetos**, clique em **GFUDemo\_VB** ou **GFUDemo_CS** para instruir o Visual Studio a adicionar o arquivo no projeto de biblioteca de classes em vez do projeto de teste. Se ainda não estiver selecionado, escolha **Criar novo arquivo** e nomeie-o *Automobile.cs* ou *Automobile.vb*.
 
-     ![Caixa de diálogo Gerar Novo Tipo](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Caixa de diálogo Gerar Novo Tipo](../ide/media/genotherdialog.png)
 
 6.  Clique em **OK** para fechar a caixa de diálogo e criar o novo arquivo.
 
@@ -134,7 +134,7 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 
      A janela **Resultados do Teste** é mostrada na ilustração a seguir.
 
-     ![Resultados do teste que falharam](../ide/media/testsfailed.png "TestsFailed")
+     ![Resultados de teste que falharam](../ide/media/testsfailed.png)
 
 2.  Na janela **Resultados de Teste**, clique duas vezes em cada linha de resultado do teste para ir até o local de cada teste.
 
@@ -156,7 +156,7 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 
      Dessa vez os testes são aprovados. A janela **Resultados do Teste** é mostrada na ilustração a seguir.
 
-     ![Resultados do teste que foram aprovados](../ide/media/testspassed.png "TestsPassed")
+     ![Resultados de teste que foram aprovados](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Consulte também
 

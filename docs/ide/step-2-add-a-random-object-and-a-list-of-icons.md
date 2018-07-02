@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746826"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Cada símbolo é adicionado a duas células aleatórias no TableLayoutPanel do formulário. Para isso, use duas instruções `new` para criar dois objetos. A primeira é um objeto <xref:System.Random>, como o usado no jogo de enigmas de matemática. Ele é usado nesse código para escolher aleatoriamente células no TableLayoutPanel. O segundo objeto, que pode ser novo para você, é um objeto <xref:System.Collections.Generic.List%601>, que é usado para armazenar os símbolos escolhidos aleatoriamente.
@@ -35,7 +36,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 3.  Ao adicionar o objeto de lista, observe a janela do **IntelliSense** que é aberta. Veja a seguir um exemplo do Visual C#, mas texto semelhante aparece quando você adiciona uma lista no Visual Basic.
 
-     ![Janela Propriedades mostrando o evento Clique](../ide/media/express_listintellisense.png "Express_ListIntellisense") Janela do IntelliSense
+     ![Janela Propriedades mostrando o evento de clique](../ide/media/express_listintellisense.png) Janela do IntelliSense
 
     > [!NOTE]
     >  A janela do IntelliSense aparece apenas quando você insere código manualmente. Se você copiar e colar o código, ela não aparecerá.

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a55bcfd09a99d9808bc378e680c33594007661e1
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476671"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
 Os subcomandos **ThreadOff** e **ThreadOn** do VSPerfCmd.exe só estão disponíveis em sessões de criação de perfil de linha de comando que usam o método de instrumentação. **ThreadOff** e **ThreadOn** pausam e retomam a criação de perfil para o thread especificado. O **ThreadOff** para a criação de perfil do thread e o **ThreadOn** inicia a criação de perfil do thread.  
@@ -29,7 +30,7 @@ Os subcomandos **ThreadOff** e **ThreadOn** do VSPerfCmd.exe só estão disponí
   
 -   O **ThreadOn** define imediatamente a contagem de início/parada de thread para 1 e, portanto, retoma de criação de perfil.  
   
- Confira [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md) para obter mais informações.  
+ Para obter mais informações, confira [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -71,6 +72,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
+ [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

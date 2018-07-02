@@ -11,44 +11,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9541fda2ab0fc558cbc9972ba84fd98c7ae5892
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747874"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Criar um teste de matemática temporizado
-Neste tutorial, você cria um teste no qual o tomador de teste deve responder a quatro problemas aritméticos aleatórios dentro de um tempo especificado. Você aprenderá como:  
+Neste tutorial, você cria um teste no qual o tomador de teste deve responder a quatro problemas aritméticos aleatórios dentro de um tempo especificado. Você aprenderá como:
 
--   Gere números aleatórios usando a classe de <xref:System.Random>.  
+-   Gere números aleatórios usando a classe de <xref:System.Random>.
 
--   Disparar eventos para que ocorram em um horário específico usando um controle de <xref:System.Windows.Forms.Timer>.  
+-   Disparar eventos para que ocorram em um horário específico usando um controle de <xref:System.Windows.Forms.Timer>.
 
--   Fluxo do programa de controle usando instruções de `if else`.  
+-   Fluxo do programa de controle usando instruções de `if else`.
 
--   Execute operações aritméticas básicas no código.  
+-   Execute operações aritméticas básicas no código.
 
- Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes.  
+ Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes.
 
- ![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Teste que você cria neste tutorial  
+ ![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png) Teste que você cria neste tutorial
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
- Para baixar uma versão concluída do teste, veja [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+ Para baixar uma versão concluída do teste, veja [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
->  O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.  
+>  O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.
 
-## <a name="related-topics"></a>Tópicos relacionados  
+## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|  
-|-----------|-----------------|  
-|[Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Comece criando o projeto, alterando propriedades e adicionando controles `Label`.|  
-|[Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md)|Crie um problema de adição, e use a classe de `Random` para gerar números aleatórios.|  
-|[Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md)|Adicione um timer de contagem regressiva de modo que o teste possa ser cronometrado.|  
-|[Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Adicione um método para verificar se o comprador de teste inseriu uma resposta correta para o problema.|  
-|[Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Adicione manipuladores de eventos que facilitam a tomada do teste.|  
-|[Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md)|Adicione um problema de subtração que gerencia números aleatórios, usa o timer, e o verifica se as respostas estão corretas.|  
-|[Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md)|Adicione problemas de divisão e multiplicação que geram números aleatórios, usam o timer, e verificam se as respostas estão corretas.|  
+|Título|Descrição|
+|-----------|-----------------|
+|[Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Comece criando o projeto, alterando propriedades e adicionando controles `Label`.|
+|[Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md)|Crie um problema de adição, e use a classe de `Random` para gerar números aleatórios.|
+|[Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md)|Adicione um timer de contagem regressiva de modo que o teste possa ser cronometrado.|
+|[Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Adicione um método para verificar se o comprador de teste inseriu uma resposta correta para o problema.|
+|[Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Adicione manipuladores de eventos que facilitam a tomada do teste.|
+|[Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md)|Adicione um problema de subtração que gerencia números aleatórios, usa o timer, e o verifica se as respostas estão corretas.|
+|[Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md)|Adicione problemas de divisão e multiplicação que geram números aleatórios, usam o timer, e verificam se as respostas estão corretas.|
 |[Etapa 8: Personalizar o teste](../ide/step-8-customize-the-quiz.md)|Tente outros recursos, como alterar cores e adicionar uma dica.|

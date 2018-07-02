@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752314"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organização hierárquica de recursos para localização
 
@@ -42,11 +43,11 @@ No Visual Studio, os recursos localizados (dados como cadeias de caracteres e im
 
  A melhor maneira de armazenar seus recursos é generalizá-los o máximo possível. Isso significa armazenar cadeias de caracteres localizadas, imagens e assim por diante nos arquivos de recursos para culturas neutras em vez de culturas específicas sempre que possível. Por exemplo, se você tiver recursos para a cultura francês belga ("fr-BE") e os recursos imediatamente acima forem os recursos de fallback em inglês, poderá ocorrer um problema quando alguém usar o aplicativo em um sistema configurado para a cultura do francês canadense. O sistema procura por um assembly satélite para “fr-CA”, mas não o encontra e carrega o assembly principal que contém o recurso de fallback, em inglês, em vez de carregar os recursos em francês. A figura a seguir mostra este cenário indesejável.
 
- ![Apenas recursos específicos](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![Apenas recursos específicos](../ide/media/vbspecificresourcesonly.gif)
 
  Se você seguir a prática recomendada de colocar o máximo de recursos possível em um arquivo de recurso neutro para a cultura “fr”, o usuário do francês canadense não verá os recursos marcados para a cultura “fr-BE”, mas verá cadeias de caracteres em francês. A situação a seguir mostra esse cenário preferencial.
 
- ![Gráfico NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![Gráfico NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>Consulte também
 

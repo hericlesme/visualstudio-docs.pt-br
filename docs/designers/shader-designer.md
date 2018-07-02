@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746774"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -66,7 +67,7 @@ Os comandos que afetam o estado do Designer de Sombreador estão localizados na 
 
 Aqui está a barra de ferramentas **Modo de Designer de Sombreador**:
 
-![Barra de ferramentas de Modo do Designer de Sombreador](../designers/media/digit-dsd-modal-toolbar.png "Barra de ferramentas de modo DSD de dígito")
+![A barra de ferramentas modal do Designer de Sombreador.](../designers/media/digit-dsd-modal-toolbar.png)
 
 Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Sombreador**, que são listados na ordem em que aparecem, da esquerda para a direita:
 
