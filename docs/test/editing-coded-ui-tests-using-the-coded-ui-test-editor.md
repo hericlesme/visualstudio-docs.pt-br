@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692363"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668132"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
@@ -92,9 +92,9 @@ Após concluir as modificações, salve-as no arquivo UIMap.Designer escolhendo 
 
 - É possível usar o botão **Localizar** na barra de ferramentas do Editor de Teste de IU Codificado para abrir a ferramenta Localizar e Substituir no Visual Studio. Em seguida, será possível usar o controle Localizar para localizar uma ação de interface do usuário no Editor de Teste de IU Codificado. Por exemplo, você pode tentar localizar “Clicar no botão ‘Logon’”. Isso pode ser útil em testes grandes. Não é possível usar a funcionalidade de substituição na ferramenta Localizar e Substituir no Editor de Teste de IU Codificado. Para obter mais informações, consulte o controle Localizar em [Localizando e Substituindo Texto](../ide/finding-and-replacing-text.md).
 
-- Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. Para obter mais informações, confira [Locating a UI Control in the application under Test](#CodedUITestEditor_LocateUIControl) (Localizando um controle de interface do usuário no aplicativo em teste), mais adiante neste artigo.
+- Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. Para obter mais informações, confira [Locating a UI Control in the application under Test](#locate-a-ui-control-in-the-application-under-test) (Localizando um controle de interface do usuário no aplicativo em teste), mais adiante neste artigo.
 
-- Pode ser necessário expandir a caixa de controles que contém o controle a ser editado. Para obter mais informações, confira [Locating a control and its descendants](#CodedUITestEditor_LocateDecendants) (Localizando um controle e seus descendentes), mais adiante neste artigo.
+- Pode ser necessário expandir a caixa de controles que contém o controle a ser editado. Para obter mais informações, confira [Locating a control and its descendants](#locate-a-control-and-its-descendants) (Localizando um controle e seus descendentes), mais adiante neste artigo.
 
 ## <a name="delete-unwanted-ui-actions"></a>Excluir ações de interface do usuário indesejadas
 

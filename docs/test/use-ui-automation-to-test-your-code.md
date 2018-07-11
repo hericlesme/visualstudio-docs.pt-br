@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751722"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668088"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
@@ -35,7 +35,7 @@ Conforme mostrado na ilustração a seguir, uma experiência de desenvolvimento 
 
 É fácil criar um teste de IU codificado. Basta realizar o teste manualmente enquanto o **Construtor de Teste de IU Codificado** é executado em segundo plano. Também é possível especificar quais valores devem ser exibidos em campos específicos. O **Construtor de Teste de IU Codificado** registra suas ações e gera código com base nelas. Depois que o teste for criado, será possível editá-lo em um editor especializado que permite modificar a sequência de ações.
 
-Como alternativa, se tiver um caso de teste que tenha sido registrado no Microsoft Test Manager, será possível gerar código a partir dele. Para obter mais informações, consulte [Gravar e reproduzir testes manuais](/vsts/manual-test/getting-started/record-play-back-manual-tests).
+Como alternativa, se tiver um caso de teste que tenha sido registrado no Microsoft Test Manager, será possível gerar código a partir dele. Para obter mais informações, consulte [Gravar e reproduzir testes manuais](/vsts/test/mtm/record-play-back-manual-tests).
 
 O **Construtor de Teste de IU Codificado** especializado e o editor facilitam a criação e a edição de testes de IU codificados mesmo que suas habilidades principais estejam concentradas em testes, e não em codificação. Mas, se você for um desenvolvedor e quiser estender o teste de maneira mais avançada, o código será estruturado para simplificar a cópia e a adaptação. Por exemplo, convém registrar um teste para comprar algo em um site e editar o código gerado para adicionar um loop que compre muitos itens.
 
@@ -105,7 +105,7 @@ Para acessar as ferramentas e os modelos do teste de IU codificado, instale o co
     > [!TIP]
     > Alterne entre o registro de ações e a verificação de valores. Gere códigos no final de cada sequência de ações ou verificações. Se quiser, você poderá inserir novas ações e verificações depois.
 
-     Para obter mais detalhes, consulte [Validando Propriedades de Controles](#VerifyingCodeUsingCUITGenerateAssertions).
+     Para obter mais detalhes, consulte [Validando Propriedades de Controles](#validate-the-properties-of-ui-controls).
 
 5. Exiba o código de teste gerado.
 
@@ -140,7 +140,7 @@ Para acessar as ferramentas e os modelos do teste de IU codificado, instale o co
 
 8. Execute o teste.
 
-   Use o Gerenciador de Testes ou abra o menu de atalho no método de teste e, em seguida, escolha **Executar Testes**. Para obter mais informações sobre como executar testes, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) e *Opções adicionais para executar testes de IU codificados* na seção [O que vem a seguir?](#VerifyCodeUsingCUITWhatsNext), no final deste tópico.
+   Use o Gerenciador de Testes ou abra o menu de atalho no método de teste e, em seguida, escolha **Executar Testes**. Para obter mais informações sobre como executar testes, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) e *Opções adicionais para executar testes de IU codificados* na seção [O que vem a seguir?](#what's-next?), no final deste tópico.
 
 As seções restantes neste tópico fornecem mais detalhes sobre as etapas desse procedimento.
 
@@ -284,13 +284,13 @@ Verifique se o arquivo de configuração está com a chave `RecordImplicitiHover
 
 Depois de criar o teste de IU codificado, você poderá editá-lo usando qualquer uma destas ferramentas no Visual Studio:
 
-- Use o **Construtor de Teste de IU Codificado** para adicionar controles e validação a seus testes. Consulte a seção [Adicionar controles e validar suas propriedades](#VerifyingCodeUsingCUITGenerateAssertions), neste tópico.
+- Use o **Construtor de Teste de IU Codificado** para adicionar controles e validação a seus testes. Consulte a seção [Adicionar controles e validar suas propriedades](#validate-the-properties-of-ui-controls), neste tópico.
 
 - O **Editor do Construtor de Teste de IU Codificado** permite modificar facilmente seus testes de IU codificados. Com o **Editor de Teste de IU Codificado**, é possível localizar, exibir e editar seus métodos de teste. Também é possível editar ações de interface do usuário e seus controles associados no mapa de controles de IU. Para obter mais informações, consulte [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) (Editando testes de IU codificada usando o Editor de teste de IU codificado).
 
 - **Editor de Códigos:**
 
-    - adicione manualmente códigos dos controles ao teste, como descrito na seção [Codificar ações e propriedades de controle de IU](#VerifyingCodeCUITActionsandProperties) deste tópico.
+    - adicione manualmente códigos dos controles ao teste, como descrito na seção [Codificar ações e propriedades de controle de IU](#coded-ui-control-actions-and-properties) deste tópico.
 
     - Depois de criar um teste de IU codificado, você poderá modificá-lo para ser controlado por dados. Para obter mais informações, consulte [Criar um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md).
 
@@ -454,7 +454,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 - [Estendendo testes de IU codificados e gravações da ação](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes manuais, consulte [Run manual tests with Microsoft Test Manager](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager) (Executar testes manuais com o Microsoft Test Manager). Para saber mais sobre testes automatizados, consulte [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
+Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes manuais, consulte [Run manual tests with Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager) (Executar testes manuais com o Microsoft Test Manager). Para saber mais sobre testes automatizados, consulte [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Consulte também
 
