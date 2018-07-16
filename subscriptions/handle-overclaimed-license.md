@@ -9,12 +9,12 @@ description: Saiba como os administradores podem resolver o excesso de assinatur
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ae5ed6a4d459f3131250aed89ba0aef88da1ef7c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031192"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36325278"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Tratando assinaturas com 'excesso de solicitações'
 
@@ -22,13 +22,11 @@ ms.locfileid: "32031192"
 
 > [!NOTE] 
 > Os cenários de solicitações em excesso não são permitidos em programas Open License.  Além disso, outros programas podem exibir essas informações no portal de maneira diferente. 
+![Aviso de assinaturas solicitadas em excesso](_img\over-claimed\over-claimed-alert.png)
 
- ![Aviso de assinaturas solicitadas em excesso](_img\over-claimed\over-claimed-alert.png)
 
 1.  Para resolver a solicitação de licenças em excesso, clique o texto do alerta. Com isso, será exibida uma lista filtrada dos assinantes atribuídos ao nível de assinatura e a data de expiração da solicitação em excesso. 
 
 2.  Remova os assinantes conforme necessário para corrigir as licenças solicitadas em excesso. 
 
 3.  A visão geral no lado esquerdo da página será atualizada para mostrar que você está novamente em conformidade e todas as notificações de solicitação em excesso desaparecerão. 
-
-    ![Excluir assinaturas solicitadas em excesso](_img\over-claimed\delete-over-claimed.png)

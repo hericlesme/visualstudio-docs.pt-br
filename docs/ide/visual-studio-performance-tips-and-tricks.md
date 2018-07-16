@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37433529"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -23,25 +24,23 @@ As recomendações de desempenho do Visual Studio destinam-se a situações de b
 > [!NOTE]
 > Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Otimizar seu ambiente
+## <a name="use-a-64-bit-os"></a>Usar um sistema operacional de 64 bits
 
-- **Usar um sistema operacional de 64 bits**
+Se você atualizar seu sistema de uma versão de 32 bits do Windows para uma versão de 64 bits, expanda a quantidade de memória virtual disponível para o Visual Studio de 2 GB para 4 GB. Isso permite que o Visual Studio lide com cargas de trabalho significativamente maiores, mesmo sendo um processo de 32 bits.
 
-    Se você atualizar seu sistema de uma versão de 32 bits do Windows para uma versão de 64 bits, expanda a quantidade de memória virtual disponível para o Visual Studio de 2 GB para 4 GB. Isso permite que o Visual Studio lide com cargas de trabalho significativamente maiores, mesmo sendo um processo de 32 bits.
+Para obter mais informações, consulte [Limites de memória](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Para obter mais informações, consulte [Limites de memória](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Desabilitar a restauração de arquivo automática
 
-## <a name="configure-solution-and-projects"></a>Configurar solução e projetos
+O Visual Studio reabre automaticamente os documentos que foram deixados abertos na sessão anterior. Isso pode prolongar o tempo necessário para carregar uma solução em até 30% ou mais, dependendo do tipo de projeto e dos documentos sendo abertos. Designers como o Windows Forms e o XAML e alguns arquivos JavaScript e typescript, podem demorar para abrir.
 
-Se você tiver uma solução muito grande com vários projetos, poderá ser útil fazer as seguintes otimizações:
+O Visual Studio notifica você em uma barra amarela quando a restauração automática de documentos está fazendo com que a solução seja carregada de maneira significativamente mais lenta. Você pode desabilitar a reabertura de arquivo automática seguindo estas etapas:
 
-- **Descarregar projetos**
+1. Selecione **Ferramentas** > **Opções** para abrir a caixa de diálogo **Opções**.
 
-    Você pode descarregar manualmente projetos individuais raramente usados no **Gerenciador de Soluções** usando o menu de contexto de clique com o botão direito.
+1. Na página **Projetos e Soluções** > **Geral**, desmarque a opção **Reabrir documentos ao carregar a solução**.
 
-- **Refatorar a solução**
-
-    Você pode dividir a solução em vários arquivos menores de solução com projetos usados com frequência. Esta refatoração deve reduzir significativamente o uso de memória para o fluxo de trabalho. Soluções menores também são carregadas mais rapidamente.
+Quando você desabilita a restauração de arquivos automática, uma maneira rápida de navegar para os arquivos que deseja abrir é usar a opção [Ir Para](../ide/go-to.md). Selecione **Editar** > **Ir para** > **Ir para Todos** ou pressione **Ctrl**+**T**.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
 
@@ -69,32 +68,33 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Para desabilitar as **Ferramentas de Diagnóstico**, inicie uma sessão de depuração, escolha **Ferramentas** > **Opções** > **Habilitar Ferramentas de Diagnóstico** e desmarque a opção.
 
-    Para obter mais informações, consulte [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md).
+    Para obter mais informações, consulte [Ferramentas de Criação de Perfil](../profiling/profiling-feature-tour.md).
 
 ## <a name="disable-tools-and-extensions"></a>Desabilitar ferramentas e extensões
 
-Algumas ferramentas ou extensões podem desativadas para melhorar o desempenho.
+Algumas ferramentas ou extensões podem ser desabilitadas para melhorar o desempenho.
 
 > [!TIP]
 > Geralmente, é possível isolar problemas de desempenho desativando as extensões, uma por vez e verificando novamente o desempenho.
 
-### <a name="managed-language-services-roslyn"></a>Serviços de linguagem gerenciados (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Serviço de linguagem gerenciado (Roslyn)
 
 Para obter mais informações sobre as considerações de desempenho do .NET Compiler Platform (“Roslyn"), consulte [Considerações de desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Desabilitar análise completa da solução**
 
-    O Visual Studio executa a análise em toda a sua solução para proporcionar uma experiência avançada sobre os erros antes de invocar um build. Esse recurso é útil para identificar erros assim que possível. No entanto, para soluções muito grandes, esse recurso pode consumir recursos significativos de memória. Se você estiver tendo problemas semelhantes ou pressão de memória, desabilite essa experiência para liberar esses recursos. Por padrão, essa opção é habilitada para o Visual Basic e desabilitada para C#.
+    O Visual Studio executa a análise em toda a sua solução para proporcionar uma experiência avançada sobre os erros antes de invocar um build. Esse recurso é útil para identificar erros assim que possível. No entanto, para soluções grandes, esse recurso pode consumir recursos significativos de memória. Se você estiver tendo problemas semelhantes ou pressão de memória, desabilite essa experiência para liberar esses recursos. Por padrão, essa opção é habilitada para o Visual Basic e desabilitada para C#.
 
-    Para desabilitar a **Análise Completa da Solução**, escolha **Ferramentas** > **Opções** > **Editor de Texto** > **<Visual Basic ou C#>**. Em seguida, escolha **Avançado** e desmarque **Habilitar análise de solução completa**.
+    Para desabilitar a **Análise Completa da Solução**, escolha **Ferramentas** > **Opções** > **Editor de Texto** e selecione **Visual Basic** ou **C#**. Escolha **Avançado** e desmarque **Habilitar análise de solução completa**.
 
 - **Desabilitar CodeLens**
 
-    O Visual Studio executa uma tarefa **Localizar todas as referências** em cada método como exibido. O CodeLens fornece recursos como a exibição embutida do número de referências. O trabalho é executado em um processo separado (por exemplo, *ServiceHub.RoslynCodeAnalysisService32*). Em soluções muito grandes ou em sistemas com recursos restritos, esse recurso pode impactar significativamente o desempenho, mesmo que seja executado em uma prioridade baixa. Se estiver enfrentando alta utilização da CPU neste processo ou problemas de memória (por exemplo, ao carregar uma solução grande em um computador de 4 GB), você poderá tentar desabilitar esse recurso para liberar recursos.
+    O Visual Studio executa uma tarefa **Localizar todas as referências** em cada método como exibido. O CodeLens fornece recursos como a exibição embutida do número de referências. O trabalho é executado em um processo separado como *ServiceHub.RoslynCodeAnalysisService32*. Em soluções grandes ou em sistemas com recursos restritos, esse recurso pode afetar significativamente o desempenho. Se estiver enfrentando problemas de memória, por exemplo, ao carregar uma solução grande em um computador de 4 GB, ou alta utilização da CPU para esse processo, você poderá desabilitar o CodeLens para liberar recursos.
 
     Para desabilitar o **CodeLens**, escolha **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens** e desmarque o recurso.
 
-    O recurso está disponível apenas no Visual Studio Professional e no Visual Studio Enterprise.
+    > [!NOTE]
+    > O CodeLens está disponível nas edições Professional e Enterprise do Visual Studio.
 
 ### <a name="other-tools-and-extensions"></a>Outras ferramentas e extensões
 
@@ -127,4 +127,4 @@ Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções b�
 ## <a name="see-also"></a>Consulte também
 
 - [Otimizar o desempenho do Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Blog do Visual Studio – Carregar soluções mais rapidamente com o Visual Studio 2017 versão 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Load solutions faster (Carregar soluções mais rapidamente) (blog do Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
