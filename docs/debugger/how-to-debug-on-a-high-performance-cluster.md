@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477658"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058029"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Como depurar em um cluster de alto desempenho
-A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de instalação remota, consulte [depuração remota](../debugger/remote-debugging.md).  
+A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).  
   
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.  
   
@@ -38,7 +38,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Para abrir a caixa de diálogo Filtro de Ponto de Interrupção  
   
-1.  Clique um glifo de ponto de interrupção em uma janela de origem, o **desmontagem** janela, o **pilha de chamadas** janela, ou o **pontos de interrupção** janela.  
+1.  Um glifo de ponto de interrupção em uma janela de origem, com o botão direito do **desmontagem** janela, o **pilha de chamadas** janela, ou o **pontos de interrupção** janela.  
   
 2.  No menu de atalho, clique em **filtro**. Essa opção pode aparecer na parte superior, nível ou no submenu em **pontos de interrupção**.  
   
@@ -50,7 +50,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 3.  No **filtro de ponto de interrupção** caixa de diálogo, digite:  
   
-     MachineName =*yourmachinename*  
+     MachineName =*nomeseucomputador*  
   
      Para criar um filtro mais complexo, você pode combinar cláusulas usando `&`, o operador AND, `||`, o operador OR, `!`, o operador NOT, e parênteses.  
   
@@ -58,9 +58,9 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Para definir um ponto de interrupção em um processo específico  
   
-1.  Obter o nome do processo ou o número de ID do processo de **processos** janela.  
+1.  Obter o nome do processo ou o número de ID de processo do **processos** janela.  
   
-2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, como o primeiro procedimento.  
+2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, como no primeiro procedimento.  
   
 3.  No **filtro de ponto de interrupção** caixa de diálogo, digite:  
   
@@ -76,7 +76,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Para definir um ponto de interrupção em um segmento específico  
   
-1.  Obter o nome do thread ou thread o número de identificação do **Threads** janela.  
+1.  Obter o nome do thread ou do número da ID do thread a **Threads** janela.  
   
 2.  Selecione um ponto de interrupção e abra o **filtro de ponto de interrupção** caixa de diálogo, conforme descrito no primeiro procedimento.  
   
@@ -95,14 +95,13 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como criar um filtro para um ponto de interrupção em um computador chamado `marvin` e um thread chamado `fourier1`.  
   
-```  
-(MachineName = marvin) & (ThreadName = fourier1)  
-```  
+`(MachineName = marvin) & (ThreadName = fourier1)`  
+
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Depuração remota](../debugger/remote-debugging.md)   
- [Como: usar a janela de processos](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Processos e threads](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Como: usar a janela processos](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Introdução à depuração de aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md)   
+ [Threads e processos](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)

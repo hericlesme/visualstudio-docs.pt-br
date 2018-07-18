@@ -1,5 +1,5 @@
 ---
-title: Designer de fluxo de trabalho - Designers de atividade do sistema de mensagens
+title: Designer de fluxo de trabalho – Designers de atividade do sistema de mensagens
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974330"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755220"
 ---
 # <a name="messaging-activity-designers"></a>Designer de atividade de mensagem
 
-Designers de atividade de mensagens são usados para criar e configurar atividades de mensagens que enviar e recebem mensagens do Windows Communication Foundation (WCF) de dentro de um aplicativo do Windows Workflow Foundation (WF). O .NET Framework 4 apresenta cinco atividades de mensagens e o Designer de fluxo de trabalho do Windows fornece dois novos designers de modelo que permitem gerenciar mensagens dentro de um fluxo de trabalho. Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e designers de modelo.
+Designers de atividade de mensagens são usados para criar e configurar as atividades de mensagem que enviam e recebem mensagens do Windows Communication Foundation (WCF) de dentro de um aplicativo do Windows Workflow Foundation (WF). O .NET Framework 4 apresenta cinco atividades de mensagem e o Designer de fluxo de trabalho fornece dois novos designers de modelo que permitem que você gerencie o sistema de mensagens dentro de um fluxo de trabalho. Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e os designers de modelo.
 
 ## <a name="reference"></a>Referência
  <xref:System.Activities.Activity>

@@ -1,5 +1,5 @@
 ---
-title: 'Designer de fluxo de trabalho - como: Use a navegação'
+title: 'Designer de fluxo de trabalho - como: usar a navegação estrutural'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975060"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757613"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Como: Use a navegação de rastreamento
 
-Há três maneiras de alterar o conjunto de atividades que são exibidos no Designer de fluxo de trabalho do Windows:
+Há três maneiras principais de alterar o conjunto de atividades que são exibidos no Designer de fluxo de trabalho:
 
 1.  Clique duas vezes para furar na uma atividade filho.
 
@@ -29,7 +29,7 @@ Há três maneiras de alterar o conjunto de atividades que são exibidos no Desi
 
 ## <a name="using-breadcrumb-navigation"></a>Usando a navegação de rastreamento
 
-1.  Clique duas vezes em uma atividade de Designer de fluxo de trabalho para alterar a atividade raiz para a atividade clicada. A atividade clicada completa é expandida na raiz e seus ancestrais são mostrados na barra de rastreamento. Isso é às vezes chamado perfuração ou de uma atividade.
+1.  Clique duas vezes em uma atividade do Designer de fluxo de trabalho para alterar a atividade raiz para a atividade clicado. A atividade clicada completa é expandida na raiz e seus ancestrais são mostrados na barra de rastreamento. Isso é às vezes chamado perfuração ou de uma atividade.
 
 2.  Para navegar a um predecessor de atividade atual da raiz, clique na atividade na barra de rastreamento.
 
@@ -40,16 +40,16 @@ Há três maneiras de alterar o conjunto de atividades que são exibidos no Desi
 2.  Quando o estado do estado de expansão é alterado clicando no botão, o novo estado de expansão é salvo em XAML.
 
     > [!WARNING]
-    > Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum dos designers de atividade incluídos no Designer de fluxo de trabalho tem o comportamento da última, algumas atividades personalizadas podem apresentar esse comportamento.
+    > Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum Designer de atividade incluído no Designer de fluxo de trabalho tem o último comportamento, algumas atividades personalizadas podem exibir esse comportamento.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Tudo expandir ou recolher todas as atividades
 
-1.  Use o **Expandir tudo** e **Recolher tudo** botões na interface do usuário para expandir ou recolher todas as atividades sob a raiz da trilha de navegação atual. Observe que expande todas e recolhe todo é estados globais. Isso significa que quando você alterar a atividade raiz usando a navegação de trilha, expandir todos ou recolhe todos os estados persiste até que você clique **restauração**.
+1.  Use o **Expandir tudo** e **Recolher tudo** botões na interface do usuário para expandir ou recolher todas as atividades na raiz atual de rastreamento. Observe que expande todas e recolhe todo é estados globais. Isso significa que quando você altera a atividade raiz usando a navegação de trilha, expandir ou recolhe qualquer estado persiste até que você clique em **restaurar**.
 
-2.  Depois que você aplicou um Expandir tudo ou recolhe todos os estados, você pode clicar no **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.
-
-    > [!WARNING]
-    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, tenha optado de expandir em vigor, a funcionalidade associado a **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. Para obter mais informações sobre o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.
+2.  Depois que você aplicou qualquer expandir ou recolhe qualquer estado, você pode clicar na **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.
 
     > [!WARNING]
-    > Expandir tudo também tem um efeito especial **Switch** e **TryCatch** designers de atividade. Quando você clica em **Expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicando em **restaurar** ou **Recolher tudo** retorna esses designers para seu estado padrão, que você pode clicar em um caso/bloco individual para exibir seu conteúdo.
+    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, optou fora de expanda local, a funcionalidade associada com o **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. Para obter mais informações sobre o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.
+
+    > [!WARNING]
+    > Expandir tudo também tem um efeito especial **comutador** e **TryCatch** designers de atividade. Quando você clica em **Expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicando em **restaurar** ou **Recolher tudo** retorna esses designers para seu estado padrão, no qual você pode clicar em um casos/bloco individuais para exibir seu conteúdo.

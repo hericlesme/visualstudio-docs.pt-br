@@ -12,33 +12,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f9a40434821294384154ddcbbfebbd0a7885eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1032df2f7ebcf4cbc1eae0d4b18757a3f90c4f68
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975335"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758049"
 ---
 # <a name="cancellationscope-activity-designer"></a>Designer de atividade de CancellationScope
 
 O **CancellationScope** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.CancellationScope> atividade.
 
 ## <a name="the-cancellationscope-activity"></a>A atividade de CancellationScope
- A atividade de <xref:System.Activities.Statements.CancellationScope> permite que você especifique uma atividade para a lógica de execução e cancelar para a atividade.
+
+A atividade de <xref:System.Activities.Statements.CancellationScope> permite que você especifique uma atividade para a lógica de execução e cancelar para a atividade.
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Usando o designer de atividade de CancellationScope
- O **CancellationScope** designer de atividade pode ser encontrado no **transação** categoria de **caixa de ferramentas**. Para abrir **caixa de ferramentas**, selecione o **caixa de ferramentas** guia do Designer de fluxo de trabalho. Como alternativa, selecione **barra de ferramentas** do **exibição** menu ou pressione CTRL + ALT + X.
 
- O **CancellationScope** designer de atividades pode ser arrastado **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Descartando o **CancellationScope** designer de atividade cria um <xref:System.Activities.Statements.CancellationScope> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de CancellationScope. Editar o <xref:System.Activities.Activity.DisplayName%2A> valor no cabeçalho do **CancellationScope** designer de atividade. Você também pode editá-lo no **DisplayName** caixa da grade de propriedade.
+O **CancellationScope** designer de atividade pode ser encontrado na **transação** categoria de **caixa de ferramentas**. Para abrir **caixa de ferramentas**, selecione o **caixa de ferramentas** guia do Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+
+O **CancellationScope** designer de atividade pode ser arrastado de **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas, como em um <xref:System.Activities.Statements.Sequence>. Descartando o **CancellationScope** designer de atividade cria uma <xref:System.Activities.Statements.CancellationScope> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de CancellationScope. Editar o <xref:System.Activities.Activity.DisplayName%2A> valor do cabeçalho do **CancellationScope** designer de atividade. Você também pode editá-lo na **DisplayName** caixa da grade de propriedade.
 
 ### <a name="the-cancellationscope-properties"></a>As propriedades de CancellationScope
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.CancellationScope> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> propriedade pode ser editada na grade de propriedade, mas as outras propriedades devem ser editadas na superfície do Designer de fluxo de trabalho.
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.CancellationScope> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> propriedade pode ser editada na grade de propriedade mas outras propriedades devem ser editadas na superfície do Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável opcional de atividade de <xref:System.Activities.Statements.CancellationScope> . O padrão é CancellationScope. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|verdadeiro|Especifica a atividade para que a lógica cancelar é fornecida. Para adicionar o <xref:System.Activities.Statements.CancellationScope.Body%2A> atividade, soltar uma atividade de **caixa de ferramentas** no **corpo** caixa o **CancellationScope** designer de atividade. Adicione o texto da dica "Descartar atividade aqui".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|verdadeiro|Especifica a atividade que é executada se houver um cancelamento. Para adicionar o <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> atividade, soltar uma atividade de **caixa de ferramentas** no **CancellationHandler** caixa o **CancellationScope** designer de atividade. Adicione o texto da dica "Descartar atividade aqui".|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|verdadeiro|Especifica a atividade para que a lógica cancelar é fornecida. Para adicionar o <xref:System.Activities.Statements.CancellationScope.Body%2A> atividade, soltar uma atividade de **caixa de ferramentas** para o **corpo** caixa no **CancellationScope** designer de atividade. Adicione o texto da dica "Descartar atividade aqui".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|verdadeiro|Especifica a atividade que é executada se houver um cancelamento. Para adicionar o <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> atividade, soltar uma atividade de **caixa de ferramentas** para o **CancellationHandler** caixa no **CancellationScope** designer de atividade. Adicione o texto da dica "Descartar atividade aqui".|
 
 ## <a name="see-also"></a>Consulte também
 

@@ -23,26 +23,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c801ddfce436d4867af9f7012c0abe785ed68a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c2d2cd73ece3129e4719b50e5d140481e9210edb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458984"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757182"
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
-Este tópico lista as ferramentas que podem ajudá-lo a testar e inspecionar programas COM.  
-  
- Visualizador de Objeto OLE/COM  
- OLEVIEW exibe objetos ActiveX e OLE instalados em seu computador e as interfaces às quais eles oferecem suporte. Também permite editar o registro e observar bibliotecas de tipo. Para obter mais informações, consulte [usando o Visualizador de objeto OLE/COM](/cpp/data/ado-rdo/using-the-ole-com-object-viewer).  
-  
- Exemplos de classe do Microsoft Foundation  
- Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para testar com seus aplicativos. O código-fonte completo para esses exemplos está incluído.  
-  
-## <a name="see-also"></a>Consulte também  
- [COM e ActiveX depuração](../debugger/com-and-activex-debugging.md)   
- [Ferramentas de depuração COM](../debugger/com-debugging-tools.md)  
- [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)   
- [Exemplo OCLIENT: Ilustra um Visual editando o aplicativo de contêiner](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
- [: SUPERPAD demonstra um Visual de edição de servidor que edita texto usando CEditView](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)
+
+Este tópico lista as ferramentas que podem ajudá-lo a testar e inspecionar programas COM.
+
+Visualizador de Objeto OLE/COM
+
+OLEVIEW exibe objetos ActiveX e OLE instalados em seu computador e as interfaces às quais eles oferecem suporte. Também permite editar o registro e observar bibliotecas de tipo.
+
+Exemplos de classe do Microsoft Foundation
+
+Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para testar com seus aplicativos. O código-fonte completo para esses exemplos está incluído.
+
+### <a name="see-also"></a>Consulte também
+
+- [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Ferramentas de depuração COM](../debugger/com-debugging-tools.md)
+- [Depurando no Visual Studio](../debugger/index.md)
+- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+- [Exemplo de OCLIENT: Ilustra um aplicativo de contêiner de edição Visual](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Exemplo SUPERPAD: Demonstra um servidor que edita texto usando CEditView de edição Visual](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)

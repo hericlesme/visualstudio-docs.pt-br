@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974650"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758315"
 ---
 # <a name="throw-activity-designer"></a>Lance o designer de atividades
 
-O **gerar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Throw> atividade.
+O **lançar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Throw> atividade.
 
 ## <a name="the-throw-activity"></a>A atividade throw
- A atividade de <xref:System.Activities.Statements.Throw> gerencie uma exceção.
+
+A atividade de <xref:System.Activities.Statements.Throw> gerencie uma exceção.
 
 ### <a name="using-the-throw-activity-designer"></a>Usando o designer de atividade throw
- O **gerar** designer de atividade pode ser encontrado no **tratamento de erros** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia no lado esquerdo do Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
- O **gerar** designer de atividades pode ser arrastado o **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.Throw> atividade com um padrão **DisplayName** de Throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **lançar** designer de atividade ou o **DisplayName** caixa da grade de propriedade. A propriedade de <xref:System.Activities.Statements.Throw.Exception%2A> deve ser editada na grade de propriedade.
+Acesso a **lançar** designer de atividade na **tratamento de erros** categoria dos **caixa de ferramentas**.
+
+O **lançar** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.Throw> atividade com um padrão **DisplayName** throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **lançar** designer de atividade ou nos **DisplayName** caixa da grade de propriedade. A propriedade de <xref:System.Activities.Statements.Throw.Exception%2A> deve ser editada na grade de propriedade.
 
 ### <a name="the-throw-properties"></a>As propriedades throw
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Throw> e descreve como elas são usadas no designer.
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Throw> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|
@@ -42,6 +45,6 @@ O **gerar** designer de atividade é usado para criar e configurar um <xref:Syst
 ## <a name="see-also"></a>Consulte também
 
 - [Coleção](../workflow-designer/collection-activity-designers.md)
-- [relançar](../workflow-designer/rethrow-activity-designer.md)
+- [Relançar](../workflow-designer/rethrow-activity-designer.md)
 - [Designer de atividade Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

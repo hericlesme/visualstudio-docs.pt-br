@@ -1,5 +1,5 @@
 ---
-title: Designer de fluxo de trabalho - Designers de atividade de máquina de estado
+title: Designer de fluxo de trabalho – Designers de atividade de máquina de estado
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972357"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755492"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
 
-Designer de fluxo de trabalho do Windows inclui vários designers de atividade que você pode usar ao construir os fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
+Designer de fluxo de trabalho inclui um número de designers de atividade que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
 
 ## <a name="reference"></a>Referência
  <xref:System.Activities.Statements.StateMachine>

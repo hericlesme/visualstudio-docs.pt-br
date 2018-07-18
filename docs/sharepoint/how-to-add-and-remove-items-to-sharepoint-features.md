@@ -19,17 +19,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e6155aa13c8b05036dbb5fb2d9f895ed38719741
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767368"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756240"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como: adicionar e remover itens de recursos do SharePoint
-  Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão para o recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.  
+  Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão para seu recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.  
   
-## <a name="adding-sharepoint-project-items-to-a-feature"></a>Adicionando itens de projeto do SharePoint para um recurso  
+## <a name="add-sharepoint-project-items-to-a-feature"></a>Adicionar itens de projeto do SharePoint para um recurso  
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Para adicionar itens de projeto do SharePoint com o Designer de recursos  
   
@@ -37,7 +37,7 @@ ms.locfileid: "34767368"
   
      Para obter mais informações, consulte [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Adicionar um ou mais itens do **itens da solução** lista para o **itens no recurso** lista executando uma ou mais das seguintes etapas:  
+2.  Adicionar um ou mais itens do **itens na solução** listar para o **itens no recurso** lista executando uma ou mais das seguintes etapas:  
   
     -   Clique duas vezes em cada item que você deseja adicionar.  
   
@@ -45,19 +45,19 @@ ms.locfileid: "34767368"
   
     -   Escolha o **Adicionar tudo** botão (>>).  
   
-     Os itens de projeto do SharePoint aparecem no **itens no recurso** lista.  
+     Os itens de projeto do SharePoint aparecem na **itens no recurso** lista.  
   
-## <a name="removing-sharepoint-project-items-from-a-feature"></a>Removendo itens de projeto do SharePoint de um recurso  
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>Remover itens de projeto do SharePoint de um recurso  
   
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Para remover itens do SharePoint com o Designer de recursos
   
-1.  Escolha um ou mais itens do **itens no recurso** lista.  
+1.  Escolha um ou mais itens na **itens no recurso** lista.  
   
-2.  Escolha o **remover** botão (<) para remover um item por vez, ou escolha o **remover tudo** botão (<<) para remover todos os itens.  
+2.  Escolha o **remover** botão (<) para remover um item por vez, ou escolha a **remover tudo** botão (<<) para remover todos os itens.  
   
-     Os itens de projeto do SharePoint aparecem no **itens da solução** lista.  
+     Os itens de projeto do SharePoint aparecem na **itens na solução** lista.  
   
 ## <a name="see-also"></a>Consulte também
  [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Empacotando e implantando recursos do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

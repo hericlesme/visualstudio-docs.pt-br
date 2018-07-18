@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977638"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756588"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 
-Toda a funcionalidade de núcleo do Designer de fluxo de trabalho do Windows pode ser acessada pelo teclado.
+Toda a funcionalidade de núcleo do Designer de fluxo de trabalho pode ser acessada pelo teclado.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navegando em Designer de Fluxo de Trabalho usando o teclado
 
-Dentro do Visual Studio 2010, os atalhos globais e atalhos de depuração se aplicam ao Designer de fluxo de trabalho. Além disso, um número de atalhos de teclado específicos do Designer de fluxo de trabalho ter sido criado. No Visual Studio 2010, todos os atalhos de teclado podem ser remapeados. No entanto, em um aplicativo rehosted, esses atalhos de teclado são embutidas em código.
+Dentro do Visual Studio, os atalhos globais e os atalhos de depuração se aplicam ao Designer de fluxo de trabalho. Além disso, um número de atalhos de teclado específicos do Designer de fluxo de trabalho ter sido criado. No Visual Studio, todos os atalhos de teclado podem ser remapeados. No entanto, em um aplicativo rehosted, esses atalhos de teclado são embutidas em código.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Atalhos de teclado Designer de Fluxo de Trabalho
 
-A tabela a seguir resume os atalhos de teclado padrão atribuídos a comandos de Designer de fluxo de trabalho.
+A tabela a seguir resume os atalhos de teclado padrão atribuídos aos comandos de Designer de fluxo de trabalho.
 
 |Atalho|Finalidade|
 |--------------|-------------|
@@ -49,13 +49,13 @@ A tabela a seguir resume os atalhos de teclado padrão atribuídos a comandos de
 
 ### <a name="flowchart"></a>Fluxograma
 
-A lista a seguir mostra os gestos usados para construir um fluxograma pelo teclado. O restante do Designer de fluxo de trabalho, as atividades são adicionadas à superfície de designer usando os atalhos de ferramentas global fornecidos com o Visual Studio 2010.
+A lista a seguir mostra os gestos usados para construir um fluxograma pelo teclado. Como no restante do Designer de fluxo de trabalho, as atividades são adicionadas à superfície do designer usando os atalhos globais da caixa de ferramentas fornecidos com o Visual Studio.
 
 - Para mover uma atividade, selecione a atividade e use as teclas de seta para reposicioná-la.
 
 - Para redimensionar um fluxograma, mover uma atividade após a borda atual do fluxograma usando as teclas de direção. O fluxograma é redimensionado automaticamente.
 
-- Para definir uma atividade como o nó de início, use o **definido como StartNode** comando no menu de contexto.
+- Para definir uma atividade como o nó inicial, use o **DataSet como StartNode** comando no menu de contexto.
 
 - Para conectar atividades:
 
@@ -69,15 +69,15 @@ A lista a seguir mostra os gestos usados para construir um fluxograma pelo tecla
 
 Notas sobre como conectar atividades pelo teclado:
 
-- Você pode fazer várias conexões ao mesmo tempo, adicionando mais atividades para a seleção antes de pressionar CTRL + E, F. As conexões são feitas na ordem em que as atividades foram adicionadas à seleção.
+- Você pode fazer várias conexões ao mesmo tempo, adicionando mais atividades a seleção antes de pressionar CTRL + E, F. As conexões são feitas na ordem em que as atividades foram adicionadas à seleção.
 
 - Se um par de atividades não pode ser conectado, por exemplo se a atividade de origem já tiver uma conexão de saída, conexões entre outras atividades na seleção é feito ainda sempre que possível.
 
-- Quando um **FlowDecision** está incluído na seleção e o **FlowDecision** não tem nenhum conector de saída, o conector é colocado no **True** ramificação.
+- Quando um **FlowDecision** está incluído na seleção e o **FlowDecision** não tem nenhum conector de saída, o conector é colocado no **verdadeiro** branch.
 
 ### <a name="expression-editing"></a>Edição de expressão
 
-Por padrão, os atalhos de teclado padrão para edição de texto do Visual Basic aplicam-se dentro do editor de expressão no Designer de fluxo de trabalho, com as seguintes limitações:
+Por padrão, os atalhos de teclado padrão para edição de texto do Visual Basic se aplicam no editor de expressão no Designer de fluxo de trabalho, com as seguintes limitações:
 
 - O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.
 
@@ -88,4 +88,4 @@ Por padrão, os atalhos de teclado padrão para edição de texto do Visual Basi
    - Desfazer
    - Refazer
 
-- Para remapear os atalhos de teclado para comandos de expressão de edição no Designer de fluxo de trabalho no Visual Studio 2010, edite os atalhos no escopo do Designer de fluxo de trabalho. As alterações feitas no escopo do Editor de texto não são aplicadas automaticamente para o Designer de fluxo de trabalho. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).
+- Para remapear atalhos de teclado para comandos de edição de expressão dentro do Designer de fluxo de trabalho no Visual Studio, edite os atalhos no escopo do Designer de fluxo de trabalho. As alterações feitas no escopo do Editor de texto não são aplicadas automaticamente ao Designer de fluxo de trabalho. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).

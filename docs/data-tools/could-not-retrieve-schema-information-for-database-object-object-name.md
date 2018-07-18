@@ -10,20 +10,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30536dae7e0da76f0252240b98f1ed5af5f28916
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920291"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758266"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Não foi possível recuperar informações de esquema para o objeto de banco de dados \<nome do objeto >
 
-Esta mensagem normalmente aparece quando um objeto em **Server Explorer/Database Explorer** é copiado para a área de transferência, excluído do banco de dados e colados no designer. Porque o objeto de base de dados não existir, esta mensagem aparece.
+Esta mensagem aparece normalmente quando um objeto em **Gerenciador de servidores** ou **Database Explorer** é copiado para a área de transferência, excluído do banco de dados e, em seguida, colar no designer. Porque o objeto de base de dados não existir, esta mensagem aparece.
 
-Para corrigir esse erro, selecione **Okey** para ignorar a caixa de diálogo.
+Para corrigir esse erro, selecione **Okey** para descartar a caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,5 @@
 ---
-title: Designer de fluxo de trabalho - compensar Designer de atividade
+title: Designer de atividade Compensate do Designer de fluxo de trabalho-
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,29 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bca40a093f228f22919b7734e387a4bc191316c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972261"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756364"
 ---
 # <a name="compensate-activity-designer"></a>Compense o designer de atividades
 
-O **compensar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Compensate> atividade.
+O **Compensate** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Compensate> atividade.
 
 ## <a name="the-compensate-activity"></a>A atividade de compesação
- A atividade de <xref:System.Activities.Statements.Compensate> chama explicitamente <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> para uma atividade contida em <xref:System.Activities.Statements.CompensableActivity>. Se a atividade de <xref:System.Activities.Statements.Compensate> não é usada dentro de <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>, ou <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> de <xref:System.Activities.Statements.CompensableActivity>, então você deve especificar a propriedade de <xref:System.Activities.Statements.Compensate.Target%2A> .
 
- <xref:System.Activities.Statements.CompensationToken> especificado por <xref:System.Activities.Statements.Compensate.Target%2A> fornece um meio para confirmar ou compensar explicitamente <xref:System.Activities.Statements.CompensableActivity> uma vez que <xref:System.Activities.Statements.CompensableActivity.Body%2A> de <xref:System.Activities.Statements.CompensableActivity> terminou com êxito.
+A atividade de <xref:System.Activities.Statements.Compensate> chama explicitamente <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> para uma atividade contida em <xref:System.Activities.Statements.CompensableActivity>. Se a atividade de <xref:System.Activities.Statements.Compensate> não é usada dentro de <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>, ou <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> de <xref:System.Activities.Statements.CompensableActivity>, então você deve especificar a propriedade de <xref:System.Activities.Statements.Compensate.Target%2A> .
+
+<xref:System.Activities.Statements.CompensationToken> especificado por <xref:System.Activities.Statements.Compensate.Target%2A> fornece um meio para confirmar ou compensar explicitamente <xref:System.Activities.Statements.CompensableActivity> uma vez que <xref:System.Activities.Statements.CompensableActivity.Body%2A> de <xref:System.Activities.Statements.CompensableActivity> terminou com êxito.
 
 ### <a name="using-the-compensate-activity-designer"></a>Usando o designer de atividade de compesação
- O **compensar** designer de atividade pode ser encontrado no **transação** categoria do **caixa de ferramentas**. Para abrir **caixa de ferramentas**, selecione o **caixa de ferramentas** guia no lado esquerdo do Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição**menu ou CTRL + ALT + X.)
 
- O **compensar** designer de atividades pode ser arrastado o **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Descartar o designer de atividade cria um <xref:System.Activities.Statements.Compensate> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de compensar. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **compensar** designer de atividade ou o **DisplayName** caixa da grade de propriedade.
+O **Compensate** designer de atividade pode ser encontrado na **transação** categoria dos **caixa de ferramentas**. Para abrir **caixa de ferramentas**, selecione o **caixa de ferramentas** guia no lado esquerdo do Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+
+O **Compensate** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas, como em um <xref:System.Activities.Statements.Sequence>. Soltar o designer de atividade cria uma <xref:System.Activities.Statements.Compensate> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de compensar. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **Compensate** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.
 
 ### <a name="the-compensate-properties"></a>As propriedades de compesação
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.CancellationScope> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> propriedade pode ser editada na grade de propriedade ou na superfície do Designer de fluxo de trabalho. Editar o <xref:System.Activities.Statements.Compensate.Target%2A> propriedade na grade de propriedade.
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.CancellationScope> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> propriedade pode ser editada na grade de propriedade ou na superfície do Designer de fluxo de trabalho. Editar o <xref:System.Activities.Statements.Compensate.Target%2A> propriedade na grade de propriedade.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|
