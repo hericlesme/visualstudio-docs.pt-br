@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668058"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
 
@@ -32,9 +33,8 @@ Quaisquer opções de configuração iniciais que você especificar ao criar um 
 
 Os cenários contêm os seguintes componentes:
 
-|||
-|-|-|
 |Termo|Definição|
+|-|-|
 |Combinação de Navegadores|Simula que usuários virtuais acessam um site usando uma variedade de navegadores da Web.|
 |Padrão de carga|Especifica o número de usuários virtuais ativos durante um teste de carga e a velocidade com que novos usuários são iniciados. Por exemplo: baseado em etapa, constante e meta.|
 |Modelo de combinação de testes|Especifica a probabilidade de um usuário virtual executar um determinado teste em um cenário de teste de carga. Por exemplo: 20% de chance de executar o TestA e 80% de chance de executar o TestB. O modelo de combinação de testes deve refletir os objetivos do seu teste para um cenário específico.|

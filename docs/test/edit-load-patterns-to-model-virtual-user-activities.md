@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668055"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -79,7 +80,7 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
  Na tabela a seguir, um exemplo mostra um padrão baseado em meta com as seguintes configurações de propriedades:
 
-|Grupo de propriedades|propriedade|Valor|
+|Grupo de propriedades|Propriedade|Valor|
 |--------------------|--------------|-----------|
 |Contador de desempenho|Categoria|Processador|
 |Contador de desempenho|Computador|ContosoServer1|
@@ -109,7 +110,7 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 |Tarefas|Tópicos associados|
 |-----------|-----------------------|
-|**Especificando o padrão de carga inicial para o teste de carga:** ao criar um teste de carga usando o Novo Assistente de Teste de Carga, você seleciona um padrão de carga.|-   [Alterando o padrão de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#EditingLoadPatternsChanging)|
+|**Especificando o padrão de carga inicial para o teste de carga:** ao criar um teste de carga usando o Novo Assistente de Teste de Carga, você seleciona um padrão de carga.|-   [Alterando o padrão de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
 |**Editando o padrão de carga para o teste de carga:** depois de criar o teste de carga, você poderá editar o padrão de carga no Editor de Teste de Carga.|-   [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Especificando se os usuários virtuais no cenário do teste de carga devem incluir dados de cache na Web:** você pode alterar a propriedade **Percentual de novos usuários** para afetar a maneira como o teste de carga simula o armazenamento em cache na Web que seria executado por um navegador da Web para os usuários virtuais.|-   [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Especificando o tempo de rampa de etapa para um padrão de carga em etapa:** a propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa para a próxima (por exemplo, de 100 para 200 usuários) ocorra gradativamente e não de imediato.|-   [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|

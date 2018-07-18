@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668095"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas de controladores e agentes de teste em testes de carga
 
@@ -44,7 +45,7 @@ Este artigo aborda alguns problemas comuns que você pode encontrar ao trabalhar
 
 3.  Edite a entrada da opção `EqtTraceLevel` na seção de diagnóstico do sistema do arquivo. Seu código deve se parecer com este:
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ Este artigo aborda alguns problemas comuns que você pode encontrar ao trabalhar
 
 -   Execute a instalação do agente de teste novamente. Dessa vez, especifique o endereço IP do controlador de teste em vez do nome do controlador de teste.
 
- Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. A propriedade `BindTo` deve ser definida para cada processo em execução em um computador que tem mais de um adaptador de rede. O procedimento para definir a propriedade `BindTo` é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir níveis de registro em log para o serviço do agente de teste e o processo do agente de teste, use os arquivos de configuração listados em [Definindo o nível de registro em log em um computador do controlador de teste](#Logging).
+ Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. A propriedade `BindTo` deve ser definida para cada processo em execução em um computador que tem mais de um adaptador de rede. O procedimento para definir a propriedade `BindTo` é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir níveis de registro em log para o serviço do agente de teste e o processo do agente de teste, use os arquivos de configuração listados em [Definindo o nível de registro em log em um computador do controlador de teste](#setting-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Consulte também
 
