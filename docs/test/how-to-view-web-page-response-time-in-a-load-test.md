@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668061"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
@@ -44,7 +45,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 3.  Os dados de cada página são exibidos na grade. As seguintes colunas são exibidas normalmente.
 
-    |||
+    |Título de coluna|Descrição|
     |-|-|
     |**Página**|O nome da página da Web.|
     |**Cenário**|O nome do cenário. Importante se você tiver mais de um cenário no teste de desempenho na Web.|

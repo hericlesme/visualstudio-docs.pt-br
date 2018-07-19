@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297591"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurar portas para controladores e agentes de teste
 
@@ -33,22 +34,22 @@ Você pode alterar as portas de entrada padrão usadas pelo controlador de teste
 
 A porta padrão usada pelo controlador de teste é 6901 e a porta padrão do agente de teste é 6910. O cliente usa uma porta aleatória por padrão, usada para receber os resultados de teste do controlador de teste. Em todas as conexões de entrada, o controlador de teste autentica a parte que está chamando e verifica se ela pertence a um grupo de segurança específico.
 
-- **Controlador de teste** As conexões de entrada estão na porta TCP 6901. Se precisar, você poderá configurar a porta de entrada. Para obter mais informações, consulte [Configurando as portas de entrada](#ConfigurePorts).
+- **Controlador de teste** As conexões de entrada estão na porta TCP 6901. Se precisar, você poderá configurar a porta de entrada. Para saber mais, confira [Configurar as portas de entrada](#configure-the-incoming-ports).
 
     O controlador de teste precisa conseguir estabelecer a conexão de saída com agentes de teste e com o cliente.
 
     > [!NOTE]
     > O controlador de teste precisa de uma conexão de entrada de **Compartilhamento de Arquivos e Impressoras** aberta.
 
-- **Agente de teste** As conexões de entrada estão na porta TCP 6910. Se precisar, você poderá configurar a porta de entrada. Para obter mais informações, consulte [Configurando as portas de entrada](#ConfigurePorts).
+- **Agente de teste** As conexões de entrada estão na porta TCP 6910. Se precisar, você poderá configurar a porta de entrada. Para saber mais, confira [Configurar as portas de entrada](#configure-the-incoming-ports).
 
    O agente de teste precisa conseguir estabelecer conexão de saída com o controlador de teste.
 
-- **Cliente** Por padrão, uma porta TCM aleatória é usada em conexões de entrada. Se precisar, você poderá configurar a porta de entrada. Para obter mais informações, consulte [Configurando as portas de entrada](#ConfigurePorts).
+- **Cliente** Por padrão, uma porta TCM aleatória é usada em conexões de entrada. Se precisar, você poderá configurar a porta de entrada. Para saber mais, confira [Configurar as portas de entrada](#configure-the-incoming-ports).
 
    Você poderá receber notificações de firewall quando o controlador de teste tentar se conectar ao cliente pela primeira vez.
 
-   No Windows Server 2008, as notificações de firewall permanecem desabilitadas por padrão e você deve adicionar manualmente exceções de firewall para programas cliente (devenv.exe, mstest.exe, mlm.exe) para que seja possível aceitar conexões de entrada.
+   No Windows Server 2008, as notificações de firewall permanecem desabilitadas por padrão e você deve adicionar manualmente exceções de firewall para programas cliente (*devenv.exe*, *mstest.exe*, *mlm.exe*) para que seja possível aceitar conexões de entrada.
 
 ## <a name="outgoing-connections"></a>Conexões de saída
 
@@ -64,7 +65,7 @@ Portas TCP aleatórias são usadas em todas as conexões de saída.
 
 Siga as instruções para configurar as portas para um controlador de testes e agentes de teste.
 
-- **Serviço de controlador** Modifique o valor da porta editando o arquivo %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config:
+- **Serviço de Controlador** Modifique o valor da porta editando o arquivo *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*:
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ Siga as instruções para configurar as portas para um controlador de testes e a
     </appSettings>
     ```
 
-- **Serviço de agente** Modifique o valor da porta editando o arquivo %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config:
+- **Serviço de Agente** Modifique o valor da porta editando o arquivo *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config*:
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ Siga as instruções para configurar as portas para um controlador de testes e a
     </appSettings>
     ```
 
-- **Cliente** Use o editor de registro para adicionar os seguintes valores de registro (DWORD). O cliente usará uma das portas do intervalo especificado para receber dados do controlador de teste:
+- **Cliente** Use o editor de registro para adicionar os seguintes valores de registro (**DWORD**). O cliente usará uma das portas do intervalo especificado para receber dados do controlador de teste:
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>Consulte também
 

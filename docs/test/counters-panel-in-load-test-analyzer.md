@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd276a70a99344b837dad5cb12a0d87365535f39
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36304337"
 ---
-# <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar o painel Contadores nas exibições de Gráficos e Tabelas
+# <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar o painel Contadores nas exibições de gráficos e tabelas
 
-O painel Contadores permanece visível na exibição Gráficos e na exibição Tabelas do Analisador de Testes de Carga enquanto um teste de carga está em execução ou quando você está analisando o resultado de um teste de carga. Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md), [Analisar erros e resultados de teste de carga na exibição de tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Como acessar resultados de teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+O painel **Contadores** permanece visível nas exibições de gráficos e tabelas do Analisador de Teste de Carga enquanto um teste de carga está em execução ou quando você está analisando o resultado de um teste de carga. Para saber mais, confira [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md), [Analisar erros e resultados de teste de carga na exibição de tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Como acessar resultados de teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
-O painel Contadores mostra uma exibição estruturada de todos os contadores de desempenho que foram coletados durante o teste de carga. Você pode mostrar ou ocultar o painel de contadores escolhendo **Mostrar painel de contadores** na barra de ferramentas do Analisador de Teste de Carga.
+O painel **Contadores** mostra uma exibição estruturada de todos os contadores de desempenho que foram coletados durante o teste de carga. Você pode mostrar ou ocultar o painel **Contadores** escolhendo **Mostrar painel de contadores** na barra de ferramentas do **Analisador de Teste de Carga**.
 
 Os contadores são organizados em uma estrutura de árvore, onde os nós folha são as instâncias de contador de desempenho que podem ser representadas graficamente.
 
@@ -46,7 +47,7 @@ O painel Contadores fornece os seguintes recursos:
 
 ### <a name="scenario-name-node-in-counters-panel"></a>Nó Nome do cenário no painel Contadores
 
-|||
+|Painel Contadores|Descrição|
 |-|-|
 |![Nó de nome do cenário no painel do contador](../test/media/ltest__namenode.png)|1. Todos os contadores de desempenho associados ao Scenario1 do teste de carga aparecem nesse nó.<br />2. Todos os testes de um cenário são localizados embaixo do nó do cenário. O rótulo indica o nome do teste.<br />3. Os nós folha em um nó de teste são os contadores de caso de teste de carga em que o nome da instância do contador é o nome do teste.<br />4. Todas as instâncias de contador de página de teste de carga associadas a uma ramificação de teste de desempenho na Web. Nesse nó, todas as instâncias de contador de ritmo do teste de carga associadas à página Login GET (Nome do relatório) do teste de desempenho na Web IBuyBrowse no Scenario1 do teste de carga são contidas aqui.<br />5. Os nós folha sob um nó de página são contadores de página de teste de carga.<br />6. Todas as instâncias de contador de solicitações do teste de carga associadas a um teste de desempenho na Web são contidas em uma ramificação de teste de desempenho na Web. Nesse nó, todas as instâncias de contador de solicitação associadas à solicitação Login GET (Nome do relatório) do teste de desempenho na Web IBuyBrowse no Scenario1 do teste de carga são contidas aqui.<br />7. Os nós folha sob um nó de solicitação são contadores de solicitação de teste de carga.<br />8. Todas as instâncias de contador de transação do teste de carga associadas a um teste de desempenho na Web são contidas em uma ramificação de teste de desempenho na Web. Nesse nó, todas as instâncias de contador de transação associadas à transação denominada Transaction1 do teste de desempenho na Web IBuyBrowse no Scenario1 do teste de carga são contidas aqui.<br />9. Os nós folha sob um nó de transação são contadores de transação de teste de carga.<br />10. Nó Teste de unidade.|
 
@@ -54,13 +55,13 @@ O painel Contadores fornece os seguintes recursos:
 
 |Tarefas|Tópicos associados|
 |-----------|-----------------------|
-|**Adicionar mais contadores de desempenho a um gráfico na exibição de gráfico:** no painel Contadores, você pode adicionar tipos diferentes de dados a um gráfico de teste de carga adicionando mais contadores de desempenho no gráfico.|-   [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Analisar os limites especificados no teste de carga que foram violados:** o painel Contadores mostra ícones que representam as violações de limite que você pode adicionar a tabelas e gráficos para análise posterior.|-   [Como analisar violações de limite usando o painel Contadores](../test/analyze-threshold-rule-violations-in-load-tests.md)|
-|**Analisar os erros detectados durante a execução de teste de carga:** o painel Contadores inclui um nó de erros que contém categorias e subcategorias de erro, como erros de HTTP, que você pode usar para adicionar erros a gráficos para análise posterior.|-   [Como analisar erros usando o painel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md)|
+|**Adicionar mais contadores de desempenho a um gráfico na exibição de gráfico:** no painel **Contadores**, você pode adicionar tipos diferentes de dados a um gráfico de teste de carga adicionando mais contadores de desempenho ao gráfico.|-   [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Analisar os limites especificados no teste de carga que foram violados:** o painel **Contadores** mostra ícones que representam as violações de limite que você pode adicionar a tabelas e gráficos para análise posterior.|-   [Como analisar violações de limite usando o painel Contadores](../test/analyze-threshold-rule-violations-in-load-tests.md)|
+|**Analisar os erros detectados durante a execução de teste de carga:** o painel **Contadores** inclui um nó de erros que contém categorias e subcategorias de erro, como erros de HTTP, que você pode usar para adicionar erros a gráficos para análise posterior.|-   [Como analisar erros usando o painel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md)|
 
 ## <a name="performance-counter-sampling-interval-considerations"></a>Considerações sobre o intervalo de amostragem do contador de desempenho
 
-Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para obter mais informações, consulte [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Veja algumas diretrizes para taxas de amostragem:
 
@@ -75,11 +76,11 @@ Veja algumas diretrizes para taxas de amostragem:
 
 Há uma propriedade nas configurações de execução no Editor de Teste de Carga denominada **Armazenamento de detalhes de medição de tempo**. Se a propriedade **Armazenamento de Detalhes de Medição de Tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os 90º e 95º dados de percentil sejam mostrados nas tabelas Testes, Transações e Páginas do Analisador de Testes de Carga.
 
-Há duas opções para habilitar a propriedade **Armazenamento de detalhes de medição de tempo** nas propriedades de configurações de execução: **StatisticsOnly** e **AllIndividualDetails**. Seja qual opção for escolhidas, todos os testes, páginas e transações individuais são cronometrados, e os dados de percentil são calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, assim que os dados de percentil são calculados, os dados de medição de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando você usa detalhes de medição de tempo. No entanto, os usuários avançados podem querer processar os dados detalhados de medição de tempo de outras formas, usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados detalhados de medição de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade para **AllIndividualDetails**, será possível analisar a atividade do usuário virtual usando o Gráfico de atividade do usuário virtual no Analisador de Teste de Carga após a conclusão da execução do teste de carga. Para obter mais informações, consulte [Analisando a atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Há duas opções para habilitar a propriedade **Armazenamento de detalhes de medição de tempo** nas propriedades de configurações de execução: **StatisticsOnly** e **AllIndividualDetails**. Seja qual opção for escolhidas, todos os testes, páginas e transações individuais são cronometrados, e os dados de percentil são calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, assim que os dados de percentil são calculados, os dados de medição de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando você usa detalhes de medição de tempo. No entanto, os usuários avançados podem querer processar os dados detalhados de medição de tempo de outras formas, usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados detalhados de medição de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade para **AllIndividualDetails**, será possível analisar a atividade do usuário virtual usando o gráfico **Atividade do usuário virtual** no Analisador de Teste de Carga após a conclusão da execução do teste de carga. Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 A quantidade de espaço necessária no repositório de resultados de testes de carga para armazenar os dados detalhados de medição de tempo pode ser grande, especialmente para testes de carga mais longos. Além disso, o tempo para armazenar esses dados no repositório de resultados de testes de carga no final do teste de carga é mais longo, pois esses dados são armazenados nos agentes de teste de carga até que o teste de carga seja concluído. Quando o teste de carga é concluído, os dados são armazenados no repositório. Por padrão, a propriedade **Armazenamento de detalhes de medição de tempo** fica habilitada. Se isso for um problema para o seu ambiente de teste, talvez seja conveniente definir o **Armazenamento de detalhes de medição de tempo** como **Nenhum**.
 
-Para obter mais informações, consulte [Como especificar a propriedade de armazenamento dos detalhes de intervalo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Para saber mais, confira [Como especificar a propriedade de armazenamento dos detalhes de medição de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="see-also"></a>Consulte também
 
