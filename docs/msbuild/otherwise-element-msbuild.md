@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d018b26f2df32b9e3cc1e3fae65ec8b3d3394806
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570074"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327005"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 Especifica o bloco de código a executar se e somente se as condições de todos os elementos `When` forem avaliadas como `false`.  
@@ -41,7 +41,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ## <a name="syntax"></a>Sintaxe  
 
-```  
+```xml  
 <Otherwise>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  

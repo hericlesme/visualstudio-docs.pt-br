@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574679"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303303"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtendo logs de build com o MSBuild
 Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para obter informações sobre opções de linha de comando do MSBuild que este tópico não aborda, consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ Usando opções com o MSBuild, você pode especificar quantos dados de build voc
   
  O processo de build pode ficar mais lento ao definir o **/verbosity** para `detailed` e ainda mais lento se definir o **/verbosity** para `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Salvando o log de compilação em um arquivo  
  Você pode usar a opção **/fileLogger** (**fl**) para salvar dados de build em um arquivo. O exemplo a seguir salva dados de build em um arquivo chamado `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  No exemplo a seguir, o arquivo de log é denominado `MyProjectOutput.log` e o detalhamento da saída do log é definida como `diagnostic`. Especifique essas duas configurações usando a opção **/filelogparameters** (`flp`).  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  As opções **/filelogparameters** (`flp`) para arquivos 2 e 3 especificam o nome de cada arquivo e o que deve ser incluído em cada um. Nenhum nome foi especificado para o arquivo 1, então o nome padrão de `msbuild1.log` é usado.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 No exemplo a seguir, é criado um arquivo de log binário com o nome `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

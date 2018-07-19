@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815438"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077666"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (Bootstrapper)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (bootstrapper)
 Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -42,10 +42,10 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `Strings` elemento é um filho de `Package` elemento. Ele não tem atributos.  
+ O `Strings` um filho do elemento é o `Package` elemento. Ele não tem atributos.  
   
 ## <a name="string"></a>Cadeia de Caracteres  
- O `String` elemento é um filho de `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
+ O `String` um filho do elemento é o `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
   
  `String` tem o seguinte atributo.  
   

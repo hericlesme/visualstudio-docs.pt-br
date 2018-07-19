@@ -14,18 +14,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34794188"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38811908"
 ---
-1. Se você pretende implantar seus aplicativos com a implantação da Web no Visual Studio, instale a versão mais recente da implantação da Web no servidor.
+1. Se você pretende implantar seus aplicativos com implantação da Web no Visual Studio, instale a versão mais recente da implantação da Web no servidor.
 
-    Para instalar a implantação da Web, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Para localizar o link do instalador de plataforma da Web do IIS, selecione **IIS** no painel esquerdo do Gerenciador do servidor. O servidor e selecione **serviços de informações da Internet (IIS) Manager**.)
+    Para instalar a implantação da Web, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Para localizar o link do instalador de plataforma da Web do IIS, selecione **IIS** no painel esquerdo do Gerenciador do servidor. O servidor com o botão direito e selecione **serviços de informações da Internet (IIS) Manager**.)
 
-    O Web Platform Installer, você encontrará implantação da Web na guia aplicativos. Você também pode obter um instalador diretamente a partir de [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
+    O Web Platform Installer, você encontrará implantação da Web na guia aplicativos. Você também pode obter um instalador diretamente na [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
-2. Verificar se implantação da Web está funcionando corretamente abrindo **painel de controle > sistema e segurança > Ferramentas administrativas > serviços** e certifique-se de que **o serviço de agente de implantação Web** está em execução (a nome do serviço é diferente em versões mais antigas).
+2. Verificar a implantação da Web está executando corretamente abrindo **painel de controle > sistema e segurança > Ferramentas administrativas > serviços** e certifique-se de que **serviço de agente de implantação da Web** está em execução (o nome do serviço é diferente em versões mais antigas).
 
-    Se o serviço de agente não está em execução, inicie-o. Se não estiver presente em todos os, vá para **painel de controle > Programas > desinstalar um programa**, localizar **Microsoft Web Deploy <version>** . Escolha a **alteração** a instalação e certifique-se de que você escolha **será instalado na unidade de disco rígido local** para os componentes de implantação da Web. Conclua as etapas de instalação de alteração.
+    Se o serviço de agente não está em execução, inicie-o. Se não estiver presente em todos os, acesse **painel de controle > Programas > desinstalar um programa**, localize **Microsoft Web Deploy <version>** . Escolher **alteração** a instalação e certifique-se de que você escolhe **será instalado na unidade de disco rígido local** para os componentes de implantação da Web. Conclua as etapas de instalação de alteração.

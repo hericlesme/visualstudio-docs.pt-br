@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924216"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283120"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -36,7 +36,7 @@ Dentro da família de produtos do Visual Studio, há três métodos que você po
 | Linha de comando do MSBuild| – Criar projetos sem instalar o Visual Studio.<br />– Executar builds em multiprocessador para todos os tipos de projeto.<br />– Personalizar a maioria das áreas do sistema de build.|
 | Compilação do Team Foundation | – Automatizar o processo de build como parte de um pipeline de integração contínua/entrega contínua.<br />– Aplicar testes automatizados com cada compilação.<br />– Empregar recursos baseados em nuvem praticamente ilimitados para processos de compilação.<br />– Modificar o fluxo de trabalho de compilação e, conforme necessário, criar atividades de compilação para realizar tarefas profundamente personalizadas.|
 
-A documentação nesta seção detalha mais o processo de compilação baseado no IDE. Para obter mais informações sobre os outros métodos, consulte [MSBuild](../msbuild/msbuild.md) e [Integração contínua e implantação](https://www.visualstudio.com/docs/build/overview), respectivamente.
+A documentação nesta seção detalha mais o processo de compilação baseado no IDE. Para obter mais informações sobre os outros métodos, consulte [MSBuild](../msbuild/msbuild.md) e [Integração contínua e implantação](/vsts/pipelines/index?view=vsts), respectivamente.
 
 ## <a name="overview-of-building-from-the-ide"></a>Visão geral da compilação no IDE
 

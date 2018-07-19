@@ -9,12 +9,12 @@ description: Saiba como sair do programa Visual Studio Dev Essentials
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 383216b898e9eef62fbe825454cda4ed6c11ea2c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 1e826c4daebbd3ea63645b48b392a19304e2b571
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335860"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326768"
 ---
 # <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Como posso sair do programa Visual Studio Dev Essentials? 
 
@@ -26,7 +26,7 @@ Se você quiser deixar o programa Visual Studio Dev Essentials, execute estas et
 4. Na linha associada ao Visual Studio Dev Essentials, clique em **Sair do programa** na coluna Links na extrema direita.
 5. Uma janela pop-up será exibida. Selecione **Confirmar**. 
 
-> [!NOTE]  
-> Voltar ao programa Visual Studio Dev Essentials é fácil.  Basta seguir as etapas 1 a 5 e clicar no botão **Ingressar no Visual Studio Dev Essentials** na parte superior da coluna Links. Depois, clique em **Confirmar**.  
+    > [!NOTE]  
+    > Voltar ao programa Visual Studio Dev Essentials é fácil.  Basta seguir as etapas 1 a 5 e clicar no botão **Ingressar no Visual Studio Dev Essentials** na parte superior da coluna Links. Depois, clique em **Confirmar**.  
 
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575839"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327031"
 ---
 # <a name="walkthrough-using-msbuild"></a>Instruções passo a passo: usando o MSBuild
 O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instruções passo a passo apresentam os componentes essenciais do MSBuild e mostram como gravar, manipular e depurar projetos do MSBuild. Você aprenderá a:
@@ -129,7 +129,7 @@ O MSBuild controla os destinos de um build e garante que cada destino seja compi
 
 3.  Execute msbuild com a opção de comando /t:HelloWorld. Com isso, o destino HelloWorld é selecionado e compilado:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ O MSBuild controla os destinos de um build e garante que cada destino seja compi
 ## <a name="examining-a-property-value"></a>Examinando um valor da propriedade
  Para obter o valor de uma propriedade, use a seguinte sintaxe, em que PropertyName é o nome da propriedade:
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>Examinando os valores de tipo de item
  Para obter os valores de um tipo de item, use a seguinte sintaxe, em que ItemType é o nome do tipo de item:
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  Para alterar o separador de um tipo de item, use a seguinte sintaxe, em que ItemType é o tipo de item e Separator é uma cadeia de caracteres de um ou mais caracteres de separação:
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  Examine o resultado. Você deverá ver estas linhas:
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  Para obter o valor dos metadados de um tipo de item, use a seguinte sintaxe, em que ItemType é o nome do tipo de item e MetaDataName é o nome dos metadados:
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>Transformações de metadados
  As listas de itens podem ser transformadas em novas listas de itens. Para transformar uma lista de itens, use a seguinte sintaxe, em que ItemType é o nome do tipo de item e MetadataName é o nome dos metadados:
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  Na **janela Comando**, digite e execute esta linha:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815136"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081404"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implantação do ClickOnce)
 Contém informações sobre o editor que assinou o manifesto de implantação.  
@@ -38,16 +38,16 @@ Contém informações sobre o editor que assinou o manifesto de implantação.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `publisherIdentity` elemento é necessário para manifestos assinados. A tabela a seguir mostra os atributos que o `publisherIdentity` oferece suporte ao elemento.  
+ O `publisherIdentity` elemento é necessário para manifestos assinados. A tabela a seguir mostra os atributos que o `publisherIdentity` dá suporte ao elemento.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`name`|Necessário. Descreve a identidade da parte que esse aplicativo publicado.|  
+|`name`|Necessário. Descreve a identidade da parte que publicou este aplicativo.|  
 |`issuerKeyHash`|Necessário. Contém o hash SHA-1 da chave pública do emissor do certificado.|  
   
 #### <a name="parameters"></a>Parâmetros  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado  
   
 ## <a name="exceptions"></a>Exceções  
   

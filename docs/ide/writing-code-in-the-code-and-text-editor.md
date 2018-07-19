@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572385"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283452"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
-O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com trechos de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editar o código](https://www.visualstudio.com/vs/features/ide/) para obter uma visão geral rápida.
+O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com trechos de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editar o código](https://visualstudio.microsoft.com/vs/features/ide/) para obter uma visão geral rápida.
 
 Você pode exibir seu código de várias maneiras diferentes. Por padrão, o **Gerenciador de Soluções** mostra seu código organizado por arquivos. Você pode clicar na guia **Modo de Exibição de Classe** na parte inferior da janela para exibir o código organizado por classes.
 

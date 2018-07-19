@@ -1,7 +1,7 @@
 ---
 title: Como caminhos de pesquisa de Python são aplicados
 description: Uma visão geral de como o Visual Studio usa caminhos de pesquisa do Python nos projetos e ambientes.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94770d1591d1f4d80fadd2a0f868dfedfd84999a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581650"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118233"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 

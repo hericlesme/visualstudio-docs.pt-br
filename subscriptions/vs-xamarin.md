@@ -9,44 +9,44 @@ description: Saiba mais sobre a assinatura de treinamento do Xamarin University 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7447b5b15315573c28bce8a3366bd7f7564ebcbd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448591"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281138"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Benefício de treinamento do Xamarin University em assinaturas do Visual Studio
 
-Compilar aplicativos nativos para iOS e Android em C# com treinamento avançado por especialistas de desenvolvimento móvel. 
+Compilar aplicativos nativos para iOS e Android em C# com treinamento avançado por especialistas de desenvolvimento móvel.
 
-Os assinantes do Visual Studio Enterprise recebem seis meses de acesso ilimitado ao catálogo completo do Xamarin University.  Os assinantes do Visual Studio Professional recebem três meses de acesso.  
+Os assinantes do Visual Studio Enterprise recebem seis meses de acesso ilimitado ao catálogo completo do Xamarin University.  Os assinantes do Visual Studio Professional recebem três meses de acesso.
 
-Membros do Visual Studio Dev Essentials podem criar uma conta gratuita que inclui acesso a cursos gratuitos selecionados, palestras de convidados, duas classes ao vivo, gravações do Lightning Lecture e muito mais.  
+Membros do Visual Studio Dev Essentials podem criar uma conta gratuita que inclui acesso a cursos gratuitos selecionados, palestras de convidados, duas classes ao vivo, gravações do Lightning Lecture e muito mais.
 
 
 ## <a name="activation-steps"></a>Etapas de ativação
-1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
-2.  Localize o bloco Xamarin University Training (Treinamento) na seção de Professional Development (Desenvolvimento Profissional) e clique no link **Activate** (Ativar) no canto inferior esquerdo do bloco do benefício.    
+1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2.  Localize o bloco Xamarin University Training (Treinamento) na seção de Professional Development (Desenvolvimento Profissional) e clique no link **Activate** (Ativar) no canto inferior esquerdo do bloco do benefício.
 
     <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
- 
-3.  Você será redirecionado para uma página da Web do Xamarin University intitulada "Xamarin University Mobile Training for Microsoft Visual Studio" (Treinamento móvel do Xamarin University para Microsoft Visual Studio).  Clique em **Activate My Subscription Now** (Ativar Minha Assinatura). 
+
+3.  Você será redirecionado para uma página da Web do Xamarin University intitulada "Xamarin University Mobile Training for Microsoft Visual Studio" (Treinamento móvel do Xamarin University para Microsoft Visual Studio).  Clique em **Activate My Subscription Now** (Ativar Minha Assinatura).
 
     <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
 
     > [!NOTE]
     > Dependendo da resolução de sua rela e do nível de zoom, talvez seja necessário rolar para baixo a fim de ver o botão **Activate My Subscription Now**.
-    
+
     > [!NOTE]
     > Se você receber um erro informando que você precisa estar conectado como a pessoa que recebeu o benefício, faça o seguinte:
     > 1. Feche a janela do navegador com o Xamarin University.
     > 2. No portal my.visualstudio.com, clique em **Sair**.
-    > 3. Feche todas as janelas do navegador. 
+    > 3. Feche todas as janelas do navegador.
     > 4. Abra um novo navegador e conecte-se ao [https://my.visualstudio.com](https://my.visualstudio.com).
-    > 5. Ative novamente o benefício de Treinamento do Xamarin University. 
+    > 5. Ative novamente o benefício de Treinamento do Xamarin University.
 
-4.  Você verá uma página de entrada, com um aviso de que o Xamarin mudou recentemente para a autenticação da Microsoft.  Clique em **Connect with Microsoft** (Conectar-se à Microsoft). 
+4.  Você verá uma página de entrada, com um aviso de que o Xamarin mudou recentemente para a autenticação da Microsoft.  Clique em **Connect with Microsoft** (Conectar-se à Microsoft).
 
     <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
 
@@ -55,14 +55,14 @@ Membros do Visual Studio Dev Essentials podem criar uma conta gratuita que inclu
     <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
 
     > [!NOTE]
-    > Como é preciso entrar para usar o benefício do Xamarin University, se você clicar em **No** (Não) retornará à página anterior e não poderá continuar com o treinamento. 
+    > Como é preciso entrar para usar o benefício do Xamarin University, se você clicar em **No** (Não) retornará à página anterior e não poderá continuar com o treinamento.
 
 
 6. Você verá uma mensagem de boas-vinda sobre sua nova conta.  Clique em **Start Learning** (Comece a Aprender).
 
     <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
 
-7. É só isso!  Você verá o portal do Xamarin University e poderá começar a estudar.  
+7. É só isso!  Você verá o portal do Xamarin University e poderá começar a estudar.
 
      <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
 
@@ -79,7 +79,7 @@ Membros do Visual Studio Dev Essentials podem criar uma conta gratuita que inclu
 <sup>1</sup>*Inclui: NFR (Não para revenda), VSIP (Visual Studio Industry Partner).  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Diretor regional).   Exclui: MCT Software & Services.*
 
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q--what-happens-when-my-free-subscription-expires"></a>P: O que acontece quando minha assinatura gratuita expira?
@@ -87,5 +87,5 @@ R: Sua conta do Xamarin University permanecerá intacta, mas sua assinatura tran
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda com o Xamarin University?  Encontre vários recursos de suporte em [https://university.xamarin.com/support](https://university.xamarin.com/support).
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

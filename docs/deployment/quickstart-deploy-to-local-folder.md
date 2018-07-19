@@ -1,7 +1,7 @@
 ---
-title: Implantar em uma pasta local - Visual Studio | Microsoft Docs
+title: Implantar em uma pasta local
 ms.custom: ''
-ms.date: 05/08/2018
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,67 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764213"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781907"
 ---
-# <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Implantar um aplicativo web ou aplicativo .NET Core para uma pasta local usando a ferramenta de publicação do Visual Studio
+# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta local usando o Visual Studio
 
-Você pode usar o **publicar** ferramenta para publicar seu aplicativo para uma pasta local. 
+Você pode usar o **publicar** ferramenta para publicar aplicativos ASP.NET, ASP.NET Core, .NET Core e Python em uma pasta local do Visual Studio. Para Node. js, as etapas têm suporte, mas a interface do usuário é diferente.
 
-Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Python no Visual Studio. Para Node. js, as etapas são suportadas, mas a interface do usuário é diferente.
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-* Você deve ter o Visual Studio de 2017 instalado e o. **NET desenvolvimento de área de trabalho** carga de trabalho e o. **NET Core** carga de trabalho.
-
-    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
-
-## <a name="create-a-new-project"></a>Criar um novo projeto 
-
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
-
-1. Em **Visual C#** ou **Visual Basic**, escolha **.NET Core**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Core)**.
-
-1. Digite um nome como **MyLocalApp** e clique em **Okey**.
-
-    O Visual Studio cria o projeto.
+[!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 ## <a name="deploy-to-a-local-folder"></a>Implantar em uma pasta local
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e selecione **Publicar**.
+1. No Gerenciador de soluções, clique com botão direito no projeto e escolha **Publish** (ou usar o **compilação** > **publicar** item de menu).
 
-    ![Escolher publicar](../deployment/media/quickstart-publish.png "escolher publicar")
+    ![O comando Publicar no menu de contexto do projeto no Gerenciador de soluções](../deployment/media/quickstart-publish.png "escolher publicar")
 
-1. Se você tiver configurado anteriormente quaisquer perfis de publicação, o **publicar** painel é exibido. Clique em **criar novo perfil**.
+1. Se você já tiver configurado qualquer perfil de publicação, o **publicar** painel será exibido. Selecione **criar novo perfil**.
 
-1. No **escolher um destino de publicação** caixa de diálogo caixa, escolha **pasta**.
+1. No **escolher um destino de publicação** diálogo caixa, escolha **pasta**.
 
-    ![Escolha a pasta](../deployment/media/quickstart-publish-folder.png "Escolher pasta")
+    ![Escolha a pasta local como um destino de publicação](../deployment/media/quickstart-publish-folder.png "Escolher pasta")
 
-1. Insira um caminho ou clique em **procurar** para navegar até uma pasta local.
+1. Insira um caminho ou selecione **procurar** para especificar uma pasta local.
 
-1. Clique em **Publicar**.
+1. Selecione **Publicar**. Visual Studio compila o projeto e publica a pasta especificada. As propriedades do projeto **publicar** painel aparece, mostrando um perfil de resumo.
 
-    O Visual Studio compila o projeto e publica a pasta especificada.
+    ![Publicar o painel de propriedade mostrando um perfil de resumo](../deployment/media/quickstart-publish-folder-summary.png)
 
-    O painel de publicação mostra um perfil de resumo.
+1. Para configurar as configurações de implantação, selecione **configurar** no perfil de resumo e selecione o **configurações** guia.
 
-1. Para definir as configurações de implantação, clique em **configurações** no perfil de resumo.
+    ![Configurações de perfil](../deployment/media/quickstart-profile-settings.png "as configurações de perfil")
 
-    ![Configurações de perfil](../deployment/media/quickstart-profile-settings.png "as configurações de perfil") 
+1. Configurar opções de como implantar uma configuração de depuração ou lançamento e, em seguida, selecione **salvar**.
 
-1. Configurar opções de como implantar uma configuração de Debug ou Release e, em seguida, clique em **salvar**.
+1. Para republicar, selecione **publicar**.
 
-1. Para publicar novamente, clique em **publicar**.
-
-Implante os arquivos publicados na maneira que desejar. Por exemplo, você pode empacotá-las em um arquivo Zip, usar um comando de cópia simples ou implantá-las com qualquer pacote de instalação de sua escolha.
+Implante os arquivos publicados na maneira que desejar. Por exemplo, você pode empacotá-las em um *. zip* de arquivo, use um comando de cópia simples ou implantá-los com qualquer pacote de instalação de sua escolha.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Implantar um aplicativo do .NET Core com a ferramenta Publicar](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Implantar o .NET Framework e aplicativos...](/dotnet/framework/deployment/)
+- (.NET) [Implantar o .NET Framework e aplicativos](/dotnet/framework/deployment/)

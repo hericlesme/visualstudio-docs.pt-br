@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 855bd7af4372f5216abab3d6ddd45ec8f7809baa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c38d7ba577beedce8651bb291700a6c071ee7b48
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573109"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303010"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Toolset
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -39,9 +39,9 @@ Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e fe
   
 |Chave do Registro|Nome da chave|Valor-chave da cadeia de caracteres|  
 |------------------|--------------|----------------------|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Caminho de instalação do .NET Framework 2.0|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Caminho de instalação do .NET Framework 3.5|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Caminho de instalação do .NET Framework 4|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\  |MSBuildToolsPath|Caminho de instalação do .NET Framework 2.0|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\  |MSBuildToolsPath|Caminho de instalação do .NET Framework 3.5|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\  |MSBuildToolsPath|Caminho de instalação do .NET Framework 4|  
   
 ### <a name="sub-toolsets"></a>Subconjunto de ferramentas  
  Se a chave do registro na tabela anterior tiver uma subchave, o MSBuild a usará para determinar o caminho de um subconjunto de ferramentas que substitua o caminho no conjunto de ferramentas pai. A seguinte sub-chave é um exemplo:  

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571614"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325279"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] as utiliza na criação de projetos com mais eficiência.  
@@ -28,7 +28,7 @@ As transformações não são arbitrárias, mas são limitadas pela sintaxe espe
   
 No exemplo a seguir, uma lista de arquivos *.resx* é transformada em uma lista de arquivos *.resources*. O modificador de transformação %(filename) especifica que cada arquivo *.resources* tem o mesmo nome de arquivo do que o arquivo *.resx* correspondente.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 ## <a name="using-multiple-modifiers"></a>Uso de vários modificadores  
  Uma expressão de transformação pode conter vários modificadores, que podem ser combinados em qualquer ordem e podem ser repetidos. No exemplo a seguir, o nome do diretório que contém os arquivos é alterado, mas os arquivos de reter a extensão de nome de arquivo e de nome original.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

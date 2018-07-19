@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 89463ca785a995f475519eeba5e2d4af07563428
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453877"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283134"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilação e criação no Visual Studio para Mac
 
@@ -20,7 +20,7 @@ O Visual Studio para Mac pode ser usado para compilar aplicativos e criar assemb
 
 Usar o Visual Studio para Mac permite criar e executar builds imediatamente, fornecendo ainda controle sobre a funcionalidade de build. O Visual Studio para Mac usa o MSBuild como o sistema de build subjacente.
 
-Todos os Projetos e Soluções criados no IDE terão uma configuração de build padrão, que define o contexto para builds. Essas configurações podem ser editadas ou você pode criar suas próprias. Criar ou modificar essas configurações atualizará automaticamente o arquivo de projeto, que é usado pelo MSBuild para compilar o projeto.  
+Todos os Projetos e Soluções criados no IDE terão uma configuração de build padrão, que define o contexto para builds. Essas configurações podem ser editadas ou você pode criar suas próprias. Criar ou modificar essas configurações atualizará automaticamente o arquivo de projeto, que é usado pelo MSBuild para compilar o projeto.
 
 Para obter mais informações sobre como compilar projetos e soluções no IDE, consulte o guia [Compilação e limpeza de Projetos e Soluções](building-and-cleaning-projects-and-solutions.md).
 
@@ -42,9 +42,9 @@ O Visual Studio para Mac também pode ser usado para fazer o seguinte:
 
 É possível usar o Microsoft Build Engine para compilar aplicativos por meio da linha de comando.
 
-Consulte o conteúdo do [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) para ver mais informações sobre como usar o MSBuild.
+Consulte o conteúdo do [MSBuild](/visualstudio/msbuild/msbuild) para ver mais informações sobre como usar o MSBuild.
 
 ## <a name="building-from-visual-studio-team-services"></a>Como compilar com o Visual Studio Team Services
 
-* [Compilar seu aplicativo Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
+* [Compilar seu aplicativo Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Integração contínua com o Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

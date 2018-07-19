@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620447"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282555"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Atualizar uma instalação em rede do Visual Studio
 
@@ -41,10 +41,10 @@ Vamos examinar como criar e, em seguida, atualizar um layout:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Veja aqui como atualizar esse mesmo layout para uma versão mais recente. Você não precisa especificar parâmetros de linha de comando adicionais. As configurações anteriores foram salvas e serão usadas por quaisquer comandos de layout subsequentes nesta pasta de layout.  
+* Veja aqui como atualizar esse mesmo layout para uma versão mais recente. Você não precisa especificar parâmetros de linha de comando adicionais. As configurações anteriores foram salvas e serão usadas por quaisquer comandos de layout subsequentes nesta pasta de layout.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * É assim que se atualiza o layout para uma versão mais recente de maneira autônoma. A operação de layout executa o processo de configuração em uma nova janela do console. A janela é deixada aberta para que os usuários possam ver o resultado final e um resumo dos erros que podem ter ocorrido. Se você estiver executando uma operação de layout de forma autônoma (por exemplo, se você tiver um script que é executado regularmente para atualizar seu layout para a versão mais recente), então, use o parâmetro `--passive` e o processo fechará automaticamente a janela.
@@ -96,7 +96,7 @@ O vs_enterprise.exe pode ser invocado dentro do layoutDir.
 > [!NOTE]
 > Alguns arquivos de metadados importantes que são necessários para a opção `--verify` devem estar no cache offline do layout. Se esses arquivos de metadados estiverem ausentes, "--verify" não poderá ser executado e a instalação apresentará um erro. Se esse erro ocorrer, recrie um novo layout offline para uma pasta diferente (ou na mesma pasta de cache offline). Para fazer isso, execute o mesmo comando de layout que você usou para criar o layout offline inicial. Por exemplo, `Vs_enterprise.exe --layout <layoutDir>`.
 
-A Microsoft fornece atualizações para o Visual Studio periodicamente, portanto, o novo layout que você criar poderá não ser da mesma versão que o layout inicial.  
+A Microsoft fornece atualizações para o Visual Studio periodicamente, portanto, o novo layout que você criar poderá não ser da mesma versão que o layout inicial.
 
 ## <a name="how-to-fix-a-layout"></a>Como corrigir um layout
 
@@ -114,9 +114,9 @@ Depois de executar atualizações de layout para um cache offline, a pasta de ca
 
 Para fazer isso, você precisará dos caminhos de arquivo para os manifestos de catálogo que contêm esses pacotes obsoletos. Você pode encontrar os que manifestos de catálogo em uma pasta "Arquivo morto" no cache de layout offline. Eles são salvos nela quando você atualiza um layout. Na pasta "Arquivo morto", há uma ou mais pastas chamadas "GUID", cada qual contendo um manifesto de catálogo obsoleto. O número de pastas "GUID" deve ser o mesmo que o número de atualizações feitas em seu cache offline.
 
-Alguns arquivos são salvos dentro de cada pasta "GUID". Os dois arquivos mais interessantes são um arquivo "catalog.json" e um arquivo "version.txt". O arquivo "catalog.json" é o manifesto de catálogo obsoleto que você precisará passar para a opção `--clean`. O outro arquivo, version.txt, contém a versão deste manifesto de catálogo obsoleto. Com base no número de versão, você pode decidir se deseja remover pacotes obsoletos do manifesto de catálogo. Você pode fazer o mesmo ao percorrer as outras pastas "GUID". Depois de tomar a decisão sobre os catálogos que deseja limpar, execute o comando `--clean` fornecendo os caminhos de arquivos para esses catálogos.  
+Alguns arquivos são salvos dentro de cada pasta "GUID". Os dois arquivos mais interessantes são um arquivo "catalog.json" e um arquivo "version.txt". O arquivo "catalog.json" é o manifesto de catálogo obsoleto que você precisará passar para a opção `--clean`. O outro arquivo, version.txt, contém a versão deste manifesto de catálogo obsoleto. Com base no número de versão, você pode decidir se deseja remover pacotes obsoletos do manifesto de catálogo. Você pode fazer o mesmo ao percorrer as outras pastas "GUID". Depois de tomar a decisão sobre os catálogos que deseja limpar, execute o comando `--clean` fornecendo os caminhos de arquivos para esses catálogos.
 
-Aqui estão alguns exemplos de como usar a opção --clean:   
+Aqui estão alguns exemplos de como usar a opção --clean:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Você também pode invocar vs_enterprise.exe dentro do &lt;layoutDir&gt;. Veja um exemplo:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Quando você executa esse comando, a instalação analisa sua pasta de cache off
 
 ## <a name="get-support"></a>Obter suporte
 
-Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814954"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081508"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Assinatura&gt; elemento (implantação do ClickOnce)
 Contém as informações necessárias para assinar digitalmente o manifesto de implantação.  
@@ -36,9 +36,9 @@ Contém as informações necessárias para assinar digitalmente o manifesto de i
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Um manifesto de implantação usando uma assinatura do envelope de assinatura é opcional, mas recomendado. Para obter mais informações sobre como assinar arquivos XML, consulte a World Wide Web Consortium recomendação, "Assinatura XML sintaxe e processamento," descrito em [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Assinar um manifesto de implantação usando uma assinatura do envelope é opcional mas recomendado. Para obter mais informações sobre como assinar arquivos XML, consulte a World Wide Web Consortium recomendação, "Sintaxe e processamento de assinatura XML," descrita em [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
- Se você deseja assinar o manifesto, hashes devem ser fornecidos para todos os arquivos. Um manifesto com arquivos que não são transformadas em hash não pode ser assinado, porque os usuários não é possível verificar o conteúdo dos arquivos sem hash.  
+ Se você desejar assinar seu manifesto, hashes devem ser fornecidos para todos os arquivos. Um manifesto com arquivos que não são transformadas em hash não pode ser assinado, porque os usuários não é possível verificar o conteúdo dos arquivos sem hash.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir ilustra uma `Signature` elemento em um manifesto de implantação usado em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação.  

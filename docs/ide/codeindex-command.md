@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297601"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
 Use o comando **CodeIndex** para gerenciar a indexação de código no Team Foundation Server. Por exemplo, você pode desejar redefinir o índice para consertar informações CodeLens ou desativar a indexação para investigar problemas de desempenho do servidor.
 
-**Permissões necessárias**
+## <a name="required-permissions"></a>Permissões necessárias
 
-Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segurança **Team Foundation Administrators**. Consulte [Permissions and groups defined for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/permissions) (Permissões e grupos definidos para o Team Services e o TFS).
+Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segurança **Team Foundation Administrators**. Consulte [Permissions and groups defined for Team Services and TFS](/vsts/organizations/security/permissions?view=vsts) (Permissões e grupos definidos para o Team Services e o TFS).
 
 > [!NOTE]
 > Mesmo que use credenciais administrativas para entrar, você deve abrir uma janela de prompt de comandos com privilégios elevados para executar esse comando. Você também deve executar esse comando a partir do nível de aplicativo para o Team Foundation.
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Consulte também
 
 - [Localizar alterações de código e outro histórico com o CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Gerenciando a configuração do servidor com TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Gerenciando a configuração do servidor com TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

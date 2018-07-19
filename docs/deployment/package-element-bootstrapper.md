@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815594"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080780"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (Bootstrapper)
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (bootstrapper)
 O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -147,9 +147,9 @@ O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Culture`|Necessário. Define a cultura para este pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação.|  
-|`Name`|Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definida para corresponder a `Name` e `Culture` propriedades de `Package`.|  
-|`LicenseAgreement`|Opcional. Especifica o nome do arquivo do pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser um texto sem formatação (. txt) ou Rich Text Format. (. rtf)|  
+|`Culture`|Necessário. Define a cultura para esse pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação.|  
+|`Name`|Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definidas para corresponder a `Name` e `Culture` propriedades de `Package`.|  
+|`LicenseAgreement`|Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser qualquer texto sem formatação (*. txt*) ou Rich Text Format. (*. rtf*)|  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuir o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  

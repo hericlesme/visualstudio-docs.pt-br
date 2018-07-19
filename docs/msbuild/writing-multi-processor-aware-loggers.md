@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a01fb5d47f390c311f119e669e7fdb75619b058
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572589"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326723"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escrevendo agentes de log com reconhecimento de multiprocessador
 A capacidade do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de tirar proveito de vários processadores pode diminuir o tempo de criação do projeto, mas também adiciona complexidade para criar o log de eventos. Em um ambiente de processador único, eventos, erros, avisos e mensagens chegam ao agente de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem chegar ao mesmo tempo ou fora de sequência. Para isso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um agente com reconhecimento de multiprocessador e um novo modelo de registro em log e permite que você crie "agentes de encaminhamento" personalizados.  
@@ -75,7 +75,7 @@ public interface INodeLogger: ILogger
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Usando o ConfigurableForwardingLogger para registro em log distribuído simples  
  Para anexar um ConfigurableForwardingLogger ou um agente de encaminhamento personalizado, use a opção `/distributedlogger` (`/dl` para a forma abreviada) em um build de linha de comando MSBuild.exe. O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `/logger`, exceto em casos em que um agente distribuído tenha sempre duas classes de registro em log em vez de uma, o agente de encaminhamento e o agente central. Este é um exemplo de como anexar um agente de encaminhamento personalizado chamado XMLForwardingLogger.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
@@ -86,7 +86,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
   
  Por exemplo, se você quiser ser notificado somente quando um build começar e terminar, e quando ocorrer um erro, você terá que passar `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT` como parâmetros. Vários parâmetros podem ser passados, separando-os com ponto e vírgula. A seguir está um exemplo de como usar o ConfigurableForwardingLogger para encaminhar apenas os eventos `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT`.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   

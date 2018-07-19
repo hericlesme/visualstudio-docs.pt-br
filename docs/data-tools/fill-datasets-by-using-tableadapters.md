@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757075"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131967"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 

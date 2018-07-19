@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704217"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077084"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; elemento (aplicativo ClickOnce)
 O elemento de nível superior para o manifesto do aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -38,7 +38,7 @@ O elemento de nível superior para o manifesto do aplicativo.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `assembly` elemento é o elemento raiz e é necessário. O primeiro elemento independente deve ser um `assemblyIdentity` elemento. Os elementos de manifesto devem estar em um dos seguintes namespaces:  
+ O `assembly` elemento é o elemento raiz e é necessário. O primeiro elemento independente deve ser um `assemblyIdentity` elemento. Os elementos do manifesto devem estar em um dos seguintes namespaces:  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -46,7 +46,7 @@ O elemento de nível superior para o manifesto do aplicativo.
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- Elementos filho do assembly devem ser também nesses namespaces, por herança ou marcação.  
+ Elementos filho do assembly também devem ser nesses namespaces, por herança ou marcação.  
   
  O `assembly` elemento tem o seguinte atributo.  
   
@@ -55,9 +55,9 @@ O elemento de nível superior para o manifesto do aplicativo.
 |`manifestVersion`|Necessário. O `manifestVersion` atributo deve ser definido como `1.0`.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir ilustra uma `assembly` elemento em um manifesto de aplicativo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este exemplo de código é parte de um exemplo maior fornecido em [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
+ O exemplo de código a seguir ilustra uma `assembly` elemento em um manifesto de aplicativo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este exemplo de código é parte de um exemplo maior fornecido no [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

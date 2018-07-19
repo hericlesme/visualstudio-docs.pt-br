@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192010763a5a00981ca65adc2cbb5fe8fa024aab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920886"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890016"
 ---
 # <a name="design-user-interfaces"></a>Projete interfaces do usuário
 
@@ -23,7 +23,7 @@ Você pode criar e projetar a interface do usuário de seu aplicativo usando uma
 
 |Para saber mais a respeito|Consulte|
 |-------------------------|---------|
-| Os recursos dos designers do XAML no Visual Studio e Blend for Visual Studio | [Criando o XAML no Visual Studio e no Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
+| Os recursos dos designers do XAML no Visual Studio e Blend for Visual Studio | [Projetar XAML no Visual Studio e no Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
 | Criação de qualquer aplicativo baseado em XAML usando o Visual Studio|[Criar uma interface de usuário usando o XAML Designer no Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Criação de qualquer aplicativo baseado em XAML usando o Blend for Visual Studio | [Criar uma interface do usuário usando o Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
 |Criando aplicativos de área de trabalho que usam o tipo WPF de XAML | [Introdução ao Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |

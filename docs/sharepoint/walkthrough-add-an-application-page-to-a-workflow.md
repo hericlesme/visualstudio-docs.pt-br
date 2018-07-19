@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Adicionar uma página de aplicativo para um fluxo de trabalho | Microsoft Docs'
+title: 'Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ed3278a237633cbf7f15806fa0efa9b3bc33bb6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118364"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Instruções passo a passo: adicionar uma página de aplicativo a um fluxo de trabalho
-  Este passo a passo demonstra como adicionar uma página que exibe dados provenientes de um fluxo de trabalho para um projeto de fluxo de trabalho do aplicativo. Ele se baseia no projeto descrito no tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho
+  Este passo a passo demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho a um projeto de fluxo de trabalho. Ele se baseia no projeto descrito no tópico [instruções passo a passo: criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
--   Adicionando uma página ASPX do aplicativo para um projeto de fluxo de trabalho do SharePoint.  
+-   Adicionando uma página ASPX de aplicativo para um projeto de fluxo de trabalho do SharePoint.  
   
--   Obtendo dados do projeto de fluxo de trabalho e manipulando a ele.  
+-   Obtendo dados do projeto de fluxo de trabalho e manipulá-los.  
   
 -   Exibindo dados em uma tabela na página do aplicativo.  
   
@@ -40,20 +41,20 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   Edições do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
--   Você também precisa concluir o projeto no tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+-   Você também tem que concluir o projeto no tópico [instruções passo a passo: criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## <a name="amending-the-workflow-code"></a>Corrigindo o código de fluxo de trabalho  
- Primeiro, adicione uma linha de código para o fluxo de trabalho para definir o valor da coluna de resultado para o valor do relatório de despesas. Esse valor é usado posteriormente o cálculo de resumo de relatório de despesas.  
+## <a name="ammend-the-workflow-code"></a>Ammend o código de fluxo de trabalho
+ Primeiro, adicione uma linha de código para o fluxo de trabalho para definir o valor da coluna de resultado para a quantidade do relatório de despesas. Esse valor é usado posteriormente o cálculo de resumo de relatório de despesas.  
   
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para definir o valor da coluna de resultado no fluxo de trabalho  
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para definir o valor da coluna de resultado no fluxo de trabalho
   
-1.  Carregar o projeto completo do tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Carregar o projeto concluído do tópico [instruções passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Abra o código para workflow1 ou Workflow1.vb (dependendo da linguagem de programação).  
+2.  Abra o código para *Workflow1.cs* ou *Workflow1.vb* (dependendo da sua linguagem de programação).  
   
 3.  Na parte inferior do `createTask1_MethodInvoking` método, adicione o seguinte código:  
   
@@ -67,16 +68,16 @@ ms.lasthandoff: 05/22/2018
       workflowProperties.InitiationData;  
     ```  
   
-## <a name="creating-an-application-page"></a>Criando uma Página de Aplicativo  
- Em seguida, adicione um formulário ASPX ao projeto. Este formulário exibe dados obtidos de projeto de fluxo de trabalho de relatório de despesas. Para fazer isso, você adicionará uma página de aplicativo. Uma página de aplicativo usa a mesma página mestra como outras páginas do SharePoint, que significa que ele será semelhante a outras páginas no site do SharePoint.  
+## <a name="create-an-application-page"></a>Criar uma página de aplicativo
+ Em seguida, adicione um formulário ASPX ao projeto. Este formulário exibirá os dados obtidos do projeto de fluxo de trabalho de relatório de despesas. Para fazer isso, você adicionará uma página de aplicativo. Uma página de aplicativo usa a mesma página mestra como outras páginas do SharePoint, que significa que ele será semelhante a outras páginas no site do SharePoint.  
   
 #### <a name="to-add-an-application-page-to-the-project"></a>Para adicionar uma página de aplicativo ao projeto  
   
-1.  Escolha o projeto ExpenseReport e, em seguida, na barra de menus, escolha **projeto**, **Adicionar Novo Item**.  
+1.  Escolha o projeto ExpenseReport e, em seguida, na barra de menus, escolha **Project** > **Adicionar Novo Item**.  
   
-2.  No **modelos** painel, escolha o **página aplicativos** modelo, use o nome padrão para o item de projeto (**ApplicaitonPage1.aspx**) e escolha o **Adicionar** botão.  
+2.  No **modelos** painel, escolha o **página de aplicativo** modelo, use o nome padrão para o item de projeto (**ApplicaitonPage1.aspx**) e escolha o **Adicionar** botão.  
   
-3.  No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] de ApplicationPage1.aspx, substitua o `PlaceHolderMain` seção com o seguinte:  
+3.  No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, substitua o `PlaceHolderMain` seção com o seguinte:  
   
     ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -88,7 +89,7 @@ ms.lasthandoff: 05/22/2018
     </asp:Content>  
     ```  
   
-     Esse código adiciona uma tabela para a página junto com um título.  
+     Este código adiciona uma tabela para a página junto com um título.  
   
 4.  Adicionar um título para a página de aplicativo, substituindo o `PlaceHolderPageTitleInTitleArea` seção com o seguinte:  
   
@@ -98,14 +99,14 @@ ms.lasthandoff: 05/22/2018
     </asp:Content>  
     ```  
   
-## <a name="coding-the-application-page"></a>Codificação de página do aplicativo  
- Em seguida, adicione o código para a página de resumo de aplicativo de relatório de despesas. Quando você abre a página, o código verifica a lista de tarefas no SharePoint para despesas que excederam o limite de gastos alocado. O relatório lista cada item junto com a soma das despesas.  
+## <a name="code-the-application-page"></a>O aplicativo de página de código
+ Em seguida, adicione o código para a página de resumo do aplicativo de relatório de despesas. Quando você abre a página, o código examina a lista de tarefas no SharePoint para despesas que excederam o limite de gasto alocado. O relatório lista cada item junto com a soma das despesas.  
   
-#### <a name="to-code-the-application-page"></a>Para a página de aplicativo de código  
+#### <a name="to-code-the-application-page"></a>Para o aplicativo de página de código  
   
-1.  Escolha o **ApplicationPage1.aspx** nó e, em seguida, na barra de menus, escolha **exibição**, **código** para exibir o código por trás da página do aplicativo.  
+1.  Escolha o **ApplicationPage1.aspx** nó e em seguida, na barra de menus, escolha **exibição** > **código** para exibir o código por trás da página de aplicativo.  
   
-2.  Substitua o **usando** ou **importação** instruções (dependendo da linguagem de programação) na parte superior da classe com o seguinte:  
+2.  Substitua os **usando** ou **importação** instruções (dependendo da sua linguagem de programação) na parte superior da classe com o seguinte:  
   
     ```vb  
     Imports System  
@@ -299,60 +300,59 @@ ms.lasthandoff: 05/22/2018
     > [!WARNING]  
     >  Certifique-se de substituir "TestServer" no código com o nome de um servidor válido que está executando o SharePoint.  
   
-## <a name="testing-the-application-page"></a>Testando a Página do Aplicativo  
- Em seguida, determine se a página de aplicativo exibe corretamente os dados de despesa.  
+## <a name="test-the-application-page"></a>Testar a página de aplicativo
+ Em seguida, determine se a página de aplicativo exibe corretamente os dados de despesas.  
   
 #### <a name="to-test-the-application-page"></a>Para testar a página do aplicativo  
   
-1.  Pressione a tecla F5 para executar e implantar o projeto do SharePoint.  
+1.  Escolha o **F5** tecla para executar e implantar o projeto do SharePoint.  
   
-2.  Escolha o **início** botão e, em seguida, escolha o **documentos compartilhados** link na barra Início rápido para exibir a lista de documentos compartilhados no site do SharePoint.  
+2.  Escolha o **página inicial** botão e, em seguida, escolha o **documentos compartilhados** link na barra QuickLaunch para exibir a lista de documentos compartilhados no site do SharePoint.  
   
-3.  Para representar os relatórios de despesas para este exemplo, carregar alguns novos documentos na lista de documentos, escolhendo o **documentos** link o **LibraryTools** guia na parte superior da página e, em seguida, escolher o  **Carregar documento** botão na faixa de opções da ferramenta.  
+3.  Para representar os relatórios de despesas para este exemplo, carregar alguns novos documentos em lista de documentos, escolhendo o **documentos** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o  **Carregar documento** botão na faixa de opções da ferramenta.  
   
-4.  Depois de carregar alguns documentos, criar uma instância de fluxo de trabalho escolhendo o **biblioteca** link o **LibraryTools** guia na parte superior da página e, em seguida, escolher o **configurações da biblioteca**botão na faixa de opções da ferramenta.  
+4.  Depois de carregar alguns documentos, criar uma instância de fluxo de trabalho escolhendo a **biblioteca** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o **configurações da biblioteca**botão na faixa de opções da ferramenta.  
   
-5.  No **definições da biblioteca de documentos** página, escolha o **configurações de fluxo de trabalho** link no **permissões e gerenciamento** seção.  
+5.  No **Document Library Settings** , escolha o **configurações de fluxo de trabalho** link no **permissões e gerenciamento** seção.  
   
-6.  No **configurações de fluxo de trabalho** página, escolha o **adicionar um fluxo de trabalho** link.  
+6.  No **configurações de fluxo de trabalho** , escolha o **adicionar um fluxo de trabalho** link.  
   
-7.  No **adicionar um fluxo de trabalho** página, escolha o **ExpenseReport - Workflow1** fluxo de trabalho, insira um nome para o fluxo de trabalho, como **ExpenseTest**e, em seguida, escolha o **Próxima** botão.  
+7.  No **adicionar um fluxo de trabalho** , escolha o **ExpenseReport - Workflow1** fluxo de trabalho, insira um nome para o fluxo de trabalho, como **ExpenseTest**e, em seguida, escolha o **Próxima** botão.  
   
-     O formulário de associação de fluxo de trabalho é exibida. Usá-lo para relatar o valor de limite de despesa.  
+     O formulário de associação de fluxo de trabalho é exibida. Usá-lo para relatar o valor de limite de gastos.  
   
 8.  No formulário de associação, insira **1000** para o **limite de aprovação automática** caixa e, em seguida, escolha o **associar o fluxo de trabalho** botão.  
   
-9. Escolha o **inicial** botão para retornar à home page do SharePoint.  
+9. Escolha o **doméstica** botão para retornar à home page do SharePoint.  
   
-10. Escolha o **documentos compartilhados** link na barra Início rápido.  
+10. Escolha o **documentos compartilhados** link na barra de início rápido.  
   
 11. Escolha um dos documentos carregados para exibir uma seta suspensa, escolha-o e, em seguida, escolha o **fluxos de trabalho** item.  
   
-12. Escolha a imagem ao lado de ExpenseTest para exibir o formulário de inicialização do fluxo de trabalho.  
+12. Escolha a imagem ao lado de ExpenseTest para exibir o formulário de iniciação do fluxo de trabalho.  
   
-13. No **despesa Total** caixa de texto, digite um valor maior que 1000 e, em seguida, escolha o **Iniciar fluxo de trabalho** botão.  
+13. No **Total de despesa** caixa de texto, insira um valor que é maior que 1000 e, em seguida, escolha o **Iniciar fluxo de trabalho** botão.  
   
-     Quando uma despesa relatada excede o valor de despesas alocado, uma tarefa é adicionada à lista de tarefas. Uma coluna denominada **ExpenseTest** com o valor **concluído** também é adicionado ao item de relatório de despesas na lista de documentos compartilhados.  
+     Quando uma despesa relatada excede a quantidade de despesas alocado, uma tarefa é adicionada à lista de tarefas. Uma coluna denominada **ExpenseTest** com o valor **concluído** também é adicionado ao item de relatório de despesas na lista de documentos compartilhados.  
   
 14. Repita as etapas 11 a 13 com outros documentos na lista de documentos compartilhados. (O número exato de documentos não é importante.)  
   
-15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a URL a seguir em um navegador da Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a seguinte URL em um navegador da Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     A página Resumo do relatório de despesas lista todos os relatórios de despesa que excederam a quantidade alocada, a quantidade que eles excederam nela e a quantidade total de todos os relatórios.  
+     A página Resumo do relatório de despesas lista todos os relatórios de despesas que excedeu a quantidade alocada, a quantidade que foi excedido pelo e o valor total para todos os relatórios.  
   
-## <a name="next-steps"></a>Próximas etapas  
- Para obter mais informações sobre páginas de aplicativo do SharePoint, consulte [criando páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Próximas etapas
+ Para obter mais informações sobre páginas de aplicativo do SharePoint, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Você pode aprender mais sobre como criar conteúdo de página do SharePoint usando o Visual Web Designer no Visual Studio com estes tópicos:  
+ Você pode aprender mais sobre como projetar o conteúdo da página do SharePoint usando o Visual Web Designer no Visual Studio com estes tópicos:  
   
--   [Criando Web Parts do SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Criando controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Criar controles reutilizáveis para web parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+## <a name="see-also"></a>Consulte também
+ [Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)   
- [Criando páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [Criar páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+ [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

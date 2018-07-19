@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453823"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280488"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurar e instalar o Visual Studio para Mac
 
@@ -27,7 +27,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 
 ## <a name="install"></a>Instalar o
 
-1. Faça download do Visual Studio para Mac em [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Faça download do Visual Studio para Mac em [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
 2. Depois que o pacote do instalador for baixado, clique no arquivo **VisualStudioInstaller.dmg** para montar o instalador e executá-lo clicando duas vezes no logotipo, conforme ilustrado na imagem a seguir:
 
@@ -84,7 +84,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
   ![Abrir o Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Se você optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), deverá executar o [instalador](https://www.visualstudio.com/vs/) novamente se desejar adicionar os componentes mais tarde.
+Se você optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), deverá executar o [instalador](https://visualstudio.microsoft.com/vs/) novamente se desejar adicionar os componentes mais tarde.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar o Visual Studio para Mac por trás de um firewall ou servidor proxy

@@ -1,5 +1,5 @@
 ---
-title: O manifesto de implantação do ClickOnce | Microsoft Docs
+title: Manifesto de implantação do ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e36f57857376d62beffe46b2ee4ccc7e4825023d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560317"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077887"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
-Um manifesto de implantação é um arquivo XML que descreve um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.  
+Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.  
   
  Manifestos de implantação têm os seguintes elementos e atributos.  
   
 |Elemento|Descrição|Atributos|  
 |-------------|-----------------|----------------|  
 |[\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md)|Necessário. Elemento de nível superior.|`manifestVersion`|  
-|[\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necessário. Identifica o manifesto do aplicativo para a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)|Necessário. Identifica o manifesto do aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
 |[\<Descrição > elemento](../deployment/description-element-clickonce-deployment.md)|Necessário. Identifica as informações do aplicativo usadas para criar uma presença de shell e o **adicionar ou remover programas** item no painel de controle.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<implantação > elemento](../deployment/deployment-element-clickonce-deployment.md)|Opcional. Identifica os atributos usados para a implantação de atualizações e exposição ao sistema.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
 |[\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Necessário. Identifica as versões do .NET Framework em que este aplicativo pode instalar e executar.|`SupportUrl`|  
@@ -42,22 +42,22 @@ Um manifesto de implantação é um arquivo XML que descreve um [!INCLUDE[ndptec
 |[\<customErrorReporting > elemento](../deployment/customerrorreporting-element-clickonce-deployment.md)|Opcional. Especifica um URI para mostrar quando ocorre um erro.|URI|  
   
 ## <a name="remarks"></a>Comentários  
- O arquivo de manifesto de implantação identifica um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação de aplicativo, incluindo a versão atual e outras configurações de implantação. Ele faz referência o manifesto do aplicativo, que descreve a versão atual do aplicativo e todos os arquivos contidos dentro da implantação.  
+ Identifica o arquivo de manifesto de implantação uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação de aplicativo, incluindo a versão atual e outras configurações de implantação. Ele referencia o manifesto do aplicativo, que descreve a versão atual do aplicativo e todos os arquivos contidos dentro da implantação.  
   
  Para obter mais informações, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
-## <a name="file-location"></a>Local de Arquivo  
- O arquivo de manifesto de implantação referencia o manifesto de aplicativo correto para a versão atual do aplicativo. Quando você faz uma nova versão de uma implantação de aplicativo disponíveis, você deve atualizar o manifesto de implantação para se referir a novo manifesto de aplicativo.  
+## <a name="file-location"></a>Local do arquivo  
+ O arquivo de manifesto de implantação referencia o manifesto do aplicativo correta para a versão atual do aplicativo. Quando você faz uma nova versão de uma implantação de aplicativo disponível, você deve atualizar o manifesto de implantação para se referir a novo manifesto do aplicativo.  
   
- O arquivo de manifesto de implantação deve ter nome seguro e também pode conter certificados para validação do publicador.  
+ O arquivo de manifesto de implantação deve ser fortemente nomeado e também pode conter certificados para validação do publicador.  
   
 ## <a name="file-name-syntax"></a>Sintaxe de nome de arquivo  
- O nome de um arquivo de manifesto de implantação deve terminar com a extensão. Application.  
+ O nome de um arquivo de manifesto de implantação deve terminar com o *. Application* extensão.  
   
 ## <a name="examples"></a>Exemplos  
  O exemplo de código a seguir ilustra um manifesto de implantação.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  
@@ -120,4 +120,4 @@ Um manifesto de implantação é um arquivo XML que descreve um [!INCLUDE[ndptec
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
+ [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

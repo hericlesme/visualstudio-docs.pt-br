@@ -15,25 +15,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566011"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785232"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como criar um pacote de bootstrapper localizado
 Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um eula.rtf) e um manifesto do pacote (package.xml).  
   
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.  
   
-1.  Crie uma pasta chamada após o nome da localidade na \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*.  
+1.  Crie uma pasta que é nomeada após o nome da localidade em \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*.  
   
 2.  Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
 3.  Crie um manifesto do pacote com o nome package.xml, atualize as cadeias de caracteres e cultura, e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo package.xml do Visual Studio e modificá-lo nesta etapa.  
   
 > [!NOTE]
->  Se você estiver usando um projeto de instalação para implantar aplicativos, você pode localizar seu aplicativo alterando o **localização** propriedade.  
+>  Se você estiver usando um projeto de instalação para implantar aplicativos, você pode localizar seu aplicativo, alterando a **localização** propriedade.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -41,9 +41,9 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 1.  Crie uma pasta com o nome da localidade.  
   
-     Em computadores de 32 bits, crie a pasta no \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ pasta.  
+     Em computadores de 32 bits, crie a pasta no \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*\ pasta.  
   
-     Em computadores de 64 bits, criar a pasta em que o \Program arquivos (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ pasta.  
+     Em computadores de 64 bits, crie a pasta na \Program arquivos (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*\ pasta.  
   
      A tabela a seguir mostra os nomes das pastas que você pode usar para estabelecer uma localidade correspondente.  
   
@@ -93,6 +93,6 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 6.  Salve o arquivo package.xml.  
   
 ## <a name="see-also"></a>Consulte também  
- [Criando pacotes de Bootstrapper](../deployment/creating-bootstrapper-packages.md)   
+ [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
  [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)   
  [Como criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)

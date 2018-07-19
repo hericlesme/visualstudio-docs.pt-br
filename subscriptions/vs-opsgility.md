@@ -9,28 +9,28 @@ description: Conheça o benefício de treinamento Opsgility incluído com a assi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8f2a7457500ccde75fb0ac8ce698eb27c760459
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477606"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280411"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>O benefício Opsgility nas assinaturas do Visual Studio
 
-Assinaturas selecionadas do Visual Studio incluem um ano de acesso ao treinamento sob demanda, e um desconto de 15% em treinamento supervisionado, além de acesso a laboratórios práticos, caminhos de certificação e muito mais.  
+Assinaturas selecionadas do Visual Studio incluem um ano de acesso ao treinamento sob demanda, e um desconto de 15% em treinamento supervisionado, além de acesso a laboratórios práticos, caminhos de certificação e muito mais.
 
 ## <a name="activation-steps"></a>Etapas de ativação
 1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Localize o bloco Opsgility na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.  
+2.  Localize o bloco Opsgility na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
 
 3.  Para usar o benefício Opsgility, clique no link **Obter Código** na parte inferior do bloco do benefício.   Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar** para continuar.
 
     ![Bloco do benefício Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-4.  Você será redirecionado à página de aterrissagem [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Treinamento online da Opsgility para Visual Studio Enterprise).  (Talvez seja oferecida uma oportunidade de iniciar uma sessão de chat com um especialista do suporte.  Se você não quiser iniciar o chat, minimize a janela.)  Preencha as informações de contato solicitadas e clique em **Registrar**.  
+4.  Você será redirecionado à página de aterrissagem [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Treinamento online da Opsgility para Visual Studio Enterprise).  (Talvez seja oferecida uma oportunidade de iniciar uma sessão de chat com um especialista do suporte.  Se você não quiser iniciar o chat, minimize a janela.)  Preencha as informações de contato solicitadas e clique em **Registrar**.
 
     ![Página de aterrissagem do benefício Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
 
@@ -50,9 +50,9 @@ Assinaturas selecionadas do Visual Studio incluem um ano de acesso ao treinament
 
 *Exclui: MPN (Microsoft Partner Network), MVP (Microsoft Valued Partner), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda com o Opsgility?  Envie um tíquete de suporte por meio da página [Entre em contato](https://www.opsgility.com/SupportTicket). 
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 
+-  Precisa de ajuda com o Opsgility?  Envie um tíquete de suporte por meio da página [Entre em contato](https://www.opsgility.com/SupportTicket).
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

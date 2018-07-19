@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995774"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282054"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Alterar os locais de instalação no Visual Studio 2017
 
@@ -54,7 +54,7 @@ Veja como.
 
 ## <a name="get-support"></a>Obter suporte
 
-Às vezes, as coisas podem dar errado. Se a instalação do Visual Studio falhar, confira a página [Solução de problemas de instalação e de atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter ajuda. Você também pode contatar nosso [chat ao vivo](https://www.visualstudio.com/vs/support/#talktous) (somente em inglês) para obter ajuda na instalação. Para obter mais informações, confira a [página “Fale Conosco” do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Às vezes, as coisas podem dar errado. Se a instalação do Visual Studio falhar, confira a página [Solução de problemas de instalação e de atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter ajuda. Você também pode contatar nosso [chat ao vivo](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para obter ajuda na instalação. Para obter mais informações, confira a [página “Fale Conosco” do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
 
