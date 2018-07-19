@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: Implantar um aplicativo do .NET Core com a ferramenta de publicação
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Implantar um aplicativo da área de trabalho usando o ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Compilar aplicativos ClickOnce usando a linha de comando
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: Publicar um aplicativo ASP.NET Core no Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: Implantar no IIS usando a Implantação da Web
+          href: deploy-iis-with-web-deploy.md
         - name: Importar configurações de publicação e implantar no Azure
           href: tutorial-import-publish-settings-azure.md
         - name: Importar configurações de publicação e implantar no IIS
           href: tutorial-import-publish-settings-iis.md
-        - name: Implantar no IIS usando a Implantação da Web
-          href: deploy-iis-with-web-deploy.md
         - name: Implantação contínua do ASP.NET Core no Azure com o Git
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: Publicar no Kubernetes com ferramentas do Visual Studio para Kubernetes
           href: tutorial-kubernetes-tools.md
     - name: Nativo
@@ -45,21 +45,21 @@
         - name: Implantação em Visual C++...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Implantar um aplicativo nativo usando ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: Empacotar um aplicativo UWP usando o Visual Studio
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publicar no site do Azure usando a Implantação da Web
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: Publicar no Serviço de Aplicativo do Linux
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Publicar no Serviço de Aplicativo do Azure
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Guias de instruções
   items:
     - name: Segurança e implantação do ClickOnce

@@ -3,17 +3,18 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Desenvolvimento móvel com Documentação do C++ | Microsoft Docs
 description: Crie aplicativos nativos em C++ para dispositivos iOS, Android e Windows com o Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060945"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924168"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentação de desenvolvimento móvel com C++
 
@@ -32,7 +33,7 @@ Crie aplicativos nativos em C++ para dispositivos iOS, Android e Windows com o V
                     </div>
                     <div class="cardText">
                         <h3>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma</h3>
-                        <p>Configure as ferramentas necessárias para criar aplicativos móveis para várias plataformas.</p>
+                        <p>Configure as ferramentas necessárias para criar aplicativos móveis multiplataformas.</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +71,7 @@ Crie aplicativos nativos em C++ para dispositivos iOS, Android e Windows com o V
                     </div>
                     <div class="cardText">
                         <h3>Exemplos de desenvolvimento móvel multiplataforma</h3>
-                        <p>Exemplos para você começar com o desenvolvimento móvel de multiplataforma.</p>
+                        <p>Veja exemplos para ajudar você a começar com o desenvolvimento móvel multiplataforma.</p>
                     </div>
                 </div>
             </div>

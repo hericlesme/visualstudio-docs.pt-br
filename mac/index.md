@@ -5,16 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693686"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889879"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Introdução do Visual Studio para Mac
 
-O Visual Studio para Mac é um IDE moderno e sofisticado com muitos recursos para a criação de aplicativos Web, da área de trabalho e móveis. Ele é compatível com os seguintes tipos de desenvolvimento:
+O Visual Studio para Mac é um IDE moderno e sofisticado com muitos recursos para criar aplicativos Web, da área de trabalho e móveis. Ele é compatível com os seguintes tipos de desenvolvimento:
 
 * Móvel com .NET: Android, iOS, tvOS, watchOS
 * Aplicativos da área de trabalho Mac
@@ -24,19 +24,19 @@ O Visual Studio para Mac é um IDE moderno e sofisticado com muitos recursos par
 
 Inclui funcionalidades como um editor avançado, depuração, integração de plataforma nativa com iOS, Mac e Android e controle do código-fonte integrado.
 
-Este artigo apresenta uma pesquisa de várias seções do Visual Studio para Mac, mostrando alguns dos recursos que o tornam uma ferramenta avançada para criar aplicativos multiplataforma.
+Este artigo apresenta uma pesquisa de várias seções do Visual Studio para Mac e recursos que o tornam uma ferramenta avançada para criar aplicativos multiplataforma.
 
 ## <a name="installation"></a>Instalação
 
 Siga as etapas no guia de [Instalação](installation.md) para baixar e instalar o Visual Studio para Mac.
 
-## <a name="language-support"></a>Suporte ao idioma
+## <a name="language-support"></a>Suporte a linguagens
 
 O Visual Studio para Mac dá suporte ao desenvolvimento em C# e F#, por padrão.
 
 ### <a name="c"></a>C#
 
-C# é a linguagem mais usada para criar aplicativos de plataforma cruzada no Visual Studio para Mac. O IDE tem suporte total para todos os recursos de C# 7.
+C# é a linguagem mais usada para criar aplicativos multiplataforma no Visual Studio para Mac. O IDE tem suporte total para todos os recursos de C# 7.
 
 ### <a name="f"></a>F#
 
@@ -46,7 +46,7 @@ F# é uma linguagem de programação funcional fortemente tipada projetada para 
 
 ## <a name="net-core"></a>.NET Core
 
-O [.NET Core](https://www.microsoft.com/net/core#macos) é uma plataforma para a criação de aplicativos executados no Windows, Linux e Mac. O Visual Studio para Mac tem suporte para carregar, criar, executar e depurar projetos do .NET Core.
+O [.NET Core](https://www.microsoft.com/net/core#macos) é uma plataforma para criar aplicativos executados no Windows, Linux e Mac. O Visual Studio para Mac tem suporte para carregar, criar, executar e depurar projetos do .NET Core. 
 
 Para executar projetos do .NET Core, o SDK do .NET Core deve ser baixado e instalado.
 
@@ -56,7 +56,7 @@ O suporte do .NET Core inclui:
 * Modelos de projeto do .NET Core para aplicativos da Web, de biblioteca e de console.
 * Suporte total à depuração, incluindo pontos de interrupção, pilha de chamadas, janela de inspeção, etc.
 * Restauração com base em MSBuild e NuGet PackageReferences.
-* Suporte integrado para testes de unidade para executar e depurar testes com a Plataforma de Testes do Visual Studio, que está incluída com o SDK do .NET Core.
+* Suporte integrado a teste de unidade para executar e depurar testes com a Plataforma de Testes do Visual Studio incluída no SDK do .NET Core.
 * Migração do formato antigo project.json.
 
 Para começar, confira o [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) dos aplicativos Web ASP.NET Core.
@@ -71,11 +71,11 @@ Para começar, confira o [laboratório prático](https://github.com/Microsoft/vs
 
 O Visual Studio tem seu próprio gerenciador de SDK do Android integrado.
 
-Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu designer Android, conforme mostrado nesta imagem:
+Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu Designer Android, conforme mostrado nesta imagem:
 
 ![Designer de Interface do Usuário Android](media/intro-image31.png)
 
-Para saber mais sobre o designer Android, consulte o documento [Visão geral do designer](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview).
+Para saber mais sobre o Designer Android, veja o documento [Visão geral do designer](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview).
 
 ### <a name="ios"></a>iOS
 
@@ -87,13 +87,13 @@ Para saber mais sobre como usar o Designer do iOS, consulte os documentos do [De
 
 ### <a name="mac"></a>Mac
 
-O Xamarin fornece associações nativas de API do Mac, permitindo que você crie lindos aplicativos do Mac.
+O Xamarin fornece associações nativas de API do Mac, que permitem criar lindos aplicativos do Mac.
 
 Para obter mais informações sobre como escrever aplicativos do Mac com o Visual Studio para Mac, consulte a documentação do [Xamarin.Mac](https://developer.xamarin.com/guides/#mac).
 
 ## <a name="gaming"></a>Jogos
 
-O Visual Studio para Mac dá suporte ao desenvolvimento de jogos de plataforma cruzada com o Unity 5.6.1.
+O Visual Studio para Mac dá suporte ao desenvolvimento de jogos multiplataforma com o Unity 5.6.1.
 
 Para começar, confira o [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) do Unity.
 
@@ -108,11 +108,11 @@ O Xamarin Profiler tem três instrumentos disponíveis para criação de perfil.
 
 ### <a name="inspector"></a>Inspector
 
-O Xamarin Inspector fornece um console C# interativo com ferramentas para os usuários. Ele pode ser usado como um auxílio para depuração ou diagnóstico ao inspecionar aplicativos dinâmicos, como uma ferramenta de ensino, como uma ferramenta de documentação ou uma ferramenta de testes.
+O Xamarin Inspector fornece um console C# interativo com ferramentas para os usuários. Ele pode ser usado como um auxílio para depuração ou diagnóstico ao inspecionar aplicativos dinâmicos, como uma ferramenta de ensino, como uma ferramenta de documentação ou uma ferramenta de experimentação.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Ele consiste em um aplicativo autônomo que fornece um console C# avançado para várias plataformas de programação (Android, iOS, Mac e Windows), bem como integração no fluxo de trabalho de depuração de seu IDE.
+Ele consiste em um aplicativo autônomo que fornece um console C# avançado para várias plataformas de programação (Android, iOS, Mac e Windows), além de integrar-se no fluxo de trabalho de depuração de seus IDEs. 
 
 Para saber mais, consulte o guia do [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/).
 

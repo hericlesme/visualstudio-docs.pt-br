@@ -3,22 +3,23 @@ layout: LandingPage
 title: Implantando seus aplicativos no Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para implantar aplicativos, serviços e componentes.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815318"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030397"
 ---
 # <a name="deployment-in-visual-studio"></a>Implantação no Visual Studio
 
 O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implantar seus aplicativos.
 
-<h2>Experiência de implantação do Visual Studio com início rápido de 5 minutos</h2>
+<h2>Experimente a implantação do Visual Studio com Guias de Início Rápido de 5 minutos</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -50,7 +51,7 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implantar em uma Pasta Local</h3>
+                        <h3>Implantar em uma pasta local</h3>
                     </div>
                 </div>
             </div>

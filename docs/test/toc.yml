@@ -1,6 +1,6 @@
 - name: Ferramentas de teste do Visual Studio
   href: improve-code-quality.md
-- name: Cenários de teste
+- name: Cenários do teste
   href: developer-testing-scenarios.md
 - name: Teste de unidade
   href: unit-test-your-code.md
@@ -43,21 +43,23 @@
       items:
         - name: Perguntas Frequentes sobre o Gerenciador de Testes
           href: test-explorer-faq.md
+    - name: Executar testes da linha de comando
+      href: vstest-console-options.md
     - name: Executar um teste de unidade como um processo de 64 bits
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: Configurar testes de unidade usando um arquivo .runsettings
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
     - name: Escrever testes de unidade para código gerenciado
       items:
-        - name: 'Instruções passo a passo: criando e executando testes de unidade para código gerenciado'
+        - name: 'Passo a passo: criar e executar testes de unidade para código gerenciado'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Início Rápido: Desenvolvimento Orientado por Testes com o Gerenciador de Testes'
+        - name: 'Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes'
           href: quick-start-test-driven-development-with-test-explorer.md
         - name: Usar membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
-        - name: Usar as classes Assert
+        - name: Usar as classes assert
           href: using-the-assert-classes.md
-        - name: "Isolar o código em teste com \telementos fictícios da Microsoft"
+        - name: Isolar o código em teste com elementos fictícios da Microsoft
           href: isolating-code-under-test-with-microsoft-fakes.md
           items:
             - name: Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
@@ -69,7 +71,7 @@
         - name: Criar um teste de unidade controlado por dados
           href: how-to-create-a-data-driven-unit-test.md
           items:
-            - name: 'Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados'
+            - name: 'Instruções passo a passo: usar um arquivo de configuração para definir uma fonte de dados'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Testes de unidade para métodos genéricos
           href: unit-tests-for-generic-methods.md
@@ -96,11 +98,11 @@
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
     - name: Criar e executar testes de unidade para aplicativos UWP
       items:
-        - name: Executando teste de unidade em uma DLL da UWP C++
+        - name: Teste de unidade em uma DLL da UWP C++
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Testes de unidade de código do Visual C# em aplicativos UWP'
+        - name: 'Teste de unidade de código do Visual C# em aplicativos UWP'
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: 'Passo a passo: criando e executando testes de unidade para aplicativos UWP'
+        - name: 'Passo a passo: criar e executar testes de unidade para aplicativos UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
     - name: Usar a cobertura de código para determinar quanto do código está sendo testado
       href: using-code-coverage-to-determine-how-much-code-is-being-tested.md

@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Exibir instantâneos usando o retrocesso do IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Depuração para iniciantes absolutos
+      href: debugging-absolute-beginners.md
 - name: Guias de instruções
   items:
     - name: Navegar pelo código com o depurador
@@ -103,10 +105,8 @@
         - name: Editar e Continuar (Visual Basic)
           href: edit-and-continue-visual-basic.md
           items:
-            - name: aplicar edições no modo de interrupção com Editar e Continuar
+            - name: Aplicar edições no modo de interrupção com Editar e Continuar
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Edições sem suporte em Editar e Continuar do Visual Basic
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Não há suporte para Editar e Continuar em F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Exibir dados do depurador
@@ -826,5 +826,3 @@
   items:
     - name: Novidades do depurador no Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Depuração para iniciantes absolutos
-      href: debugging-absolute-beginners.md

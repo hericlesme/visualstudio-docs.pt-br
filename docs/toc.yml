@@ -39,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: Desinstalar o Visual Studio
       href: install/uninstall-visual-studio.md
-    - name: Guia do Administrador do Visual Studio
+    - name: Guia do administrador do Visual Studio
       href: install/visual-studio-administrator-guide.md
       items:
         - name: Usar a linha de comando
@@ -132,7 +132,7 @@
     - name: R no Visual Studio...
       href: rtvs/getting-started-with-r.md
     - name: Node.js no Visual Studio
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'C# no Visual Studio'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Basic no Visual Studio
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Portar, migrar e atualizar projetos'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Adicionar e remover itens de projeto
-              href: ide/adding-and-removing-project-items.md
             - name: Gerenciar propriedades do projeto e da solução
               href: ide/managing-project-and-solution-properties.md
             - name: Gerenciar referências em um projeto
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Listas de conclusão filtradas em Visual Basic
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Desenvolvimento móvel multiplataforma
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'Desenvolvimento do F#'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Versões mais antigas do .NET de destino
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Desenvolvimento do Office e do Sharepoint
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Trabalhar com arquivos XML e XSLT
@@ -605,15 +605,15 @@
         - name: 'Passo a passo: criar um ambiente de build de vários computadores'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Depurar...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Testar...
       href: test/improve-code-quality.md
     - name: Medir o desempenho...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Analisar a qualidade do código...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Implantar...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Estender o Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: Analisar e modelar a arquitetura...
@@ -686,8 +686,6 @@
       items:
         - name: Parâmetros de modelo
           href: ide/template-parameters.md
-        - name: Referência de esquema de modelo (extensibilidade)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Elementos da interface do usuário geral
       items:
         - name: Hierarquia de chamadas
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: Comando Abrir Projeto
           href: ide/reference/open-project-command.md
-        - name: Comando Abrir Solução
-          href: ide/reference/open-solution-command.md
         - name: Comando Imprimir
           href: ide/reference/print-command.md
         - name: Comando Inspeção Rápida

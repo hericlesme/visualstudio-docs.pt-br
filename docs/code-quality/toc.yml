@@ -1,3 +1,5 @@
+- name: Documentação da análise de código
+  href: index.md
 - name: Visão geral
   items:
     - name: Análise de código para código gerenciado
@@ -137,7 +139,7 @@
           href: native-recommended-rules-rule-set.md
         - name: Conjunto de regras de segurança para código gerenciado
           href: security-rules-rule-set-for-managed-code.md
-    - name: Avisos da análise de código para código gerenciado
+    - name: Avisos de análise de código para código gerenciado
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: Avisos da análise de código para código gerenciado por CheckId
