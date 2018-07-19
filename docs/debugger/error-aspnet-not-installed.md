@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b462c3ed02ebd622a39cd08039037b3ba63e7f57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479416"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056655"
 ---
 # <a name="error-aspnet-not-installed"></a>Erro: ASP.NET não instalado
 Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] não está instalado corretamente no computador que você está tentando depurar. Isso pode significar que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nunca foi instalado ou que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] foi instalado primeiro e o IIS foi instalado posteriormente.  
@@ -35,14 +35,14 @@ Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_
   
 1.  De uma janela de prompt de comando, execute o seguinte comando:  
   
-    ```  
+    ```cmd
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     onde *versão* representa o número de versão do .NET Framework instalado no seu computador, como v1.0.370. Você pode determinar a versão do framework examinando o `\WINDOWS\Microsoft.NET\Framework` directory.  
+     em que *versão* representa o número de versão do .NET Framework instalado no seu computador, por exemplo, v1.0.370. Você pode determinar a versão do framework examinando o `\WINDOWS\Microsoft.NET\Framework` directory.  
   
     > [!NOTE]
-    >  Com o Windows Server 2003, você pode instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando **adicionar ou remover programas** no painel de controle.  
+    >  Com o Windows Server 2003, você pode instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] por meio **adicionar ou remover programas** no painel de controle.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

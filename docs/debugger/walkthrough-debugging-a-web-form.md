@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480326"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057168"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Instruções passo a passo: depurando um formulário Web
-As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], também conhecido como um Web Form. Ele mostra como iniciar e parar a execução, definir pontos de interrupção e examinar variáveis no **inspecionar** janela.  
+As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], também conhecido como um Web Form. Ele mostra como iniciar e parar a execução, definir pontos de interrupção e examinar variáveis na **inspeção** janela.  
   
 > [!NOTE]
 >  Para concluir este passo a passo, você deverá ter privilégios de administrador no computador do servidor. Por padrão, o processo do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], aspnet_wp.exe ou w3wp.exe, é executado como um processo do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para depurar o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], você deverá ter privilégios de Administrador no computador no qual o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] é executado. Para obter mais informações, consulte [requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md).  
@@ -43,29 +43,29 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 1.  Se você já tiver uma solução aberta, feche-a.  
   
-2.  Sobre o **arquivo** menu, clique em **novo**e, em seguida, clique em **Site da Web**.  
+2.  Sobre o **arquivo** menu, clique em **New**e, em seguida, clique em **Site da Web**.  
   
-     O **novo Site** caixa de diálogo é exibida.  
+     O **New Web Site** caixa de diálogo é exibida.  
   
 3.  No **modelos** painel, clique em **Site da Web ASP.NET**.  
   
 4.  Sobre o **local** linha, clique em **HTTP** na lista e, na caixa de texto, digite **http://localhost/WebSite**.  
   
-5.  No **idioma** lista, clique em **Visual C#** ou **Visual Basic**.  
+5.  No **linguagem** , clique em **Visual c#** ou **Visual Basic**.  
   
 6.  Clique em **OK**.  
   
-     O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria um novo projeto e exibe o código-fonte HTML padrão. Ele também cria um novo diretório virtual chamado **site** em **Default Web Site** no IIS.  
+     O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria um novo projeto e exibe o código-fonte HTML padrão. Ele também cria um novo diretório virtual chamado **site** sob **Default Web Site** no IIS.  
   
 7.  Clique o **Design** guia na margem inferior.  
   
-8.  Clique o **caixa de ferramentas** guia na margem esquerda ou selecione-o no **exibição** menu.  
+8.  Clique o **caixa de ferramentas** guia na margem esquerda ou selecione-o na **exibição** menu.  
   
-     O **caixa de ferramentas** é aberto.  
+     O **caixa de ferramentas** é aberta.  
   
-9. No **caixa de ferramentas**, clique no **botão** controlar e adicioná-lo à superfície de design principal, Default.aspx.  
+9. No **caixa de ferramentas**, clique no **botão** controlar e adicioná-lo à superfície de design principal, default. aspx.  
   
-10. No **caixa de ferramentas**, clique no **Textbox** controlar e arraste o controle para a superfície de design principal Default.aspx.  
+10. No **caixa de ferramentas**, clique no **caixa de texto** de controle e, em seguida, arraste o controle para a superfície de design principal, default. aspx.  
   
 11. Clique duas vezes no controle de botão que você removeu.  
   
@@ -73,11 +73,11 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 12. Na função `Button1_Click`, adicione o seguinte código:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,11 +91,11 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 1.  Na janelafault.aspx.cs ou Default.aspx.vb, clique na margem esquerda na mesma linha que o texto que você adicionou:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -103,7 +103,7 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 2.  No menu **Depuração**, clique em **Iniciar Depuração**.  
   
-3.  O **depuração habilitada não** caixa de diálogo é exibida. Selecione **modificar o arquivo Web. config para habilitar a depuração** opção e clique em **Okey**.  
+3.  O **depuração não habilitada** caixa de diálogo é exibida. Selecione **modificar o arquivo Web. config para habilitar a depuração** opção e clique em **Okey**.  
   
      O Internet Explorer inicia e exibe a página recém-criada.  
   
@@ -111,25 +111,21 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
      No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], essa opção leva você à linha onde você define o ponto de interrupção na página de código Default.aspx.cs ou Default.aspx.vb. Essa linha deve ser realçada em amarelo. Agora você pode exibir as variáveis em seu aplicativo e controlar sua execução. Seu aplicativo para a execução e aguarda você enviar um comando.  
   
-5.  No **depurar** menu, clique em **Windows**, em seguida, clique em **inspecionar**e, em seguida, clique em **inspecionar 1**.  
+5.  No **depurar** menu, clique em **Windows**, em seguida, clique em **Assista**e, em seguida, clique em **Watch1**.  
   
-6.  No **inspecionar** , digite **TextBox1**.  
+6.  No **Watch** , digite **TextBox1.Text**.  
   
-     O **inspecionar** janela mostra o valor da variável `TextBox1.Text`:  
+     O **Watch** janela mostra o valor da variável `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
-7.  Sobre o **depurar** menu, clique em **passar por**.  
+7.  Sobre o **Debug** menu, clique em **Step Over**.  
   
-     O valor de `TextBox1.Text` alterações no **inspecionar** janela para ler:  
+     O valor de `TextBox1.Text` alterações na **inspeção** janela para ler:  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
-8.  Sobre o **depurar** menu, clique em **continuar**.  
+8.  Sobre o **Debug** menu, clique em **continuar**.  
   
 9. No Internet Explorer, clique no botão novamente.  
   
@@ -139,7 +135,7 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
      Isso remove o ponto de interrupção.  
   
-11. Sobre o **depurar** menu, clique em **parar depuração**.  
+11. Sobre o **Debug** menu, clique em **parar depuração**.  
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Para anexar ao Web Form para depurar  
   
@@ -147,25 +143,25 @@ As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUD
   
 2.  Na janelafault.aspx.cs ou Default.aspx.vb, clique na margem esquerda para novamente definir um ponto de interrupção na linha adicionada:  
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  Sobre o **depurar** menu, clique em **Start Without Debugging**.  
+3.  Sobre o **Debug** menu, clique em **iniciar sem depuração**.  
   
      O Web Form começa a ser executado no Internet Explorer, mas o depurador não está anexado.  
   
-4.  Anexe ao processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obter mais informações, consulte [depuração de aplicativos de Web implantados](../debugger/debugging-deployed-web-applications.md).  
+4.  Anexe ao processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obter mais informações, consulte [Depurando aplicativos de Web implantado](../debugger/debugging-deployed-web-applications.md).  
   
 5.  No Internet Explorer, clique no botão no seu formulário.  
   
      No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você deve atingir o ponto de interrupção em Default.aspx.cs, Default.aspx.vb ou Default.aspx.  
   
-6.  Quando tiver terminado de depuração, no **depurar** menu, clique em **parar depuração**.  
+6.  Quando tiver terminado de depurar, nos **Debug** menu, clique em **parar depuração**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

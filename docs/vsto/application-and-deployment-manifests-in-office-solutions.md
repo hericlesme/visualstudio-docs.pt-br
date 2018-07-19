@@ -1,5 +1,5 @@
 ---
-title: Manifestos de aplicativo e implantação em soluções do Office | Microsoft Docs
+title: Manifestos de aplicativo e implantação em soluções do Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -18,33 +18,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9885f08db94cdbda7a0f8b531a6328ca2024466f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f3fba49e90bbe0f5350a5d778b8591ec473807be
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257996"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifestos de aplicativo e implantação em soluções do Office
-  Um manifesto de aplicativo é um arquivo XML que fornece informações que são usadas por uma solução do Office para localizar e atualizar seus assemblies. Um manifesto de aplicativo pode ser usado com um manifesto de implantação, que é um arquivo XML armazenado no servidor que fornece as informações necessárias para localizar a versão mais atual do manifesto de aplicativo e assemblies.  
+  Um manifesto de aplicativo é um arquivo XML que fornece informações que são usadas por uma solução do Office para localizar e atualizar seus assemblies. Um manifesto de aplicativo pode ser usado com um manifesto de implantação, que é um arquivo XML armazenado no servidor que fornece as informações necessárias para localizar a versão mais atual do manifesto do aplicativo e assemblies.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="manifest-structure-for-office-solutions"></a>Estrutura de manifesto para soluções do Office  
- Para soluções do Microsoft Office criadas usando as ferramentas de desenvolvimento do Office no Visual Studio, todos os manifestos são baseados no esquema padrão do ClickOnce. Quando você implantar as soluções do Office, os manifestos de aplicativo para o nível de documento e projetos de suplemento do VSTO estão localizados no cache do ClickOnce. Os manifestos de implantação não são copiados para o computador cliente.  
+ Para soluções do Microsoft Office criadas usando as ferramentas de desenvolvimento do Office no Visual Studio, todos os manifestos são baseados no esquema padrão do ClickOnce. Quando você implanta as soluções do Office, os manifestos do aplicativo para o nível de documento e projetos de suplemento do VSTO estão localizados no cache do ClickOnce. Os manifestos de implantação não são copiados para o computador cliente.  
   
  Para obter informações sobre o conteúdo do aplicativo e manifestos de implantação para projetos do Office, consulte [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md) e [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
-## <a name="creating-application-and-deployment-manifests"></a>Manifestos de criação de aplicativo e implantação  
- Manifestos de aplicativo são criados automaticamente como parte do processo de compilação. Sempre que você criar um projeto no nível do documento, o local do manifesto de implantação é inserido no documento como uma propriedade de documento personalizadas. Para suplementos do VSTO, o local do manifesto de implantação é armazenado no registro.  
+## <a name="create-application-and-deployment-manifests"></a>Criar manifestos de aplicativo e implantação  
+ Manifestos de aplicativo são criados automaticamente como parte do processo de compilação. Sempre que você criar um projeto de nível de documento, o local do manifesto de implantação será inserido no documento como uma propriedade de documento personalizado. Para suplementos do VSTO, o local do manifesto de implantação é armazenado no registro.  
   
- Para obter mais informações sobre o **Assistente de publicação**, consulte [implantar uma solução Office pelo ClickOnce usando](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+ Para obter mais informações sobre o **Assistente de publicação**, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
- Para obter mais informações sobre como manifestos de trabalhar com soluções do Office, consulte [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
+ Para obter mais informações sobre como se manifesta trabalhar com soluções do Office, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifesto do aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)   

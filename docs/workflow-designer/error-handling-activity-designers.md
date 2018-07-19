@@ -1,5 +1,5 @@
 ---
-title: Designer de fluxo de trabalho - Designers de atividade de tratamento de erros
+title: Designer de fluxo de trabalho – Designers de atividade de tratamento de erros
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c8a8328fda71be7124b0ebd7fcd389d2b4f6dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e0d1d520f54a2b9da958342a34019aef7998727a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966729"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758505"
 ---
 # <a name="error-handling-activity-designers"></a>Designer de atividade de tratamento de erro
 
-O designer de atividade de tratamento de erros é usado para gerenciar o tratamento de erros no Designer de fluxo de trabalho do Windows. Os tópicos contidos nesta seção fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e designers de modelo.
+Os designers de atividade de tratamento de erros são usados para gerenciar o tratamento de erro no Designer de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e os designers de modelo.

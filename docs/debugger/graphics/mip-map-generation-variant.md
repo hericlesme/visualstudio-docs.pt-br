@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475709"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433162"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 Habilita mapas mip em texturas que não são destinos de renderização.  
@@ -45,9 +45,9 @@ Habilita mapas mip em texturas que não são destinos de renderização.
  Quando há mapas mip gerados automaticamente para uma textura, as chamadas de `ID3D11Device::CreateShaderResourceView` são modificadas durante a reprodução para usar a cadeia de mip durante a amostragem da textura.  
   
 ## <a name="example"></a>Exemplo  
- O **geração de Mip-map** variant pode ser reproduzida usando código como este:  
+ O **geração de mapas Mip** variante pode ser reproduzida usando códigos da seguinte forma:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -64,7 +64,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Para criar uma textura com cadeia de mip completa, defina `D3D11_TEXTURE2D_DESC::MipLevels` como 0. O número de níveis de mip em uma cadeia de mip completo é floor(log2(n) + 1), onde n é a maior dimensão da textura.  
+ Para criar uma textura com cadeia de mip completa, defina `D3D11_TEXTURE2D_DESC::MipLevels` como 0. O número de níveis de mip em uma cadeia de mip completa é floor(log2(n) + 1), onde n é a maior dimensão da textura.  
   
  Lembre-se de que ao fornecer os dados iniciais para `CreateTexture2D`, você também deve fornecer um objeto D3D11_SUBRESOURCE_DATA para cada nível de mip.  
   
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Se quiser fornecer seu próprio conteúdo aos níveis de mip em vez de gerá-lo automaticamente, crie as texturas usando um editor de imagens compatível com texturas com mapas mip. Em seguida, carregue o arquivo e transmita os níveis de mip a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Variante de dimensões da textura de metade/um quarto](half-quarter-texture-dimensions-variant.md)
+ [Variantes de dimensões de textura de metade/um quarto](half-quarter-texture-dimensions-variant.md)

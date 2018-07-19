@@ -1,5 +1,5 @@
 ---
-title: Referência de API para extensibilidade do IntelliTrace | Microsoft Docs
+title: Referência da API para extensibilidade do IntelliTrace | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457456"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433139"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referência API para o extensibilidade do IntelliTrace
 Usando as informações contidas nesta seção, você pode usar APIs de extensibilidade do IntelliTrace para ler e decodificar arquivos .itrace em seu aplicativo.  
@@ -31,5 +31,5 @@ Usando as informações contidas nesta seção, você pode usar APIs de extensib
  [IntelliTrace](../debugger/intellitrace.md)  
  Fornece informações sobre como depurar com o IntelliTrace.  
   
- [Galeria de códigos do MSDN](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [Galeria de códigos do MSDN](https://code.msdn.microsoft.com/)  
  Hospeda um aplicativo de exemplo que mostra como usar a extensibilidade do IntelliTrace.
