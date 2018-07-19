@@ -14,17 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 85500cfb5d8977c1e06ac925a44ba20bf3144d31
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280296"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir trechos de código
 
 Você pode fornecer seus trechos de código a seus amigos e fazer com que instalem os trechos em seus próprios computadores usando o Gerenciador de Trechos de Código. No entanto, se você tiver vários trechos para distribuir ou gostaria de distribuí-los mais amplamente, inclua seu arquivo de trecho em uma extensão do Visual Studio, que usuários do Visual Studio podem instalar.
 
-Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [Downloads do Visual Studio](https://www.visualstudio.com/downloads/).
+Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Configurar a extensão
 

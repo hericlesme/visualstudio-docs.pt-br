@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a865a9852b8a6700e250225244546567967257de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476992"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058517"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 Há três modos de começar a depuração de um serviço WCF:  
@@ -47,16 +47,16 @@ Há três modos de começar a depuração de um serviço WCF:
   
 -   A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     </system.web>  
     ```  
   
-     Esse código só precisa ser adicionado uma vez. Você pode adicionar esse código editando o arquivo. config ou anexando-se ao serviço usando **anexar ao processo**. Quando você usa **anexar ao processo** em um serviço, o código de depuração é automaticamente adicionado ao arquivo. config. Depois disso, você pode depurar e entrar no serviço sem precisar editar o arquivo .config.  
+     Esse código só precisa ser adicionado uma vez. Você pode adicionar esse código editando o arquivo. config ou anexando ao serviço por meio **anexar ao processo**. Quando você usa **anexar ao processo** em um serviço, o código de depuração é automaticamente adicionado ao arquivo. config. Depois disso, você pode depurar e entrar no serviço sem precisar editar o arquivo .config.  
   
 ## <a name="limitations-on-stepping-out-of-a-service"></a>Limitações para sair de um serviço  
- Sair de um serviço e voltar para o cliente tem as mesmas restrições descritas para entrar em um serviço. Além disso, o depurador deve ser anexado ao cliente. Se você estiver depurando um cliente e entrando em um serviço, o depurador permanecerá anexado ao serviço. Isso é verdadeiro se você iniciou o cliente usando **iniciar depuração** ou conectados ao cliente usando **anexar ao processo**. Se você tiver começado a depurar anexando ao serviço, o depurador ainda não estará anexado ao cliente. Nesse caso, se você tiver para a etapa do serviço e de volta para o cliente, você deve primeiro usar **anexar ao processo** anexar manualmente ao cliente.  
+ Sair de um serviço e voltar para o cliente tem as mesmas restrições descritas para entrar em um serviço. Além disso, o depurador deve ser anexado ao cliente. Se você estiver depurando um cliente e entrando em um serviço, o depurador permanecerá anexado ao serviço. Isso é verdadeiro se você tiver iniciado o cliente usando **iniciar depuração** ou anexado ao cliente, usando **anexar ao processo**. Se você tiver começado a depurar anexando ao serviço, o depurador ainda não estará anexado ao cliente. Nesse caso, se você tiver que sair do serviço e voltar para o cliente, você deve primeiro usar **anexar ao processo** para anexar manualmente ao cliente.  
   
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitações de anexar automaticamente a um serviço  
  Anexar automaticamente a um serviço tem as seguintes limitações:  
@@ -69,17 +69,17 @@ Há três modos de começar a depuração de um serviço WCF:
   
 -   A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     <system.web>  
     ```  
   
 ## <a name="self-hosting"></a>Auto-hospedagem  
- Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, o Host de serviço do WCF, ou o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desenvolvimento. Para obter informações sobre como depurar um serviço auto-hospedado, consulte [como: depurar um serviço WCF de auto-hospedada](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, o Host de serviço do WCF, ou o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Para obter informações sobre como depurar um serviço auto-hospedado, consulte [como: depurar um serviço do WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Auto-hospedagem  
- Para habilitar a depuração de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos 3.0 ou 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 deve ser instalado antes de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] está instalado. Se [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] está instalada antes de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, ocorrerá um erro quando você tentar depurar um [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo 3.0 ou 3.5. A mensagem de erro é "Não é possível entrar automaticamente no servidor". Para corrigir esse problema, use o Windows **painel de controle** > **programas e recursos** para reparar o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalação.  
+ Para habilitar a depuração dos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos 3.0 ou 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 deve ser instalado antes de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] está instalado. Se [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] está instalado antes de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, ocorrerá um erro quando você tenta depurar uma [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo 3.0 ou 3.5. A mensagem de erro é "Não é possível entrar automaticamente no servidor". Para corrigir esse problema, use o Windows **painel de controle** > **programas e recursos** reparar seu [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando serviços WCF](../debugger/debugging-wcf-services.md)   

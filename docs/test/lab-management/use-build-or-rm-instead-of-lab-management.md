@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845373"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar o Build ou o Release Management em vez de o Lab Management para o teste automatizado
 
@@ -58,7 +59,7 @@ A tabela a seguir resume as atividades típicas que você realizava na Central d
 
 | Etapas | Com a Central de Laboratório | Com Build ou Release Management |
 |-------|----------------------|-----------------|
-| Gerencie uma biblioteca de modelos de ambiente. | Crie um ambiente de laboratório. Instale o software necessário nas máquinas virtuais. Sysprep e armazene o ambiente como um modelo na biblioteca. | Use o console de administração do SCVMM diretamente para criar e gerenciar modelos de máquinas virtuais ou modelos de serviço. Ao usar o Azure, selecione um dos [modelos de início rápido do Azure](/resources/templates/). |
+| Gerencie uma biblioteca de modelos de ambiente. | Crie um ambiente de laboratório. Instale o software necessário nas máquinas virtuais. Sysprep e armazene o ambiente como um modelo na biblioteca. | Use o console de administração do SCVMM diretamente para criar e gerenciar modelos de máquinas virtuais ou modelos de serviço. Ao usar o Azure, selecione um dos [modelos de início rápido do Azure](https://azure.microsoft.com/resources/templates/). |
 | Crie um ambiente de laboratório. | Selecione um modelo de ambiente na biblioteca e implante-o. Forneça os parâmetros necessários para personalizar as configurações da máquina virtual. | Use o console de administração do SCVMM diretamente para criar VMs ou instâncias de serviço de modelos. Use o Portal do Azure diretamente para criar recursos. Ou crie uma definição de versão com um ambiente. Use as tarefas do Azure ou as tarefas da [extensão de Integração do SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) para criar novas máquinas virtuais. Criar uma nova versão dessa definição é equivalente a criar um novo ambiente na Central de Laboratório. |
 | Conecte-se aos computadores. | Abra o ambiente de laboratório no Visualizador de ambiente. | Use o console de administração do SCVMM diretamente para se conectar às máquinas virtuais. Como alternativa, use o endereço IP ou os nomes DNS das máquinas virtuais para abrir as sessões de área de trabalho remota. |
 | Crie um ponto de verificação de um ambiente ou restaure um ambiente para limpar o ponto de verificação. | Abra o ambiente de laboratório no Visualizador de ambiente. Selecione a opção de criar um ponto de verificação ou restaurar para um ponto de verificação anterior. | Use o console de administração do SCVMM diretamente para executar essas operações nas máquinas virtuais. Ou, para executar estas etapas como parte de uma automação e inclua as tarefas de ponto de verificação da [extensão de Integração do SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte do ambiente em uma definição de versão. |

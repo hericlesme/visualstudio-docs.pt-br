@@ -10,11 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280384"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 Nesta seção, você aprenderá a instalar as Ferramentas do Visual Studio para Unity e a configurar seu projeto do Unity para trabalhar com o Visual Studio.
@@ -27,7 +28,7 @@ Nesta seção, você aprenderá a instalar as Ferramentas do Visual Studio para 
 
 -   de uma versão do **Visual Studio** que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. É possível baixar o Visual Studio Community gratuitamente.
 
-     [Baixar o Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+     [Baixar o Visual Studio Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   do **Unity** versão 4.0.0 ou superior ou do **Unity** versão 5.2.0 para tirar proveito do suporte interno às Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.
 

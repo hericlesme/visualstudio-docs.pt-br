@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747424"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757247"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 
@@ -50,7 +50,7 @@ Você executará as seguintes ações para compilar:
 >  -   Aplicativos Xamarin com interface do usuário nativa:
 >     -   [Olá, Android](/xamarin/android/get-started/hello-android/) (aplicativo simples com uma tela)
 >     -   [Olá, Android multitela](/xamarin/android/get-started/hello-android-multiscreen/) (aplicativo com navegação entre telas)
->     -   [Passo a passo de fragmentos do Android](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (usado para telas mestre/detalhadas, entre outros elementos)
+>     -   [Passo a passo de fragmentos do Android](/xamarin/android/platform/fragments/implementing-with-fragments/) (usado para telas mestre/detalhadas, entre outros elementos)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Multitela Hello, iOS](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -247,7 +247,7 @@ O Visual Studio não tem um modelo de solução para criar aplicativos nativos d
 
 6.  Na janela **Propriedades**, defina estas propriedades. (Pode ajudar classificar a lista em ordem alfabética usando o botão de classificação na barra de ferramentas da janela Propriedades):
 
-    |propriedade|Valor|
+    |Propriedade|Valor|
     |--------------|-----------|
     |**text**|**Pesquisar por CEP**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -302,7 +302,7 @@ O Visual Studio não tem um modelo de solução para criar aplicativos nativos d
 
 9. Na **Caixa de Ferramentas**, arraste um controle de **Número** para **RelativeLayout** e posicione-o abaixo do rótulo **CEP**. Então defina as propriedades a seguir:
 
-    |propriedade|Valor|
+    |Propriedade|Valor|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginStart**|`10dp`|
@@ -327,7 +327,7 @@ O Visual Studio não tem um modelo de solução para criar aplicativos nativos d
 
 10. Na **Caixa de Ferramentas**, arraste um **Botão** para o controle **RelativeLayout** e posicione-o à direita do controle zipCodeEntry. Então defina estas propriedades:
 
-    |propriedade|Valor|
+    |Propriedade|Valor|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**text**|**Get Weather**|

@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117584"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
 
@@ -113,13 +114,13 @@ O método `Assert` inclui uma mensagem que exibe os valores `x` e `y` de uma ite
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Especificar o DataSourceAttribute
  O atributo `DataSource` especifica a cadeia de conexão para a fonte de dados e o nome da tabela a ser usada no método de teste. As informações exatas na cadeia de conexão são diferentes, dependendo do tipo de fonte de dados que você está usando. Neste exemplo, usamos um banco de dados SqlServerCe.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 O atributo DataSource tem três construtores.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ O atributo DataSource tem três construtores.
 
  Ao usar um arquivo app.config você pode alterar o local da fonte de dados sem fazer alterações no próprio teste de unidade. Para obter informações sobre como criar e usar um arquivo app.config, consulte [Passo a passo: usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ O atributo DataSource tem três construtores.
 
  As cadeias de conexão dependem do tipo de fonte de dados, mas elas devem conter um elemento Provedor que especifica o nome invariável do provedor de dados.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -152,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Execução do teste e exibição dos resultados
- Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste aparece na janela Gerenciador de Testes, no grupo **Testes Não Executados**. Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar...** para escolher um subconjunto de testes a serem executados.
+ Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste aparece na janela Gerenciador de Testes, no grupo **Testes Não Executados**. Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados.
 
  A barra de resultados de teste na parte superior do Gerenciador é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel de detalhes na parte inferior da janela do Gerenciador de Testes. Selecione um teste para exibir seus detalhes no painel inferior.
 

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815016"
 ---
 # <a name="test-generation"></a>Geração de teste
 
@@ -27,7 +28,7 @@ Nos testes de unidade tradicionais, um teste de consiste em várias coisas:
 
 A seguir está um exemplo de estrutura de teste:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Quando o IntelliTest precisa construir objetos, chamadas para construtores e mé
 
 Os PUTs são definidos usando o atributo personalizado [PexMethod](attribute-glossary.md#pexmethod) de forma semelhante ao MSTest (ou NUnit, xUnit). Os PUTs são métodos de instância agrupados logicamente em classes marcadas com [PexClass](attribute-glossary.md#pexclass). O exemplo a seguir mostra um PUT simples armazenado na classe **MyPexTest**:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 em que **ReplaceFirstChar** é um método que substitui o primeiro caractere de uma cadeia de caracteres:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Deste teste, o IntelliTest pode [gerar entradas](input-generation.md) automaticamente para um PUT que abrange muitos caminhos de execução do código testado. Cada entrada que abrange um caminho de execução diferente é “serializada” como um teste de unidade:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Os testes de unidade parametrizados podem ser métodos genéricos. Nesse caso, o usuário deve especificar os tipos usados para criar a instância do método usando [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ O IntelliTest fornece vários atributos de validação para ajudar na triagem de
 
 As exceções esperadas geram casos de teste negativos com a anotação apropriada, como **ExpectedException(typeof(*xxx*))**, enquanto exceções inesperadas geram casos de teste com falha.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ Os validadores são:
 
 O IntelliTest pode "testar" tipos internos, desde que ele pode vê-los. Para o IntelliTest ver os tipos, o seguinte atributo é adicionado ao seu projeto de teste ou produto pelos assistentes do IntelliTest do Visual Studio:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Os usuários podem usar suposições e declarações para expressar [pré-condi�
 
 As declarações são um conceito conhecido em estruturas de teste de unidade regulares, portanto o IntelliTest já "compreende" as classes **Assert** internas fornecidas por cada estrutura de teste com suporte. No entanto, a maioria das estruturas não fornece uma classe **Assume**. Nesse caso, o IntelliTest fornece a classe [PexAssume](static-helper-classes.md#pexassume). Se você não quiser usar uma estrutura de teste existente, o IntelliTest também terá a classe [PexAssert](static-helper-classes.md#pexassert).
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 Em particular, a suposição não nula pode ser codificada como um atributo personalizado:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ Como parte da integração com estruturas de teste, o IntelliTest dá suporte à
 
 **Exemplo**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

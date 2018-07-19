@@ -13,41 +13,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454656"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281492"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Como: responder ao depurador Just-In-Time
 
-As ações que você deve tomar quando você vir Just-in-Time dependem de caixa de diálogo do depurador que você está tentando fazer:
+As ações que você deve executar quando você vir o Just-in-Time dependem de caixa de diálogo do depurador que você está tentando fazer:
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Se você deseja corrigir ou depurar o erro (usuários do Visual Studio)
 
-- Você deve ter [Visual Studio instalado](http://www.visualstudio.com) para exibir informações detalhadas sobre o erro e tente depurá-lo. Para obter mais informações, consulte [depurar usando o depurador Just-in-](../debugger/debug-using-the-just-in-time-debugger.md). Se você não pode resolver o erro e corrigir o aplicativo, contate o proprietário do aplicativo para resolver o erro.
+- Você deve ter [Visual Studio instalado](http://visualstudio.microsoft.com) para exibir as informações detalhadas sobre o erro e tente depurá-lo. Para obter mais informações, consulte [depurar usando o depurador Just-in-](../debugger/debug-using-the-just-in-time-debugger.md). Se você não pode resolver o erro e corrigir o aplicativo, entre em contato com o proprietário do aplicativo para resolver o erro.
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Se você quiser impedir que a caixa de diálogo do depurador Just-in-aparecendo
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Se você quiser impedir que a caixa de diálogo do depurador Just-in-apareçam
 
-Você pode adotar medidas para impedir que o Just-in-Time caixa de diálogo de depurador apareça. Se o aplicativo trata o erro, você pode executar o aplicativo normalmente.
+Você pode tomar medidas para evitar o Just-in-Time caixa de diálogo do depurador apareça. Se o aplicativo trata o erro, você pode executar o aplicativo normalmente.
 
-1. (Aplicativos da web) Se você estiver tentando executar um aplicativo web, você pode desabilitar a depuração de script.
+1. (Aplicativos web) Se você estiver tentando executar um aplicativo web, você pode desabilitar a depuração de script.
 
-    Para o Internet Explorer ou borda, desabilite a depuração de script na caixa de diálogo Opções da Internet. Você pode acessar essas configurações do **painel de controle** > **rede e Internet** > **opções da Internet** (as etapas exatas dependem de seu versão do Windows e do navegador).
+    Para o Internet Explorer ou Edge, desabilite a depuração de script na caixa de diálogo Opções da Internet. Você pode acessar essas configurações do **painel de controle** > **rede e Internet** > **opções da Internet** (as etapas exatas dependem de seu versão do Windows e do navegador).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
     Em seguida, reabra a página da web em que você encontrou o erro. Se a alteração dessa configuração não resolver o problema, contate o proprietário do aplicativo web para corrigir o problema.
 
-3. (Usuários do visual Studio) Se você tiver instalado o Visual Studio (ou se você tiver instalado anteriormente e removido), [depuração Just-in-Time de desabilitar](../debugger/debug-using-the-just-in-time-debugger.md) e tente executar o aplicativo novamente.
+3. (Usuários do visual Studio) Se você tiver instalado o Visual Studio (ou se você tiver instalado anteriormente e o removeu), [Just-in-Time de desabilitar a depuração](../debugger/debug-using-the-just-in-time-debugger.md) e tente executar o aplicativo novamente.
 
     > [!IMPORTANT]
-    > Se você desabilitar Just-in-Time depuração e o aplicativo encontra uma exceção sem tratamento (erro), você pode ver uma caixa de diálogo de erro padrão em vez disso, ou o aplicativo irá falhar ou suspensão. O aplicativo não será executado normalmente até que o erro seja corrigido (por você ou o proprietário do aplicativo).
+    > Se você desativar o Just-in-Time de depuração e o aplicativo encontra uma exceção sem tratamento (erro), você verá uma caixa de diálogo de erro padrão em vez disso, ou o aplicativo irá falhar ou travar. O aplicativo não será executado normalmente até que o erro seja corrigido (por você ou o proprietário do aplicativo).
 
-2. (ASP.NET e IIS) Se você estiver hospedando um aplicativo da Web do ASP.NET no IIS, desabilite a depuração no lado do servidor.
+2. (ASP.NET e IIS) Se você estiver hospedando um aplicativo Web ASP.NET no IIS, desabilite a depuração do lado do servidor.
 
-    No Gerenciador do IIS, clique com botão direito no nó do servidor e escolha **alternar para exibição de recursos**. Na seção de ASP.NET, escolha **compilação do .NET** e, em seguida, verifique se você escolher **False** como o comportamento de depuração (as etapas são diferentes em versões anteriores do IIS).
-  
-## <a name="see-also"></a>Consulte também    
- [Noções básicas do depurador](../debugger/debugger-basics.md)   
+    No Gerenciador do IIS, clique com botão direito no nó do servidor e escolha **alternar para exibição de recursos**. Na seção ASP.NET, escolha **compilação do .NET** e, em seguida, certifique-se de escolher **falso** como o comportamento de depuração (as etapas são diferentes em versões anteriores do IIS).
+
+## <a name="see-also"></a>Consulte também
+ [Noções básicas do depurador](../debugger/debugger-basics.md)

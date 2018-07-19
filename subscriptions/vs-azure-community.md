@@ -9,16 +9,16 @@ description: Saiba mais sobre o benefício da Comunidade Azure incluído nas ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199177"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280371"
 ---
-# <a name="azure-community"></a>Comunidade Azure  
+# <a name="azure-community"></a>Comunidade Azure
 
-Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados por meio da Comunidade Azure.  O benefício da Comunidade Azure fornece acesso a um conjunto de fóruns voltados para tópicos relacionados ao Azure.  
+Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados por meio da Comunidade Azure.  O benefício da Comunidade Azure fornece acesso a um conjunto de fóruns voltados para tópicos relacionados ao Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados 
 
 
 ## <a name="activation-steps"></a>Etapas de Ativação
-É fácil começar a usar a Comunidade Azure.  
+É fácil começar a usar a Comunidade Azure.
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Localize o bloco da Comunidade Azure na seção de Suporte e clique no link de **Ajuda**. 
+2. Localize o bloco da Comunidade Azure na seção de Suporte e clique no link de **Ajuda**.
 
    ![Bloco da Comunidade Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Você verá uma lista de fóruns disponíveis.  Basta clicar no fórum de sua escolha.  
+3. Você verá uma lista de fóruns disponíveis.  Basta clicar no fórum de sua escolha.
 
    ![Fóruns da Comunidade Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  No fórum, você pode exibir tópicos e respostas, procurar respostas para a pergunta ou postar uma nova pergunta. 
+4.  No fórum, você pode exibir tópicos e respostas, procurar respostas para a pergunta ou postar uma nova pergunta.
 
    ![Exemplo da Comunidade Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -62,10 +62,10 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |
 <sup>1</sup>  *Inclui: NFR (Proibida a revenda), Microsoft FTE, MVP (Microsoft Valued Partner), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Para outros recursos da Comunidade Azure, acesse a [página de suporte](https://azure.microsoft.com/support/forums/) da Comunidade Azure.
 -  [Documentação do Azure](/azure/).
--  Precisa de assistência para vendas, assinaturas, contas e cobrança nas assinaturas do Visual Studio?  Contate o [Suporte de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/).
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 
+-  Precisa de assistência para vendas, assinaturas, contas e cobrança nas assinaturas do Visual Studio?  Contate o [Suporte de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

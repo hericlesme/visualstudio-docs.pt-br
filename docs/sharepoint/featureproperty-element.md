@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766959"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325976"
 ---
 # <a name="featureproperty-element"></a>Elemento FeatureProperty
-  Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Após a implantação de um recurso, você pode acessar a propriedade em seu código.  
+  Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar a propriedade em seu código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,8 +39,8 @@ ms.locfileid: "34766959"
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|**Chave**|Necessário **xs: string** atributo.<br /><br /> A chave é usada para armazenar e recuperar o valor da propriedade. Cada propriedade deve ter uma chave que é exclusiva dentro do recurso.|  
-|**Value**|Necessário **xs: string** atributo.<br /><br /> O valor da propriedade.|  
+|**Chave**|Exigido **xs: string** atributo.<br /><br /> A chave que é usada para armazenar e recuperar o valor da propriedade. Cada propriedade deve ter uma chave que é exclusiva dentro do recurso.|  
+|**Value**|Exigido **xs: string** atributo.<br /><br /> O valor da propriedade.|  
   
 ### <a name="child-elements"></a>Elementos filho
  nenhuma.  
@@ -52,19 +52,19 @@ ms.locfileid: "34766959"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Representa uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint.|  
   
 ## <a name="remarks"></a>Comentários  
- Para obter mais informações sobre as propriedades do recurso, consulte [fornecendo empacotamento e informações de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Para obter mais informações sobre as propriedades do recurso, consulte [fornecer informações de implantação de pacote e em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informações do elemento
+## <a name="element-information"></a>Informações sobre o elemento
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|  
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|  
 |**Pode estar vazio**|Não|  
   
 ## <a name="see-also"></a>Consulte também
- [Referência de esquema de Item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Fornecendo informações de pacote e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

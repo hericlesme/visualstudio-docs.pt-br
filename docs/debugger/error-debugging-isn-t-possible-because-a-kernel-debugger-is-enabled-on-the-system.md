@@ -1,5 +1,5 @@
 ---
-title: 'Erro: A depuração&#39;t possível porque um depurador de Kernel estiver habilitado no sistema | Microsoft Docs'
+title: 'Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482107"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058718"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: A depuração&#39;t possível porque um depurador de Kernel estiver habilitado no sistema
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema
 Quando você depura o código gerenciado, talvez receba a seguinte mensagem de erro:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   No prompt de comando, digite:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  No prompt de comando, digite:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -76,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Para desabilitar a depuração de kernel para todas as sessões (outros sistemas operacionais Windows)  
   
-1.  Localize boot.ini na unidade do sistema (geralmente c\\). O arquivo boot.ini pode ser ocultado e somente leitura. Portanto, você deve usar o seguinte comando para vê-lo:  
+1.  Localize Boot. ini na unidade do sistema (normalmente c:\\). O arquivo boot.ini pode ser ocultado e somente leitura. Portanto, você deve usar o seguinte comando para vê-lo:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Abra o boot.ini usando o Bloco de Notas e remova as seguintes opções:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

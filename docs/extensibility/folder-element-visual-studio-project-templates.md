@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132809"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234917"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento de pasta (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.  
@@ -47,13 +47,13 @@ Especifica uma pasta que será adicionada ao projeto.
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Name`|Atributo obrigatório.<br /><br /> O nome da pasta do projeto.|  
-|`TargetFolderName`|Atributo opcional.<br /><br /> Especifica o nome a ser atribuído à pasta quando um projeto é criado a partir do modelo. Esse atributo é útil para usar a substituição de parâmetro para criar um nome de pasta ou nome de uma pasta com uma cadeia de caracteres internacional que não pode ser usado diretamente no arquivo. zip.|  
+|`TargetFolderName`|Atributo opcional.<br /><br /> Especifica o nome a ser atribuído a pasta quando um projeto é criado a partir do modelo. Esse atributo é útil para usar substituição de parâmetro para criar um nome de pasta ou uma pasta com uma cadeia de caracteres internacional de nomenclatura que não pode ser usado diretamente no arquivo. zip.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|`Folder`|Especifica uma pasta para adicionar ao projeto. `Folder` os elementos podem conter filho `Folder` elementos.|  
+|`Folder`|Especifica uma pasta a ser adicionada ao projeto. `Folder` os elementos podem conter filho `Folder` elementos.|  
 |[Item de projeto](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica um arquivo para adicionar ao projeto.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -67,7 +67,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
  Você pode usar qualquer um dos seguintes métodos para organizar itens de projeto em pastas em um modelo:  
   
--   Incluir as pastas no arquivo. zip de modelo e adicioná-los ao seu projeto no arquivo. vstemplate, especificando o caminho para o arquivo no `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:  
+-   Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate, especificando o caminho para o arquivo na `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:  
   
      `...`  
   
@@ -77,7 +77,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
      `...`  
   
--   Incluir as pastas no arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate com `Folder` elementos. Por exemplo:  
+-   Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate com `Folder` elementos. Por exemplo:  
   
      `...`  
   

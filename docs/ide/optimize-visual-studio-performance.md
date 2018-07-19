@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afd84dfaccc632143b380619a2324e607e833fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280345"
 ---
 # <a name="optimize-visual-studio-performance"></a>Otimizar o desempenho do Visual Studio
 
@@ -25,9 +26,9 @@ Este artigo fornece algumas sugestões para tentar se você achar que o Visual S
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Atualizar o Visual Studio 2017 versão 15.6 ou posterior
 
-Se estiver usando Visual Studio 2015, baixe o [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) gratuitamente para conhecer seu desempenho aprimorado. As soluções são carregadas duas a três vezes mais rapidamente no Visual Studio 2017, com melhorias de desempenho em outras áreas também. O Visual Studio 2017 é compatível lado a lado com o Visual Studio 2015, para que você não perca nada por experimentá-lo.
+Se estiver usando Visual Studio 2015, baixe o [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) gratuitamente para conhecer seu desempenho aprimorado. As soluções são carregadas duas a três vezes mais rapidamente no Visual Studio 2017, com melhorias de desempenho em outras áreas também. O Visual Studio 2017 é compatível lado a lado com o Visual Studio 2015, para que você não perca nada por experimentá-lo.
 
-Se estiver usando o Visual Studio 2017, verifique se você está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Faça download dela [aqui](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+Se estiver usando o Visual Studio 2017, verifique se você está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Faça download dela [aqui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Extensões e janelas de ferramentas
 
@@ -45,7 +46,7 @@ Além disso, não execute sua solução de uma unidade USB. Copie-a para a HDD o
 
 ## <a name="help-us-improve"></a>Ajude-nos a melhorar
 
-Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para obter mais informações, consulte [Como relatar um problema com o Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="see-also"></a>Consulte também
 

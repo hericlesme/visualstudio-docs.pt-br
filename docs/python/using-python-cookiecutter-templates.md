@@ -1,7 +1,7 @@
 ---
 title: Extensão CookieCutter para Python
 description: O Visual Studio oferece suporte à extensão Cookiecutter gráfica para descobrir os modelos para o código Python e criar projetos a partir desses modelos.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2f3851d479a976d4e43317f94aa7a5328deb4fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584653"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058458"
 ---
 # <a name="using-the-cookiecutter-extension"></a>Usando a extensão Cookiecutter
 
@@ -96,7 +96,7 @@ A renderização padrão de uma variável de modelo depende do tipo de dados (ca
 
 É possível melhorar essa renderização especificando metadados adicionais no arquivo `cookiecutter.json` que são específicos ao Visual Studio (e ignorados pela CLI do Cookiecutter). Todas as propriedades são opcionais:
 
-| propriedade | Descrição |
+| Propriedade | Descrição |
 | --- | --- |
 | Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
 | Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |

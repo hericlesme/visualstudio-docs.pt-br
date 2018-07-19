@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694053"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282519"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
 
@@ -24,7 +24,7 @@ O tópico [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md) forne
 
 O instalador modular do Visual Studio permite escolher e instalar *cargas de trabalho*, que são grupos de funcionalidades necessárias para a linguagem de programação ou para a plataforma de sua preferência. Essa estratégia ajuda a manter a superfície de instalação do Visual Studio menor, o que significa que ele é instalado e atualizado mais rapidamente também.
 
-Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 Para saber mais sobre como configurar o Visual Studio no sistema, consulte [Instalar o Visual Studio 2017](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ Os **Serviços Conectados** disponíveis dependem de seu tipo de projeto. Adicio
 
 ![Serviços conectados do Visual Studio](media/connected-services.png)
 
-Para obter mais informações, confira [Move to the cloud With Visual Studio and Azure](https://www.visualstudio.com/vs/azure-tools/) (Mover para a nuvem com o Visual Studio e o Azure).
+Para obter mais informações, confira [Move to the cloud With Visual Studio and Azure](https://visualstudio.microsoft.com/vs/azure-tools/) (Mover para a nuvem com o Visual Studio e o Azure).
 
 ## <a name="create-apps-for-the-web"></a>Criar aplicativos para a Web
 
 A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando o ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](http://www.asp.net/core/overview) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
 
-Para obter mais informações, consulte [Ferramentas da Web modernas](https://www.visualstudio.com/vs/modern-web-tooling/).
+Para obter mais informações, consulte [Ferramentas da Web modernas](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Criar jogos e aplicativos de plataforma cruzada
 
-É possível usar o Visual Studio para compilar aplicativos e jogos para macOS, Linux e Windows, bem como para Android, iOS e outros [dispositivos móveis](https://www.visualstudio.com/vs/mobile-app-development/).
+É possível usar o Visual Studio para compilar aplicativos e jogos para macOS, Linux e Windows, bem como para Android, iOS e outros [dispositivos móveis](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
 - Crie aplicativos [.NET Core](/dotnet/core/) executados no Windows, macOS e Linux.
 
@@ -122,7 +122,7 @@ Você pode usar o .NET Compiler Platform ("Roslyn") para escrever seus próprios
 
 Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o Visual Studio criadas pelos desenvolvedores da Microsoft, bem como pela nossa comunidade de desenvolvimento.
 
-Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://www.visualstudio.com/vs/extend/).
+Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Consulte também
 

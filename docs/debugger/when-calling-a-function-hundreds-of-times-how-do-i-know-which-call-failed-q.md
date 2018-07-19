@@ -29,27 +29,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6edf60616a3cbf67d05282ebd15798749b263f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdae654dacf7c5965d51cc39f7970bd0347b9dcf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481730"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056229"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou?
 ## <a name="problem-description"></a>Descrição do problema  
  Meu programa falha em uma chamada para uma determinada função, `CnvtV`. O programa provavelmente chama essa função algumas centenas de vezes antes de falhar. Se eu definir um ponto de interrupção de local em `CnvtV`, o programa parará em cada chamada a essa função, e eu não quero isso. Eu não sei quais condições causam a falha na chamada, portanto, não consigo definir um ponto de interrupção condicional. O que posso fazer?  
   
 ## <a name="solution"></a>Solução  
- Você pode definir um ponto de interrupção na função com o **contagem de ocorrências** campo com um valor tão alto que ele nunca seja atingido. Nesse caso, porque você acredita que a função `CnvtV` é chamada de algumas centenas de vezes, você pode definir **contagem de ocorrências** para 1000 ou mais. Execute o programa e aguarde a chamada falhar. Quando falhar, abra a janela Pontos de Interrupção e verifique a lista de pontos de interrupção. O ponto de interrupção definido em `CnvtV` aparece, seguido pela contagem de ocorrências e o número de iterações restantes:  
+ Você pode definir um ponto de interrupção na função com o **contagem de ocorrências** campo para um valor mais alto que ele nunca será atingido. Nesse caso, como você acredita que a função `CnvtV` é chamada algumas centenas de vezes, você pode definir **contagem de ocorrências** como 1000 ou mais. Execute o programa e aguarde a chamada falhar. Quando falhar, abra a janela Pontos de Interrupção e verifique a lista de pontos de interrupção. O ponto de interrupção definido em `CnvtV` aparece, seguido pela contagem de ocorrências e o número de iterações restantes:  
   
-```  
+```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  
 ```  
   
  Agora você sabe que a função falha na 101a chamada. Se você redefinir o ponto de interrupção com uma contagem de ocorrências de 101 e executar o programa novamente, o programa de chamada parará na chamada para `CnvtV` que causou a falha.  
   
 ## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes de código nativo de depuração](../debugger/debugging-native-code-faqs.md)   
- [Definir pontos de interrupção](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Perguntas frequentes do código nativo de depuração](../debugger/debugging-native-code-faqs.md)   
+ [Configurando pontos de interrupção](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

@@ -18,53 +18,53 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f2509e7629898b0ad6323dc40be147d617e5f70d
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747541"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174858"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
-Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme necessário para seu aplicativo (em vez de sobrecarregados `Update` método que executa a atualização Instruções INSERT e DELETE todas em uma chamada).
+Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados, chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme exigido pelo seu aplicativo (em vez de sobrecarregado `Update` método que executa a atualização INSERT e DELETE instruções todas em uma chamada).
 
  Durante este passo a passo, você aprenderá a:
 
 -   Criar um novo **aplicativo do Windows Forms**.
 
--   Criar e configurar um conjunto de dados com o [Assistente de configuração de fonte de dados](../data-tools/media/data-source-configuration-wizard.png).
+-   Criar e configurar um conjunto de dados com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
--   Selecione o controle a ser criado no formulário ao arrastar itens a partir de **fontes de dados** janela. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Selecione o controle a ser criado no formulário ao arrastar itens dos **fontes de dados** janela. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Criar um formulário de associação de dados arrastando itens a partir de **fontes de dados** janela para o formulário.
+-   Criar um formulário de associação de dados arrastando itens dos **fontes de dados** janela para o formulário.
 
--   Adicionar métodos para acessar o banco de dados diretamente e executar inserções, atualizações e exclusões.
+-   Adicione métodos para acessar o banco de dados diretamente e executar inserções, atualizações e exclusões.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
+1.  Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
 
-2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:
+2.  Instale o banco de dados de exemplo Northwind, seguindo estas etapas:
 
-    1. No Visual Studio, abra o **Pesquisador de objetos do SQL Server** janela. (Pesquisador de objetos do SQL Server é instalado como parte do **armazenamento de dados e processamento** carga de trabalho em que o instalador do Visual Studio.) Expanda o **do SQL Server** nó. Clique com botão direito em sua instância de LocalDB e selecione **nova consulta...** .
+    1. No Visual Studio, abra o **SQL Server Object Explorer** janela. (Pesquisador de objetos do SQL Server é instalado como parte dos **armazenamento de dados e processamento** carga de trabalho no instalador do Visual Studio.) Expanda o **SQL Server** nó. Clique com botão direito na instância do LocalDB e selecione **nova consulta**.
 
-       Abre uma janela do editor de consultas.
+       Abre uma janela do editor de consulta.
 
-    2. Copie o [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) para sua área de transferência. Este script T-SQL cria o banco de dados Northwind desde o início e a preenche com dados.
+    2. Cópia de [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) na área de transferência. Este script T-SQL cria o banco de dados Northwind do zero e a preenche com dados.
 
     3. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
 
-       Após um curto período de tempo, a consulta termina de ser executado e o banco de dados Northwind é criado.
+       Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
 ## <a name="create-a-windows-forms-application"></a>Criar um aplicativo Windows Forms
- A primeira etapa é criar um **aplicativo do Windows Forms**.
+ A primeira etapa é criar uma **aplicativo do Windows Forms**.
 
 #### <a name="to-create-the-new-windows-project"></a>Para criar o novo projeto do Windows
 
-1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
+1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
+2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 
@@ -73,17 +73,17 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
      O **TableAdapterDbDirectMethodsWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do banco de dados
- Esta etapa usa a **Assistente de configuração de fonte de dados** para criar uma fonte de dados com base no `Region` tabela no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+ Esta etapa usa a **Data Source Configuration Wizard** para criar uma fonte de dados com base no `Region` tabela no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1.  Sobre o **dados** menu, selecione **Mostrar fontes de dados**.
+1.  Sobre o **dados** menu, selecione **Show Data Sources**.
 
-2.  No **fontes de dados** janela, selecione **adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
+2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
-3.  Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**e, em seguida, selecione **próximo**.
+3.  Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**e, em seguida, selecione **próxima**.
 
-4.  Sobre o **escolha sua Conexão de dados** tela, faça o seguinte:
+4.  Sobre o **escolha sua Conexão de dados** tela, siga um destes procedimentos:
 
     -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -91,28 +91,28 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
     -   Selecione **nova Conexão** para iniciar o **Adicionar/Modificar Conexão** caixa de diálogo.
 
-5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próximo**.
+5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.
 
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** tela, selecione **próximo**.
+6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** tela, selecione **próxima**.
 
-7.  Sobre o **escolher seus objetos de banco de dados** tela, expanda o **tabelas** nó.
+7.  Sobre o **Choose your Database Objects** , expanda o **tabelas** nó.
 
 8.  Selecione o `Region` de tabela e, em seguida, selecione **concluir**.
 
      O **NorthwindDataSet** é adicionado ao seu projeto e o `Region` tabela aparece no **fontes de dados** janela.
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>Adicionar controles ao formulário para exibir os dados
- Criar os controles associados a dados, arrastando itens a partir de **fontes de dados** window para seu formulário.
+ Criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para criar dados associados a controles no formulário do Windows
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para criar dados de associação de controles do formulário do Windows
 
--   Arraste principal **região** nó a partir de **fontes de dados** janela para o formulário.
+-   Arraste principal **região** nó a partir do **fontes de dados** janela para o formulário.
 
-     Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja do componente.
+     Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para adicionar botões que chamam os métodos individuais DbDirect de um TableAdapter
 
-1.  Arraste três <xref:System.Windows.Forms.Button> controla do **caixa de ferramentas** para **Form1** (abaixo de **RegionDataGridView**).
+1.  Arraste três <xref:System.Windows.Forms.Button> controles do **caixa de ferramentas** até **Form1** (abaixo de **RegionDataGridView**).
 
 2.  Defina o seguinte **nome** e **texto** propriedades em cada botão.
 
@@ -162,11 +162,11 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 -   Selecione o **excluir** botão e, em seguida, verifique se o registro é removido da grade.
 
 ## <a name="next-steps"></a>Próximas etapas
- Dependendo dos requisitos de aplicativo, há várias etapas que você pode desejar executar depois de criar um formulário de associação de dados. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
+ Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após criar um formulário de associação de dados. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
 -   Adicionando funcionalidade de busca ao formulário.
 
--   Adicionar tabelas adicionais ao conjunto de dados selecionando **configurar o conjunto de dados com o assistente** de dentro de **fontes de dados** janela. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
+-   Adicionar tabelas ao conjunto de dados, selecionando **configurar DataSet com assistente** de dentro de **fontes de dados** janela. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Consulte também
 

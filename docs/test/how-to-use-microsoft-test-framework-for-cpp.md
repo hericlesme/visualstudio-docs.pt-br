@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751683"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845487"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -32,7 +32,7 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, se
 
     3.  Clique na seta para baixo nas linhas a seguir e escolha **<Edit>**:
 
-        |||
+        |Diretório|Propriedade|
         |-|-|
         |**Incluir Diretórios**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Diretórios de Biblioteca**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Use os métodos estáticos na classe [Assert](microsoft-visualstudio-testtools-c
 
  Para usar a característica definida em seus testes de unidade:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

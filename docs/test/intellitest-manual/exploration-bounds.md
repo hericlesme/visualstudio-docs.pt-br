@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eaa3a852ad67b0d1ffb4e0fb5c121adca81091a9
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815159"
 ---
 # <a name="exploration-bounds"></a>Limites de exploração
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 Você pode modificar as configurações usando propriedades nomeadas deles e seus atributos derivados:
 
-```
+```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
@@ -75,7 +76,7 @@ Cada branch condicional e incondicional do código executado e monitorado é con
 
 Por exemplo, o código a seguir consome branches na ordem de 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
@@ -104,7 +105,7 @@ A motivação por trás desse limite de exploração é limitar a complexidade d
 
 Por exemplo, cada caminho no código a seguir consome n+1 condições:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) 
 {

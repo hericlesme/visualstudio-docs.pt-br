@@ -1,5 +1,5 @@
 ---
-title: Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma | Microsoft Docs
+title: Instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma | Microsoft Docs
 ms.custom: ''
 ms.date: 05/21/2018
 ms.technology: vs-ide-mobile
@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454695"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281087"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalar Desenvolvimento Mobile com C++ de plataforma cruzada
 
@@ -25,7 +25,7 @@ Você pode usar C++ no Visual Studio para criar aplicativos de Área de Trabalho
 
 ## <a name="requirements"></a>Requisitos
 
-- Para ver os requisitos de instalação, veja [Requisitos de sistema da família do Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+- Para ver os requisitos de instalação, veja [Requisitos de sistema da família do Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Se estiver usando o Windows 7 ou o Windows Server 2008 R2, você poderá desenvolver código para aplicativos de Área de Trabalho do Windows, bibliotecas e aplicativos do tipo Native Acivity do Android e aplicativos e bibliotecas de código para iOS, mas não aplicativos para a Windows Phone ou UWP.

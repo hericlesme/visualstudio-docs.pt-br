@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815789"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
 
@@ -62,13 +63,13 @@ Cada branch condicional e incondicional do código executado e monitorado é con
 
 Por exemplo, o código a seguir consome branches na ordem de 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Você pode editar a opção **MaxBranches** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). O exemplo a seguir remove efetivamente este limite:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ Você também pode definir a opção **TestExcludePathBoundsExceeded** para info
 
 No código de teste, você pode usar [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) para ignorar restrições geradas pela condição de loop:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ Cada branch condicional que depende das entradas do [teste de unidade parametriz
 
 Por exemplo, cada caminho no código a seguir consome **n+1** condições:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Você pode editar a opção **MaxConditions** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Por exemplo:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ Você também pode definir a opção **TestExcludePathBoundsExceeded** para info
 
 Você pode usar [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) para ignorar restrições geradas pela condição de loop:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ Cada chamada (direta, indireta, virtual ou pulo) do código executado e monitora
 
 Você pode editar a opção **MaxCalls** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). O exemplo a seguir remove efetivamente este limite:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ O IntelliTest limita o tamanho da pilha de chamadas de qualquer caminho de execu
 
 Você pode editar a opção **MaxStack** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). O exemplo a seguir remove efetivamente este limite (não recomendado):
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ Pode não ser o caso que, sempre que o IntelliTest executa o teste parametrizado
 
 Você pode editar a opção **MaxRuns** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). O exemplo a seguir remove efetivamente este limite (não recomendado):
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ Enquanto o IntelliTest geralmente encontra muitas entradas de teste interessante
 
 Você pode editar a opção **MaxRunsWithoutNewTests** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). O exemplo a seguir remove efetivamente este limite (não recomendado):
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam
 
   Por exemplo, se o IntelliTest relata que ele "não conhece nenhum dos tipos atribuíveis ao **System.Collections.IDictionary**", você pode ajudá-lo anexando o seguinte **PexUseTypeAttribute** a seguir ao teste (ou a classe de acessório):
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam
 
 * **Um atributo de nível de assembly**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

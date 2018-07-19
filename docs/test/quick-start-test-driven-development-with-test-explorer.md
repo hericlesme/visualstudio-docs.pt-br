@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751417"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845750"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento Orientado por Testes com o Gerenciador de Testes
 
@@ -66,11 +66,11 @@ ms.locfileid: "34751417"
 
 
 > [!NOTE]
-> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [Usando diferentes estruturas de teste com o Gerenciador de Testes](#frameworks).
+> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
 
 ##  <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método
- Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [Usando diferentes estruturas de teste](#frameworks).
+ Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
 #### <a name="creating-the-test-and-method"></a>Criando o teste e o método
 
@@ -190,7 +190,7 @@ ms.locfileid: "34751417"
 
 3.  Inspecione o método sob teste para ver o que pode estar errado. Na classe `MyMath.Rooter`, reescreva o código:
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

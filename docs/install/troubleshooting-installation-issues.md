@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766032"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282948"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio 2017
 
@@ -33,7 +33,7 @@ Para encontrar uma solução alternativa para esse problema, siga estas etapas.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Etapa 1: verificar se esse é um problema conhecido
 
-Existem alguns problemas conhecidos com o instalador do Visual Studio que a Microsoft está trabalhando para corrigir. Para saber se há uma solução para o problema, consulte [a seção Problemas Conhecidos das nossas notas de versão](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
+Existem alguns problemas conhecidos com o instalador do Visual Studio que a Microsoft está trabalhando para corrigir. Para saber se há uma solução para o problema, consulte [a seção Problemas Conhecidos das nossas notas de versão](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>Etapa 2: conferir com a comunidade de desenvolvedores
 
@@ -48,7 +48,7 @@ Executar as seguintes ações reinstalará os arquivos do Instalador do Visual S
 
 1. Fechar o instalador do Visual Studio.
 2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/) e clicando em **Baixar** para sua edição do Visual Studio. Execute o arquivo executável para redefinir os metadados de instalação.
+3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) e clicando em **Baixar** para sua edição do Visual Studio. Execute o arquivo executável para redefinir os metadados de instalação.
 4. Tente instalar ou atualizar o Visual Studio. Se o Instalador continuar a falhar, vá para a próxima etapa.
 
 ### <a name="step-4---report-a-problem"></a>Etapa 4 - relatar um problema
@@ -71,7 +71,7 @@ Como último recurso, você pode [remover o Visual Studio](remove-visual-studio.
 
 ### <a name="step-6---contact-us-optional"></a>Etapa 6 – Entrar em contato conosco (opcional)
 
-Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Como solucionar problemas de um instalador offline
 
@@ -100,7 +100,7 @@ Para coletar os logs:
 
 ## <a name="more-support-options"></a>Mais opções de suporte
 
-Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções:
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948334"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282220"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -26,7 +26,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
 Quando você entrar, enriquecerá sua experiência no Visual Studio. Por exemplo, depois de entrar, é possível sincronizar suas configurações entre os dispositivos, estender uma avaliação gratuita e conectar-se automaticamente com um serviço do Azure, para citar alguns.
 
-Veja uma lista completa do que é possível esperar e fazer após entrar:  
+Veja uma lista completa do que é possível esperar e fazer após entrar:
 
 - **Acesso ao programa Visual Studio Dev Essentials** – Este programa inclui ofertas de software gratuito, treinamento, suporte e mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp).
 
@@ -62,9 +62,9 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Se você encontrar problemas ao entrar, confira a página [Suporte para contas](https://www.visualstudio.com/subscriptions/support/) para obter ajuda.
+Se você encontrar problemas ao entrar, confira a página [Suporte para contas](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
 ## <a name="see-also"></a>Consulte também
 
-* [Como Desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Como Desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)
