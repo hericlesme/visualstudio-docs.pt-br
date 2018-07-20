@@ -1,9 +1,9 @@
 ---
-title: Configurações para projetos da Web de páginas de propriedade | Microsoft Docs
+title: As configurações para projetos da Web de páginas de propriedade | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480710"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151627"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
-Você pode alterar as configurações de propriedade para uma configuração de depuração no site da web de **páginas de propriedade** caixa de diálogo, conforme discutido em [configurações Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas a depuração no **páginas de propriedade** caixa de diálogo.  
+Você pode alterar as configurações de propriedade para uma configuração de depuração no site da web do **páginas de propriedades** caixa de diálogo, conforme discutido na [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas ao depurador na **páginas de propriedade** caixa de diálogo.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>A pasta propriedades de configuração (Opções de Inicialização)  
   
@@ -50,7 +50,7 @@ Você pode alterar as configurações de propriedade para uma configuração de 
 |**Depuradores**|Cabeçalho que agrupa as opções relacionadas ao tipo de depuração a ser feito.|  
 |**Depuração do ASP.NET**|Permite a depuração das páginas do servidor escritas para a plataforma de desenvolvimento do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Você deve especificar uma URL no **iniciar URL**.|  
 |**Depuração de código nativo**|Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado.|  
-|**Depuração de SQL Server**|Permite depuração de objetos de banco de dados do SQL Server.|  
+|**Depuração do SQL Server**|Permite depuração de objetos de banco de dados do SQL Server.|  
 |**Depuração do Silverlight**|Permite depuração de componentes do Silverlight.|  
   
 ## <a name="see-also"></a>Consulte também  

@@ -12,22 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433139"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153498"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referência API para o extensibilidade do IntelliTrace
+
 Usando as informações contidas nesta seção, você pode usar APIs de extensibilidade do IntelliTrace para ler e decodificar arquivos .itrace em seu aplicativo.  
   
-## <a name="in-this-section"></a>Nesta seção  
+## <a name="in-this-section"></a>Nesta seção
+
  Essas APIs de extensibilidade do IntelliTrace estão contidas em um namespace  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>Seções relacionadas  
+## <a name="related-sections"></a>Seções relacionadas
+
  [IntelliTrace](../debugger/intellitrace.md)  
  Fornece informações sobre como depurar com o IntelliTrace.  
   

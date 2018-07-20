@@ -1,9 +1,9 @@
 ---
-title: Misto código e informações ausentes na janela pilha de chamadas | Microsoft Docs
+title: Misto de código e informações ausentes na janela pilha de chamadas | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -25,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f0a0822dc99eccea4ddd621ae622a112e0909bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480222"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151972"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código misto e informações ausentes na janela Pilha de Chamadas
-Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando código nativo chama código gerenciado, você pode observar as discrepâncias a seguir no **pilha de chamadas** janela:  
+Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Ao código nativo chama código gerenciado, você pode perceber as seguintes discrepâncias na **pilha de chamadas** janela:  
   
--   O quadro nativo imediatamente acima do código gerenciado pode estar ausente do **pilha de chamadas** janela. Para obter mais informações, consulte [como: sair do código gerenciado quando quadros nativos não forem encontrados na janela de pilha de chamadas](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+-   O quadro nativo imediatamente acima do código gerenciado pode estar ausente dos **pilha de chamadas** janela. Para obter mais informações, consulte [como: sair do código gerenciado quando quadros nativos estiverem ausentes da janela pilha de chamadas](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Para aplicativos de modo misto iniciados fora do depurador, o **pilha de chamadas** janela pode exibir somente o código gerenciado e nenhum dos frames nativos estará visível.  
+-   Para aplicativos de modo misto iniciados fora do depurador, o **pilha de chamadas** janela pode exibir somente o código gerenciado e nenhum dos quadros nativos estará visível.  
   
  Ambos os casos são razoavelmente incomuns. Na maioria das chamadas nativas para o código gerenciado, as pilhas de chamadas são exibidas corretamente.  
   

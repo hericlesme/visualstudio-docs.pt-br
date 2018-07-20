@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808436"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152494"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -116,7 +116,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
     2.  Sobre o **Project** menu, clique em **Adicionar módulo**e, em seguida, clique em **adicionar**.  
   
-    3.  No arquivo de código Module1.vb, adicione o código a seguir.  
+    3.  No *Module1.vb* arquivo de código, adicione o código a seguir.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
      Visual c# somente para desenvolvedores:  
   
-     Abra o arquivo de código de Program.cs e adicione o seguinte código.  
+     Abra o *Program.cs* arquivo de código e adicione o código a seguir.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
  Este procedimento demonstra como criar um pacote de bootstrapper personalizado, criando os documentos a seguir:  
   
--   Arquivo para descrever o conteúdo do bootstrapper de manifesto de um Product.  
+-   Um *Product* arquivo de manifesto para descrever o conteúdo do bootstrapper.  
   
--   Um arquivo de manifesto Package. XML para listar os aspectos específicos de localização do seu pacote, como cadeias de caracteres e os termos de licença de software.  
+-   Um *Package* arquivo de manifesto para listar os aspectos específicos de localização do seu pacote, como cadeias de caracteres e os termos de licença de software.  
   
 -   Um documento para os termos de licença de software.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Etapa 1: Criar o diretório de bootstrapper  
   
-1.  Crie um diretório chamado **UpdateConsentDialog** em %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1.  Crie um diretório chamado **UpdateConsentDialog** na *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Você pode precisar de privilégios administrativos para criar essa pasta.  
   
-2.  No diretório UpdateConsentDialog, crie um subdiretório chamado en.  
+2.  No *UpdateConsentDialog* diretório, crie um subdiretório chamado *en*.  
   
     > [!NOTE]
     >  Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Etapa 2: Criar o arquivo de manifesto Product  
   
-1.  Crie um arquivo de texto chamado `product.xml`.  
+1.  Crie um arquivo de texto chamado *Product*.  
   
-2.  No arquivo de Product, adicione o seguinte código XML. Certifique-se de que você não substitua o código XML existente.  
+2.  No *Product* de arquivo, adicione o seguinte código XML. Certifique-se de que você não substitua o código XML existente.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Etapa 3: Criar o manifesto Package. XML de arquivos e o software de termos de licença  
   
-1.  Crie um arquivo de texto chamado `package.xml`.  
+1.  Crie um arquivo de texto chamado *Package*.  
   
-2.  No arquivo Package. XML, adicione o seguinte código XML para definir a localidade e incluem os termos de licença de software. Certifique-se de que você não substitua o código XML existente.  
+2.  No *Package* arquivo, adicione o seguinte código XML para definir a localidade e incluem os termos de licença de software. Certifique-se de que você não substitua o código XML existente.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 3.  Salve o arquivo para o subdiretório en no diretório UpdateConsentDialog bootstrapper.  
   
-4.  Crie um documento chamado EULA. RTF para os termos de licença de software.  
+4.  Criar um documento chamado *EULA. rtf* para os termos de licença de software.  
   
     > [!NOTE]
     >  Os termos de licença de software devem incluir informações sobre licenciamento, garantias, responsabilidades e as leis locais. Esses arquivos devem ser específicos da localidade, portanto certifique-se de que o arquivo é salvo em um formato que oferece suporte a caracteres MBCS ou UNICODE. Consulte o departamento jurídico sobre o conteúdo dos termos de licença de software.  
   
-5.  Salve o documento para o subdiretório en no diretório UpdateConsentDialog bootstrapper.  
+5.  Salve o documento para o subdiretório en na *UpdateConsentDialog* diretório de bootstrapper.  
   
-6.  Se necessário, crie um novo arquivo de manifesto Package. XML e um novo documento de EULA. RTF para os termos de licença de software para cada localidade. Por exemplo, se você criou subdiretórios para as localidades fr e de, criar arquivos de manifesto Package. XML separado e os termos de licença de software e salvá-los para os subdiretórios fr e de.  
+6.  Se necessário, crie uma nova *Package. XML* um novo e arquivo de manifesto *EULA. rtf* documento para os termos de licença de software para cada localidade. Por exemplo, se você criou subdiretórios para as localidades fr e de, criar arquivos de manifesto Package. XML separado e os termos de licença de software e salvá-los para os subdiretórios fr e de.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Defina o consentimento de atualização do aplicativo como um pré-requisito  
  No Visual Studio, você pode definir o aplicativo de atualização de consentimento como um pré-requisito.  
@@ -260,7 +260,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 4.  Se a saída da publicação não abrir automaticamente, navegue até a saída da publicação.  
   
-5.  Execute o programa Setup.exe.  
+5.  Execute o *Setup.exe* programa.  
   
      O programa de instalação mostra o contrato de licença de software do diálogo de consentimento de atualização.  
   
@@ -286,7 +286,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 4.  Se a saída da publicação não abrir automaticamente, navegue até a saída da publicação.  
   
-5.  Execute o programa Setup.exe.  
+5.  Execute o *Setup.exe* programa.  
   
      O programa de instalação mostra o contrato de licença de software do diálogo de consentimento de atualização.  
   
@@ -301,8 +301,8 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 8.  Se a caixa de diálogo de instalação do aplicativo for exibida, clique em **instalar**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)   
- [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
+ [Pré-requisitos de implantação de aplicativo](../deployment/application-deployment-prerequisites.md)   
+ [Criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
  [Como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md)   
  [Como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)   
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
