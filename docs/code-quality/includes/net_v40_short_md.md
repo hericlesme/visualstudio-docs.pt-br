@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 22fb870618b769bf1b0fed9002bb152662e7e279
+ms.openlocfilehash: 073a94e498d978b139395de460c274d7d269fb2f
 ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155750"
+ms.locfileid: "39155776"
 ---
-.NET Framework 2.0
+.NET Framework 4

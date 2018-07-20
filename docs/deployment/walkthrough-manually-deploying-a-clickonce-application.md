@@ -22,22 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2255bab39a90e52423915d4b9ede3efdebd1ea26
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4f01b4cb17dd51c9da3e74620f9c25b7a3764566
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238242"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155484"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Instruções passo a passo: implantando um aplicativo ClickOnce manualmente
-Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo ou você precisa usar recursos de implantação avançada, como implantação de aplicativos confiáveis, você deve usar a ferramenta de linha de comando Mage.exe para criar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos. Este passo a passo descreve como criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a versão de linha de comando (Mage.exe) ou a versão gráfica (MageUI.exe) da Manifest Generation and Editing Tool.  
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: Implantar um aplicativo ClickOnce manualmente
+Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo ou você precisa usar recursos de implantação avançada, como implantação de aplicativos confiáveis, você deve usar o *Mage.exe* ferramenta de linha de comando para criar o seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos. Este passo a passo descreve como criar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a versão de linha de comando (*Mage.exe*) ou a versão gráfica (*MageUI.exe*) da geração de manifesto e Ferramenta de edição.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Este passo a passo tem alguns pré-requisitos e opções que você precisa escolher antes de criar uma implantação.  
   
--   Instale o Mage.exe e MageUI.exe.  
+-   Instale *Mage.exe* e *MageUI.exe*.  
   
-     Mage.exe e MageUI.exe fazem parte do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Você deve ter o [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] instalado ou a versão do [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] incluídos no Visual Studio. Para obter mais informações, consulte [SDK do Windows](http://go.microsoft.com/fwlink/?LinkId=158044) no MSDN.  
+     *Mage.exe* e *MageUI.exe* fazem parte do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Você deve ter o [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] instalado ou a versão do [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] incluídos no Visual Studio. Para obter mais informações, consulte [SDK do Windows](http://go.microsoft.com/fwlink/?LinkId=158044) no MSDN.  
   
 -   Forneça um aplicativo para implantação.  
   
@@ -49,11 +49,11 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 -   Determine se o aplicativo requer um nível elevado de confiança.  
   
-     Se seu aplicativo requer confiança total — por exemplo, acesso completo ao sistema do usuário — você pode usar o `-TrustLevel` opção de Mage.exe defini-lo. Se você quiser definir uma permissão personalizada definida para o seu aplicativo, copie a seção de permissão de Internet ou intranet do manifesto de outro, modificá-lo para atender às suas necessidades e adicioná-lo ao manifesto do aplicativo usando um editor de texto ou MageUI.exe. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+     Se seu aplicativo requer confiança total — por exemplo, acesso completo ao sistema do usuário — você pode usar o `-TrustLevel` opção de *Mage.exe* defini-lo. Se você quiser definir uma permissão personalizada definida para o seu aplicativo, você pode copiar a seção de permissão de Internet ou intranet do manifesto do outro, modificá-lo para atender às suas necessidades e adicioná-lo ao manifesto do aplicativo usando um editor de texto ou  *MageUI.exe*. Para obter mais informações, consulte [visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md).  
   
 -   Obtenha um certificado Authenticode.  
   
-     Você deve entrar sua implantação com um certificado Authenticode. Você pode gerar um certificado de teste usando as ferramentas do Visual Studio, MageUI.exe, ou MakeCert.exe e Pvk2Pfx.exe, ou você pode obter um certificado de uma autoridade de certificação (CA). Se você optar por usar a implantação de aplicativos confiáveis, você também deve executar uma única instalação do certificado em todos os computadores cliente. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+     Você deve entrar sua implantação com um certificado Authenticode. Você pode gerar um certificado de teste usando o Visual Studio, *MageUI.exe*, ou *MakeCert.exe* e *Pvk2Pfx.exe* ferramentas, ou você pode obter um certificado de um certificado Autoridade (CA). Se você optar por usar a implantação de aplicativos confiáveis, você também deve executar uma única instalação do certificado em todos os computadores cliente. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
     >  Você também pode entrar sua implantação com um certificado CNG que você pode obter de uma autoridade de certificação.  
@@ -66,7 +66,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 -   Determine se o aplicativo requer os pré-requisitos no computador cliente.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos implantados do Visual Studio podem incluir um bootstrapper de instalação de pré-requisito (setup.exe) com sua implantação. Este passo a passo cria os dois manifestos necessários para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Você pode criar um bootstrapper pré-requisito usando o [tarefa GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos implantados do Visual Studio podem incluir um bootstrapper de instalação de pré-requisito (*setup.exe*) com sua implantação. Este passo a passo cria os dois manifestos necessários para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Você pode criar um bootstrapper pré-requisito usando o [tarefa GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Para implantar um aplicativo com a ferramenta de linha de comando Mage.exe  
   
@@ -81,9 +81,9 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 4.  Abra o [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] ou comando do Visual Studio solicitará e altere para o subdiretório de versão.  
   
-5.  Crie o manifesto do aplicativo com uma chamada para Mage.exe. A instrução a seguir cria um manifesto de aplicativo para o código compilado para execução no processador Intel x86.  
+5.  Crie o manifesto do aplicativo com uma chamada para *Mage.exe*. A instrução a seguir cria um manifesto de aplicativo para o código compilado para execução no processador Intel x86.  
   
-    ```console  
+    ```cmd
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
@@ -92,23 +92,23 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 6.  Assinar o manifesto de aplicativo com seu certificado Authenticode. Substitua *mycert* com o caminho para o arquivo de certificado. Substitua *passwd* com a senha para o arquivo de certificado.  
   
-    ```console  
+    ```cmd
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-    Começando com o SDK do .NET Framework 4.6.2, o que é distribuído com o Visual Studio e com o SDK do Windows, sinais de mage.exe se manifesta com CNG, bem como com certificados Authenticode. Use os mesmos parâmetros de linha de comando, assim como acontece com certificados Authenticode.
+    Começando com o SDK do .NET Framework 4.6.2, o que é distribuído com o Visual Studio e com o SDK do Windows, *mage.exe* assina os manifestos com CNG, bem como com certificados Authenticode. Use os mesmos parâmetros de linha de comando, assim como acontece com certificados Authenticode.
     
 7.  Altere para a raiz do diretório de implantação.  
   
-8.  Gere o manifesto de implantação com uma chamada para Mage.exe. Por padrão, Mage.exe marcará sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação como um aplicativo instalado, para que ele pode ser executado tanto online e offline. Para disponibilizar o aplicativo somente quando o usuário está online, use o `-Install` opção com um valor de `false`. Se você usar o padrão e os usuários instalarão o aplicativo de um site da Web ou compartilhamento de arquivos, verifique se o valor da `-ProviderUrl` de manifesto no servidor Web ou compartilhamento de pontos de opção para o local do aplicativo.  
+8.  Gere o manifesto de implantação com uma chamada para *Mage.exe*. Por padrão, *Mage.exe* marcará sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação como um aplicativo instalado, para que ele pode ser executado tanto online e offline. Para disponibilizar o aplicativo somente quando o usuário está online, use o `-Install` opção com um valor de `false`. Se você usar o padrão e os usuários instalarão o aplicativo de um site da Web ou compartilhamento de arquivos, verifique se o valor da `-ProviderUrl` de manifesto no servidor Web ou compartilhamento de pontos de opção para o local do aplicativo.  
   
-    ```console  
+    ```cmd  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
 9. Assinar o manifesto de implantação com o seu certificado Authenticode ou CNG.  
   
-    ```console  
+    ```cmd  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
@@ -127,9 +127,9 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 3.  Copie todos os arquivos de aplicativo para o subdiretório de versão, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados. Se necessário, você pode criar subpastas adicionais que contêm arquivos adicionais.  
   
-4.  Inicie a ferramenta gráfica do MageUI.exe.  
+4.  Iniciar o *MageUI.exe* ferramenta gráfica.  
   
-    ```console  
+    ```cmd  
     MageUI.exe  
     ```  
   
@@ -137,13 +137,13 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 6.  No padrão **nome** guia, digite o número de versão e o nome dessa implantação. Especifique também o **processador** que seu aplicativo é compilado, como x86.  
   
-7.  Selecione o **arquivos** guia e clique no botão de reticências (**...** ) botão ao lado de **diretório de aplicativo** caixa de texto. Aparece uma caixa de diálogo Procurar pasta.  
+7.  Selecione o **arquivos** guia e clique no botão de reticências (**...** ) botão ao lado de **diretório de aplicativo** caixa de texto. Um **Procurar pasta** caixa de diálogo é exibida.  
   
 8.  Selecione o subdiretório de versão que contém os arquivos do aplicativo e, em seguida, clique em **Okey**.  
   
 9. Se você implantará a partir dos serviços de informações da Internet (IIS), selecione a **quando preencher adiciona a extensão. Deploy em qualquer arquivo que não tenha** caixa de seleção.  
   
-10. Clique o **popular** botão para adicionar todos os arquivos de aplicativo à lista de arquivos. Se seu aplicativo contiver mais de um arquivo executável, marcar o arquivo executável principal para essa implantação como o aplicativo de inicialização, selecionando **ponto de entrada** da **tipo de arquivo** lista suspensa. (Se seu aplicativo contiver apenas um arquivo executável, MageUI.exe irá marcá-la para você.)  
+10. Clique o **popular** botão para adicionar todos os arquivos de aplicativo à lista de arquivos. Se seu aplicativo contiver mais de um arquivo executável, marcar o arquivo executável principal para essa implantação como o aplicativo de inicialização, selecionando **ponto de entrada** da **tipo de arquivo** lista suspensa. (Se seu aplicativo contiver apenas um arquivo executável, *MageUI.exe* marcará para você.)  
   
 11. Selecione o **permissões necessárias** guia e selecione o nível de confiança que você precisa declarar seu aplicativo. O padrão é **FullTrust**, que será adequado para a maioria dos aplicativos.  
   
@@ -155,9 +155,9 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
      Se seu certificado é mantido em um repositório de certificados acessível em seu computador, selecione o **assinar com certificado armazenado** opção e, em seguida, selecione o certificado na lista fornecida.  
   
-14. Clique em **Okey** para assinar o manifesto do aplicativo. Aparece a caixa de diálogo Salvar como.  
+14. Clique em **Okey** para assinar o manifesto do aplicativo. O **Salvar como** caixa de diálogo é exibida.  
   
-15. Na caixa de diálogo Salvar como, especifique o diretório de versão e, em seguida, clique em **salvar**.  
+15. No **Salvar como** caixa de diálogo, especifique o diretório de versão e, em seguida, clique em **salvar**.  
   
 16. Selecione **arquivo**, **New**, **manifesto de implantação** no menu para criar o manifesto de implantação.  
   
@@ -165,9 +165,9 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 18. Selecione o **descrição** guia e especifique valores para **Publisher** e **produto**. (**Produto** é o nome dado ao seu aplicativo no menu Iniciar do Windows quando seu aplicativo é instalado em um computador cliente para uso offline.)  
   
-19. Selecione o **opções de implantação** guia e, nas **local inicial** texto, especifique o local do manifesto do aplicativo no servidor Web ou compartilhamento. Por exemplo, \\\myServer\myShare\AppToDeploy.application.  
+19. Selecione o **opções de implantação** guia e, nas **local inicial** texto, especifique o local do manifesto do aplicativo no servidor Web ou compartilhamento. Por exemplo,  *\\\myServer\myShare\AppToDeploy.application*.  
   
-20. Se você adicionou a extensão. Deploy em uma etapa anterior, também selecione **usar a extensão de nome de arquivo. Deploy** aqui.  
+20. Se você tiver adicionado a *Deploy* extensão em uma etapa anterior, também selecione **usar a extensão de nome de arquivo. Deploy** aqui.  
   
 21. Selecione o **as opções de atualização** guia e, em seguida, especifique a frequência com que você gostaria que esse aplicativo para atualizar. Se seu aplicativo usa <xref:System.Deployment.Application.UpdateCheckInfo> para verificar se há atualizações em si, desmarque as **esse aplicativo deve verificar por atualizações** caixa de seleção.  
   
@@ -175,7 +175,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
 23. Selecione o manifesto do aplicativo que você criou anteriormente e, em seguida, clique em **aberto**.  
   
-24. Selecione **arquivo**, **Salvar como** no menu. Uma caixa de diálogo Opções de assinatura é exibida solicitando que você assine o manifesto de implantação.  
+24. Selecione **arquivo**, **Salvar como** no menu. Um **opções de assinatura** caixa de diálogo será exibida solicitando que você assine o manifesto de implantação.  
   
 25. Se você tiver um certificado armazenado como um arquivo em seu sistema de arquivos, use o **assinar com arquivo de certificado** opção e, em seguida, selecione o certificado do sistema de arquivos usando o botão de reticências (**...** ) botão. Em seguida, digite sua senha do certificado.  
   
@@ -183,7 +183,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
   
      Se seu certificado é mantido em um repositório de certificados acessível em seu computador, selecione o **assinar com certificado armazenado** opção e, em seguida, selecione o certificado na lista fornecida.  
   
-26. Clique em **Okey** para assinar o manifesto de implantação. Aparece a caixa de diálogo Salvar como.  
+26. Clique em **Okey** para assinar o manifesto de implantação. O **Salvar como** caixa de diálogo é exibida.  
   
 27. No **Salvar como** caixa de diálogo Mover para cima um diretório para a raiz da sua implantação e clique **salvar**.  
   
@@ -192,11 +192,11 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 29. Fornece aos usuários com a URL, UNC ou necessárias para instalar o aplicativo de mídia física. Se você fornecer uma URL ou um UNC, você deve dar aos usuários o caminho completo, o manifesto de implantação. Por exemplo, se AppToDeploy é implantado http://webserver01/ no diretório AppToDeploy, o caminho da URL completo seria http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Quando você precisa implantar uma nova versão do aplicativo, crie um novo diretório chamado após a nova versão — por exemplo, 1.0.0.1—and copiar novos arquivos de aplicativo para o novo diretório. Em seguida, você precisará seguir as etapas anteriores para criar e assinar um manifesto de aplicativo novo e atualizar e assinar o manifesto de implantação. Tenha cuidado para especificar a mesma versão superior em ambos os o Mage.exe `-New` e `-Update` chamadas, como [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] atualiza somente as versões posteriores, com o mais significativo de número inteiro mais à esquerda. Se você usou MageUI.exe, você pode atualizar o manifesto de implantação ao abri-lo, selecionando o **referência de aplicativo** guia, clicando no **selecionar manifesto** botão e, em seguida, selecionando-se atualizado manifesto do aplicativo.  
+ Quando você precisa implantar uma nova versão do aplicativo, crie um novo diretório chamado após a nova versão — por exemplo, 1.0.0.1—and copiar novos arquivos de aplicativo para o novo diretório. Em seguida, você precisará seguir as etapas anteriores para criar e assinar um manifesto de aplicativo novo e atualizar e assinar o manifesto de implantação. Tenha cuidado para especificar a mesma versão superior em ambos os *Mage.exe* `-New` e `-Update` chamadas, como [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] atualiza somente as versões posteriores, com o mais significativo de número inteiro mais à esquerda. Se você usou *MageUI.exe*, você pode atualizar o manifesto de implantação ao abri-lo, selecionando a **referência de aplicativo** guia, clicando no **selecione manifesto** botão, e em seguida, selecionando o manifesto de aplicativo atualizado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (Manifest Generation and Editing Tool, Cliente Gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+ [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
