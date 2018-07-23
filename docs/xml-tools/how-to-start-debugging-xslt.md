@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548383"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178342"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Como: iniciar a depuração XSLT
 
@@ -30,15 +30,15 @@ Você pode iniciar o depurador do editor XML. Isso permite que você depure como
 
 1. Abra a folha de estilos no editor XML.
 
-1. Selecione **depurar XSL** do **XML** menu.
+1. Selecione **depurar XSL** da **XML** menu.
 
 ### <a name="to-start-debugging-from-an-xml-input-document"></a>Para iniciar depuração de um documento de entrada XML
 
 1. Abra o documento XML no editor XML.
 
-1. Selecione **depurar XSL** do **XML** menu.
+1. Selecione **depurar XSL** da **XML** menu.
 
-## <a name="xslt-from-other-languages"></a>XSLT de outros idiomas
+## <a name="xslt-from-other-languages"></a>XSLT de outras linguagens
 
 Você também pode entrar em XSLT ao depurar um aplicativo. Quando você pressiona a tecla F11 em uma chamada de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> , o depurador pode entrar no código XSLT.
 
@@ -94,4 +94,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Noções básicas do depurador](../debugger/debugger-basics.md)
+- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)

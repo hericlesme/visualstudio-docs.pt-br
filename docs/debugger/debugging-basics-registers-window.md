@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056291"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178420"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Sobre a janela de registros no Visual Studio
 O **registra** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo **depuração** nó.  
@@ -52,4 +52,4 @@ O **registra** janela está disponível somente se a depuração do nível de en
   
 ## <a name="see-also"></a>Consulte também  
  [Como: usar a janela registros](../debugger/how-to-use-the-registers-window.md)   
- [Noções básicas do depurador](../debugger/debugger-basics.md)
+ [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)

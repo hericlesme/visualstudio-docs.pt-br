@@ -14,65 +14,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922449"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175885"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 Os seguintes erros ocorrem se a política de análise de código não for atendida no check-in:
 
  **As configurações de análise de código para um ou mais projetos não são compatíveis com a política de análise de código.**
 
- Os requisitos de análise de código fazer check-in de controle de origem do projeto de equipe não foi atendida para um ou mais projetos de código. Esse erro pode ser causado por uma ou mais das seguintes condições:
+ Os requisitos de análise de código fazer check-in para o controle de fonte do projeto de equipe não foi atendida para um ou mais projetos de código. Esse erro pode ser causado por uma ou mais das seguintes condições:
 
-1.  Análise de código não está habilitada na compilação de todos os projetos na solução.
+1.  Análise de código não está habilitada na compilação para todos os projetos na solução.
 
-2.  A regra local definida para o projeto no Visual Studio tem menos restritivo **ação** definir que a regra de projeto de equipe, por exemplo, definir uma regra que é definida como **ação**=**erro**  no servidor tem seu **ação** definida como **aviso** ou **nenhum** na regra definida sendo executado no Visual Studio).
+2.  A regra local definida para o projeto no Visual Studio tem menos restritivo **ação** configuração do que a regra de projeto de equipe, por exemplo, definir uma regra que é definida como **ação**=**erro**  no servidor tem sua **ação** definido como **aviso** ou **nenhum** na regra definida que está sendo executado no Visual Studio).
 
-3.  A regra no conjunto especificada no Visual Studio não contém todas as regras que são especificadas na regra conjunto especificada na análise de código check-in política de projeto de equipe.
+3.  A regra no conjunto especificada no Visual Studio não contém todas as regras que são especificadas na regra de conjunto especificada na análise de código check-in política de projeto de equipe.
 
  **A política de análise de código falha. Há erros no projeto {0} ou a compilação não está atualizada.**
 
- A compilação contém erros ou os erros foram corrigidos, mas a análise de código não foi executada após a correção.
+ O build contiver erros ou os erros foram corrigidos, mas a análise de código não foi executada após a correção.
 
- **Falha de check-in. A política de análise de código requer que você verifique por meio do Visual Studio com uma solução aberta.**
+ **Falha de check-in. A política de análise de código requer que você verifique meio do Visual Studio com uma solução aberta.**
 
- A política de análise de código requer que todos os arquivos em check-in devem estar na solução atualmente aberta. Para corrigir esse erro, abra a solução que contém o arquivo de check-in.
+ A política de análise de código requer que todos os arquivos em check-in devem ser na solução atualmente aberta. Para corrigir esse erro, abra a solução que contém o arquivo de check-in.
 
- **Nem todos os arquivos no check-in pendente estão dentro da solução atualmente aberta.**
+ **Nem todos os arquivos em check-in pendente estão dentro da solução aberta no momento.**
 
- A política de análise de código requer que todos os arquivos em check-in devem estar na solução atualmente aberta. Esse erro é gerado quando há uma solução aberta, mas alguns arquivos na exibição de "verificação pendente em" não fazem parte da solução atualmente aberta. Para corrigir esse erro, abra a solução que contém o arquivo de check-in.
+ A política de análise de código requer que todos os arquivos em check-in devem ser na solução atualmente aberta. Esse erro é gerado quando há uma solução aberta, mas alguns arquivos na exibição de "verificação pendente em" não fazem parte da solução atualmente aberta. Para corrigir esse erro, abra a solução que contém o arquivo de check-in.
 
- **A versão de '{0}' não está correto. É o nome forte especificado na diretiva '{1}'.**
+ **A versão do '{0}' não está correto. É o nome forte especificado na política '{1}'.**
 
- Esse erro se aplicam a projetos do .NET. Um arquivo. dll de regra necessárias à política de análise de código existe no computador local, mas a chave pública/versão não corresponde. Para corrigir esse erro, criador da política deve atualizar as DLLs no *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\*  diretório em seu computador.
+ Esse erro se aplica a projetos do .NET. Um arquivo de regra. dll exigido pela política de análise de código existe no computador local, mas a chave pública/versão não coincide. Para corrigir esse erro, os criadores de diretiva devem atualizar os. DLLs no *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static análise Tools\FxCop\Rules\\*  diretório em seu computador.
 
  **'{0}' especificado na diretiva de assembly não existe.**
 
- Esse erro se aplicam a projetos do .NET. Uma regra necessária à política de análise de código não tem a dll correspondente instalada no computador cliente. Para corrigir esse erro, o criador de política deve atualizar a dll no *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\*  diretório em seu computador.
+ Esse erro se aplica a projetos do .NET. Uma regra exigida pela política de análise de código não tem a dll correspondente instalada no computador cliente. Para corrigir esse erro, os criadores de diretiva devem atualizar a dll no *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static análise Tools\FxCop\Rules\\*  diretório em seu computador.
 
  **Projeto {0} configurações de regra não estão em conformidade com a política de análise de código.**
 
- Esse erro se aplicam a projetos do .NET. As configurações de regras de código gerenciado não são tão estritas como a política exige. Para corrigir esse erro, a configuração do cliente deve ser o mesmo ou mais rígidos do que o requisito de política no servidor.
+ Esse erro se aplica a projetos do .NET. As configurações de regras de código gerenciado não são tão estritas quanto a política exige. Para corrigir esse erro, a configuração do cliente deve ser o mesmo ou mais rígidas do que o requisito de política no servidor.
 
- **Análise de código não está habilitada na configuração ativa. Alternar para a configuração {0} e compilar o projeto {1} antes de fazer check-in.**
+ **Análise de código não está habilitada na configuração ativa. Alterne para a configuração {0} e compile o projeto {1} antes de fazer check-in.**
 
- Em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a configuração ativa não tem a análise de código habilitada, mas há pelo menos um code analysis habilitado.
+ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a configuração do Active Directory não tem code analysis habilitado, mas há pelo menos um code analysis habilitado.
 
  **Você deve habilitar a análise de código para binários gerenciados no projeto {0} propriedades e compilação antes de fazer check-in.**
 
- Esse erro se aplica a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplicativos .NET. Requer que a política de análise de código gerenciado para ser executada, mas ela não está habilitada no projeto atual no cliente.
+ Esse erro se aplica a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplicativos .NET. A política exige a análise de código gerenciado a ser executada, mas ele não está habilitado no projeto atual no cliente.
 
  **Você deve habilitar a análise de código no projeto {0} propriedades e compilação antes de fazer check-in.**
 
- Esse erro aplicado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projetos e projetos da Web. Requer que a política de análise de código gerenciado para ser executada, mas ela não está habilitada no projeto atual no cliente.
+ Esse erro aplicado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projetos e projetos web. A política exige a análise de código gerenciado a ser executada, mas ele não está habilitado no projeto atual no cliente.
 
- **Você deve habilitar a análise de código C/C++ no projeto {0} propriedades e compilação antes de fazer check-in.**
+ **Você deve habilitar a análise de código C/C++ em projeto {0} propriedades e compilação antes de fazer check-in.**
 
- Esse erro se aplicam a projetos não gerenciados. A política de análise de código requer a análise de código para C/C++, mas ela não está habilitada no projeto atual no cliente.
+ Esse erro se aplicam a projetos não gerenciados. A política de análise de código requer a análise de código para C/C++, mas ele não está habilitado no projeto atual no cliente.
 
 ## <a name="see-also"></a>Consulte também
  [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)
