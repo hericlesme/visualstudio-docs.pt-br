@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175324"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177338"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 
@@ -185,7 +185,7 @@ Você pode confirmar as alterações pendentes para o conjunto de dados chamando
     > [!NOTE]
     > Você pode impedir que o adaptador confirme automaticamente as alterações quando você chama o `Fill` método definindo o `AcceptChangesDuringFill` propriedades do adaptador para `false`. Se ele for definido como `false`, em seguida, a <xref:System.Data.DataRow.RowState%2A> de cada linha que é inserida durante o preenchimento é definido como <xref:System.Data.DataRowState.Added>.
 
-- Depois que você envie alterações de conjunto de dados para outro processo, como um serviço Web XML.
+- Depois que você envie alterações de conjunto de dados para outro processo, como um serviço web XML.
 
     > [!CAUTION]
     > Confirmação da alteração dessa maneira apaga qualquer informação de alteração. Não as alterações sejam confirmadas até depois que você concluir a execução de operações que exigem que o aplicativo saber quais alterações foram feitas no conjunto de dados.

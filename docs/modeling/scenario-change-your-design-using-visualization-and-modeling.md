@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281330"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177325"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -55,11 +55,11 @@ Para obter mais informações sobre essas ferramentas e os cenários que dão su
 
 ## <a name="scenario-overview"></a>Visão geral do cenário
 
-Este cenário descreve episódios de ciclos de vida de desenvolvimento do software de duas empresas fictícias: Dinner Now e Lucerne Publishing. O dinner Now fornece um serviço de entrega de refeições baseado na Web em Seattle. Os clientes podem pedir refeições e pagá-las no site da Web agora do jantar. Os pedidos são então enviados para o restaurante local apropriado para entrega. A Lucerne Publishing, uma empresa de Nova York, tem vários negócios dentro e fora da Web. Por exemplo, eles executarem um site da Web em que os clientes podem postar resenhas de restaurantes.
+Este cenário descreve episódios de ciclos de vida de desenvolvimento do software de duas empresas fictícias: Dinner Now e Lucerne Publishing. O dinner Now fornece um serviço de entrega de refeições baseado na Web em Seattle. Os clientes podem pedir refeições e pagá-las no site da Dinner Now. Os pedidos são então enviados para o restaurante local apropriado para entrega. A Lucerne Publishing, uma empresa de Nova York, tem vários negócios dentro e fora da Web. Por exemplo, eles executarem um site em que os clientes podem postar resenhas de restaurantes.
 
 A Lucerne recentemente adquirida Dinner Now e deseja fazer as seguintes alterações:
 
-- Integre seus sites da Web, adicionando recursos de critica de restaurante ao Dinner Now.
+- Integre seus sites, adicionando recursos de critica de restaurante ao Dinner Now.
 
 - Substitua o sistema de pagamento da Dinner Now pelo sistema de Lucerne.
 

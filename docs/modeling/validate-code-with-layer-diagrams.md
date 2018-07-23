@@ -21,28 +21,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63dc6c6b1307ae5d8b8be880815f5de5e782c6f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4bc5c42867b473f38088ee1d59e0043ecfe0748
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953640"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179964"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
-**Últimas notícias**: consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/).
+**Últimas notícias**: consulte [nesta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/).
 
 [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="why-use-dependency-diagrams"></a>Por que usar diagramas de dependência?
 
-Para certificar-se de que o código não causa conflito com seu design, valide seu código com diagramas de dependência no Visual Studio. Isso pode ajudar a:
+Para certificar-se de que o código não causa conflito com seu design, valide o código com diagramas de dependência no Visual Studio. Isso pode ajudar a:
 
--   Encontre conflitos entre as dependências em seu código e o diagrama de dependência.
+-   Encontre conflitos entre dependências no código e dependências no diagrama de dependência.
 
 -   Encontre dependências que talvez sejam afetadas por alterações propostas.
 
-     Por exemplo, você pode editar o diagrama de dependência para mostrar possíveis alterações de arquitetura e, em seguida, validar o código para ver as dependências afetadas.
+     Por exemplo, você pode editar o diagrama de dependência para mostrar as alterações de arquitetura potenciais e, em seguida, validar o código para ver as dependências afetadas.
 
 -   Refatore ou migre o código para um design diferente.
 
@@ -54,73 +54,73 @@ Para certificar-se de que o código não causa conflito com seu design, valide s
 
 -   Visual Studio em seu servidor do Team Foundation Build para validar o código automaticamente com o Team Foundation Build
 
--   Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado aos artefatos em projetos c# ou Visual Basic que você deseja validar. Consulte [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).
+-   Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado a artefatos em projetos do c# ou Visual Basic que você deseja validar. Ver [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).
 
- Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Você pode validar o código manualmente a partir de um diagrama de dependência aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Consulte [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).
+ Você pode validar código manualmente a partir de um diagrama de dependência aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Se você deseja executar a validação de camada com o Team Foundation Build, instale também a mesma versão do Visual Studio em seu servidor de compilação.
+>  Se você quiser executar a validação de camada com o Team Foundation Build, você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.
 
 -   [Se um item dá suporte a validação](#SupportsValidation)
 
 -   [Incluir outros assemblies .NET e projetos para validação](#IncludeReferences)
 
--   [Validar o código manualmente](#ValidateManually)
+-   [Validar código manualmente](#ValidateManually)
 
--   [Validar o código automaticamente](#ValidateAuto)
+-   [Validar código automaticamente](#ValidateAuto)
 
 -   [Solucionar problemas de validação de camada](#TroubleshootingValidation)
 
--   [Compreender e resolver erros de validação de camada](#UnderstandingValidationErrors)
+-   [Entenda e resolva erros de validação de camada](#UnderstandingValidationErrors)
 
 ## <a name="live-dependency-validation"></a>Validação de dependência dinâmica
 
-Nesta versão do Visual Studio, ocorre a validação de dependência em tempo real e erros são mostrados imediatamente na janela lista de erros do Visual Studio.
+Nesta versão do Visual Studio, validação de dependência ocorre em tempo real e erros são mostrados imediatamente na janela lista de erros do Visual Studio.
 
 * Há suporte para c# e Visual Basic.NET de validação em tempo real.
 
-* Para habilitar a análise de solução completa ao usar a validação de dependência em tempo real, abra as configurações de opções na barra de ouro que aparece na lista de erros.
- - Você poderá ignorar permanentemente esta barra de ouro, se você não estiver interessado em ver todos os problemas de arquitetura em sua solução.
+* Para habilitar a análise de solução completa ao usar a validação de dependência dinâmica, abra as configurações de opções da barra de ouro que aparece na lista de erros.
+ - Permanentemente, você poderá ignorar essa barra de ouro se você não estiver interessado em ver todos os problemas de arquiteturas em sua solução.
  - Se você não habilitar a análise de solução completa, a análise é feita apenas para os arquivos que está sendo editados.<p />
 
 * Ao atualizar projetos para habilitar a validação em tempo real, uma caixa de diálogo mostra o andamento da conversão.
 
-* Ao atualizar um projeto para validação de dependência em tempo real, a versão do pacote do NuGet é atualizada para ser o mesmo para todos os projetos e é a versão mais recente em uso.
+* Ao atualizar um projeto para a validação de dependência dinâmica, a versão do pacote do NuGet é atualizada para ser o mesmo para todos os projetos e é a versão mais recente em uso.
 
-* Adicionando um novo gatilho de projeto de validação de dependência de uma atualização de projeto.
+* Adicionando um novo gatilhos de projeto de validação de dependência de uma atualização de projeto.
 
 ##  <a name="SupportsValidation"></a> Se um item dá suporte a validação
- É possível vincular camadas a sites, documentos do Office, arquivos de texto sem formatação e arquivos em projetos compartilhados entre vários aplicativos, mas o processo de validação não os incluirá. Os erros de validação não serão exibidos para referências a projetos ou assemblies vinculados a camadas separadas quando nenhuma dependência for exibida entre essas camadas. Essas referências não serão consideradas dependências, a menos que o código use essas referências.
+ É possível vincular camadas a sites, documentos do Office, arquivos de texto sem formatação e arquivos em projetos que são compartilhados entre vários aplicativos, mas o processo de validação não os incluirá. Os erros de validação não serão exibidos para referências a projetos ou assemblies vinculados a camadas separadas quando nenhuma dependência for exibida entre essas camadas. Essas referências não serão consideradas dependências, a menos que o código use essas referências.
 
-1.  No diagrama de dependência, selecione uma ou mais camadas, com o botão direito sua seleção e, em seguida, clique em **Exibir Links**.
+1.  No diagrama de dependência, selecione uma ou mais camadas, clique com botão direito sua seleção e, em seguida, clique em **Exibir Links**.
 
-2.  Em **Explorer camada**, examine o **dá suporte à validação** coluna. Se o valor for falso, o item não dará suporte à validação.
+2.  Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. Se o valor for falso, o item não dará suporte à validação.
 
 ##  <a name="IncludeReferences"></a> Incluir outros assemblies .NET e projetos para validação
- Quando você arrastar itens para o diagrama de dependência, referências a assemblies do .NET correspondentes ou projetos são adicionadas automaticamente para o **referências de camada** pasta do projeto de modelagem. Essa pasta contém referências aos assemblies e aos projetos analisados durante a validação. Você pode incluir outros assemblies .NET e projetos para validação sem manualmente arrastando-os para o diagrama de dependência.
+ Quando você arrasta itens para o diagrama de dependência, referências a projetos ou assemblies do .NET correspondentes são adicionadas automaticamente para o **referências de camada** pasta no projeto de modelagem. Essa pasta contém referências aos assemblies e aos projetos analisados durante a validação. Você pode incluir outros assemblies .NET e projetos para validação sem arrastá-los manualmente para o diagrama de dependência.
 
-1.  Em **Solution Explorer**, com o botão direito do projeto de modelagem ou **referências de camada** pasta e clique **adicionar referência**.
+1.  Na **Gerenciador de soluções**, clique com botão direito no projeto de modelagem ou o **referências de camada** pasta e clique **Add Reference**.
 
 2.  No **adicionar referência** caixa de diálogo, selecione os assemblies ou projetos e, em seguida, clique em **Okey**.
 
-##  <a name="ValidateManually"></a> Validar o código manualmente
- Se você tiver um diagrama de dependência aberto que está vinculado a itens de solução, você pode executar o **validar** comando de atalho do diagrama. Você também pode usar o prompt de comando para executar o **msbuild** com o **/p:ValidateArchitecture** propriedade personalizada definida como **True**. Por exemplo, à medida que fizer alterações no código, execute a validação da camada regularmente de forma que você possa capturar conflitos de dependência com antecedência.
+##  <a name="ValidateManually"></a> Validar código manualmente
+ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens de solução, você pode executar o **validar** comando de atalho do diagrama. Você também pode usar o prompt de comando para executar o **msbuild** com o **validatearchitecture** propriedade personalizada definida como **verdadeiro**. Por exemplo, à medida que fizer alterações no código, execute a validação da camada regularmente de forma que você possa capturar conflitos de dependência com antecedência.
 
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Para validar o código de um diagrama de dependência aberto
 
-1.  Clique com botão direito a superfície do diagrama e, em seguida, clique em **validar arquitetura**.
+1.  Clique com botão direito na superfície do diagrama e, em seguida, clique em **validar arquitetura**.
 
     > [!NOTE]
-    >  Por padrão, o **ação de compilação** no arquivo de diagrama (.layerdiagram) dependência estiver definida como **validar** para que o diagrama é incluído no processo de validação.
+    >  Por padrão, o **ação de compilação** no arquivo de diagrama (. layerdiagram) dependência estiver definida como **validar** para que o diagrama seja incluído no processo de validação.
 
-     O **lista de erros** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+     O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
-2.  Para exibir a origem de cada erro, clique duas vezes o erro a **lista de erros** janela.
+2.  Para exibir a origem de cada erro, clique duas vezes no erro na **Error List** janela.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode mostrar um mapa de código ao invés da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não for especificado, o diagrama de dependência ou o código está faltando uma dependência que é especificada pelo diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de códigos, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não é especificado no diagrama de dependência ou o código não tem uma dependência que é especificada no diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
 3.  Para gerenciar erros, consulte [gerenciar erros de validação](#ManageErrors).
 
@@ -138,7 +138,7 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
          - ou –
 
-         Navegue até a pasta que contém o modelo de arquivo (.modelproj) e o diagrama de dependência do projeto e, em seguida, execute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] com a propriedade personalizada a seguir:
+         Navegue até a pasta que contém a modelagem de arquivo (. modelproj) e o diagrama de dependência do projeto e, em seguida, execute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] com a seguinte propriedade personalizada:
 
         ```
         msbuild /p:ValidateArchitecture=true
@@ -152,7 +152,7 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
          - ou –
 
-         Navegue até a pasta de solução, que deve conter um projeto de modelagem que contém um diagrama de dependência e, em seguida, executar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] com a propriedade personalizada a seguir:
+         Navegue até a pasta de solução, que deve conter um projeto de modelagem que contém um diagrama de dependência e, em seguida, executar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] com a seguinte propriedade personalizada:
 
         ```
         msbuild /p:ValidateArchitecture=true
@@ -166,23 +166,23 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
  Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos conflitos reportados durante a validação. Por exemplo, você talvez queira suprimir erros que já esteja resolvendo ou que não sejam relevantes para seu cenário específico. Quando você suprime um erro, é uma prática recomendada registrar em log um item de trabalho em [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC TFS diferentes, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já está conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.
+>  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Para criar um item de trabalho para um erro de validação
 
--   No **lista de erros** janela, clique duas vezes o erro, aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar.
+-   No **lista de erros** janela, o erro com o botão direito, aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar.
 
- Use essas tarefas para gerenciar erros de validação de **lista de erros** janela:
+ Use essas tarefas para gerenciar erros de validação na **Error List** janela:
 
 |**To**|**Siga estas etapas**|
 |------------|----------------------------|
-|Suprimir erros selecionados durante a validação|Clique um ou vários erros selecionados, aponte para **gerenciar erros de validação**e, em seguida, clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Erros suprimidos são rastreados em um arquivo de .suppressions para o arquivo de diagrama de dependência correspondente.|
-|Parar a supressão de erros selecionados|Clique no erro suprimidas selecionado ou erros, aponte para **gerenciar erros de validação**e, em seguida, clique em **parar suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
-|Restaurar suprimidos todos os erros no **lista de erros** janela|Clique em qualquer lugar no **lista de erros** janela, aponte para **gerenciar erros de validação**e, em seguida, clique em **Mostrar todos os erros suprimidos**.|
-|Ocultar suprimidos todos os erros do **lista de erros** janela|Clique em qualquer lugar no **lista de erros** janela, aponte para **gerenciar erros de validação**e, em seguida, clique em **ocultar todos os erros suprimidos**.|
+|Suprimir erros selecionados durante a validação|Clique em um ou vários erros selecionados, aponte para **gerenciar erros de validação**e, em seguida, clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Erros suprimidos são acompanhados em um arquivo. suppressions para o arquivo de diagrama de dependência correspondente.|
+|Parar a supressão de erros selecionados|Clique com botão direito o erros ou erros suprimidos selecionados, aponte para **gerenciar erros de validação**e, em seguida, clique em **parar de suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
+|Restaurar todos os erros suprimidos na **Error List** janela|Clique com botão direito em qualquer lugar na **lista de erros** janela, aponte para **gerenciar erros de validação**e, em seguida, clique em **Mostrar todos os erros suprimidos**.|
+|Ocultar todos os erros suprimidos do **Error List** janela|Clique com botão direito em qualquer lugar na **lista de erros** janela, aponte para **gerenciar erros de validação**e, em seguida, clique em **ocultar todos os erros suprimidos**.|
 
-##  <a name="ValidateAuto"></a> Validar o código automaticamente
- É possível executar a validação da camada sempre que você executa uma compilação local. Se a equipe usar o Team Foundation Build, será possível executar a validação da camada com check-ins restritos, que você pode especificar criando uma tarefa MSBuild personalizada, e usar relatórios de compilação para coletar erros de validação. Para criar construções de check-in restrito, consulte [usar um processo de build de check-in restrito para validar alterações](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+##  <a name="ValidateAuto"></a> Validar código automaticamente
+ É possível executar a validação da camada sempre que você executa uma compilação local. Se a equipe usar o Team Foundation Build, será possível executar a validação da camada com check-ins restritos, que você pode especificar criando uma tarefa MSBuild personalizada, e usar relatórios de compilação para coletar erros de validação. Para criar compilações de check-in, consulte [usar um processo de compilação de check-in para validar alterações](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar automaticamente o código durante uma compilação local
 
@@ -194,15 +194,15 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
  \- ou -
 
-1.  Em **Solution Explorer**, com o botão direito do projeto de modelagem que contém o diagrama de dependência ou diagramas e, em seguida, clique em **propriedades**.
+1.  Na **Gerenciador de soluções**, o projeto de modelagem que contém o diagrama de dependência ou diagramas com o botão direito e, em seguida, clique em **propriedades**.
 
-2.  No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade **True**.
+2.  No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade a ser **verdadeiro**.
 
      Isso inclui o projeto de modelagem no processo de validação.
 
-3.  Em **Solution Explorer**, clique no arquivo de diagrama (.layerdiagram) de dependência que você deseja usar para validação.
+3.  Na **Gerenciador de soluções**, clique no arquivo de diagrama (. layerdiagram) de dependência que você deseja usar para validação.
 
-4.  No **propriedades** janela, certifique-se de que o diagrama **ação de compilação** está definida como **validar**.
+4.  No **propriedades** janela, certifique-se de que o diagrama **Build Action** estiver definida como **validar**.
 
      Isso inclui o diagrama de dependência no processo de validação.
 
@@ -210,9 +210,9 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Para validar automaticamente o código durante um Team Foundation Build
 
-1.  Em **Team Explorer**, clique duas vezes na definição de compilação e, em seguida, clique em **processo**.
+1.  Na **Team Explorer**, clique duas vezes a definição de compilação e, em seguida, clique em **processo**.
 
-2.  Em **parâmetros de processo de compilação**, expanda **compilação**e digite o seguinte no **argumentos de MSBuild** parâmetro:
+2.  Sob **parâmetros do processo de compilação**, expanda **compilação**e digite o seguinte no **argumentos de MSBuild** parâmetro:
 
      `/p:ValidateArchitecture=true`
 
@@ -220,9 +220,9 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
 -   [Build e versão](/vsts/build-release/index)
 
--   [Use o modelo padrão para o processo de compilação](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
+-   [Usar o modelo padrão para o processo de compilação](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 
--   [Modificar um Build herdado que é baseado em UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
+-   [Modificar uma compilação herdada baseada em upgradetemplate. XAML](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
 -   [Personalizar o modelo de processo de compilação](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
@@ -231,12 +231,12 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 ##  <a name="TroubleshootingValidation"></a> Solucionar problemas de validação de camada
  A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
-|**Problema**|**Causa possível**|**Resolução**|
+|**Problema**|**Possível causa**|**Resolução**|
 |---------------|------------------------|--------------------|
-|Os erros de validação não ocorrem como esperado.|A validação não funciona em diagramas de dependência que são copiados de outros diagramas de dependência no Gerenciador de soluções e que estão no mesmo projeto de modelagem. diagramas de dependência são copiados dessa forma contêm as mesmas referências como o diagrama de dependência original.|Adicione um novo diagrama de dependência para o projeto de modelagem.<br /><br /> Copie os elementos do diagrama de dependência de origem para o novo diagrama.|
+|Os erros de validação não ocorrem como esperado.|A validação não funciona em diagramas de dependência que são copiados de outros diagramas de dependência no Gerenciador de soluções e que estão no mesmo projeto de modelagem. diagramas de dependência são copiados dessa maneira contêm as mesmas referências que o diagrama de dependência original.|Adicione um novo diagrama de dependência ao projeto de modelagem.<br /><br /> Copie os elementos do diagrama de dependência de origem para o novo diagrama.|
 
-##  <a name="UnderstandingValidationErrors"></a> Compreender e resolver erros de validação de camada
- Quando validar o código em um diagrama de dependência, ocorrem erros de validação quando o código está em conflito com o design. Por exemplo, as seguintes condições podem fazer os erros de validação ocorrerem:
+##  <a name="UnderstandingValidationErrors"></a> Entender e resolver erros de validação de camada
+ Quando você valida o código em um diagrama de dependência, erros de validação ocorrem quando o código entra em conflito com o design. Por exemplo, as seguintes condições podem fazer os erros de validação ocorrerem:
 
 -   Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.
 
@@ -248,19 +248,19 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 
 |**Sintaxe**|**Descrição**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* é um artefato que está associado uma camada no diagrama de dependência.<br /><br /> *ArtifactTypeN* é o tipo de *ArtifactN*, como um **classe** ou **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|*{1&gt;artefaton&lt;1* é um artefato associado uma camada no diagrama de dependência.<br /><br /> *1&gt;tipoartefaton&lt;1* é o tipo de *2&gt;artefaton&lt;2*, como um **classe** ou **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de dependência.|
-|*DependencyType*|O tipo de relação de dependência entre *Artifact1* e *Artifact2*. Por exemplo, *Artifact1* tem um **chamadas** relação com *Artifact2*.|
+|*Tipodependência*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|
 
 |**Erro de sintaxe**|**Descrição do erro**|
 |----------------------|---------------------------|
-|DV0001: **dependência inválida**|Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para um referências de camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém este camadas. Essa é uma violação de restrição de dependência.|
-|DV1001: **nome de namespace inválido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual esse elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada tem permissão para ser definido.|
-|DV1002: **dependência no namespace unreferenceable**|Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace Unreferenceable" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Unreferenceable Namespaces" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciadas em elementos de código associados a essa camada.|
-|DV1003: **nome do namespace não permitido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Nomes de Namespace não permitido" contém o namespace no qual esse elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista de ponto e vírgula separada de namespaces na qual o código elementos associados a essa camada não devem ser definidos.|
-|DV3001: **Link ausente**|Camada '*LayerName*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly?|*LayerName* links para um artefato que não pode ser encontrado. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|
-|DV9001: **análise de arquitetura encontro erros internos**|Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída.|Consulte o log de eventos da compilação ou a janela de saída para obter mais detalhes.|
+|DV0001: **dependência inválida**|Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para referências de uma camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém esse camadas. Essa é uma violação de restrição de dependência.|
+|DV1001: **nome de namespace inválido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada são podem ser definidos.|
+|DV1002: **dependência no namespace não referenciáveis**|Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace não Referenciáveis" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Namespaces não Referenciáveis" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciados em elementos de código associados a essa camada.|
+|DV1003: **nome do namespace não permitido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Não permitidos em nomes de Namespace" contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista separada por dois pontos de namespaces na qual o código elementos associados a essa camada não devem ser definidos.|
+|DV3001: **Link ausente**|Camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly?|*{1&gt;nomecamada&lt;1* links para um artefato que não pode ser encontrado. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|
+|DV9001: **análise arquitetônica encontrou erros internos**|Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída.|Consulte o log de eventos da compilação ou a janela de saída para obter mais detalhes.|
 
 
 ## <a name="see-also"></a>Consulte também

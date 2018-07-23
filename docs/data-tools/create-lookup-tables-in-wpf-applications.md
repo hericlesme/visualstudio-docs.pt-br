@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757130"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176122"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos WPF
 O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa, arrastando o nó principal de uma tabela pai ou objeto de **fontes de dados** window para um controle que já está associado a uma coluna ou propriedade em uma tabela filho relacionada.
@@ -36,7 +36,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
     -   Conjunto de dados ou modelo de dados de entidade.
 
-    -   WCF Data Service, serviço WCF ou serviço Web. Para obter mais informações, consulte [como: conectar-se aos dados em um serviço](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   WCF Data Service, serviço WCF ou serviço web. Para obter mais informações, consulte [como: conectar-se aos dados em um serviço](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Objetos. Para obter mais informações, consulte [associar a objetos no Visual Studio](bind-objects-in-visual-studio.md).
 

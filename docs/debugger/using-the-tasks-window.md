@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059229"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179990"
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 
@@ -96,7 +96,7 @@ O **alternar para tarefas** comando torna a tarefa atual a tarefa ativa. O **alt
 
 ## <a name="see-also"></a>Consulte também
 
-- [Noções básicas do depurador](../debugger/debugger-basics.md)
+- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Programação paralela](/dotnet/standard/parallel-programming/index)
 - [Tempo de Execução de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)

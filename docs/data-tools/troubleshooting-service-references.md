@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118077"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180419"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
 
@@ -53,12 +53,12 @@ Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de
 
 Para corrigir esse erro:
 
-1.  No projeto do site da Web, abra o **propriedades** páginas.
+1.  No projeto do site, abra o **propriedades** páginas.
 
 2.  Sobre o **opções de inicialização** guia, desmarque a **autenticação NTLM** caixa de seleção.
 
     > [!NOTE]
-    > Você deve desativar a autenticação NTLM somente para sites da Web que contêm exclusivamente os serviços WCF. Segurança para serviços do WCF é gerenciada por meio da configuração na *Web. config* arquivo. Isso torna a autenticação NTLM desnecessários.
+    > Você deve desativar a autenticação NTLM somente para sites que contêm exclusivamente os serviços WCF. Segurança para serviços do WCF é gerenciada por meio da configuração na *Web. config* arquivo. Isso torna a autenticação NTLM desnecessários.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Nível de acesso para classes geradas configuração não tem nenhum efeito
 

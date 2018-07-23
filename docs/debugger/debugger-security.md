@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0b97564c48255ea8b8f37e370402fa8f7499aa
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 640c127d9e82a78f629365141c5948d21eafcf3c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065000"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175989"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 A capacidade de depurar outro processo oferece poderes extremamente amplos que você não teria de outra forma, especialmente ao depurar remotamente. Um depurador mal-intencionado pode impor danos extensivos no computador que está sendo depurado.  
@@ -39,18 +39,18 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="managed-debugging-security"></a>Segurança de depuração gerenciada  
  Aqui estão algumas recomendações gerais que se aplicam a todas as depurações gerenciadas.  
   
--   Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você fizer isso, você assume que ele é confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. "Usuários confiáveis" incluem você, e um conjunto de usuários padrão normalmente definidos em computadores que têm o .NET Framework instalado, como **aspnet**, **localsystem**, **networkservice**, e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+-   Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você fizer isso, suponha que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. "Usuários confiáveis" incluem você e um conjunto de usuários padrão comumente definidos em computadores que têm o .NET Framework instalado, como **aspnet**, **localsystem**, **networkservice**, e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 -   Tenha cuidado ao baixar um projeto fora da Internet e carregá-lo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso é muito arriscado de fazer mesmo sem depuração. Quando você fizer isso, estará supondo que o projeto e o código que contém sejam confiáveis.  
   
- Para obter mais informações, consulte [depurando código gerenciado](../debugger/debugging-managed-code.md).  
+ Para obter mais informações, consulte [Debugging Managed Code](../debugger/debugging-managed-code.md).  
   
 ### <a name="remote-debugging-security"></a>Segurança de depuração remota  
  A depuração local é geralmente mais segura do que a depuração remota. A depuração remota aumenta a área da superfície total que pode ser analisada.  
   
  O Monitor de Depuração Remota do Visual Studio (msvsmon.exe) é usado na depuração remota e há várias recomendações de segurança para configurá-lo. O modo preferido de configurar o modo de autenticação é a autenticação do Windows, pois Modo Sem Autenticação não é seguro.  
   
- ![Caixa de diálogo erro](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")  
+ ![Caixa de diálogo de erro](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")  
   
  Ao usar o Modo de Autenticação do Windows, lembre-se de que a concessão de uma permissão de usuário não confiável para se conectar a msvsmon é perigosa, porque o usuário recebe todas as permissões no computador.  
   
@@ -81,6 +81,6 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
   
 ## <a name="see-also"></a>Consulte também  
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   
- [Noções básicas do depurador](../debugger/debugger-basics.md)   
- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)   
+ [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
  [Aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

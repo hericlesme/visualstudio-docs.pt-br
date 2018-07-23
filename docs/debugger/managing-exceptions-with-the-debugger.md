@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c514458d6b7e8cfd4837ca907d14055af8a624ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057464"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180212"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -197,4 +197,4 @@ Para adicionar exceções condicionais, escolha o **Editar condição** ícone n
  [Como: examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Como: usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   
  [Usar o tempo de execução verifica sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Noções básicas do depurador](../debugger/debugger-basics.md)
+ [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)

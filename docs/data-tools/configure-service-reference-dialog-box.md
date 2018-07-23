@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281060"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180458"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -50,7 +50,7 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
  **Endereço**
 
- Atualiza o endereço da Web onde o procura uma referência de serviço para um serviço. Por exemplo, durante o desenvolvimento, o serviço pode ser hospedado em um servidor de desenvolvimento e posteriormente movido para um servidor de produção, a necessidade de uma alteração de endereço.
+ Atualiza o endereço da web onde o procura uma referência de serviço para um serviço. Por exemplo, durante o desenvolvimento, o serviço pode ser hospedado em um servidor de desenvolvimento e posteriormente movido para um servidor de produção, a necessidade de uma alteração de endereço.
 
 > [!NOTE]
 > O elemento de endereço não está disponível quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.
@@ -96,7 +96,7 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
  **Lista de assemblies referenciados**
 
- Contém uma lista de assemblies referenciados para o projeto ou o site da Web. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados**, você pode selecionar ou limpar assemblies individuais.
+ Contém uma lista de assemblies referenciados para o projeto ou o site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados**, você pode selecionar ou limpar assemblies individuais.
 
  **Adicionar referência Web**
 
