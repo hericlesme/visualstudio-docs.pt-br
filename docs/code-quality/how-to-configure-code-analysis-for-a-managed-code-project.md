@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179554"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204226"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como configurar a análise de código para um projeto de código gerenciado
 
-No Visual Studio, você pode escolher de uma lista de análise de código *conjuntos de regra* para aplicar a um projeto de código gerenciado. É o conjunto de regras padrão *Microsoft mínimo recomendado regras*. Você pode aplicar outra regra definida para um projeto ou para todos os projetos em uma solução.
+No Visual Studio, você pode escolher de uma lista de análise de código [conjuntos de regra](../code-quality/rule-set-reference.md)) para aplicar a um projeto de código gerenciado. Por padrão, o **Microsoft mínimo recomendado regras** conjunto de regras é selecionado, mas você pode aplicar uma regra diferente, defina se desejado. Conjuntos de regras podem ser aplicados a um ou vários projetos em uma solução.
 
 > [!TIP]
 > Para obter informações sobre como configurar uma regra definida para aplicativos web ASP.NET, consulte [como: configurar a análise de código para um ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos a *
 
 ## <a name="see-also"></a>Consulte também
 
+- [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)
 - [Como: configurar a análise de código para um aplicativo web do ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

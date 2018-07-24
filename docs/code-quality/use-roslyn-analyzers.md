@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993909"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204148"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar e usar regras do analisador Roslyn
 
@@ -99,7 +99,7 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
 1. No **ação** coluna, selecione o valor para abrir uma lista suspensa e selecione a severidade desejada na lista.
 
-   ![Abrir no editor do arquivo de conjunto de regras](media/ruleset-file-in-editor.png)
+   ![Arquivo aberto no editor de conjunto de regras](media/ruleset-file-in-editor.png)
 
 ## <a name="suppress-violations"></a>Suprimir violações
 
