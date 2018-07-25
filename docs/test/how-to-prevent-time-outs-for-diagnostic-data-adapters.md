@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844232"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178313"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Como evitar tempos limites para adaptadores de dados de diagnóstico
 
@@ -23,17 +23,17 @@ Se estiver usando adaptadores de dados de diagnóstico nas configurações de te
 
 -   O serviço do controlador de teste não está sendo executado no computador do controlador de teste. Talvez seja necessário reiniciar o serviço. Para obter mais informações sobre como determinar seu controlador de teste e gerenciar controladores de teste, consulte [Gerenciando controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
--   Se você coletar dados em um computador remoto, o firewall poderá bloquear o Microsoft Test Manager. O computador que executa o Microsoft Test Manager deve aceitar conexões de entrada do controlador de teste. Um tempo limite é atingido quando o Microsoft Test Manager não recebe uma mensagem do controlador porque está bloqueado pelo firewall. Você deve verificar as configurações do firewall no computador que executa o Microsoft Test Manager. Para obter mais informações sobre as configurações de firewall, consulte o seguinte [site da Microsoft](http://go.microsoft.com/fwlink/?LinkId=184980).
+-   Se você coletar dados em um computador remoto, o firewall poderá bloquear o Microsoft Test Manager. O computador que executa o Microsoft Test Manager deve aceitar conexões de entrada do controlador de teste. Um tempo limite é atingido quando o Microsoft Test Manager não recebe uma mensagem do controlador porque está bloqueado pelo firewall. Você deve verificar as configurações do firewall no computador que executa o Microsoft Test Manager.
 
 -   O controlador de teste não pode resolver o nome do computador que executa o Microsoft Test Manager. Isso poderá ocorrer se o DNS fornecer o endereço incorreto desse computador. Talvez seja preciso entrar em contato com o administrador da rede para resolver esse problema.
 
- Ao executar um teste longo que deve coletar muito dados, você pode descobrir que a coleção desses dados atingiu o tempo limite. Use o procedimento a seguir para resolver esse problema.
+Ao executar um teste longo que deve coletar muito dados, você pode descobrir que a coleção desses dados atingiu o tempo limite. Use o procedimento a seguir para resolver esse problema.
 
- Você pode aumentar o tempo limite atualizando o arquivo de configuração do Microsoft Test Manager ou o arquivo de configuração do agente de teste que está excedendo o tempo.
+Você pode aumentar o tempo limite atualizando o arquivo de configuração do Microsoft Test Manager ou o arquivo de configuração do agente de teste que está excedendo o tempo.
 
- Para o Microsoft Test Manager, o arquivo de configuração é chamado **mtm.exe.config**. Ele está localizado no seguinte diretório: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Para o Microsoft Test Manager, o arquivo de configuração é chamado **mtm.exe.config**. Ele está localizado no seguinte diretório: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
- Para atualizar um agente de teste, você deve atualizar os arquivos de configuração a seguir no computador do agente de teste. Todos esses arquivos estão localizados no computador do agente de teste no mesmo diretório: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Para atualizar um agente de teste, você deve atualizar os arquivos de configuração a seguir no computador do agente de teste. Todos esses arquivos estão localizados no computador do agente de teste no mesmo diretório: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ Se estiver usando adaptadores de dados de diagnóstico nas configurações de te
 
 -   QTDCAgent32.exe.config
 
- Se você executar testes manuais e coletar dados de um ambiente, quando um bug for criado ou um caso de teste for concluído, todos os dados coletados pelos adaptadores de dados de diagnóstico serão transferidos para o computador que está executando os testes manuais. Se você coletou muitos dados ou se tiver uma conexão de rede lenta, o processo poderá demorar mais do que o valor padrão de 60 segundos. Por exemplo, se você configurou o adaptador do IntelliTrace para coletar eventos do IntelliTrace e informações de chamada de vários processos, a transferência desses dados poderá exceder o tempo limite padrão. Para gerar esse valor, use o procedimento a seguir para atualizar o **mtm.exe.config**.
+Se você executar testes manuais e coletar dados de um ambiente, quando um bug for criado ou um caso de teste for concluído, todos os dados coletados pelos adaptadores de dados de diagnóstico serão transferidos para o computador que está executando os testes manuais. Se você coletou muitos dados ou se tiver uma conexão de rede lenta, o processo poderá demorar mais do que o valor padrão de 60 segundos. Por exemplo, se você configurou o adaptador do IntelliTrace para coletar eventos do IntelliTrace e informações de chamada de vários processos, a transferência desses dados poderá exceder o tempo limite padrão. Para gerar esse valor, use o procedimento a seguir para atualizar o **mtm.exe.config**.
 
- Uma mensagem de erro será exibida se o tempo limite de atividade do Test Runner ou de um agente de teste for atingido. A mensagem de erro do agente de teste conterá as informações sobre qual computador do agente de teste atingiu o tempo limite. Use o procedimento a seguir para atualizar os arquivos de configuração, dependendo da mensagem de erro que você recebeu.
+Uma mensagem de erro será exibida se o tempo limite de atividade do Test Runner ou de um agente de teste for atingido. A mensagem de erro do agente de teste conterá as informações sobre qual computador do agente de teste atingiu o tempo limite. Use o procedimento a seguir para atualizar os arquivos de configuração, dependendo da mensagem de erro que você recebeu.
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>Para aumentar os tempos limite dos adaptadores de dados de diagnóstico
 

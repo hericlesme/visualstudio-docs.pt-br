@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749278"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179054"
 ---
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
 Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.
@@ -55,7 +55,7 @@ Barra de ferramentas **Depuração**
     -   Clique no botão **X** no canto superior da janela **Form1**.
 
     > [!NOTE]
-    >  Ao executar o programa dentro do IDE, isso é chamado de depuração porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, veja [Noções básicas sobre depuração](../debugger/debugger-basics.md).
+    >  Ao executar o programa dentro do IDE, isso é chamado de depuração porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, veja [Noções básicas sobre depuração](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
