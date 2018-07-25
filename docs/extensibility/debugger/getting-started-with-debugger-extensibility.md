@@ -1,5 +1,5 @@
 ---
-title: Guia de Introdução ao depurador extensibilidade | Microsoft Docs
+title: Introdução à extensibilidade do depurador | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,40 +15,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102688"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231271"
 ---
-# <a name="getting-started-with-debugger-extensibility"></a>Guia de Introdução ao depurador de extensibilidade
-O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações que você deve ter para criar e personalizar os componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
+# <a name="get-started-with-debugger-extensibility"></a>Introdução a extensibilidade do depurador
+O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações que você precisa para criar e personalizar componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração adicionou melhorias derivadas a usabilidade ampla teste executado no anterior [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar durante a execução de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração adicionou melhorias derivadas a usabilidade extenso teste realizado no anterior [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar em interrupções de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração é executada fora do processo com o programa que está sendo depurado e, portanto, menos intrusiva no espaço de processo do aplicativo. Portanto, é mais fácil de escrever componentes que interagem com o depurador sem afetar seu programa de depuração.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração é executada fora do processo com o programa que está sendo depurado e, portanto, é menos intrusiva no espaço de processo do aplicativo. Consequentemente, é mais fácil escrever componentes que interagem com o depurador sem afetar o seu programa de depuração.  
   
- Usar melhor o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], você deve estar familiarizado com o seguinte:  
+ Usar melhor o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], você deve estar familiarizado com os seguintes itens:  
   
--   O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE)  
+-   O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE)  
   
--   A linguagem de programação C++  
+-   A linguagem de programação do C++  
   
--   COM DA ATL  
+-   COM ATL  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
- Descreve o processo de implementação de depuração no seu produto, dependendo de seu compilador e sua saída.  
+ Descreve o processo de implementação de depuração no seu produto, dependendo do seu compilador e sua saída.  
   
  [Componentes do depurador](../../extensibility/debugger/debugger-components.md)  
  Fornece uma visão geral de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração componentes, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolo (SH).  
   
  [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)  
- Descreve os principais conceitos de arquitetura de depuração.  
+ Descreve os principais conceitos de arquiteturas de depuração.  
   
  [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md)  
- Explica como o mecanismo de depuração (DE) simultaneamente opera no código, documentação e contextos de avaliação de expressão. Descreve, para cada um dos três contextos, local, posição ou avaliação relevante a ele.  
+ Explica como o mecanismo de depuração (DES) simultaneamente opera dentro do código, documentação e contextos de avaliação de expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevante a ele.  
   
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)  
  Contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.

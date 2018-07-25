@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757156"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232167"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -42,7 +42,7 @@ Na guia **Publicar** é possível selecionar um perfil de publicação existente
 
 ## <a name="azure-app-service"></a>Serviço de Aplicativo do Azure
 
-O [Serviço de Aplicativo do Azure](/azure/app-service/app-service-web-overview) ajuda os desenvolvedores a criar rapidamente uma variedade de serviços e aplicativos Web escalonáveis sem infraestrutura de manutenção.
+[O serviço de aplicativo do Azure](/azure/app-service/app-service-web-overview) e [serviço de aplicativo no Linux](/azure/app-service/containers/app-service-linux-intro) ajudar os desenvolvedores a criar rapidamente uma variedade de serviços e aplicativos web escalonáveis sem infraestrutura de manutenção.
 
 Você determina quanta capacidade de computação que um serviço de aplicativo tem, escolhendo uma [plano ou tipo de preço](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para o serviço de aplicativo recipiente. Você pode ter vários Web aplicativos (e outros tipos de aplicativos) compartilham o mesmo serviço de aplicativo sem alterar o tipo de preço. Por exemplo, você pode hospedar aplicativos Web de desenvolvimento, preparo e produção juntos no mesmo serviço de aplicativo.
 
@@ -57,7 +57,7 @@ Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem
 
 > Se quiser usar o Serviço de Aplicativo do Azure em seu próprio datacenter ou em outros computadores locais, você poderá fazer isso usando o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Para obter mais informações sobre como publicar no serviço de aplicativo, consulte [início rápido: publicar no serviço de aplicativo do Azure](quickstart-deploy-to-azure.md).
+Para obter mais informações sobre como publicar no serviço de aplicativo, consulte [início rápido: publicar no serviço de aplicativo do Azure](quickstart-deploy-to-azure.md) e [início rápido: publicar o ASP.NET Core para Linux](quickstart-deploy-to-linux.md).
 
 ## <a name="azure-virtual-machines"></a>Máquinas Virtuais do Azure
 
