@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752123"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232313"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 do tutorial: Usar o modelo de Pesquisas do Projeto Web do Flask
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
 
 **Etapa anterior: [Usar o modelo Projeto Web completo do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -78,35 +78,35 @@ Conforme observado anteriormente, quase tudo o que está em um projeto criado co
 
 Os modelos de dados do aplicativo são classes do Python nomeadas Votação e Opção, definidas em `models/__init__.py`. Uma Votação representa uma pergunta, para a qual uma coleção de instâncias de Opção representam as respostas disponíveis. Uma Votação também mantém o número total de votos (para qualquer opção) e um método para calcular as estatísticas usadas para gerar exibições:
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Esses modelos de dados são abstrações genéricas que permitem que os modos de exibição do aplicativo trabalhar em diferentes tipos de backup de armazenamentos de dados, que serão descritos na próxima etapa.
 
@@ -189,32 +189,32 @@ As etapas a seguir adicionam suporte a um armazenamento de dados diferente dos t
 
 Inicialmente, qualquer armazenamento de dados escolhido não contém nenhuma votação, então a home page do aplicativo exibe a mensagem "Nenhuma votação disponível" com o botão **Criar Votações de Exemplo**. No entanto, depois de selecionar o botão, o modo de exibição é alterado para exibir as votações disponíveis. Esta opção ocorre por meio de marcas condicionais em `templates\index.html` (algumas linhas em branco foram omitidas para fins de brevidade):
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 A variável `polls` no modelo vem de uma chamada a `repository.get_polls`, que não retorna nada até que o armazenamento de dados seja inicializado.
 
