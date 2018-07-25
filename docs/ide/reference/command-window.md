@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704753"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235096"
 ---
 # <a name="command-window"></a>Janela Comando
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.

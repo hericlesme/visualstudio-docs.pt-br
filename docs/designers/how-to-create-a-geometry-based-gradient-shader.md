@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745770"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923901"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como criar um sombreador de gradiente com base na geometria
 
@@ -54,11 +54,11 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter informações sobre como visualizar sombreadores no Designer de Sombreador, consulte **Visualização de Sombreadores** em [Designer de Sombreador](../designers/shader-designer.md)
 
- A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a uma cena 3D que é demonstrada em [Como modelar terreno 3D](../designers/how-to-model-3-d-terrain.md). A intensidade da cor aumenta com a altura do ponto no mundo.
+ A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a uma cena 3D que é demonstrada em [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md). A intensidade da cor aumenta com a altura do ponto no mundo.
 
  ![Efeito de gradiente aplicado a um modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
- Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para obter mais informações de como aplicar um sombreador a um modelo 3D, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750500"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947419"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2 do tutorial: Criar um aplicativo do Django com modos de exibição e modelos de página
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Django com exibição e modelos de página
 
 **Etapa anterior: [Criar uma solução e um projeto do Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -50,8 +50,8 @@ Usando qualquer método, crie um aplicativo com o nome "HelloDjangoApp". O resul
 
 | Item | Descrição |
 | --- | --- |
-| `__init.py__` | O arquivo que identifica o aplicativo como um pacote. |
-| `migrations` | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são discutidas na etapa 6; no momento, a pasta contém simplesmente um arquivo `__init.py__` (o que indica que a pasta define seu próprio pacote de Python). |
+| `__init__.py` | O arquivo que identifica o aplicativo como um pacote. |
+| `migrations` | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são discutidas na etapa 6; no momento, a pasta contém simplesmente um arquivo `__init__.py` (o que indica que a pasta define seu próprio pacote de Python). |
 | `templates` | Uma pasta para os modelos de página do Django que contém um único arquivo `index.html`. Modelos são blocos de HTML aos quais os modos de exibição podem adicionar informações para renderizar dinamicamente uma página. Modelos de página "variáveis", como `{{ content }}` em `index.html`, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
 | `admin.py` | O arquivo Python no qual você estende a interface administrativa do aplicativo (veja a etapa 6), que é usada para ver e editar dados em um banco de dados. Inicialmente, esse arquivo contém apenas a instrução `from django.contrib import admin`. O Django inclui uma interface administrativa padrão por meio de entradas no arquivo `settings.py` do projeto do Django, que você pode ativar removendo a marca de comentário das entradas existentes em `urls.py`. |
 | `apps.py` | Um arquivo Python que define uma classe de configuração para o aplicativo (veja abaixo, depois desta tabela). |
@@ -272,7 +272,7 @@ Resposta: Quando o Django procura por um modelo referido na função `render`, e
 > [!div class="nextstepaction"]
 > [Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Como gravar seu primeiro aplicativo do Django, parte 1 – (modos de exibição)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Para conhecer mais recursos de modelos do Django, como os elementos inclui e herança, confira [A linguagem de modelos do Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425342"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945540"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -43,9 +43,9 @@ Estes são alguns exemplos:
 |-------------|----------------|-------------|
 |Encontrar a correspondência de um único caractere (exceto uma quebra de linha)|.|`a.o` corresponde a “aro” em “around” e “abo” em “about”, mas a não “acro” em “across”.|
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis)|*|`a*r` corresponde a “r” em “rack”, “ar” em “ark” e “aar” em “aardvark”|
-|Encontrar a correspondência de um caractere zero ou mais vezes (Curinga *)|.*|c.*e corresponde a “cke” em “racket”, “comme” em “comment” e “code” em “code”|
-|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis)|+|`e.+e` corresponde a “eede” em “feeder”, mas não a “ee”.|
-|Encontrar a correspondência de um caractere uma ou mais vezes (Curinga ?)|.+|e.+e corresponde a “eede” em “feeder”, mas não a “ee”.|
+|Encontrar a correspondência de um caractere zero ou mais vezes (Curinga *)|.*|`c.*e` corresponde a "cke" em "racket", "comme" em "comment" e "code" em "code"|
+|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis)|+|`e.+d` corresponde a "eed" em "feeder", mas não a "ed".|
+|Encontrar a correspondência de um caractere uma ou mais vezes (Curinga ?)|.+|`e.+e` corresponde a “eede” em “feeder”, mas não a “ee”.|
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis)|*?|`e.*?e` corresponde a “ee” em “feeder”, mas não a “eede”.|
 |Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis)|+?|`e.+?e` corresponde a “ente” e “erprise” em “enterprise”, mas não à palavra inteira “enterprise”.|
 |Ancorar a cadeia de caracteres de correspondência ao início de uma linha ou uma cadeia de caracteres|^|`^car` corresponde à palavra “car” somente quando ela aparece no início de uma linha.|
@@ -53,9 +53,9 @@ Estes são alguns exemplos:
 |Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]` corresponde a “ba”, “bb” e “bc”.|
 |Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]` corresponde a “bet” em “between”, “ben” em “beneath” e “bes” em “beside”, mas não a “below”.|
 |Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”.|
-|Invalidar uma correspondência|(?!abc)|`real (?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
+|Invalidar uma correspondência|(?!abc)|`real(?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
 |Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico|[^abc]|`be[^n-t]` corresponde a “bef” em “before”, “beh” em “behind” e “bel” em “below”, mas não a “beneath”.|
-|Encontrar a correspondência da expressão antes ou depois do símbolo.|&#124;|`(sponge&#124;mud) bath` corresponde a “sponge bath” e a “mud bath”.|
+|Encontrar a correspondência da expressão antes ou depois do símbolo.|&#124;|`(sponge\|mud) bath` corresponde a “sponge bath” e a “mud bath”.|
 |Escapa o caractere após a barra invertida| \\ |`\^` corresponde ao caractere ^.|
 |Especificar o número de ocorrências do caractere ou do grupo anterior|{x}, em que x é o número de ocorrências|`x(ab){2}x` corresponde a “xababx”, e `x(ab){2,3}x` corresponde a “xababx” e “xabababx”, mas não a “xababababx”.|
 |Encontrar a correspondência do texto em uma classe de caracteres Unicode, em que “X” é o número Unicode. Para obter mais informações sobre classes de caracteres Unicode, consulte<br /><br /> [Propriedades de caracteres Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|
@@ -65,7 +65,7 @@ Estes são alguns exemplos:
 |Encontrar a correspondência de um caractere de espaço em branco.|(?([^\r\n])\s)|`Public\sInterface` corresponde à frase “Public Interface”.|
 |Encontrar a correspondência de um caractere numérico|\d|`\d` corresponde a “3” em “3456”, “2” em “23” e “1” em “1”.|
 |Encontrar a correspondência de um caractere Unicode|\uXXXX em que XXXX especifica o valor do caractere Unicode.|`\u0065` corresponde ao caractere “e”.|
-|Encontrar a correspondência de um identificador|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|Corresponde a “type1”, mas não a “&type1” nem “#define”.|
+|Encontrar a correspondência de um identificador|\b[\_\w-[0-9]][\_\w]*\b|Corresponde a "type1", mas não a "&type1" nem "#define".|
 |Encontrar a correspondência de uma cadeia de caracteres entre aspas|((\\".+?\\")&#124;('.+?'))|Encontrar a correspondência de uma cadeia de caracteres entre aspas simples ou duplas.|
 |Encontrar a correspondência de um número hexadecimal|\b0[xX]([0-9a-fA-F]\)\b|Corresponde a “0xc67f”, mas não a “0xc67fc67f”.|
 |Encontrar a correspondência de inteiros e decimais|\b[0-9]*\\.\*[0-9]+\b|Encontrar a correspondência de “1.333”.|

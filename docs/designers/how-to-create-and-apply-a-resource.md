@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746641"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923989"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
-Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, consulte [Guia de início rápido: definindo o estilo dos controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Guia de início rápido: modelos de controle](http://go.microsoft.com/fwlink/?LinkID=247982).
+Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, confira [Início rápido: definindo o estilo de controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [QuickStart: Control templates](http://go.microsoft.com/fwlink/?LinkID=247982) (Guia de início rápido: modelos de controle).
 
  Sempre que você cria um novo recurso de uma propriedade existente, [Estilo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx), `ControlTemplate` ou caixa de diálogo **Criar Recurso** permite definir o recurso no nível do aplicativo, no nível do documento ou no nível do elemento. Esses níveis determinam onde você pode usar o recurso. Por exemplo, se você definir o recurso no nível de elemento, o recurso só poderá ser aplicado ao elemento no qual ele foi criado. Você também pode optar por armazenar o recurso em um dicionário de recursos, que é um arquivo separado que você pode usar novamente em outro projeto.
 
@@ -29,7 +29,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
 1.  Com um arquivo XAML aberto no Designer XAML, crie um elemento ou selecione um elemento na janela Estrutura de Tópicos de Documento.
 
-2.  Na janela Propriedades, escolhe o marcador de propriedade exibido como um símbolo de caixa à direita de um valor da propriedade e escolha **Converter em Novo Recurso**. Um símbolo de caixa branca indica um valor padrão, e um símbolo de caixa preta normalmente indica que um recurso local foi aplicado
+2.  Na janela Propriedades, escolhe o marcador de propriedade exibido como um símbolo de caixa à direita de um valor da propriedade e escolha **Converter em Novo Recurso**. Um símbolo de caixa branca indica um valor padrão e um símbolo de caixa preta normalmente indica que um recurso local foi aplicado.
 
      A caixa de diálogo apropriada para criar um recurso é exibida. Esta caixa de diálogo é exibida quando você cria um recurso com um pincel:
 
@@ -43,7 +43,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
     -   Para disponibilizar o recurso somente para o documento atual, escolha **Este documento**.
 
-    -   Para disponibilizar o recurso somente para o elemento com base no qual você criou o recurso ou para seus elementos filho, clique em **Este documento** e, na lista suspensa, selecione *element*: *name*.
+    -   Para disponibilizar o recurso somente para o elemento com base no qual você criou o recurso ou para seus elementos filho, clique em **Este documento** e, na lista suspensa, selecione **element**: **name**.
 
     -   Para definir o recurso em um arquivo de dicionário de recursos que pode ser reutilizado em outros projetos, clique em **Dicionário de recursos** e selecione um arquivo de dicionário de recursos existente, como **StandardStyles.xaml** na lista suspensa.
 
@@ -51,7 +51,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar um recurso a um elemento ou propriedade
 
-1.  Na janela Estrutura de Tópicos de Documento, escolha o elemento ao qual você deseja aplicar um recurso.
+1.  Na janela Estrutura de Tópicos do Documento, escolha o elemento em que você deseja aplicar um recurso.
 
 2.  Realize um dos seguintes procedimentos:
 
@@ -62,9 +62,9 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
     -   Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.
 
         > [!NOTE]
-        >  **Editar Modelo** é usado para aplicar modelos de controle. **Editar Modelos Adicionais** é usado para aplicar outros tipos de modelo.
+        >  **Editar Modelo** aplica modelos de controle. **Editar Modelos Adicionais** aplica outros tipos de modelo.
 
-     Recursos podem ser aplicados sempre que forem compatíveis. Por exemplo, um recurso de pincel pode ser aplicado à propriedade **Primeiro plano** de um controle <xref:Windows.UI.Xaml.Controls.TextBox>.
+     É possível aplicar recursos sempre que eles são compatíveis. Por exemplo, você pode aplicar um recurso de pincel à propriedade **Primeiro plano** de um controle <xref:Windows.UI.Xaml.Controls.TextBox>.
 
 ### <a name="to-edit-a-resource"></a>Para editar um recurso
 

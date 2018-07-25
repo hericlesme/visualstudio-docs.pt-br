@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235182"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>Criando gráficos de dados visuais com R
+# <a name="create-visual-data-plots-with-r"></a>Criar gráficos de dados visuais com R
 
 Criar gráficos é uma parte fundamental do fluxo de trabalho de um cientista de dados. Nas RTVS (Ferramentas do R para Visual Studio), todas as atividades de criação de gráficos giram em torno de uma ou mais janelas de gráficos, que são projetadas para melhorar a produtividade nesta importante atividade.
 
@@ -44,7 +45,7 @@ Redimensionar uma janela de gráficos sempre renderiza o gráfico novamente para
 
 ## <a name="plot-window-commands"></a>Comandos da janela de gráficos
 
-A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a maioria deles também está disponível por meio do menu **Ferramentas do R > Gráficos**.
+A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a maioria deles também está disponível por meio do menu **Ferramentas do R** > **Gráficos**.
 
 | Botão | Comando | Descrição | 
 | --- | --- | --- |
@@ -63,17 +64,17 @@ A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a m
 
 Como os cientistas de dados geralmente trabalham com muitos gráficos de vários conjuntos de dados diferentes, as RTVS permitem criar quantas janelas de gráficos independentes forem necessárias. Em seguida, você pode organizar essas janelas da forma que desejar no quadro do Visual Studio ou completamente fora desse quadro. (Consulte [Personalização de layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) para obter informações gerais sobre encaixe e redimensionando de janelas.)
 
-Você pode criar uma nova janela de gráficos usando o botão de barra de ferramentas ou **Ferramentas do R > Gráficos > Nova Janela de Gráficos**. A nova janela de gráficos se torna a janela *ativa*, que é onde os novos gráficos são renderizados. Para alterar a janela ativa, mude para ela e selecione o botão de barra de ferramentas Ativar janela de gráficos ou **Ferramentas do R > Gráficos > Ativar janela de gráficos**.
+É possível criar uma nova janela de gráficos usando o botão de barra de ferramentas ou **Ferramentas do R** > **Gráficos** > **Nova Janela de Gráficos**. A nova janela de gráficos se torna a janela *ativa*, que é onde os novos gráficos são renderizados. Para alterar a janela ativa, mude para ela e selecione o botão de barra de ferramentas **Ativar Janela de Gráficos** ou **Ferramentas do R** > **Gráficos** > **Ativar Janela de Gráficos**.
 
 Os gráficos também são objetos independentes, o que significa que você pode copiá-los ou movê-los entre as janelas de gráficos usando o recurso do tipo “arrastar e soltar” com o mouse ou usando os comandos **Copiar**, **Recortar** e **Colar** no menu de contexto acionado com um clique do botão direito do mouse ou no menu **Editar**.
 
-O comportamento padrão do tipo "arrastar e soltar" é copiar. Para mover, arraste e solte mantendo pressionada a tecla Shift.
+O comportamento padrão para ações do tipo "arrastar e soltar" é copiar. Para mover, arraste e solte mantendo pressionada a tecla **Shift**.
 
 ## <a name="plot-history"></a>Histórico de gráficos
 
-Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de gráficos ou Ctrl + Alt + F11 e Ctrl + Alt + F12. Você também pode remover gráficos individuais ou limpar todos os gráficos na janela, novamente usando os botões da barra de ferramentas ou os comandos de menu **Ferramentas do R > Gráficos**.
+Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de gráficos ou **Ctrl**+**Alt**+**F11** e **Ctrl**+**Alt**+**F12**. Você também pode remover gráficos individuais ou limpar todos os gráficos da janela, novamente usando os botões de barra de ferramentas ou os comandos de menu **Ferramentas do R** > **Gráficos**.
 
-Para ver a coleção inteira de gráficos, abra a janela de histórico de gráficos usando o botão de barra de ferramentas ou **Ferramentas do R > Gráficos > Janela de histórico de gráficos**.
+Para ver a coleção de gráficos inteira, abra a janela de histórico de gráficos usando o botão de barra de ferramentas ou **Ferramentas do R** > **Gráficos** > **Janela de Histórico de Gráficos**.
 O histórico fornece uma lista de miniaturas dos gráficos que foram exibidos nessa janela, agrupadas por diferentes janelas de gráficos (ou dispositivos). Usar os botões de zoom na barra de ferramentas altera o tamanho das miniaturas.
 
 ![Janela de histórico de gráficos](media/plotting-plot-history-window.png)
@@ -82,7 +83,7 @@ Para abrir um gráfico em sua janela associada, clique duas vezes no gráfico e,
 
 O tempo de vida de seu histórico de gráficos em todas as janelas está vinculado ao tempo de vida da sessão interativa do R. Se você redefinir a sessão do R ou sair e reiniciar o Visual Studio, o histórico de gráficos será redefinido.
 
-## <a name="programmatically-manipulating-plot-windows"></a>Manipulando a janela de gráficos de forma programática
+## <a name="programmatically-manipulate-plot-windows"></a>Manipular programaticamente janelas de gráficos
 
 Você pode manipular as janelas de gráficos do código R de forma programática, usando números de dispositivo para identificar janelas de gráficos específicas. 
 

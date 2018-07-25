@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752073"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235179"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -38,7 +38,7 @@ Além das estruturas instaladas, é possível gravar seu próprio adaptador de t
 
 - **Boost.Test** está incluído como componente padrão da carga de trabalho **Desenvolvimento para área de trabalho com C++**. Ele é integrado ao **Gerenciador de Testes**, mas, atualmente, não tem um modelo de projeto, portanto, deve ser configurado manualmente. Para saber mais, consulte [How to: use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md) (Como usar o Boost.Test no Visual Studio).
 
-- O suporte para **CTest** está incluído no componente [Ferramentas CMake para Visual Studio](/cpp/ide/cmake-tools-for-cpp), que faz parte da carga de trabalho **Desenvolvimento para área de trabalho com C++**. No entanto, o CTest ainda não está totalmente integrado ao **Gerenciador de Testes**. Para saber mais, consulte [How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md) (Como usar o CTest no Visual Studio).
+- O suporte para **CTest** está incluído no componente [Ferramentas CMake para Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp), que faz parte da carga de trabalho **Desenvolvimento para área de trabalho com C++**. No entanto, o CTest ainda não está totalmente integrado ao **Gerenciador de Testes**. Para saber mais, consulte [How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md) (Como usar o CTest no Visual Studio).
 
 **Visual Studio 2015 e versões anteriores**
 
@@ -69,7 +69,7 @@ Em seguida, no arquivo .cpp do teste de unidade, adicione uma diretiva `#include
 ### <a name="write-test-methods"></a>Gravar métodos de teste
 
 > [!NOTE]
-> Esta seção mostra a sintaxe da Microsoft Unit Testing Framework para C/C++. Ela está documentada na [Referência de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Para obter a documentação do Google Test, consulte [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md) (Primer do Google Test). Quanto ao Boost.Test, consulte [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Biblioteca do Boost Test: a estrutura de teste de unidade).
+> Esta seção mostra a sintaxe da Microsoft Unit Testing Framework para C/C++. Ela está documentada na [Referência de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Para obter a documentação do Google Test, consulte [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Primer do Google Test). Quanto ao Boost.Test, consulte [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Biblioteca do Boost Test: a estrutura de teste de unidade).
 
 O arquivo .cpp no projeto de teste tem um método e uma classe stub definidos para você como um exemplo de como gravar código de teste. As assinaturas usam as macros TEST_CLASS e TEST_METHOD, o que possibilita a descoberta dos métodos por meio da janela Gerenciador de Testes.
 
@@ -77,7 +77,7 @@ O arquivo .cpp no projeto de teste tem um método e uma classe stub definidos pa
 
 TEST_CLASS e TEST_METHOD fazem parte do [Framework de Teste Nativo da Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). O **Gerenciador de Testes** descobre os métodos de teste em outras estruturas com suporte, de maneira semelhante.
 
-Um TEST_METHOD retorna nulo. Para produzir um resultado do teste, use os métodos estáticos na classe `Assert` para testar os resultados reais em relação a o que é esperado. No exemplo a seguir, suponha que `MyClass` tem um construtor que se apropria de uma `std::string`. É possível testar se o construtor inicializa a classe conforme o esperado da seguinte forma:
+Um TEST_METHOD retorna nulo. Para produzir um resultado do teste, use os métodos estáticos na classe `Assert` para testar os resultados reais em relação a o que é esperado. No exemplo a seguir, considere que `MyClass` tem um construtor que usa uma `std::string`. É possível testar se o construtor inicializa a classe conforme o esperado da seguinte forma:
 
 ```cpp
         TEST_METHOD(TestClassInit)

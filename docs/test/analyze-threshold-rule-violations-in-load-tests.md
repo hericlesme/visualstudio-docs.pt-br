@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750903"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234979"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
 As regras de limite são associadas a contadores de desempenho específicos, e as violações indicam que um contador de desempenho excedeu ou ficou abaixo de um valor definido. Ao executar um teste de carga, você pode analisar as violações que ocorrem de acordo com as regras de limite definidas anteriormente.
 
-Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparecerá na barra de status do Analisador de Teste de Carga e especificará o número de violações que ocorreram. Você escolhe o hiperlink para exibir a tabela de violações de limite. Você também pode exibir violações de limite na janela **Contadores** e no gráfico.
+Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparecerá na barra de status do **Analisador de Teste de Carga** e especificará o número de violações que ocorreram. Você escolhe o hiperlink para exibir a tabela de violações de limite. Você também pode exibir violações de limite na janela **Contadores** e no gráfico.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Exibir violações de limite na tabela
 
@@ -46,7 +46,7 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 > [!NOTE]
 > É possível classificar a tabela escolhendo-se os cabeçalhos de coluna.
 
- Para obter mais informações, consulte [Analyze Load Test Results and Errors in the Tables View](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) (Analisar resultados e erros de teste de carga na exibição de tabelas).
+ Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Exibir violações de limite no painel Contadores
 
@@ -68,16 +68,16 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 
  Na árvore de contadores, o ícone de uma violação de limite é propagado do nó de contador específico até o nó raiz. Isso alerta você para uma violação em um contador que pode não estar visível na árvore porque a árvore não foi expandida.
 
- Para obter mais informações, consulte [Usando o painel Contadores nas exibições de Gráficos e Tabelas](../test/counters-panel-in-load-test-analyzer.md).
+ Para obter mais informações, confira [Usando o painel Contadores nas exibições Grafos e Tabelas](../test/counters-panel-in-load-test-analyzer.md).
 
-## <a name="view-threshold-violations-on-the-graph"></a>Exibir violações de limite no gráfico
+## <a name="view-threshold-violations-on-the-graph"></a>Exibir violações de limite no grafo
 
  Você pode ver violações de limite no gráfico De forma semelhante ao painel **Contadores**, os ícones informam as violações de limite no gráfico. Os ícones aparecem no gráfico ao lado do ponto de dados onde a violação de limite ocorreu. Se uma violação de limite ocorrer em um contador que não aparece no gráfico, você poderá adicioná-la ao gráfico arrastando-a do painel **Contadores** para o gráfico.
 
- Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analyze Load Test Results and Errors in the Tables View](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) (Analisar resultados de teste de carga e erros na exibição de tabelas)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

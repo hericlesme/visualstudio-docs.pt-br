@@ -1,7 +1,7 @@
 ---
 title: Instalando suporte do Python
 description: Como instalar as PTVS (Ferramentas Python para Visual Studio) no Visual Studio 2017, 2015, 2013, 2012 e 2010, incluindo opções e locais de instalação.
-ms.date: 02/15/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ae4dd83f5618ed908dee666f04c580f8c3161cbf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058679"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Como instalar o suporte do Python no Visual Studio no Windows
 
@@ -40,10 +41,10 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 1. Baixe e execute o Instalador do Visual Studio 2017 mais recente. Se já tiver o Visual Studio instalado, execute o Instalador do Visual Studio, selecione a opção **Modificar** (consulte [Modificar o Visual Studio](../install/modify-visual-studio.md)) e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Instalar Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Instalar Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > A edição Community é para desenvolvedores individuais, aprendizado em sala de aula, pesquisa acadêmica e desenvolvimento de software livre. Para outros usos, instale o <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> ou o <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+    > A edição Community é para desenvolvedores individuais, aprendizado em sala de aula, pesquisa acadêmica e desenvolvimento de software livre. Para outros usos, instale o <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> ou o <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
 
 1. O instalador apresenta uma lista de cargas de trabalho, que são grupos de opções relacionadas para áreas de desenvolvimento específicas. Para Python, selecione a carga de trabalho **Desenvolvimento do Python**.
 
@@ -67,7 +68,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
     | Ferramentas de desenvolvimento nativo do Python | Instala o compilador do C++ e outros componentes necessários para desenvolver extensões nativas para Python. Veja [Criando uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). Além disso, instale a carga de trabalho **Desenvolvimento de área de trabalho C++** para obter suporte total a C++. |
     | Principais ferramentas dos Serviços de Nuvem do Azure | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Consulte [Projeto de Serviço de Nuvem do Azure](python-azure-cloud-service-project-template.md). |
 
-1. Após a instalação, o instalador fornece opções para modificar, iniciar, reparar ou desinstalar o Visual Studio. O botão **Modificar** transforma-se em **Atualizar** quando há atualizações para o Visual Studio disponíveis para os componentes instalados. (A opção Modificar ficará disponível no menu suspenso.) Você também pode iniciar o Visual Studio e o instalador no menu Iniciar do Windows pesquisando "Visual Studio".
+1. Após a instalação, o instalador fornece opções para modificar, iniciar, reparar ou desinstalar o Visual Studio. O botão **Modificar** transforma-se em **Atualizar** quando há atualizações do Visual Studio disponíveis para os componentes instalados. (A opção Modificar ficará disponível no menu suspenso.) Você também pode iniciar o Visual Studio e o instalador no menu Iniciar do Windows pesquisando "Visual Studio".
 
     ![Iniciando, modificando ou desinstalando o Visual Studio no instalador](media/installation-vs-launch.png)
 

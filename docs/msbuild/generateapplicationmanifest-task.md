@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9368e752a2b3064c8f4b70bde6005fa5996d4f78
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575313"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945956"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.  
@@ -40,14 +40,14 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 |`AssemblyVersion`|Parâmetro `String` opcional.<br /><br /> Especifica o campo `Version` da identidade do assembly para o manifesto gerado. Se o parâmetro não for especificado, será usado o valor padrão de “1.0.0.0”.|  
 |`ClrVersion`|Parâmetro `String` opcional.<br /><br /> Especifica a versão mínima do CLR (Common Language Runtime) exigida pelo aplicativo. O valor padrão é a versão CLR em uso no sistema do build. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
 |`ConfigFile`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica qual item contém o arquivo de configuração de aplicativo. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
-|`Dependencies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de itens que define o conjunto de assemblies dependentes para o manifesto gerado. Cada item pode ser descrito com mais detalhes por metadados do item para indicar o estados de implantação adicionais e o tipo de dependência. Para obter mais informações, consulte a seção “Metadados do Item” abaixo.|  
+|`Dependencies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de itens que define o conjunto de assemblies dependentes para o manifesto gerado. Cada item pode ser descrito com mais detalhes por metadados do item para indicar o estados de implantação adicionais e o tipo de dependência. Para obter mais informações, confira [Metadados de item](#item-metadata).|  
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica a descrição do aplicativo ou componente.|  
 |`EntryPoint`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um único item que indica o ponto de entrada para o assembly do manifesto gerado.<br /><br /> Para um manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], esse parâmetro especifica o assembly que é iniciado quando o aplicativo é executado.|  
-|`ErrorReportUrl`|Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante os relatórios de erro em instalações ClickOnce.|  
+|`ErrorReportUrl`|Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a URL da página da Web exibida nas caixas de diálogo durante os relatórios de erro em instalações ClickOnce.|  
 |`FileAssociations`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de um ou mais tipos de arquivo associados ao manifesto de implantação do ClickOnce.<br /><br /> As associações de arquivos são válidas somente quando voltado para o .NET Framework 3.5 ou posterior.|  
 |`Files`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Os arquivos a serem incluídos no manifesto. Especifique o caminho completo para cada arquivo.|  
 |`HostInBrowser`|Parâmetro <xref:System.Boolean> opcional.<br /><br /> Se `true`, o aplicativo é hospedado em um navegador (assim como Aplicativos de navegador da Web WPF).|  
-|`IconFile`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o arquivo de ícone do aplicativo. O ícone do aplicativo é expresso no manifesto do aplicativo gerado e usado para os diálogos Menu Iniciar e Adicionar ou Remover Programas. Se essa entrada não for especificada, um ícone padrão será usado. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
+|`IconFile`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o arquivo de ícone do aplicativo. O ícone do aplicativo é expresso no manifesto do aplicativo gerado e usado para as caixas de diálogo **Menu Iniciar** e **Adicionar/Remover Programas**. Se essa entrada não for especificada, um ícone padrão será usado. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
 |`InputManifest`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML de entrada para servir como base para o gerador de manifesto. Isso permite que dados estruturados, tais como segurança de aplicativos ou definições personalizadas de manifesto, sejam refletidos no manifesto de saída. O elemento raiz do documento XML deve ser um nó de assembly no namespace asmv1.|  
 |`IsolatedComReferences`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os componentes COM a serem isolados no manifesto gerado. Esse parâmetro dá suporte à capacidade de isolar os componentes COM para implantação de “COM sem Registro”. Ele funciona por meio da geração automática de um manifesto com definições padrão de registro de COM. No entanto, os componentes COM devem ser registrados no computador de build para que isso funcione corretamente.|  
 |`ManifestType`|Parâmetro `String` opcional.<br /><br /> Especifica o tipo de manifesto a ser gerado. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Se esse parâmetro não for especificado, a tarefa será `ClickOnce` por padrão.|  
@@ -55,8 +55,8 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 |`OSVersion`|Parâmetro `String` opcional.<br /><br /> Especifica a versão mínima necessária do SO (sistema operacional) exigida pelo aplicativo. Por exemplo, o valor “5.1.2600.0” indica o sistema operacional for o Windows XP. Se esse parâmetro não for especificado, será usado o valor “4.10.0.0”, que indica o Windows 98 Second Edition, o sistema operacional mínimo com suporte no .NET Framework. Caso a tarefa esteja gerando um manifesto nativo, esta entrada será ignorada.|  
 |`OutputManifest`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo de manifesto de saída gerado. Se esse parâmetro não for especificado, o nome do arquivo de saída será inferido com base na identidade do manifesto gerado.|  
 |`Platform`|Parâmetro `String` opcional.<br /><br /> Especifica a plataforma de destino do aplicativo. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Se esse parâmetro não for especificado, a tarefa será `AnyCPU` por padrão.|  
-|`Product`|Parâmetro `String` opcional.<br /><br /> Especifica o nome do aplicativo. Se esse parâmetro não for especificado, o nome será inferido com base na identidade do manifesto gerado. Esse nome é usado para o nome do atalho no menu Iniciar e faz parte do nome que aparece na caixa de diálogo Adicionar ou Remover Programas.|  
-|`Publisher`|Parâmetro `String` opcional.<br /><br /> Especifica o editor do aplicativo. Se esse parâmetro não for especificado, o nome será inferido com base no usuário registrado ou na identidade do manifesto gerado. Esse nome é usado para o nome da pasta no menu Iniciar e faz parte do nome que aparece na caixa de diálogo Adicionar ou Remover Programas.|  
+|`Product`|Parâmetro `String` opcional.<br /><br /> Especifica o nome do aplicativo. Se esse parâmetro não for especificado, o nome será inferido com base na identidade do manifesto gerado. Esse nome é usado para o nome do atalho no menu **Iniciar** e faz parte do nome exibido na caixa de diálogo **Adicionar ou Remover Programas**.|  
+|`Publisher`|Parâmetro `String` opcional.<br /><br /> Especifica o editor do aplicativo. Se esse parâmetro não for especificado, o nome será inferido com base no usuário registrado ou na identidade do manifesto gerado. Esse nome é usado para o nome da pasta no menu **Iniciar** e faz parte do nome exibido na caixa de diálogo **Adicionar ou Remover Programas**.|  
 |`RequiresMinimumFramework35SP1`|Parâmetro `Boolean` opcional.<br /><br /> Se for verdadeiro, o aplicativo exigirá o .NET Framework 3.5 SP1 ou uma versão mais recente.|  
 |`TargetCulture`|Parâmetro `String` opcional.<br /><br /> Identifica a cultura do aplicativo e especifica o campo `Language` da identidade do assembly para o manifesto gerado. Se esse parâmetro não for especificado, presume-se que o aplicativo não varia conforme a cultura.|  
 |`TargetFrameworkMoniker`|Parâmetro `String` opcional.<br /><br /> Especifica o moniker da estrutura de destino.|  
@@ -67,13 +67,13 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 |`UseApplicationTrust`|Parâmetro `Boolean` opcional.<br /><br /> Se for verdadeiro, as propriedades `Product`, `Publisher` e `SupportUrl` são gravadas no manifesto do aplicativo.|  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, consulte [Classe base Task](../msbuild/task-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, confira [Classe base Task](../msbuild/task-base-class.md).  
   
- Para obter informações sobre como usar a tarefa `GenerateDeploymentManifest`, consulte [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  
+ Para obter informações sobre como usar a tarefa `GenerateDeploymentManifest`, confira [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  
   
  As entradas para as dependências e os arquivos podem ser mais decorados ainda com metadados de item para especificar o estado de implantação adicional para cada item.  
   
-## <a name="item-metadata"></a>Metadados de item  
+## <a name="item-metadata"></a>Metadados do item  
   
 |Nome dos metadados|Descrição|  
 |-------------------|-----------------|  
@@ -92,7 +92,7 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 >  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+>  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -145,7 +145,7 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 >  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+>  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -203,7 +203,7 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 >  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+>  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -315,9 +315,9 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 ```  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo usa a tarefa `GenerateApplicationManifest` para gerar um manifesto nativo para o aplicativo Test.exe, fazendo referência ao componente nativo Alpha.dll e ao componente isolado COM Bravo.dll.  
+ Este exemplo usa a tarefa `GenerateApplicationManifest` para gerar um manifesto nativo para o aplicativo *Test.exe*, referenciando o componente nativo *Alpha.dll* e um componente COM isolado *Bravo.dll*.  
   
- Este exemplo produz Test.exe.manifest, tornando o aplicativo XCOPY implantável, aproveitando o COM Sem Registro.  
+ Este exemplo produz *Test.exe.manifest*, tornando o aplicativo XCOPY implantável e aproveitando o COM Sem Registro.  
   
 > [!NOTE]
 >  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.  
