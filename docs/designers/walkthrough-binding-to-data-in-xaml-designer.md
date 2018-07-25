@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745705"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079882"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Passo a passo: associar dados no Designer XAML
 
@@ -27,13 +27,13 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Para criar uma classe para usar como fonte de dados
 
-1. No menu **Arquivo**, escolha **Novo**> **Projeto**.
+1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
 1. Na caixa de diálogo **Novo Projeto**, escolha o nó **Visual C#** ou **Visual Basic**, expanda o nó **Área de Trabalho do Windows** e escolha o modelo **Aplicação WPF**.
 
 1. Nomeie o projeto como **BindingTest** e escolha o botão **OK**.
 
-1. Abra o arquivo MainWindow.xaml.cs (ou MainWindow.xaml.vb) e adicione o código a seguir. Em C#, adicione o código ao namespace `BindingTest` (antes do parêntese de fechamento no arquivo). No Visual Basic, adicione a nova classe.
+1. Abra o arquivo **MainWindow.xaml.cs** (ou **MainWindow.xaml.vb**) e adicione o código a seguir. Em C#, adicione o código ao namespace `BindingTest` (antes do parêntese de fechamento no arquivo). No Visual Basic, adicione a nova classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Para associar a propriedade ItemCount a um controle TextBlock
 
-1. No Gerenciador de Soluções, abra o menu de atalho de MainWindow.xaml e escolha **Designer de Exibição**.
+1. No Gerenciador de Soluções, abra o menu de atalho de **MainWindow.xaml** e escolha **Designer de Exibição**.
 
 1. Na caixa de ferramentas, escolha um controle de [Grade](/uwp/api/Windows.UI.Xaml.Controls.Grid) e adicione-o ao formulário.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691018"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758988"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrigir problemas de desempenho relacionados à interação com o aplicativo em aplicativos XAML. Essa ferramenta ajuda a melhorar o desempenho de aplicativos XAML fornecendo uma exibição detalhada do consumo de recursos dos aplicativos. Você pode analisar o tempo gasto pelo seu aplicativo para preparar quadros de interface do usuário (layout e renderização), atender a solicitações de rede e de disco e em cenários como Inicialização de Aplicativo, Carregamento de Página e redimensionamento do Windows.  
@@ -121,4 +121,4 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
  [Práticas recomendadas de desempenho para aplicativos UWP em C++, C# e Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Otimizar o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745624"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924454"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
 Este documento demonstra como usar o Editor de Imagens para criar uma textura básica.
@@ -35,7 +35,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 ## <a name="creating-a-basic-texture"></a>Criar uma textura básica
  Você pode usar o Editor de Imagens para criar e modificar imagens e texturas para o seu jogo ou aplicativo.
 
- As etapas a seguir mostram como criar uma textura que representa um destino de "alvo". Quando terminar, a textura deverá ser parecida com a figura a seguir. Para demonstrar melhor a transparência na textura, o Editor de Imagens foi configurado para usar um padrão quadriculado verde para exibi-la.
+ As etapas a seguir mostram como criar uma textura que representa um destino de "espiral". Quando você terminar, a textura deverá ser semelhante à da seguinte figura. Para demonstrar melhor a transparência na textura, o Editor de Imagens foi configurado para usar um padrão quadriculado verde para exibi-la.
 
  ![Destino de "alvo" com transparência mostrada em verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -43,7 +43,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
 #### <a name="to-create-a-bullseye-target-texture"></a>Para criar uma textura de destino de "alvo"
 
-1.  Crie uma textura com a qual trabalhar. Para obter informações sobre como adicionar uma textura em seu projeto, consulte a seção de Introdução em [Editor de Imagens](../designers/image-editor.md).
+1.  Crie uma textura com o qual você trabalhará. Para obter informações sobre como adicionar uma textura em seu projeto, consulte a seção de Introdução em [Editor de Imagens](../designers/image-editor.md).
 
 2.  Defina o tamanho da imagem como 512x512 pixels. Na janela **Propriedades**, defina os valores das propriedades **Largura** e **Altura** como `512`.
 
@@ -51,7 +51,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
 4.  Defina a cor de primeiro plano como preto totalmente transparente. Na janela **Propriedades**, no grupo de propriedades **Cores**, selecione **Primeiro Plano**. Defina os valores das propriedades **R**, **G**, **B** e **A** ao lado do seletor de cor como `0`.
 
-5.  Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** e, em seguida, pressione e mantenha a tecla Shift pressionada e escolha qualquer ponto na imagem. Usar a tecla Shift faz com que o valor alfa da cor de preenchimento substitua a cor na imagem. Caso contrário, o valor alfa é usado para misturar a cor de preenchimento com a cor da imagem.
+5.  Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento**, em seguida, pressione e segure a tecla **Shift** e escolha qualquer ponto na imagem. Se você usar a tecla **Shift**, o valor alfa da cor de preenchimento substituirá a cor na imagem. Caso contrário, o valor alfa será usado para misturar a cor de preenchimento com a cor da imagem.
 
     > [!IMPORTANT]
     >  Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.
@@ -66,7 +66,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
 10. Verifique se a suavização está habilitada. Na janela **Propriedades**, no grupo de propriedades **Aparência**, verifique se a propriedade **Suavização** está definida.
 
-11. Usando a ferramenta **Elipse**, desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo mais facilmente, você pode pressionar e manter pressionada a tecla Shift enquanto desenha.
+11. Usando a ferramenta **Elipse**, desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo com mais facilidade, você pode pressionar e segurar a tecla **Shift** enquanto desenha.
 
     > [!NOTE]
     >  As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -87,7 +87,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
  ![A textura de destino de "alvo" completa](../designers/media/gfx_image_demo_bullseye.png)
 
- Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, consulte [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
+ Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5353be6e3c02895ce74ff4cf27493f803bb25b4e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927027"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978418"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -32,9 +32,9 @@ O Editor de Modelos é compatível com os seguintes formatos de modelo:
 
 |Nome do formato|Extensão do arquivo|Operações com suporte (Exibir, Editar, Criar)|
 |-----------------|--------------------|-------------------------------------------------|
-|Arquivo de Intercâmbio AutoDesk FBX|.fbx|Exibir, Editar, Criar|
-|Arquivo Collada DAE|.dae|Exibir, Editar (Modificações em arquivos Collada DAE são salvas usando o formato FBX.)|
-|OBJ|.obj|Exibir, Editar (Modificações em arquivos OBJ são salvos usando o formato FBX.)|
+|Arquivo de Intercâmbio AutoDesk FBX|*.fbx*|Exibir, Editar, Criar|
+|Arquivo Collada DAE|*.dae*|Exibir, Editar (Modificações em arquivos Collada DAE são salvas usando o formato FBX.)|
+|OBJ|*.obj*|Exibir, Editar (Modificações em arquivos OBJ são salvos usando o formato FBX.)|
 
 ## <a name="get-started"></a>Introdução
 
@@ -42,7 +42,7 @@ Esta seção descreve como adicionar um modelo 3D ao seu projeto do Visual Studi
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Para adicionar um modelo 3D ao projeto
 
-1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e selecione **Adicionar** > **Novo Item**.
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e, em seguida, escolha **Adicionar** > **Novo Item**.
 
 2. Na caixa de diálogo **Adicionar Novo Item**, na categoria **Elementos Gráficos**, selecione **Cena 3D (.fbx)**.
 
@@ -55,7 +55,7 @@ Esta seção descreve como adicionar um modelo 3D ao seu projeto do Visual Studi
 >
 > ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 >
-> Se você tiver o componente **Editores de imagens e modelos 3D** instalado e ainda não vir a categoria de modelo **Elementos Gráficos**, observe que esta categoria é exibida apenas para determinados tipos de projeto, por exemplo, aplicativos de console.
+> Se você tiver o componente **Editores de imagens e modelos 3D** instalado e a categoria de modelo **Elementos Gráficos** ainda não for exibida, observe que essa categoria será exibida apenas para determinados tipos de projeto, por exemplo, aplicativos de console.
 
 ### <a name="axis-orientation"></a>Orientação do eixo
 
@@ -63,7 +63,7 @@ O Visual Studio é compatível com todas as orientações do eixo 3D e carrega a
 
 ### <a name="begin-your-3d-model"></a>Começar seu modelo 3D
 
-No Editor de Modelos, cada novo objeto sempre começa como uma das formas 3D básicas (ou *primitivas*) que são criadas no Editor de Modelos. Para criar objetos novos e exclusivos, você adiciona um primitivo à cena e altera sua forma modificando seus vértices. Para formas complexas, você inclui vértices adicionais usando extrusão ou subdivisão e as modifica. Para obter informações sobre como adicionar um objeto primitivo à sua cena, consulte [Criando e importando objetos 3D](#Adding3DObjects). Para obter informações sobre como adicionar mais vértices a um objeto, consulte [Modificando Objetos](#ModifyingObjects).
+No Editor de Modelos, cada novo objeto sempre começa como uma das formas 3D básicas (ou *primitivas*) que são criadas no Editor de Modelos. Para criar objetos novos e exclusivos, você adiciona um primitivo à cena e altera sua forma modificando seus vértices. Para formas complexas, você inclui vértices adicionais usando extrusão ou subdivisão e as modifica. Para obter informações sobre como adicionar um objeto primitivo à cena, confira [Criar e importar objetos 3D](#Adding3DObjects). Para obter informações sobre como adicionar mais vértices a um objeto, confira [Modificar objetos](#ModifyingObjects).
 
 ## <a name="work-with-the-model-editor"></a>Trabalhar com o Editor de Modelos
 
@@ -84,8 +84,8 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Editor de Modelo
 |Item da barra de ferramentas|Descrição|
 |------------------|-----------------|
 |**Selecionar**|Permite a seleção de pontos, bordas, faces ou objetos na cena, dependendo do modo de seleção ativo.|
-|**Panorâmica**|Habilita a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|
-|**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|
+|**Panorâmica**|Habilita a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ativar o modo **Panorâmica** temporariamente.|
+|**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, amplie ou reduza a cena usando a botão de rolagem do mouse enquanto pressiona e segura a tecla **Ctrl**.|
 |**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Nota:** esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|
 |**Local do mundo**|Quando esse item é habilitado, as transformações no objeto selecionado ocorrem no espaço do mundo. Caso contrário, as transformações no objeto selecionado ocorrem no espaço local.|
 |**Modo Dinâmico**|Quando esse item for habilitado, as transformações afetarão o local e a orientação do *ponto dinâmico* do objeto selecionado (O ponto dinâmico define o centro das operações de translação, dimensionamento e rotação.) Caso contrário, as transformações afetam o local e a orientação da geometria do objeto, em relação ao ponto dinâmico.|
@@ -129,8 +129,8 @@ A tabela a seguir descreve os principais controles de exibição.
 
 |Controle de exibição|Descrição|
 |------------------|-----------------|
-|**Panorâmica**|Habilita a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|
-|**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|
+|**Panorâmica**|Habilita a movimentação de uma cena 3D em relação ao quadro da janela. Para obter uma panorâmica, selecione um ponto na cena e movimente-o ao redor.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ativar o modo **Panorâmica** temporariamente.|
+|**Zoom**|Permite a exibição de mais ou menos detalhes da cena em relação ao quadro da janela. No modo **Zoom**, selecione um ponto na cena e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, amplie ou reduza a cena usando a botão de rolagem do mouse enquanto pressiona e segura a tecla **Ctrl**.|
 |**Órbita**|Posiciona a exibição em um caminho circular em volta do objeto selecionado. Se nenhum objeto for selecionado, o caminho será centralizado na origem da cena. **Nota:** esse modo não terá efeito quando a projeção **Ortográfica** estiver habilitada.|
 |**Objeto de Quadro**|Enquadra o objeto selecionado para que ele se localize no centro da exibição.|
 
@@ -145,13 +145,13 @@ Talvez seja útil exibir uma cena 3D de uma posição e um ângulo conhecidos, p
 
 ### <a name="view-additional-geometry-details"></a>Exibir detalhes adicionais de geometria
 
-Para entender melhor um objeto ou cena 3D, você pode exibir detalhes adicionais de geometria, como normais por vértice, normais por face, os pontos dinâmico da seleção ativa e outros detalhes. Para habilitá-los ou desabilitá-los, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Exibir** e o modo desejado.
+Para entender melhor um objeto ou cena 3D, você pode exibir detalhes adicionais de geometria, como normais por vértice, normais por face, os pontos dinâmico da seleção ativa e outros detalhes. Para habilitá-los ou desabilitá-los, na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Exibir** e, em seguida, escolha o modo desejado.
 
-### <a name="create-and-import-3d-objects"></a>Criar e importar objetos 3D
+### Criar e importar objetos 3D <a name="Adding3DObjects"></a>
 
 Para adicionar uma forma 3D predefinida à cena, na **Caixa de Ferramentas**, selecione a forma desejada e mova-a para a superfície de design. As novas formas são posicionadas na origem da cena. O Editor de Modelos fornece sete formas: **Cone**, **Cubo**, **Cilindro**, **Disco**, **Plano**, **Esfera** e **Bule**.
 
-Para importar um objeto 3D de um arquivo, na barra de ferramentas **Editor de Modelos**, escolha **Avançado**, **Gerenciamento de Cena**, **Importar** e especifique o arquivo que deseja importar.
+Para importar um objeto 3D de um arquivo, na barra de ferramentas do **Editor de Modelo**, escolha **Avançado** > **Gerenciamento de Cena** > **Importar** > e, em seguida, especifique o arquivo que deseja importar.
 
 ### <a name="transform-objects"></a>Objetos Transform
 
@@ -178,7 +178,7 @@ Você pode transformar um objeto usando ferramentas de modelagem ou definindo pr
 
 Usando as ferramentas de modelagem, você pode criar transformações rapidamente, mas não com precisão. Ao definir as propriedades do objeto, você pode especificar transformações de forma precisa, mas não rápida. É recomendável usar as ferramentas de modelagem para ficar "próximo o suficiente" das transformações que deseja e, em seguida, ajustar os valores de propriedade.
 
-Se não desejar usar manipuladores, você poderá habilitar o modo de forma livre. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Manipulação de forma livre** para habilitar (ou desabilitar) o modo de forma livre. No modo de forma livre, é possível iniciar uma manipulação em qualquer ponto na superfície de design, em vez de em um ponto no manipulador. No modo de forma livre, você pode restringir as alterações a determinados eixos, bloqueando aqueles que não deseja alterar. Na barra de ferramentas **Modo do Editor de Modelos**, escolha qualquer combinação dos botões **Bloquear X**, **Bloquear Y** e **Bloquear Z**.
+Se não desejar usar manipuladores, você poderá habilitar o modo de forma livre. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Manipulação de forma livre** para habilitar (ou desabilitar) o modo de forma livre. No modo de forma livre, é possível iniciar uma manipulação em qualquer ponto na superfície de design, em vez de em um ponto no manipulador. No modo de forma livre, você pode restringir as alterações a determinados eixos, bloqueando aqueles que não deseja alterar. Na barra de ferramentas **Modo do Editor de Modelos**, escolha qualquer combinação dos botões **Bloquear X**, **Bloquear Y** e **Bloquear Z**.
 
 Você pode achar útil trabalhar com objetos usando o recurso ajustar à grade. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Encaixar** para habilitar (ou desabilitar) o recurso de ajustar à grade. Quando esse recurso é habilitado, as transformações de translação, rotação e dimensionamento são restringidas a incrementos predefinidos.
 
@@ -186,13 +186,13 @@ Você pode achar útil trabalhar com objetos usando o recurso ajustar à grade. 
 
 O ponto dinâmico de um objeto define seu centro de rotação e dimensionamento. É possível alterar o ponto dinâmico de um objeto par alterar como ele é afetado pelas transformações de rotação e dimensionamento. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Modo Dinâmico** para habilitar (ou desabilitar) o modo dinâmico. Quando o modo dinâmico é habilitado, um pequeno indicador de eixo aparece no ponto dinâmico do objeto selecionado. Você pode usar as ferramentas **Translação** e **Rotação** para manipular o ponto dinâmico.
 
-Para uma demonstração que mostra como usar o ponto dinâmico, veja [Como Modificar o Ponto Dinâmico de um Modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Para obter uma demonstração que apresenta o uso do ponto dinâmico, confira [Como modificar o ponto dinâmico de um modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Modos local e mundial
 
 A translação e a rotação podem ocorrer no sistema de coordenada local (ou *quadro de referência local*) do objeto ou no sistema de coordenada mundial (ou *quatro de referência mundial*). O quadro de referência mundial é independente da rotação do objeto. O modo local é o padrão. Para habilitar (ou desabilitar) o modo mundial, na barra de ferramentas **Modo do Editor de Modelos**, escolha o botão **WorldLocal**.
 
-### <a name="modify-objects"></a>Modificar objetos
+### Modificar objetos <a name="ModifyingObjects"></a>
 
 É possível alterar a forma de um objeto 3D movendo ou excluindo seus vértices, bordas e faces. Por padrão, o Editor de modelos está no *modo de objeto*, para que você possa selecionar e transformar objetos inteiros. Para selecionar os pontos, as bordas ou as faces, escolha o modo de seleção adequado. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Modos de seleção** e, em seguida, escolha o modo desejado.
 
@@ -202,13 +202,13 @@ A translação e a rotação podem ocorrer no sistema de coordenada local (ou *q
 
 1. No modo de seleção de face, selecione aquela que deseja extrudar.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Extrusão**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Extrudar**.
 
 #### <a name="to-subdivide-faces"></a>Para subdividir faces
 
 1. No modo de seleção de face, selecione aquelas que deseja subdividir. Como a subdivisão cria novos dados de borda, subdividir todas as faces de uma vez proporciona resultados mais consistentes quando as faces são adjacentes.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Subdividir**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Subdividir**.
 
  Você também pode triangular faces, mesclar objetos e converter as seleções de polígonos em novos objetos. A triangulação cria bordas adicionais para que uma face não triangular seja convertida em um número ideal de triângulos; no entanto, ela não fornece detalhes adicionais geométricos. A mescla combina objetos selecionados em um único objeto. Novos objetos podem ser criados de uma seleção de polígono.
 
@@ -216,19 +216,19 @@ A translação e a rotação podem ocorrer no sistema de coordenada local (ou *q
 
 1. No modo de seleção de face, selecione a face que deseja triangular.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Triangular**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Triangular**.
 
 #### <a name="to-merge-objects"></a>Para mesclar objetos
 
 1. No modo de seleção de objeto, selecione os objetos que deseja mesclar.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Mesclar Objetos**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Mesclar Objetos**.
 
 #### <a name="to-create-an-object-from-a-polygon-selection"></a>Para criar um objeto de uma seleção de polígono
 
 1. No modo de seleção de face, selecione as faces das quais deseja criar um novo objeto.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Criar Novo Objeto da Seleção de Polígono**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Ferramentas** > **Criar Objeto com Base na Seleção de Polígono**.
 
 ### <a name="work-with-materials-and-shaders"></a>Trabalhar com materiais e sombreadores
 
@@ -238,9 +238,9 @@ O Editor de Modelos fornece os seguintes materiais padrão:
 
 |Material|Descrição|
 |--------------|-----------------|
-|Apagado|Renderiza uma superfície sem nenhuma iluminação simulada.|
-|Lambert|Renderiza uma superfície com luz ambiente simulada e iluminação difusa.|
-|Phong|Renderiza uma superfície com luz ambiente simulada, iluminação difusa e realces especulares.|
+|**Apagado**|Renderiza uma superfície sem nenhuma iluminação simulada.|
+|**Lambert**|Renderiza uma superfície com luz ambiente simulada e iluminação difusa.|
+|**Phong**|Renderiza uma superfície com luz ambiente simulada, iluminação difusa e realces especulares.|
 
 Cada um desses materiais aplica uma textura na superfície de um objeto. Você pode definir uma textura diferente para cada objeto que usa o material.
 
@@ -248,17 +248,17 @@ Para modificar como um objeto específico reage a diferentes fontes de luz na ce
 
 |Propriedade de iluminação|Descrição|
 |-----------------------|-----------------|
-|Ambiente|Descreve como a superfície é afetada pela iluminação ambiente.|
-|Difusa|Descreve como a superfície é afetada por luzes direcionais e pontuais.|
-|Emissiva|Descreve como a superfície emite luz, independentemente de outra iluminação.|
-|Especular|Descreve como a superfície reflete as luzes direcionais e pontuais.|
-|Energia Especular|Descreve a largura e a intensidade de realces especulares.|
+|**Ambiente**|Descreve como a superfície é afetada pela iluminação ambiente.|
+|**Difusa**|Descreve como a superfície é afetada por luzes direcionais e pontuais.|
+|**Emissiva**|Descreve como a superfície emite luz, independentemente de outra iluminação.|
+|**Especular**|Descreve como a superfície reflete as luzes direcionais e pontuais.|
+|**Energia Especular**|Descreve a largura e a intensidade de realces especulares.|
 
 Dependendo do que um material suporte, você pode alterar as respectivas propriedades de iluminação, as texturas e outros dados. No modo **Selecionar**, selecione o objeto cujo material você deseja alterar e, na janela **Propriedades**, altere **MaterialAmbient**, **MaterialDiffuse**, **MaterialEmissive**, **MaterialSpecular**, **MaterialSpecularPower** ou outra propriedade disponível. Um material pode expor até oito texturas, cujas propriedades são chamadas sequencialmente de **Texture1** a **Texture8**.
 
-Para remover todos os materiais de um objeto, na barra de ferramentas **Editor de modelos**, escolha **Scripts**, **Materiais**, **Remover Materiais**.
+Para remover todos os materiais de um objeto, na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Materiais** > **Remover Materiais**.
 
-Você pode usar o **Designer de Sombreador** para criar materiais sombreadores personalizados que possam ser aplicados a objetos na cena 3D. Para obter informações sobre como criar materiais sombreadores personalizados, consulte [Designer de Sombreador](../designers/shader-designer.md). Para obter informações sobre como aplicar um material sombreador personalizado a um objeto, consulte [Como Aplicar um Sombreador a um Modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Você pode usar o **Designer de Sombreador** para criar materiais sombreadores personalizados que possam ser aplicados a objetos na cena 3D. Para obter informações sobre como criar materiais sombreadores personalizados, consulte [Designer de Sombreador](../designers/shader-designer.md). Para obter informações sobre como aplicar um material sombreador personalizado a um objeto, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Gerenciamento de cena
 
@@ -272,65 +272,65 @@ Você pode construir uma hierarquia de objetos tornando um deles o pai dos outro
 
 1. No modo **Selecionar**, selecione dois ou mais objetos. O primeiro que você selecionar será o objeto pai.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Anexar ao Pai**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Gerenciamento de Cena** > **Anexar ao Pai**.
 
 #### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Para criar uma hierarquia de objetos irmãos
 
 1. No modo **Selecionar**, selecione dois ou mais objetos. Um objeto de espaço reservado é criado e se torna seu objeto pai.
 
-2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Criar Grupo**.
+2. Na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Gerenciamento de Cena** > **Criar Grupo**.
 
-O Editor de Modelos usa um delineado branco para identificar o primeiro objeto selecionado, que se torna o pai. Outros objetos na seleção têm um delineado azul. Por padrão, os nós de espaço reservado não são exibidos. Para exibir os nós de espaço reservado, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena**, **Mostrar Nós de Espaço Reservado**. Você pode trabalhar com nós de espaço reservado da mesma forma que trabalha com objetos que não são de espaço reservado.
+O Editor de Modelos usa um delineado branco para identificar o primeiro objeto selecionado, que se torna o pai. Outros objetos na seleção têm um delineado azul. Por padrão, os nós de espaço reservado não são exibidos. Para exibir os nós de espaço reservado, na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Gerenciamento de Cena** > **Mostrar Nós de Espaço Reservado**. Você pode trabalhar com nós de espaço reservado da mesma forma que trabalha com objetos que não são de espaço reservado.
 
-Para remover a associação pai/filho entre dois objetos, selecione o objeto filho e, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento da Cena**, **Desanexar do Pai**. Quando você desanexa o pai de um objeto filho, o objeto filho se torna um objeto raiz na cena.
+Para remover a associação pai/filho entre dois objetos, selecione o objeto filho e, em seguida, na barra de ferramentas do **Editor de Modelo**, escolha **Scripts** > **Gerenciamento da Cena** > **Desanexar do Pai**. Quando você desanexa o pai de um objeto filho, o objeto filho se torna um objeto raiz na cena.
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
 |Comando|Atalhos de teclado|
 |-------------|------------------------|
-|Mudar para o modo **Selecionar**|Ctrl+G, Gtrl+Q<br /><br /> S|
-|Mudar para o modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
-|Mudar para o modo **Panorâmico**|Ctrl+G, Ctrl+P<br /><br /> M|
-|Selecionar tudo|Ctrl+A|
-|Excluir a seleção atual|Excluir|
-|Cancelar a seleção atual|Escape|
-|Ampliar|Roda do mouse para frente<br /><br /> Ctrl+Roda do mouse para frente<br /><br /> Shift+Roda do mouse para frente<br /><br /> Ctrl+PageUp<br /><br /> Sinal de mais (+)|
-|Reduzir|Roda do mouse para trás<br /><br /> Ctrl+Roda do mouse para trás<br /><br /> Shift+Roda do mouse para trás<br /><br /> Ctrl+PageDown<br /><br /> Sinal de menos (-)|
-|Panorâmica da câmera para cima|PageDown|
-|Panorâmica da câmera para baixo|PageUp|
-|Panorâmica da câmera para a esquerda|Roda do mouse para a esquerda<br /><br /> Ctrl+PageDown|
-|Panorâmica da câmera para a direita|Roda do mouse para a direita<br /><br /> Ctrl+PageDown|
-|Exibir parte superior de modelo|Ctrl+L, Ctrl+T<br /><br /> T|
-|Exibir parte inferior do modelo|Ctrl+L, Ctrl+U|
-|Exibir lado esquerdo do modelo|Ctrl+L, Ctrl+L|
-|Exibir lado direito do modelo|Ctrl+L, Ctrl+R|
-|Exibir a parte da frente do modelo|Ctrl+L, Ctrl+F|
-|Exibir a parte de trás do modelo|Ctrl+L, Ctrl+B|
-|Enquadrar objeto na janela|F|
-|Ativar/desativar modo delineado|Ctrl+L, Ctrl+W|
-|Ativar/desativar Ajustar à grade|Ctrl+G, Ctrl+N|
-|Ativar/desativar modo dinâmico|Ctrl+G, Ctrl+V|
-|Ativar/desativar restrição do eixo x|Ctrl+L, Ctrl+X|
-|Ativar/desativar restrição do eixo y|Ctrl+L, Ctrl+Y|
-|Ativar/desativar restrição do eixo z|Ctrl+L, Ctrl+Z|
-|Alternar para modo de translação|Ctrl+G, Ctrl+W<br /><br /> W|
-|Alternar para modo de dimensionamento|Ctrl+G, Ctrl+E<br /><br /> E|
-|Alternar para modo de rotação|Ctrl+G, Ctrl+R<br /><br /> R|
-|Alterar para modo de seleção de ponto|Ctrl+L, Ctrl+1|
-|Alternar para modo de seleção de borda|Ctrl+L, Ctrl+2|
-|Alternar para modo de seleção de face|Ctrl+L, Ctrl+3|
-|Alternar para modo de seleção de objeto|Ctrl+L, Ctrl+4|
-|Alternar para modo de órbita (câmera)|Ctrl+G, Ctrl+O|
-|Selecionar próximo objeto na cena|Tabulação|
-|Selecionar objeto anterior na cena|Shift+Tab|
-|Manipular o objeto selecionado com base na ferramenta atual.|As teclas de seta|
-|Desativar o manipulador atual|Q|
-|Girar câmera|Alt+Arrastar com o botão esquerdo do mouse|
+|Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Mudar para o modo **Panorâmico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Selecionar tudo|**Ctrl**+**A**|
+|Excluir a seleção atual|**Excluir**|
+|Cancelar a seleção atual|**Escape** (**Esc**)|
+|Ampliar|**Botão de rolagem do mouse para frente**<br /><br /> **Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> **Shift**+**Botão de rolagem do mouse para frente**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Sinal de adição (**+**)|
+|Reduzir|**Botão de rolagem do mouse para trás**<br /><br /> **Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> **Shift**+**Botão de rolagem do mouse para trás**<br /><br /> **Ctrl**+**PageDown**<br /><br /> Sinal de subtração (**-**)|
+|Panorâmica da câmera para cima|**PageDown**|
+|Panorâmica da câmera para baixo|**PageUp**|
+|Panorâmica da câmera para a esquerda|**Botão de rolagem do mouse para a esquerda**<br /><br /> **Ctrl**+**PageDown**|
+|Panorâmica da câmera para a direita|**Botão de rolagem do mouse para a direita**<br /><br /> **Ctrl**+**PageDown**|
+|Exibir parte superior de modelo|**Ctrl**+**L**, **Ctrl**+**T**<br /><br /> **T**|
+|Exibir parte inferior do modelo|**Ctrl**+**L**, **Ctrl**+**U**|
+|Exibir lado esquerdo do modelo|**Ctrl**+**L**, **Ctrl**+**L**|
+|Exibir lado direito do modelo|**Ctrl**+**L**, **Ctrl**+**R**|
+|Exibir a parte da frente do modelo|**Ctrl**+**L**, **Ctrl**+**F**|
+|Exibir a parte de trás do modelo|**Ctrl**+**L**, **Ctrl**+**B**|
+|Enquadrar objeto na janela|**F**|
+|Ativar/desativar modo delineado|**Ctrl**+**L**, **Ctrl**+**W**|
+|Ativar/desativar Ajustar à grade|**Ctrl**+**G**, **Ctrl**+**N**|
+|Ativar/desativar modo dinâmico|**Ctrl**+**G**, **Ctrl**+**V**|
+|Ativar/desativar restrição do eixo x|**Ctrl**+**L**, **Ctrl**+**X**|
+|Ativar/desativar restrição do eixo y|**Ctrl**+**L**, **Ctrl**+**Y**|
+|Ativar/desativar restrição do eixo z|**Ctrl**+**L**, **Ctrl**+**Z**|
+|Alternar para modo de translação|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
+|Alternar para modo de dimensionamento|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
+|Alternar para modo de rotação|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
+|Alterar para modo de seleção de ponto|**Ctrl**+**L**, **Ctrl**+**1**|
+|Alternar para modo de seleção de borda|**Ctrl**+**L**, **Ctrl**+**2**|
+|Alternar para modo de seleção de face|**Ctrl**+**L**, **Ctrl**+**3**|
+|Alternar para modo de seleção de objeto|**Ctrl**+**L**, **Ctrl**+**4**|
+|Alternar para modo de órbita (câmera)|**Ctrl**+**G**, **Ctrl**+**O**|
+|Selecionar próximo objeto na cena|**Tab**|
+|Selecionar objeto anterior na cena|**Shift**+**Tab**|
+|Manipular o objeto selecionado com base na ferramenta atual.|As teclas de **direção**|
+|Desativar o manipulador atual|**Q**|
+|Girar câmera|**Alt**+**Arrastar** com o botão esquerdo do mouse|
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Trabalhando com Ativos 3D para Jogos e Aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|
+|[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do Visual Studio para trabalhar com texturas e imagens.|
 |[Designer de Sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|

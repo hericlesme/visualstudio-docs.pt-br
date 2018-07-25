@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 963c53ed0cd1e74e3e641ac04012e5d0380980fe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569463"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078206"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como filho de um elemento `ItemGroup`.  
@@ -64,8 +64,6 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 |[Projeto](../msbuild/project-element-msbuild.md)|Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 |[Target](../msbuild/target-element-msbuild.md)|A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).|  
   
-## <a name="remarks"></a>Comentários  
-  
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra as coleções de itens definidos pelo usuário `Res` e `CodeFiles`, declaradas dentro de um elemento `ItemGroup`. Cada um dos itens na coleção de itens `Res` contém um elemento [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) filho definido pelo usuário.  
   
@@ -87,6 +85,6 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Itens](../msbuild/msbuild-items.md)   
  [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

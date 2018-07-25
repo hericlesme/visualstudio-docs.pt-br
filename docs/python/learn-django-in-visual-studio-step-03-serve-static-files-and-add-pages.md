@@ -1,7 +1,7 @@
 ---
 title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 3
 description: Uma explicação dos conceitos básicos do Django no contexto de projetos do Visual Studio, demonstrando especificamente como fornecer arquivos estáticos, adicionar páginas ao aplicativo e usar a herança do modelo
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750328"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089581"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3 do tutorial: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
 **Etapa anterior: [Criar um aplicativo do Django com modos de exibição e modelos de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,8 +277,9 @@ As etapas a seguir demonstram a herança:
 > [!div class="nextstepaction"]
 > [Usar o modelo Projeto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
+- [Implantar o aplicativo Web no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Como gravar seu primeiro aplicativo do Django, parte 3 (modos de exibição)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Para conhecer mais recursos de modelos do Django, como o fluxo de controle, confira [A linguagem de modelos do Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Para obter detalhes completos sobre como usar a marcação `{% url %}`, confira [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) dentro de [Referência de marcações de modelo internas e filtros para modelos do Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)

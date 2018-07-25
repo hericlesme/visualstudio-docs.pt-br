@@ -9,12 +9,12 @@ description: Saiba como você pode usar o VSTS (Visual Studio Team Services) com
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196070"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281814"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Benefícios do VSTS (Visual Studio Team Services) para assinantes do Visual Studio
 
@@ -22,9 +22,10 @@ Como assinante ativo do Visual Studio, você pode usar uma variedade de recursos
 
 Quando você entra no VSTS usando a identidade que foi usada para ativar sua assinatura do Visual Studio ou sua [identidade alternativa](vs-alternate-identity.md), isso é reconhecido automaticamente.
 
-[Inscreva-se para obter uma conta gratuita do VSTS](https://www.visualstudio.com/team-services/)
+[Inscreva-se para obter uma conta gratuita do VSTS](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Básico, Test Manager, Gerenciamento de Pacotes, CI/CD (integração contínua/entrega contínua) auto-hospedada       |  Sim          |
@@ -34,10 +35,9 @@ Quando você entra no VSTS usando a identidade que foi usada para ativar sua ass
 
 <sup>1</sup>  *Inclui:  NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), FTE, MCT Software & Services Developer. Exclui: MCT Software & Services, Imagine.*
 
-
-
 Saiba mais sobre os recursos do VSTS:
-- [Básico](https://www.visualstudio.com/team-services/compare-features/)
+
+- [Básico](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Gerenciamento de Pacotes](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -46,6 +46,6 @@ Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuída
 
 ## <a name="support-resources"></a>Recursos de suporte
 
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/).
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 -  [Documentação completa do Visual Studio Team Services](/vsts/).

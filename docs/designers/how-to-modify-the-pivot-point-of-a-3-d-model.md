@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747099"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977806"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Como modificar o ponto dinâmico de um modelo 3D
 
@@ -27,7 +27,7 @@ Você pode redefinir a origem de um modelo 3D ao modificar seu ponto dinâmico.
 
 Verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Comece com um modelo 3D existente, como o que é descrito em [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
+1.  Comece com um modelo 3D existente, como aquele descrito em [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
 
 2.  Entre no modo dinâmico. Na barra de ferramentas do **Modo do Editor de Modelo**, escolha o **Modo Dinâmico** para ativar o modo dinâmico. Será exibida uma caixa ao redor do botão **Modo Dinâmico** para indicar que o Editor de Modelo agora está em modo dinâmico. No modo dinâmico, operações como a movimentação afetam o ponto dinâmico do objeto em vez da estrutura do objeto no espaço de mundo.
 
@@ -47,4 +47,4 @@ Aqui está um modelo que tem um ponto dinâmico modificado:
 ## <a name="see-also"></a>Consulte também
 
 - [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
-- [Editor de modelo](../designers/model-editor.md)
+- [Editor de modelos](../designers/model-editor.md)

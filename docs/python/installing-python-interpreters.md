@@ -1,7 +1,7 @@
 ---
 title: Selecionando e instalando interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851845"
 ---
 # <a name="installing-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -25,7 +26,7 @@ Você também pode instalar manualmente qualquer um dos interpretadores listados
 
 Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
 
-O Visual Studio (todas as versões) detecta automaticamente cada interpretador Python instalado e seu ambiente verificando o Registro (seguindo [PEP 514 - Registro do Python no Registro do Windows](https://www.python.org/dev/peps/pep-0514/)).
+O Visual Studio (todas as versões) detecta automaticamente cada interpretador Python instalado e seu ambiente verificando o Registro, de acordo com o [PEP 514 – registro do Python no Registro do Windows](https://www.python.org/dev/peps/pep-0514/). As instalações do Python geralmente se encontram em `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bits) e em `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bits), e dentro de nós para distribuição, como "PythonCore" (CPython) e "ContinuumAnalytics" (Anaconda).
 
 Se o Visual Studio não detectar um ambiente instalado, consulte [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

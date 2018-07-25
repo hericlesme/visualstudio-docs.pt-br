@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844772"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Como limitar a instrumentação a funções específicas
 Você pode limitar a instrumentação e a coleta de dados a uma ou mais funções ao definir opções na página **Avançado** da **Sessão de Desempenho** ou nas páginas de propriedades de binário de destino:  
@@ -67,6 +68,6 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
     >  Para listar as funções em um binário, abra uma janela de prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (normalmente, o diretório \Team Tools\Performance Tools no diretório de instalação do [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) e, em seguida, digite **vsinstr /DumpFuncs**  
   
 ## <a name="see-also"></a>Consulte também  
- [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
+ [Coleta de dados de controle](../profiling/controlling-data-collection.md)   
  [Como limitar a instrumentação a DLLs específicas](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)

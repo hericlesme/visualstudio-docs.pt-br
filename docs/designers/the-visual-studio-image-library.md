@@ -18,18 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921186"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078895"
 ---
-# <a name="the-visual-studio-image-library"></a>A Biblioteca de Imagens do Visual Studio
+# <a name="the-visual-studio-image-library"></a>A biblioteca de imagens do Visual Studio
 
 A Biblioteca de Imagens do Visual Studio contém imagens do aplicativo que aparecem no Microsoft Visual Studio, no Microsoft Windows, no office system e em outros programas da Microsoft. Este conjunto de mais de 1.000 imagens pode ser usado para criar aplicativos visualmente consistentes com o software Microsoft.
 
-[Baixar a Biblioteca de Imagens do Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Baixar a biblioteca de imagens do Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
 A biblioteca de imagens é dividida em cinco categorias: Elementos Comuns, Ações, Anotações, Ícones e Objetos. Os arquivos Leiame são incluídos no formato PDF para os tipos Elementos Comuns e Ícone. Eles contêm informações sobre como usar adequadamente essas imagens em seus aplicativos.
 

@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747275"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978343"
 ---
 # <a name="introduction-to-wpf"></a>Introdução ao WPF
 
@@ -38,7 +38,7 @@ O WPF inclui constructos de programação adicionais que aprimoram as propriedad
 
 ## <a name="markup-and-code-behind"></a>Marcação e code-behind
 
-O WPF permite que você desenvolva um aplicativo usando ambos *marcação* e *code-behind*, uma experiência com a qual os desenvolvedores de ASP.NET devem estar familiarizados. Você geralmente usa marcação XAML para implementar a aparência de um aplicativo enquanto usa linguagens de programação gerenciadas (code-behind) para implementar seu comportamento. Essa separação de aparência e comportamento apresenta os seguintes benefícios:
+O WPF permite que você desenvolva um aplicativo usando *marcação* e *code-behind*, uma experiência com a qual os desenvolvedores do ASP.NET devem estar familiarizados. Você geralmente usa marcação XAML para implementar a aparência de um aplicativo enquanto usa linguagens de programação gerenciadas (code-behind) para implementar seu comportamento. Essa separação de aparência e comportamento apresenta os seguintes benefícios:
 
 - Custos de desenvolvimento e manutenção são reduzidos, pois a marcação específica da aparência não está acoplada ao comportamento específico do código.
 
@@ -48,7 +48,7 @@ O WPF permite que você desenvolva um aplicativo usando ambos *marcação* e *co
 
 ### <a name="markup"></a>Marcação
 
-O XAML é uma linguagem de marcação baseada em XML que é usada para implementar a aparência de um aplicativo declarativamente. Ele é normalmente usado para criar janelas, caixas de diálogo, páginas e controles de usuário e para preenchê-las com controles, formas e elementos gráficos.
+O XAML é uma linguagem de marcação baseada em XML que implementa a aparência de um aplicativo de forma declarativa. Normalmente, ele é usado para criar janelas, caixas de diálogo, páginas e controles de usuário e para preenchê-los com controles, formas e elementos gráficos.
 
  O exemplo a seguir usa XAML para implementar a aparência de uma janela que contém um único botão.
 
@@ -149,7 +149,7 @@ A figura a seguir mostra o resultado quando o botão é clicado.
 
 ## <a name="controls"></a>Controles
 
-As experiências de usuário que são entregues pelo modelo de aplicativo são controles construídos. No WPF, "controle" é um termo abrangente que se aplica a uma categoria de classes do WPF que são hospedadas em uma janela ou página, têm uma interface do usuário e implementam algum comportamento.
+As experiências de usuário que são entregues pelo modelo de aplicativo são controles construídos. No WPF, *controle* é um termo abrangente que se aplica a uma categoria de classes do WPF que são hospedadas em uma janela ou uma página, que têm uma interface do usuário e que implementam um comportamento.
 
 Para obter mais informações, consulte [Controles](/dotnet/framework/wpf/controls/index).
 
@@ -187,7 +187,7 @@ Os controles internos do WPF são listados aqui.
 
 Controles normalmente detectam e respondem a entradas do usuário. O [sistema de entrada do WPF](/dotnet/framework/wpf/advanced/input-overview) usa tanto os eventos diretos como os roteados para dar suporte a entrada de texto, foco de gerenciamento e posicionamento do mouse.
 
-Aplicativos muitas vezes têm requisitos de entrada complexos. O WPF fornece um [sistema de comando](/dotnet/framework/wpf/advanced/commanding-overview) que separa ações de entrada do usuário do código que responde a essas ações.
+Aplicativos muitas vezes têm requisitos de entrada complexos. O WPF fornece um [sistema de comando](/dotnet/framework/wpf/advanced/commanding-overview) que separa as ações de entrada do usuário do código que responde a essas ações.
 
 ## <a name="layout"></a>Layout
 
@@ -260,7 +260,7 @@ Neste exemplo, a classe `Person` é instanciada no code-behind e é definida com
 
 O mecanismo de vinculação de dados do WPF fornece suporte adicional que inclui a validação, classificação, filtragem e agrupamento. Além disso, a vinculação de dados dá suporte ao uso de modelos de dados para criar a interface do usuário personalizada para dados associados quando a interface do usuário exibida pelos controles WPF padrão não é apropriada.
 
-Para obter mais informações, consulte [Visão geral de vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview).
+Para obter mais informações, confira [Visão geral de associação de dados](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="graphics"></a>Gráficos
 
@@ -291,7 +291,7 @@ A figura a seguir mostra o que é produzido pelo código anterior.
 
 ![Uma janela com o texto "você clicou na elipse&#33"](../designers/media/wpfintrofigure12.png)
 
-Para obter mais informações, consulte [Visão geral de formas e desenho básico no WPF](/dotnet/framework/wpf/data/data-binding-overview).
+Para obter mais informações, confira [Visão geral de formas e desenho básico no WPF](/dotnet/framework/wpf/data/data-binding-overview).
 
 ### <a name="2d-geometries"></a>Geometrias 2D
 
@@ -301,9 +301,9 @@ Os objetos <xref:System.Windows.Shapes.Path> podem ser usados para desenhar form
 
 Os objetos <xref:System.Windows.Media.Geometry> podem ser usados para recorte, teste de clique e renderização de dados gráficos 2D.
 
-![Vários usos de um caminho](../designers/media/wpfintrofigure5.png)
+![Vários usos de um demarcador](../designers/media/wpfintrofigure5.png)
 
-Para obter mais informações, consulte [Visão geral de geometria](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
+Para obter mais informações, confira [Visão geral de geometria](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
 ### <a name="2d-effects"></a>Efeitos 2D
 
@@ -311,7 +311,7 @@ Um subconjunto de funcionalidades 2D do WPF inclui efeitos visuais como gradient
 
 ![Ilustração de diferentes pincéis](../designers/media/wpfintrofigure6.png)
 
-Para obter mais informações, consulte [Visão geral de pincéis do WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
+Para obter mais informações, confira [Visão geral de pincéis do WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
 ### <a name="3d-rendering"></a>Renderização 3D
 
@@ -319,7 +319,7 @@ O WPF também inclui funcionalidades de renderização 3D que se integram com el
 
 ![Captura de tela de exemplo do Visual3D](../designers/media/wpfintrofigure13.png)
 
-Para obter mais informações, consulte [Visão geral de elementos gráficos 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
+Para obter mais informações, confira [Visão geral de elementos gráficos 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
 ## <a name="animation"></a>Animação
 
@@ -327,7 +327,7 @@ O suporte a animação do WPF permite que você faça os controles crescerem, tr
 
 ![Imagens de um cubo animado](../designers/media/wpfintrofigure7.png)
 
-Para obter mais informações, consulte [Visão geral de animação](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
+Para obter mais informações, confira [Visão geral de animação](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
 ## <a name="media"></a>Mídia
 
@@ -339,7 +339,7 @@ Imagens são comuns à maioria dos aplicativos e o WPF fornece várias maneiras 
 
 ![Imagens em miniatura e uma imagem em tamanho original](../designers/media/wpfintrofigure8.png)
 
-Para obter mais informações, consulte [Visão geral de geração de imagens](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
+Para obter mais informações, confira [Visão geral de geração de imagens](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
 ### <a name="video-and-audio"></a>Áudio e vídeo
 
@@ -351,7 +351,7 @@ A janela na figura a seguir mostra o controle <xref:System.Windows.Controls.Medi
 
 ![Um controle MediaElement com áudio e vídeo](../designers/media/wpfintrofigure1.png)
 
-Para obter mais informações, consulte [Graphics and Multimedia](/dotnet/framework/wpf/graphics-multimedia) (Elementos gráficos e multimídia).
+Para obter mais informações, confira [Elementos gráficos e multimídia](/dotnet/framework/wpf/graphics-multimedia).
 
 ## <a name="text-and-typography"></a>Texto e tipografia
 
@@ -375,9 +375,9 @@ Para obter mais informações, consulte [Tipografia na Windows Presentation Foun
 
 ## <a name="customize-wpf-apps"></a>Personalizar aplicativos do WPF
 
-Até aqui, você viu os principais blocos de construção do WPF principal para o desenvolvimento de aplicativos. Você pode usar o modelo de aplicativo para hospedar e entregar conteúdo do aplicativo, que consiste principalmente de controles. Para simplificar a organização dos controles em uma interface do usuário e assegurar que a organização seja mantida em caso de alterações no tamanho da janela e configurações de exibição, você deverá usar o sistema de layout do WPF. Já que a maioria dos aplicativos permite aos usuários interagir com os dados, você usa a vinculação de dados para reduzir o trabalho de integração de sua interface do usuário com os dados. Para melhorar a aparência visual do seu aplicativo, você deve usar a ampla gama de suporte a elementos gráficos, animação e mídia fornecido pelo WPF.
+Até aqui, você viu os principais blocos de construção do WPF principal para o desenvolvimento de aplicativos. Você pode usar o modelo de aplicativo para hospedar e entregar conteúdo do aplicativo, que consiste principalmente de controles. Para simplificar a organização dos controles em uma interface do usuário e assegurar que a organização seja mantida em caso de alterações no tamanho da janela e configurações de exibição, você deverá usar o sistema de layout do WPF. Já que a maioria dos aplicativos permite aos usuários interagir com os dados, use a associação de dados para reduzir o trabalho de integração da interface do usuário com os dados. Para melhorar a aparência visual do seu aplicativo, você deve usar a ampla gama de suporte a elementos gráficos, animação e mídia fornecido pelo WPF.
 
-Muitas vezes, no entanto, os conceitos básicos não são suficientes para criar e gerenciar uma experiência do usuário realmente distinta e visualmente impressionante. Os controles padrão do WPF podem não se integrar com a aparência desejada do seu aplicativo. Os dados não podem ser exibidos da maneira mais eficiente. A experiência do usuário geral do seu aplicativo pode não ser adequada para a aparência padrão de temas do Windows. Em muitos aspectos, uma tecnologia de apresentação precisa de extensibilidade visual, assim como qualquer outro tipo de extensibilidade.
+Muitas vezes, no entanto, os conceitos básicos não são suficientes para criar e gerenciar uma experiência do usuário realmente distinta e visualmente impressionante. Os controles padrão do WPF podem não ser integrados à aparência desejada do aplicativo. Os dados podem não ser exibidos da maneira mais eficiente. A experiência do usuário geral do seu aplicativo pode não ser adequada para a aparência padrão de temas do Windows. Em muitos aspectos, uma tecnologia de apresentação precisa de extensibilidade visual, assim como qualquer outro tipo de extensibilidade.
 
 Por esse motivo, o WPF fornece uma variedade de mecanismos para criar experiências de usuário exclusivas, incluindo um modelo rico de conteúdo para controles, gatilhos, modelos de dados e de controle, estilos, recursos de interface do usuário, temas e capas.
 
@@ -426,11 +426,11 @@ A figura a seguir mostra o conteúdo desse botão.
 
 ![Um botão que contém vários tipos de conteúdo](../designers/media/wpfintrofigure22.png)
 
-Para obter mais informações sobre os tipos de conteúdo com suporte pelos diversos controles, consulte [Modelo de conteúdo do WPF](/dotnet/framework/wpf/controls/wpf-content-model).
+Para obter mais informações sobre os tipos de conteúdo compatíveis com vários controles, confira [Modelo de conteúdo do WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
 ### <a name="triggers"></a>Gatilhos
 
-Embora o objetivo principal da marcação XAML seja implementar a aparência de um aplicativo, você também pode usar XAML para implementar alguns aspectos do comportamento do aplicativo. Um exemplo é o uso de gatilhos para alterar a aparência de um aplicativo com base em interações do usuário. Para obter mais informações, consulte [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
+Embora o objetivo principal da marcação XAML seja implementar a aparência de um aplicativo, você também pode usar XAML para implementar alguns aspectos do comportamento do aplicativo. Um exemplo é o uso de gatilhos para alterar a aparência de um aplicativo com base em interações do usuário. Para obter mais informações, confira [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
 
 ### <a name="control-templates"></a>Modelos de controle
 
@@ -512,7 +512,7 @@ A figura a seguir mostra o efeito desse código.
 
 Observe que o <xref:System.Windows.Controls.ListBox> manteve seu comportamento e sua aparência geral. Apenas a aparência do conteúdo que está sendo exibido pela caixa de listagem foi alterada.
 
-Para obter mais informações, consulte [Visão geral de modelagem de dados](/dotnet/framework/wpf/data/data-templating-overview).
+Para obter mais informações, confira [Visão geral de modelagem de dados](/dotnet/framework/wpf/data/data-templating-overview).
 
 ### <a name="styles"></a>Estilos
 
@@ -547,7 +547,7 @@ Já que esse estilo atinge todos os controles <xref:System.Windows.Controls.Butt
 
 ![Dois botões alaranjados](../designers/media/wpfintrofigure20.png)
 
-Para obter mais informações, consulte [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
+Para obter mais informações, confira [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
 
 ### <a name="resources"></a>Recursos
 
@@ -652,7 +652,7 @@ O exemplo a seguir mostra um controle numérico para cima/para baixo personaliza
 
  ![Um UserControl personalizado](../designers/media/wpfintrofigure3.png)
 
-Para obter mais informações sobre controles personalizados, consulte [Visão geral de criação de controles](/dotnet/framework/wpf/controls/control-authoring-overview).
+Para obter mais informações sobre controles personalizados, confira [Visão geral da criação de controles](/dotnet/framework/wpf/controls/control-authoring-overview).
 
 ## <a name="wpf-best-practices"></a>Melhores práticas do WPF
 

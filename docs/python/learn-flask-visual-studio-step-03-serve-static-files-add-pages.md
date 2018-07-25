@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752120"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089796"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3 do tutorial: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
 **Etapa anterior: [Criar um aplicativo do Flask com modos de exibição e modelos de página](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ As etapas a seguir demonstram a herança:
 > [!div class="nextstepaction"]
 > [Usar o modelo completo Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
+- [Implantar o aplicativo Web no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Para ver mais funcionalidades de modelos Jinja, como o fluxo de controle, confira [Jinja Template Designer Documentation](http://jinja.pocoo.org/docs/2.10/templates) (Documentação de Designer de Modelo do Jinja) (jinja.pocoo.org)
 - Para obter detalhes sobre o uso de `url_for`, confira [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) na documentação do objeto do Aplicativo Flask (flask.pocoo.org)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

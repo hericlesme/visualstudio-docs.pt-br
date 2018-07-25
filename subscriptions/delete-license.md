@@ -9,12 +9,12 @@ description: Saiba como os administradores podem excluir atribuições de assina
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e345b5e46317f039cdb01afa50e158e7122ded21
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476450"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325408"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Excluindo atribuições em assinaturas do Visual Studio
 
@@ -22,5 +22,4 @@ Quando um assinante não precisar mais de uma assinatura do Visual Studio, por e
 1.  Clique no nome do assinante que deseja remover. Para selecionar vários assinantes para remoção, mantenha pressionada a tecla **CTRL** e clique em cada assinante que deseja remover ou pressione **CTRL+A** para selecionar e remover todos os assinantes. A imagem a seguir mostra três assinantes selecionados.
 2.  Para excluir os assinantes selecionados, clique em **Excluir**. 
 3.  Quando a mensagem aparecer para você confirmar a exclusão, clique em **OK**. 
-
-    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />
+    ![Excluir assinantes](_img\delete-license\delete-subscribers.png)

@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919723"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978197"
 ---
 # <a name="math-nodes"></a>Nós de matemática
 
 No Designer de Sombreador, os nós de matemática realizam álgebra, lógica, trigonometria e outras operações matemáticas.
 
 > [!NOTE]
-> Quando você trabalha com nós de matemática no Designer de Sombreador, a promoção de tipos é especialmente evidente. Para saber como a promoção de tipos afeta os parâmetros de entrada, consulte a seção "Promoção de entradas" em [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md).
+> Quando você trabalha com nós de matemática no Designer de Sombreador, a promoção de tipos é especialmente evidente. Para saber como a promoção de tipos afeta os parâmetros de entrada, confira a seção "Promoção de entradas" em [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md).
 
 ## <a name="math-node-reference"></a>Referência do nó de matemática
 

@@ -2,7 +2,7 @@
 title: Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy | Microsoft Docs
 description: Examine as URLs de domínio, as portas e os protocolos que você pode querer adicionar à lista de permissões ou abrir se sua organização usar um firewall ou um servidor proxy
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765662"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978431"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -49,7 +49,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 | download.visualstudio.com | Local de download de pacotes de instalação |
 | dl.xamarin.com | Local de download de pacotes de instalação |
 | visualstudiogallery.msdn.microsoft.com | Local de download de extensões do Visual Studio |
-| www.visualstudio.com | Local da documentação |
+| visualstudio.microsoft.com | Local da documentação |
 | docs.microsoft.com | Local da documentação |
 | msdn.microsoft.com | Local da documentação |
 | www.microsoft.com | Local da documentação |
@@ -118,7 +118,8 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Instantâneo <br>Depurador | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependente da versão do Visual Studio) | 1. Consultar arquivo .json para o tamanho do SKU do serviço de aplicativo <br>2. Várias chamadas do RM do Azure <br>3. Chamada de aquecimento do site por meio de  <br>4. Ponto de extremidade Kudu do Serviço de Aplicativo de destino do cliente <br>5. Consultar versão da Extensão de Site publicada em nuget.org <br>6. Canal de depuração remota |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |HTTPS|443 |Usada para exibir, enviar, executar e gerenciar trabalhos ASA <br><br> Usada para navegar em clusters HDI e enviar, diagnosticar e depurar trabalhos HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPS | 443 | Usada para compilar, enviar, exibir, diagnosticar e depurar os trabalhos, usada para navegar em arquivos ADLS, usada para carregar e baixar arquivos |
-|Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de build (por exemplo: instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você desejar usar upstreams públicos com os Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
+| Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de build (por exemplo: instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você desejar usar upstreams públicos com os Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Usado para se conectar com o VSTS |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Solucionar problemas de erros relacionados à rede

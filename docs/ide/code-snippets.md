@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924466"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117206"
 ---
 # <a name="code-snippets"></a>Trechos de código
 
@@ -36,9 +36,9 @@ Os trechos de código estão disponíveis para uma variedade de linguagens, incl
 
 Em geral, os trechos de código podem ser acessados das seguintes maneiras:
 
-- Na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Trecho de Código...**
+- Na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Trecho de Código**
 
-- No menu acionado com o botão direito do mouse ou menu de contexto, do editor de códigos, escolha **Trecho de Código** > **Inserir Trecho de Código...**
+- No menu de contexto ou clicando com o botão direito do mouse no editor de códigos, escolha **Trecho** > **Inserir Trecho de Código**
 
 - Usando o teclado, pressione **Ctrl**+**K**+**X**
 
@@ -74,7 +74,7 @@ if (true)
 
 Trechos podem conter parâmetros de substituição, que são espaços reservados que você deve substituir de acordo com o código exato que você está escrevendo. No exemplo anterior, `true` é um parâmetro de substituição, que você poderia substituir pela condição apropriada. A substituição feita é repetida para cada instância do mesmo parâmetro de substituição no trecho.
 
-Por exemplo, no Visual Basic, há um trecho de código que insere uma propriedade. Para inserir o trecho de código, escolha **Trecho de Código...**  > **Inserir Trecho de Código** no menu acionado com o botão direito do mouse ou menu de contexto, em um arquivo de código em Visual Basic. Em seguida, escolha **Padrões de Código** > **Propriedades, Procedimentos, Eventos** > **Definir uma Propriedade**.
+Por exemplo, no Visual Basic, há um trecho de código que insere uma propriedade. Para inserir o trecho de código, escolha **Trecho** > **Inserir Trecho** no menu de contexto ou clicando com o botão direito do mouse em um arquivo de código do Visual Basic. Em seguida, escolha **Padrões de Código** > **Propriedades, Procedimentos, Eventos** > **Definir uma Propriedade**.
 
 ![Menu de trecho de código para Definir uma propriedade](media/code-snippets-vb-property.png)
 

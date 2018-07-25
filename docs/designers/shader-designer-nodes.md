@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926438"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078567"
 ---
 # <a name="shader-designer-nodes"></a>Nós do Designer de Sombreador
 Os artigos nesta seção da documentação contêm informações sobre os vários nós do Designer de Sombreador que você pode usar para criar efeitos gráficos.
 
 ## <a name="nodes-and-node-types"></a>Nós e tipos de nó
- O Designer de Sombreador representa os efeitos visuais, como um grafo. Esses grafos são criados de nós que são especificamente escolhidos e conectados de modo a obter o efeito desejado. Cada nó representa uma parte das informações ou de uma função matemática e as conexões entre eles representam como as informações fluem através do grafo para produzir o resultado. O Designer de Sombreador fornece seis tipos de nós diferentes — filtros, nós de textura, parâmetros, constantes, nós de utilitário e nós de matemática — e vários nós individuais pertencem a cada tipo. Esses nós e tipos de nó são descritos em outros artigos nesta seção. Consulte os links no final deste documento.
+ O Designer de Sombreador representa os efeitos visuais, como um grafo. Esses grafos são criados com base em nós especificamente escolhidos e conectados de formas precisas, a fim de obter o efeito desejado. Cada nó representa uma parte das informações ou de uma função matemática e as conexões entre eles representam como as informações fluem através do grafo para produzir o resultado. O Designer de Sombreador fornece seis tipos de nós diferentes — filtros, nós de textura, parâmetros, constantes, nós de utilitário e nós de matemática — e vários nós individuais pertencem a cada tipo. Esses nós e os tipos de nó são descritos nos outros artigos desta seção. Para obter mais informações, confira os links ao final deste documento.
 
 ## <a name="node-structure"></a>Estrutura de nó
  Todos os nós são compostos de uma combinação de elementos comuns. Cada nó tem pelo menos um terminal de saída no seu lado direito (exceto o nó de cor final, que representa a saída do sombreador). Nós que representam cálculos ou amostras de textura têm terminais de entrada do lado esquerdo, mas nós que representam informações não têm terminais de entrada. Terminais de saída estão conectados a terminais de entrada para mover informações de um nó para outro.

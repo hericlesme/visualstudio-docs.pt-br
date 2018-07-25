@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748030"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081040"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Explicação passo a passo: criar uma bola de bilhar realista em 3D
 
@@ -63,7 +63,7 @@ A esfera é a forma de visualização padrão no Designer de Sombreador. Se voc�
 
      ![Textura de bilhar compactada em um quadrado](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 
- Agora você pode criar um sombreador que se aplica a esse tipo de textura para o modelo.
+ Agora, você pode criar um sombreador que aplica essa textura ao modelo.
 
 ### <a name="to-create-a-basic-texture-shader"></a>Para criar um sombreador de textura básico
 
@@ -79,7 +79,7 @@ A esfera é a forma de visualização padrão no Designer de Sombreador. Se voc�
 
 3.  Aplique a textura que você criou no procedimento anterior ao configurar as propriedades de textura. Defina o valor da propriedade **Textura** do nó **Amostra de Textura** em **Texture1** e, em seguida, especifique o arquivo de textura usando a propriedade **Filename** do grupo de propriedades **Texture1** na mesma janela de propriedade.
 
- Para obter mais informações sobre como aplicar uma textura no seu sombreador, consulte [Como criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).
+ Para obter mais informações sobre como aplicar uma textura no sombreador, confira [Como criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).
 
  Sua bola de bilhar agora deve ser semelhante a esta:
 
@@ -101,7 +101,7 @@ Até agora, você criou uma bola de bilhar facilmente reconhecível. No entanto,
 
 -   Opcionalmente, você pode ajustar o comportamento da iluminação configurando a propriedade **MaterialDiffuse** do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
- Para obter mais informações sobre como aplicar iluminação Lambert no seu sombreador, consulte [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+ Para obter mais informações sobre como aplicar a iluminação Lambert no sombreador, confira [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Com a iluminação Lambert aplicada, a bola de bilhar deve ser semelhante a esta:
 
@@ -123,7 +123,7 @@ O modelo de iluminação Lambert fornece o senso de forma e dimensão que estava
 
 2.  Opcionalmente, você pode ajustar a maneira que o realce especular se comporta ao configurar as propriedades especulares (**MaterialSpecular** e **MaterialSpecularPower**) do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
- Para obter mais informações sobre como aplicar iluminação especular no seu sombreador, consulte [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
+ Para obter mais informações sobre como aplicar realces especulares no sombreador, confira [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
 
  Com a iluminação especular aplicada, sua bola de bilhar deve ser semelhante a esta:
 
@@ -159,19 +159,19 @@ Com os realces especulares aplicados, a bola de bilhar parece muito convincente.
 
      ![A textura da parte superior do cubemap](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- Agora que criou texturas individuais para os lados do mapa de cubo, você pode usar uma ferramenta para agrupá-las em um mapa de cubo que pode ser armazenado em uma textura .dds única. Você pode usar qualquer programa que deseja que crie o mapa de cubo contanto que ele possa salvar o mapa de cubo no formato de textura .dds. Este passo a passo demonstra como criar a textura usando a ferramenta de textura do DirectX que faz parte do SDK do DirectX de junho de 2010.
+ Agora que você criou texturas individuais para os lados do mapa de cubo, use uma ferramenta para agrupá-las em um mapa de cubo que pode ser armazenado em uma única textura *.dds*. Você pode usar qualquer programa que deseja que crie o mapa de cubo contanto que ele possa salvar o mapa de cubo no formato de textura .dds. Este passo a passo demonstra como criar a textura usando a Ferramenta de Textura do DirectX, que faz parte do SDK do DirectX de junho de 2010.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Como montar um mapa de cubo usando a ferramenta de textura do DirectX
 
-1.  Na ferramenta de textura do DirectX, no menu principal, escolha **Arquivo**, **Nova Textura**. A caixa de diálogo **Nova Textura** é exibida.
+1.  Na Ferramenta de Textura do DirectX, no menu principal, escolha **Arquivo** > **Nova Textura**. A caixa de diálogo **Nova Textura** é exibida.
 
 2.  No grupo **Tipo de Textura**, escolha **Textura do Mapa de Cubo**.
 
 3.  No grupo **Dimensões**, digite o valor correto para a **Largura** e a **Altura**e, em seguida, escolha **OK**. Um novo documento de textura é exibido. Por padrão, a textura mostrada pela primeira vez no documento de textura corresponde à face do cubo **X positivo**.
 
-4.  Carregue a textura que você criou para o lado do cubo de textura na face do cubo. No menu principal, escolha **Arquivo**, **Abrir na Face desse Mapa de Cubo**, selecione a textura que você criou para o lado do cubo e, em seguida, escolha **Abrir**.
+4.  Carregue a textura que você criou para o lado do cubo de textura na face do cubo. No menu principal, escolha **Arquivo** > **Abrir na Face deste Mapa de Cubo**, selecione a textura que você criou para o lado do cubo e, em seguida, escolha **Abrir**.
 
-5.  Repita a etapa 4 para as faces do cubo **X negativo**, **Z positivo** e **Z negativo**. Para fazer isso, você deve exibir a face que deseja carregar. Para exibir uma face de mapa de cubo diferente, no menu principal, escolha **Exibir**, **Face do Mapa de Cubo**e, em seguida, selecione a face que deseja exibir.
+5.  Repita a etapa 4 para as faces do cubo **X negativo**, **Z positivo** e **Z negativo**. Para fazer isso, você deve exibir a face que deseja carregar. Para exibir uma face de mapa de cubo diferente, no menu principal, escolha **Exibir** > **Face do Mapa de Cubo** e, em seguida, selecione a face que deseja exibir.
 
 6.  Para a face do cubo **Y positivo**, carregue a textura que você criou na parte de cima do cubo de textura.
 

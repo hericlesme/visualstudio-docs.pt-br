@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745572"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977740"
 ---
 # <a name="how-to-model-3d-terrain"></a>Como modelar um terreno 3D
 
@@ -31,7 +31,7 @@ Ao terminar, o modelo deve ter esta aparência:
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).
+1.  Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao projeto, confira a seção Introdução em [Editor de modelo](../designers/model-editor.md).
 
 2.  Adicione um plano para a cena. Na **Caixa de Ferramentas**, em **Formas**, selecione **Plano** e mova-o para a superfície de design.
 
@@ -55,8 +55,8 @@ O modelo de terreno está concluído. Aqui está o modelo final novamente, com s
 
 ![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png)
 
-Você pode usar esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente com base na geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Use esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente baseado em geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editor de modelo](../designers/model-editor.md)
+- [Editor de modelos](../designers/model-editor.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691853"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302919"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Recursos, cenários e ferramentas de teste do desenvolvedor
 
@@ -31,7 +31,7 @@ Melhore a cobertura e evite regressões com IntelliTest. O IntelliTest reduz dra
 ![IntelliTest em ação](media/devtest-intellitest.png)
 
 * [Introduction to IntelliTest with Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx) (Introdução ao IntelliTest com o Visual Studio)
-* [IntelliTest – One Test to rule them all](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx) (IntelliTest – um teste para controlar todos)
+* [IntelliTest – um teste para controlar tudo](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
 * [Vídeos do IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Introdução ao IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Manual de referência do IntelliTest](intellitest-manual/index.md)
@@ -42,15 +42,15 @@ Teste sua interface do usuário com o que há de melhor com teste de interface d
 Os testes de IU codificados fornecem uma maneira de criar testes totalmente automatizados para validar a funcionalidade e o comportamento da interface do usuário do seu aplicativo.
 Eles podem automatizar o teste de interface do usuário em várias tecnologias, incluindo aplicativos UWP baseados em XAML, aplicativos de navegador e aplicativos SharePoint.
 
-Quer você escolha o que há de melhor em testes de IU codificados ou teste de interface do usuário genérico com base no navegador com o Selenium, o Visual Studio fornece todas as ferramentas necessárias.
+O Visual Studio fornece todas as ferramentas necessárias seja para o que há de melhor em testes de IU codificados ou em testes de interface do usuário genéricos com base em navegador com o Selenium.
 
-![Testes de interface do usuário e interface do usuário codificada](media/devtest-codeduitest.png)
+![Testes de interface do usuário com interface do usuário codificada](media/devtest-codeduitest.png)
 
-* [Usar automação de interface do usuário para testar código](use-ui-automation-to-test-your-code.md)
+* [Usar a automação de interface do usuário para testar seu código](use-ui-automation-to-test-your-code.md)
 * [Introdução à criação, à edição e à manutenção do teste de IU codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testar aplicativos UWP com testes de interface do usuário codificados](test-uwp-app-with-coded-ui-test.md)
+* [Testar aplicativos UWP com testes de IU codificados](test-uwp-app-with-coded-ui-test.md)
 * [Testar aplicativos do SharePoint com testes de IU codificados](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-* [Introdução aos testes de IU codificados com Visual Studio Enterprise (Laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Introdução aos testes de IU codificados com o Visual Studio Enterprise (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Teste de unidade efetivo com a cobertura de código do Visual Studio
 
@@ -62,8 +62,8 @@ A cobertura de código é uma opção quando você executa métodos de teste usa
 
 ![Testar com o Visual Studio Team Services e com o Team Foundation Server](media/devtest-codecoverage.png)
 
-* [Usando cobertura de código para determinar quanto código está sendo testado](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Teste de Unidade, Cobertura de Código e Análise de Clone de Código com o Visual Studio (Laboratório))
+* [Usando a cobertura de código para determinar quanto do código está sendo testado](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Teste de unidade, cobertura de código e análise de clone de código com o Visual Studio (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Personalizando a análise de cobertura de código](customizing-code-coverage-analysis.md)
 
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Teste de unidade com qualquer estrutura usando o Gerenciador de Testes de alto desempenho
@@ -72,9 +72,9 @@ O Gerenciador de Testes ajuda os desenvolvedores a criar, gerenciar e obter o m�
 
 ![Gerenciador de Testes do Visual Studio](media/devtest-testexplorer.png)
 
-* [Introdução ao Teste de Unidade](unit-test-your-code.md)
+* [Introdução ao teste de unidade](unit-test-your-code.md)
 * [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
-* [Escrever Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
+* [Escrevendo Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 * [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md)
 
 O Visual Studio também é extensível e abre a porta para adaptadores de teste de unidade de terceiros como o NUnit e o xUnit.net. Além disso, a capacidade de clone de código caminha lado a lado com a entrega de software de alta qualidade ajudando você a identificar blocos de código semanticamente semelhantes que podem ser candidatos para correções de bugs comuns ou refatoração.
@@ -84,6 +84,6 @@ O Visual Studio também é extensível e abre a porta para adaptadores de teste 
 ## <a name="see-also"></a>Consulte também
 
 * [Introdução ao teste de unidade](getting-started-with-unit-testing.md)
-* [Speed up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (Acelerar a execução de teste de unidade no Team Foundation Server)
+* [Acelerar a execução de teste de unidade no Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Execução de teste de unidade paralela e sensível ao contexto](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
-* [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Teste de Unidade, Cobertura de Código e Análise de Clone de Código com o Visual Studio (Laboratório))
+* [Teste de unidade, cobertura de código e análise de clone de código com o Visual Studio (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

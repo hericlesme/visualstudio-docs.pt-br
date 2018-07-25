@@ -11,24 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948399"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978379"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojetos
 
 Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando você cria um projeto baseado em um modelo multiprojetos usando a caixa de diálogo **Novo Projeto**, todos os projetos no modelo são adicionados à solução.
 
-Um modelo multiprojetos tem dois ou mais modelos de projeto e um modelo raiz do tipo `ProjectGroup`.
+Um modelo multiprojeto tem dois ou mais modelos de projeto e um modelo raiz do tipo **ProjectGroup**.
 
 Os modelos multiprojetos comportam-se de forma diferente dos modelos de projeto único. Eles têm as seguintes características exclusivas:
 
-- Os projetos individuais em um modelo multiprojetos não podem ter nomes atribuídos na caixa de diálogo **Novo Projeto**. Nesse caso, use o atributo `ProjectName` no elemento `ProjectTemplateLink` no arquivo *vstemplate* para especificar um nome para cada projeto.
+- Os projetos individuais em um modelo multiprojetos não podem ter nomes atribuídos na caixa de diálogo **Novo Projeto**. Em vez disso, use o atributo **ProjectName** no elemento **ProjectTemplateLink** do arquivo *vstemplate* para especificar um nome para cada projeto.
 
-- Os modelos multiprojetos podem conter projetos de diferentes linguagens, mas o modelo inteiro em si só pode ser colocado em uma única categoria. Especifique a categoria do modelo no elemento `ProjectType` do arquivo *vstemplate*.
+- Os modelos multiprojetos podem conter projetos de diferentes linguagens, mas o modelo inteiro em si só pode ser colocado em uma única categoria. Especifique a categoria de modelo no elemento **ProjectType** do arquivo *vstemplate*.
 
 Um modelo multiprojeto deve incluir os itens a seguir, compactados em um arquivo *.zip*:
 
@@ -39,32 +39,32 @@ Um modelo multiprojeto deve incluir os itens a seguir, compactados em um arquivo
 Por exemplo, um arquivo *.zip* de modelo multiprojeto com dois projetos poderia ter os seguintes arquivos e diretórios:
 
 - *MultiProjectTemplate.vstemplate*
-- *\Project1\Project1.vstemplate*
+- *\Project1\MyTemplate.vstemplate*
 - *\Project1\Project1.vbproj*
 - *\Project1\Class.vb*
-- *\Project2\Project2.vstemplate*
+- *\Project2\MyTemplate.vstemplate*
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
 O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de projeto único das seguintes maneiras:
 
-- O atributo `Type` do elemento `VSTemplate` tem o valor `ProjectGroup` em vez de `Project`. Por exemplo:
+- O atributo **Type** do elemento **VSTemplate** tem o valor **ProjectGroup**, em vez de **Project**. Por exemplo:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- O elemento `TemplateContent` contém um elemento `ProjectCollection` que tem um ou mais elementos `ProjectTemplateLink` que definem os caminhos para os arquivos *vstemplate* dos projetos incluídos. Por exemplo:
+- O elemento **TemplateContent** contém um elemento **ProjectCollection** que tem um ou mais elementos **ProjectTemplateLink** que definem os caminhos para os arquivos *vstemplate* dos projetos incluídos. Por exemplo:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -95,7 +95,7 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
 
 1. No diretório base, crie um arquivo XML com uma extensão de arquivo *.vstemplate*. Esse arquivo contém os metadados do modelo multiprojetos. Consulte o exemplo a seguir para obter a estrutura do arquivo. Certifique-se de especificar o caminho relativo para o arquivo *vstemplate* de cada projeto.
 
-1. Selecione o diretório base e, no menu de contexto ou no menu acionado com o botão direito do mouse, escolha **Enviar para** > **Pasta compactada (zipada)**.
+1. Selecione todos os arquivos no diretório base e, no menu de clique com o botão direito do mouse ou de contexto, escolha **Enviar para** > **Pasta compactada (zipada)**.
 
    Esses arquivos e pastas estão compactados em um arquivo *.zip*.
 
@@ -105,10 +105,10 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
 
 ## <a name="two-project-example"></a>Exemplo de dois projetos
 
-Esse exemplo mostra um arquivo *vstemplate* raiz multiprojeto básico. Neste exemplo, o modelo tem dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` especifica o nome que é fornecido para o projeto.
+Esse exemplo mostra um arquivo *vstemplate* raiz multiprojeto básico. Neste exemplo, o modelo tem dois projetos, **Meu Aplicativo do Windows** e **Minha Biblioteca de Classes**. O atributo **ProjectName** no elemento **ProjectTemplateLink** especifica o nome fornecido para o projeto.
 
 > [!TIP]
-> Se o atributo `ProjectName` não for especificado, o nome do arquivo *vstemplate* será usado como o nome do projeto.
+> Se o atributo **ProjectName** não for especificado, o nome do arquivo *vstemplate* será usado como o nome do projeto.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -134,7 +134,7 @@ Esse exemplo mostra um arquivo *vstemplate* raiz multiprojeto básico. Neste exe
 
 ## <a name="example-with-solution-folders"></a>Exemplo com pastas de solução
 
-Esse exemplo usa o elemento `SolutionFolder` para dividir os projetos em dois grupos, `Math Classes` e `Graphics Classes`. O modelo tem quatro projetos, dois dos quais são colocados em cada pasta de solução.
+Este exemplo usa o elemento **SolutionFolder** para dividir os projetos em dois grupos, **Math Classes** e **Graphics Classes**. O modelo tem quatro projetos, dois dos quais são colocados em cada pasta de solução.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

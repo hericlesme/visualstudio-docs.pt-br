@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572628"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280638"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
@@ -40,13 +40,11 @@ O VSCEIP está ativado por padrão. Você pode desligá-lo ou ativá-lo novament
 
 ### <a name="registry-settings"></a>Configurações do Registro
 
-Se você instalar as [Ferramentas de Build do Visual Studio](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017), precisará atualizar o Registro para configurar o VSCEIP. Os clientes corporativos podem construir uma política de grupo para aceitar ou recusar sua participação no VSCEIP por meio da definição de uma política baseada em Registro.
+Se você instalar as [Ferramentas de Build do Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), precisará atualizar o Registro para configurar o VSCEIP. Os clientes corporativos podem construir uma política de grupo para aceitar ou recusar sua participação no VSCEIP por meio da definição de uma política baseada em Registro.
 
 A chave do Registro e as configurações relevantes são as seguintes:
 
-Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
-Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
-Quando a Política de Grupo está habilitada, Chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
+Em um sistema operacional de 64 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**, em um sistema operacional de 32 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quando a Política de Grupo está habilitada, a chave é **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 Entrada = **OptIn**
 

@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b81821c6a0af0b8fa769c4ef7958b921cee91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921744"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077097"
 ---
-# <a name="xelement-class-dynamic-properties"></a>Propriedades dinâmicas da classe de XElement
+# <a name="xelement-class-dynamic-properties"></a>Propriedades dinâmicas da classe XElement
 
 Esta seção descreve as propriedades dinâmicas da classe de <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
@@ -35,5 +35,5 @@ Esta seção descreve as propriedades dinâmicas da classe de <xref:System.Xml.L
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement?displayProperty=fullName>
-- [Propriedades dinâmicas LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
+- [Propriedades dinâmicas do LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
 - [Propriedades dinâmicas da classe XAttribute](../designers/xattribute-class-dynamic-properties.md)

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575602"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081651"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Como compilar os mesmos arquivos de origem com opções diferentes
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Como criar os mesmos arquivos de origem com opções diferentes
 Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], você usa propriedades e condições para criar as diferentes configurações de build.  
   
-## <a name="using-properties-to-modify-projects"></a>Usando propriedades para modificar projetos  
- O elemento `Property` define uma variável que é referenciada várias vezes em um arquivo de projeto, como o local de um diretório temporário ou para definir os valores de propriedades que são usadas em várias configurações, como um build de Depuração e um build de Versão. Para obter mais informações sobre as propriedades, consulte [Propriedades do MSBuild](../msbuild/msbuild-properties.md).  
+## <a name="use-properties-to-modify-projects"></a>Usar propriedades para modificar projetos  
+ O elemento `Property` define uma variável que é referenciada várias vezes em um arquivo de projeto, como o local de um diretório temporário ou para definir os valores de propriedades que são usadas em várias configurações, como um build de Depuração e um build de Versão. Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).  
   
  Você pode usar propriedades para alterar a configuração de seu build sem precisar alterar o arquivo de projeto. O atributo `Condition` do elemento `Property` e do elemento `PropertyGroup` permite alterar o valor de propriedades. Para obter mais informações sobre as condições de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Condições](../msbuild/msbuild-conditions.md).  
   
@@ -49,20 +49,20 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>Especificando propriedades na linha de comando  
+## <a name="specify-properties-on-the-command-line"></a>Especificar propriedades na linha de comando  
  Quando o arquivo de projeto é escrito para aceitar várias configurações, você precisa ter a capacidade de alterar essas configurações sempre que compilar o projeto. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece essa capacidade, permitindo que propriedades sejam especificadas na linha de comando usando o comutador **/property** ou **/p**.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Para definir uma propriedade de projeto na linha de comando  
   
 -   Use o comutador **/property** com a propriedade e o valor da propriedade. Por exemplo:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - ou –  
+    ou  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,17 +70,17 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
 -   Use o comutador **/property** ou **/p** várias vezes com a propriedade e os valores de propriedade ou use um comutador **/property** ou **/p** e separe várias propriedades com ponto e vírgula (;). Por exemplo:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - ou –  
+    ou
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
- Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter mais informações sobre o uso de variáveis de ambiente, consulte [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter mais informações sobre como usar variáveis de ambiente, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
  O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.  
   
@@ -91,13 +91,13 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
  Para compilar a versão de depuração do projeto, digite:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Para compilar a versão comercial do projeto, digite:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Para compilar o projeto, digite o seguinte comando:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

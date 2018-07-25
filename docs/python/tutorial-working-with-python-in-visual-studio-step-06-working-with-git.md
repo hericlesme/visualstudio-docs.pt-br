@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com o Tutorial do Python, etapa 6, trabalhando com o Git
 description: Etapa 6 de um passo a passo básico do Python no Visual Studio, abordando os recursos relacionados ao Git do Visual Studio.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965014"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056489"
 ---
-# <a name="step-6-working-with-git"></a>Etapa 6: trabalhando com Git
+# <a name="step-6-work-with-git"></a>Etapa 6: Trabalhar com o Git
 
 **Etapa anterior: [instalando pacotes e gerenciando o ambiente do Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Este artigo fornece uma visão geral básica da criação de um repositório Git
 
 1. Ao usar um repositório local, as alterações confirmadas vão diretamente para o repositório. Se você estiver conectado a um repositório remoto, selecione o cabeçalho no **Team Explorer**, escolha **Sincronizar** para mudar para a seção **Sincronização** e trabalhar com os comandos pull e fetch apresentados.
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 Para ver breves instruções sobre a criação de um projeto de um repositório remoto do Git, confira [Início Rápido: clonar um repositório de código do Python no Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

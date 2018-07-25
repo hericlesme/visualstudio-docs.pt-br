@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446687"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117089"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
@@ -51,9 +51,9 @@ Você pode usar a caixa de diálogo **Arquivo** > **Opções de Salvamento Avan�
 ![Caixa de diálogo Opções Avançadas de Salvamento](media/line_endings.png)
 
 > [!NOTE]
-> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Escolha **Ferramentas**, **Personalizar...**  e, em seguida, escolha a guia **Comandos**. No lista suspensa da **Barra de menus**, escolha **Arquivo** e, em seguida, escolha o botão **Adicionar Comando...**. Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento...**. Escolha **OK** e, em seguida, escolha o botão **Mover para Baixo** para mover o comando para qualquer local no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Clique em **Ferramentas**, **Personalizar** e, em seguida, escolha a guia **Comandos**. Na lista suspensa **Barra de menus**, escolha **Arquivo** e, em seguida, clique no botão **Adicionar Comando**. Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento**. Escolha **OK** e, em seguida, escolha o botão **Mover para Baixo** para mover o comando para qualquer local no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Como alternativa, você pode acessar a caixa de diálogo **Opções de Salvamento Avançadas**, escolhendo **Arquivo** > **Salvar \<arquivo\> Como...**. Na caixa de diálogo **Salvar Arquivo Como**, escolha o triângulo de lista suspensa ao lado do botão **Salvar** e escolha **Salvar com codificação...**.
+> Como alternativa, você pode acessar a caixa de diálogo **Opções de Salvamento Avançadas**, escolhendo **Arquivo** > **Salvar \<arquivo\> Como**. Na caixa de diálogo **Salvar Arquivo Como**, escolha o triângulo suspenso ao lado do botão **Salvar** e clique em **Salvar com codificação**.
 
 ## <a name="see-also"></a>Consulte também
 

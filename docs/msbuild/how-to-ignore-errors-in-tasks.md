@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578595"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081463"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
 Às vezes você deseja que um build seja tolerante a falhas em determinadas tarefas. Se essas tarefas não críticas falharem, você deseja que o build continue, pois ela ainda pode produzir a saída necessária. Por exemplo, se um projeto usa uma tarefa `SendMail` para enviar uma mensagem de email depois que cada componente é compilado, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que os servidores de email não estejam disponíveis e as mensagens de status não possam ser enviadas. Ou, por exemplo, se arquivos intermediários são geralmente excluídos durante o build, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que esses arquivos não possam ser excluídos.  
   
-## <a name="using-the-continueonerror-attribute"></a>Usar o atributo ContinueOnError  
+## <a name="use-the-continueonerror-attribute"></a>Usar o atributo ContinueOnError  
  O atributo `ContinueOnError` do elemento `Task` controla se um build é interrompida ou continua quando ocorre uma falha de tarefa. Esse atributo também controla se os erros são tratados como erros ou avisos quando o build continua.  
   
  O atributo `ContinueOnError` pode conter um dos seguintes valores:  
@@ -63,5 +63,5 @@ ms.locfileid: "31578595"
   
 ## <a name="see-also"></a>Consulte também
 [MSBuild](../msbuild/msbuild.md)  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)
+[Referência de tarefas](../msbuild/msbuild-task-reference.md)   
+[Tarefas](../msbuild/msbuild-tasks.md)

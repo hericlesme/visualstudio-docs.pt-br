@@ -1,7 +1,7 @@
 ---
 title: Janela interativa do Python (REPL)
 description: Como usar a janela interativa (REPL) para o código Python no Visual Studio para desenvolvimento rápido de código.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582339"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057912"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Trabalhando com a Janela Interativa do Python
+# <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela interativa do Python
 
 O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impressão-loop) para cada um dos ambientes do Python, que é uma melhoria do REPL obtido com `python.exe` na linha de comando. A janela interativa (aberta com os comandos de menu **Exibir > Outras Janelas > Interativa do &lt;ambiente&gt;**) permite que você insira o código Python arbitrário e veja resultados imediatos. Esse modo de codificação ajuda a você aprender e experimentar com APIs e bibliotecas e a desenvolver de forma interativa o código funcional para incluir em seus projetos.
 

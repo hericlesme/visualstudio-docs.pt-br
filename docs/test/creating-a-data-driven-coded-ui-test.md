@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692179"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303034"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -40,7 +40,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
    > [!NOTE]
    > Se o modelo **Projeto de Teste de IU Codificado** não for exibido, será necessário [instalar o componente Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Escolha registrar as ações.
+2.  Escolha **registrar as ações**.
 
      ![Escolher registrar as ações](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -65,7 +65,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 5.  Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
 
-     O resultado do teste que mostra se o teste passou ou falhou é exibido na janela do Gerenciador de Testes. Para abrir a janela do Gerenciador de Testes, no menu **Teste**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
+     O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela do Gerenciador de Testes, no menu **Teste**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
 6.  Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Gerar Código para Teste de IU Codificado** e, em seguida, **Usar Construtor de Teste de IU Codificado**.
 
@@ -98,7 +98,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 ### <a name="step-2---create-a-data-set"></a>Etapa 2 - Criar um conjunto de dados
 
-1.  Adicione um arquivo de texto ao projeto dataDrivenSample chamado `data.csv`.
+1.  Adicione um arquivo de texto ao projeto dataDrivenSample denominado *data.csv*.
 
      ![Adicionar um arquivo de valores separados por vírgula ao projeto](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -180,7 +180,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
      Para descobrir quais propriedades de pesquisa nas quais codificar os dados, use o Editor de Teste de Interface do Usuário Codificados.
 
-    -   Abra o arquivo UIMap.uitest.
+    -   Abra o arquivo *UIMap.uitest*.
 
          ![Abrir o Editor de Teste de IU Codificado](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -188,7 +188,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
          ![Usar o Editor de Teste de IU Codificado para ajudá-lo com o código](../test/media/cuit_datadriven_testeditor.png)
 
-    -   Na Janela Propriedades, abra **Propriedades de Pesquisa**. O valor de **Name** das propriedades de pesquisa é o que está sendo manipulado no código usando a fonte de dados. Por exemplo, o `SearchProperties` está sendo atribuído aos valores na primeira coluna de cada linha de dados: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para as três iterações, esse teste alterará o valor de **Name** da propriedade de pesquisa para 3, depois 5 e finalmente 6.
+    -   Na janela **Propriedades**, abra **Propriedades de Pesquisa**. O valor de **Name** das propriedades de pesquisa é o que está sendo manipulado no código usando a fonte de dados. Por exemplo, o `SearchProperties` está sendo atribuído aos valores na primeira coluna de cada linha de dados: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para as três iterações, esse teste alterará o valor de **Name** da propriedade de pesquisa para 3, depois 5 e finalmente 6.
 
          ![Usar as propriedades de pesquisa para ajudar na codificação](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -230,15 +230,15 @@ Você pode usar as cadeias de caracteres de fonte de dados de amostra na tabela 
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?
 
-**R:** Todas as alterações de código feitas no arquivo UIMapDesigner.cs serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Neste exemplo e na maioria dos casos, as alterações de código necessárias para habilitar um teste para usar uma fonte de dados podem ser feitas no arquivo de código-fonte do teste (ou seja, CodedUITest1.cs).
+**R:** Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Neste exemplo e na maioria dos casos, as alterações de código necessárias para habilitar um teste para usar uma fonte de dados podem ser feitas no arquivo de código-fonte do teste (ou seja, o *CodedUITest1.cs*).
 
-Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.
+Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Você precisa remover a referência ao método original no arquivo *UITest.cs* codificado e substituí-lo pelo nome do método renomeado.
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
-- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
-- [Melhores práticas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
-- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
+- [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
+- [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

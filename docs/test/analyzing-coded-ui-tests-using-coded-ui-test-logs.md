@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750721"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233898"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
 Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado. Os logs são apresentados em um formato que permite depurar os problemas rapidamente.
 
@@ -26,7 +26,7 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 - Use a versão 4 do .NET Framework sem arquivo *App.config* no projeto de teste:
 
-   1. Abra o arquivo **QTAgent32_40.exe.config**. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Abra o arquivo *QTAgent32_40.exe.config*. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
 
@@ -34,7 +34,7 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 - Use a versão 4.5 do .NET Framework sem arquivo *App.config* no projeto de teste:
 
-   1. Abra o arquivo **QTAgent32.exe.config**. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Abra o arquivo *QTAgent32.exe.config*. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
 
@@ -58,20 +58,20 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Etapa 2: Execute o teste de IU codificado e veja o log
 
-Quando executar um teste de IU codificado com as modificações no arquivo **QTAgent32.exe.config**, você verá um link de saída nos resultados do Gerenciador de Testes. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.
+Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent32.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.
 
 1.  No menu **Teste**, escolha a opção **Windows** e selecione **Gerenciador de Testes**.
 
 2.  No menu **Compilar**, escolha **Compilar Solução**.
 
-3.  No Gerenciador de Testes, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
+3.  No **Gerenciador de Testes**, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
 
      Os testes automatizados são executados e indicam se passaram ou falharam.
 
     > [!TIP]
-    > Para exibir o Gerenciador de Testes, escolha **Teste** > **Windows** e escolha **Gerenciador de Testes**.
+    > Para exibir o **Gerenciador de Testes**, escolha **Teste** > **Windows** e escolha **Gerenciador de Testes**.
 
-4.  Clique no link **Saída** nos resultados do Gerenciador de Testes.
+4.  Clique no link **Saída** nos resultados do **Gerenciador de Testes**.
 
      ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png)
 
@@ -87,5 +87,5 @@ Quando executar um teste de IU codificado com as modificações no arquivo **QTA
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Como executar testes no Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

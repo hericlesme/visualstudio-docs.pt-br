@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269184"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078921"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.
@@ -29,14 +29,14 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 -   No Designer XAML, siga um destes procedimentos:
 
-    -   Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).
+    -   Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione **Enter**).
 
     -   Arraste um elemento da **Caixa de Ferramentas** para a prancheta.
 
     -   Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos
- Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos da janela Estrutura de Tópicos de Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** estiver definida para um elemento). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.
+ Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos, na janela Estrutura de Tópicos do Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** de um elemento está definida). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.
 
 #### <a name="to-change-the-layering-order"></a>Para alterar a ordem das camadas
 
@@ -59,11 +59,11 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 ## <a name="changing-the-alignment-of-an-element"></a>Alterando o alinhamento de um elemento
  Você pode alinhar elementos na prancheta usando comandos de menu ou arrastando os elementos para guias de alinhamento.
 
- *Guia de alinhamento* é uma indicação visual que ajuda a alinhar um elemento em relação a outros elementos no aplicativo.
+ Uma *guia de alinhamento* é uma indicação visual que ajuda você a alinhar um elemento em relação a outros elementos no aplicativo.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Para alinhar dois ou mais elementos usando comandos de menu
 
-1.  Selecione os elementos que deseja alinhar. Você pode selecionar mais de um elemento mantendo pressionada a tecla CTRL ao selecionar os elementos.
+1.  Selecione os elementos que deseja alinhar. Selecione mais de um elemento mantendo a tecla **Ctrl** pressionada enquanto seleciona os elementos.
 
 2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Esquerda**, **Centralizar**, **Direita** ou **Alongar**.
 
@@ -100,7 +100,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Para agrupar elementos em um novo contêiner de layout
 
-1.  Selecione os elementos que você deseja agrupar. (Para selecionar diversos elementos, mantenha pressionada a tecla CTRL ao clicar neles.)
+1.  Selecione os elementos que você deseja agrupar. (Para selecionar vários elementos, pressione e segure a tecla **Ctrl** pressionada enquanto clica neles.)
 
 2.  Clique com o botão direito do mouse nos elementos selecionados, aponte para **Agrupar em** e clique no tipo de contêiner de layout no qual deseja que o grupo resida.
 
@@ -118,7 +118,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 #### <a name="to-reset-the-element-layout"></a>Para redefinir o layout do elemento
 
--   Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento, selecione **Layout**, **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout**, **Redefinir Tudo** para redefinir todas as propriedades de layout para o elemento).
+-   Na janela Estrutura de Tópicos do Documento ou na prancheta, clique com o botão direito do mouse no elemento, escolha **Layout** > **Redefinir** *NomePropriedade*, em que *NomePropriedade* é a propriedade que você deseja redefinir (ou escolha **Layout** > **Redefinir Tudo** para redefinir todas as propriedades de layout do elemento).
 
 ## <a name="see-also"></a>Consulte também
 

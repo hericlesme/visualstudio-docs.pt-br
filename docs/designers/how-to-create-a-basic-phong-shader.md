@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746579"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924376"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
 
@@ -25,11 +25,11 @@ Este artigo demonstra como usar o Designer de Sombreador e o DGSL (Directed Grap
 
 O modelo de iluminação de Phong amplia o modelo de iluminação de Lambert para incluir o realce especular, que simula as propriedades de reflexão de uma superfície. O componente especular fornece iluminação adicional das mesmas fontes de luz direcionais que são usadas no modelo de iluminação Lambert, mas sua contribuição para a cor final é processada de forma diferente. O realce especular afeta cada superfície na cena de forma diferente, com base na relação entre a direção da exibição, a direção das fontes de luz e a orientação da superfície. É um produto da cor especular, do potencial de reflexão e da orientação da superfície e a cor, intensidade e direção das fontes de luz. As superfícies que refletem a fonte de luz diretamente no visualizador recebem a contribuição especular máxima e as superfícies que refletem a fonte de luz distante do visualizador não recebem nenhuma contribuição. No modelo de iluminação de Phong, um ou mais componentes especulares são combinados para determinar a cor e a intensidade do realce especular para cada ponto no objeto e, em seguida, são adicionados ao resultado do modelo de iluminação de Lambert para produzir a cor final do pixel.
 
-Para obter mais informações sobre o modelo de iluminação de Lambert, consulte [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+Para obter mais informações sobre o modelo de iluminação de Lambert, confira [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+1.  Criar um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2.  Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
@@ -59,7 +59,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
  ![Iluminação Phong aplicada a um modelo](../designers/media/digit-lighting-model.png)
 
- Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para obter mais informações de como aplicar um sombreador a um modelo 3D, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 

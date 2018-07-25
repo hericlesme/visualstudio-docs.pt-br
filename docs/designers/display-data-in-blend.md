@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918135"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890351"
 ---
 # <a name="display-data-in-blend"></a>Exibir dados no Blend
 
-É possível exibir dados de exemplo no designer ao personalizar o layout de páginas. É possível gerar dados de exemplo do zero ou usando uma classe existente. Também é possível se conectar a *Dados ao vivo* que aparecerão quando o aplicativo for executado.
+É possível exibir dados de exemplo no designer ao personalizar o layout de páginas. É possível gerar dados de exemplo do zero ou usando uma classe existente. Você também pode se conectar aos *Dados dinâmicos* que aparecem no aplicativo quando você o executa.
 
 ## <a name="generate-sample-data"></a>Gerar dados de exemplo
 
@@ -45,16 +45,16 @@ Para gerar dados de exemplo com base em uma classe, abra um documento XAML e, no
 
 **Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo de uma classe](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
 
-**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinando associações de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mix up some data binding with Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg) (Combinar algumas associações de dados com o Blend).
 
 ## <a name="show-live-data-in-a-wpf-application"></a>Mostrar dados ao vivo em um aplicativo da WPF
 
 **Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar uma fonte de dados XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar dados ao vivo em um aplicativo de Loja ou Telefone
+## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar dados dinâmicos em um aplicativo de loja ou de telefone
 
-Consulte [Trabalhando com os dados e arquivos (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
+Confira [Trabalhar com arquivos e dados (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando uma interface do usuário usando o Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Criar uma interface do usuário usando o Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

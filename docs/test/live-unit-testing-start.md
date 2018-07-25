@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978912"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117791"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introdução ao Live Unit Testing no Visual Studio
 
@@ -41,7 +41,7 @@ Comece criando uma solução do Visual Studio chamada `UtilityLibraries` que con
 
 A solução é apenas um contêiner para um ou mais projetos. Para criar a solução, abra o Visual Studio 2017 e faça o seguinte:
 
-1. Selecione **Arquivo**, **Novo**, **Projeto** no menu de nível superior do Visual Studio.
+1. Selecione **Arquivo** > **Novo** > **Projeto** no menu de nível superior do Visual Studio.
 
 1. Na caixa de diálogo **Novo Projeto**, expanda o nó **Outros Tipos de Projeto** e selecione **Soluções do Visual Studio**. Selecione o modelo **Solução em Branco** no painel à direita e insira `UtilityLibraries` na caixa de texto **Nome**, como mostra a figura a seguir:
 
@@ -52,7 +52,7 @@ A solução é apenas um contêiner para um ou mais projetos. Para criar a solu�
 Agora que já criou a solução, você criará uma biblioteca de classes chamada `StringLibrary` que contém vários métodos de extensão para trabalhar com cadeias de caracteres.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar**, **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
 1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Standard**.
 
@@ -80,7 +80,7 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 1.  Selecione **Compilar**, **Compilar Solução** no menu de nível superior do Visual Studio. O Visual Studio deverá compilar a biblioteca com êxito.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar**, **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
 1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Standard**.
 
@@ -118,7 +118,7 @@ Agora que já criou a solução, você criará uma biblioteca de classes chamada
 A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca `StringLibrary`. Crie testes de unidade, executando as seguintes etapas:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar**, **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
 1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó C# e, em seguida, selecione **.NET Core**.
 
@@ -156,7 +156,7 @@ A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar**, **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução `UtilityLibraries` e selecione **Adicionar** > **Novo Projeto**.
 
 1. Na caixa de diálogo **Adicionar Novo Projeto** selecione o nó Visual Basic e, em seguida, selecione **.NET Core**.
 

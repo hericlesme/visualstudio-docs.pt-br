@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446495"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117557"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -58,7 +58,7 @@ Se você remover um arquivo EditorConfig do seu projeto ou da base de código, s
 
 1. Abra um projeto ou uma solução no Visual Studio. Selecione o nó do projeto ou da solução, dependendo se as configurações de *.editorconfig* tiverem que ser aplicadas a todos os projetos na solução ou a apenas um. Também é possível selecionar uma pasta no projeto ou na solução para adicionar o arquivo *.editorconfig*.
 
-1. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item...** ou pressione **Ctrl**+**Shift**+**A**.
+1. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item** ou pressione **Ctrl**+**Shift**+**A**.
 
    A caixa de diálogo **Adicionar Novo Item** é aberta.
 

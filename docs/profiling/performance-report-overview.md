@@ -14,21 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255987"
 ---
-# <a name="performance-report-overview"></a>Visão geral de Relatório de Desempenho
+# <a name="performance-report-overview"></a>Visão geral do relatório de desempenho
 Você pode exibir os dados de criação de perfil de uma sessão de desempenho na janela **Relatório de Desempenho** do IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio Team System Development Edition. Os dados de criação de perfil são salvos em arquivos .vsp e .vsps. As janelas de exibição de relatório permitem exibir e analisar problemas de desempenho do aplicativo.  
   
 > [!CAUTION]
->  Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle rígido sobre a distribuição de dados, tanto em seu formato .vsp nativo quanto exportado para um arquivo .csv ou .xml.  
+>  Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle restrito sobre a distribuição de dados, tanto em seu formato nativo .*vsp* quanto no formato exportado para um arquivo .*csv* ou .*xml*.  
 >   
->  Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais podem aparecer no arquivo de log de rastreamento de evento (.etl). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.  
+>  Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais poderão aparecer no arquivo de log de rastreamento de eventos (.*etl*). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.  
   
-## <a name="performance-report-window"></a>Janela no Relatório de Desempenho  
+## <a name="performance-report-window"></a>Janela Relatório de Desempenho  
  A janela Relatório de Desempenho é uma janela de ferramentas que é usada para exibir, gerenciar e filtrar dados de desempenho e inclui um controle de consulta personalizável.  
   
  Na barra de ferramentas principal da janela Relatório de Desempenho, você pode acessar cada modo de exibição. Clique na seta ao lado da lista **Exibição Atual** para exibir e selecionar as exibições individuais que estão disponíveis.  
@@ -70,7 +71,7 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
  A exibição Ponteiro de Instrução permite exibir as instruções específicas que foram executadas durante a criação de perfil de amostragem. Para obter mais informações, consulte [Exibição de IPs (Ponteiros de Instrução)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Exibição de alocação  
- A exibição Alocação estará disponível se **Coletar alocação de objeto .NET** tiver sido selecionado na página **Geral** da caixa de diálogo de propriedades da **Sessão de Desempenho**. Consulte [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md). A exibição Alocação lista os objetos do .NET que foram alocados pelo aplicativo ou componente. Quando uma linha de objeto é expandida, uma árvore de chamadas é exibida. A árvore de chamadas exibe os caminhos de execução que resultaram na criação do objeto. Informações também são exibidas sobre o número de alocações inclusivas e exclusivas para cada função na árvore de chamadas. A exibição Alocação também pode expandir e realçar o caminho de execução de uma função que alocou o número máximo de objetos. Para exibir o caminho mais ativo, clique com o botão direito do mouse na função de atalho e, em seguida, clique em **Expandir Afunilamento**. Para obter mais informações, consulte [Coletando alocação de memória e dados de tempo de vida do .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Exibição Alocações](../profiling/dotnet-memory-allocations-view.md).  
+ A exibição Alocação estará disponível se **Coletar alocação de objeto .NET** tiver sido selecionado na página **Geral** da caixa de diálogo de propriedades da **Sessão de Desempenho**. Veja [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md). A exibição Alocação lista os objetos do .NET que foram alocados pelo aplicativo ou componente. Quando uma linha de objeto é expandida, uma árvore de chamadas é exibida. A árvore de chamadas exibe os caminhos de execução que resultaram na criação do objeto. Informações também são exibidas sobre o número de alocações inclusivas e exclusivas para cada função na árvore de chamadas. A exibição Alocação também pode expandir e realçar o caminho de execução de uma função que alocou o número máximo de objetos. Para exibir o caminho mais ativo, clique com o botão direito do mouse na função de atalho e, em seguida, clique em **Expandir Afunilamento**. Para obter mais informações, confira [Coletar dados de tempo de vida e de alocação de memória do .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Exibição Alocações](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Exibição Tempo de Vida de Objetos  
  A exibição Tempo de Vida do Objeto estará disponível se **Coletar informações de alocação de objeto do .NET** e **Coletar também as informações de tempo de vida do objeto .NET** forem marcados na página **Geral** a caixa de diálogo de propriedades **Sessão de Desempenho**.  
@@ -95,5 +96,5 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
 -   **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.  
   
 ## <a name="see-also"></a>Consulte também  
- [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
+ [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
  [Exibições de relatório de desempenho](../profiling/performance-report-views.md)

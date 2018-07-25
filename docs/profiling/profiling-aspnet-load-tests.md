@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 58e4e43e66401323772dbb14a43c47f63004130d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03d6b6ec8cc244329bd46b73eebd21bdadef6a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254720"
 ---
-# <a name="profiling-aspnet-load-tests"></a>Criando perfis dos testes de carga do ASP.NET
+# <a name="profile-aspnet-load-tests"></a>Testes de carga do ASP.NET de perfil
 Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizados executados em projetos de sites da Web ASP.NET. Você pode coletar dados de amostragem e interação entre camadas. Para mais informações, consulte os seguintes tópicos:  
   
  [(NIB) Como executar uma sessão de desempenho em um aplicativo Web do Editor de Testes de Desempenho Web](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
@@ -25,6 +26,6 @@ Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMex
   
 ## <a name="see-also"></a>Consulte também  
  [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
- [Usando regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)   
+ [Usar regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)   
  [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)   
- [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)
+ [Exibição Interações de Camada](../profiling/tier-interactions-view.md)

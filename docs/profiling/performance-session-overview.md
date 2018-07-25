@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255152"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
 Esta visão geral explica as noções básicas de criação de perfil. Desenvolvedores pouco familiarizados com o trabalho de desempenho verão como as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podem ajudá-los a se tornarem rapidamente produtivos e a aumentar o desempenho do seu código. Desenvolvedores experientes na criação de perfis podem obter uma visão geral dos processos e recursos específicos das Ferramentas de Criação de Perfil.  
@@ -76,4 +77,4 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
- [Passo a passo: identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)
+ [Passo a passo: identificar problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)

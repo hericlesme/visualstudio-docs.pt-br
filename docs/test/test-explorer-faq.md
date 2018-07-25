@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975622"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303277"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -72,10 +72,10 @@ ms.locfileid: "31975622"
   Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe refletem o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
   ![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.
 
-O filtro de caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida na versão prévia 3 da versão 15.7 do Visual Studio 2017. Esse recurso tinha pouco uso, e o Gerenciador de Testes pode recuperar os métodos de teste com mais rapidez com a exclusão desse recurso. Se essa alteração interrompe seu fluxo de desenvolvimento, informe-nos enviando comentários na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/).
+O filtro de caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida na versão prévia 3 da versão 15.7 do Visual Studio 2017. Esse recurso tinha pouco uso, e o Gerenciador de Testes pode recuperar os métodos de teste com mais rapidez com a exclusão desse recurso. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Recursos
 

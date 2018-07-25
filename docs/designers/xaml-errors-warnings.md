@@ -10,14 +10,14 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746618"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077797"
 ---
-# <a name="xaml-errors-and-warnings"></a>Avisos e Erros XAML
+# <a name="xaml-errors-and-warnings"></a>Avisos e erros de XAML
 
 Ao criar XAML, o Visual Studio analisa o código conforme você digita. Um rabisco aparece em uma linha de código quando um erro é detectado. Se você passar o mouse sobre o rabisco, verá mais informações sobre o erro ou aviso. Em alguns erros e avisos, uma lâmpada de Ação rápida é exibida. Ela também aparece ao pressionar **Ctrl**+**.** o atalho de teclado exibe as opções para corrigir o problema.
 
@@ -32,7 +32,7 @@ Em segundo plano, várias ferramentas analisam o XAML em paralelo. Erros de XAML
 |Editar e Continuar em XAML|XECxxxx|
 
 > [!Note]
-> Nem todos os erros/avisos têm um código correspondente. Geralmente, esses erros são do XAML Designer.
+> Nem todos os erros ou avisos têm um código correspondente. Geralmente, esses erros são do XAML Designer.
 
 
 ## <a name="suppress-xaml-designer-errors"></a>Suprimir erros do XAML Designer

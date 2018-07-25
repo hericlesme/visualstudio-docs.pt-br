@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a514459e834e5652e544991eb061f0c96767dd32
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31964945"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302634"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Criar um adaptador de dados de diagnóstico para coletar dados personalizados ou afetar um computador de teste
 
@@ -24,7 +24,7 @@ ms.locfileid: "31964945"
 
 Você pode fornecer as informações padrão para o adaptador de dados de diagnóstico personalizado usando um arquivo de parâmetros de configuração. Por exemplo, você pode fornecer informações sobre o local do arquivo que deseja coletar e anexar aos resultados do teste, ou quanto espaço em disco você deseja deixar no sistema. Esses dados podem ser configurados para cada parâmetro de teste criado. Eles podem ser exibidos e editados usando o editor padrão fornecido com o Microsoft Test Manager ou você pode criar seu próprio controle de usuário para usar como editor. Todas as alterações feitas na configuração do adaptador no editor são armazenadas com as configurações de teste.
 
-Se você estiver executando seus testes do Visual Studio, deverá definir essas configurações de teste como ativas. Para obter mais informações sobre as configurações de teste, consulte [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+Se você estiver executando seus testes do Visual Studio, deverá definir essas configurações de teste como ativas. Para obter mais informações sobre as configurações de teste, confira [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
 ## <a name="tasks"></a>Tarefas
 
@@ -35,7 +35,7 @@ Se você estiver executando seus testes do Visual Studio, deverá definir essas 
 |**Criar um adaptador de dados de diagnóstico:** você cria um adaptador de dados de diagnóstico criando uma biblioteca de classes e usa as APIs de diagnóstico do adaptador de dados para coletar informações desejadas ou afetar um sistema de teste usado para executar os testes.|-   [Como criar um adaptador de dados de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Instalar um adaptador de dados de diagnóstico personalizado:** você pode instalar o adaptador de dados de diagnóstico ou um adaptador fornecido por outra pessoa copiando no diretório correto.|-   [Como instalar um adaptador de dados de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Selecionar um adaptador de dados de diagnóstico personalizado para usar quando testes forem executados:** você pode selecionar qual adaptador de dados de diagnóstico será usado para suas configurações de teste, de forma que o adaptador seja usado quando os testes forem executados.|-   [Coletar dados de diagnóstico durante testes (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [Coletar dados de diagnóstico em testes manuais (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
-|**Configurar o que um adaptador de dados de diagnóstico faz:** você pode configurar os parâmetros para controlar as ações do adaptador de dados de diagnóstico nessas configurações de teste.|-   [Como criar um editor personalizado para dados para o adaptador de dados de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
+|**Configurar o que um adaptador de dados de diagnóstico faz:** você pode configurar os parâmetros para controlar as ações do adaptador de dados de diagnóstico nessas configurações de teste.|-   [Como criar um editor personalizado de dados para o adaptador de dados de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>Consulte também
 

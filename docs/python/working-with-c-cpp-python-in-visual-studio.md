@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com C++ e Python
 description: Um passo a passo da criação de uma extensão em C++ para Python usando o Visual Studio, incluindo uma depuração de modo misto.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979263"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847811"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Criando uma extensão do C++ para o Python
 
@@ -120,7 +120,7 @@ Para obter mais informações, consulte [Instalando o suporte do Python para Vis
 
 1. Defina as propriedades específicas, conforme descrito na tabela a seguir e, em seguida, selecione **OK**.
 
-    | Tabulação | propriedade | Valor |
+    | Tabulação | Propriedade | Valor |
     | --- | --- | --- |
     | Geral | Geral > Nome de Destino | Especifique o nome do módulo ao qual você deseja se referir do Python nas instruções `from...import`. Você pode usar esse mesmo nome em C++ ao definir o módulo para Python. Se você quiser usar o nome do projeto como o nome do módulo, deixe o valor padrão de `$(ProjectName)`. |
     | | Geral > Extensão de Destino | .pyd |
@@ -283,6 +283,8 @@ Depois de concluir um dos métodos acima, você poderá chamar a função `fast_
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Se o comando **Start Without Debugging** estiver desabilitado, clique com o botão direito do mouse no projeto do Python no Gerenciador de Soluções e selecione **Definir como Projeto de Inicialização**.
 
 1. Tente aumentar a variável `COUNT` para que as diferenças sejam mais evidentes. Um build de depuração do módulo C++ também é executado mais lentamente do que um build de liberação porque o build de depuração é menos otimizado e contém várias verificações de erro. Fique à vontade para alternar entre essas configurações para comparação.
 

@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477503"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079632"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como referenciar o nome ou local do arquivo de projeto
-Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem ter de criar sua própria propriedade. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece propriedades reservadas que referenciam o nome do arquivo de projeto e outras propriedades relacionadas ao projeto. Para obter mais informações sobre propriedades reservadas, consulte [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como referenciar o nome ou o local do arquivo de projeto
+Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem ter de criar sua própria propriedade. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece propriedades reservadas que referenciam o nome do arquivo de projeto e outras propriedades relacionadas ao projeto. Para obter mais informações sobre propriedades reservadas, confira [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
-## <a name="using-the-msbuildprojectname-property"></a>Usar a propriedade MSBuildProjectName  
- O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece algumas propriedades reservadas que você pode usar em seus arquivos de projeto sem defini-los a cada vez. Por exemplo, a propriedade reservada `MSBuildProjectName` fornece uma referência ao nome do arquivo de projeto.  
+## <a name="use-the-project-properties"></a>Usar as propriedades do projeto
+ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece algumas propriedades reservadas que você pode usar em seus arquivos de projeto sem defini-los a cada vez. Por exemplo, a propriedade reservada `MSBuildProjectName` fornece uma referência ao nome do arquivo de projeto. Por exemplo, a propriedade reservada `MSBuildProjectDirectory` fornece uma referência ao nome do arquivo de projeto.
   
-#### <a name="to-use-the-msbuildprojectname-property"></a>Para usar a propriedade MSBuildProjectName  
+#### <a name="to-use-the-project-properties"></a>Para usar as propriedades do projeto
   
 -   Faça referência à propriedade no arquivo de projeto com a notação $(), como faria com qualquer propriedade. Por exemplo:  
   
@@ -39,7 +39,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
     <CSC Sources = "@(CSFile)"   
         OutputAssembly = "$(MSBuildProjectName).exe"/>  
     </CSC>  
-    ```  
+    ```          
   
  Uma vantagem de usar uma propriedade reservada é que qualquer alteração no nome do arquivo de projeto é incorporada automaticamente. Na próxima vez que você compilar o projeto, o arquivo de saída terá o novo nome sem necessidade de ação adicional de sua parte.  
   
@@ -56,7 +56,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
     <!-- Specify the inputs -->  
     <ItemGroup>  
         <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
+     </ItemGroup>  
     <Target Name = "Compile">  
         <!-- Run the Visual C# compilation using  
         input files of type CSFile -->  
@@ -73,7 +73,20 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
     </Target>  
 </Project>  
 ```  
+
+## <a name="example"></a>Exemplo
+ O arquivo de projeto de exemplo a seguir usa a propriedade reservada `MSBuildProjectDirectory` para criar o caminho completo para um arquivo no local do arquivo de projeto.  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">     
+    
+    <!-- Build the path to a file in the root of the project -->  
+    <PropertyGroup>  
+        <NewFilePath>$([System.IO.Path]::Combine($(MSBuildProjectDirectory), `BuildInfo.txt`))</NewFilePath>
+    </PropertyGroup>  
+</Project>  
+```  
   
 ## <a name="see-also"></a>Consulte também  
 [MSBuild](../msbuild/msbuild.md)  
- [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com o Tutorial do Python, Etapa 1, criar um projeto
 description: Visão geral e Etapa 1 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo pré-requisitos e a criação de um novo projeto do Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031703"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057005"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Trabalhando com o Python no Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabalhar com Python no Visual Studio
 
 O Python é uma linguagem de programação popular confiável, flexível, fácil de aprender, de uso gratuito em todos os sistemas operacionais e com suporte em uma sólida comunidade de desenvolvedores e várias bibliotecas gratuitas. A linguagem é compatível com todas as formas de desenvolvimento, incluindo aplicativos Web, serviços Web, aplicativos de área de trabalho, scripts e computação científica e, da mesma forma, é usada por diversas universidades, vários cientistas e desenvolvedores casuais e profissionais.
 
@@ -73,7 +73,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 > [!div class="nextstepaction"]
 > [Escrevendo e executando um código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Projetos do Python no Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Saiba mais sobre a linguagem Python em python.org](https://www.python.org)

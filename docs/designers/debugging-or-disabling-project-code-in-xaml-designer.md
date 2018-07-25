@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925811"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890559"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
-Em muitos casos, exceções sem tratamento no Designer XAML podem ser causadas quando o código de projeto tenta acessar propriedades ou métodos que retornam valores diferentes ou que funcionam de maneira diferente, quando o aplicativo é executado no designer. Você pode resolver essas exceções ao depurar o código do projeto em outra instância do Visual Studio ou impedir exceções temporariamente desabilitando o código do projeto no designer.
+Em muitos casos, as exceções sem tratamento no Designer **XAML** podem ser causadas quando o código do projeto tenta acessar propriedades ou métodos que retornam valores diferentes ou que funcionam de maneira diferente quando o aplicativo é executado no designer. Você pode resolver essas exceções ao depurar o código do projeto em outra instância do Visual Studio ou impedir exceções temporariamente desabilitando o código do projeto no designer.
 
 O código do projeto inclui:
 
@@ -65,7 +65,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
      Este é o processo para o designer XAML na primeira instância do Visual Studio.
 
-8.  Na primeira instância do Visual Studio, na barra de menus, selecione **Depurar** > **Iniciar Depuração**.
+8.  Na primeira instância do Visual Studio, na barra de menus, escolha **Depurar** > **Iniciar Depuração**.
 
      Agora, você pode intervir em seu código que está sendo executado no designer.
 
@@ -73,7 +73,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
 -   Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.
 
--   Como alternativa, na barra de ferramentas do designer XAML, selecione o botão **Desabilitar código de projeto**.
+-   Como alternativa, na barra de ferramentas do **Designer XAML**, clique no botão **Desabilitar código do projeto**.
 
      ![O botão Desabilitar Código do Projeto](../designers/media/xaml_disablecode.png)
 
@@ -82,10 +82,10 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
     > [!NOTE]
     > Para projetos que buscam processadores ARM ou X64, o Visual Studio não pode executar o código do projeto no designer, portanto, o botão **Desabilitar código de projeto** está desabilitado no designer.
 
--   Qualquer opção fará com que o designer recarregue e, em seguida, desabilitará todos os códigos para o projeto associado.
+-   Qualquer opção faz com que o designer seja recarregado e, em seguida, desabilite todo o código do projeto associado.
 
     > [!NOTE]
-    > Desabilitar o código do projeto pode levar a uma perda de dados de tempo de design. Uma alternativa é depurar o código em execução no designer.
+    > Desabilitar o código do projeto pode levar a uma perda de dados do tempo de design. Uma alternativa é depurar o código em execução no designer.
 
 ## <a name="see-also"></a>Consulte também
 

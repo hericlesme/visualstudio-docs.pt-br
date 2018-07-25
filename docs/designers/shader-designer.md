@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746774"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078947"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -32,10 +32,10 @@ O Designer de Sombreador dá suporte a esses formatos de sombreador:
 
 |Nome do formato|Extensão do arquivo|Operações com suporte (Exibir, Editar, Exportar)|
 |-----------------|--------------------|-------------------------------------------------|
-|Idioma do Sombreador de Gráfico Direcionado|.dgsl|Exibir, Editar|
-|Sombreador HLSL (código-fonte)|.hlsl|Exportar|
-|Sombreador HLSL (código de bytes)|.cso|Exportar|
-|Cabeçalho C++ (matriz de código de bytes HLSL)|.h|Exportar|
+|Idioma do Sombreador de Gráfico Direcionado|*.dgsl*|Exibir, Editar|
+|Sombreador HLSL (código-fonte)|*.hlsl*|Exportar|
+|Sombreador HLSL (código de bytes)|*.cso*|Exportar|
+|Cabeçalho C++ (matriz de código de bytes HLSL)|*.h*|Exportar|
 
 ## <a name="get-started"></a>Introdução
 
@@ -43,7 +43,7 @@ Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do [!INCL
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Para adicionar um sombreador DGSL ao seu projeto
 
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar o sombreador e selecione **Adicionar**, **Novo Item**.
+1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual deseja adicionar o sombreador e, em seguida, escolha **Adicionar** > **Novo Item**.
 
 2.  Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)**.
 
@@ -74,8 +74,8 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Somb
 |Item da barra de ferramentas|Descrição|
 |------------------|-----------------|
 |**Selecionar**|Habilita a interação com nós e bordas no grafo. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|
-|**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|
-|**Zoom**|Habilita a exibição de mais ou menos detalhes do grafo de sombreador em relação ao quadro de janela. No modo **Zoom**, selecione um ponto na superfície de design e mova-o para a direita ou para baixo para ampliar ou então para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|
+|**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ativar o modo **Panorâmica** temporariamente.|
+|**Zoom**|Habilita a exibição de mais ou menos detalhes do grafo de sombreador em relação ao quadro de janela. No modo **Zoom**, selecione um ponto na superfície de design e mova-o para a direita ou para baixo para ampliar ou então para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ampliar ou reduzir usando o botão de rolagem do mouse.|
 |**Aplicar Zoom para Ajustar**|Exibe o grafo de sombreador completo no quadro de janela.|
 |**Modo de Renderização em Tempo Real**|Quando a renderização em tempo real for habilitada, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] redesenhará a superfície de design, mesmo quando nenhuma ação de usuário for executada. Esse modo é útil quando você trabalha com sombreadores que se alteram ao longo do tempo.|
 |**Visualizar com esfera**|Quando habilitado, um modelo de uma esfera é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
@@ -86,7 +86,7 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Somb
 |**Visualizar com plano**|Quando habilitado, um modelo de um plano é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
 |**Caixa de Ferramentas**|De modo alternado, mostra ou oculta a **Caixa de Ferramentas**.|
 |**Propriedades**|De modo alternado, mostra ou oculta a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, consulte [Como exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com D3D11**: usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com D3D11WARP**: usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo.  Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
+|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com D3D11**: usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com D3D11WARP**: usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
 
 > [!TIP]
 > Você pode escolher o botão **Avançado** para executar novamente o último comando.
@@ -101,7 +101,7 @@ Use o modo **Selecionar** para adicionar, remover, reposicionar, conectar e conf
 
     -   Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
 
-    -   Para remover um nó do grafo, selecione-o e pressione Delete.
+    -   Para remover um nó do grafo, selecione-o e, em seguida, pressione **Delete**.
 
     -   Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.
 
@@ -157,39 +157,39 @@ Para girar a forma, pressione e mantenha pressionada a tecla **Alt** e, em segui
 
 Antes de usar um sombreador em seu aplicativo, você precisa exportá-lo em um formato compatível com o DirectX.
 
-Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo .hlsl. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tem uma extensão de nome de arquivo .cso ou para um arquivo de cabeçalho (.h) de C++ que codifica o código de bytes do sombreador em uma matriz.
+Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho (*.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
 
-Para obter mais informações sobre como exportar sombreadores, consulte [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
+Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
 |Comando|Atalhos de teclado|
 |-------------|------------------------|
-|Mudar para o modo **Selecionar**|Ctrl+G, Gtrl+Q<br /><br /> S|
-|Mudar para o modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
-|Mudar para o modo **Panorâmico**|Ctrl+G, Ctrl+P<br /><br /> M|
-|Selecionar tudo|Ctrl+A|
-|Excluir a seleção atual|Excluir|
-|Cancelar a seleção atual|Escape|
-|Ampliar|Ctrl+Roda do mouse para frente<br /><br /> Sinal de mais (+)|
-|Reduzir|Ctrl+Roda do mouse para trás<br /><br /> Sinal de menos (-)|
-|Deslocar para cima na superfície de design|Roda do mouse para trás<br /><br /> PageDown|
-|Deslocar para baixo na superfície de design|Roda do mouse para frente<br /><br /> PageUp|
-|Deslocar para a esquerda na superfície de design|Shift+Roda do mouse para trás<br /><br /> Roda do mouse para a esquerda<br /><br /> Shift+PageDown|
-|Deslocar para a direita na superfície de design|Shift+Roda do mouse para frente<br /><br /> Roda do mouse para a direita<br /><br /> Shift+PageUp|
-|Mover o foco do teclado para outro nó|As teclas de seta|
-|Selecione o nó que tem o foco do teclado (adiciona o nó para o grupo de seleção)|Shift+Barra de espaços|
-|Ativar/desativar a seleção do nó que tem o foco do teclado|Ctrl+Barra de espaços|
-|Ativar/desativar a seleção atual (se nenhum nó estiver selecionado, selecione o nó que tem o foco do teclado)|Barra de espaços|
-|Mover a seleção atual para cima|Shift+Seta para Cima|
-|Mover a seleção atual para baixo|Shift+Seta para Baixo|
-|Mover a seleção atual para a esquerda|Shift+Seta para a Esquerda|
-|Mover a seleção atual para a direita|Shift+Seta para a Direita.|
+|Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Mudar para o modo **Panorâmico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Selecionar tudo|**Ctrl**+**A**|
+|Excluir a seleção atual|**Excluir**|
+|Cancelar a seleção atual|**Escape** (**Esc**)|
+|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> Sinal de adição (**+**)|
+|Reduzir|**Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> Sinal de subtração (**-**)|
+|Deslocar para cima na superfície de design|**Botão de rolagem do mouse para trás**<br /><br /> **PageDown**|
+|Deslocar para baixo na superfície de design|**Botão de rolagem do mouse para frente**<br /><br /> **PageUp**|
+|Deslocar para a esquerda na superfície de design|**Shift**+**Botão de rolagem do mouse para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Shift**+**PageDown**|
+|Deslocar para a direita na superfície de design|**Shift**+**Botão de rolagem do mouse para frente**<br /><br /> **Botão de rolagem do mouse para a direita**<br /><br /> **Shift**+**PageUp**|
+|Mover o foco do teclado para outro nó|As teclas de **direção**|
+|Selecione o nó que tem o foco do teclado (adiciona o nó para o grupo de seleção)|**Shift**+**Barra de espaços**|
+|Ativar/desativar a seleção do nó que tem o foco do teclado|**Ctrl**+**Barra de espaços**|
+|Ativar/desativar a seleção atual (se nenhum nó estiver selecionado, selecione o nó que tem o foco do teclado)|**Barra de espaços**|
+|Mover a seleção atual para cima|**Shift**+**Seta para cima**|
+|Mover a seleção atual para baixo|**Shift**+**Seta para baixo**|
+|Mover a seleção atual para a esquerda|**Shift**+**Seta para a esquerda**|
+|Mover a seleção atual para a direita|**Shift**+**Seta para a direita**.|
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Trabalhando com Ativos 3D para Jogos e Aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
+|[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabalhar com texturas e imagens.|
 |[Editor de modelo](../designers/model-editor.md)|Descreve como usar o Editor de Modelos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabalhar com modelos 3D.|

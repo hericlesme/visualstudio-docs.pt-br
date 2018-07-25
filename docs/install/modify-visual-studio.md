@@ -2,7 +2,7 @@
 title: Modificar o Visual Studio 2017 | Microsoft Docs
 description: Saiba como modificar o Visual Studio, passo a passo.
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2018
+ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab0aa786dcaf5e99290dce79bc72deb9f0d5805
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297761"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio 2017 adicionando ou removendo cargas de trabalho e componentes
 
@@ -36,20 +37,20 @@ Veja como.
 >[!IMPORTANT]
 >Para instalar, atualizar ou modificar o Visual Studio, faça logon com uma conta que tenha permissões administrativas. Para obter mais informações, consulte [Permissões de usuário e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-1. Localize o Instalador do Visual Studio no computador.  
+1. Localize o Instalador do Visual Studio no computador.
 
-     Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.  
+     Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
 
      ![Instalador do Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localizar o Instalador do Microsoft Visual Studio")
 
      >[!NOTE]
-     Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Clique ou toque para iniciar o instalador e, em seguida, escolha **Modificar**.  
+2. Clique ou toque para iniciar o instalador e, em seguida, escolha **Modificar**.
 
      ![Iniciar ou modificar o Visual Studio](media/modify-visual-studio.png "Modificar o Visual Studio 2017")
 
-     Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Clique em **Mais** e, em seguida, escolha **Modificar**.   
+     Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queria. Clique em **Mais** e, em seguida, escolha **Modificar**.
 
      ![Atualizar ou modificar o Visual Studio](media/modify-or-update-visual-studio.png "Atualizar ou modificar o Visual Studio 2017")
 
@@ -57,7 +58,7 @@ Veja como.
 
     ![Caixa de diálogo Instalação do Visual Studio 2017](media/vs2017-modify-workloads.PNG "Escolher uma carga de trabalho no Visual Studio 2017")
 
-4. Escolha **Modificar** novamente.  
+4. Escolha **Modificar** novamente.
 
 5. Depois da instalação d novas cargas de trabalho e componentes, escolha **Iniciar**.
 
@@ -67,7 +68,7 @@ Se você não quiser usar o recurso prático Cargas de Trabalho para personaliza
 
 ## <a name="get-support"></a>Obter suporte
 
-Às vezes, as coisas podem dar errado. Se a instalação do Visual Studio falhar, confira a página [Solução de problemas de instalação e de atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter ajuda. Você também pode contatar nosso [chat ao vivo](https://www.visualstudio.com/vs/support/#talktous) (somente em inglês) para obter ajuda na instalação. Para obter mais informações, confira a [página “Fale Conosco” do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Às vezes, as coisas podem dar errado. Se a instalação do Visual Studio falhar, confira a página [Solução de problemas de instalação e de atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter ajuda. Você também pode contatar nosso [chat ao vivo](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para obter ajuda na instalação. Para obter mais informações, confira a [página “Fale Conosco” do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
 

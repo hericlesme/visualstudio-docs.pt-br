@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752086"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978243"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -266,9 +266,9 @@ Quando você faz check-in de seu código, os testes serão executados no servido
 
 Depois que a compilação é executada, os resultados da cobertura de código são anexados à execução do teste e aparecem no resumo de compilação.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analisar a cobertura de código em uma linha de comando
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analisar a cobertura de código na linha de comando
 
-Para executar testes a partir da linha de comando, use vstest.console.exe. A cobertura de código é uma opção do utilitário vstest.console.exe.
+Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura de código é uma opção do utilitário *vstest.console.exe*.
 
 1.  Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:
 
@@ -278,9 +278,11 @@ Para executar testes a partir da linha de comando, use vstest.console.exe. A cob
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Solução de problemas
 
-Se você não vir resultados da cobertura de código, o tópico [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudar.
+Se os resultados da cobertura de código não forem exibidos, o tópico [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
 ## <a name="see-also"></a>Consulte também
 

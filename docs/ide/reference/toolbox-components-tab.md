@@ -4,6 +4,10 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
+f1_keywords:
+- VS.CHOOSEITEMS.FrameworkComponents
+- VS.CHOOSEITEMS.COMComponents
+- VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
@@ -11,81 +15,82 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a05ea5b06e985a21fbe45882ccfb36bfe194034
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6365ebc9c44d5d453e04a3579d1b87d766413f
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947944"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924311"
 ---
-# <a name="toolbox-components-tab"></a>Caixa de Ferramentas, Guia Componentes
+# <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
-Exibe os componentes que podem ser adicionados a designers do Visual Basic e C#. Além dos componentes do .NET Framework incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia.
+Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes do .NET Framework incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia.
 
- Para exibir essa guia, no menu **Exibir**, selecione **Caixa de ferramentas**. Na **Caixa de ferramentas**, selecione a guia **Componentes**.
+Para exibir essa guia, abra um designer do Windows Forms. Selecione **Modo de Exibição** > **Caixa de Ferramentas**. Em **Caixa de ferramentas**, selecione a guia **Componentes**.
 
- **BackgroundWorker**
+## <a name="components"></a>Componentes
 
- Cria uma instância do componente `System.ComponentModel.BackgroundWorker` que pode executar uma operação em um thread separado e dedicado.
+**BackgroundWorker**
 
- **DirectoryEntry**
+Cria uma instância do componente <xref:System.ComponentModel.BackgroundWorker> que pode executar uma operação em um thread separado e dedicado. Para obter mais informações, confira [Componente BackgroundWorker](/dotnet/framework/winforms/controls/backgroundworker-component).
 
- Cria uma instância do componente <xref:System.DirectoryServices.DirectoryEntry>, que encapsula um nó ou um objeto na hierarquia do Active Directory e pode ser usada para interagir com provedores de serviços do Active Directory.
+**DirectoryEntry**
 
- **DirectorySearcher**
+Cria uma instância do componente <xref:System.DirectoryServices.DirectoryEntry>, que encapsula um nó ou um objeto na hierarquia do Active Directory e pode ser usada para interagir com provedores de serviços do Active Directory.
 
- Cria uma instância do componente <xref:System.DirectoryServices.DirectorySearcher>, que pode ser usada para executar consultas no Active Directory.
+**DirectorySearcher**
 
- **ErrorProvider**
+Cria uma instância do componente <xref:System.DirectoryServices.DirectorySearcher>, que pode ser usada para executar consultas no Active Directory.
 
- Cria uma instância do componente `System.Windows.Forms.ErrorProvider`, que indica para o usuário final que um controle em um formulário tem um erro associado a ele.
+**ErrorProvider**
 
- **EventLog**
+Cria uma instância do componente <xref:System.Windows.Forms.ErrorProvider>, que indica para o usuário final que um controle em um formulário tem um erro associado a ele. Para obter mais informações, confira [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
- Cria uma instância do componente <xref:System.Diagnostics.EventLog>, que pode ser usada para interagir com logs do sistema e de eventos personalizados, incluindo a gravação de eventos em um log e a leitura dos dados de log.
+**EventLog**
 
- **FileSystemWatcher**
+Cria uma instância do componente <xref:System.Diagnostics.EventLog>, que pode ser usada para interagir com logs do sistema e de eventos personalizados, incluindo a gravação de eventos em um log e a leitura dos dados de log.
 
- Cria uma instância do componente <xref:System.IO.FileSystemWatcher>, que pode ser usada para monitorar alterações em um diretório ou arquivo ao qual você tem acesso.
+**FileSystemWatcher**
 
- **HelpProvider**
+Cria uma instância do componente <xref:System.IO.FileSystemWatcher>, que pode ser usada para monitorar alterações em um diretório ou arquivo ao qual você tem acesso.
 
- Cria uma instância do componente `System.Windows.Forms.HelpProvider` que fornece Ajuda pop-up ou online para controles.
+**HelpProvider**
 
- **ImageList**
+Cria uma instância do componente <xref:System.Windows.Forms.HelpProvider> que fornece ajuda pop-up ou online para controles. Para obter mais informações, confira [Componente HelpProvider](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
- Cria uma instância do componente `System.Windows.Forms.ImageList` que fornece métodos para gerenciar uma coleção de objetos `System.Drawing.Image`.
+**ImageList**
 
- **MessageQueue**
+Cria uma instância do componente <xref:System.Windows.Forms.ImageList> que fornece métodos para gerenciar uma coleção de objetos <xref:System.Drawing.Image>. Para obter mais informações, confira [Componente ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
- Cria uma instância do componente <xref:System.Messaging.MessageQueue>, que pode ser usada para interagir com filas de mensagens, incluindo a leitura e gravação de mensagens em filas, o processamento de transações e a realização de tarefas de administração de fila.
+**MessageQueue**
 
- **PerformanceCounter**
+Cria uma instância do componente <xref:System.Messaging.MessageQueue>, que pode ser usada para interagir com filas de mensagens, incluindo a leitura e gravação de mensagens em filas, o processamento de transações e a realização de tarefas de administração de fila.
 
- Cria uma instância do componente <xref:System.Diagnostics.PerformanceCounter>, que pode ser usada para interagir com contadores de desempenho do Windows, incluindo a criação de novas categorias e instâncias, a leitura de valores de contadores e a execução de cálculos nos dados do contador.
+**PerformanceCounter**
 
- **Processo**
+Cria uma instância do componente <xref:System.Diagnostics.PerformanceCounter>, que pode ser usada para interagir com contadores de desempenho do Windows, incluindo a criação de novas categorias e instâncias, a leitura de valores de contadores e a execução de cálculos nos dados do contador.
 
- Cria uma instância do componente <xref:System.Diagnostics.Process>, que pode ser usada para interromper, iniciar e manipular os dados associados a processos no sistema.
+**Processo**
 
- **SerialPort**
+Cria uma instância do componente <xref:System.Diagnostics.Process>, que pode ser usada para interromper, iniciar e manipular os dados associados a processos no sistema.
 
- Cria uma instância do componente `System.IO.Ports.SerialPort` que fornece E/S síncrona e controlada por evento, acesso ao PIN e estados de fixação e interrupção e acesso às propriedades do driver serial.
+**SerialPort**
 
- **ServiceController**
+Cria uma instância do componente <xref:System.IO.Ports.SerialPort> que fornece E/S síncrona e controlada por evento, acesso ao PIN e estados de fixação e interrupção e acesso às propriedades do driver serial.
 
- Cria uma instância do componente <xref:System.ServiceProcess.ServiceController>, que pode ser usada para manipular serviços existentes, incluindo a inicialização e a interrupção de serviços e o envio de comandos para eles.
+**ServiceController**
 
- **Timer**
+Cria uma instância do componente <xref:System.ServiceProcess.ServiceController>, que pode ser usada para manipular serviços existentes, incluindo a inicialização e a interrupção de serviços e o envio de comandos para eles.
 
- Cria uma instância do componente <xref:System.Windows.Forms.Timer>, que pode ser usada para adicionar funcionalidade baseada em tempo aos aplicativos baseados no Windows. Para obter mais informações, consulte [Componente de temporizador](/dotnet/framework/winforms/controls/timer-component-windows-forms).
+**Timer**
+
+Cria uma instância do componente <xref:System.Windows.Forms.Timer>, que pode ser usada para adicionar funcionalidade baseada em tempo aos aplicativos baseados no Windows. Para obter mais informações, confira [Componente Timer](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
 > [!NOTE]
 > Também há um <xref:System.Timers.Timer> baseado em sistema que pode ser adicionado à **Caixa de ferramentas**. Esse <xref:System.Timers.Timer> é otimizado para aplicativos de servidor e o <xref:System.Windows.Forms.Timer> do Windows Forms é mais adequado para uso no Windows Forms.
 
-
 ## <a name="see-also"></a>Consulte também
 
-- [Programação com componentes](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
-- [Passo a passos da programação de componentes](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)
+- [Controles a serem usados no Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Escolher itens da Caixa de Ferramentas, componentes do WPF](choose-toolbox-items-wpf-components.md)
 - [Caixa de Ferramentas](../../ide/reference/toolbox.md)

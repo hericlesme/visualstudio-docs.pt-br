@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578214"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079116"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
-Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, consulte [Referência de Tarefa](../msbuild/msbuild-task-reference.md).  
+Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).  
   
-## <a name="creating-a-directory-for-output-items"></a>Criando um diretório para itens de saída  
- Por padrão, o arquivo .exe que é criado quando você compila um projeto é colocado no mesmo diretório dos arquivos de projeto e código-fonte. No entanto, normalmente, itens de saída são criados em um diretório separado.  
+## <a name="create-a-directory-for-output-items"></a>Criar um diretório para itens de saída  
+ Por padrão, o arquivo *.exe* criado quando você compila um projeto é colocado no mesmo diretório dos arquivos de projeto e de origem. No entanto, normalmente, itens de saída são criados em um diretório separado.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>Para criar um diretório para itens de saída  
   
-1.  Use o elemento `Property` para definir o local e o nome do diretório. Por exemplo, crie um diretório chamado `BuiltApp` no diretório que contém os arquivos de projeto e código-fonte:  
+1.  Use o elemento `Property` para definir o local e o nome do diretório. Por exemplo, crie um diretório chamado *BuiltApp* no diretório que contém os arquivos de projeto e de origem:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  Use a tarefa [MakeDir](../msbuild/makedir-task.md) para criar o diretório se o diretório não existir. Por exemplo:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>Removendo os itens de saída  
+## <a name="remove-the-output-items"></a>Remover os itens de saída  
  Antes de criar novas instâncias dos arquivos de saída e intermediários, é possível limpar todas as instâncias anteriores dos arquivos de saída e intermediários. Use a tarefa [RemoveDir](../msbuild/removedir-task.md) para excluir um diretório e todos os arquivos e diretórios que ele contém de um disco.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para remover um diretório e todos os arquivos contidos no diretório  

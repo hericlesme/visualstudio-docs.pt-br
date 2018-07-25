@@ -13,26 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815607"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Como instalar o criador de perfil autônomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece uma linha de comando baseada no criador de perfil autônomo que pode ser executado sem instalar o IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa situação ocorre quando um computador não tiver ou não puder ter um ambiente de desenvolvimento instalado. Por exemplo, você não deve instalar um ambiente de desenvolvimento em um servidor Web de produção.  
   
 > [!NOTE]
->  Quando você estiver usando o criador de perfil autônomo para coletar dados de desempenho para o site da Web do ASP.NET, a ferramenta de linha [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) é recomendada em vez de [VSPerfCmd](../profiling/vsperfcmd.md).  
+>  Quando você está usando o criador de perfil autônomo para coletar dados de desempenho para um site ASP.NET, a ferramenta de linha de comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) é recomendada em vez da [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Para instalar o criador de perfil autônomo  
   
-1.  Localize o instalador do perfil autônomo (vs_profiler.exe) na mídia de instalação do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no diretório que inclui o caminho do criador de perfil \Standalone e execute-o.  
+1.  Localize o instalador do perfil autônomo (*vs_profiler.exe*) na mídia de instalação do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no diretório que inclui o caminho *\Standalone Profiler* e execute-o.  
   
-2.  Adicione caminhos para vsintr.exe e msdis150.dll ao caminho do sistema.  
+2.  Adicione os caminhos para *vsintr.exe* e *msdis150.dll* ao caminho do sistema.  
   
     > [!NOTE]
-    >  Na instalação padrão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vsinstr.exe e msdis150.dll estão localizados em \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
+    >  Na instalação padrão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* e *msdis150.dll* estão localizados em *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
   
 3.  No prompt de comando, digite **VSInstr**.  
   
@@ -46,13 +47,13 @@ ms.lasthandoff: 04/19/2018
      **start %COMSPEC%**  
   
     > [!NOTE]
-    >  Para obter instruções detalhadas sobre como configurar o pacote de servidor de símbolos, consulte [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    >  Para obter instruções detalhadas de como configurar o pacote do servidor de símbolos, confira [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6.  Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para serializar os símbolos no arquivo de dados (.vsp) de criação de perfil. Use a opção **VSPerfReport /summary:all /packsymbols**. Se você não tiver símbolos inseridos no arquivo de dados, certifique-se de que tenha o conjunto de variáveis de ambiente NT_SYMBOL_PATH.  
   
 ## <a name="see-also"></a>Consulte também  
- [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [Criar perfil usando a linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Passo a passo: criação de perfil de linha de comando usando amostragem](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Passo a passo: criação de perfil de linha de comando usando instrumentação](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

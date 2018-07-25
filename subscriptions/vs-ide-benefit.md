@@ -9,16 +9,16 @@ description: Saiba como baixar e instalar o IDE do Visual Studio incluído em su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 678da5c2727e69e3a9f4da7c8f692f082c485e8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197835"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282620"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Usando o benefício do Visual Studio 2017
 
-Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.  
+Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.
 
 
 ## <a name="activation-steps"></a>Etapas de ativação
@@ -26,30 +26,30 @@ Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A ve
 *(O Visual Studio Enterprise é usado para este exemplo).*
 
 Para baixar o IDE:
-1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
-2. Localize o bloco IDE do Visual Studio na seção de Ferramentas e clique no link **Download** na parte inferior do bloco do benefício.  Você também pode baixar na página [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs). 
+1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Localize o bloco IDE do Visual Studio na seção de Ferramentas e clique no link **Download** na parte inferior do bloco do benefício.  Você também pode baixar na página [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
     ![Bloco do Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  Você será redirecionado à página de Resultados de download do Visual Studio Enterprise, da qual poderá baixar o IDE e obter uma chave do produto (Product Key) para ativá-lo. Também é possível solicitar uma chave do produto (Product Key) clicando no link azul **Obter Chave** ou solicitar uma chave mais tarde na página [Chaves do produto (Product Keys)](https://my.visualstudio.com/productkeys).
 4.  Na guia Detalhes da página Resultados do download:
     - Selecione a arquitetura desejada (x86, x64)
-    - Selecione sua preferência de idioma. 
+    - Selecione sua preferência de idioma.
 5.  Clique no botão azul de download.
     ![Detalhes de download do Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  Para instalar agora, clique em **Executar**.
 7.  Na caixa de diálogo Controle de Conta de Usuário, clique em **Sim**.
 8.  Clique em **Continuar** para aceitar os termos de licença.
-9.  Quando a instalação for iniciada, escolha as cargas de trabalho, os componentes individuais e os pacotes de idiomas desejados, selecionando-os nas guias correspondentes.  
+9.  Quando a instalação for iniciada, escolha as cargas de trabalho, os componentes individuais e os pacotes de idiomas desejados, selecionando-os nas guias correspondentes.
     ![Personalizar o Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
-10.  Clique em **Instalar**. 
+10.  Clique em **Instalar**.
 
-11. Quando a instalação for concluída, haverá a opção de modificar a instalação ou inicie o Visual Studio.  Clique em **Iniciar** para começar.  
+11. Quando a instalação for concluída, haverá a opção de modificar a instalação ou inicie o Visual Studio.  Clique em **Iniciar** para começar.
 
     ![Iniciar o Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
-12. Entre com a conta associada à sua assinatura do Visual Studio. 
+12. Entre com a conta associada à sua assinatura do Visual Studio.
 
 13. Escolha seu tema preferencial e clique em **Iniciar Visual Studio**.
 
@@ -69,11 +69,11 @@ Para baixar o IDE:
 <sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (diretor regional).  Exclui: MCT Software & Services.*
 
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
-    - Suporte técnico: [https://www.visualstudio.com/support/](https://www.visualstudio.com/support/)
-    - [Documentação](/visualstudio/) 
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
+    - Suporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+    - [Documentação](/visualstudio/)
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.

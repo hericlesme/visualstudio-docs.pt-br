@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967603"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977600"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
 
@@ -30,7 +30,7 @@ Se o teste de carga contiver apenas um nó de configuração de execução na pa
 
 No Editor de testes de carga, a configuração de execução ativa é identificada pelo sufixo "[Active]".
 
-## <a name="selecting-the-active-run-setting"></a>Selecionando a configuração de execução ativa
+## <a name="select-the-active-run-setting"></a>Selecionar a configuração de execução ativa
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Para selecionar a configuração de execução ativa em um teste de carga
 
@@ -47,15 +47,15 @@ No Editor de testes de carga, a configuração de execução ativa é identifica
 > [!NOTE]
 > Você pode substituir a configuração de execução ativa definindo uma variável de ambiente denominada `Test.UseRunSetting=<run setting name>`. Isso é útil quando você executa um teste de carga a partir da linha de comando ou de um arquivo em lotes. Isso permite escolher configurações de execução diferentes sem abrir o teste de carga.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Especificar a configuração de execução a ser usada na linha de comando
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Especificando a configuração de execução a ser usada na linha de comando
- Você pode substituir as configurações de execução padrão no teste de carga definindo uma variável de ambiente na linha de comando:
+Você pode substituir as configurações de execução padrão no teste de carga definindo uma variável de ambiente na linha de comando:
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+**Set Test.UseRunSetting=PreProdEnvironment**
 
- E o teste a ser executado:
+E o teste a ser executado:
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,7 +1,7 @@
 ---
 title: 'Início rápido: usar o Visual Studio para criar um aplicativo Web Python'
 description: Neste início rápido, você usa o Visual Studio e a estrutura do Flask para criar um aplicativo Web simples em Python.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957139"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131980"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início rápido: crie seu primeiro aplicativo Web Python usando o Visual Studio
 
 Nesta introdução de 5 a 10 minutos do Visual Studio como um IDE do Python, você criará um aplicativo Web Python simples na estrutura Flask. Crie o projeto por meio de etapas simples para ajudarão a saber mais sobre os recursos básicos do Visual Studio.
 
-Se você ainda não tiver instalado o Visual Studio, acesse [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
+Se você ainda não tiver instalado o Visual Studio, acesse [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
 
 ## <a name="create-the-project"></a>Criar o projeto
 
@@ -146,15 +146,12 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 Parabéns por executar seu primeiro aplicativo do Python no Visual Studio. Você aprendeu um pouco sobre como usar o Visual Studio como um IDE do Python!
 
-Como as etapas seguidas neste Início Rápido são razoavelmente genéricas, você provavelmente percebeu que elas podem e devem ser automatizadas. Essa automação é a função dos modelos de projeto do Visual Studio. Selecione o botão abaixo para ver uma demonstração que cria um aplicativo Web semelhante ao que você criou neste artigo, mas com menos etapas.
-
 > [!div class="nextstepaction"]
-> [Início Rápido: Criar um projeto do Python usando em modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Implantar o aplicativo no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Para continuar com um tutorial mais completo sobre Python no Visual Studio, inclusive usando a janela interativa, depuração, visualização de dados e trabalhar com Git, selecione o botão abaixo.
+Como as etapas seguidas neste Início Rápido são razoavelmente genéricas, você provavelmente percebeu que elas podem e devem ser automatizadas. Essa automação é a função dos modelos de projeto do Visual Studio. Acompanhe o [Início Rápido – Criar um projeto Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para obter uma demonstração que cria um aplicativo Web semelhante ao que você criou neste artigo, mas com menos etapas.
 
-> [!div class="nextstepaction"]
-> [Tutorial: Introdução ao Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Para continuar com um tutorial mais completo sobre o Python no Visual Studio, incluindo o uso da janela interativa, da depuração, da visualização de dados e o trabalho com o Git, acompanhe o [Tutorial: Introdução ao Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Para explorar mais do que o Visual Studio tem a oferecer, selecione os links abaixo.
 

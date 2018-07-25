@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103132"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946969"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Etapa 5 do tutorial: autenticar usuários em Django
+# <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
 **Etapa anterior: [Usar o modelo Projeto Web completo do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -62,7 +62,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
     {% endif %}
     ```
 
-1. Como nenhum usuário é autenticado quando você inicia o aplicativo pela primeira vez, esse código de modelo renderiza apenas o link "Fazer logon" para o caminho relativo "logon". Conforme especificado em `urls.py` e exibido na seção anterior, essa rota é mapeada para o modo de exibição `django.contrib.auth.views.login` que recebe os seguintes dados:
+1. Como nenhum usuário é autenticado quando você inicia o aplicativo pela primeira vez, esse código de modelo renderiza apenas o link "Fazer logon" para o caminho relativo "logon". Conforme especificado em `urls.py` (mostrado na seção anterior), essa rota é mapeada para a exibição `django.contrib.auth.views.login`. Essa exibição recebe os seguintes dados:
 
     ```python
     {
@@ -95,7 +95,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
                                        'placeholder':'Password'}))
     ```
 
-    Como você pode ver, essa classe de formulário deriva de `AuthenticationForm` e, especificamente, substitui os campos de nome de usuário e senha para adicionar texto de espaço reservado. O modelo do Visual Studio inclui esse código explícito supondo que você provavelmente desejará personalizar o formulário, como, por exemplo, adicionando validação de força de senha.
+    Como você pode ver, essa classe de formulário deriva de `AuthenticationForm` e, especificamente, substitui os campos de nome de usuário e senha para adicionar texto de espaço reservado. O modelo do Visual Studio inclui esse código explícito considerando que você possa querer personalizar o formulário, por exemplo, adicionando uma validação de força de senha.
 
 1. Quando você navega para a página de logon, em seguida, a aplicativo renderiza o modelo `login.html`. As variáveis `{{ form.username }}` e `{{ form.password }}` renderizam os formulários `CharField` de `BootstrapAuthenticationForm`. Há também uma seção interna para mostrar erros de validação e um elemento predefinido para efetuar logons em redes sociais, se você optar por adicionar esses serviços.
 
@@ -144,13 +144,13 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
     {% endblock %}
     ```
 
-1. Quando você enviar o formulário, o Django tentará autenticar as credenciais fornecidas (como as credenciais do superusuário). Se a autenticação falhar, você permanecerá na mesma página, mas `form.errors` será definido como true. Se a autenticação for bem-sucedida, o Django navegará para a URL relativa no campo "avançar", `<input type="hidden" name="next" value="/" />`, que, nesse caso, é a página inicial (`/`).
+1. Quando você envia o formulário, o Django tenta autenticar suas credenciais (como as credenciais do superusuário). Se a autenticação falhar, você permanecerá na página atual, mas `form.errors` será definido como true. Se a autenticação for bem-sucedida, o Django navegará para a URL relativa no campo "avançar", `<input type="hidden" name="next" value="/" />`, que, nesse caso, é a página inicial (`/`).
 
 1. Agora, quando a página inicial for novamente renderizada, a propriedade `user.is_authenticated` será true quando o modelo `loginpartial.html` for renderizado. Como resultado, você verá uma mensagem "Olá (nome de usuário)" e "Fazer logoff". Você pode usar `user.is_authenticated` em outras partes do aplicativo para verificar a autenticação.
 
     ![Mensagem de Olá e controle de logon na página do aplicativo do Projeto Web do Django](media/django/step05-logoff-control.png)
 
-1. Para verificar se o usuário autenticado está autorizado a acessar recursos específicos, você precisará recuperar permissões específicas do usuário do banco de dados desse usuário. Para obter mais detalhes, confira [Como usar o sistema de autenticação do Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (documentos do Django).
+1. Para verificar se o usuário autenticado está autorizado a acessar recursos específicos, você precisa recuperar as permissões específicas do usuário do banco de dados. Para obter mais informações, confira [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Usando o sistema de autenticação do Django) (documentos do Django).
 
 1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, abra o projeto `urls.py` do Django e remova os comentários das seguintes entradas:
 
@@ -200,14 +200,14 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é o objetivo da marca {% crsf_token %} exibida nos elementos \<form\>?
 
-Resposta: A marca `{% crsf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (crsf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Geralmente você adiciona essa marca a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário, e a função de renderização do modelo (`render`) insere a proteção necessária.
+Resposta: A marca `{% crsf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (crsf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Usar o modelo Pesquisas Projeto Web do Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Autenticação de usuário no Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

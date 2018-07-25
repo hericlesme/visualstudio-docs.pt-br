@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572534"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078235"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Como usar variáveis de ambiente em um build
 Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.  
   
-## <a name="referencing-environment-variables"></a>Fazendo referência a variáveis de ambiente  
+## <a name="reference-environment-variables"></a>Referenciar variáveis de ambiente  
  Todas as variáveis de ambiente estão disponíveis para o arquivo de projeto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) como propriedades.  
   
 > [!NOTE]
@@ -40,7 +40,7 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Para fornecer um valor padrão de uma propriedade  
   
--   Use um atributo `Condition` em uma propriedade para definir o valor somente se a propriedade não tiver nenhum valor. Por exemplo, o código a seguir definirá a propriedade `ToolsPath` como c:\Tools somente se a variável de ambiente `ToolsPath` não estiver definida:  
+-   Use um atributo `Condition` em uma propriedade para definir o valor somente se a propriedade não tiver nenhum valor. Por exemplo, o seguinte código define a propriedade `ToolsPath` como *c:\tools* somente se a variável de ambiente `ToolsPath` não está definida:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
@@ -66,5 +66,5 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
   
 ## <a name="see-also"></a>Consulte também  
 [MSBuild ](../msbuild/msbuild.md)  
-[Propriedades MSBuild](../msbuild/msbuild-properties.md)  
-[Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[Propriedades do MSBuild](../msbuild/msbuild-properties.md)  
+[Como criar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

@@ -9,12 +9,12 @@ description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Stud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548717"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326985"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -102,8 +102,8 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 3.  Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato.  Na guia **Preferências**, é possível selecionar suas preferências de idioma, padrões de data e hora, fuso horário e tema da interface do usuário.  
 4.  Ao concluir as alterações, clique em **Salvar**. 
 5.  Clique no botão **Voltar** do navegador para retornar à página Benefícios. 
+    ![Editar informações de perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Editar informações de perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Vinculando minha assinatura a assinaturas existentes do VSTS ou do Azure
 Se você entrar em sua assinatura usando uma MSA (conta da Microsoft) pessoal e tiver uma assinatura que inclua o Visual Studio Team Services ou o Microsoft Azure usando uma conta corporativa ou de estudante gerenciada pelo Azure, será possível vincular as duas assinaturas. Isso é chamado de "conta alternativa" e permite usar sua MSA para entrar na assinatura e continuar tendo acesso aos recursos existentes do Azure, do VSTS ou do IDE associados à sua conta corporativa ou de estudante. 
@@ -111,12 +111,11 @@ Se você entrar em sua assinatura usando uma MSA (conta da Microsoft) pessoal e 
 Mesmo que ambas as contas usem o mesmo endereço de email, você precisará adicionar sua conta corporativa ou de estudante como uma alternativa para usar os benefícios nas duas contas. 
 
 Para adicionar uma conta alternativa:
-1. Entre no [Portal do Assinante](https://my.visualstudio.com) com sua MSA (Conta da Microsoft).
+1. Entre no [Portal do Assinante](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sua MSA (Conta da Microsoft).
 2. Clique na guia **Assinaturas**.
 3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
 4. Insira o endereço de email da sua conta corporativa ou de estudante e clique em **Adicionar**. 
-
-![Conta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Conta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.  
 

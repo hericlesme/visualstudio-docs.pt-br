@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com o Tutorial do Python, etapa 3, REPL interativo
 description: Etapa 3 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando a janela REPL interativa do Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425745"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057230"
 ---
-# <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela interativa REPL
 
 **Etapa anterior: [escrevendo e executando código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
@@ -95,7 +95,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 > [!div class="nextstepaction"]
 > [Executando o código no depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Usando a Janela interativa](python-interactive-repl-in-visual-studio.md)
 - [Usando o IPython REPL](interactive-repl-ipython.md)

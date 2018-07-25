@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0551545835a530ae63d53f8988ef89aab6476293
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c4095381fffea29e4613d42d8ecbf2d189b4cb1b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845113"
 ---
 # <a name="markerseriesisenabled-method"></a>Método marker_series::is_enabled
 Determina se alguma sessão habilitou o provedor.  
@@ -43,7 +44,7 @@ bool is_enabled(
 ## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** cvmarkersobj.h  
+ **Cabeçalho:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic  
   

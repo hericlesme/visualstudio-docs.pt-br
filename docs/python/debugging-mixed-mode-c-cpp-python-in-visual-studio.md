@@ -1,7 +1,7 @@
 ---
 title: Depuração de modo misto para Python
 description: Como depurar simultaneamente C++ e Python no Visual Studio, incluindo a troca entre ambientes, valores de exibição e expressões de avaliação.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583145"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057428"
 ---
 # <a name="debugging-python-and-c-together"></a>Depurando o Python e o C++ juntos
 
@@ -64,7 +64,7 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Habilitar a depuração de modo misto em um projeto do C/C++
 
-O Visual Studio 2017 (versão 15.5 e posterior) é compatível com a depuração de modo misto em um projeto do C/C++ (por exemplo, ao [inserir o Python em outro aplicativo, conforme descrito em python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar a depuração de modo misto, configure o projeto do C/C++ para iniciar o “Depurador do Python/Nativo”:
+O Visual Studio 2017 (versão 15.5 e posterior) é compatível com a depuração de modo misto em um projeto do C/C++ (por exemplo, ao [inserir Python em outro aplicativo, conforme a descrição em python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar a depuração de modo misto, configure o projeto do C/C++ para iniciar o “Depurador do Python/Nativo”:
 
 1. Clique com o botão direito do mouse no projeto do C/C++ no Gerenciador de Soluções e selecione **Propriedades**
 1. Selecione a guia **Depuração**, “Depurador do Python/Nativo” em **Depurador a ser iniciado** e **OK**.

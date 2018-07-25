@@ -1,7 +1,7 @@
 ---
 title: Depurando código em Python
 description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032249"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079817"
 ---
-# <a name="debugging-your-python-code"></a>Depurando o código do Python
+# <a name="debug-your-python-code"></a>Depurar o código do Python
 
 O Visual Studio fornece uma experiência de depuração abrangente para o Python, incluindo a anexação a processos em execução, avaliação de expressões nas janelas Inspeção e Imediata, inspeção de variáveis locais, pontos de interrupção, instruções intervir/depuração parcial/depuração circular, comando Definir Próxima Instrução e muito mais.
 
@@ -193,6 +193,49 @@ Observe que as janelas padrão do depurador, como Processos, Threads e Pilha de 
 A janela Interativa de Depuração tem seu próprio conjunto de opções, que pode ser acessado por meio de **Ferramentas > Opções > Ferramentas Python > Janela Interativa de Depuração**. Ao contrário da janela Interativa normal do Python, que tem uma instância separada para cada ambiente do Python, há apenas uma janela Interativa de Depuração e ela sempre usa o interpretador do Python do processo que está sendo depurado. Consulte [Opções – Opções de depuração](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opções da Janela Interativa de Depuração](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>Usar o depurador experimental
+
+A partir do Visual Studio 2017 Versão Prévia 4.0, você pode aceitar o uso do "depurador experimental", que se baseia no ptvsd versão 4.1 ou superior. Para aceitar, selecione o comando de menu **Ferramentas** > **Opções**, em seguida, navegue para **Python** > **Experimental** na caixa de diálogo Opções e selecione **Usar depurador experimental.**
+
+O depurador experimental é compatível apenas com ambientes limitados do Python, conforme descrito na seguinte tabela:
+
+| Versão do Python | Compatível com o depurador experimental |
+| --- | --- |
+| 2.6 | Não |
+| 2.7 | Sim |
+| 3.1 a 3.4 | Não |
+| 3.5 e versões posteriores | Sim |
+| IronPython | Não |
+
+Se você tentar usar o depurador experimental com um ambiente incompatível, o Visual Studio mostrará o erro "O depurador é incompatível com este ambiente":
+
+![Erro "O depurador é incompatível com este ambiente" ao usar o depurador experimental](media/debugging-experimental-incompatible-error.png)
+
+Selecione o comando **Desabilitar o depurador experimental**, que limpa a opção **Usar depurador experimental**.
+
+> [!Note]
+> O aviso não é atualmente mostrado no Python 3.3 e 3.4.
+
+Se você instalou uma versão mais antiga do ptvsd no ambiente atual (como uma versão 4.0.x anterior de uma versão 3.x necessária para a depuração remota), o Visual Studio mostra o erro "O pacote do depurador não pôde ser carregado" ou o aviso "O pacote do depurador está desatualizado":
+
+![Erro "O pacote do depurador não pôde ser carregado" ao usar o depurador experimental](media/debugging-experimental-version-error.png)
+
+![Aviso "O pacote do depurador está desatualizado" ao usar o depurador experimental](media/debugging-experimental-version-warning.png)
+
+Para gerenciar a instalação do ptvsd, use a guia **Pacotes** na janela **Ambientes do Python** ou os seguintes comandos na linha de comando:
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> Embora você possa optar por ignorar o aviso em algumas versões do ptvsd, o Visual Studio poderá não funcionar corretamente.
 
 ## <a name="see-also"></a>Consulte também
 

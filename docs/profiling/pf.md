@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6c86ce1c828ff3f090ce675aeed03a4911a55544
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258964"
 ---
 # <a name="pf"></a>PF
-A opção de **PF** VSPerfCmd.exe define o evento de criação de perfil com amostragem para falhas da página e pode alterar o número de falhas da página em um intervalo de amostragem do padrão de 10.  
+A opção de **PF** *VSPerfCmd.exe* define o evento de criação de perfil com amostragem para falhas da página e pode alterar o número de falhas da página em um intervalo de amostragem com o padrão de 10.  
   
 > [!NOTE]
 >  A **PF** não pode ser usada em sistemas de 64 bits.  
@@ -72,6 +73,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
+ [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

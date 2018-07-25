@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2da34d180a59212b171e484129df27d94f580a1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924538"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978171"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 
@@ -23,7 +23,7 @@ Este artigo descreve os controles e painéis de layout do Designer XAML.
 
 Imagine o local em que deseja que os objetos apareçam em uma página, como imagens, botões e vídeos. Talvez você queira que eles apareçam em linhas e colunas; em uma única linha, vertical ou horizontal; ou em posições fixas.
 
-Depois de pensar como a página pode ser exibida, escolha um painel de layout. Todas as páginas começam no painel de layout, porque você precisa de algo para adicionar seus objetos. Por padrão, ele é uma **Grade**, mas você pode alterá-lo.
+Depois de pensar como a página pode ser exibida, escolha um painel de layout. Todas as páginas começam com um, porque você precisa de algo ao qual adicionar os objetos. Por padrão, ele é uma **Grade**, mas você pode alterá-lo.
 
 Painéis de layout ajudam a organizar objetos em uma página, mas fazem mais do que isso. Eles ajudam a projetar diferentes tamanhos de tela e resoluções. Quando usuários executam um aplicativo, tudo o que está contido no painel de layout é redimensionado para caber na tela do dispositivo em uso. Claro, se você não quiser que isso aconteça com o layout, será possível substituir esse comportamento em uma parte ou na totalidade do layout. É possível usar propriedades de altura e largura para controlar isso.
 
@@ -115,7 +115,7 @@ Mostra informações ou opções para usuários em uma janela. É possível adic
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Habilita o usuário a rolar para baixo uma página ou uma área dela. É possível adicionar apenas um objeto a um **ScrollViewer**, por isso, faz sentido adicionar um painel de layout como uma **Grade** ou **StackPanel**.
+Permite aos usuários rolar para baixo uma página ou uma área dela. É possível adicionar apenas um objeto a um **ScrollViewer**, por isso, faz sentido adicionar um painel de layout como uma **Grade** ou **StackPanel**.
 
 ![Controle de layout ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Instalar estruturas de teste de unidade de terceiros no Visual Studio
-ms.date: 11/04/2016
+title: Instalar estruturas de teste de unidade de terceiros
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,21 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18667fe893c3007d1781e736054e9871cb767cfe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844687"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 
 O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.
 
-## <a name="acquiring-third-party-frameworks"></a>Aquisição de estruturas de terceiros
+## <a name="acquire-third-party-frameworks"></a>Adquirir estruturas de terceiros
 
 Você pode baixar e instalar diversas estruturas de teste de unidade de terceiros usando o Gerenciador de Extensões do Visual Studio ou o Visual Studio Marketplace. Estruturas também podem ser baixadas de outros sites, como o site da estrutura.
 
-### <a name="installing-from-visual-studio"></a>Instalação do Visual Studio
+### <a name="install-from-visual-studio"></a>Instalar do Visual Studio
 
 1. Escolha **Ferramentas** no menu padrão e, em seguida, selecione **Extensões e atualizações**.
 
@@ -33,9 +34,9 @@ Você pode baixar e instalar diversas estruturas de teste de unidade de terceiro
 
 4. Selecione a estrutura e escolha **Download**.
 
-Para obter mais informações, consulte [Localizando e Usando Extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+Para obter mais informações, confira [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
-### <a name="installing-from-the-web"></a>Instalação da Web
+### <a name="install-from-the-web"></a>Instalação da Web
 
 Se você souber a estrutura em que você está interessado:
 
@@ -54,6 +55,22 @@ Para procurar uma lista de estruturas juntamente com outras ferramentas de teste
 3. Na lista **Categoria** (rotulada como **Mostrando**), expanda o nó **Ferramentas** e, em seguida, escolha **Teste**.
 
 4. Escolha uma estrutura na lista de resultados para navegar até uma página do Visual Studio Marketplace da ferramenta.
+
+## <a name="update-to-the-latest-test-adapters"></a>Atualizar para os adaptadores de teste mais recentes
+
+Atualização para o adaptador de teste estável mais recente para aproveitar melhor a detecção e a execução de teste. Para saber mais sobre atualizações para adaptadores de teste MSTest, NUnit e xUnit, veja o [blog do Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Para atualizar para a versão estável mais recente do adaptador de teste
+
+1. Abra o Gerenciador de Pacotes Nuget da solução navegando até **Ferramentas** > **Gerenciador de Pacotes NuGet** > **Gerenciar Pacotes NuGet da Solução**.
+
+2. Clique na guia **Atualizações** e procurar os adaptadores de teste NUnit ou xUnit que estão instalados.
+
+3. Selecione cada adaptador de teste e, em seguida, selecione a versão estável mais recente no menu suspenso.
+
+4. Escolha o botão **Instalar**.
+
+   ![Atualizar adaptador de teste](media/install-adapter-upgrade.png)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de depuração remota do Azure para Python
 description: Como solucionar problemas ao tentar depurar um aplicativo Python em execução no Serviço de Aplicativo do Azure usando o Visual Studio.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,11 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3d792a411867686abe0734fc67dfe654320d8b38
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058546"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Solução de problemas da depuração remota para o Python e o Azure
 
@@ -24,7 +25,7 @@ O Visual Studio não consegue se anexar a um [Serviço de Aplicativo do Azure pa
 
 | Motivo | Resolução |
 | --- | --- |
-| Você não tem o Visual Studio 2013 Atualização 4 ou posterior instalado. | Instale uma versão adequada de [visualstudio.com](https://www.visualstudio.com/downloads/). | 
+| Você não tem o Visual Studio 2013 Atualização 4 ou posterior instalado. | Instale uma versão adequada do [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
 | O projeto implantado no Serviço de Aplicativo não corresponde ao que está aberto no Visual Studio. | Carregue o projeto correto no Visual Studio. |
 | O projeto não foi implantado com a configuração Depuração. | Reimplante o aplicativo clicando com o botão direito do mouse no projeto, no Gerenciador de Soluções e selecionando **Publicar**. Na guia **Configurações**, verifique se **Depuração** é a configuração selecionada. |
 | O Serviço de Aplicativo não está em execução. | Inicie-o no Gerenciador de Servidores do Visual Studio ou no portal do Azure. |

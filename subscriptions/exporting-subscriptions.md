@@ -9,12 +9,12 @@ description: Saiba como exportar uma lista de assinantes e os detalhes de suas a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031316"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326261"
 ---
 # <a name="exporting-subscription-information"></a>Exportando informações de assinatura
 
@@ -23,4 +23,4 @@ No [portal do administrador](https://manage.visualstudio.com) de assinaturas do 
 Esse recurso é útil em alguns cenários, como atribuições de acompanhamento e datas de vencimento. Por exemplo, se você estiver fazendo a transição do uso de BANs pelo uso de GUIDs, você poderá usar este relatório com a fórmula VLOOKUP no Microsoft Excel para corresponder corretamente os assinantes.  
 
 Para realizar a exportação, basta selecionar a guia **Exportar** e o arquivo é baixado no computador local. O arquivo inclui o nome da conta do contrato que contém suas assinaturas do usuário e também a data da exportação.  
-        ![Exportar Assinantes](_img\exporting-subscriptions\exporting-subscriptions.png)
+![Exportar assinantes](_img\exporting-subscriptions\exporting-subscriptions.png)

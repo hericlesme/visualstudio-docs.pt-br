@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747047"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924060"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Como criar um sombreador de textura básica
+# <a name="how-to-create-a-basic-texture-shader"></a>Como criar um sombreador de textura básico
 
 Este artigo demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de textura única. Esse sombreador define a cor final diretamente para os valores RGB e alfa, cujas amostras são obtidas da textura.
 
@@ -29,7 +29,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
 1.  Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
 
-2.  Exclua o nó **Ponto de Cor**. No modo de **Seleção**, selecione o nó **Ponto de Cor** e, em seguida, na barra de menus, escolha **Editar** e **Excluir**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
+2.  Exclua o nó **Ponto de Cor**. No modo de **Seleção**, selecione o nó **Cor do Ponto** e, em seguida, na barra de menus, escolha **Editar** > **Excluir**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
 3.  Adicione um nó **Amostra de Textura** ao grafo. Na **Caixa de Ferramentas**, em **Textura**, selecione **Amostra de Textura** e mova-a para a superfície de design.
 

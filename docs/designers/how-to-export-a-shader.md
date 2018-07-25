@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924989"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924073"
 ---
 # <a name="how-to-export-a-shader"></a>Como exportar um sombreador
 Este documento demonstra como usar o Designer de Sombreador para exportar um sombreador da DGSL (Directed Graph Shader Language) para poder usá-lo em seu aplicativo.
@@ -27,13 +27,13 @@ Este documento demonstra como usar o Designer de Sombreador para exportar um som
 ## <a name="exporting-a-shader"></a>Exportar um sombreador
  Depois de criar um sombreador usando o Designer de Sombreador é necessário exportá-lo em um formato que seja compreendido pela API de gráficos antes de usá-lo em seu aplicativo. Você pode exportar um sombreador de maneiras diferentes para atender a necessidades diferentes.
 
-#### <a name="to-export-a-shader"></a>Para exportar um sombreador
+### <a name="to-export-a-shader"></a>Para exportar um sombreador
 
 1.  No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra uma arquivo do **Visual Shader Graph (.dgsl)**.
 
-     Se você não tem um arquivo do **Visual Shader Graph (.dgsl)** para abrir, crie um conforme descrito em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
+     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
 
-2.  Na barra de ferramentas do **Designer de Sombreador**, escolha **Avançado**, **Exportar** e **Exportar como**. A caixa de diálogo **Exportar Sombreador** é exibida.
+2.  Na barra de ferramentas **Designer de Sombreador**, escolha **Avançado** > **Exportar** > **Exportar Como**. A caixa de diálogo **Exportar Sombreador** é exibida.
 
 3.  Na lista suspensa **Salvar como tipo**, escolha o formato que você deseja exportar.
 

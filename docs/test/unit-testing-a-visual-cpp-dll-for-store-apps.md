@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751865"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117622"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
 
@@ -26,7 +26,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
 
-1.  No menu **Arquivo**, escolha **Novo** > **Projeto...**.
+1.  No menu **Arquivo**, escolha **Novo** > **Novo Projeto**.
 
 2.  Na caixa Novo Projeto, expanda **Instalado** > **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
 
@@ -46,7 +46,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     -   Os métodos de teste são agrupados em classes usando `TEST_CLASS(YourClassName){...}`.
 
-         Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, consulte [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) na biblioteca MSDN.
+         Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, consulte [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) na biblioteca MSDN.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes
 
@@ -113,7 +113,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 5.  Adicione implementações mínimas das funções declaradas. Abra **RooterLib.cpp** e adicione o seguinte código:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 1.  Adicione RooterLib ao projeto RooterLibTests.
 
-    1.  No Gerenciador de Soluções, escolha o projeto **RooterLibTests** e, em seguida, **Referências...** no menu de atalho.
+    1.  No Gerenciador de Soluções, escolha o projeto **RooterLibTests** e, em seguida, clique em **Referências** no menu de atalho.
 
     2.  Na caixa de diálogo Propriedades do Projeto RooterLib, expanda **Propriedades Comuns** e escolha **Estrutura e Referências**.
 
-    3.  Escolha **Adicionar nova referência...**
+    3.  Escolha **Adicionar Nova Referência**
 
     4.  Na caixa de diálogo **Adicionar Referência**, expanda **Solução** e, em seguida, escolha **Projetos**. Então selecione o item **RouterLib**.
 
@@ -151,7 +151,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 3.  Adicione um teste que use a função importada. Adicione o seguinte código a **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 1.  Adicionar outro teste a **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     3.  Adicione código ao **RooterLib.cpp** para capturar a exceção:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

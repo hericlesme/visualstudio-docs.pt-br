@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747620"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089653"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -53,7 +53,12 @@ No Visual Studio, o arquivo de projeto é usado pelo **Gerenciador de Soluções
 
 Um projeto está contido dentro de uma *solução*. Uma solução contém um ou mais projetos relacionados, juntamente com informações de build, configurações de janela do Visual Studio e arquivos diversos que não estão associados a nenhum projeto específico. Uma solução é descrita por um arquivo de texto (extensão *.sln*) com seu próprio formato exclusivo, que não se destina à edição manual.
 
-Uma solução tem um arquivo *.suo* associado que armazena as configurações, as preferências e as informações de configuração de cada usuário que trabalhou no projeto.
+O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
+
+|Extensão|Nome|Descrição|
+|---------------|----------|-----------------|
+|.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
+|.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
@@ -63,7 +68,7 @@ Também é possível criar modelos de item e de projeto personalizados. Para obt
 
 ## <a name="manage-projects-in-solution-explorer"></a>Gerenciar projetos no Gerenciador de Soluções
 
-Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções** para exibir e gerenciar o projeto, a solução e seus itens associados. A ilustração a seguir mostra o **Gerenciador de Soluções** com uma solução em C# que contém dois projetos.
+Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções** para exibir e gerenciar o projeto, a solução e seus itens associados. A ilustração a seguir mostra o **Gerenciador de Soluções** com uma solução C# que contém dois projetos:
 
 ![Gerenciador de Soluções](../ide/media/vs2015_solution_explorer.png)
 

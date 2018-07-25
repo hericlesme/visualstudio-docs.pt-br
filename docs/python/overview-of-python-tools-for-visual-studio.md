@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449163"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175360"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>Trabalhando com o Python no Visual Studio no Windows
+# <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
 O Python é uma linguagem de programação popular confiável, flexível, fácil de aprender, de uso gratuito em todos os sistemas operacionais e com suporte em uma sólida comunidade de desenvolvedores e várias bibliotecas gratuitas. O Python permite todas as formas de desenvolvimento, incluindo aplicativos Web, serviços Web, aplicativos de área de trabalho, scripts e computação científica, além de ser usado por diversas universidades, cientistas, desenvolvedores amadores e também desenvolvedores profissionais. Saiba mais sobre a linguagem em [python.org](https://www.python.org) e em [Python para iniciantes](https://www.python.org/about/gettingstarted/).
 
@@ -47,17 +47,17 @@ Para saber mais:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
-O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting (mostrado abaixo). O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, Ir para Definição, Localizar Todas as Referências e trechos de código. A integração direta com a [Janela Interativa](#interactive-window) ajuda você a desenvolver rapidamente um código Python que já está salvo em um arquivo.
+O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting. O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, Ir para Definição, Localizar Todas as Referências e trechos de código. A integração direta com a [Janela Interativa](#interactive-window) ajuda você a desenvolver rapidamente um código Python que já está salvo em um arquivo.
 
 ![Preenchimento de código para código Python no Visual Studio](media/code-editing-completions-simple.png)
 
 Para saber mais:
 
 - Vídeo (00:02:30): [Editando o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Docs: [Editando o código Python](editing-python-code-in-visual-studio.md)
-- Docs: [Formatação do código](formatting-python-code.md)
-- Docs: [Refatoração](refactoring-python-code.md)
-- Docs: [Linting](linting-python-code.md)
+- Docs: [Editar o código Python](editing-python-code-in-visual-studio.md)
+- Docs: [Formatar o código](formatting-python-code.md)
+- Docs: [Refatorar o código](refactoring-python-code.md)
+- Docs: [Usar um linter](linting-python-code.md)
 - Documentos de recursos gerais do Visual Studio: [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Janela Interativa
@@ -138,7 +138,7 @@ Para saber mais:
 
 O Visual Studio oferece suporte integrado para publicar aplicativos Web e serviços de nuvem no Azure. O Visual Studio inclui modelos de item `web.config` essenciais para conteúdo dinâmico e estático. A carga de trabalho do Python também inclui o Azure SDK para Python, que simplifica o consumo de serviços do Azure em aplicativos do Windows, do Mac OS X e do Linux.
 
-![Publicar o aplicativo Python no Azure com o Visual Studio](media/azure-publish-dialog.png)
+![Publicar o aplicativo Python no Azure pelo Visual Studio](media/azure-publish-dialog.png)
 
 Para saber mais:
 
@@ -169,7 +169,7 @@ R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é e
 
 Os recursos do Python podem ser instalados nas seguintes edições do Visual Studio, conforme é descrito no [guia de instalação](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2017 (todas as edições)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017 (todas as edições)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015 (todas as edições)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express para Web, Atualização 2 ou posterior
@@ -178,7 +178,7 @@ Os recursos do Python podem ser instalados nas seguintes edições do Visual Stu
 - Visual Studio 2012 (edição Pro ou superior)
 - Visual Studio 2010 SP1 (edição Pro ou superior; o .NET 4.5 é necessário)
 
-O Visual Studio 2015 e versões anteriores estão disponíveis em [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Somente há suporte e manutenção completos para os recursos na versão mais recente do Visual Studio. Os recursos estão disponíveis nas versões mais antigas, mas não recebem manutenção ativa.

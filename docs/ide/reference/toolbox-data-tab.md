@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7deb9fef0ee50ecd202cc711566795932a9f51b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949705"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089666"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de Ferramentas, Guia Dados
+
 Exibe objetos de dados que é possível adicionar a formulários e componentes. A guia **Dados** da **Caixa de Ferramentas** é exibida ao criar um projeto que tem um designer associado. A **Caixa de Ferramentas** é exibida por padrão no ambiente de desenvolvimento integrado do Visual Studio; se for preciso exibir a **Caixa de Ferramentas**, selecione **Caixa de Ferramentas** no menu **Exibir**.
 
 > [!TIP]
-> Executar o Assistente de configuração de fonte de dados cria e configura automaticamente a maioria dos itens de dados. Para obter mais informações, consulte [Adicionar novas fontes de dados](../../data-tools/add-new-data-sources.md).
-
+> A execução do Assistente de Configuração de Fonte de Dados cria e configura automaticamente a maioria dos itens de dados. Para obter mais informações, consulte [Adicionar novas fontes de dados](../../data-tools/add-new-data-sources.md).
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
- Para acessar diretamente a página de referência do .NET Framework para um componente, pressione **F1** no item na **Caixa de Ferramentas** ou no item de componente na bandeja do designer.
+
+Para acessar diretamente a página de referência do .NET Framework para um componente, pressione **F1** no item na **Caixa de Ferramentas** ou no item de componente na bandeja do designer.
 
 |Nome|Descrição|
 |----------|-----------------|
@@ -40,11 +41,10 @@ Exibe objetos de dados que é possível adicionar a formulários e componentes. 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Acessando dados no Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Acessar dados no Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Ferramentas de dados do Visual Studio para .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Ferramentas de conjunto de dados no Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associar controles a dados no Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associando controles do Windows Forms a dados no Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Editar dados em conjuntos de dados](../../data-tools/edit-data-in-datasets.md)
 - [Validando dados em conjuntos de dados](../../data-tools/validate-data-in-datasets.md)
-- [Salvando dados](../../data-tools/saving-data.md)

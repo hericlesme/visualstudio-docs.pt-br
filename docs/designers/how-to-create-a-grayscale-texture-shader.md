@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746319"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924181"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Como criar um sombreador de textura em escala de cinza
 
@@ -27,7 +27,7 @@ Você pode implementar um sombreador de textura em escala de cinza, modificando 
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um sombreador de textura básico, conforme descrito em [Como criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1.  Crie um sombreador de textura básico, conforme a descrição em [Como criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
 2.  Desconecte o terminal **RGB** do nó **Amostra de Textura** do terminal **RGB** do nó **Cor Final**. No modo de **Seleção**, escolha o terminal **RGB** do nó **Amostra de Textura** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 

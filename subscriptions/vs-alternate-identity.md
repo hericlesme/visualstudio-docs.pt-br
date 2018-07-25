@@ -9,11 +9,12 @@ description: Como adicionar uma identidade alternativa à sua assinatura do Visu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326300"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades para assinantes do Visual Studio
 
@@ -34,42 +35,35 @@ Isso não fornece uma cópia da assinatura para a outra conta; apenas possibilit
 
 Para todas as assinaturas, é possível adicionar uma "conta corporativa ou de estudante" para que você possa usar essa conta com benefícios que exigem um logon (VS IDE, VSTS e Azure).
 
-### <a name="prerequisites"></a>Pré-requisitos
-
-* [Permissões de proprietário de conta ou de administrador de coleção de projeto no VSTS](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Para usar a conta alternativa, sua assinatura associada à conta deverá incluir o Visual Studio Team Services ou o Microsoft Azure.
-
-> [!Note]
-> Você pode continuar usando os benefícios de assinatura com a ID alternativa, mas a assinatura ainda está associada à sua conta original.
 
 ### <a name="add-the-alternate-account"></a>Adicionar a conta alternativa
 
-1. Entre no Visual Studio com sua conta da Microsoft (https://{suaconta}.visualstudio.com).
+
+1. Entre no portal do Assinante do Visual Studio com sua Conta Microsoft (https://my.visualstudio.com).
 
 2. Vá atá **Assinaturas**.
 
-  ![Adicionar conta alternativa – ir para assinaturas no VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![Adicionar conta alternativa – ir para assinaturas no VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Escolha **Adicionar conta alternativa**.
 
-  ![Escolher adicionar conta alternativa ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Escolher adicionar conta alternativa ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Adicione sua conta corporativa ou de estudante.
 
-  ![Adicionar conta corporativa ou de estudante](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Adicionar conta corporativa ou de estudante](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Use sua conta corporativa ou de estudante para entrar no Visual Studio (https://{youraccount}.visualstudio.com).
+5. Use sua conta corporativa ou de estudante para entrar no Visual Studio Team Services (https://{suaconta}.visualstudio.com).
 
-  ![Use sua conta corporativa ou de estudante](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Use sua conta corporativa ou de estudante](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Sua conta alternativa é adicionada à assinatura do Visual Studio, permitindo que as duas identidades utilizem os benefícios da assinatura que exigem que você entre com a conta alternativa (IDE, VSTS e Azure).
-
-Para obter mais informações sobre como adicionar uma conta alternativa, consulte a página [Perguntas Frequentes sobre meu Visual Studio](https://www.visualstudio.com/my/myvsfaq#alternate).
+Sua conta alternativa é adicionada à assinatura do Visual Studio, permitindo que as duas identidades utilizem os benefícios da assinatura que exigem que você entre com a conta alternativa (IDE, VSTS e Azure).
 
 ## <a name="faq"></a>Perguntas Frequentes
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>P: Por que o VSTS não me reconhece como um assinante do Visual Studio?
+
 R: O VSTS deverá reconhecer sua assinatura automaticamente quando você entrar usando sua identidade principal ou alternativa. Caso contrário, você poderá tentar algumas coisas:
 
 * Verifique se você tem uma assinatura ativa do Visual Studio que [inclua o VSTS como um benefício](vs-vsts.md).
@@ -78,4 +72,4 @@ R: O VSTS deverá reconhecer sua assinatura automaticamente quando você entrar 
 
 * Visite o [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pelo menos uma vez antes de entrar no VSTS.
 
-Se o VSTS ainda não reconhecer sua assinatura, [contate o suporte](https://www.visualstudio.com/team-services/support/)
+Se o VSTS ainda não reconhecer sua assinatura, [contate o suporte](https://visualstudio.microsoft.com/team-services/support/)

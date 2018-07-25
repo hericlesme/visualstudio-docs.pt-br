@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750357"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090043"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutorial, etapa 4: Usar o modelo Projeto Web completo do Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Django completo
 
 **Etapa anterior: [Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ No nível mais amplo, o modelo "Projeto Web do Django" cria a seguinte estrutura
   - `requirements.txt` que contém uma dependência no Django 1.x.
   - `readme.html`, um arquivo que é exibido no Visual Studio depois de criar o projeto. Conforme observado na seção anterior, siga as instruções aqui para criar uma conta de superusuário (administrador) para o aplicativo.
 - A pasta `app` contém todos os arquivos de aplicativo, incluindo exibições, modelos, testes, formulários, modelos e arquivos estáticos (veja a etapa 4-2). Normalmente, você renomeie esta pasta para usar um nome de aplicativo mais diferente.
-- A pasta `DjangoWeb` (projeto do Django) contém os arquivos de projeto típicos do Django: `__init.py__`, `settings.py`, `urls.py` e `wsgi.py`. Usando o modelo de projeto, `settings.py` já está configurado para o aplicativo e o arquivo de banco de dados, e `urls.py` já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
+- A pasta `DjangoWeb` (projeto do Django) contém os arquivos de projeto típicos do Django: `__init__.py`, `settings.py`, `urls.py` e `wsgi.py`. Usando o modelo de projeto, `settings.py` já está configurado para o aplicativo e o arquivo de banco de dados, e `urls.py` já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pergunta: É possível compartilhar um ambiente virtual entre projetos do Visual Studio?
 
@@ -215,7 +215,8 @@ Resposta: A falta do '$' à direita na expressão regular foi um erro simples em
 > [!div class="nextstepaction"]
 > [Autenticar usuários no Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
+- [Implantar o aplicativo Web no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Como gravar seu primeiro aplicativo do Django, parte 4 – Modos de exibição genéricos e formulários](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

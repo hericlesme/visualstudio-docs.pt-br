@@ -9,36 +9,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078219"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: Personalizar o Editor e o IDE do Visual Studio
 
-Neste guia de Início Rápido de 5 a 10 minutos, nós personalizaremos o tema de cores do Visual Studio e duas cores de texto no **Editor de Texto**.
+Neste início rápido de 5 a 10 minutos, personalizaremos o tema de cores do Visual Studio e duas cores de texto no editor de texto.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="set-the-color-theme"></a>Definir o tema de cores
 
-O tema de cores padrão para o Visual Studio 2017 é chamado de **Azul**. Vamos alterar para **Escuro**.
+O tema de cores padrão para a interface do usuário do Visual Studio 2017 é chamada **Azul**. Vamos alterar para **Escuro**.
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, que é a linha de menus, como **Arquivo** e **Editar**, escolha **Ferramentas** > **Opções**.
 
 1. Na página de opções **Ambiente** > **Geral**, altere a seleção **Tema de cores** para **Escuro** e, em seguida, escolha **OK**.
 
-   O tema de cores para todo o IDE é alterado para **Escuro**.
+   O tema de cores para todo o IDE (ambiente de desenvolvimento) do Visual Studio é alterado para **Escuro**.
 
-   ![VS em um tema escuro](media/quickstart-personalize-dark-theme.png)
+   ![VS no tema escuro](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
 > É possível instalar temas predefinidos adicionais instalando o **Visual Studio Color Theme Editor** por meio do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
 
 ## <a name="change-text-color"></a>Alterar a cor do texto
 
-Agora personalizaremos algumas cores de texto para o Editor. Primeiro, vamos abrir um arquivo XML para ver as cores padrão.
+Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar um arquivo XML para ver as cores padrão.
 
 1. Na barra de menus, escolha **Arquivo** > **Novo** > **Arquivo**.
 
@@ -72,7 +73,7 @@ Agora personalizaremos algumas cores de texto para o Editor. Primeiro, vamos abr
    </Catalog>
    ```
 
-   Observe que os números de linha são da cor azul turquesa e os atributos XML são da cor azul claro. Vamos alterar a cor do texto para esses itens.
+   Observe que os números de linha são azul-turquesa e os atributos XML (como `id="bk101"`) são azul-claro. Vamos alterar a cor do texto desses itens.
 
    ![Cores de fonte do arquivo XML](media/quickstart-personalize-xml-file.png)
 
@@ -80,7 +81,7 @@ Agora personalizaremos algumas cores de texto para o Editor. Primeiro, vamos abr
 
 1. Em **Ambiente**, escolha a categoria **Fontes e Cores**.
 
-   Observe que o texto em **Mostrar configurações para** diz **Editor de Texto**&mdash; e é isto o que queremos. Você pode expandir a lista suspensa para ver a lista abrangente dos locais onde você pode personalizar as fontes e a cor do texto.
+   Observe que o texto em **Mostrar configurações para** diz **Editor de Texto**&mdash; e é isto o que queremos. Expanda a lista suspensa apenas para ver a lista abrangente dos locais em que você pode personalizar as fontes e a cor do texto.
 
 1. Para alterar a cor do texto de números de linha, a lista **Exibir itens**, escolha **Número de Linha**. Na caixa **Primeiro plano do item**, escolha **Verde-oliva**.
 

@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925505"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079654"
 ---
 # <a name="work-with-textures-and-images"></a>Trabalhar com texturas e imagens
 
 Você pode usar o Editor de Imagens no Visual Studio para criar e modificar imagens e texturas. O Editor de Imagens dá suporte aos formatos avançados de textura e imagens como aqueles que são usados no desenvolvimento de aplicativos do DirectX.
 
 > [!NOTE]
-> O Editor de Imagens não dá suporte a imagens com poucas cores como ícones ou cursores. Para criar ou modificar esses tipos de imagens, use o [Editor de imagens para ícones (C++)](/cpp/windows/image-editor-for-icons).
+> O Editor de Imagens não dá suporte a imagens com poucas cores como ícones ou cursores. Para criar ou modificar esses tipos de imagens, use o [Editor de Imagens para ícones (C++)](/cpp/windows/image-editor-for-icons).
 
 ## <a name="textures-and-images"></a>Texturas e imagens
 

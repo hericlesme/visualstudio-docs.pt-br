@@ -1,5 +1,6 @@
 ---
-title: Executar testes de unidade com o Gerenciador de Testes
+title: Executar, criar e depurar testes de unidade com o Gerenciador de Testes
+description: Saiba como executar testes com o Gerenciador de Testes no Visual Studio. Este tópico aborda como habilitar execuções de teste automáticas após o build, exibir resultados do teste, agrupar e filtrar a lista de testes, criar playlists, depurar testes e usar atalhos de teste.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752060"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977785"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -44,7 +45,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
-- Para executar todos os testes em um grupo padrão, escolha **Executar...** e, em seguida, escolha o grupo no menu.
+- Para executar todos os testes em um grupo padrão, escolha **Executar** e, em seguida, escolha o grupo no menu.
 
 - Selecione os testes individuais que deseja executar, abra o menu de contexto para um teste selecionado e escolha **Executar Testes Selecionados**.
 
@@ -54,7 +55,7 @@ A barra de aprovação/reprovação na parte superior da janela do Gerenciador d
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 
-|||
+|Botão|Descrição|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, escolha **Executar testes após build** na barra de ferramentas do Gerenciador de Testes.|
 
@@ -126,7 +127,7 @@ O Gerenciador de Testes permite agrupar os testes em categorias predefinidas. A 
 
 Você pode usar o Gerenciador de Testes filtros para limitar os métodos de teste em seus projetos que você exibe e executa.
 
-Quando você digitar em uma cadeia de caracteres na caixa de pesquisa do Gerenciador de Testes e a tecla ENTER, a lista de testes é filtrada para exibir somente os testes cujos nomes totalmente qualificados contêm a cadeia de caracteres.
+Quando você digita uma cadeia de caracteres na caixa de pesquisa do Gerenciador de Testes e escolhe a tecla ENTER, a lista de testes é filtrada para exibir somente os testes cujos nomes totalmente qualificados contêm a cadeia de caracteres.
 
 Para filtrar por um critério diferente:
 
@@ -153,7 +154,7 @@ Para filtrar por um critério diferente:
 
 Para excluir um subconjunto dos resultados de um filtro, use a seguinte sintaxe:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

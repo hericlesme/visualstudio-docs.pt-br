@@ -1,5 +1,5 @@
 ---
-title: Como modificar arquivos Web.Config para instrumentar e analisar aplicativos Web ASP.NET dinamicamente compilados | Microsoft Docs
+title: Como modificar arquivos Web.Config para instrumentar e analisar aplicativos Web ASP .NET dinamicamente compilados | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336026"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844759"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como modificar arquivos Web.Config para instrumentar e criar perfil de Aplicativos Web ASP.NET compilados dinamicamente
 Você pode usar o método de instrumentação das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para coletar dados de tempo detalhados, dados de alocação de memória do .NET e dados de tempo de vida do objeto do .NET de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dinamicamente compilados.  
   
- Este tópico descreve como modificar o arquivo de configuração web.config para habilitar a instrumentação e criação de perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+ Este tópico descreve como modificar o arquivo de configuração *web.config* para habilitar a instrumentação e a criação de perfil de aplicativos Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 > [!NOTE]
->  Não é necessário modificar o arquivo web.config quando você usa o método de criação de perfil por amostragem ou quando você desejar instrumentar um módulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado.  
+>  Não é necessário modificar o arquivo *web.config* quando você usa o método de criação de perfil por amostragem ou quando você deseja instrumentar um módulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado.  
   
- A raiz de um arquivo web.config é o elemento **configuração**. Para instrumentar e analisar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente, é necessário adicionar ou modificar os seguintes elementos:  
+ A raiz de um arquivo *web.config* é o elemento **configuration**. Para instrumentar e criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente, é necessário adicionar ou modificar os seguintes elementos:  
   
 -   Um elemento **configuration/runtime/assemblyBinding/dependentAssembly** que identifica o assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper que controla a criação de perfil. O elemento **dependentAssembly** contém dois elementos filho: **assemblyIdentity** e **codeBase**.  
   
@@ -33,7 +33,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
   
 -   Dois elementos **add** que identificam o local das Ferramentas de Criação de Perfil são adicionados à seção **configuration/appSettings**.  
   
- É recomendável que você crie uma cópia do arquivo web.config original que pode ser usada para restaurar a configuração do aplicativo.  
+ Recomendamos a criação de uma cópia do arquivo *web.config* original que pode ser usada para restaurar a configuração do aplicativo.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Para adicionar o assembly ASPNetHelper como um elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
@@ -176,7 +176,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 ```  
   
 ## <a name="example"></a>Exemplo  
- Este é um arquivo web.config concluído que habilita a instrumentação e criação de perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dinamicamente compilados. Este exemplo presume que não havia outras configurações no arquivo antes de qualquer modificação.  
+ A seguir há um arquivo *web.config* completo que habilita a instrumentação e criação de perfil de aplicativos Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilados dinamicamente. Este exemplo presume que não havia outras configurações no arquivo antes de qualquer modificação.  
   
 ```xml  
 <?xml version="1.0"?>  

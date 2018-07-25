@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256130"
 ---
 # <a name="nameprofile"></a>NameProfile
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.  
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Identificador de nível de criação de perfil. Use o identificador de processo ou thread que é gerado pelo sistema.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
@@ -85,18 +86,18 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 >  As funções de API CreateProcess() e CreateThread() podem retornar antes de o thread ou processo ser inicializado.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informações de função  
   
 |||  
 |-|-|  
-|**Header**|Inclui VSPerf.h|  
-|**Library**|Use VSPerf.lib|  
+|**Header**|Incluir *VSPerf.h*|  
+|**Library**|Usar *VSPerf.lib*|  
 |**Unicode**|Implementado como `NameProfileW` (Unicode) e `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Exemplo  
- O código a seguir ilustra a chamada da função NameProfile. O exemplo pressupõe o uso de macros de cadeia de caracteres do Win32 e as configurações de compilador para ANSI para determinar se o código chama a função habilitada por ANSI.  
+ O código a seguir ilustra a chamada da função NameProfile. O exemplo pressupõe o uso de macros da cadeia de caracteres do Win32 e as configurações do compilador para ANSI para determinar se o código chama a função habilitada do ANSI.  
   
 ```cpp  
 void ExerciseNameProfile()  

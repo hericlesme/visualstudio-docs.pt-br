@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: aaf954ab2ffb9102becd8d4025043facebb36bb1
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31624886"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978229"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
@@ -141,6 +141,9 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
 
+   # Restore the default Windows shell for correct batch processing below.
+   SHELL ["cmd", "/S", "/C"]
+
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
@@ -162,7 +165,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ```
 
    > [!NOTE]
-   > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie sua imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou mais recente.
+   > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie sua imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou mais recente. Observe também que imagens mais recentes podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
 
 4. Execute o seguinte comando nesse diretório.
 
@@ -189,7 +192,7 @@ Para usar essa imagem no fluxo de trabalho CI/CD, publique-a no seu próprio [Re
 
 ## <a name="get-support"></a>Obter suporte
 
-Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
 

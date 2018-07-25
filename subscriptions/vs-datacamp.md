@@ -3,18 +3,18 @@ title: Aprimore suas habilidades de ciência de dados hoje mesmo com o benefíci
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/2018
 ms.topic: Get-Started-Article
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ab16223378e8e985c636611bc4598b70bdef20f4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448682"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890123"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 
@@ -22,40 +22,40 @@ As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  C
 
 A duração do benefício do DataCamp depende da sua assinatura do Visual Studio.
 
-## <a name="activation-steps"></a>Etapas de ativação  
+## <a name="activation-steps"></a>Etapas de ativação
 
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício do DataCamp na categoria "Desenvolvimento Profissional" e clique em **Ativar**.
-
-    ![Bloco do Benefício do DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+    ![Bloco do benefício DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. Na página do DataCamp, você pode criar uma nova conta.  É possível optar por inserir um endereço de email e senha ou entrar usando contas existentes do Facebook, do LinkedIn ou do Google.  Depois de inserir as informações de conexão, clique em **Começar**.
-
-    ![Criar nova conta no DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
+    ![DataCamp – Criar Conta](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.  
+    > Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.
 
 4. Depois de criar uma conta, você pode escolher um roteiro de aprendizagem.  As opções incluem:
     - Aprendizado de R para ciência de dados
     - Aprendizado de Python para ciência de dados
     - Desenvolver seu conjunto de qualificações de ciência de dados
 
-    Basta clicar no roteiro escolhido para começar.   
+
+    Basta clicar no roteiro escolhido para começar.
 
      ![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
-5. Depois de selecionar o roteiro, é possível refinar ainda mais seu roteiro de aprendizagem selecionando uma meta.  Por exemplo, se você escolher o caminho "Desenvolver seu conjunto de qualificações de ciência de dados", as opções a seguir serão exibidas. Escolha uma opção ou clique em **Não sei.  Mostre-me todos os caminhos de carreiras** para criar um roteiro mais amplo. 
+5. Depois de selecionar o roteiro, é possível refinar ainda mais seu roteiro de aprendizagem selecionando uma meta.  Por exemplo, se você escolher o caminho "Desenvolver seu conjunto de qualificações de ciência de dados", as opções a seguir serão exibidas. Escolha uma opção ou clique em **Não sei.  Mostre-me todos os caminhos de carreiras** para criar um roteiro mais amplo.
 
     ![Conjunto de qualificações de ciência de dados do DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
-6. Com base no roteiro e nas opções que você selecionou, você verá uma seleção de faixas de carreira.  Clique no botão **Registrar** na faixa de sua preferência. 
+6. Com base no roteiro e nas opções que você selecionou, você verá uma seleção de faixas de carreira.  Clique no botão **Registrar** na faixa de sua preferência.
 
     ![Faixa de carreiras do DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
-7. Depois de se registrar na faixa, o primeiro curso será aberto.  Você verá um tutorial explicando como interagir com o curso, incluindo a navegação e conclusão dos exercícios do curso.  
+7. Depois de se registrar na faixa, o primeiro curso será aberto.  Você verá um tutorial explicando como interagir com o curso, incluindo a navegação e conclusão dos exercícios do curso.
+
 
     ![Introdução ao DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
@@ -78,13 +78,14 @@ Você pode parar a qualquer momento e retomar seu treinamento na próxima sessã
 <sup>1</sup>  *Inclui:  NFR (Proibida a revenda), FTE, MVP (Microsoft Valued Partner), RD (Diretor regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda para usar o DataCamp?  Confira estes recursos:
     - [Comunidade DataCamp](https://www.datacamp.com/community/tutorials), com fóruns e tutoriais.
-    - [Centro de Ajuda do DataCamp](https://support.datacamp.com/hc), onde procurar tópicos de suporte e consultar as perguntas de usuário de solicitação.  
+    - [Centro de Ajuda do DataCamp](https://support.datacamp.com/hc), onde procurar tópicos de suporte e consultar as perguntas de usuário de solicitação.
     - [Enviar uma solicitação de suporte](https://support.datacamp.com/hc/requests/new)
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

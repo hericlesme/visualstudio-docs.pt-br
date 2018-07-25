@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948201"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117154"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Você pode instalar e exibir conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer, incluindo conteúdo do Visual Studio, do .NET Framework, da referência de linguagem, do SQL Server e do Desenvolvimento para Windows. O Help Viewer, permite que você:
+Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer. Esses produtos incluem o Visual Studio, o .NET Framework, a referência da linguagem, o SQL Server e o Desenvolvimento para Windows. O Help Viewer, permite que você:
 
--   Localize e baixe conjuntos de conteúdo, que também são chamados de livros.
+- Baixe conjuntos de conteúdo, que também são chamados de livros. Isso é útil quando você precisa trabalhar "offline" e ainda ter acesso à documentação.
 
--   Localize tópicos por título, por meio da navegação e da pesquisa do sumário.
+- Localize tópicos por título, por meio da navegação e da pesquisa do sumário.
 
--   Pesquise assuntos no índice.
+- Pesquise assuntos no índice.
 
--   Localize informações usando a pesquisa de texto completo.
+- Localize informações usando a pesquisa de texto completo.
 
--   Exibir, definir como indicador e imprimir tópicos.
+- Exibir, definir como indicador e imprimir tópicos.
 
 Para instalar o Help Viewer, confira [Instalação do Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Para começar a ler os tópicos no Help Viewer em vez de fazer isso online, acesse o menu **Ajuda** no Visual Studio e, em seguida, escolha **Definir Preferência de Ajuda** > **Iniciar no Help Viewer**.
+
+> [!TIP]
+> Outra maneira de baixar conteúdo localmente para que você possa exibi-lo quando não houver conexão de Internet é baixar uma versão em PDF. Muitos conjuntos de documentação no docs.microsoft.com incluem um link na parte inferior do sumário para baixar um arquivo PDF que contém todos os artigos desse sumário.
+>
+> ![Baixe o PDF da documentação do Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Tour do Help Viewer
 
@@ -74,19 +79,19 @@ A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se
 
 A barra de ferramentas na janela do **Help Viewer** contém os seguintes botões:
 
--   O botão **Mostrar Tópico em Conteúdo** mostra a localização do tópico na guia **Conteúdo**.
+- O botão **Mostrar Tópico em Conteúdo** mostra a localização do tópico na guia **Conteúdo**.
 
--   O botão **Adicionar aos Favoritos** adiciona o tópico ativo à guia **Favoritos**.
+- O botão **Adicionar aos Favoritos** adiciona o tópico ativo à guia **Favoritos**.
 
--   O botão **Localizar no Tópico** realça o texto de pesquisa no tópico ativo.
+- O botão **Localizar no Tópico** realça o texto de pesquisa no tópico ativo.
 
--   O botão **Imprimir** imprime ou mostra uma visualização do tópico ativo.
+- O botão **Imprimir** imprime ou mostra uma visualização do tópico ativo.
 
--   O botão **Opções do Visualizador** exibe configurações como o tamanho em que o texto é exibido, quantos resultados da pesquisa retornar, quantos tópicos mostrar no histórico e se é verificado se há atualizações online.
+- O botão **Opções do Visualizador** exibe configurações como o tamanho em que o texto é exibido, quantos resultados da pesquisa retornar, quantos tópicos mostrar no histórico e se é verificado se há atualizações online.
 
--   O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.
+- O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.
 
--   O triângulo pequeno do lado direito abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode escolher um nome de guia para torná-la a guia ativa.
+- O triângulo pequeno do lado direito abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode escolher um nome de guia para torná-la a guia ativa.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com o Tutorial do Python, etapa 2, escrever e executar um código
 description: Etapa 2 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo como editar código e executar um projeto.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031544"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174835"
 ---
-# <a name="step-2-writing-and-running-code"></a>Etapa 2: escrevendo e executando um código
+# <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar código
 
-**Etapa anterior: [criar um novo projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Etapa anterior: [Criar um novo projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Embora o Gerenciador de Soluções seja o local em que você gerencia arquivos de projeto, a janela do *editor* normalmente é o local em que você trabalha com o *conteúdo* dos arquivos, como o código-fonte. O editor tem reconhecimento contextual do tipo de arquivo que você está editando, incluindo a linguagem de programação (com base na extensão do arquivo) e oferece recursos apropriados para essa linguagem, como a coloração de sintaxe e o preenchimento automático usando o IntelliSense.
 
@@ -91,9 +91,9 @@ Embora o Gerenciador de Soluções seja o local em que você gerencia arquivos d
 > [!div class="nextstepaction"]
 > [Usando a janela interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Aprofundando-se
+## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
-- [Editando código](editing-python-code-in-visual-studio.md)
-- [Formatando o código](formatting-python-code.md)
-- [Código de refatoração](refactoring-python-code.md)
-- [Usando o PyLint](linting-python-code.md)
+- [Editar código](editing-python-code-in-visual-studio.md)
+- [Formatar código](formatting-python-code.md)
+- [Refatorar o código](refactoring-python-code.md)
+- [Usar PyLint](linting-python-code.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js'
 description: Neste guia de início rápido, você cria um aplicativo Node.js no Visual Studio
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,18 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0a78f9fdfd1ea3612d86432619c463d526eed5c2
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454034"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131850"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js
 
-Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples. Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
+Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples. Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="create-a-project"></a>Criar um projeto
+
 Primeiro, você criará um projeto de aplicativo Web Node.js.
 
 1. Se não tiver o tempo de execução do Node.js instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/).
@@ -42,7 +43,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
      ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
-    O Visual Studio cria a nova solução e abre o projeto. *server.js* é aberto no editor no painel esquerdo.
+    Depois que você escolher o modelo **Aplicativo Web Node.js em Branco** e clicar em **OK**, o Visual Studio criará a solução e abrirá o projeto. *server.js* é aberto no editor no painel esquerdo.
 
 ## <a name="explore-the-ide"></a>Explorar o IDE
 
@@ -50,13 +51,13 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
    ![Gerenciador de Soluções](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No disco, este projeto é representado por um arquivo *.njsproj* na pasta do projeto.
+   - O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No disco, este projeto é representado por um arquivo *.njsproj* na pasta do projeto.
 
-  - No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
+   - No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
 
-  - O nó de npm mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
+   - O nó de npm mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
 
-1. Se você deseja instalar pacotes de npm ou comandos do Node.js de um prompt de comando, clique com botão direito do mouse no nó do projeto e escolha **Abrir prompt de comando aqui**.
+1. Caso deseje instalar pacotes npm ou comandos do Node.js por meio de um prompt de comando, clique com o botão direito do mouse no nó do projeto e escolha **Abrir Prompt de Comando Aqui**.
 
    ![Prompt de comando do Node.js](../ide/media/quickstart-nodejs-command-prompt.png)
 
@@ -84,9 +85,12 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
 1. Feche o navegador da Web.
 
-Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre o IDE do Visual Studio. Se você quiser se aprofundar mais em seus recursos, continue com um tutorial na seção **Tutoriais** do sumário.
+Parabéns por concluir este Início Rápido! Nele, você se familiarizou com o IDE do Visual Studio e o Node.js. Caso deseje se aprofundar mais nas funcionalidades, continue com um tutorial na seção **Tutoriais** do sumário.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Veja o [Tutorial para Node.js e Express](../nodejs/tutorial-nodejs.md)
-- Veja o [Tutorial para Node.js e React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)
+
+- [Tutorial para o Node.js e o Express](../javascript/tutorial-nodejs.md)
+- [Tutorial para o Node.js e o React](../javascript/tutorial-nodejs-with-react-and-jsx.md)
