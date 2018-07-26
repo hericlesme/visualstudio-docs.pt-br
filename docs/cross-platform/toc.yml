@@ -24,9 +24,9 @@
   items:
     - name: Introdução às Ferramentas do Visual Studio para Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
-    - name: Usando o Visual Studio Tools for Unity
+    - name: Usar as Ferramentas do Visual Studio para Unity
       href: using-visual-studio-tools-for-unity.md
-    - name: Programando o Visual Studio Tools for Unity
+    - name: Programar as Ferramentas do Visual Studio para Unity
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: Personalizar os arquivos de projeto criados pelo VSTU
@@ -83,5 +83,5 @@
   items:
     - name: Requisitos do sistema para o emulador do Visual Studio para Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
-    - name: Solução de problemas do emulador do Visual Studio para Android
+    - name: Solução de problemas do Emulador do Visual Studio para Android
       href: troubleshooting-the-visual-studio-emulator-for-android.md
