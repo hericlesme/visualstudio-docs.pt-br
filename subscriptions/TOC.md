@@ -48,6 +48,7 @@
 #### [Para licenciamento por volume](volume-license-admins.md)
 ##### [Perguntas frequentes sobre a migração de administração do VLSC](vlsc-admin-faq.md)
 ##### Integrar sua organização
+###### [Integração após migração](post-migration-onboarding.md)
 ###### [Comunicações por email sobre a integração](volume-license-onboarding-email.md)
 ###### [Localize seu PCN](find-pcn.md)
 ###### [Localizar seu contato principal](find-primary-contact.md)

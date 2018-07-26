@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Implantar no Serviço de Aplicativo do Azure
       href: quickstart-deploy-to-azure.md
+    - name: Implantar no Serviço de Aplicativo para Linux
+      href: quickstart-deploy-to-linux.md
     - name: Implantar um site
       href: quickstart-deploy-to-a-web-site.md
     - name: Implantar em uma pasta local
