@@ -28,26 +28,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474577"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252291"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Enviar mensagens de diagnóstico para a janela de saída
-Você pode gravar mensagens de tempo de execução para o **saída** janela usando o `Debug` classe ou o `Trace` classe, que fazem parte do <xref:System.Diagnostics> biblioteca de classe. Use a classe de Depuração se você emitir uma saída apenas na versão de Depuração do programa. Use a classe de Rastreamento se você quiser uma saída nas versões de Depuração e de Inicialização.  
+Você pode escrever mensagens em tempo de execução para o **saída** janela usando o <xref:System.Diagnostics.Debug> classe ou o <xref:System.Diagnostics.Trace> classe, que fazem parte do <xref:System.Diagnostics> biblioteca de classes. Use o <xref:System.Diagnostics.Debug> classe se apenas de saída em de *depurar* versão do seu programa. Use o <xref:System.Diagnostics.Trace> classe se você quiser que a saída em ambos os *depurar* e *versão* versões.  
   
 ## <a name="output-methods"></a>Métodos de saída  
  As classes <xref:System.Diagnostics.Trace> e <xref:System.Diagnostics.Debug> fornecem os seguintes métodos de saída:  
   
 -   Vários métodos `Write`, os quais geram informações sem interromper a execução. Esses métodos substituem o método `Debug.Print` usado em versões anteriores do Visual Basic.  
   
--   Métodos <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, que interrompem informações de execução e de saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, consulte [itens no código gerenciado](../debugger/assertions-in-managed-code.md).  
+-   Métodos <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, que interrompem informações de execução e de saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, consulte [asserções em código gerenciado](../debugger/assertions-in-managed-code.md).  
   
 -   Os métodos <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, que sempre interrompem informações de execução e de saída. Por padrão, os métodos `Fail` exibem informações em uma caixa de diálogo.  
   
- Além de programa fora do seu aplicativo, o **saída** janela pode exibir as informações sobre:  
+ Além do programa fora do seu aplicativo, o **saída** janela pode exibir as informações sobre:  
   
 -   Módulos que o depurador carregou ou descarregou.  
   

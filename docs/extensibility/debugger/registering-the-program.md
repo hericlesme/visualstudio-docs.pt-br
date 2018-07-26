@@ -1,5 +1,5 @@
 ---
-title: Registrando o programa | Microsoft Docs
+title: Registrar o programa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126295"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251147"
 ---
-# <a name="registering-the-program"></a>Registrando o programa
-Depois que o mecanismo de depuração adquiriu uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa para habilitar o programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por uma das seguintes maneiras:  
+# <a name="register-the-program"></a>Registrar o programa
+Depois que o mecanismo de depuração tiver adquirido uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa na habilitação de programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por um dos seguintes meios:  
   
--   O processo de anexação, que permite que o depurador obter controle total de depuração de um aplicativo em execução.  
+-   O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.  
   
--   Just-in-time (JIT) depuração, que permite a depuração após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução detecta uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.  
+-   Just-in-time (JIT) depuração, que permite depurar os após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.  
   
-## <a name="registering-procedure"></a>Procedimento de registro  
+## <a name="registering-procedure"></a>Registrar o procedimento  
   
-#### <a name="to-register-your-program"></a>Para registrar seu programa  
+### <a name="to-register-your-program"></a>Para registrar o seu programa  
   
-1.  Chamar o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.  
+1.  Chame o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.  
   
      `IDebugPortNotify2::AddProgramNode` requer um ponteiro para um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
-     Normalmente, quando o sistema operacional ou o ambiente de tempo de execução carrega um programa, ele cria o nó do programa. Se o mecanismo de depuração (DE) é solicitado a carregar o programa a DE cria e registra o nó do programa.  
+     Normalmente, quando o sistema operacional ou o ambiente de tempo de execução carrega um programa, ele cria o nó do programa. Se o mecanismo de depuração (DES) é solicitado carregar o programa, o DE cria e registra o nó do programa.  
   
-     O exemplo a seguir mostra o mecanismo de depuração, inicie o programa e registrá-lo com uma porta.  
+     O exemplo a seguir mostra o mecanismo de depuração iniciar o programa e registrá-lo com uma porta.  
   
     > [!NOTE]
-    >  Isso não é a única maneira de iniciar e reiniciar um processo; Isso é principalmente um exemplo de registro de um programa com uma porta.  
+    >  Este exemplo de código não é a única maneira de iniciar e reiniciar um processo; Esse código é principalmente um exemplo de registro de um programa com uma porta.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  
@@ -108,5 +108,5 @@ Depois que o mecanismo de depuração adquiriu uma porta, representado por um [I
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Obtendo uma porta](../../extensibility/debugger/getting-a-port.md)   
- [Habilitar um programa para depuração](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [Obter uma porta](../../extensibility/debugger/getting-a-port.md)   
+ [Habilitar um programa a ser depurado](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

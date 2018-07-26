@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f1ba09c1802bdeb1c6a402e95a6de408b277532
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099064"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252343"
 ---
 # <a name="port-suppliers"></a>Fornecedores de porta
-Em termos de arquitetura do depurador, um **supplier porta**:  
+Na arquitetura do depurador, uma *fornecedor de porta*:  
   
--   Está contido em um servidor e fornece as portas na solicitação ao servidor.  
+-   Está contido por um servidor e fornece as portas na solicitação para esse servidor.  
   
--   Pode adicionar e remover portas do servidor de conteúdo.  
+-   Adicione e remova as portas do servidor que contém.  
   
--   Pode enumerar todas as portas que ele foi fornecido para o servidor.  
+-   Pode enumerar todas as portas que ele tenha fornecido para o servidor.  
   
--   É representado por um [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, que é registrado com o Visual Studio por meio do registro. Essa interface pode ser obtida chamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+-   É representado por um [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, que está registrado com o Visual Studio por meio do registro. Essa interface pode ser obtida chamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece um fornecedor de porta padrão e uma porta padrão. Se precisar de uma porta personalizada a ser implementada, um fornecedor de porta personalizado também precisa ser implementado para fornecer essas portas personalizadas.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece um fornecedor de porta padrão e uma porta padrão. Se uma porta personalizada precisa ser implementado, um fornecedor de porta personalizado também precisa ser implementada para fornecer essas portas personalizadas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)   

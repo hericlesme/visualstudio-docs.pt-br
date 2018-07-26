@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234818"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252356"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no serviço de aplicativo no Linux usando o Visual Studio
 
 Você pode usar o **publicar** ferramenta para publicar aplicativos ASP.NET Core no serviço de aplicativo do Azure no Linux.
+
+Implantação no serviço de aplicativo no Linux usando o **publicar** ferramenta requer o Visual Studio 2017 versão 15.7.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
@@ -49,4 +51,4 @@ Você pode usar o **publicar** ferramenta para publicar aplicativos ASP.NET Core
 Neste início rápido, você aprendeu a usar o Visual Studio para criar um perfil de publicação para implantação no serviço de aplicativo no Linux. Você poderá obter mais informações sobre a publicação para Linux usando o Azure.
 
 > [!div class="nextstepaction"]
-> [Serviço de aplicativo do Linux](/azure/app-service/containers/app-service-linux-intro)
+> [Serviço de Aplicativo do Linux](/azure/app-service/containers/app-service-linux-intro)

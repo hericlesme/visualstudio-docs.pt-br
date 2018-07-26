@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) instalado com as cargas de trabalho apropriadas para seu idioma de preferência:
   * ASP.NET: **ASP.NET e desenvolvimento web**
+  * ASP.NET Core: Carga de trabalho o ASP.NET e **desenvolvimento de plataforma cruzada do .NET Core** carga de trabalho
   * Node. js: **desenvolvimento do Node. js**
 
 * Uma assinatura do Azure. Se você ainda não tiver a assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), que inclui US $200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.

@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbe7946b866cd751be1f0dac2dba5b8dea57e04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87087a2087591b01170b82c0335e4bbffc579cc2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125741"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252447"
 ---
-# <a name="sending-events"></a>Envio de eventos
-O mecanismo para comunicação entre o depurador e o mecanismo de depuração (DE) é um modelo de evento com base em DCOM. Os eventos são enviados como objetos COM, e cada evento tem parâmetros que especificam o seguinte:  
+# <a name="send-events"></a>Enviar eventos
+O mecanismo de comunicação entre o depurador e o mecanismo de depuração (DES) é um modelo de evento com base no DCOM. Os eventos são enviados como objetos COM, e cada evento tem parâmetros que especificam:  
   
 -   O DE que o evento de chamada.  
   
 -   Uma descrição do que aconteceu.  
   
--   O processo, programa e informações de thread que identifica o contexto do qual o evento ocorreu. O processo não é enviado para eventos enviados a partir DE.  
+-   O processo, programa e informações de thread que identifica o contexto de onde o evento ocorreu. O processo não é enviado para eventos enviados a partir DE.  
   
 -   O tipo de evento que indica se o evento é síncrona ou assíncrona.  
   
@@ -35,14 +35,14 @@ O mecanismo para comunicação entre o depurador e o mecanismo de depuração (D
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Fontes de evento](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Explica as duas origens de eventos: o mecanismo de depuração (DE) e a sessão de depuração do Gerenciador (SDM).  
+ Explica as duas fontes de eventos: o mecanismo de depuração (DE) e a sessão de depuração do SDM (Gerenciador).  
   
  [Tipos de eventos com suporte](../../extensibility/debugger/supported-event-types.md)  
- Aborda os tipos com suporte no momento do evento: síncrono e assíncrono.  
+ Discute os tipos de eventos com suporte no momento: síncrono e assíncrono.  
   
- [Descrição do evento](../../extensibility/debugger/event-descriptions.md)  
+ [Descrições de eventos](../../extensibility/debugger/event-descriptions.md)  
  Define os eventos e os motivos para seu uso.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Criar um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Criando um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Descreve como a DE funciona com o sistema operacional ou interpretador para fornecer serviços de depuração.

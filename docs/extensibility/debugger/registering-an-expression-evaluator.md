@@ -14,28 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234020"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251199"
 ---
-# <a name="registering-an-expression-evaluator"></a>Registrando um avaliador de expressão
+# <a name="register-an-expression-evaluator"></a>Registrar um avaliador de expressão
 > [!IMPORTANT]
 >  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- O avaliador de expressão (EE) deve ser registrado como uma fábrica de classes com o ambiente COM Windows e o Visual Studio. Um EE é implementado como uma DLL para que ele pode ser injetado o espaço de endereço de (DES) do mecanismo de depuração ou o espaço de endereço do Visual Studio, dependendo de qual entidade instancia o EE.  
+ O avaliador de expressão (EE) deve ser registrado como uma fábrica de classes com o ambiente COM Windows e o Visual Studio. Um EE é definido como uma DLL para que ele é injetado no espaço de endereço debug engine (DES) ou o espaço de endereço do Visual Studio, dependendo de qual entidade instancia o EE.  
   
 ## <a name="managed-code-expression-evaluator"></a>Avaliador de expressão de código gerenciado  
- Um EE é implementado como uma biblioteca de classes, que é uma DLL que é registrado com o ambiente de COM, geralmente iniciado por uma chamada para o Programa VSIP; com código gerenciado **regpkg.exe**. O processo real de gravar as chaves do registro para o ambiente COM é manipulado automaticamente.  
+ Um EE é implementado como uma biblioteca de classes, que é uma DLL que é registrado com o ambiente de COM, geralmente iniciado por uma chamada para o Programa VSIP; com código gerenciado *regpkg.exe*. O processo real de gravar as chaves do registro para o ambiente COM é manipulado automaticamente.  
   
  Um método da classe principal é marcado com <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, indicando que o método deve ser chamado quando a DLL está sendo registrada com. Esse método de registro, geralmente chamado de `RegisterClass`, executa a tarefa de registro de DLL com o Visual Studio. Um correspondente `UnregisterClass` (marcados com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), desfaz os efeitos de `RegisterClass` quando a DLL é desinstalada.  
-  
- As mesmas entradas de registro são feitas para um EE escrito em código não gerenciado; a única diferença é que não há nenhuma função auxiliar, como `SetEEMetric` para fazer o trabalho para você. Um exemplo desse processo de registro/cancelamento de registro tem esta aparência:  
+ As mesmas entradas de registro são feitas para um EE escrito em código não gerenciado; a única diferença é que não há nenhuma função auxiliar, como `SetEEMetric` para fazer o trabalho para você. A seguir está um exemplo do processo de registro e cancelamento de registro.  
   
 ### <a name="example"></a>Exemplo  
- Esta função mostra como um código gerenciado EE registra e cancela o registro em si com o Visual Studio.  
+ A função a seguir mostra como um código gerenciado EE registra e cancela o registro em si com o Visual Studio.  
   
 ```csharp  
 namespace EEMC  
@@ -105,14 +104,14 @@ namespace EEMC
  A DLL EE implementa o `DllRegisterServer` função ao se registrar com o ambiente COM, bem como o Visual Studio.  
   
 > [!NOTE]
->  O código de registro de exemplo de código MyCEE pode ser encontrado no dllentry.cpp arquivo, que está localizado na instalação do VSIP sob EnVSDK\MyCPkgs\MyCEE.  
+>  Yoou pode encontrar o código de registro de exemplo de código MyCEE no arquivo *dllentry.cpp*, que está localizado na instalação do VSIP sob EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Processo do servidor DLL  
  Ao registrar o EE, o servidor DLL:  
   
 1.  Registra sua fábrica de classe `CLSID` , de acordo com as convenções normais de COM.  
   
-2.  Chama a função auxiliar `SetEEMetric` para se registrar com o Visual Studio, as métricas EE mostradas na tabela a seguir. A função `SetEEMetric` e as métricas especificadas abaixo fazem parte da biblioteca dbgmetric.lib. Ver [auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obter detalhes.  
+2.  Chama a função auxiliar `SetEEMetric` para se registrar com o Visual Studio, as métricas EE mostradas na tabela a seguir. A função `SetEEMetric` e as métricas especificadas como a seguir fazem parte do *dbgmetric.lib* biblioteca. Ver [auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obter detalhes.  
   
     |Métrica|Descrição|  
     |------------|-----------------|  
@@ -127,7 +126,7 @@ namespace EEMC
 3.  Registra com o Visual Studio com a criação de chaves em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*x. y*, onde *x. y* é a versão do Visual Studio para registrar.  
   
 ### <a name="example"></a>Exemplo  
- Esta função mostra como um código não gerenciado (C++) EE registra e cancela o registro em si com o Visual Studio.  
+ A função a seguir mostra como um código não gerenciado (C++) EE registra e cancela o registro em si com o Visual Studio.  
   
 ```cpp  
 /*---------------------------------------------------------  
