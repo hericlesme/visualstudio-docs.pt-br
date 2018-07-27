@@ -1,5 +1,5 @@
 ---
-title: Encerrando um programa | Microsoft Docs
+title: Encerrar um programa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5d711783b3238c9cfe42ba3fc4edd776bcb060
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1914d00af1eeda94ef1cf9129e637ce39306257
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126732"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276956"
 ---
-# <a name="terminating-a-program"></a>Encerrando um programa
-A seguir está uma descrição do encerramento de um único programa com um thread.  
+# <a name="terminating-a-program"></a>Encerrar um programa
+A seção a seguir descreve o encerramento de um único programa com um thread.  
   
 ## <a name="termination-process"></a>Processo de encerramento  
   
@@ -30,7 +30,7 @@ A seguir está uma descrição do encerramento de um único programa com um thre
   
 2.  O envia DE um [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) com uma validade [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).  
   
- O IDE entra no modo de design. O mecanismo de depuração ou ambiente de tempo de execução chama [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) para remover o programa da porta.  
+ O IDE entra no modo de design. O mecanismo de depuração ou o ambiente de tempo de execução chama [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) para remover o programa da porta.  
   
 ## <a name="see-also"></a>Consulte também  
  [Chamar eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)
