@@ -1,7 +1,7 @@
 ---
 title: Ordem de build de destinos | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178950"
 ---
-# <a name="target-build-order"></a>Ordem de build de destinos
+# <a name="target-build-order"></a>Ordem de build de destino
 Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. É possível usar esses atributos para especificar a ordem na qual os destinos são executados:  
   
 -   `InitialTargets`. Este atributo `Project` especifica os destinos que serão executados primeiro, mesmo se os destinos foram especificados na linha de comando ou no atributo `DefaultTargets`.  
@@ -44,9 +45,9 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
   
  Os projetos importados podem ter seus próprios atributos `InitialTargets`. Todos os destinos iniciais são agregados juntos e executados na ordem.  
   
- Para obter mais informações, consulte [Como especificar qual destino será compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Para saber mais, consulte [Como especificar qual destino será compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
-## <a name="default-targets"></a>Destinos Padrão  
+## <a name="default-targets"></a>Destinos padrão  
  O atributo `DefaultTargets` do elemento [Project](../msbuild/project-element-msbuild.md) especifica quais destinos serão compilados se um destino não for especificado explicitamente em uma linha de comando.  
   
  O valor do atributo `DefaultTargets` pode ser uma lista de destinos padrão, delimitada por ponto e vírgula. O exemplo a seguir especifica que o destino `Clean` é executado e, em seguida, que o destino `Build` é executado.  
@@ -63,12 +64,12 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
   
  Os projetos importados podem ter seus próprios atributos `DefaultTargets`. O primeiro atributo `DefaultTargets` encontrado determina quais destinos padrão serão executados.  
   
- Para obter mais informações, consulte [Como especificar qual destino será compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Para saber mais, consulte [Como especificar qual destino será compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
-## <a name="first-target"></a>Primeiro Destino  
+## <a name="first-target"></a>Primeiro destino  
  Se não houver nenhum destino inicial, destino padrão ou destino de linha de comando, o MSBuild executará o primeiro destino encontrado no arquivo de projeto ou nos arquivos de projeto importados.  
   
-## <a name="target-dependencies"></a>Dependências de Destino  
+## <a name="target-dependencies"></a>Dependências de destino  
  Os destinos podem descrever relações de dependência entre si. O atributo `DependsOnTargets` indica que um destino depende de outros destinos. Por exemplo,  
   
 ```xml  
@@ -77,7 +78,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
   
  informa ao MSBuild que o destino `Serve` depende dos destino `Chop` e `Cook`. O MSBuild executa o destino `Chop` e, em seguida, o destino `Cook` antes de executar o destino `Serve`.  
   
-## <a name="beforetargets-and-after-targets"></a>Antes e depois dos destinos  
+## <a name="beforetargets-and-aftertargets"></a>BeforeTargets e AfterTargets  
  No MSBuild 4.0, é possível especificar a ordem de destinos usando os atributos `BeforeTargets` e `AfterTargets`.  
   
  Considere o script a seguir.  
@@ -102,7 +103,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>Determinando a Ordem de Compilação de Destino  
+## <a name="determine-the-target-build-order"></a>Determinar a ordem de compilação de destino  
  O MSBuild determina a ordem de build de destinos da seguinte maneira:  
   
 1.  Os destinos `InitialTargets` são executados.  
@@ -115,7 +116,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
   
 4.  Antes de um destino ser executado, seus destinos `DependsOnTargets` são executados.  
   
-5.  Antes de um destino ser executado, qualquer destino que o lista em um atributo `BeforeTargets` é executado.  
+5.  Antes da execução de um destino, ou de ignorá-lo, qualquer destino que contiver um atributo `BeforeTargets` será executado.  
   
 6.  Antes de um destino ser executado, os atributos `Inputs` e `Outputs` são comparados. Se o MSBuild determinar que os arquivos de saída estão desatualizados em relação aos arquivos de entrada correspondentes, ele executará o destino. Caso contrário, o MSBuild ignorará o destino.  
   

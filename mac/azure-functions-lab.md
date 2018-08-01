@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877326"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232277"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
 
@@ -46,8 +46,10 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Expanda os nós no **Painel de Soluções**. O modelo de projeto padrão inclui referências de NuGet a uma variedade de pacotes do Azure WebJobs, bem como ao pacote Newtonsoft.Json. 
 
-     Também há três arquivos: - **host.json** para descrever as opções de configuração globais para o host - **local.settings.json** para definir as configurações de serviço. 
-        - O modelo de projeto também cria um HttpTrigger padrão. Para este laboratório, você deve excluir o arquivo **HttpTrigger.cs** do projeto.
+     Também há três arquivos:  
+        - **host.json** para descrever as opções de configuração global para o host  
+        - **local.settings.json** para definir as configurações de serviço.  
+        - O modelo de projeto também cria um HttpTrigger padrão. Para este laboratório, você deve excluir o arquivo **HttpTrigger.cs** do projeto.  
 
     Abra **local.settings.json**. O padrão é ter duas configurações de cadeia de conexão vazias.
 

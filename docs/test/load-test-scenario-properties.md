@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2619ce42d80eb804929482ffc2c6fd431e238ca5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f18376637cf7156fc0165b0360281e9415b7c80
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977209"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176782"
 ---
 # <a name="load-test-scenario-properties"></a>Carregar propriedades do cenário de teste
 
@@ -24,13 +24,13 @@ Altere as configurações das propriedades do cenário de teste de carga no Visu
 
 ## <a name="general"></a>Geral
 
-|propriedade|Definição|
+|Propriedade|Definição|
 |--------------|----------------|
 |**Nome**|O nome do cenário.|
 
 ## <a name="mix"></a>Combinação
 
-|propriedade|Definição|
+|Propriedade|Definição|
 |--------------|----------------|
 |**Combinação de navegadores**|Especifica a combinação de navegadores da Web para o teste de carga. É possível especificar diferentes tipos de navegador da Web e sua distribuição de carga.<br /><br />Escolha o botão reticências (…) para abrir a caixa de diálogo Editar Combinação de Navegadores e use **Adicionar** e **Remover** para selecionar os tipos de navegador da Web no teste de carga.<br /><br />Para obter mais informações, consulte [Especificando tipos de navegadores da Web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Combinação de redes**|Especifica a combinação de redes para o teste de carga. Você pode especificar quais tipos de rede incluir e sua distribuição de carga.<br /><br />Escolha o botão reticências (…) para abrir a caixa de diálogo **Editar Combinação de Redes** e use **Adicionar** e **Remover** para selecionar os tipos de rede no teste de carga.<br /><br />Para obter mais informações, consulte [Especificando tipos de rede virtuais](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
@@ -43,14 +43,14 @@ Altere as configurações das propriedades do cenário de teste de carga no Visu
 |--------------|----------------|
 |**Agentes a usar**|Especifica os agentes que você deseja que seu cenário use se você estiver executando o teste de carga remotamente. Por exemplo, talvez seja conveniente especificar um determinado conjunto de agentes para que você possa manter consistência ao analisar tendências de desempenho. Além disso, os agentes podem ser distribuídos geograficamente para que haja uma afinidade entre quais scripts eles executam e onde o agente está localizado.<br /><br />Os agentes devem ser separados por vírgulas, por exemplo, "**Agent1, Agent2, Agent3**". Deixar a propriedade em branco especifica que esse cenário deve usar todos os agentes disponíveis.<br /><br />Para obter mais informações, consulte [Como especificar agentes de teste para usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Aplicar distribuição à definição dos atrasos**|O valor booliano que é usado para especificar se você deseja aplicar atrasos comuns de distribuição no modelo de combinação de testes no ritmo do usuário. Essa propriedade será aplicada somente se a propriedade **Tipo de Combinação de Testes** for definida como **Com base no ritmo do usuário**.<br /><br />Para obter mais informações, consulte [Como aplicar distribuição à definição dos atrasos](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
-|**Troca de IPs**|O valor booliano usado para especificar se a troca de IP é usada.<br /><br />A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP diferentes. Isso simula chamadas que venham de computadores cliente diferentes. A troca de IP é importante ao testar com base em um balanceamento de carga Web farm. A maioria dos balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP.<br /><br />A troca de IP está disponível somente com o agente de teste.|
+|**Troca de IPs**|O valor booliano usado para especificar se a troca de IP é usada.<br /><br />A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP diferentes. Isso simula chamadas que venham de computadores cliente diferentes. A troca de IP é importante ao testar com base em um Web farm de balanceamento de carga. A maioria dos balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP.<br /><br />A troca de IP está disponível somente com o agente de teste.|
 |**Número máximo de iterações de teste**|Valor numérico que é usado para especificar o número máximo de testes a serem executados no cenário. Um valor de 0 especifica que não há máximo.<br /><br />Para obter mais informações, consulte [Configurando iterações de teste para cenários](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Percentual de novos usuários**|Valor numérico que especifica a porcentagem de novos usuários ou a primeira vez dos visitantes no cenário.<br /><br />Para obter mais informações, consulte [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Perfil de processamento**|Especifica se o cenário usará a **Distribuição Normal** ou se o perfil de processamento está **Ativado** ou **Desativado**.<br /><br />Para obter mais informações, consulte [Editando tempos de processamento para simular atrasos de interação humana do site](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Timing
 
-|propriedade|Definição|
+|Propriedade|Definição|
 |--------------|----------------|
 |**Atrasar tempo de início**|Um valor de tempo que indica quantas horas, minutos e segundos atrasar o início do cenário após o início do teste de carga. Se a propriedade **Desabilitar durante aquecimento** for definida como **Verdadeiro**, o tempo de espera será aplicado após a conclusão do período de aquecimento.<br /><br />Para obter mais informações, consulte [Configurando atrasos de início do cenário](../test/configure-scenario-start-delays.md).|
 |**Desabilitar durante aquecimento**|Valor booliano que é usado para especificar se o cenário deve ser executado ou não durante o valor temporal da propriedade **Duração de aquecimento** especificado na configuração da execução do teste de carga.<br /><br />Para obter mais informações sobre as propriedades de configuração da execução de teste de carga, consulte [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).<br /><br />Para obter mais informações, consulte [Configurando atrasos de início do cenário](../test/configure-scenario-start-delays.md).|

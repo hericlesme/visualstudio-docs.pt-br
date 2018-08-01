@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978171"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176207"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravador
 
-O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas de gravação do teste de desempenho Web, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
+O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas de gravação do teste de desempenho da Web, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
 
 Um plug-in de gravador permite que você execute sua própria correlação personalizada em parâmetros dinâmicos. Com a funcionalidade de correlação interna, os testes de desempenho Web detectam os parâmetros dinâmicos na gravação da Web no momento da conclusão ou quando você usa **Promover parâmetros dinâmicos a parâmetros de teste na Web** na barra de ferramentas do Editor de Testes de Desempenho Web. No entanto, a funcionalidade de detecção interna nem sempre encontra todos os parâmetros dinâmicos. Por exemplo, ela não encontra uma ID da sessão, que normalmente tem seu valor alterado entre 5 a 30 minutos. Portanto, você precisa executar manualmente o processo de correlação.
 
-O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você escreva código para seu próprio plug-in personalizado. Este plug-in pode executar a correlação ou modificar o teste de desempenho na Web de várias maneiras antes de ser salvo e apresentado no Editor de Teste de Desempenho na Web. Portanto, se você determinar que uma variável dinâmica específica deve ser correlacionada para muitas de suas gravações, será possível automatizar o processo.
+O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você escreva código para seu próprio plug-in personalizado. Este plug-in pode executar a correlação ou modificar o teste de desempenho na Web de várias maneiras antes de ser salvo e apresentado no Editor de Testes de Desempenho Web. Portanto, se você determinar que uma variável dinâmica específica deve ser correlacionada para muitas de suas gravações, será possível automatizar o processo.
 
 Um plug-in de gravação também pode ser usado para adicionar regras de extração e de validação, adicionar parâmetros de contexto ou converter comentários em transações em um teste de desempenho na Web.
 

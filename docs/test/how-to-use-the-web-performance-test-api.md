@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969123"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175789"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Como usar a API de teste de desempenho Web
 
@@ -46,13 +46,13 @@ Você pode escrever o código para os testes de desempenho na Web. A API de test
 
 7.  Compile o projeto.
 
-8.  Adicione o novo plug-in de teste de desempenho na Web usando o Editor de Teste de Desempenho na Web:
+8.  Adicione o novo plug-in de teste de desempenho na Web usando o Editor de Testes de Desempenho Web:
 
     1.  Escolha **Adicionar plug-in de teste na Web** na barra de ferramentas.
 
          A caixa de diálogo **Adicionar plug-in de teste na Web** é exibida.
 
-    2.  Em **Selecionar um plug-in**, selecione a classe do plug-in do teste de desempenho Web.
+    2.  Em **Selecionar um plug-in**, selecione a classe do plug-in do teste de desempenho da Web.
 
     3.  No painel **Propriedades do plug-in selecionado**, defina os valores iniciais a serem usados pelo plug-in em tempo de execução.
 

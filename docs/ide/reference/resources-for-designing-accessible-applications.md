@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704168"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179015"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
@@ -45,9 +45,9 @@ Use os links a seguir para localizar informações sobre as tecnologias compatí
 
 ## <a name="websites"></a>Sites
 
--   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.
+-   [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.
 
--   **Creating Accessible Web Pages with DHTML** (Criando páginas da Web acessíveis com DHTML) Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 

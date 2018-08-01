@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304337"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176873"
 ---
-# <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar o painel Contadores nas exibições de gráficos e tabelas
+# <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar o painel Contadores nas exibições de grafos e tabelas
 
-O painel **Contadores** permanece visível nas exibições de gráficos e tabelas do Analisador de Teste de Carga enquanto um teste de carga está em execução ou quando você está analisando o resultado de um teste de carga. Para saber mais, confira [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md), [Analisar erros e resultados de teste de carga na exibição de tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Como acessar resultados de teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+O painel **Contadores** permanece visível nas exibições de grafos e tabelas do Analisador de Teste de Carga enquanto um teste de carga está em execução ou quando você está analisando o resultado de um teste de carga. Para saber mais, confira [Analisar resultados de teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md), [Analisar erros e resultados de teste de carga na exibição de tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Como acessar resultados de teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
 O painel **Contadores** mostra uma exibição estruturada de todos os contadores de desempenho que foram coletados durante o teste de carga. Você pode mostrar ou ocultar o painel **Contadores** escolhendo **Mostrar painel de contadores** na barra de ferramentas do **Analisador de Teste de Carga**.
 
@@ -74,7 +74,7 @@ Veja algumas diretrizes para taxas de amostragem:
 
 ## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Considerações para inclusão de detalhes de medição de tempo para coletar dados de percentil
 
-Há uma propriedade nas configurações de execução no Editor de Teste de Carga denominada **Armazenamento de detalhes de medição de tempo**. Se a propriedade **Armazenamento de Detalhes de Medição de Tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os 90º e 95º dados de percentil sejam mostrados nas tabelas Testes, Transações e Páginas do Analisador de Testes de Carga.
+Há uma propriedade nas configurações de execução no Editor de Teste de Carga denominada **Armazenamento de detalhes de medição de tempo**. Se a propriedade **Armazenamento de Detalhes de Medição de Tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os 90º e 95º dados de percentil sejam mostrados no Analisador de Teste de Carga nas tabelas Testes, Transações e Páginas.
 
 Há duas opções para habilitar a propriedade **Armazenamento de detalhes de medição de tempo** nas propriedades de configurações de execução: **StatisticsOnly** e **AllIndividualDetails**. Seja qual opção for escolhidas, todos os testes, páginas e transações individuais são cronometrados, e os dados de percentil são calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, assim que os dados de percentil são calculados, os dados de medição de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando você usa detalhes de medição de tempo. No entanto, os usuários avançados podem querer processar os dados detalhados de medição de tempo de outras formas, usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados detalhados de medição de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade para **AllIndividualDetails**, será possível analisar a atividade do usuário virtual usando o gráfico **Atividade do usuário virtual** no Analisador de Teste de Carga após a conclusão da execução do teste de carga. Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 

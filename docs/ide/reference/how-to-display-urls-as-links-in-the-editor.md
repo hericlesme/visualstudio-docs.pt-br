@@ -14,29 +14,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448046"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177705"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
+
 É possível optar por fazer o Editor de Código tratar URLs (Uniform Resource Locators) em seu código como links ativos. Quando você usa esse recurso, as URLs:
 
 -   São exibidas sublinhadas.
 
 -   Exibem uma **Dica de Ferramenta** quando você passa o mouse sobre elas.
 
--   Tentam abrir o site da Web indicado quando você pressiona **CTRL** + clique com o botão esquerdo do mouse no link. Por padrão, o site da Web é exibido no navegador da Web interno.
+-   Tente abrir o site da Web indicado quando você pressiona **CTRL**+**clique** no link. Por padrão, o site é exibido no navegador da Web interno.
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-
 ## <a name="procedure"></a>Procedimento
 
-#### <a name="to-display-urls-as-links"></a>Para exibir URLs como links
+### <a name="to-display-urls-as-links"></a>Para exibir URLs como links
 
 1.  No menu **Ferramentas**, clique em **Opções**.
 

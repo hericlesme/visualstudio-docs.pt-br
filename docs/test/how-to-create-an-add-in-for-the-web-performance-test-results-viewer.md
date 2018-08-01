@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751670"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177247"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como criar um complemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web
 
-Você pode estender a interface do usuário para o Visualizador de Resultados de Teste de Desempenho na Web usando os seguintes namespaces:
+Você pode estender a interface do usuário para o **Visualizador de Testes de Desempenho Web** usando os seguintes namespaces:
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,7 +28,7 @@ Você pode estender a interface do usuário para o Visualizador de Resultados de
 
 Além disso, é necessário adicionar uma referência à DLL LoadTestPackage localizada na pasta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Para estender a interface do usuário do Visualizador de Resultados de Teste de Desempenho Web, você precisa criar um suplemento do Visual Studio e um controle de usuário. Os procedimentos a seguir explicam como criar o suplemento, o controle de usuário e como implementar as classes necessárias para estender interface de usuário do Visualizador de Resultados de Teste de Desempenho na Web.
+-   Para estender a interface do usuário do **Visualizador de Testes de Desempenho Web**, você precisa criar um suplemento do Visual Studio e um controle de usuário. Os procedimentos a seguir explicam como criar o suplemento, o controle de usuário e como implementar as classes necessárias para estender interface de usuário do **Visualizador de Testes de Desempenho Web**.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Criar ou abrir uma solução que contenha um aplicativo Web do ASP.NET e um projeto de teste de carga e desempenho na Web
 
@@ -216,7 +216,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Role para baixo até a parte inferior do arquivo Connect.cs. Você precisa adicionar uma lista de GUIDs do <xref:System.Windows.Forms.UserControl> caso mais de uma instância do Visualizador de Resultados de Teste de Desempenho na Web seja aberta. Você adicionará um código depois que usa essa lista.
+14. Role para baixo até a parte inferior do arquivo Connect.cs. Você precisa adicionar uma lista de GUIDs do <xref:System.Windows.Forms.UserControl>, caso mais de uma instância do **Visualizador de Testes de Desempenho Web** seja aberta. Você adicionará um código depois que usa essa lista.
 
      Uma segunda lista de cadeias de caracteres é usada no método OnDiscconection que você codificará depois.
 
@@ -227,7 +227,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. O arquivo Connect.cs cria uma instância de uma classe chamada Connect da classe <xref:Extensibility.IDTExtensibility2> e também inclui alguns métodos para implementar o suplemento do Visual Studio. Um dos métodos é o método OnConnection, que recebe a notificação de que o suplemento está sendo carregado. No método OnConnection, você usará a classe LoadTestPackageExt para criar seu pacote de extensibilidade para o Visualizador de Resultados de Teste de Desempenho na Web. Adicione o seguinte código ao método OnConnection:
+15. O arquivo Connect.cs cria uma instância de uma classe chamada Connect da classe <xref:Extensibility.IDTExtensibility2> e também inclui alguns métodos para implementar o suplemento do Visual Studio. Um dos métodos é o método OnConnection, que recebe a notificação de que o suplemento está sendo carregado. No método OnConnection, você usará a classe LoadTestPackageExt para criar seu pacote de extensibilidade para o **Visualizador de Testes de Desempenho Web**. Adicione o seguinte código ao método OnConnection:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 2.  Selecione a guia **Aplicativo** e escolha a lista suspensa **Estrutura de destino**, selecione **.NET Framework 4** e feche as Propriedades.
 
-     Isso é necessário para dar suporte às referências de DLL necessárias para estender o Visualizador de Resultados de Teste de Desempenho na Web.
+     Isso é necessário para dar suporte às referências de DLL necessárias para estender o **Visualizador de Testes de Desempenho Web**.
 
 3.  No Gerenciador de Soluções, no projeto WebPerfTestResultsViewerControl, clique com o botão direito no nó **Referências** e selecione **Adicionar Referência**.
 
@@ -347,7 +347,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Para executar o novo suplemento VS do Visualizador de Resultados de Teste de Desempenho na Web
 
-1.  Execute seu teste de desempenho na Web e você verá a nova guia do suplemento WebPerfTestResultsViewerAddin chamada Exemplo, exibida no Visualizador de Resultados de Teste de Desempenho na Web.
+1.  Execute seu teste de desempenho na Web e você verá a nova guia do suplemento WebPerfTestResultsViewerAddin chamada Exemplo, exibida no **Visualizador de Testes de Desempenho Web**.
 
 2.  Escolha a guia para ver as propriedades apresentadas no DataGridView.
 

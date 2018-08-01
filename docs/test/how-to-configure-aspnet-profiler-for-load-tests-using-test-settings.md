@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8910ee5aa73e057849ad6b72b67c8b27ba9b0e6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969365"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175546"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como: Configurar o ASP.NET Profiler para carregar testes usando configurações do teste no Visual Studio
 
@@ -27,7 +27,7 @@ Você pode usar o adaptador de dados de diagnóstico do criador de perfil do ASP
 O adaptador de dados de diagnóstico do criador de perfil do ASP.NET permite coletar dados do criador de perfil do ASP.NET da camada de aplicativo quando você executa um teste de carga. Você não deve executar o criador de perfis para testes de carga longos, por exemplo, que durem mais de uma hora. Isso porque o arquivo do criador de perfis pode ficar grande, talvez com centenas de megabytes. Em vez disso, execute testes de carga mais curtos usando o criador de perfil do ASP.NET, o que ainda lhe proporcionará o benefício de diagnosticar detalhadamente os problemas de desempenho.
 
 > [!NOTE]
-> O adaptador de dados de diagnóstico do criador de perfil do ASP.NET analisa o processo de IIS (Serviços de Informações da Internet). Desse modo, ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site no teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não vai gerar carga, mas será um agente apenas de coleta. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+> O adaptador de dados de diagnóstico do criador de perfil do ASP.NET analisa o processo de IIS (Serviços de Informações da Internet). Desse modo, ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site em seu teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não vai gerar carga, mas será um agente apenas de coleta. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
 Para obter mais informações, consulte [Como criar uma configuração de teste para um teste de carga distribuído](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
@@ -42,7 +42,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 1.  Selecione a função a ser usada para coletar dados do criador de perfil do ASP.NET.
 
     > [!WARNING]
-    > Essa função deve ser um servidor Web.
+    > Essa função deve ser de um servidor Web.
 
 2.  Selecione **Criador de Perfil do ASP.NET** para permitir a coleta de dados de criação de perfil do ASP.NET e, então, escolha **Configurar**.
 

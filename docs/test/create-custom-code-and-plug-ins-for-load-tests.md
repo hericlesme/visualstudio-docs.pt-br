@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55386b5e586b88e91e252280da9510ce395daf78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965818"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175531"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Criar código personalizado e plug-ins para testes de carga
 
@@ -29,9 +29,9 @@ Um plug-in personalizado usa um código que você grava e anexa a um teste de ca
 |Tarefas|Tópicos associados|
 |-----------|-----------------------|
 |**Criar um plug-in personalizado para o teste de carga**: você pode usar a API do teste de carga para criar um plug-in personalizado a fim de adicionar mais funcionalidade de teste ao teste de carga.|-   [Como usar a API de teste de carga](../test/how-to-use-the-load-test-api.md)<br />-   [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)|
-|**Criar um plug-in personalizado para o teste de desempenho Web:** você pode usar a API do teste de desempenho Web para criar um plug-in personalizado a fim de adicionar mais funcionalidade de teste ao teste de desempenho Web, inclusive no nível de solicitação. Você também pode criar um teste de serviço Web.<br /><br /> Além disso, você pode criar um plug-in de gravador da Web capaz de modificar um teste de desempenho na Web depois de gravado, mas antes de ser exibido no Visualizador de Resultados de Teste de Desempenho na Web.|-   [Como usar a API de teste de desempenho Web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Como criar um plug-in de nível de solicitação](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Como criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md)<br />-   [Como criar um plug-in de gravação](../test/how-to-create-a-recorder-plug-in.md)|
-|**Adicionar recursos de interface do usuário ao Visualizador de Resultados de Teste de Desempenho Web:** você pode adicionar mais recursos de interface do usuário ao Visualizador de Resultados de Teste de Desempenho Web usando um suplemento do Visual Studio.|-   [Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Testes de Desempenho Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Criar um editor de corpo HTTP personalizado:** você pode criar um editor personalizado para editar respostas XML HTTP de cadeia de caracteres ou binárias de um serviço Web.|-   [Como criar um Editor de Corpo HTTP Personalizado para o Editor de Testes de Desempenho Web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Criar um plug-in personalizado para o teste de desempenho Web:** você pode usar a API do teste de desempenho Web para criar um plug-in personalizado a fim de adicionar mais funcionalidade de teste ao teste de desempenho Web, inclusive no nível de solicitação. Você também pode criar um teste de serviço Web.<br /><br /> Além disso, você pode criar um plug-in de gravador da Web capaz de modificar um teste de desempenho na Web depois de gravado, mas antes de ser exibido no Visualizador de Testes de Desempenho Web.|-   [Como usar a API de teste de desempenho Web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Como criar um plug-in no nível da solicitação](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Como criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md)<br />-   [Como criar um plug-in de gravação](../test/how-to-create-a-recorder-plug-in.md)|
+|**Adicionar recursos de interface do usuário ao Visualizador de Resultados de Teste de Desempenho Web:** você pode adicionar mais recursos de interface do usuário ao Visualizador de Resultados de Teste de Desempenho Web usando um suplemento do Visual Studio.|-   [Como criar um suplemento do Visual Studio para o visualizador de resultados do teste de desempenho Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Criar um editor de corpo HTTP personalizado:** você pode criar um editor personalizado para editar respostas XML HTTP de cadeia de caracteres ou binárias de um serviço Web.|-   [Como criar um editor de corpo HTTP personalizado para o editor de teste de desempenho Web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Referência
 
@@ -47,5 +47,5 @@ Um plug-in personalizado usa um código que você grava e anexa a um teste de ca
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)

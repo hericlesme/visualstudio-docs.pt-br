@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751336"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180635"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
 
@@ -58,7 +58,7 @@ Os dados de desempenho para solicitações HTTP individuais são relatados pelo 
 
 Para facilitar a coleção de dados de desempenho em um servidor Web, o Visual Studio Enterprise também fornece conjuntos de contadores denominados predefinidos, com base na tecnologia para uso em testes de carga. Esses conjuntos são úteis quando você está analisando um servidor que está executando IIS, ASP.NET ou SQL Server. Os contadores não fornecidos no conjunto padrão de contadores podem ser adicionados usando o Editor de testes de carga. É importante que você adicione os computadores ou os servidores em teste ao seu teste de carga para certificar-se de que você possa monitorar o uso de recursos nesses computadores. Para obter mais informações, consulte [Como gerenciar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
 
-Os resultados da análise de execuções de carga normalmente exigem o conhecimento domínio específico de uma área específica para saber quais dados coletar, onde definir regras de limite, e como saber quando uma medida reflete um problema específico no aplicativo. Para obter mais informações, consulte [Sobre regras de limite](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules).
+Os resultados da análise de execuções de carga normalmente exigem o conhecimento domínio específico de uma área específica para saber quais dados coletar, onde definir regras de limite, e como saber quando uma medida reflete um problema específico no aplicativo. Para obter mais informações, consulte [Sobre regras de limite](#about-threshold-rules).
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Considerações sobre o intervalo de amostragem do contador de desempenho
 

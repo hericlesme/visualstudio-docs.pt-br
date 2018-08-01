@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751748"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153557"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
@@ -69,7 +69,7 @@ O construtor de teste de IU codificado captura informações sobre os controles 
 4.  Substitua as propriedades e os métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> para o objeto de acessibilidade do controle filho.
 
 > [!NOTE]
-> Este tópico começa com o exemplo de acessibilidade em <xref:System.Windows.Forms.AccessibleObject> e, em seguida, se baseia nele nos procedimentos restantes. Se você quiser criar uma versão de trabalho do exemplo de acessibilidade, criar um aplicativo de console e, em seguida, substitua o código em Program.cs pelo código de exemplo. Adicione referências a Acessibilidade, System.Drawing e System.Windows.Forms. Altere os **Tipos de Inserção de Interoperabilidade** de Acessibilidade para **Falso** para eliminar um aviso de build. Você pode alterar o tipo de saída do projeto de **Aplicativo de Console** para **Aplicativos do Windows** para que uma janela de console não apareça ao executar o aplicativo.
+> Este tópico começa com o exemplo de acessibilidade em <xref:System.Windows.Forms.AccessibleObject> e, em seguida, se baseia nele nos procedimentos restantes. Se você quiser criar uma versão de trabalho do exemplo de acessibilidade, criar um aplicativo de console e, em seguida, substitua o código em *Program.cs* pelo código de exemplo. Adicione referências a Acessibilidade, System.Drawing e System.Windows.Forms. Altere os **Tipos de Inserção de Interoperabilidade** de Acessibilidade para **Falso** para eliminar um aviso de build. Você pode alterar o tipo de saída do projeto de **Aplicativo de Console** para **Aplicativos do Windows** para que uma janela de console não apareça ao executar o aplicativo.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Suporte à validação de propriedade personalizada com a implementação de um provedor de propriedade
 
@@ -134,7 +134,7 @@ Depois de implementar o suporte básico para registro e reprodução e validaç�
 
 1. Substitua as propriedades e os métodos abstratos restantes de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Compile seus binários e copie-os para **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Compile seus binários e copie-os para *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Este pacote de extensão será aplicado a qualquer controle que seja do tipo "Texto". Se você estiver testando vários controles do mesmo tipo, teste-os separadamente e gerenciar quais pacotes de extensão serão implantados ao registrar os testes.
@@ -171,7 +171,7 @@ Se você já implementou um provedor de propriedade para conceder acesso às pro
 
 1. Adicione o filtro de ação ao método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> do seu pacote de extensão.
 
-1. Compile seus binários e copie-os para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Compile seus binários e copie-os para *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > O filtro de ação não depende da implementação de acessibilidade ou do provedor de propriedade.
@@ -182,7 +182,7 @@ O provedor da propriedade e o filtro de ação são implementados em um pacote d
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Para depurar seu provedor de propriedade ou filtro de ação
 
-1.  Compile a versão de depuração do seu pacote de extensão e copie os arquivos .dll e .pdb para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1.  Compile a versão de depuração do seu pacote de extensão e copie os arquivos *.dll* e *.pdb* para *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Execute seu aplicativo (não no depurador).
 
@@ -199,4 +199,4 @@ O provedor da propriedade e o filtro de ação são implementados em um pacote d
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)

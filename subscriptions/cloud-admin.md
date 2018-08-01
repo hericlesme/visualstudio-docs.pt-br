@@ -9,12 +9,12 @@ description: Configuração de administradores para assinaturas de nuvem
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335678"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231269"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configuração de administradores para assinaturas de nuvem do Visual Studio
 
@@ -46,6 +46,8 @@ O assinante designado será exibido no centro da página e sua função será mo
 
 Agora, o novo administrador pode entrar no [portal de gerenciamento](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas de nuvem na lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas. 
 
+> [!NOTE]
+> Se você vir os usuários com acesso para editar suas assinaturas de nuvem que você não estabeleceu como administradores, isso poderá significar que eles têm funções na assinatura do Azure subjacente que lhes permite gerenciar assinaturas.  Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador.  Para saber mais, visite https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts
 
 Para obter informações sobre assinaturas de nuvem do Visual Studio, confira [Visão geral](vscloud-overview.md) em Comprando assinaturas de nuvem. Para comprar assinaturas de nuvem do Visual Studio, visite o Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477282"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206811"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: analisar dados de uso da CPU no Visual Studio (ASP.NET)
 
@@ -26,12 +26,9 @@ O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problem
 
 O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/Profiling-Tools.md) fornecerão diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede.
 
-> [!NOTE]
-> Para o .NET Core e o ASP.NET Core, a ferramenta de uso da CPU atualmente não fornece resultados precisos com PBDs portáteis. Use PDBs completos.
-
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
+1. No Visual Studio, escolha **Arquivo** > **Novo Projeto**.
 
 1. Em **Visual C#**, escolha **Web**e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET (.NET Framework)**.
 
@@ -132,7 +129,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     }
     ```
 
-1. No Gerenciador de Soluções, abra Controller/HomeControllers.cs e substitua o código a seguir:
+1. No Gerenciador de Soluções, abra *Controller/HomeControllers.cs* e substitua o código a seguir:
 
     ```csharp
     public ActionResult About()
@@ -156,7 +153,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Etapa 1: Coletar dados de criação de perfil 
+##  <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil 
   
 1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código no construtor `Simple`:
 
@@ -171,9 +168,9 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
   
-1.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar/Windows/Mostrar Ferramentas de Diagnóstico**.
+1.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
-1.  Clique em **Depurar/Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+1.  Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
 
 1.  Quando o aplicativo terminar de ser carregado, clique no link **Sobre** na parte superior da página da Web para iniciar a execução do novo código.
 
@@ -197,13 +194,13 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
      Neste ponto, você pode começar a analisar os dados.
 
-## <a name="Step2"></a> Etapa 2: Analisar os dados de uso da CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Etapa 2: Analisar os dados de uso de CPU
 
 Recomendamos que você comece a analisar os dados examinando a lista de funções em Uso da CPU, identificando as funções que fazem a maior parte do trabalho e, em seguida, fazendo uma análise mais detalhada de cada uma.
 
 1. Na lista de funções, examine as funções que fazem a maior parte do trabalho.
 
-     ![Guia de uso da CPU das Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
+     ![Guia de uso da CPU das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
     > As funções são listadas em ordem, começando com as que fazem a maior parte do trabalho (elas não ficam na ordem de chamada). Isso ajuda a identificar rapidamente as funções com execução mais longa.
@@ -212,7 +209,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
     Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo. 
 
-    ![Exibição Chamador/Computador Chamado das Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Exibição Chamador/Computador Chamado das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     Nesta exibição, a função selecionada aparece no título e na caixa **Função Atual** (`ServerClass::GetNumber`, neste exemplo). A função que chamou a função atual é mostrada à esquerda em **Função Chamadora** e todas as funções chamadas pela função atual são mostradas na caixa **Funções Chamadas** à direita. (Você pode selecionar cada uma das caixas para alterar a função atual.)
 
@@ -232,4 +229,4 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 ## <a name="see-also"></a>Consulte também  
 
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

@@ -11,29 +11,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66893198028fcd23e3d42e1e595764e723ed82da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966361"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176324"
 ---
-# <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Resultados de testes de carga de relatórios para comparações de teste ou análise de tendência
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Relatar resultados de teste de carga para comparações de testes ou análise de tendências
 
 Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em dois ou mais resultados de teste. Dois tipos de relatórios de teste de carga estão disponíveis:
 
-- Comparação de Execuções&mdash;Este relatório tem, na verdade, dois relatórios exibindo dados de comparação lado a lado usando tabelas e gráficos de barras.
+- Comparação de execução&mdash;Esse relatório tem, na verdade, dois relatórios que exibem dados de comparação lado a lado usando tabelas e gráficos de barras.
 
 - Tendência&mdash;É possível gerar a análise de tendência em dois ou mais relatórios. Os resultados são exibidos usando-se gráficos de linhas.
 
 Qualquer relatório pode ser usado para compartilhar dados de desempenho com participantes e informar se o desempenho e a integridade gerais do sistema estão melhorando ou piorando.
 
-As definições de relatório são armazenadas no banco de dados de teste de carga. Quando um relatório é salvo, a definição do relatório é salva no banco de dados e poderá ser reutilizada posteriormente.
+As definições de relatório são armazenadas no banco de dados de teste de carga. Quando um relatório é salvo, a definição do relatório é salva no banco de dados e pode ser reutilizada mais tarde.
 
 Além disso, o arquivo da planilha do Excel pode ser compartilhada com participantes de modo que os participantes precisem se conectar ao banco de dados para ver o relatório.
 
 > [!NOTE]
-> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel. Para obter mais informações, consulte [Como adicionar comentários durante análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel. Para obter mais informações, confira [Como adicionar comentários durante a análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md).
 
 ## <a name="tasks"></a>Tarefas
 
@@ -44,4 +44,4 @@ Além disso, o arquivo da planilha do Excel pode ser compartilhada com participa
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976891"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203846"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -27,7 +27,7 @@ Você pode configurar o adaptador de dados de diagnóstico para que o IntelliTra
 > [!NOTE]
 > IntelliTrace só funciona em um aplicativo gravado usando-se código gerenciado. Se estiver testando um aplicativo Web que use um navegador como um cliente, você não deverá habilitar o IntelliTrace para o cliente nas configurações de teste porque nenhum código gerenciado está disponível para rastreamento. Nesse caso, você talvez queira configurar um ambiente e coletar remotamente os dados do IntelliTrace em seu servidor Web.
 
-Os dados do IntelliTrace são armazenados em um arquivo com uma extensão .iTrace. Ao executar o teste e uma etapa falhar, você pode criar um bug. O arquivo do IntelliTrace que contém as informações de diagnóstico é anexado automaticamente a esse bug.
+Os dados do IntelliTrace são armazenados em um arquivo com uma extensão *.iTrace*. Ao executar o teste e uma etapa falhar, você pode criar um bug. O arquivo do IntelliTrace que contém as informações de diagnóstico é anexado automaticamente a esse bug.
 
 > [!NOTE]
 > O adaptador de dados de diagnóstico do IntelliTrace não cria um arquivo do IntelliTrace quando um passo de teste é bem-sucedido. Ele salva um arquivo somente em um caso de teste com falha ou quando você envia um bug.
@@ -73,7 +73,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 5.  Escolha a guia **Geral**. Selecione **Apenas eventos do IntelliTrace** para registrar eventos de diagnóstico significativos que tenham impacto mínimo sobre o desempenho durante o teste.
 
-     **-** ou-
+     -ou-
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
@@ -101,7 +101,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 11. (Opcional) Escolha a guia **Avançado**. Em seguida, escolha a seta ao lado de **Quantidade de espaço máximo em disco para registro** e selecione o tamanho máximo que você deseja habilitar para o arquivo do IntelliTrace a ser usado.
 
     > [!NOTE]
-    > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise. Para obter mais informações sobre como aumentar os valores de tempo limite para adaptadores de dados de diagnóstico, consulte [Como evitar que tempos limites sejam atingidos para adaptadores de dados de diagnóstico](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise. Para saber mais sobre como aumentar os valores de tempo limite para adaptadores de dados de diagnóstico, confira [Como evitar que tempos limites sejam atingidos para adaptadores de dados de diagnóstico](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
 
 12. Se estiver usando o Microsoft Test Manager, escolha **Salvar**. Se estiver usando o Visual Studio, escolha **OK**. As configurações do IntelliTrace agora estão definidas e salvas em suas configurações de teste.
 

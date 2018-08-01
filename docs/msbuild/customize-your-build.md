@@ -13,24 +13,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973510"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175950"
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
 
-Projetos do MSBuild que usam o processo de build padrão (importando `Microsoft.Common.props` e `Microsoft.Common.targets`) têm vários ganchos de extensibilidade que podem ser usados para personalizar o processo de build.
+Os projetos do MSBuild que usam o processo de build padrão (importando *Microsoft.Common.props* e *Microsoft.Common.targets*) têm vários ganchos de extensibilidade que você pode usar para personalizar o processo de build.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Adicionar argumentos para invocações de linha de comando do MSBuild para o seu projeto
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Adicionar argumentos para invocações de linha de comando do MSBuild para o seu projeto
 
-Um arquivo `Directory.Build.rsp` no seu diretório de origem ou acima dele será aplicado para builds de linha de comando do seu projeto. Para obter detalhes, consulte [Arquivos de resposta do MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
+Um arquivo *Directory.Build.rsp* no diretório de origem ou acima dele será aplicado aos builds de linha de comando do projeto. Para obter detalhes, confira [Arquivos de resposta do MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props e Directory.Build.targets
 
-Nas versões do MSBuild anteriores à versão 15, se você desejasse fornecer uma propriedade nova e personalizada para projetos em sua solução, você precisava adicionar manualmente uma referência a essa propriedade para cada arquivo de projeto na solução. Ou você precisava definir a propriedade em um arquivo *.props* e, em seguida, explicitamente, importar o arquivo *.props* em todos os projetos na solução, entre outras coisas.
+Antes do MSBuild versão 15, se você quisesse fornecer uma propriedade nova e personalizada para os projetos da solução, precisaria adicionar manualmente uma referência a essa propriedade para cada arquivo de projeto na solução. Ou você precisava definir a propriedade em um arquivo *.props* e, em seguida, explicitamente, importar o arquivo *.props* em todos os projetos na solução, entre outras coisas.
 
 No entanto, agora você pode adicionar uma nova propriedade a todos os projetos em uma única etapa, definindo-a em um único arquivo chamado *Directory.Build.props* na pasta raiz que contém sua fonte. Quando o MSBuild é executado, o *Microsoft.Common.props* pesquisa sua estrutura de diretório pelo arquivo *Directory.Build.props* (e o *Microsoft.Common.targets* procura o *Directory.Build.targets*). Se ele encontrar um, ele importa a propriedade. *Directory.Build.props* é um arquivo definido pelo usuário que fornece personalizações de projetos em um diretório.
 
@@ -67,9 +67,9 @@ O local do arquivo de solução é irrelevante para o *Directory.Build.props*.
 
 ### <a name="import-order"></a>Ordem de importação
 
-O *Directory.Build.props* é importado muito no início no *Microsoft.Common.props*, portanto, as propriedades definidas posteriormente não estão disponíveis para ele. Portanto, evite fazer referência a propriedades que ainda não foram definidas (e, portanto, serão avaliada como vazias).
+O *Directory.Build.props* é importado muito no início no *Microsoft.Common.props* e as propriedades definidas posteriormente não ficam disponíveis para ele. Portanto, evite referenciar propriedades que ainda não foram definidas (e que serão avaliadas como vazias).
 
-O *Directory.Build.targets* é importado do *Microsoft.Common.targets* depois de importar os arquivos *.targets* dos pacotes do NuGet. Portanto, ele pode ser usado para substituir as propriedades e os destinos definidos na maior parte da lógica de build, mas às vezes pode ser necessário fazer personalizações dentro do arquivo de projeto após a importação final.
+O *Directory.Build.targets* é importado do *Microsoft.Common.targets* depois de importar os arquivos *.targets* dos pacotes do NuGet. Portanto, ele pode substituir as propriedades e os destinos definidos na maior parte da lógica de build, mas, às vezes, talvez seja necessário personalizar o arquivo de projeto após a importação final.
 
 ### <a name="use-case-multi-level-merging"></a>Caso de uso: mesclagem de vários níveis
 
@@ -91,7 +91,7 @@ Suponha que você tenha essa estrutura de solução padrão:
 
 Pode ser interessante ter propriedades comuns para todos os projetos *(1)*, propriedades comuns para projetos *src* *(2-src)* e propriedades comuns para projetos *test* *(2-test)*.
 
-Para que o MSBuild mescle corretamente os arquivos "internos" (*2-src* e *2-test*) com o arquivo "externo" (*1*), você deve considerar que, depois que o MSBuild localiza um arquivo *Directory.Build.props*, ele interrompe o exame adicional. Para continuar o exame e mesclar no arquivo externo, coloque isso em ambos os arquivos internos:
+Para que o MSBuild mescle corretamente os arquivos "internos" (*2-src* e *2-test*) com o arquivo "externo" (*1*), você precisa considerar que, depois de o MSBuild localizar um arquivo *Directory.Build.props*, ele interrompe a verificação adicional. Para continuar a verificação e a mesclagem no arquivo externo, coloque este código em ambos os arquivos internos:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
@@ -102,20 +102,20 @@ Um resumo da abordagem geral do MSBuild é o seguinte:
 - Se o arquivo "externo" também não importar nada acima dele, a verificação será interrompida aqui
 - Para controlar o processo de exame/mesclagem, use `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`
 
-Ou, de maneira mais simples: o primeiro *Directory.Build.props* que não importar mais nada, será o local em que o MSBuild será interrompido.
+Ou, de maneira mais simples: o primeiro *Directory.Build.props* que não importar nada é o local em que o MSBuild para.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-Por padrão, `Microsoft.Common.props` importa `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` e `Microsoft.Common.targets` importa `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. O valor padrão de `MSBuildProjectExtensionsPath` é `$(BaseIntermediateOutputPath)`, `obj/`. Esse é o mecanismo que o NuGet usa para referir-se à lógica de build entregue com pacotes, ou seja, no momento da restauração, ele cria `{project}.nuget.g.props` arquivos que fazem referência ao conteúdo do pacote.
+Por padrão, *Microsoft.Common.props* importa `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` e *Microsoft.Common.targets* importa `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. O valor padrão de `MSBuildProjectExtensionsPath` é `$(BaseIntermediateOutputPath)`, `obj/`. O NuGet usa esse mecanismo para se referir à lógica de build entregue com pacotes; ou seja, no momento da restauração, ele cria arquivos `{project}.nuget.g.props` que se referem ao conteúdo do pacote.
 
-Esse mecanismo de extensibilidade pode ser desabilitado definindo-se a propriedade `ImportProjectExtensionProps` para `false` em um `Directory.Build.props` ou antes de importar `Microsoft.Common.props`.
+Desabilite esse mecanismo de extensibilidade definindo a propriedade `ImportProjectExtensionProps` como `false` em um *Directory.Build.props* ou antes de importar *Microsoft.Common.props*.
 
 > [!NOTE]
 > Desabilitar importações de MSBuildProjectExtensionsPath impedirá que a lógica de build fornecida em pacotes do NuGet se aplique ao seu projeto. Alguns pacotes do NuGet exigem que a lógica de build execute a função deles e eles se tornarão inúteis quando essa opção estiver desabilitada.
 
 ## <a name="user-file"></a>Arquivo .user
 
-O Microsoft.Common.CurrentVersion.targets importa `$(MSBuildProjectFullPath).user` quando ele existe, portanto, você pode criar um arquivo ao lado de seu projeto com essa extensão adicional. Para alterações de longo que você planeja verificar no controle do código-fonte, alterar o projeto propriamente dito, para que os mantenedores futuros não precisem saber sobre esse mecanismo de extensão.
+O *Microsoft.Common.CurrentVersion.targets* importa `$(MSBuildProjectFullPath).user` se ele existe; portanto, você pode criar um arquivo ao lado do projeto com essa extensão adicional. Para alterações de longo que você planeja verificar no controle do código-fonte, alterar o projeto propriamente dito, para que os mantenedores futuros não precisem saber sobre esse mecanismo de extensão.
 
 ## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath e MSBuildUserExtensionsPath
 
@@ -124,28 +124,28 @@ O Microsoft.Common.CurrentVersion.targets importa `$(MSBuildProjectFullPath).use
 
 Por convenção, muitos arquivos de lógica de build principais são importados
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
 antes dos respectivos conteúdos, e
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
 depois. Isso permite que os SDKs instalados ampliem a lógica de build dos tipos comuns de projeto.
 
-A mesma estrutura de diretório é pesquisada em `$(MSBuildUserExtensionsPath)`, que é a pasta por usuário `%LOCALAPPDATA%\Microsoft\MSBuild`. Arquivos colocados nessa pasta serão importados para todos os builds do tipo de projeto correspondente executados sob as credenciais do usuário. As extensões de usuário podem ser desabilitadas definindo-se as propriedades nomeadas após o arquivo de importação no padrão `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Por exemplo, definir `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` para `false` impediria a importação de `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
+A mesma estrutura de diretório é pesquisada em `$(MSBuildUserExtensionsPath)`, que é a pasta por usuário *%LOCALAPPDATA%\Microsoft\MSBuild*. Arquivos colocados nessa pasta serão importados para todos os builds do tipo de projeto correspondente executados sob as credenciais do usuário. Desabilite as extensões de usuário definindo as propriedades nomeadas como o arquivo de importação no padrão `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Por exemplo, definir `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` para `false` impediria a importação de `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
-## <a name="customizing-the-solution-build"></a>Personalização do build de solução
+## <a name="customize-the-solution-build"></a>Personalizar o build de solução
 
 > [!IMPORTANT]
-> Personalizar o build de solução dessa maneira aplica-se apenas a builds de linha de comando com `MSBuild.exe`. Isso **não** se aplica a builds dentro do Visual Studio.
+> A personalização do build de solução dessa maneira aplica-se apenas a builds de linha de comando com o *MSBuild.exe*. Isso **não** se aplica a builds dentro do Visual Studio.
 
 Quando o MSBuild compila um arquivo de solução, ele primeiro se converte internamente em um arquivo de projeto e, em seguida, compila isso. O arquivo de projeto gerado importa `before.{solutionname}.sln.targets` antes de definir quaisquer destinos e `after.{solutionname}.sln.targets` após importar destinos, incluindo destinos instalados nos diretórios `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` e `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
 
-Por exemplo, você pode definir um novo destino para gravar uma mensagem de log personalizado após compilar `MyCustomizedSolution.sln` criando um arquivo no mesmo diretório denominado `after.MyCustomizedSolution.sln.targets` que contém
+Por exemplo, você pode definir um novo destino para gravar uma mensagem de log personalizada depois de compilar *MyCustomizedSolution.sln* criando um arquivo no mesmo diretório chamado *after.MyCustomizedSolution.sln.targets* que contém
 
 ```xml
 <Project>
@@ -157,4 +157,6 @@ Por exemplo, você pode definir um novo destino para gravar uma mensagem de log 
 
 ## <a name="see-also"></a>Consulte também
 
- [Conceitos do MSBuild](../msbuild/msbuild-concepts.md) [Referência do MSBuild](../msbuild/msbuild-reference.md)
+[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
+
+[Referência do MSBuild](../msbuild/msbuild-reference.md)

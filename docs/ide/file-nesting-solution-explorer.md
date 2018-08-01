@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582588"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177516"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar o aninhamento de arquivos no Gerenciador de Soluções
 
@@ -116,7 +116,7 @@ Esse provedor permite que você defina regras de aninhamento de arquivos com bas
 
 ![Regras de exemplo de fileToFile](media/filenesting_filetofile.png) ![Efeito de exemplo de fileToFile](media/filenesting_filetofile_effect.png)
 
-* *bower.json* é aninhado em *.bowerrc* devido à regra de **fileToFile**
+* *.bowerrc* é aninhado em *bower.json* devido à regra de **fileToFile**
 
 ### <a name="rule-order"></a>Ordem das regras
 

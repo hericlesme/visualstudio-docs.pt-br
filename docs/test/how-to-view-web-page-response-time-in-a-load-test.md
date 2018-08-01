@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668061"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178287"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
@@ -29,11 +29,11 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 -   A porcentagem de iterações de teste que correspondem à meta de tempo de resposta para a página.
 
--   Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Gráficos no Analisador de Testes de Carga:
+-   Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no Analisador de Testes de Carga:
 
 -   Analisando o tempo de resposta da página da Web na exibição de tabelas
 
--   Analisando o tempo de resposta da página da Web na exibição de gráficos
+-   Analisando o tempo de resposta da página da Web na exibição de grafos
 
 ## <a name="view-response-time-data-in-a-table"></a>Exibir dados de tempo de resposta em uma tabela
 
@@ -91,7 +91,7 @@ Você também pode exibir dados de tempo de resposta em um gráfico para ver com
     > [!NOTE]
     > A Meta de Tempo de Resposta de Página é constante.
 
- Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Consulte também
 

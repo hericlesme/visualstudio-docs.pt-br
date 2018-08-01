@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329cef79c529850bbe90a62cc24d5ec989379aa9
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104172"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154839"
 ---
 # <a name="signfile-task"></a>Tarefa SignFile
 
@@ -49,7 +49,7 @@ Assina o arquivo especificado usando o certificado especificado.
   
 ## <a name="remarks"></a>Comentários
 
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Tarefa de Classe Base](../msbuild/task-base-class.md).
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base Task](../msbuild/task-base-class.md).
   
 ## <a name="example"></a>Exemplo
 
@@ -73,7 +73,7 @@ Assina o arquivo especificado usando o certificado especificado.
 ```
 
 > [!NOTE]
-> A impressão digital do certificado é o hash SHA-1 do certificado. Para obter mais informações, consulte [Obter o hash SHA-1 de um certificado de autoridade de certificação raiz confiável](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
+> A impressão digital do certificado é o hash SHA-1 do certificado. Para saber mais, confira [Obter o hash SHA-1 de um certificado de autoridade de certificação raiz confiável](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   

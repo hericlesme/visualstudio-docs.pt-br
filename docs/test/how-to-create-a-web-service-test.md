@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970698"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180068"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
 
@@ -71,7 +71,7 @@ Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. 
     > [!NOTE]
     > Você pode usar a vinculação de dados no corpo SOAP para substituir o valor de qualquer espaço reservado por valores associados a dados usando a sintaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Execute o teste. No painel superior do Visualizador de Resultados de Teste de Desempenho na Web, selecione a solicitação de serviço Web. No painel inferior, selecione a guia Navegador da Web. O XML retornado pelo serviço Web e os resultados de todas as operações serão exibidos.
+13. Execute o teste. No painel superior do **Visualizador de Resultados de Teste de Desempenho na Web**, selecione a solicitação de serviço Web. No painel inferior, selecione a guia Navegador da Web. O XML retornado pelo serviço Web e os resultados de todas as operações serão exibidos.
 
 ## <a name="see-also"></a>Consulte também
 

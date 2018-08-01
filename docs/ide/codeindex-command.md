@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297601"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176366"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -42,7 +42,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argumento**|**Descrição**|
 |------------------|---------------------|
-|`CollectionName`|Especifica o nome da coleção de projetos de equipe. Se o nome tiver espaços, coloque o nome entre aspas, por exemplo, “Fabrikam Web Site”.|
+|`CollectionName`|Especifica o nome da coleção de projetos de equipe. Se o nome tiver espaços, coloque o nome entre aspas, por exemplo, "Site do Fabrikam".|
 |`CollectionId`|Especifica o número de identificação da coleção de projeto de equipe.|
 |`ServerPath`|Especifica o caminho para um arquivo de código.|
 
@@ -67,31 +67,31 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
  Para ver o status e a configuração de indexação do código:
 
 ```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
  Para iniciar a indexação de todos os conjuntos de alterações:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
  Para interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
  Para encontrar até 50 arquivos maiores que 10 KB:
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
  Para excluir um arquivo específico da indexação e adicioná-lo à lista de arquivos ignorados:
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
  Para ver todos os arquivos que não estão indexados:
@@ -103,25 +103,25 @@ TFSConfig CodeIndex /ignoreList:view
  Para limpar os dados indexados anteriormente e reinicie a indexação:
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  Para salvar todo o histórico de alterações:
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
  Para remover o limite de tamanho CodeLens os dados temporários e continuar a indexação independentemente do tamanho de dados temporários:
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
  Para excluir o índice de código com confirmação:
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>Consulte também

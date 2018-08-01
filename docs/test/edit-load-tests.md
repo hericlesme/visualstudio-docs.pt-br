@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968626"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178407"
 ---
 # <a name="edit-load-tests"></a>Editar testes de carga
 
@@ -33,21 +33,21 @@ Um teste de carga é definido por *cenários*, *conjuntos de contadores* e *conf
 
 Um cenário é usado para modelar como um grupo de usuários interage com um aplicativo para servidores. Um cenário consiste em um padrão de carga, um modelo de combinação de testes, uma combinação de navegadores e de redes. Um teste de carga pode ter mais de um cenário, e um único cenário podem conter testes de desempenho na Web e testes de unidade. Agrupando configurações semelhantes, um cenário permite agrupar e executar testes de uma natureza semelhante.
 
-Para obter mais informações, consulte [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md) e [Propriedades de cenário de teste de carga](../test/load-test-scenario-properties.md).
+Para saber mais, confira [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md) e [Propriedades de cenário de teste de carga](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Configurar e gerenciar conjuntos de contadores de desempenho
 
-Os testes de carga oferecem conjuntos de contadores nomeados, organizados por tecnologia, úteis para quando você analisar dados de contadores de desempenho. Os conjuntos de contadores incluem Teste de Carga, IIS, ASP.NET e SQL. Quando você cria um teste de carga com o Novo Assistente de Teste de Carga, um conjunto inicial de contadores predefinidos importantes é configurado para os computadores que você especifica para incluir no teste de carga. Você gerencia os contadores no Editor de testes de carga.
+Os testes de carga oferecem conjuntos de contadores nomeados, organizados por tecnologia, úteis para quando você analisar dados de contadores de desempenho. Os conjuntos de contadores incluem Teste de Carga, IIS, ASP.NET e SQL. Quando você cria um teste de carga com o **Novo Assistente de Teste de Carga**, um conjunto inicial de contadores predefinidos importantes é configurado para os computadores que você especifica para incluir no teste de carga. Você gerencia os contadores no **Editor de Teste de Carga**.
 
-Para obter mais informações, consulte [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Para saber mais, confira [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>Definir e gerenciar configurações de execução de teste de carga
 
-Configurações de execução são propriedades que influenciam a maneira como um teste de carga é executado. As configurações de execução são organizadas por categorias na janela Propriedades. 
+Configurações de execução são propriedades que influenciam a maneira como um teste de carga é executado. As configurações de execução são organizadas por categorias na janela **Propriedades**.
 
-Para obter mais informações, consulte [Definindo configurações de execução de teste de carga](../test/configure-load-test-run-settings.md) e [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
+Para saber mais, confira [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md) e [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analisando violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

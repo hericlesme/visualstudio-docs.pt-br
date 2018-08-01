@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc4e500c401c148f9eb01c1dedd56f89ba534df8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 97d49c44a2ab7b81a0241366ec9cc6e74401d6f5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692051"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180484"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estender testes de IU codificados e gravações da ação
 
@@ -35,6 +35,6 @@ Essa [postagem no blog](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-in
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
-- [Melhores práticas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
-- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
+- [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

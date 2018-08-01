@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751598"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176135"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
 
-Para definir configurações de iteração de teste, edite um cenário de teste de carga usando o Editor de Teste de Carga e a janela Propriedades. Por padrão, um cenário de teste de carga é configurado sem especificar o número máximo de iterações de teste. Você tem a opção de configurar o número máximo de iterações no cenário e por quanto tempo pausar entre elas.
+Para definir as configurações de iteração de teste, edite um cenário de teste de carga usando o Editor de Teste de Carga e a janela **Propriedades**. Por padrão, um cenário de teste de carga é configurado sem especificar o número máximo de iterações de teste. Você tem a opção de configurar o número máximo de iterações no cenário e por quanto tempo pausar entre elas.
 
-## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Especificar o máximo de iterações de teste para um cenário
+## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Especifique o máximo de iterações de teste para um cenário
 
-Você pode especificar o número máximo de vezes que deseja que os testes sejam executados para um cenário usando o Editor de teste de carga para alterar a propriedade de **Número máximo de iterações de teste** na janela Propriedades.
+Você pode especificar o número máximo de vezes que deseja que os testes sejam executados para um cenário usando o Editor de Teste de Carga para alterar a propriedade de **Máximo de Iterações de Teste** na janela **Propriedades**.
 
 A propriedade de **Número máximo de iterações de teste** controla o número máximo de iterações de teste para execução no cenário. Assim como na propriedade **Iterações de teste** das configurações de execução de teste de carga, esse é o máximo entre todos os usuários em todos os agentes, não por configuração de usuário.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
- Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para obter mais informações, consulte [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+ Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para obter mais informações, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Se o teste de carga for um teste de carga baseado em duração, e a duração expirar antes que a contagem de iterações seja concluída, o teste ainda será parado. Se o teste for baseado em iteração, e as iterações de teste forem atendidas antes das iterações do cenário, o teste será parado. A duração é configurada usando a propriedade de **Duração da execução** na janela Propriedades associadas a uma configuração de execução em um teste de carga.
+ Se o teste de carga for um teste de carga baseado em duração, e a duração expirar antes que a contagem de iterações seja concluída, o teste ainda será parado. Se o teste for baseado em iteração, e as iterações de teste forem atendidas antes das iterações do cenário, o teste será parado. A duração é configurada usando a propriedade de **Duração da Execução** na janela **Propriedades** associada a uma configuração de execução em um teste de carga.
 
  Quando a contagem de iterações do cenário for atingida, a execução do cenário será interrompida, mas todos os outros cenários ativos continuarão a ser executados.
 
@@ -55,7 +55,7 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 
 4. No menu **Exibir**, selecione **Janela de Propriedades**.
 
-     As categorias e as propriedades do cenário são exibidas na janela Propriedades.
+     As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
 5. Na caixa de texto da propriedade de **Número máximo de iterações de teste**, digite um valor que indique o número máximo de testes para executar no cenário quando o teste de carga for executado.
 
@@ -66,12 +66,12 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Especificar tempos de processamento entre iterações de teste para um cenário
 
-A propriedade de **Tempo de processamento entre iterações de teste** é definida usando a janela Propriedades para editar as propriedades do cenário de teste de carga no Editor de Teste de Carga.
+A propriedade de **Tempo de Processamento entre Iterações de Teste** é definida usando a janela **Propriedades** ao editar as propriedades do cenário de teste de carga no Editor de Teste de Carga.
 
 A propriedade de **Tempo de processamento entre iterações de teste** é usada para especificar quantos segundos esperar antes de iniciar uma iteração de teste.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades do cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Para especificar o tempo de processamento entre iterações de teste
 
@@ -83,7 +83,7 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 
 3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
-     As categorias e as propriedades do cenário são exibidas na janela Propriedades.
+     As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
 4. O valor da propriedade **Tempo de processamento entre iterações de teste**, digite um número que represente os segundos a esperar antes de começar a próxima iteração de teste.
 
@@ -94,4 +94,4 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Configurar controladores e agentes de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
-- [Editando tempos de processamento para simular atrasos de interação humana do site](../test/edit-think-times-in-load-test-scenarios.md)
+- [Editar tempos de processamento para simular atrasos de interação humana no site](../test/edit-think-times-in-load-test-scenarios.md)

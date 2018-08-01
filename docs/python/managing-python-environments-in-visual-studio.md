@@ -1,7 +1,7 @@
 ---
 title: Gerenciar ambientes e interpretadores Python
 description: Use a janela Ambientes Python para gerenciar ambientes globais, virtuais e conda, para instalar interpretadores e pacotes Python e atribuir ambientes a projetos do Visual Studio.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37342737"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232212"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -118,7 +118,7 @@ Se você souber que tem um intérprete Python em seu computador, mas o Visual St
 >
 > No entanto, se você mover manualmente um interpretador e seu ambiente usando o sistema de arquivos, o Visual Studio não saberá o novo local. Para saber mais, veja [Mover um intérprete](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="fix-invalid-environments"></a>Corrigir ambientes inválidos
+## <a name="fix-or-delete-invalid-environments"></a>Corrigir ou excluir ambientes inválidos
 
 Se o Visual Studio encontra entradas de Registro para um ambiente, mas o caminho para o interpretador é inválido, a janela Ambientes do Python mostra o nome com uma fonte riscada:
 

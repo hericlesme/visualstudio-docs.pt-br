@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751852"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175927"
 ---
 # <a name="load-test-results-summary-overview"></a>Visão geral do resumo de resultados do teste de carga
 
@@ -113,14 +113,14 @@ Os valores de percentil reportam as seguintes informações de transação:
 
 ## <a name="system-under-test-resources"></a>Recursos do sistema em teste
 
-A seção Recursos do sistema em teste contém uma lista de computadores que formam o conjunto de computadores de destino para o qual a carga está sendo gerada. Isso inclui qualquer computador do qual você coleta conjuntos de contadores diferentes de Agente ou Controlador. O nome do computador, % de tempo de processador e a memória disponível são exibidos. Você pode escolher um nome do computador para abrir o gráfico **Sistema em teste** e consultar o uso de recursos com o passar do tempo. Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+A seção Recursos do sistema em teste contém uma lista de computadores que formam o conjunto de computadores de destino para o qual a carga está sendo gerada. Isso inclui qualquer computador do qual você coleta conjuntos de contadores diferentes de Agente ou Controlador. O nome do computador, % de tempo de processador e a memória disponível são exibidos. Você pode escolher um nome do computador para abrir o gráfico **Sistema em teste** e consultar o uso de recursos com o passar do tempo. Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
 
 ## <a name="controller-and-agent-resources"></a>Recursos de controlador e agente
 
-A seção Controlador e recursos do agente contém uma lista dos computadores usados para executar o teste. O nome do computador, % de tempo de processador e a memória disponível são exibidos. Você pode escolher um nome do computador para abrir o gráfico **Controlador e agentes** e consultar o uso de recursos ao longo do tempo. Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+A seção Controlador e recursos do agente contém uma lista dos computadores usados para executar o teste. O nome do computador, % de tempo de processador e a memória disponível são exibidos. Você pode escolher um nome do computador para abrir o gráfico **Controlador e agentes** e consultar o uso de recursos ao longo do tempo. Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.

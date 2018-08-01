@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967951"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176756"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar os tipos de navegadores da Web em um cenário de teste de carga
 
@@ -30,7 +30,7 @@ A *combinação de navegadores* possibilita simular a carga de modo mais realist
 
  Depois de especificar uma combinação de navegadores, posteriormente, você poderá adicionar e remover tipos de navegador da Web da combinação. Você também pode alterar a distribuição da combinação de navegadores usando o controle misto. O controle misto permite ajustar facilmente a distribuição de navegadores em um cenário.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>Adicionando novos navegadores a um cenário
+## <a name="add-new-browsers-to-a-scenario"></a>Adicionar novos navegadores a um cenário
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Para adicionar novos navegadores a um cenário
 
@@ -47,7 +47,7 @@ A *combinação de navegadores* possibilita simular a carga de modo mais realist
 
 4.  Quando terminar de adicionar os navegadores, escolha **OK**.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> Removendo navegadores de um cenário
+##  <a name="remove-browsers-from-a-scenario"></a>Remover navegadores de um cenário
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Para remover navegadores de um cenário
 
@@ -83,4 +83,4 @@ A *combinação de navegadores* possibilita simular a carga de modo mais realist
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
+- [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)

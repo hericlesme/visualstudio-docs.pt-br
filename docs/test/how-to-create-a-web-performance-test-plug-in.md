@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974969"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178355"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Como criar um plug-in de teste de desempenho Web
 
@@ -95,7 +95,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
 
      A caixa de diálogo **Adicionar plug-in de teste na Web** é exibida.
 
-21. Em **Selecionar um plug-in**, selecione a classe do plug-in do teste de desempenho Web.
+21. Em **Selecionar um plug-in**, selecione a classe do plug-in do teste de desempenho da Web.
 
 22. No painel **Propriedades do plug-in selecionado**, defina os valores iniciais a serem usados pelo plug-in em tempo de execução.
 
@@ -120,7 +120,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
 
 O código a seguir cria um plug-in de teste de desempenho na Web personalizado que adiciona um item a <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> que representa a iteração de teste.
 
-Após a execução do teste de desempenho Web, usando esse plug-in você pode ver o item adicionado que se chama **TestIteratnionNumber** na guia **Contexto** no Visualizador de Resultados de Teste de Desempenho Web.
+Após a execução do teste de desempenho Web, usando esse plug-in você pode ver o item adicionado que se chama **TestIteratnionNumber** na guia **Contexto** no **Visualizador de Testes de Desempenho Web**.
 
 ```csharp
 using System;

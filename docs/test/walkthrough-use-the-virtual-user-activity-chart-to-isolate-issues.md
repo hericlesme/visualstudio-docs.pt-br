@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976426"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179824"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Informações passo a passo: usando o gráfico de atividade de usuário virtual
 
@@ -71,7 +71,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
 1.  Depois que a execução do teste de carga termina, a página Resumo para os resultados do teste de carga é exibida no Analisador de Testes de Carga. Escolha o botão **Gráficos** na barra de ferramentas.
 
-     A exibição Gráficos será mostrada.
+     A exibição Grafos será mostrada.
 
 2.  No gráfico **Tempo de Resposta de Página**, clique com o botão direito do mouse em um dos ícones de violação de limite e selecione **Ir para detalhe do usuário**.
 

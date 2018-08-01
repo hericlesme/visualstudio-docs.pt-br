@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35668088"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177312"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
@@ -306,7 +306,7 @@ Depois de criar o teste de IU codificado, você poderá editá-lo usando qualque
 
        - [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>O código gerado
 

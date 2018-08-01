@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967879"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203632"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
-Quando cria um teste de carga com o **Assistente de Teste de Carga**, você adiciona um conjunto inicial de contadores. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Para obter mais informações, consulte [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Quando cria um teste de carga com o **Assistente de Teste de Carga**, você adiciona um conjunto inicial de contadores. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Para saber mais, confira [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
 > Se os testes de carga forem distribuídos por computadores remotos, os contadores de agente e controlador serão mapeados para os conjuntos de contadores de agente e controlador. Para obter mais informações sobre como usar computadores remotos no teste de carga, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
@@ -61,9 +61,9 @@ Quando cria um teste de carga com o **Assistente de Teste de Carga**, você adic
 7.  Escolha **OK**.
 
     > [!NOTE]
-    > Também é possível adicionar contadores como um conjunto de contadores clicando com o botão direito do mouse em um contador ou em uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.
+    > Também é possível adicionar contadores como um conjunto de contadores escolhendo um contador ou uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Definindo configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

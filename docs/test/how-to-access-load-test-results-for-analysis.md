@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966681"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175667"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar resultados de teste de carga para análise
+# <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar os resultados do teste de carga para análise
 
-Quando você executar um teste de carga do Editor de Testes de Carga, os resultados de testes de carga serão abertos automaticamente e o teste de carga em execução será exibido no Analisador de Testes de Carga. Ao executar um teste de carga da linha de comando, você deverá acessar os resultados de testes de carga manualmente.
+Quando você executar um teste de carga do Editor de Teste de Carga, os resultados de testes de carga serão abertos automaticamente e o teste de carga em execução será exibido no **Analisador de Teste de Carga**. Ao executar um teste de carga da linha de comando, você deverá acessar os resultados de testes de carga manualmente.
 
 O resultado de teste de carga para o teste de carga concluído contém exemplos de contador de desempenho e informações de erros que foram coletados periodicamente dos computadores em teste. Um grande número de exemplos de contador de desempenho podem ser coletados durante a execução de um teste de carga. A quantidade de dados de desempenho coletados depende do tamanho da execução do teste, do intervalo de amostragem, do número de computadores em teste, do número de contadores que estão sendo coletados, dos coletores de dados que são configurados e dos níveis de registro em log. Em um teste de carga grande, a quantidade de dados de desempenho coletados pode atingir facilmente vários gigabytes. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -48,9 +48,9 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
 5.  Na lista **Resultados de testes de carga**, selecione os resultados do teste de carga para analisar e escolha **Abrir**.
 
-6.  O Analisador de Testes de Carga é exibido. O resultado do teste de carga selecionado é exibido na exibição Resumo. Para obter mais informações, consulte [Visão geral do resumo de resultados de teste de carga](../test/load-test-results-summary-overview.md).
+6.  O **Analisador de Testes de Carga** é exibido. O resultado do teste de carga selecionado é exibido na exibição Resumo. Para saber mais, confira [Visão geral do resumo de resultados de teste de carga](../test/load-test-results-summary-overview.md).
 
-     Você pode gerenciar os outros aspectos de resultados do teste da carga na caixa de diálogo Abrir e gerenciar resultados, que inclui importar, exportar e remover resultados do teste de carga. Para obter mais informações, consulte [Gerenciando resultados de teste de carga no repositório de resultados de teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Você pode gerenciar os outros aspectos de resultados do teste da carga na caixa de diálogo **Abrir e gerenciar resultados**, que inclui importar, exportar e remover resultados do teste de carga. Para saber mais, confira [Gerenciar resultados do teste de carga no repositório de resultados do teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Consulte também
 

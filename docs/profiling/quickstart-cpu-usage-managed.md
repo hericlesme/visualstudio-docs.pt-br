@@ -13,25 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750279"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206812"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (Código Gerenciado)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (código gerenciado)
 
 O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problemas de desempenho em seu aplicativo. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos. Aqui, vamos examinar a ferramenta para identificar os gargalos de desempenho devido ao alto uso da CPU. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
 O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecerão diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
 
-> [!NOTE]
-> Para o .NET Core e o ASP.NET Core, a ferramenta de uso da CPU atualmente não fornece resultados precisos com PBDs portáteis. Use PDBs completos.
-
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
+1. No Visual Studio, escolha **Arquivo** > **Novo Projeto**.
 
 2. Em **Visual C#** ou **Visual Basic**, escolha **Área de trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**.
 
@@ -39,7 +36,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
     O Visual Studio cria o projeto.
 
-2. Abra Program.cs e substitua todo o código pelo código a seguir:
+2. Abra *Program.cs* e substitua todo o código pelo código a seguir:
 
     ```csharp
     using System;
@@ -158,9 +155,9 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     ```
 
     > [!NOTE]
-    > No Visual Basic, verifique se o objeto de inicialização é definido como `Sub Main` (**Propriedades > Aplicativo > Objeto de Inicialização**).
+    > No Visual Basic, verifique se o objeto de inicialização é definido como `Sub Main` (**Propriedades** > **Aplicativo** > **Objeto de Inicialização**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Etapa 1: Coletar dados de criação de perfil
+##  <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 
 1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código na função `Main`:
 
@@ -179,9 +176,9 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-3.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar/Windows/Mostrar Ferramentas de Diagnóstico**.
+3.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
-4.  Clique em **Depurar/Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+4.  Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
 
      Quando o aplicativo terminar de ser carregado, a exibição **Resumo** das Ferramentas de Diagnóstico será exibida.
 
@@ -193,7 +190,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
      Quando você escolhe **Registrar perfil de CPU**, o Visual Studio começará a gravar as funções e quanto tempo elas levam para serem executadas, fornecendo também um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem. Você só pode exibir os dados coletados quando seu aplicativo é interrompido no ponto de interrupção.
 
-6.  Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
+6.  Pressione **F5** para executar o aplicativo até o segundo ponto de interrupção.
 
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
 
@@ -203,7 +200,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
      Neste ponto, você pode começar a analisar os dados.
 
-## <a name="Step2"></a> Etapa 2: Analisar os dados de uso da CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Etapa 2: Analisar os dados de uso de CPU
 
 Recomendamos que você comece a analisar os dados examinando a lista de funções em Uso da CPU, identificando as funções que fazem a maior parte do trabalho e, em seguida, fazendo uma análise mais detalhada de cada uma.
 
@@ -238,4 +235,4 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 ## <a name="see-also"></a>Consulte também
 
 - [Criação de perfis no Visual Studio](../profiling/index.md)
-- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+- [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

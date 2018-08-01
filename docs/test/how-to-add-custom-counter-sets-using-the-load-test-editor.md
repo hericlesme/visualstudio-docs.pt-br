@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752008"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204083"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Como adicionar conjuntos de contadores personalizados usando o Editor de Teste de Carga
 
@@ -39,14 +39,14 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
 3.  Clique com o botão direito do mouse no nó **Conjuntos de contadores** e selecione **Adicionar conjunto de contadores personalizados**.
 
     > [!NOTE]
-    > O conjunto de contadores recebe um nome padrão, como **Custom1**. É possível alterar o nome usando a janela **Propriedades**. Pressione F4 para exibir a janela **Propriedades**.
+    > O conjunto de contadores recebe um nome padrão, como **Custom1**. É possível alterar o nome usando a janela **Propriedades**. Pressione **F4** para exibir a janela **Propriedades**.
 
-4.  Para adicionar contadores ao conjunto de contadores personalizado, clique com o botão direito do mouse no novo conjunto de contadores e escolha **Adicionar contadores**. Para obter mais informações sobre como adicionar contadores, consulte [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4.  Para adicionar contadores ao conjunto de contadores personalizado, clique com o botão direito do mouse no novo conjunto de contadores e escolha **Adicionar contadores**. Para saber mais sobre como adicionar contadores, confira [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Também é possível adicionar um conjunto de contadores personalizados clicando com o botão direito do mouse em um conjunto de contadores existente, escolhendo copiar e colando-o no nó de conjuntos de contadores. Os contadores adicionais que são copiados, mas não são necessários, podem ser excluídos. Você pode alterar o nome do novo conjunto de contadores usando a janela **Propriedades**.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Definindo configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

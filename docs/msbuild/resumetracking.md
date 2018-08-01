@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326274"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151175"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Retoma o acompanhamento no contexto atual.  
@@ -37,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido retomado. **E_FAIL** será retornado se não for possível continuar o acompanhamento porque o contexto não estava disponível.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** FileTracker.h  
+ **Cabeçalho:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Consulte também  
  [SuspendTracking](../msbuild/suspendtracking.md)

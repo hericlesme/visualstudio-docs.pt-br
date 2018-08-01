@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577490"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154444"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>Iniciando um build pelo IDE
-Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este tópico descreve as razões para isso e o procedimento.  
+# <a name="start-a-build-from-within-the-ide"></a>Iniciar um build pelo IDE
+Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este artigo descreve as razões para esse requisito e descreve o procedimento.  
   
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelas que exigem a mediação de acesso aos recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelos que exigem a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.  
   
- Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Isso significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.  
+ Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Esse requisito significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Usando o IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>Usar o IVSBuildManagerAccessor  
  O código a seguir descreve um método que um sistema de projeto pode usar para iniciar um build:  
   
 ```csharp

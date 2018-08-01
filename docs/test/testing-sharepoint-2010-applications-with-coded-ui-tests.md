@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233529"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177503"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testar aplicativos do SharePoint com testes de IU codificados
 
@@ -28,7 +28,7 @@ Para saber mais sobre os benefícios de usar testes de IU codificados, consulte 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Criar um teste de IU codificado para um aplicativo do SharePoint
 
-[Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para seus aplicativos do SharePoint é o mesmo processo de criar testes para outros tipos de aplicativos. A gravação e a reprodução têm suporte para todos os controles na interface de edição na Web. A interface para a seleção de categorias e as Web parts são controles da Web padrão.
+[Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para seus aplicativos do SharePoint é o mesmo processo de criar testes para outros tipos de aplicativos. A gravação e a reprodução têm suporte para todos os controles na interface de **Edição na Web**. A interface para a seleção de categorias e as Web parts são controles da Web padrão.
 
 ![Web parts do SharePoint](../test/media/cuit_sharepoint.png)
 

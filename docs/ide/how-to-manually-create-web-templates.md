@@ -12,19 +12,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942403"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178937"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
 
 Criar um modelo de Web é diferente de criar outros tipos de modelos. Como modelos de projeto Web aparecem na caixa de diálogo **Adicionar Novo Site** e itens de projetos da Web são categorizados por linguagem de programação, o arquivo *vstemplate* deve especificar o modelo como um modelo de Web e identificar a linguagem de programação.
 
 > [!NOTE]
-> Os modelos da Web devem conter um arquivo vazio *.webproj* que deve ser referenciado no arquivo *vstemplate* no atributo `File` do elemento `Project`. Embora os projetos Web não requerem um arquivo de projeto *.proj*, é necessário criar esse arquivo de stub para que o modelo da Web funcione corretamente.
+> Os modelos da Web devem conter um arquivo vazio *.webproj* que deve ser referenciado no arquivo *vstemplate* no atributo `File` do elemento `Project`. Embora os projetos Web não exijam um arquivo de projeto *.proj*, é necessário criar esse arquivo de stub para que o modelo da Web funcione corretamente.
 
 ## <a name="to-manually-create-a-web-template"></a>Para criar manualmente um modelo da Web
 
@@ -67,7 +67,7 @@ O exemplo a seguir mostra um arquivo *vstemplate* básico para um modelo de proj
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
-        <Description>A simple Web template</Description>
+        <Description>A simple web template</Description>
         <Icon>icon.ico</Icon>
         <ProjectType>Web</ProjectType>
         <ProjectSubType>CSharp</ProjectSubType>

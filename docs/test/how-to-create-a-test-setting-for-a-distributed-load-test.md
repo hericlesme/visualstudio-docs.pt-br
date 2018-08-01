@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751813"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180302"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como criar uma configuração de teste para um teste de carga distribuída
 

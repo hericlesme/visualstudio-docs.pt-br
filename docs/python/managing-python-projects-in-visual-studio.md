@@ -1,7 +1,7 @@
 ---
 title: Gerenciando projetos de aplicativo do Python
 description: A finalidade de projetos no Visual Studio, como criar e gerenciar projetos para código Python e os modelos de projeto diferentes disponíveis para Python.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032184"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232264"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -109,7 +109,7 @@ Arquivos vinculados são ignorados em uma das seguintes condições:
 - O arquivo vinculado contém metadados do Link e o caminho do Link é um caminho relativo fora da hierarquia do projeto
 - O caminho do link tem raiz
 
-### <a name="working-with-linked-files"></a>Trabalhando com arquivos vinculados
+### <a name="work-with-linked-files"></a>Trabalhar com arquivos vinculados
 
 Para adicionar um item existente como um link, clique com o botão direito do mouse na pasta do projeto em que você deseja adicionar o arquivo e selecione **Adicionar > Saindo do Item...**. Na caixa de diálogo exibida, selecione um arquivo e escolha **Adicionar como Link** no menu suspenso do botão **Adicionar**. Desde que não existam arquivos conflitantes, esse comando criará um link na pasta selecionada. No entanto, o link não será adicionado se já existir um arquivo com o mesmo nome ou se já existir um link para esse arquivo no projeto.
 
@@ -139,7 +139,18 @@ Talvez você também precise adicionar um [caminho de pesquisa](search-paths.md)
 
 Ao trabalhar com o IronPython, é possível adicionar referências aos assemblies do .NET para habilitar o IntelliSense. Para projetos do .NET na solução, clique com o botão direito do mouse no nó **Referências** do projeto do Python, selecione **Adicionar Referência**, selecione a guia **Projetos** e procure o projeto desejado. Para as DLLs baixadas separadamente, selecione a guia **Procurar** e procure a DLL desejada.
 
-Como as referências no IronPython não estão disponíveis até uma chamada para `clr.AddReference('AssemblyName')` ser feita, você também precisará adicionar uma chamada para `clr.AddReference` ao assembly.
+Como as referências no IronPython não estão disponíveis até uma chamada para `clr.AddReference('<AssemblyName>')` ser feita, você também precisará adicionar uma chamada apropriada para `clr.AddReference` ao assembly, normalmente no início do seu código. Por exemplo, o código criado pelo modelo de projeto **Aplicativo Windows Forms do IronPython** no Visual Studio inclui duas chamadas na parte superior do arquivo:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>Projetos do WebPI
 

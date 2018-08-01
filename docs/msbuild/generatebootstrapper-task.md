@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573792"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177731"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.  
   
-## <a name="task-parameters"></a>Parâmetros da tarefa  
- A tabela a seguir descreve os parâmetros da tarefa `GenerateBootstrapper`.  
+## <a name="task-parameters"></a>Parâmetros de tarefa  
+ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
     </BootstrapperItem>  
     ```  
   
-     O atributo `Include` é usado para representar o nome de um pré-requisito que deve ser instalado. Os metadados do item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obrigatórios, a menos que nenhum `ApplicationFile` seja especificado. Você precisa incluir um item para cada pré-requisito que precisar ser instalado para seu aplicativo.  
+     O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] necessários, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.  
   
      Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.  
   
@@ -86,7 +86,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
      Parâmetro de saída `String` opcional.  
   
-     Especifica a localização interna de setup.exe  
+     Especifica a localização interna de *setup.exe*  
   
 -   `ComponentsLocation`  
   
@@ -96,7 +96,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
     -   `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
   
-    -   `Relative`: indica que o pré-requisito está no mesmo local que o aplicativo.  
+    -   `Relative`: indica que o pré-requisito está no mesmo local do aplicativo.  
   
     -   `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
   
@@ -118,7 +118,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
      Parâmetro `String` opcional.  
   
-     Especifica a cultura a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação. Se a cultura especificada estiver indisponível, a tarefa usará o valor do parâmetro `FallbackCulture`.  
+     Especifica a cultura a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação. Se a cultura especificada não está disponível, a tarefa usa o valor do parâmetro `FallbackCulture`.  
   
 -   `FallbackCulture`  
   
@@ -130,7 +130,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
      Parâmetro `String` opcional.  
   
-     Especifica o local para o qual copiar setup.exe e todos os arquivos do pacote.  
+     Especifica o local para o qual copiar *setup.exe* e todos os arquivos do pacote.  
   
 -   `Path`  
   
@@ -142,7 +142,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
      Parâmetro `String` opcional.  
   
-     Especifica a URL a ser fornecida caso a instalação do bootstrapper falhe  
+     Especifica a URL a ser fornecida em caso de falha na instalação do bootstrapper.  
   
 -   `Validate`  
   
@@ -151,7 +151,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
      Se for `true`, o bootstrapper executará a validação do XSD nos itens de entrada do bootstrapper especificados. O valor padrão desse parâmetro é `false`.  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que deve ter o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado como pré-requisito.  

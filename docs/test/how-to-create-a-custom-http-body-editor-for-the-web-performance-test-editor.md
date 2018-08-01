@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750689"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177042"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um Editor de Corpo HTTP Personalizado para o Editor de Testes de Desempenho Web
 
@@ -301,9 +301,9 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 1.  Criar um projeto de teste.
 
-2.  Crie um teste de desempenho Web e digite uma URL no navegador para um serviço Web, por exemplo, http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Crie um teste de desempenho Web e insira uma URL no navegador para um serviço Web.
 
-3.  Quando terminar a gravação, no editor de testes de desempenho Web, expanda a solicitação para o serviço Web e selecione **Corpo da string** ou um **Corpo binário**.
+3.  Quando terminar a gravação, no Editor de Testes de Desempenho Web, expanda a solicitação para o serviço Web e selecione **Corpo da string** ou um **Corpo binário**.
 
 4.  Na janela Propriedades, selecione Corpo da string ou Corpo Binário e escolha as reticências (…).
 

@@ -1,6 +1,6 @@
 ---
-title: Instalar agentes e controladores de testes para o Visual Studio
-ms.date: 03/02/2018
+title: Instalar agentes e controladores de teste
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,32 +11,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972099"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204200"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes e controladores de teste
 
-Para cenários de teste que usam o Visual Studio e o Visual Studio Team Services (VSTS) ou o Team Foundation Server (TFS), não é necessário ter um controlador de teste. Agents para Visual Studio gerenciam a orquestração comunicando-se com VSTS ou TFS. Um cenário pode ser que você execute testes contínuos para fluxos de trabalho de compilação e lançamento no VSTS ou TFS.
+Para cenários de teste que usam o Visual Studio e o VSTS (Visual Studio Team Services) ou o TFS (Team Foundation Server), não é necessário ter um controlador de teste. Agents para Visual Studio gerenciam a orquestração comunicando-se com VSTS ou TFS. Um cenário pode ser que você execute testes contínuos para fluxos de trabalho de compilação e lançamento no VSTS ou TFS.
 
 Você também pode considerar mais fácil usar [o gerenciamento de compilação ou lançamento](use-build-or-rm-instead-of-lab-management.md) em vez do gerenciamento de laboratório.
 
 ## <a name="system-requirements"></a>Requisitos do sistema
 
+A tabela a seguir mostra os requisitos de sistema para instalar o controlador de teste ou agente de teste para o Visual Studio 2017:
+
 | Item | Requisitos |
 | ---- | ------------ |
-| **Agente** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 Versão 2, Service Pack 1 |
-| **Controlador** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 Versão 2, Service Pack 1 |
+| **Agente** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
+| **Controlador** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalar o controlador de teste e agentes de teste
 
-Você pode baixar agentes para o Visual Studio 2017 pelo site [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Role até a parte inferior da página e procure por *Agents para Visual Studio 2017*. Selecione *Agente* ou *Controlador* e escolha *Baixar*. Execute o arquivo executável baixado para instalar o agente ou o controlador de teste.
+Você pode baixar agentes para Visual Studio 2017 em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Role até a parte inferior da página e procure por *Agents para Visual Studio 2017*. Selecione *Agente* ou *Controlador* e escolha *Baixar*. Execute o arquivo executável baixado para instalar o agente ou o controlador de teste.
 
-Você pode baixar agentes para Visual Studio 2015 e Visual Studio 2013 pela página [downloads mais antigos](https://www.visualstudio.com/vs/older-downloads/).
+Você pode baixar agentes para Visual Studio 2015 e Visual Studio 2013 pela página [downloads mais antigos](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Esses instaladores estão disponíveis como arquivos ISO para a instalação fácil em máquinas virtuais.
 

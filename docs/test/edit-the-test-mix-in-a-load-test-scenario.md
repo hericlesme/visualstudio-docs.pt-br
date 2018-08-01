@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750929"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179509"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
 
@@ -33,9 +33,9 @@ A *combinação de testes* de um cenário é uma combinação da seleção dos t
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Adicionar novos testes a uma combinação de testes em um cenário existente
 
-Ao criar um novo cenário usando o Novo Assistente de Teste de Carga, você pode especificar os testes de unidade e desempenho na Web a serem adicionados ao teste misto do novo cenário.
+Ao criar um novo cenário usando o **Novo Assistente de Teste de Carga**, você pode especificar os testes de unidade e desempenho na Web a serem adicionados ao teste misto do novo cenário.
 
-Você pode adicionar mais testes de unidade e desempenho na Web à combinação de texto do cenário usando o Editor de testes de carga.
+Você pode adicionar mais testes de unidade e desempenho na Web à combinação de texto do cenário usando o **Editor de Teste de Carga**.
 
 ![Adicionando um teste a um teste de carga existente](../test/media/ltest_addingtests.png)
 
@@ -43,7 +43,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
 1.  Abra um teste de carga.
 
-2.  No Editor de Teste de Carga, clique com o botão direito do mouse em um cenário existente e escolha **Adicionar testes**.
+2.  No **Editor de Teste de Carga**, clique com o botão direito do mouse em um cenário existente e escolha **Adicionar testes**.
 
      A caixa de diálogo **Adicionar testes** é exibida. Todos os testes de desempenho na Web, unidade, e de IU codificados na solução que ainda não estejam em seu cenário estão disponíveis para adição ao cenário.
 
@@ -53,16 +53,16 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
      Os testes são adicionados à combinação de testes. Uma nova distribuição é atribuída automaticamente aos testes na combinação de testes.
 
-5.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, consulte [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Removendo testes de um cenário
+##  <a name="remove-tests-from-a-scenario"></a>Remover testes de um cenário
  ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para remover testes de um cenário
 
 1.  Abra um teste de carga.
 
-2.  No Editor de Teste de Carga, na árvore de teste de carga, clique com o botão direito do mouse no cenário do qual você deseja remover um teste e selecione **Editar combinação de testes**. A caixa de diálogo **Editar combinação de testes** é exibida.
+2.  No **Editor de Teste de Carga**, na árvore de teste de carga, clique com o botão direito do mouse no cenário do qual você deseja remover um teste e selecione **Editar combinação de testes**. A caixa de diálogo **Editar combinação de testes** é exibida.
 
 3.  Selecione o teste de desempenho Web, de unidade ou de IU codificado na grade e escolha **Remover**.
 

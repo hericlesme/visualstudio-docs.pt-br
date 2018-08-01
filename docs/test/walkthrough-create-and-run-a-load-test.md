@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977379"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178443"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: criar e executar um teste de carga que contém testes de unidade
 
@@ -65,7 +65,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
      Um *cenário* é um mecanismo de agrupamento. Consiste em um conjunto de testes e as propriedades para executar esses testes sob carga.
 
-2.  Defina o **Perfil de tempo de processamento** como `Use normal distribution centered on recorded think times`. Os tempos de processamento representam o tempo que um usuário refletiria sobre uma página da Web antes de ir para a próxima página.
+2.  Defina o **Perfil de tempo de processamento** como `Use normal distribution centered on recorded think times`. Os tempos de raciocínio representam o tempo que um usuário refletiria sobre uma página da Web antes de passar para a próxima página.
 
 1.  Escolha **Avançar** quando terminar.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751527"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179002"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
@@ -27,7 +27,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
 -   **Tendência** Você pode gerar a análise de tendência em dois ou mais resultados de testes de carga. Os resultados são exibidos usando gráficos de linhas, mas os dados estão disponíveis em tabelas dinâmicas.
 
 > [!TIP]
-> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Consulte [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, grafos e tabelas. Consulte [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
  Qualquer relatório pode ser usado para compartilhar dados de desempenho com participantes e informar se o desempenho e a integridade gerais do sistema estão melhorando ou piorando.
 
@@ -56,7 +56,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
     1.  Após você concluir um teste de carga, na página de **Resultados de testes de carga**, clique no botão **Criar relatório no Excel** na barra de ferramentas.
 
         > [!NOTE]
-        > Se o botão **Criar relatório no Excel** estiver desabilitado na barra de ferramentas Visualizador de Resultados do Teste de Desempenho Web, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
+        > Se o botão **Criar Relatório no Excel** estiver desabilitado na barra de ferramentas **Visualizador de Resultados do Teste de Desempenho Web**, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
 
      O Microsoft Excel é aberto com o assistente **Gerar um relatório de teste de carga**.
 
@@ -111,7 +111,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
     1.  Após você concluir um teste de carga, na página de **Resultados de testes de carga**, clique no botão **Criar relatório no Excel** na barra de ferramentas.
 
         > [!NOTE]
-        > Se o botão **Criar relatório no Excel** estiver desabilitado na barra de ferramentas Visualizador de Resultados do Teste de Desempenho Web, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
+        > Se o botão **Criar Relatório no Excel** estiver desabilitado na barra de ferramentas **Visualizador de Resultados do Teste de Desempenho Web**, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
 
      O Microsoft Excel é aberto com o assistente **Gerar um relatório de teste de carga**.
 

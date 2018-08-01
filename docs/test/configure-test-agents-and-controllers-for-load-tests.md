@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967678"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176463"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar controladores e agentes de teste para executar testes de carga
 
@@ -23,7 +23,7 @@ O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquin
 > [!NOTE]
 > Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. Saiba mais sobre testes de carga baseados em nuvem em [Executar testes de carga usando o VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
 
-## <a name="load-simulation-architecture"></a>Arquitetura de simulação da carga
+## <a name="load-simulation-architecture"></a>Arquitetura de simulação de carga
 
 A arquitetura de simulação da carga consiste em um cliente do Visual Studio, um controlador de teste e agentes de teste.
 
@@ -65,11 +65,11 @@ O controlador de teste gerencia um conjunto de agentes de teste para executar te
 
 O controlador de teste fornece uma arquitetura geral para executar testes e inclui recursos especiais para executar testes de carga. O controlador de teste envia o teste de carga para todos os agentes de teste e aguarda até que todos os agentes de teste tenham inicializado o teste. Quando todos os agentes de teste estiverem prontos, o controlador de teste enviará uma mensagem aos agentes de teste para iniciá-lo.
 
-### <a name="test-agent"></a>Test Agent
+### <a name="test-agent"></a>Agente de teste
 
 O agente de teste é executado como um serviço que escuta solicitações do controlador de teste para iniciar um novo teste. Quando um agente de teste recebe uma solicitação, o serviço do agente de teste inicia um processo no qual executa os testes. Cada agente de teste executa o mesmo teste de carga.
 
- Os agentes de teste recebem um peso do administrador, e a carga é distribuída de acordo com a importância de um agente de teste. Por exemplo, se o agente de teste 1 tiver uma importância 30, o agente de teste 2 tiver uma importância 70 e a carga estiver definida como 1.000 usuários, o agente de teste 1 simulará 300 usuários virtuais, e o agente de teste 2 simulará 700 usuários virtuais. Consulte [Gerenciando controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+ Os agentes de teste recebem um peso do administrador, e a carga é distribuída de acordo com a importância de um agente de teste. Por exemplo, se o agente de teste 1 tiver uma importância 30, o agente de teste 2 tiver uma importância 70 e a carga estiver definida como 1.000 usuários, o agente de teste 1 simulará 300 usuários virtuais, e o agente de teste 2 simulará 700 usuários virtuais. Confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
  O agente de teste utiliza um conjunto de testes e um conjunto de parâmetros de simulação como entrada. Um conceito fundamental é que os testes são independentes do computador em que são executados.
 
@@ -79,13 +79,13 @@ A ilustração a seguir mostra os pontos de conexão entre o controlador de test
 
  ![Portas e segurança do controlador de teste e do agente de teste](./media/test-controller-agent-firewall.png)
 
- Para obter mais informações, consulte [Configurando portas para controladores de teste e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md).
+ Para obter mais informações, confira [Configurar portas para controladores de teste e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Informações sobre o controlador de teste e a instalação do agente
+## <a name="test-controller-and-agent-installation-information"></a>Informações sobre a instalação do controlador e do agente de teste
 
 Para obter informações importantes sobre os requisitos de hardware e software para controladores de teste e agentes de teste, os procedimentos para instalá-los e configurar o ambiente tendo em vista o desempenho ideal, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Usando o controlador de teste e o agente de teste com testes de unidade
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Usar o agente de teste e o controlador de teste com testes de unidade
 
 Depois de instalar um controlador de teste e um ou mais agentes, você poderá especificar se deseja usar uma execução remota com o controlador de teste na configuração de teste para os testes de carga. Além disso, você pode especificar os dados e os adaptadores de diagnóstico a serem usados com a função associada aos agentes na configuração de teste.
 

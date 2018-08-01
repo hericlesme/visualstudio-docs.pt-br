@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302944"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154598"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-element-msbuild.md) para o assembly que contém a implementação de tarefas.  
@@ -72,9 +72,9 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
  Variáveis de ambiente, propriedades de linha de comando, propriedades no nível do projeto e itens no nível do projeto podem ser referenciadas no elemento `UsingTask` incluído no arquivo de projeto, explicitamente ou por meio de um arquivo de projeto importado. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Propriedades e itens no nível do projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos .tasks globalmente registrados com o mecanismo do MSBuild. Valores no nível do projeto não são globais ao MSBuild.  
+>  Propriedades e itens no nível do projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos *.tasks* globalmente registrados com o mecanismo do MSBuild. Valores no nível do projeto não são globais ao MSBuild.  
 
- No MSBuild 4.0, usar tarefas pode ser carregado de arquivos .overridetask.  
+ No MSBuild 4.0, usar tarefas pode ser carregado a partir de arquivos *.overridetask*.  
 
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como usar o elemento `UsingTask` com um atributo `AssemblyName`.  
@@ -103,4 +103,4 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 ## <a name="see-also"></a>Consulte também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

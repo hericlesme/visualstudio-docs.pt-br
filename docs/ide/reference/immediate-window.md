@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704519"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177692"
 ---
 # <a name="immediate-window"></a>Janela imediata
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.
@@ -129,7 +129,7 @@ Não é possível usar a avaliação de expressão em tempo de design em tipos d
 - [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Depurando no Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Noções básicas do depurador](../../debugger/debugger-basics.md)
+- [Noções básicas do depurador](../../debugger/getting-started-with-the-debugger.md)
 - [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
