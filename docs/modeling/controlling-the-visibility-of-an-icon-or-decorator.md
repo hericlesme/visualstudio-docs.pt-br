@@ -9,42 +9,42 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951366"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382256"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
-Um *decorador* é um ícone ou a linha de texto que aparece em uma forma em uma domínio específico DSL (linguagem). Você pode fazer o decorador aparecem e desaparecem dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você pode ter diferentes ícones que aparecem dependendo o sexo da pessoa, o número de filhos e assim por diante.
+Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em uma linguagem específica de domínio (DSL). Você pode fazer o decorador aparecem e desaparecem dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você poderia ter diferentes ícones que aparecem, dependendo do sexo da pessoa, número de filhos e assim por diante.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
- O procedimento a seguir supõe que você já definiu uma forma e seu mapeamento para uma classe de domínio. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).
+ O procedimento a seguir pressupõe que você já definiu uma forma e seu mapeamento para uma classe de domínio. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).
 
-#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar a visibilidade de um decorador de texto ou no ícone
+#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar a visibilidade de um decorador de texto ou ícone
 
-1.  No diagrama de definição de DSL, adicione à classe forma de ícones ou decoradores de texto que você deseja exibir.
+1.  No diagrama de definição de DSL, adicione à classe forma os ícones ou decoradores de texto que você deseja exibir.
 
-    1.  A classe de forma de atalho, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.
+    1.  A classe shape do botão direito do mouse, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.
 
-    2.  Definir o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você pode ter ícones para masculino e feminino compartilhando a mesma posição.
+    2.  Defina o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você poderia ter ícones para masculino e feminino, compartilhando a mesma posição.
 
-    3.  Definir o **ícone padrão** propriedade de um decorador de ícone.
+    3.  Defina as **ícone padrão** propriedade de um decorador de ícone.
 
 2.  Selecione o mapa de elemento de diagrama, que é a linha cinza entre a classe de forma e a classe de domínio no diagrama de definição de DSL.
 
-3.  Na janela de detalhes de DSL, no **decorador mapas** , selecione um decorador. Por exemplo, o MaleDecorator.
+3.  Na janela de detalhes de DSL, na **mapas do decorador** guia, selecione um decorador. Por exemplo, o MaleDecorator.
 
-4.  Verifique o **visibilidade filtro** caixa.
+4.  Verifique as **filtro de visibilidade** caixa.
 
-5.  Se a propriedade de domínio que deve controlar a visibilidade está na classe de domínio imediata, deixe **caminho para a propriedade filtro** em branco.
+5.  Se a propriedade de domínio que deve controlar a visibilidade está na classe de domínio imediata, deixe **caminho para a propriedade de filtro** em branco.
 
      Caso contrário, clique no menu suspenso e navegue até a relação ou onde se encontra a propriedade de classe.
 
     -   Para evitar um relatório de erros, você não deve navegar por meio de uma relação marcada com "*" na ferramenta de navegação.
 
-6.  Definir o **propriedade filtro** para uma propriedade de domínio. Por exemplo, sexo.
+6.  Defina as **propriedade Filter** para uma propriedade de domínio. Por exemplo, sexo.
 
 7.  No **entradas de visibilidade** lista, adicione os valores dessa propriedade de domínio para o qual o decorador deve estar visível. Por exemplo, masculino.
 
@@ -54,7 +54,7 @@ Um *decorador* é um ícone ou a linha de texto que aparece em uma forma em uma 
 
 10. Quando você altera o valor da propriedade de controle, os decoradores devem aparecer e desaparecer.
 
- Com frequência, convém visibilidade controlado por uma fórmula mais complexa que um conjunto simple de valores. Por exemplo, com um ícone dependem do número de links de um tipo específico, ou que dependem de se um número está em um intervalo específico. Nesse caso, use o procedimento a seguir.
+ Com frequência, convém visibilidade controlado por uma fórmula mais complexa que um conjunto simple de valores. Por exemplo, para ter um ícone dependem do número de links de um tipo específico ou para torná-lo dependem uma se um número é em um intervalo específico. Nesse caso, use o procedimento a seguir.
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Para controlar a visibilidade de um decorador com base em uma fórmula
 
@@ -64,31 +64,31 @@ Um *decorador* é um ícone ou a linha de texto que aparece em uma forma em uma 
 
      **Tipo =**`Calculated`**-isso significa que você irá fornecer código que calcula seu valor** 
 
-     **Nome** por exemplo **DecoratorControl**
+     **Nome da** por exemplo **DecoratorControl**
 
-     **tipo de** = `Boolean`
+     **Tipo** = `Boolean`
 
-     Para obter mais informações, consulte [calculado e as propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).
+     Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
-2.  Tornar a nova propriedade para controlar a visibilidade de decorador.
+2.  Verifique a nova propriedade para controlar a visibilidade de decorador.
 
-    1.  Selecione o mapa de elemento de diagrama, que é a linha cinza da classe de domínio para a forma. No **DSL detalhes** janela, abra o **DecoratorMap** guia.
+    1.  Selecione o mapa de elemento de diagrama, que é a linha cinza da classe de domínio para a forma. No **detalhes de DSL** janela, abra o **DecoratorMap** guia.
 
-    2.  Verifique o **visibilidade filtro** caixa.
+    2.  Verifique as **filtro de visibilidade** caixa.
 
-    3.  Em **propriedade filtro**, selecione a propriedade de controle **DecoratorControl**.
+    3.  Na **propriedade Filter**, selecione a propriedade de controle **DecoratorControl**.
 
-    4.  Em **entradas de visibilidade**, digite `True`.
+    4.  Sob **entradas de visibilidade**, insira `True`.
 
-3.  Clique em **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções.
+3.  Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
 
-4.  Clique em **compilar solução** no **criar** menu.
+4.  Clique em **compilar solução** sobre o **Build** menu.
 
-5.  Clique duas vezes o relatório de erros que apareceu: "*YourClass* não contém uma definição para GetDecoratorControlValue...".
+5.  Clique duas vezes o relatório de erro foi exibido: "*YourClass* não contém uma definição para GetDecoratorControlValue...".
 
-     Abre o editor de texto em Dsl\GeneratedCode\DomainClasses.cs. Acima do erro realçado é um comentário que solicita que você adicione um método.
+     Abre o editor de texto em dsl\generatedcode\domainclasses.cs. Acima do erro realçado é um comentário que solicita que você adicione um método.
 
-6.  Observe o namespace, classe de método que estão faltando.  Por exemplo, Company.FamilyTree.Person.GetDecoratorControlValue().
+6.  Observe o namespace de classe e método que estão faltando.  Por exemplo, Company.FamilyTree.Person.GetDecoratorControlValue().
 
 7.  Em um arquivo de código separado, escreva uma definição de classe parcial que contém o método ausente. Por exemplo:
 
@@ -101,9 +101,9 @@ Um *decorador* é um ícone ou a linha de texto que aparece em uma forma em uma 
     } } }
     ```
 
-     Para obter mais informações sobre como personalizar o modelo com o código de programa, consulte [navegar e atualizar um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Para obter mais informações sobre como personalizar o modelo com o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-8.  Recriar e executar a solução.
+8.  Recompile e execute a solução.
 
 ## <a name="see-also"></a>Consulte também
 

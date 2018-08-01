@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549058"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276836"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Coletar dados de memória do .NET Framework usando a linha de comando do criador de perfil
 
@@ -25,8 +25,8 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Start an application and profile .NET memory (Iniciar um aplicativo e criar perfil de memória .NET)**|-   [Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Attach the profiler to a .NET application (Anexar o criador de perfil a um aplicativo .NET)**|-   [Como anexar o criador de perfil a um aplicativo do .NET Framework para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Start an application and profile .NET memory (Iniciar um aplicativo e criar perfil de memória .NET)**|-   [Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Attach the profiler to a .NET application (Anexar o criador de perfil a um aplicativo .NET)**|-   [Como anexar o criador de perfil a um aplicativo do .NET Framework para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**Instrumentar um aplicativo para coletar dados de memória do .NET**|-   [Como instrumentar um componente do .NET Framework autônomo e coletar dados de memória com o criador de perfil](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas
