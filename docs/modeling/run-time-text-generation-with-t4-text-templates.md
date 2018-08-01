@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117648"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380737"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 
@@ -152,7 +152,7 @@ Observe que as instruções são inseridas entre `<# ... #>` e as expressões s�
 
 ### <a name="the-code-built-from-the-template"></a>O código criado a partir do modelo
 
-Quando você salva o **. TT** do arquivo, uma subsidiária **. CS** ou **. vb** arquivo é gerado. Para ver esse arquivo no Gerenciador de soluções, expanda o **. TT** nó do arquivo. Em um projeto do Visual Basic, primeiro escolha **Show All Files** na barra de ferramentas do Gerenciador de soluções.
+Quando você salva o **. TT** do arquivo, uma subsidiária **. CS** ou **. vb** arquivo é gerado. Para ver esse arquivo na **Gerenciador de soluções**, expanda o **. TT** nó do arquivo. Em um projeto do Visual Basic, primeiro escolha **Show All Files** na **Gerenciador de soluções** barra de ferramentas.
 
 Observe que o arquivo subsidiário contém uma classe parcial que contém um método chamado `TransformText()`. Você pode chamar esse método de seu aplicativo.
 
