@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179028"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382416"
 ---
 # <a name="configure-load-test-run-settings"></a>Definir configurações de execução de teste de carga
 
@@ -33,7 +33,7 @@ A configuração de execução inicial é criada quando você cria um teste de c
 |-----------|-----------------------|
 |**Adicionar mais configurações de execução ao teste de carga:** além da configuração de execução criada quando você executa o **Novo Assistente de Teste de Carga**, é possível adicionar mais configurações de execução ao teste de carga para que ele possa ser executado em diferentes condições.|-   [Como adicionar configurações de execução adicionais a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Especificar a configuração de execução ativa a ser usada com o teste de carga:** você pode selecionar a configuração de execução que deseja usar com o teste de carga usando o Editor de Teste de Carga. A configuração de execução ativa é identificada pelo sufixo "[Active]".|-   [Como selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Editar propriedades da configuração da execução:** você pode editar suas propriedades de configuração de execução para coisas como registrar opções em log (veja mais abaixo), determinar a duração do teste, a duração de aquecimento, o número máximo de detalhes do erro relatados, a taxa de amostragem, o modelo de conexão (somente testes de desempenho Web), o tipo de armazenamento de resultados, o nível de validação e rastreamento SQL. As configurações de execução devem refletir as metas do teste de carga.|-   [Propriedades das configurações de execução de teste de carga](../test/load-test-run-settings-properties.md)<br />-   [Alterando as propriedades da configuração de execução](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Editar propriedades da configuração da execução:** você pode editar suas propriedades de configuração de execução para coisas como registrar opções em log (veja mais abaixo), determinar a duração do teste, a duração de aquecimento, o número máximo de detalhes do erro relatados, a taxa de amostragem, o modelo de conexão (somente testes de desempenho Web), o tipo de armazenamento de resultados, o nível de validação e rastreamento SQL. As configurações de execução devem refletir as metas do teste de carga.|-   [Propriedades das configurações de execução de teste de carga](../test/load-test-run-settings-properties.md)<br />-   [Alterando as propriedades da configuração de execução](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Especificar a contagem de iteração de teste em configurações de execução de teste de carga:** você pode especificar o número de vezes em que todos os testes de unidade e desempenho e na Web devem ser executados em todos os cenários dos testes de carga configurando a propriedade **Iterações do teste**.|-   [Como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Especificar a taxa de amostragem para uma configuração de execução de teste de carga:** você pode especificar com que frequência o teste de carga coleta dados do contador de desempenho configurando a propriedade **Taxa de amostragem**.|-   [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Especificar a opção de armazenamento dos detalhes de tempo:** você pode especificar como deseja que os detalhes do teste de carga sejam salvos configurando a propriedade **Armazenamento de detalhes de medição de tempo**.|-   [Como especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
