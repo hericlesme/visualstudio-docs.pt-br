@@ -2,7 +2,7 @@
 title: Saiba como depurar aplicativos multithread
 description: Depurar usando as janelas de pilhas paralelas e inspeção paralela no Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204213"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468677"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Começar a depurar aplicativos multi-threaded no Visual Studio
 Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Este tutorial leva apenas alguns minutos, mas concluí-la você se familiarizará com os recursos para depurar aplicativos multithread.
@@ -47,9 +47,9 @@ Para iniciar este tutorial, você precisará de um projeto de aplicativo multith
   
      A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  No **tipo de projeto**s caixa, clique na linguagem de sua escolha: **Visual c#**, **Visual C++**, ou **Visual Basic**.  
+2.  Clique no idioma de sua escolha: **Visual c#**, **Visual C++**, ou **Visual Basic**.  
   
-3.  No **modelos** , escolha **aplicativo de Console**.  
+3.  Sob **área de trabalho do Windows**, escolha **aplicativo de Console**.  
   
 4.  No **nome** caixa, digite o nome MyThreadWalkthroughApp.  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058692"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468758"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Instruções passo a passo: escrevendo um visualizador no Visual Basic
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.  
@@ -39,9 +39,9 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 1.  Sobre o **arquivo** menu, escolha **New** e clique em **novo projeto**.  
   
-2.  No **novo projeto** caixa de diálogo **tipo de projeto**s, clique em **Visual Basic**.  
+2.  No **novo projeto** caixa de diálogo, selecione **Visual Basic**.  
   
-3.  No **modelos** , clique em **biblioteca de classes**.  
+3.  Sob **.NET Standard**, clique em **biblioteca de classes**.  
   
 4.  No **nome** , digite um nome apropriado para a biblioteca de classes, como **MyFirstVisualizer**.  
   
@@ -166,7 +166,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 1.  Sobre o **arquivo** menu, clique em **Add**e, em seguida, clique em **novo projeto**.  
   
-2.  No **adicionar novo projeto** na caixa de **modelos** , clique em **aplicativo de Console**.  
+2.  No **adicionar novo projeto** caixa de diálogo, selecione **Visual Basic**e, em seguida, clique em **aplicativo de Console**.  
   
 3.  No **nome** , digite um nome significativo para o aplicativo de console, como **MyTestConsole**.  
   

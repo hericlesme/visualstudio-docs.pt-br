@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056791"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468524"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Instruções passo a passo: um Windows Form
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.  
@@ -51,27 +51,25 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 2.  No painel de tipos de projeto, abra o **Visual Basic**, **Visual c#**, ou **Visual C++** nó, em seguida,  
   
-    1.  Para o Visual Basic ou Visual c#, selecione a **Windows** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel.  
+    1.  Para o Visual Basic ou Visual c#, selecione **área de trabalho do Windows** > **aplicativo de formulário do Windows**.  
   
-    2.  Para o Visual C++, selecione o **CLR** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel...  
+    2.  Para o Visual C++, selecione **aplicativo de área de trabalho do Windows**.  
   
-3.  No **modelos** painel, selecione **aplicativo do Windows**.  
+3.  No **nome** caixa, dê ao projeto um nome exclusivo (por exemplo, Walkthrough_SimpleDebug).  
   
-4.  No **nome** caixa, dê ao projeto um nome exclusivo (por exemplo, Walkthrough_SimpleDebug).  
-  
-5.  Clique em **OK**.  
+4.  Clique em **OK**.  
   
      O Visual Studio cria um novo projeto e exibe um novo formulário no designer do Windows Forms. Para obter mais informações, consulte [Designer de formulários do Windows](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  Sobre o **modo de exibição** menu, selecione **caixa de ferramentas**.  
+5.  Sobre o **modo de exibição** menu, selecione **caixa de ferramentas**.  
   
      A caixa de ferramentas é aberta. Para saber mais, confira [Caixa de Ferramentas](../ide/reference/toolbox.md).  
   
-7.  Na caixa de ferramentas, clique no **botão** controlar e arraste o controle para a superfície de design do formulário. Remova o botão do formulário.  
+6.  Na caixa de ferramentas, clique no **botão** controlar e arraste o controle para a superfície de design do formulário. Remova o botão do formulário.  
   
-8.  Na caixa de ferramentas, clique no **caixa de texto** controlar e arraste o controle para a superfície de design do formulário. Descartar os **caixa de texto** no formulário.  
+7.  Na caixa de ferramentas, clique no **caixa de texto** controlar e arraste o controle para a superfície de design do formulário. Descartar os **caixa de texto** no formulário.  
   
-9. Na superfície de design do formulário, clique duas vezes no botão.  
+8. Na superfície de design do formulário, clique duas vezes no botão.  
   
      Isso leva à página de código. O cursor deve estar em `button1_Click`.  
   

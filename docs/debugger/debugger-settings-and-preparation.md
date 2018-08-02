@@ -1,7 +1,7 @@
 ---
 title: Configurações e preparação do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151568"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468293"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.  
@@ -50,9 +50,6 @@ Essa seção descreve as configurações de propriedade relacionadas ao depurado
   
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)  
  Descreve como depurar aplicativos de 64 bits.  
-  
- [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md)  
- Descreve os diferentes aspectos do processo de hospedagem.  
   
  [Como especificar uma versão do .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Descreve como definir uma chave do Registro para indicar ao depurador a versão a ser usada.  
