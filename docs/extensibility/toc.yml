@@ -425,8 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: 'Passo a passo: publicando uma extensão do Visual Studio'
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 'Passo a passo: publicando uma extensão do Visual Studio por meio da linha de comando'
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+    - name: 'Passo a passo: criar um pacote de extensão'
+      href: walkthough-create-extension-pack.md
     - name: Adicionar uma dependência a um pacote do VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Anatomia de um pacote do VSIX
