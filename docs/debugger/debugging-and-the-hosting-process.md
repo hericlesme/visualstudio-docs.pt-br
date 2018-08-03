@@ -1,7 +1,7 @@
 ---
 title: Depuração e o processo de hospedagem | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f584eb9217e46215405aa0786e5fa10e6034a9
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088895"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468254"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuração e o processo de hospedagem
 O processo de hospedagem do Visual Studio melhora o desempenho do depurador e habilita novos recursos do depurador, como a depuração de confiança parcial e a avaliação de expressão de tempo de design. Você pode desabilitar o processo de hospedagem se isso for necessário. As seções a seguir descrevem algumas diferenças entre a depuração com e sem o processo de hospedagem.
+
+> [!NOTE]
+> No Visual Studio 2017, a opção de depuração usando o processo de hospedagem não é mais necessária e foi removida. Para obter mais informações, consulte [depuração: Visual Studio 2017 tem como objetivo para velocidade de backup menos favorito trabalho](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Depuração de confiança parcial e segurança de Click-Once
  A depuração de confiança parcial requer o processo de hospedagem. Se você desabilitar o processo de hospedagem, depuração de confiança parcial não funcionará, mesmo se a segurança de confiança parcial é habilitada no **segurança** página do **propriedades do projeto**. Para obter mais informações, consulte [como: depurar um aplicativo de confiança parcial](../debugger/how-to-debug-a-partial-trust-application.md).
