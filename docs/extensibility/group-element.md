@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184bb709d25c55adcc34e73b6df1ac5f4a2448bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129151"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497102"
 ---
-# <a name="group-element"></a>Elemento de grupo
+# <a name="group-element"></a>Elemento Group
 Define um grupo de comando VSPackage.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
   <Parent>... </Parent>  
 </Group>  
@@ -39,10 +39,10 @@ Define um grupo de comando VSPackage.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador de comando GUID ID.|  
-|id|Necessário. ID do identificador de comando GUID ID.|  
+|GUID|Necessário. GUID do identificador de comando/ID de GUID.|  
+|id|Necessário. ID do identificador de comando/ID de GUID.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
-|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -59,11 +59,11 @@ Define um grupo de comando VSPackage.
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```xml  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
   <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
 </Group>  
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
