@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231485"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512247"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -97,7 +97,8 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
   * **HKLM\Software\Microsoft\VisualStudio\{versão}**: chaves do Registro criadas pelos instaladores MSI e extensões de por máquina.
   * **HKCU\Software\Microsoft\VisualStudio\{versão}**: chaves do Registro criadas pelo Visual Studio para armazenar configurações específicas do usuário.
   * **HKCU\Software\Microsoft\VisualStudio\{versão} _Config**: uma cópia da chave em HKLM do Visual Studio acima, além de chaves do registro mesclado de *pkgdef* arquivos pelas extensões.
-* Para reduzir o impacto sobre o registro, o Visual Studio agora usa o [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) função para armazenar as chaves do registro em um arquivo binário privado sob *[VSAPPDATA]\privateregistry.bin*. Somente um número muito pequeno de chaves específicas do Visual Studio permanecem no registro do sistema.
+* Para reduzir o impacto sobre o registro, o Visual Studio agora usa o [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) função para armazenar as chaves do registro em um arquivo binário privado sob *[VSAPPDATA]\privateregistry.bin*. Somente um número muito pequeno de chaves específicas do Visual Studio permanecem no registro do sistema.
+
 * O código existente em execução dentro do processo do Visual Studio não é afetado. Visual Studio redirecionará todas as operações de registro na chave específicas do HKCU Visual Studio para o registro privado. Lendo e gravando em outros locais do registro continuarão a usar o registro do sistema.
 * Código externo será necessário carregar e ler esse arquivo para entradas de registro do Visual Studio.
 

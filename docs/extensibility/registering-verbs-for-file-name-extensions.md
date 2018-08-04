@@ -1,5 +1,5 @@
 ---
-title: Registrando verbos para extensões de nome de arquivo | Microsoft Docs
+title: Registrar verbos para extensões de nome de arquivo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692b94cc9bba5bf200d71f4356bef849ec2f3aae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8004176fb64244aecde276226683a53c013d3b31
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138100"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513127"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrando verbos para extensões de nome de arquivo
-A associação de uma extensão de nome de arquivo com um aplicativo geralmente tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial ação está vinculada a um verbo, por exemplo aberto, que corresponde à ação.  
+Em geral, a associação de uma extensão de nome de arquivo com um aplicativo tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial a ação é vinculada a um verbo, por exemplo aberto, que corresponde à ação.  
   
- Você pode registrar os verbos que estão associados com um identificador programático (ProgID) para uma extensão usando a chave do Shell localizada em HKEY_CLASSES_ROOT\\*progid*\shell. Para obter mais informações, consulte [tipos de arquivo](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Você pode registrar verbos que estão associados com um identificador programático (ProgID) para uma extensão usando a chave de Shell localizada em HKEY_CLASSES_ROOT\\*progid*\shell. Para obter mais informações, consulte [tipos de arquivo](/windows/desktop/shell/fa-file-types).  
   
-## <a name="registering-standard-verbs"></a>Registrando verbos padrão  
+## <a name="registering-standard-verbs"></a>Registrar verbos padrão  
  O sistema operacional reconhece os seguintes verbos padrão:  
   
 -   Abrir  
@@ -34,16 +34,16 @@ A associação de uma extensão de nome de arquivo com um aplicativo geralmente 
   
 -   Play  
   
--   Impressão  
+-   Imprimir  
   
 -   Visualizar  
   
- Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo editar somente se houver uma diferença clara entre a abertura do arquivo e editar o arquivo. Por exemplo, a abertura de um arquivo. htm exibe no navegador, enquanto que a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
+ Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrir um arquivo. htm exibe no navegador, enquanto a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
   
 > [!NOTE]
->  Ao registrar verbos padrão, não defina o valor padrão para abrir a chave. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.  
+>  Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.  
   
- Arquivos de projeto devem ser registrados para iniciar uma nova instância da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando um usuário abre o arquivo. O exemplo a seguir ilustra o registro de um verbo padrão de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto.  
+ Arquivos de projeto devem ser registrados para iniciar uma nova instância da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando um usuário abre o arquivo. O exemplo a seguir ilustra um registro de verbo padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto.  
   
 ```  
 [HKEY_CLASSES_ROOT\.csproj]  
@@ -74,7 +74,7 @@ A associação de uma extensão de nome de arquivo com um aplicativo geralmente 
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Para abrir um arquivo em uma instância existente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], registre uma chave DDEEXEC. O exemplo a seguir ilustra o registro de um verbo padrão de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] arquivo. cs.  
+ Para abrir um arquivo em uma instância existente do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], registre-se uma chave DDEEXEC. O exemplo a seguir ilustra um registro de verbo padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] arquivo. cs.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ A associação de uma extensão de nome de arquivo com um aplicativo geralmente 
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>Definir o verbo padrão  
- O verbo padrão é a ação que é executada quando um usuário clica duas vezes em um arquivo no Windows Explorer. O verbo padrão é o verbo especificado como o valor padrão para o HKEY_CLASSES_ROOT\\*progid*\Shell chave. Se nenhum valor for especificado, o verbo padrão será o primeiro verbo especificado no HKEY_CLASSES_ROOT\\*progid*\Shell lista de chaves.  
+## <a name="setting-the-default-verb"></a>Definindo o verbo padrão  
+ O verbo padrão é a ação que é executada quando um usuário clica duas vezes em um arquivo no Windows Explorer. O verbo padrão é o verbo especificado como o valor padrão para o HKEY_CLASSES_ROOT\\*progid*\Shell chave. Se nenhum valor for especificado, o verbo padrão é o primeiro verbo especificado no HKEY_CLASSES_ROOT\\*progid*\Shell lista de chaves.  
   
 > [!NOTE]
->  Se você pretende alterar o verbo padrão para uma extensão em uma implantação lado a lado, considere o impacto sobre a instalação e remoção. Durante a instalação, o valor padrão original será substituído.  
+>  Se você planejar alterar o verbo padrão para uma extensão em uma implantação lado a lado, considere o impacto sobre a instalação e remoção. Durante a instalação, o valor padrão original será substituído.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciar associações de arquivo lado a lado](../extensibility/managing-side-by-side-file-associations.md)

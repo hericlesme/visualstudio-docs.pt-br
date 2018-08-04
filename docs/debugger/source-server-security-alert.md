@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb2233ffcc041a9d756ff51ac9fd3f1b9dc669e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474119"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511158"
 ---
 # <a name="source-server-security-alert"></a>Alerta de segurança do servidor de origem
 Ao usar o Servidor de Origem, use somente os arquivos de símbolo que forem de um local conhecido e confiável.  
@@ -35,4 +35,4 @@ Ao usar o Servidor de Origem, use somente os arquivos de símbolo que forem de u
 ## <a name="see-also"></a>Consulte também  
  [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Servidor de origem](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [Servidor de origem](/windows/desktop/Debug/source-server-and-source-indexing)

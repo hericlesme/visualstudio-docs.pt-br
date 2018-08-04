@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234667"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513368"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 Este artigo contém as seguintes tarefas para integradores do Visual Studio Help Viewer:  
@@ -820,7 +820,7 @@ Para testar isso como se implantado:
 12. Dentro do IDE de Contoso, escolha a tecla F1 para testar a funcionalidade de F1.  
   
 ### <a name="additional-resources"></a>Recursos adicionais  
-Para a API de tempo de execução, consulte [API de Ajuda do Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  
+Para a API de tempo de execução, consulte [API de Ajuda do Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
 Para obter informações adicionais sobre como usar a API de Ajuda, consulte [exemplos de código do Visualizador de ajuda](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   

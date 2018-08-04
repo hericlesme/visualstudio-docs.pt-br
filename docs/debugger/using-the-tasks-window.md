@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179990"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512285"
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 
@@ -52,7 +52,7 @@ As colunas na **tarefas** janela Mostrar as informações a seguir.
 |**sinalizadores**|Mostra quais tarefas estão sinalizadas e permite sinalizar ou remover a sinalização de uma tarefa.|
 |**Ícones**|Uma seta amarela indica a tarefa atual. A tarefa atual é a tarefa mais alta no thread atual.<br /><br /> Uma seta branca indica a tarefa de quebra, isto é, a que era atual quando o depurador foi chamado.<br /><br /> O ícone de pausa indica uma tarefa que foi congelada pelo usuário. Você pode congelar e descongelar uma tarefa clicando com o botão direito na lista.|
 |**ID**|Um número fornecido pelo sistema para a tarefa. No código nativo, esse é o endereço da tarefa.|
-|**Status**|O estado atual (agendado, ativo, bloqueado, com deadlock, aguardando ou concluído) da tarefa. Uma tarefa agendada é aquela que ainda não foi executada e, portanto, ainda não tem uma pilha de chamadas, um thread alocado ou as informações relacionadas.<br /><br /> Uma tarefa ativa é aquela que estava executando o código antes de quebrar no depurador.<br /><br /> Uma tarefa aguardando ou bloqueada é aquele que está bloqueada porque está aguardando um evento ser sinalizado, um bloqueio ser liberado ou outra tarefa ser concluída.<br /><br /> Uma tarefa com deadlock é uma tarefa de espera cujo thread está bloqueado com outro thread.<br /><br /> Passe o mouse sobre o **Status** célula para uma tarefa com deadlock ou aguardando obter mais informações sobre o bloco. **Aviso:** as **tarefas** janela reporta deadlock apenas uma tarefa bloqueada que usa um primitivo de sincronização que é suportado pela WCT Wait Chain Traversal (). Por exemplo, para um deadlock <xref:System.Threading.Tasks.Task> objeto, que usa WCT, o depurador informa **-com deadlock aguardando**. Para uma tarefa com deadlock que é gerenciada pelo tempo de execução de simultaneidade, que não usa WCT, o depurador informa **esperando**. Para obter mais informações sobre o WCT, consulte [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**Status**|O estado atual (agendado, ativo, bloqueado, com deadlock, aguardando ou concluído) da tarefa. Uma tarefa agendada é aquela que ainda não foi executada e, portanto, ainda não tem uma pilha de chamadas, um thread alocado ou as informações relacionadas.<br /><br /> Uma tarefa ativa é aquela que estava executando o código antes de quebrar no depurador.<br /><br /> Uma tarefa aguardando ou bloqueada é aquele que está bloqueada porque está aguardando um evento ser sinalizado, um bloqueio ser liberado ou outra tarefa ser concluída.<br /><br /> Uma tarefa com deadlock é uma tarefa de espera cujo thread está bloqueado com outro thread.<br /><br /> Passe o mouse sobre o **Status** célula para uma tarefa com deadlock ou aguardando obter mais informações sobre o bloco. **Aviso:** as **tarefas** janela reporta deadlock apenas uma tarefa bloqueada que usa um primitivo de sincronização que é suportado pela WCT Wait Chain Traversal (). Por exemplo, para um deadlock <xref:System.Threading.Tasks.Task> objeto, que usa WCT, o depurador informa **-com deadlock aguardando**. Para uma tarefa com deadlock que é gerenciada pelo tempo de execução de simultaneidade, que não usa WCT, o depurador informa **esperando**. Para obter mais informações sobre o WCT, consulte [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
 |**Hora de início**|A hora em que a tarefa se tornou ativa.|
 |**Duração**|O número de segundos que a tarefa esteve ativa.|
 |**Tempo de conclusão**|A hora em que a tarefa foi concluída.|

@@ -1,6 +1,6 @@
 ---
-title: Suprimir Avisos de análise de código no Visual Studio
-ms.date: 01/29/2018
+title: Suprimir avisos da análise de código
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117778"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513040"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
 
 Geralmente é útil indicar que um aviso não é aplicável. Isso indica aos membros da equipe que o código foi revisado e que o aviso pode ser suprimido. Usos de supressão (ISS) no código-fonte a <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir um aviso. O atributo pode ser colocado perto o segmento de código que gerou o aviso. Você pode adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> de atributo para o arquivo de origem, digitando-o, ou você pode usar o menu de atalho em um aviso na **lista de erros** para adicioná-lo automaticamente.
 
-O <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> é um atributo condicional que está incluído nos metadados de IL do seu assembly de código gerenciado, somente se o símbolo de compilação CODE_ANALYSIS for definido em tempo de compilação.
+O <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> é um atributo condicional, que está incluído nos metadados de IL do seu assembly de código gerenciado, somente se o símbolo de compilação CODE_ANALYSIS for definido em tempo de compilação.
 
 No C + + c++ CLI, use as macros da autoridade de certificação\_SUPRIMIR\_mensagem ou a autoridade de certificação\_GLOBAL\_SUPPRESS_MESSAGE no arquivo de cabeçalho para adicionar o atributo.
 
@@ -35,7 +35,9 @@ No C + + c++ CLI, use as macros da autoridade de certificação\_SUPRIMIR\_mensa
 > Você não deve usar supressões de código-fonte em compilações de versão, para impedir que os metadados de supressão na origem de envio acidentalmente. Além disso, devido ao custo de processamento de supressão de código-fonte, o desempenho do seu aplicativo pode ser prejudicado.
 
 > [!NOTE]
-> Se você migrar um projeto para Visual Studio 2017, você pode encontrar, de repente, com um número excessivo de avisos da análise de código. Se você não estiver pronto para corrigir os avisos e deseja desativar temporariamente a análise de código, abra as páginas de propriedades do projeto (**Project** > **\<projeto > propriedades**) e vá para o **análise de código** guia. Desmarque **habilitar a análise de código no Build**e, em seguida, recompile o projeto. Como alternativa, você pode selecionar uma regra diferente, menor definida para ser executado com o código. Lembre-se de ativar a análise de código novamente na quando você estiver pronto para corrigir os avisos.
+> Se você migrar um projeto para Visual Studio 2017, você pode encontrar, de repente, com um grande número de avisos da análise de código. Esses avisos são provenientes [analisadores de Roslyn](roslyn-analyzers-overview.md). Se você não estiver pronto para corrigir os avisos, você pode suprimir todos eles, escolhendo **Analyze** > **executar análise de código e suprimir problemas ativos**.
+>
+> ![Executar análise de código e suprimir problemas no Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 As propriedades do atributo incluem:
 
-- **Categoria de regra** -a categoria na qual a regra é definida. Para obter mais informações sobre categorias de regras de análise de código, consulte [gerenciados avisos de código](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Categoria** -a categoria na qual a regra é definida. Para obter mais informações sobre categorias de regras de análise de código, consulte [gerenciados avisos de código](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **Id da regra** -o identificador da regra. O suporte inclui tanto um nome curto e longo para o identificador de regra. O nome curto é CAXXXX; o nome longo é CAXXXX:FriendlyTypeName.
+- **CheckId** -o identificador da regra. O suporte inclui tanto um nome curto e longo para o identificador de regra. O nome curto é CAXXXX; o nome longo é CAXXXX:FriendlyTypeName.
 
 - **Justificação** -o texto que é usado para documentar o motivo para suprimir a mensagem.
 
-- **Id da mensagem** -identificador exclusivo de um problema para cada mensagem.
+- **MessageId** -identificador exclusivo de um problema para cada mensagem.
 
 - **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:
 
@@ -77,7 +79,7 @@ As propriedades do atributo incluem:
 
     - Membro
 
-- **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado de item.
+- **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado do item.
 
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage
 
@@ -159,7 +161,7 @@ Supressões no nível global são a única maneira de suprimir as mensagens que 
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target` sempre contém o nome do item totalmente qualificado.
+> `Target` sempre contém o nome totalmente qualificado do item.
 
 ## <a name="global-suppression-file"></a>Arquivo de supressão global
 

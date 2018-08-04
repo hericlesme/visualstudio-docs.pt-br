@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078372"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512942"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como: publicar um aplicativo WPF com estilos visuais habilitados
 Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview). Para obter mais informações sobre a mensagem de erro, consulte [solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  Depois de realizar essas etapas, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo. Se você pretende atualizar a solução muitas vezes, você pode mover esses comandos em um script e execute o script a cada vez que você publica uma nova versão.  
   
-## <a name="see-also"></a>Consulte também  
- [Solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview)   
- [Habilitar estilos visuais](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Prompts de comando](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>Consulte também
+
+-[Solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview)
+- [Habilitar estilos visuais](/windows/desktop/Controls/cookbook-overview)
+- [Prompts de Comando](/dotnet/framework/tools/developer-command-prompt-for-vs)

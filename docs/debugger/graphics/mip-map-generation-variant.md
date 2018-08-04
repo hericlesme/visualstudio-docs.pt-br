@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433162"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510143"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 Habilita mapas mip em texturas que não são destinos de renderização.  
@@ -28,7 +28,7 @@ Habilita mapas mip em texturas que não são destinos de renderização.
  Se essa variante tiver um ganho de desempenho considerável, é sinal de que você está usando as texturas sem habilitar os mapas mip e, por isso, não está aproveitando ao máximo o cache da textura.  
   
 ## <a name="remarks"></a>Comentários  
- A geração do mapa mip é forçada em cada chamada de `ID3D11Device::CreateTexture2D` que cria uma textura de origem. A geração do mapa mip é forçada, especificamente, quando o objeto D3D11_TEXTUR2D_DESC apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
+ A geração do mapa mip é forçada em cada chamada de `ID3D11Device::CreateTexture2D` que cria uma textura de origem. Especificamente, a geração de mapas mip é forçada quando o objeto D3D11_TEXTURE2D_DESC no `pDesc` descreve um recurso do sombreador inalterável, que é:  
   
 -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   

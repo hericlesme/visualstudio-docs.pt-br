@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757613"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512272"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Como: Use a navegação de rastreamento
 
@@ -29,7 +29,7 @@ Há três maneiras principais de alterar o conjunto de atividades que são exibi
 
 ## <a name="using-breadcrumb-navigation"></a>Usando a navegação de rastreamento
 
-1.  Clique duas vezes em uma atividade do Designer de fluxo de trabalho para alterar a atividade raiz para a atividade clicado. A atividade clicada completa é expandida na raiz e seus ancestrais são mostrados na barra de rastreamento. Isso é às vezes chamado perfuração ou de uma atividade.
+1.  Clique duas vezes em uma atividade do Designer de fluxo de trabalho para alterar a atividade raiz para a atividade clicado. A atividade clicado, em seguida, é totalmente expandida na raiz e seus ancestrais são mostrados na barra de navegação estrutural. Isso é às vezes chamado perfuração ou de uma atividade.
 
 2.  Para navegar a um predecessor de atividade atual da raiz, clique na atividade na barra de rastreamento.
 

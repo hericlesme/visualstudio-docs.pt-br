@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078436"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512178"
 ---
 # <a name="create-bootstrapper-packages"></a>Criar pacotes de bootstrapper
 O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis, como o Windows Installer (*. msi*) arquivos e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível, ou o pré-requisito, que aparece na **pré-requisitos** caixa de diálogo do ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado. 
@@ -86,10 +86,10 @@ A tabela a seguir mostra as propriedades que são preenchidas automaticamente pe
 |--------------|-----------------|  
 |ApplicationName|O nome do aplicativo.|  
 |ProcessorArchitecture|O processador e bits por palavra da plataforma de destino de um executável. Os valores incluem o seguinte:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|O número de versão para os sistemas operacionais Microsoft Windows 95, Windows 98 ou Windows ME. A sintaxe da versão é Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|A versão do assembly do Windows Installer (MSI) para ser executado durante a instalação.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Essa propriedade será definida se o usuário tiver privilégios de administrador. Os valores são verdadeiro ou falso.|  
+|[Version9x](/windows/desktop/Msi/version9x)|O número de versão para os sistemas operacionais Microsoft Windows 95, Windows 98 ou Windows ME. A sintaxe da versão é Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|A versão do assembly do Windows Installer (MSI) para ser executado durante a instalação.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Essa propriedade será definida se o usuário tiver privilégios de administrador. Os valores são verdadeiro ou falso.|  
 |InstallMode|O modo de instalação indica de onde o componente precisa ser instalado. Os valores incluem o seguinte:<br /><br /> -HomeSite - pré-requisitos são instalados a partir do site do fornecedor.<br />-SpecificSite - pré-requisitos são instalados no local que você selecionar.<br />-SameSite - pré-requisitos são instalados no mesmo local que o aplicativo.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Pacotes redistribuíveis separado das instalações do aplicativo  

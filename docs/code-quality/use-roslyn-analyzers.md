@@ -1,5 +1,5 @@
 ---
-title: Usar e configurar os analisadores de Roslyn no Visual Studio
+title: Usar e configurar os analisadores de Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204148"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512165"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar e usar regras do analisador Roslyn
 
@@ -141,6 +141,31 @@ O **Error List** exibe diagnóstico ou regra violações, tanto em tempo de aná
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Uso de linha de comando
+
+Quando você compila seu projeto na linha de comando, violações de regra aparecem na saída do build se as seguintes condições forem atendidas:
+
+- Os analisadores são instalados como um pacote do Nuget e não como uma extensão do VSIX.
+
+- Uma ou mais regras forem violadas no código do projeto.
+
+- O [gravidade](#rule-severity) de uma regra violada está definida como **aviso**, caso em que as violações não fazem com que a compilação falhar, ou **erro**, caso em que as violações causam compilação falhar.
+
+O detalhamento da saída do build não afeta se as violações de regra são mostradas. Mesmo com **silencioso** detalhamento, violações de regra aparecem na saída da compilação.
+
+> [!TIP]
+> Se você estiver acostumado a executar análise de código estático da linha de comando, com *FxCopCmd.exe* ou por meio de msbuild com o **{1&gt;runcodeanalysis&lt;1** sinalizador, aqui está como fazer isso com os analisadores do Roslyn.
+
+Para ver as violações de analisador na linha de comando quando você compila seu projeto usando o msbuild, execute um comando como este:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+A imagem a seguir mostra a saída de compilação de linha de comando desde a criação de um projeto que contém uma violação de regra do analisador:
+
+![Saída do MSBuild com violação de regra](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Consulte também
 

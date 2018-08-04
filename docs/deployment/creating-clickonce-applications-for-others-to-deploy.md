@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081420"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512142"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Criar aplicativos ClickOnce para implantar outras pessoas
 Nem todos os desenvolvedores que estão criando implantações do ClickOnce planejam implantar os próprios aplicativos. Muitos deles apenas empacotar seu aplicativo usando o ClickOnce e, em seguida, entregar os arquivos para um cliente, como uma grande corporação. O cliente torna-se a um responsável por hospedar o aplicativo em sua rede. Este tópico discute alguns dos problemas inerentes a tais implantações em versões do .NET Framework anteriores à versão 3.5. Ele descreve, em seguida, uma nova solução fornecida usando o novo recurso de "usar o manifesto para relação de confiança" no .NET Framework 3.5. Por fim, ele conclui com estratégias recomendadas para a criação de implantações do ClickOnce para clientes que ainda estejam usando versões mais antigas do .NET Framework.  
@@ -54,7 +54,7 @@ Nem todos os desenvolvedores que estão criando implantações do ClickOnce plan
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Criar implantações de cliente usando o manifesto do aplicativo para relação de confiança  
  ClickOnce no .NET Framework 3.5 contém um novo recurso que oferece uma nova solução de desenvolvedores e clientes para o cenário de como os manifestos devem ser assinados. O manifesto do aplicativo ClickOnce oferece suporte a um novo elemento chamado `<useManifestForTrust>` que permite que um desenvolvedor indicar que a assinatura digital do manifesto do aplicativo é o que deve ser usado para tomar decisões de confiança. O desenvolvedor usa ferramentas de empacotamento do ClickOnce — como *Mage.exe*, *MageUI.exe*e o Visual Studio — para incluir esse elemento no manifesto do aplicativo, bem como para inserir seu nome do publicador e o nome do aplicativo no manifesto.  
   
- Ao usar `<useManifestForTrust>`, o manifesto de implantação não precisa ser assinado com um certificado Authenticode emitido por uma autoridade de certificação. Em vez disso, ele pode ser assinado com o que é conhecido como um certificado autoassinado. Um certificado autoassinado é gerado pelo cliente ou o desenvolvedor por meio de ferramentas padrão do SDK do .NET Framework e, em seguida, aplicado ao manifesto de implantação usando as ferramentas de implantação do ClickOnce padrão. Para obter mais informações, consulte [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Ao usar `<useManifestForTrust>`, o manifesto de implantação não precisa ser assinado com um certificado Authenticode emitido por uma autoridade de certificação. Em vez disso, ele pode ser assinado com o que é conhecido como um certificado autoassinado. Um certificado autoassinado é gerado pelo cliente ou o desenvolvedor por meio de ferramentas padrão do SDK do .NET Framework e, em seguida, aplicado ao manifesto de implantação usando as ferramentas de implantação do ClickOnce padrão. Para obter mais informações, consulte [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Usando um certificado autoassinado para o manifesto de implantação apresenta várias vantagens. Eliminando a necessidade do cliente obter ou criar seu próprio certificado Authenticode, `<useManifestForTrust>` simplifica a implantação do cliente, permitindo que o desenvolvedor manter sua própria identidade de identidade visual do aplicativo. O resultado é um conjunto de implantações com sinal que são mais seguros e têm identidades de aplicativo exclusivo. Isso elimina o conflito em potencial que pode ocorrer na implantação do mesmo aplicativo para vários clientes.  
   
