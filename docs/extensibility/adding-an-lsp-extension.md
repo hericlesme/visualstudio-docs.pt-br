@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081677"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499384"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -111,26 +111,6 @@ Para criar uma extensão de serviço de linguagem usando um servidor de linguage
 Em seguida, crie um novo VSIXProject em branco, navegando até **arquivo** > **novo projeto** > **Visual c#**  >   **Extensibilidade** > **projeto VSIX**:
 
 ![criar um projeto vsix](media/lsp-vsix-project.png)
-
-Para a versão prévia, suporte do VS para o LSP será na forma de um VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Os desenvolvedores de extensão que desejarem criar uma extensão usando servidores de linguagem LSP devem usar uma dependência neste VSIX. Portanto, os clientes que desejam instalar uma extensão do servidor de linguagem **deve primeiro instalar o VSIX Language servidor protocolo de cliente visualização.**
-
-Para definir a dependência VSIX, abra o designer de manifesto do VSIX para o VSIX (clicando duas vezes o *vsixmanifest* arquivo no seu projeto) e navegue até **dependências**:
-
-![Adicionar a referência ao cliente do protocolo de servidor de linguagem](media/lsp-reference-lsp-dependency.png)
-
-Crie uma nova dependência semelhante ao seguinte:
-
-![definir a dependência de cliente do protocolo de servidor de idioma](media/lsp-define-lsp-dependency.png)
-
-* **Origem**: definidos manualmente
-* **Nome**: visualização do cliente de protocolo de servidor de linguagem
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Intervalo de versão**: [1.0,2.0)
-* **Como é a dependência foi resolvida**: instalado por usuário
-* **URL de download**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> O **URL de Download** devem ser preenchidos para que os usuários instalando sua extensão saibam como instalar a dependência necessária.
 
 ### <a name="language-server-and-runtime-installation"></a>Instalação de servidor e o tempo de execução de idioma
 

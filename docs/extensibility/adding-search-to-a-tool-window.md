@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152512"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498558"
 ---
 # <a name="add-search-to-a-tool-window"></a>Adicionar pesquisa a uma janela de ferramentas
 Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você pode adicionar a mesma funcionalidade de pesquisa que aparece em outro lugar no Visual Studio. Essa funcionalidade inclui os seguintes recursos:  
@@ -33,7 +33,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
   
 -   A capacidade de filtrar pesquisas por campos específicos ou aspectos dos destinos de pesquisa.  
   
- Seguindo este passo a passo, você aprenderá a executar as seguintes tarefas:  
+Seguindo este passo a passo, você aprenderá a executar as seguintes tarefas:  
   
 1.  Crie um projeto de VSPackage.  
   

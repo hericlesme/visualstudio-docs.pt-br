@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128157"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498162"
 ---
-# <a name="file-status-code-enumerator"></a>Enumerador de código de Status do arquivo
-O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
+# <a name="file-status-code-enumerator"></a>Enumerador de código de status do arquivo
+O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e o `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -56,7 +56,7 @@ enum SccStatus {
  Não foi possível obter o status; Não confie nele.  
   
  SCC_STATUS_NOTCONTROLLED  
- Arquivo não está sob controle de origem.  
+ Arquivo não está sob controle do código-fonte.  
   
  SCC_STATUS_CONTROLLED  
  Arquivo está sob controle do código-fonte.  
@@ -65,13 +65,13 @@ enum SccStatus {
  Check-out pelo usuário atual no disco local.  
   
  SCC_STATUS_OUTOTHER  
- Arquivo de check-out por outro usuário.  
+ Arquivo foi extraído por outro usuário.  
   
  SCC_STATUS_OUTEXCLUSIVE  
  Arquivo é check-out exclusivo.  
   
  SCC_STATUS_OUTMULTIPLE  
- Arquivo de check-out por mais de um usuário.  
+ Arquivo foi extraído por mais de um usuário.  
   
  SCC_STATUS_OUTOFDATE  
  O arquivo não é mais recente.  
@@ -83,22 +83,22 @@ enum SccStatus {
  Arquivo está bloqueado; Não há versões mais permitidos.  
   
  SCC_STATUS_MERGED  
- Arquivo foi mesclado mas fixo/verificado ainda não.  
+ Arquivo foi mesclado, mas ainda não foi corrigido/verificado.  
   
  SCC_STATUS_SHARED  
  Arquivo é compartilhado entre projetos.  
   
  SCC_STATUS_PINNED  
- Arquivo é compartilhado para uma versão explícita.  
+ Arquivo compartilhado para uma versão explícita.  
   
  SCC_STATUS_MODIFIED  
- Arquivo foi modificado/dividido/violadas.  
+ Arquivo foi modificado/dividida/violada.  
   
  SCC_STATUS_OUTBYUSER  
- Arquivo de check-out pelo usuário atual.  
+ Arquivo foi extraído por usuário atual.  
   
  SCC_STATUS_NOMERGE  
- Arquivo não pode ser mesclado com e não precisa ser salvo antes de um GET.  
+ Arquivo nunca pode ser mesclado com e não precisa ser salvo antes de um GET.  
   
  SCC_STATUS_RESERVED_1  
  Reservado para uso interno.  
