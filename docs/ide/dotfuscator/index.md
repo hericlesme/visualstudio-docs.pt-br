@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704390"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468190"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,7 +43,7 @@ O Dotfuscator pode [ofuscar][obfuscation] seus assemblies .NET para atrapalhar a
 
 Também é importante **proteger a integridade do seu aplicativo**.
 Além da engenharia reversa, atores ruins podem tentar piratear seu aplicativo, alterar o comportamento do aplicativo no tempo de execução ou manipular dados.
-O Dotfuscator pode injetar em seu aplicativo a capacidade de [detectar, relatar e responder a usos não autorizados][checks], incluindo violação, depuração de terceiros e dispositivos com raiz.
+O Dotfuscator pode injetar em seu aplicativo a capacidade de [detectar e responder a usos não autorizados][checks], incluindo violação, depuração de terceiros e dispositivos com raiz.
 
 Para saber mais sobre como o Dotfuscator se encaixa em um ciclo de vida de desenvolvimento seguro de software, veja a página [Proteção de aplicativo do SDL][sdl-protection] da PreEmptive Solutions.
 
@@ -56,12 +56,10 @@ O Dotfuscator CE oferece uma ampla variedade de [sistemas de proteção de servi
 Exemplos de [ofuscação de .NET][obfuscation] e outros recursos de [Proteção de aplicativo][app-protection] incluídos no Dotfuscator CE:
 
 * *[Renomeação][renaming]* de identificadores para dificultar a engenharia reversa de assemblies compilados.
-* *[Antiviolação][tamper]* para detectar a execução de aplicativos violados, transmitir alertas de incidentes e encerrar sessões violadas.
-* *[Antidepuração][debug]* para detectar a anexação de um depurador a um aplicativo em execução, transmissão de alertas de incidentes e encerramento de sessões depuradas.
-* *[Proteção contra dispositivos com raiz][root]* para detectar se o aplicativo está em execução em um dispositivo Android com raiz e terminar sessões nesses dispositivos.
-* *[Comportamentos de expiração do aplicativo][shelflife]* que codifica uma data de "fim da vida", transmite alertas quando os aplicativos são executados após a data de vencimento e encerra sessões do aplicativo que expirou.
-* *[Acompanhamento de exceção][exceptions]* para monitorar as exceções sem tratamento que ocorrem dentro do aplicativo.
-* Acompanhamento de uso de *[Sessão][sessions] e [recurso][features]* para determinar quais aplicativos foram executados, quais versões e quais recursos são usados nesses aplicativos.
+* *[Antiviolação][tamper]* para detectar a execução de aplicativos violados e encerrar ou responder às sessões violadas.
+* *[Antidepuração][debug]* para detectar a anexação de um depurador a um aplicativo em execução e encerrar ou responder às sessões depuradas.
+* *[Proteção contra dispositivos com raiz][root]* para detectar se o aplicativo está em execução em um dispositivo Android com raiz e encerrar ou responder às sessões nesses dispositivos.
+* *[Comportamentos de expiração do aplicativo][shelflife]* que codificam uma data de "fim da vida útil" e encerram as sessões do aplicativo que expirou.
 
 Para obter detalhes sobre esses recursos, incluindo como eles se encaixam em sua estratégia de proteção do aplicativo, veja a [página Recursos][capabilities].
 
@@ -107,9 +105,5 @@ Veja [o guia de usuário completo do Dotfuscator CE em preemptive.com][full] par
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
