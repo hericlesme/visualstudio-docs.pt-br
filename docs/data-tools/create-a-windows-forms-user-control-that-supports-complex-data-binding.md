@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0189682576c495d031cf160261e16fd920a1615
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758375"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582311"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos
 
@@ -37,7 +37,7 @@ Ao criar controles para uso em cenários de vinculação de dados, você precisa
 |Implemente o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.DataGridView> que exibe listas (ou tabelas) de dados. (Esse processo é descrito nesta página de passo a passo.)|
 |Implemente o <xref:System.ComponentModel.LookupBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.ComboBox>que exibe listas (ou tabelas) de dados, mas também precisa apresentar uma única coluna ou propriedade. Para obter mais informações, consulte [criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- Este passo a passo cria um controle complexo que exibe linhas de dados de uma tabela. Este exemplo usa a tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário complexo exibirá a tabela de clientes em uma <xref:System.Windows.Forms.DataGridView> no controle personalizado.
+Este passo a passo cria um controle complexo que exibe linhas de dados de uma tabela. Este exemplo usa a tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário complexo exibirá a tabela de clientes em uma <xref:System.Windows.Forms.DataGridView> no controle personalizado.
 
 Durante este passo a passo, você aprenderá a:
 
@@ -75,9 +75,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="create-a-windows-forms-application"></a>Criar um aplicativo Windows Forms
 
- A primeira etapa é criar uma **aplicativo do Windows Forms**.
-
-### <a name="to-create-the-new-windows-project"></a>Para criar o novo projeto do Windows
+A primeira etapa é criar uma **aplicativo do Windows Forms**:
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
@@ -91,9 +89,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="add-a-user-control-to-the-project"></a>Adicionar um controle de usuário ao projeto
 
-Porque este passo a passo cria um controle associável a dados complexo de um **controle de usuário**, você deve adicionar uma **controle de usuário** item ao projeto.
-
-### <a name="to-add-a-user-control-to-the-project"></a>Para adicionar um controle de usuário ao projeto
+Porque este passo a passo cria um controle associável a dados complexo de um **controle de usuário**, adicione uma **controle de usuário** item ao projeto:
 
 1. Dos **Project** menu, escolha **adicionar controle de usuário**.
 
@@ -103,17 +99,11 @@ Porque este passo a passo cria um controle associável a dados complexo de um **
 
 ## <a name="design-the-complexdatagridview-control"></a>Criar o controle ComplexDataGridView
 
-Esta etapa adiciona um <xref:System.Windows.Forms.DataGridView> ao controle de usuário.
-
-### <a name="to-design-the-complexdatagridview-control"></a>Para projetar o controle ComplexDataGridView
-
-- Arraste uma <xref:System.Windows.Forms.DataGridView> do **caixa de ferramentas** na superfície de design do controle de usuário.
+Para adicionar um <xref:System.Windows.Forms.DataGridView> ao controle de usuário, arraste um <xref:System.Windows.Forms.DataGridView> da **caixa de ferramentas** na superfície de design do controle de usuário.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Adicione o atributo obrigatório de associação de dados
 
-Para controles complexos que suportam associação de dados, você pode implementar o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-
-### <a name="to-implement-the-complexbindingproperties-attribute"></a>Para implementar o atributo ComplexBindingProperties
+Para os controles de complexos que suportam associação de dados, você pode implementar o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
 1. Opção de **ComplexDataGridView** controle a exibição de código. (Sobre o **modo de exibição** menu, selecione **código**.)
 
@@ -124,11 +114,9 @@ Para controles complexos que suportam associação de dados, você pode implemen
 
 1. No menu **Compilação**, escolha **Compilar Solução**.
 
-## <a name="creating-a-data-source-from-your-database"></a>Criando uma fonte de dados do banco de dados
+## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do banco de dados
 
-Esta etapa usa a **Data Source Configuration** Assistente para criar uma fonte de dados com base no `Customers` tabela no banco de dados de exemplo Northwind.
-
-### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
+Use o **Data Source Configuration** Assistente para criar uma fonte de dados com base no `Customers` tabela no banco de dados de exemplo Northwind:
 
 1.  Sobre o **dados** menu, clique em **Show Data Sources**.
 
@@ -154,9 +142,7 @@ Esta etapa usa a **Data Source Configuration** Assistente para criar uma fonte d
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Definir a tabela de clientes para usar o controle ComplexDataGridView
 
-Dentro de **fontes de dados** janela, você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
-
-### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>Para configurar a coluna Clientes para se associar ao controle ComplexDataGridView
+Dentro de **fontes de dados** janela, você pode definir o controle a ser criado antes de arrastar itens para seu formulário:
 
 1. Abra **Form1** no designer.
 
@@ -170,15 +156,9 @@ Dentro de **fontes de dados** janela, você pode definir o controle a ser criado
 
 ## <a name="add-controls-to-the-form"></a>Adicionar controles ao formulário
 
-Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
+Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário. Arraste principal **clientes** nó a partir do **fontes de dados** janela para o formulário. Verifique se que o **ComplexDataGridView** controle é usado para exibir os dados da tabela.
 
-### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
-
-Arraste principal **clientes** nó a partir do **fontes de dados** janela para o formulário. Verifique se que o **ComplexDataGridView** controle é usado para exibir os dados da tabela.
-
-## <a name="running-the-application"></a>Executando o aplicativo
-
-### <a name="to-run-the-application"></a>Para executar o aplicativo
+## <a name="run-the-application"></a>Executar o aplicativo
 
 Pressione **F5** para executar o aplicativo.
 

@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571514"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586333"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Referência de esquema do modelo do Visual Studio
-Esta seção contém informações sobre elementos XML em arquivos .vstemplate, que são arquivos que armazenam metadados para modelos de projeto, modelos de item e Kits de Início.
+# <a name="visual-studio-template-schema-reference"></a>Referência de esquema de modelo do Visual Studio
+Esta seção contém informações sobre os elementos XML no *. vstemplate* arquivos, que são arquivos que armazenam metadados para modelos de projeto, modelos de item e Kits de início.
 
- Você pode usar vstemplate.xsd para validar arquivos .vstemplate personalizados. Esse arquivo está disponível no. \\ *Pasta de instalação do visual Studio*\Xml\Schemas\1033\vstemplate.xsd.
+ Você pode usar *vstemplate* validar personalizado *. vstemplate* arquivos. Esse arquivo está disponível em *... \\ \<Pasta de instalação do visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Elemento|Elementos filho|Atributos|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Nenhum|Nenhum|
+|[Aplica-se](../extensibility/appliesto-element-visual-studio-templates.md)|Nenhum|Nenhum|
 |[Assembly (modelo)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (extensão do assistente)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|

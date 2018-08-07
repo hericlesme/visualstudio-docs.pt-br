@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089364"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586346"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>Referência do esquema de extensão do VSIX 2.0
+# <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 pode carregar arquivos VSIX nos formatos de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Esquema de manifesto de pacote  
- O elemento raiz do arquivo manifesto XML é `<PackageManifest>`, com um único atributo `Version`, que é a versão do formato de manifesto. Se forem feitas alterações principais para o formato, o formato da versão será alterado. Este tópico descreve a versão do formato de manifesto 2.0, que é especificado no manifesto, definindo o `Version` de atributo para o valor da versão = "2.0".  
+ O elemento raiz do arquivo manifesto XML é `<PackageManifest>`. Ele tem um único atributo `Version`, que é a versão do formato de manifesto. Se forem feitas alterações principais para o formato, o formato da versão é alterado. Este artigo descreve a versão do formato de manifesto 2.0, que é especificado no manifesto, definindo o `Version` de atributo para o valor da versão = "2.0".  
   
 ### <a name="packagemanifest-element"></a>Elemento PackageManifest  
  Dentro de `<PackageManifest>` elemento raiz, você pode usar os seguintes elementos:  
@@ -46,11 +46,11 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 ### <a name="metadata-element"></a>Elemento de metadados  
  Nesta seção é os metadados sobre o pacote, sua identidade e informações de publicidade. `<Metadata>` contém os seguintes elementos:  
   
--   `<Identity>` – Isso define as informações de identificação para esse pacote e inclui os seguintes atributos:  
+-   `<Identity>` -Define as informações de identificação para esse pacote e inclui os seguintes atributos:  
   
     -   `Id` -Este atributo deve ser uma ID exclusiva para o pacote escolhido por seu autor. O nome deve ser qualificado da mesma forma que os tipos CLR são ajudaria: Company.Product.Feature.Name. O `Id` atributo é limitado a 100 caracteres.  
   
-    -   `Version` – Isso define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
+    -   `Version` -Define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.  
   
     -   `Language` -Este atributo é o idioma padrão para o pacote e corresponde aos dados textuais neste manifesto. Esse atributo segue a convenção de código de localidade do CLR para assemblies de recurso, por exemplo: en-us, en, fr-fr. Você pode especificar `neutral` para declarar uma extensão com neutralidade de idioma que será executado em qualquer versão do Visual Studio. O valor padrão é `neutral`.  
   
@@ -95,7 +95,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
 -   `AnyAttribute*` -O `Installation` elemento aceita um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
   
--   `<InstallationTarget>` -Esse elemento controla o local em que o instalador do VSIX instala o pacote. Se o valor da `Scope` atributo é "ProductExtension" o pacote deve ter como destino um SKU que tem instalado um arquivo de manifesto como parte de seu conteúdo para anunciar sua disponibilidade para extensões. O `<InstallationTarget>` elemento tem os seguintes atributos quando o `Scope` atributo tem explícito ou valor padrão "ProductExtension":  
+-   `<InstallationTarget>` -Esse elemento controla o local em que o instalador do VSIX instala o pacote. Se o valor da `Scope` atributo é "ProductExtension" o pacote deve ter como destino uma SKU, que tem instalado um arquivo de manifesto como parte de seu conteúdo para anunciar sua disponibilidade para extensões. O `<InstallationTarget>` elemento tem os seguintes atributos quando o `Scope` atributo tem explícito ou valor padrão "ProductExtension":  
   
     -   `Id` -Este atributo identifica o pacote.  O atributo segue a convenção de namespace: Company.Product.Feature.Name. O `Id` atributo pode conter apenas caracteres alfanuméricos e é limitado a 100 caracteres. Valores esperados:  
   
@@ -132,10 +132,10 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
         > [!IMPORTANT]
         >  A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.  
   
-    -   `AnyAttribute*` -O `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
+    -   `AnyAttribute*` -O `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.  
   
 ### <a name="dependencies-element"></a>Elemento de dependências  
- Esse elemento contém uma lista de dependências que declara este pacote. Se todas as dependências forem especificadas, esses pacotes (identificado por suas `Id`) deve ser foram instalados antes.  
+ Esse elemento contém uma lista de dependências que declara este pacote. Se todas as dependências forem especificadas, esses pacotes (identificado por suas `Id`) deve ter sido instalado antes.  
   
 -   `<Dependency>` elemento – esse elemento filho tem os seguintes atributos:  
   
@@ -153,7 +153,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
         -   Única versão # - somente a versão especificada.  
   
-    -   `DisplayName` -Esse atributo é o nome de exibição do pacote dependente que é usado em elementos de interface do usuário, como caixas de diálogo e mensagens de erro. O atributo é opcional, a menos que o pacote dependente é instalado por MSI.  
+    -   `DisplayName` -Esse atributo é o nome de exibição do pacote dependente, que é usado em elementos de interface do usuário, como caixas de diálogo e mensagens de erro. O atributo é opcional, a menos que o pacote dependente é instalado por MSI.  
   
     -   `Location` -Esse atributo opcional especifica o caminho relativo dentro neste VSIX para um pacote VSIX aninhado ou uma URL para o local de download para a dependência. Este atributo é usado para ajudar o usuário localize o pacote de pré-requisito.  
   
@@ -164,7 +164,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
 -   `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
   
-    -   `Type` -Este é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
+    -   `Type` -Tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
         1.  VSPackage  
   
@@ -184,9 +184,9 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
   
     -   `Path` -o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
     
-    -   `TargetVersion` -o intervalo de versão na qual determinado ativo aplica-se a. Usado para envio de várias versões de ativos para diferentes versões do Visual Studio. Requer o Visual Studio 2017.3 ou mais recente ter efeito.
+    -   `TargetVersion` -o intervalo de versão ao qual se aplica o determinado ativo. Usado para envio de várias versões de ativos para diferentes versões do Visual Studio. Requer o Visual Studio 2017.3 ou mais recente ter efeito.
   
-    -   `AnyAttribute*` -Um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
+    -   `AnyAttribute*` -Um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.  
   
          `<AnyElement>*` -Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
   
@@ -219,4 +219,4 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+ [Envio de extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -16,21 +16,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756393"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582415"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
+
 Um cenário de aplicativo comum exibirá dados selecionados em um formulário. Por exemplo, você pode querer exibir os pedidos de um cliente específico ou os detalhes de um pedido específico. Nesse cenário, um usuário insere informações em um formulário e uma consulta é executada com a entrada do usuário como parâmetro, ou seja, os dados são selecionados com base em uma consulta parametrizada. A consulta retorna apenas os dados que satisfazem os critérios inseridos pelo usuário. Este passo a passo mostra como criar uma consulta que retorna clientes de uma cidade específica, como mudar a interface do usuário para que os usuários possam inserir o nome de uma cidade e pressionar um botão para executar a consulta.
 
- O uso de consultas parametrizadas ajuda a tornar seu aplicativo eficiente, permitindo que o banco de dados funcione melhor, filtrando registros rapidamente. Por outro lado, se você solicitar uma tabela de banco de dados inteiro, transferi-la pela rede e, em seguida, use a lógica do aplicativo para localizar os registros que deseja, seu aplicativo pode ficar lento e ineficiente.
+O uso de consultas parametrizadas ajuda a tornar seu aplicativo eficiente, permitindo que o banco de dados funcione melhor, filtrando registros rapidamente. Por outro lado, se você solicitar uma tabela de banco de dados inteiro, transferi-la pela rede e, em seguida, use a lógica do aplicativo para localizar os registros que deseja, seu aplicativo pode ficar lento e ineficiente.
 
- Você pode adicionar consultas parametrizadas a qualquer TableAdapter (e controles para aceitar valores de parâmetro e executar a consulta), usando o **construtor de critérios de pesquisa** caixa de diálogo. Abra a caixa de diálogo selecionando o **Add Query** comando as **dados** menu (ou em qualquer marca inteligente TableAdapter).
+Você pode adicionar consultas parametrizadas a qualquer TableAdapter (e controles para aceitar valores de parâmetro e executar a consulta), usando o **construtor de critérios de pesquisa** caixa de diálogo. Abra a caixa de diálogo selecionando o **Add Query** comando as **dados** menu (ou em qualquer marca inteligente TableAdapter).
 
- As tarefas ilustradas neste passo a passo incluem:
+As tarefas ilustradas neste passo a passo incluem:
 
 -   Criando um novo **aplicativo do Windows Forms** projeto.
 
@@ -65,9 +66,8 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
        Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
 ## <a name="create-the-windows-forms-application"></a>Criar o aplicativo do Windows Forms
- A primeira etapa é criar uma **aplicativo do Windows Forms**. Atribuir um nome para o projeto é opcional nesta etapa, mas você dar a ele um nome aqui porque você salvará o projeto mais tarde.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Para criar o novo projeto de aplicativo do Windows Forms
+A primeira etapa é criar um aplicativo Windows Forms. Atribuir um nome para o projeto é opcional nesta etapa, mas você dar a ele um nome aqui porque você salvará o projeto mais tarde:
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
@@ -80,9 +80,8 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
      O **WindowsSearchForm** projeto é criado e adicionado ao **Gerenciador de soluções**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
-Esta etapa cria uma fonte de dados de um banco de dados usando o **configuração de fonte de dados** assistente.
 
-#### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
+Esta etapa cria uma fonte de dados de um banco de dados usando o **configuração de fonte de dados** Assistente:
 
 1.  Sobre o **dados** menu, clique em **Show Data Sources**.
 
@@ -107,9 +106,8 @@ Esta etapa cria uma fonte de dados de um banco de dados usando o **configuraçã
      O **NorthwindDataSet** é adicionado ao seu projeto e o **clientes** tabela aparece no **fontes de dados** janela.
 
 ## <a name="create-the-form"></a>Criar o formulário
- Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
+Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário:
 
 1.  Expanda o **clientes** nó na **fontes de dados** janela.
 
@@ -118,13 +116,12 @@ Esta etapa cria uma fonte de dados de um banco de dados usando o **configuraçã
      Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Adicionar parametrização (funcionalidade Pesquisar) à consulta
- Você pode adicionar uma cláusula WHERE à consulta original usando o **construtor de critérios de pesquisa** caixa de diálogo.
 
-#### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Para criar uma consulta parametrizada e controles para inserir os parâmetros
+Você pode adicionar uma cláusula WHERE à consulta original usando o **construtor de critérios de pesquisa** caixa de diálogo:
 
 1.  Selecione o <xref:System.Windows.Forms.DataGridView> controlar e, em seguida, escolha **Add Query** sobre o **dados** menu.
 
-2.  Tipo `FillByCity` no **nome da nova consulta** área o **Pesquisar Construtor de critérios** caixa de diálogo.
+2.  Tipo de **FillByCity** na **nome da nova consulta** área na **Pesquisar Construtor de critérios** caixa de diálogo.
 
 3.  Adicione `WHERE City = @City` para a consulta na **texto da consulta** área.
 
@@ -138,16 +135,15 @@ Esta etapa cria uma fonte de dados de um banco de dados usando o **configuraçã
      ```
 
     > [!NOTE]
-    >  Fontes de dados do Access e o OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE seria algo como este: `WHERE City = ?`.
+    > Fontes de dados do Access e o OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE seria algo como este: `WHERE City = ?`.
 
 4.  Clique em **Okey** para fechar o **construtor de critérios de pesquisa** caixa de diálogo.
 
      Um **FillByCityToolStrip** é adicionado ao formulário.
 
-## <a name="testing-the-application"></a>Testando o aplicativo
- Executando o aplicativo abre o formulário e o torna pronto para receber o parâmetro como entrada.
+## <a name="test-the-application"></a>Testar o aplicativo
 
-#### <a name="to-test-the-application"></a>Para testar o aplicativo
+Executando o aplicativo abre o formulário e o torna pronto para receber o parâmetro como entrada:
 
 1.  Pressione **F5** para executar o aplicativo.
 
@@ -156,7 +152,8 @@ Esta etapa cria uma fonte de dados de um banco de dados usando o **configuraçã
      A grade de dados é preenchida com os clientes que atendem aos critérios. Neste exemplo, a grade de dados exibe clientes que têm um valor de **Londres** em seus **City** coluna.
 
 ## <a name="next-steps"></a>Próximas etapas
- Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez queira realizar após criar um formulário parametrizado. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
+
+Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez queira realizar após criar um formulário parametrizado. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
 -   Adicionar controles que exibem dados relacionados. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 

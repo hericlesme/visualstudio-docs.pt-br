@@ -49,49 +49,53 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71e660260c6ec6dfd671d4b6b2d036ffd6cffb3a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756165"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582454"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
+
 > [!NOTE]
->  Conjuntos de dados e classes relacionadas são herdadas tecnologias do .NET do início dos anos 2000 que habilitam aplicativos para trabalhar com dados na memória enquanto os aplicativos estão desconectados do banco de dados. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar os dados e manter as alterações no banco de dados. Embora os conjuntos de dados provaram para ser uma tecnologia muito bem-sucedida, é recomendável que novos aplicativos .NET usam Entity Framework. Entity Framework fornece uma maneira mais natural para trabalhar com dados tabulares como modelos de objeto, e ele tem uma interface de programação mais simples.
+> Conjuntos de dados e classes relacionadas são herdadas tecnologias do .NET do início dos anos 2000 que habilitam aplicativos para trabalhar com dados na memória enquanto os aplicativos estão desconectados do banco de dados. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar os dados e manter as alterações no banco de dados. Embora os conjuntos de dados provaram para ser uma tecnologia muito bem-sucedida, é recomendável que novos aplicativos .NET usam Entity Framework. Entity Framework fornece uma maneira mais natural para trabalhar com dados tabulares como modelos de objeto, e ele tem uma interface de programação mais simples.
 
- Um `DataSet` objeto é um objeto na memória que é basicamente um minibanco de dados. Ela contém `DataTable`, `DataColumn`, e `DataRow` objetos em que você pode armazenar e modificar dados de um ou mais bancos de dados sem a necessidade de manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações nos seus dados, portanto, as atualizações podem ser controladas e enviadas de volta para o banco de dados quando seu aplicativo se torna reconectado.
+Um `DataSet` objeto é um objeto na memória que é basicamente um minibanco de dados. Ela contém `DataTable`, `DataColumn`, e `DataRow` objetos em que você pode armazenar e modificar dados de um ou mais bancos de dados sem a necessidade de manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações nos seus dados, portanto, as atualizações podem ser controladas e enviadas de volta para o banco de dados quando seu aplicativo se torna reconectado.
 
- Conjuntos de dados e classes relacionadas são definidas na *System. Data* namespace na biblioteca de classes do .NET Framework. Você pode criar e modificar conjuntos de dados dinamicamente no código. Para obter mais informações sobre como fazer isso, consulte o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Uma coisa a saber: conjuntos de dados que são feitos por meio de designers usam objetos de TableAdapter para interagir com o banco de dados. Por outro lado, usam conjuntos de dados que são feitos por meio de programação `DataAdapter` objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Conjuntos de dados e classes relacionadas são definidas na *System. Data* namespace na biblioteca de classes do .NET Framework. Você pode criar e modificar conjuntos de dados dinamicamente no código usando o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Conjuntos de dados que são criados por meio do uso de designers **TableAdapter** objetos para interagir com o banco de dados. Usam conjuntos de dados que são criados de forma programática **DataAdapter** objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
- Se seu aplicativo precisa apenas ler dados de um banco de dados e não executar atualizações, adiciona ou exclui, você geralmente pode obter um melhor desempenho usando um `DataReader` o objeto para recuperar dados em um genérico `List` objeto ou outro objeto de coleção. Se você estiver exibindo os dados, você pode associar dados a interface do usuário a coleção.
+Se seu aplicativo precisa apenas ler dados de um banco de dados e não executar atualizações, adiciona ou exclui, você geralmente pode obter um melhor desempenho usando um `DataReader` o objeto para recuperar dados em um genérico `List` objeto ou outro objeto de coleção. Se você estiver exibindo os dados, você pode associar dados a interface do usuário a coleção.
 
 ## <a name="dataset-workflow"></a>Fluxo de trabalho do conjunto de dados
- O Visual Studio fornece ferramentas para simplificar o trabalho com conjuntos de dados. O fluxo de trabalho de ponta a ponta básico é:
 
--   Use o **fonte de dados** janela para criar um novo conjunto de dados de uma ou mais fontes de dados. Use o **Dataset Designer** para configurar o conjunto de dados e definir suas propriedades. Por exemplo, você precisa especificar quais tabelas da fonte de dados para incluir e quais colunas de cada tabela. Escolha cuidadosamente conservar a quantidade de memória que exige que o conjunto de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+O Visual Studio fornece ferramentas para simplificar o trabalho com conjuntos de dados. O fluxo de trabalho de ponta a ponta básico é:
 
--   Especifica as relações entre as tabelas para que as chaves estrangeiras são tratadas corretamente. Para obter mais informações, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Use o **fonte de dados** janela para criar um novo conjunto de dados de uma ou mais fontes de dados. Use o **Dataset Designer** para configurar o conjunto de dados e definir suas propriedades. Por exemplo, você precisa especificar quais tabelas da fonte de dados para incluir e quais colunas de cada tabela. Escolha cuidadosamente conservar a quantidade de memória que exige que o conjunto de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
--   Use o **Assistente de configuração TableAdapter** para especificar a consulta ou procedimento armazenado que preenche o conjunto de dados e quais operações de banco de dados (update, delete e assim por diante) para implementar. Para saber mais, consulte estes tópicos:
+- Especifica as relações entre as tabelas para que as chaves estrangeiras são tratadas corretamente. Para obter mais informações, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-    -   [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+- Use o **Assistente de configuração TableAdapter** para especificar a consulta ou procedimento armazenado que preenche o conjunto de dados e quais operações de banco de dados (update, delete e assim por diante) para implementar. Para saber mais, consulte estes tópicos:
 
-    -   [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
+    - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
+    - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
 
-    -   [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+    - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
 
--   Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Habilita [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+    - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
--   Use o **fontes de dados** janela associar controles de interface do usuário para o conjunto de dados ou de suas colunas individuais e para especificar quais colunas são editáveis pelo usuário. Para obter mais informações, consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Habilita [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+
+- Use o **fontes de dados** janela associar controles de interface do usuário para o conjunto de dados ou de suas colunas individuais e para especificar quais colunas são editáveis pelo usuário. Para obter mais informações, consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Arquitetura de N camadas e conjuntos de dados
- Para obter informações sobre conjuntos de dados em aplicativos de N camadas, consulte [trabalhar com conjuntos de dados em aplicativos de n camadas](../data-tools/work-with-datasets-in-n-tier-applications.md).
+
+Para obter informações sobre conjuntos de dados em aplicativos de N camadas, consulte [trabalhar com conjuntos de dados em aplicativos de n camadas](../data-tools/work-with-datasets-in-n-tier-applications.md).
 
 ## <a name="datasets-and-xml"></a>Conjuntos de dados e XML
- Para obter informações sobre como converter conjuntos de dados para e do XML, consulte [dados XML de leitura para um conjunto de dados](../data-tools/read-xml-data-into-a-dataset.md) e [salvar um conjunto de dados como XML](../data-tools/save-a-dataset-as-xml.md).
+
+Para obter informações sobre como converter conjuntos de dados para e do XML, consulte [dados XML de leitura para um conjunto de dados](../data-tools/read-xml-data-into-a-dataset.md) e [salvar um conjunto de dados como XML](../data-tools/save-a-dataset-as-xml.md).
 
 ## <a name="see-also"></a>Consulte também
 

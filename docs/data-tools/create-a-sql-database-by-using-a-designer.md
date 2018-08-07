@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756142"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582366"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
+
 Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Você também pode criar um banco de dados executando instruções Transact-SQL no **SQL Server Object Explorer** janela de ferramentas no Visual Studio. Neste tópico, vamos criar uma *mdf* arquivo e adicione as tabelas e chaves usando o Designer de tabela.
 
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Para concluir este passo a passo, você deve ter opcional **armazenamento de dados e processamento** carga de trabalho instalada no Visual Studio. Para instalá-lo, abra **instalador do Visual Studio** e escolha o **cargas de trabalho** guia. Sob **Web e nuvem**, escolha **processamento e armazenamento de dados**. Escolha o **modificar** botão para adicionar a carga de trabalho para o Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Criar um projeto e um arquivo de banco de dados local
 
-### <a name="to-create-a-project-and-a-database-file"></a>Para criar um projeto e um arquivo de banco de dados
-1.  Criar um projeto Windows Forms chamado `SampleDatabaseWalkthrough`.
+1.  Criar um projeto de formulários do Windows que é denominado **SampleDatabaseWalkthrough**.
 
 2.  Na barra de menus, selecione **Project** > **Adicionar Novo Item**.
 
@@ -41,6 +42,7 @@ Para concluir este passo a passo, você deve ter opcional **armazenamento de dad
 4.  Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o **Add** botão.
 
 ### <a name="to-add-a-data-source"></a>Para adicionar uma fonte de dados
+
 5.  Se o **fontes de dados** janela não estiver aberta, abra-o selecionando o **Shift**+**Alt**+**1!d** chaves ou, no barra de menus, selecione **modo de exibição** > **Other Windows** > **fontes de dados**.
 
 6.  No **fontes de dados** janela, selecione a **Add New Data Source** link.
@@ -58,6 +60,7 @@ Para concluir este passo a passo, você deve ter opcional **armazenamento de dad
 11. Um a **Choose your Database Objects** página, você verá uma mensagem informando que o banco de dados não contém todos os objetos. Escolha **Concluir**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Para exibir as propriedades de conexão de dados
+
 Você pode exibir a cadeia de caracteres de conexão para o *SampleDatabase* arquivo abrindo a janela de propriedades de conexão de dados:
 
 -   No Visual Studio, selecione **modo de exibição** > **SQL Server Object Explorer** se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** abrindo o menu de atalho do nó *SampleDatabase*e, em seguida, selecionando **propriedades**.
@@ -65,9 +68,11 @@ Você pode exibir a cadeia de caracteres de conexão para o *SampleDatabase* arq
 -   Como alternativa, você pode selecionar **modo de exibição** > **Gerenciador de servidores**, se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó. Abra o menu de atalho *SampleDatabase*e, em seguida, selecione **propriedades**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Criar tabelas e chaves usando o Designer de tabela
+
 Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e algumas linhas de dados de exemplo. Você também criará uma chave estrangeira para especificar como os registros em uma tabela correspondem aos registros na outra tabela.
 
 ### <a name="to-create-the-customers-table"></a>Para criar a tabela Customers
+
 1.  Na **Gerenciador de servidores** ou **Pesquisador de objetos do SQL Server**, expanda o **conexões de dados** nó e, em seguida, expanda o **SampleDatabase**nó.
 
 2.  Abra o menu de atalho **tabelas**e, em seguida, selecione **adicionar nova tabela**.
@@ -104,6 +109,7 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
     As alterações são salvas no arquivo do banco de dados local.
 
 ### <a name="to-create-the-orders-table"></a>Para criar a tabela Orders
+
 1.  Adicione outra tabela e uma linha para cada entrada na seguinte tabela:
 
     |Nome da coluna|Tipo de dados|Permitir nulos|
@@ -128,11 +134,12 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
     As alterações são salvas no arquivo do banco de dados local.
 
 ### <a name="to-create-a-foreign-key"></a>Para criar uma chave estrangeira
+
 1.  No painel de contexto no lado direito da grade, abra o menu de atalho **chaves estrangeiras**e, em seguida, selecione **adicionar nova chave estrangeira**, como mostra a ilustração a seguir.
 
      ![Adicionar uma chave estrangeira no Designer de tabela](../data-tools/media/foreignkey.png)
 
-2.  Na caixa de texto que aparece, substitua **ToTable** com `Customers`.
+2.  Na caixa de texto que aparece, substitua **ToTable** com **clientes**.
 
 3.  No painel de T-SQL, atualize a última linha para coincidir com o exemplo a seguir:
 
@@ -147,8 +154,6 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
     As alterações são salvas no arquivo do banco de dados local.
 
 ## <a name="populate-the-tables-with-data"></a>Preencher as tabelas com dados
-
-### <a name="to-populate-the-tables-with-data"></a>Para popular as tabelas com dados
 
 1.  Na **Gerenciador de servidores** ou **SQL Server Object Explorer**, expanda o nó para o banco de dados de exemplo.
 
