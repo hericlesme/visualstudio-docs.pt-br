@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179002"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380750"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
@@ -27,7 +27,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
 -   **Tendência** Você pode gerar a análise de tendência em dois ou mais resultados de testes de carga. Os resultados são exibidos usando gráficos de linhas, mas os dados estão disponíveis em tabelas dinâmicas.
 
 > [!TIP]
-> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, grafos e tabelas. Consulte [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Confira [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
  Qualquer relatório pode ser usado para compartilhar dados de desempenho com participantes e informar se o desempenho e a integridade gerais do sistema estão melhorando ou piorando.
 
@@ -36,16 +36,16 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
  Além disso, a pasta de trabalho do Excel pode ser compartilhada com participantes de modo que os participantes não precisem se conectar ao banco de dados para ver o relatório.
 
 > [!NOTE]
-> Você pode compartilhar a pasta de trabalho do Excel. No entanto, somente os usuários que têm o Visual Studio instalado no computador poderão alterar as planilhas. Outros usuários não verão a opção de **Relatório do Teste de Carga** na faixa de opções do Office, mas poderão exibir a pasta de trabalho.
+> Você pode compartilhar a pasta de trabalho do Excel. No entanto, somente os usuários que têm o Visual Studio instalado no computador poderão alterar as planilhas. Outros usuários não verão a opção **Relatório do Teste de Carga** na faixa de opções do **Office**, mas poderão exibir a pasta de trabalho.
 
  A ilustração a seguir é um exemplo de um relatório que mostra uma correlação entre uma redução na velocidade de transação (Atualizar Carrinho) e a degeneração do contador (% do Processador). Isso aponta para um possível problema no código do aplicativo, em vez do banco de dados ou da rede, e é um candidato adequado para diagnosticar usando o Criador de Perfis do ASP.NET.
 
  ![Possível problema no código do aplicativo](../test/media/lt_excel.png)
 
- Os relatórios do Excel podem ser gerados no Analisador de Teste de Carga, usando o botão **Criar relatório no Excel** na barra de ferramentas ou no Excel usando a opção **Relatório do Teste de Carga** na guia de **Teste de Carga** de faixa de opções do Office.
+ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, usando o botão **Criar Relatório do Excel** na barra de ferramentas ou no Excel usando a opção **Relatório do Teste de Carga** na guia de **Teste de Carga** da faixa de opções do **Office**.
 
 > [!NOTE]
-> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel. Para obter mais informações, consulte [Como adicionar comentários durante análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel. Para obter mais informações, confira [Como adicionar comentários durante a análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md).
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Para gerar relatórios de comparação de teste de carga usando o Excel
 
@@ -58,13 +58,13 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
         > [!NOTE]
         > Se o botão **Criar Relatório no Excel** estiver desabilitado na barra de ferramentas **Visualizador de Resultados do Teste de Desempenho Web**, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
 
-     O Microsoft Excel é aberto com o assistente **Gerar um relatório de teste de carga**.
+     O Microsoft Excel é aberto com o **Assistente para Gerar um relatório de teste de carga**.
 
      -ou-
 
-    1.  Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do Office e clique em **Relatório do Teste de Carga**.
+    1.  Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do **Office** e, em seguida, escolha **Relatório de Teste de Carga**.
 
-         O assistente para **Gerar um relatório de teste de carga** é exibido.
+         O **Assistente para Gerar um relatório de teste de carga** é exibido.
 
     2.  Na página **Selecione o banco de dados que contém os resultados do teste de carga**, em **Nome do servidor**, digite o nome do servidor que contém os resultados de teste de carga.
 
@@ -83,7 +83,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
     > [!NOTE]
     > Você só pode gerar um relatório de comparação em dois resultados de teste de carga. Se você selecionar ou um resultado de teste de carga ou mais de dois resultados de teste de carga, será exibida uma mensagem de aviso.
 
-8.  Na página **Selecione os contadores para o relatório**, em **Selecione ou mais sobre contadores para adicionar ao relatório**, uma lista expansível de contadores estará disponível para personalizar o relatório. Selecione os contadores que deseja comparar nas duas execuções de teste selecionadas no relatório e escolha **Concluir**.
+8.  Na página **Selecionar os contadores para o relatório**, em **Selecione ou mais sobre contadores para adicionar ao relatório**, uma lista expansível de contadores estará disponível para personalizar o relatório. Selecione os contadores que deseja comparar nas duas execuções de teste selecionadas no relatório e escolha **Concluir**.
 
 9. O relatório de pasta de trabalho do Excel é gerado com as seguintes guias da planilha:
 
@@ -113,13 +113,13 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
         > [!NOTE]
         > Se o botão **Criar Relatório no Excel** estiver desabilitado na barra de ferramentas **Visualizador de Resultados do Teste de Desempenho Web**, talvez seja necessário executar o Microsoft Excel uma vez antes que ele seja habilitado. Quando o Visual Studio Enterprise é instalado, o suplemento ao teste de carga do Visual Studio Enterprise é copiado para o computador para o Microsoft Excel. No entanto, o Microsoft Excel deve ser executado para concluir o processo de instalação do suplemento.
 
-     O Microsoft Excel é aberto com o assistente **Gerar um relatório de teste de carga**.
+     O Microsoft Excel é aberto com o **Assistente para Gerar um relatório de teste de carga**.
 
      -ou-
 
-    1.  Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do Office e clique em **Relatório do Teste de Carga**.
+    1.  Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do **Office** e, em seguida, escolha **Relatório de Teste de Carga**.
 
-         O assistente para **Gerar um relatório de teste de carga** é exibido.
+         O **Assistente para Gerar um relatório de teste de carga** é exibido.
 
     2.  Na página **Selecione o banco de dados que contém os resultados do teste de carga**, em **Nome do servidor**, digite o nome do servidor que contém os resultados de teste de carga.
 
@@ -135,7 +135,7 @@ Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em do
 
 7.  Na página **Selecione as execuções para seu relatório**, em **Selecionar uma ou mais execuções para adicionar ao relatório**, selecione os resultados de teste de carga que você deseja comparar no relatório e escolha **Avançar**.
 
-8.  Na página **Selecione os contadores para o relatório**, em **Selecione ou mais sobre contadores para adicionar ao relatório**, uma lista expansível de contadores estará disponível para personalizar o relatório. Selecione os contadores que você deseja comparar para análise de tendências e escolha **Concluir**.
+8.  Na página **Selecionar os contadores para o relatório**, em **Selecione ou mais sobre contadores para adicionar ao relatório**, uma lista expansível de contadores estará disponível para personalizar o relatório. Selecione os contadores que você deseja comparar para análise de tendências e escolha **Concluir**.
 
 10. O relatório é gerado com um sumário que possui links para várias guias de pasta de trabalho do Excel geradas no relatório. Os links são baseados nos contadores selecionados para o relatório de tendências. Por exemplo, se você deixou os contadores padrão selecionados na etapa 7, então o relatório irá gerar dados apresentados em guias separadas no Excel para cada contador listado na etapa 7. Os dados que são gerados para cada contador são apresentados em gráficos de tendências.
 
@@ -148,4 +148,4 @@ Os resultados de teste de carga e os relatórios contêm possivelmente informaç
 
 ## <a name="see-also"></a>Consulte também
 
-- [Relatando resultados de teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)
+- [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951720"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381941"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e de implantação
 
@@ -41,7 +41,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para assinar os manifestos do aplicativo e de implantação usando um certificado
 
-1.  Acesse a janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou digite **Alt**+**Enter** na janela **Gerenciador de Soluções**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1.  Acesse a janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou pressione **Alt**+**Enter** no **Gerenciador de Soluções**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
 2.  Clique no botão **Selecionar do Repositório**.
 

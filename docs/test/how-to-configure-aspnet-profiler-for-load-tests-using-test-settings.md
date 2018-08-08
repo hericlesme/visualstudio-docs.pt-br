@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175546"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379800"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como: Configurar o ASP.NET Profiler para carregar testes usando configurações do teste no Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como configurar o criador de perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio
 
 Você pode usar o adaptador de dados de diagnóstico do criador de perfil do ASP.NET para coletar informações do criador de perfil do ASP.NET. Esse adaptador de dados de diagnóstico coleta dados de desempenho de aplicativos ASP.NET.
 
@@ -29,7 +29,7 @@ O adaptador de dados de diagnóstico do criador de perfil do ASP.NET permite col
 > [!NOTE]
 > O adaptador de dados de diagnóstico do criador de perfil do ASP.NET analisa o processo de IIS (Serviços de Informações da Internet). Desse modo, ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site em seu teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não vai gerar carga, mas será um agente apenas de coleta. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-Para obter mais informações, consulte [Como criar uma configuração de teste para um teste de carga distribuído](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Para obter mais informações, confira [Como criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 O procedimento a seguir descreve como configurar o adaptador de dados de diagnóstico para o criador de perfil do ASP.NET.
 
@@ -52,7 +52,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 4.  Para habilitar a criação de perfil de interação de camada, selecione **Habilitar Criação de Perfil de Interação de Camada**.
 
-     A criação de perfil de interação de camada conta o número de solicitações que são enviadas ao servidor Web para cada artefato (por exemplo, MyPage.aspx ou CompanyLogo.gif) e o tempo que leva para atender a cada uma delas. Além disso, a criação de perfil de interação de camada coleta quais conexões ADO.NET foram usadas como parte da solicitação de página, bem como quantas consultas e chamadas de procedimentos armazenados foram executadas como parte de uma prestação de serviços da solicitação.
+     A criação de perfil de interação de camada conta o número de solicitações que são enviadas ao servidor Web para cada artefato (por exemplo, *MyPage.aspx* ou *CompanyLogo.gif*) e o tempo necessário para atender a cada solicitação. Além disso, a criação de perfil de interação de camada coleta quais conexões ADO.NET foram usadas como parte da solicitação de página, bem como quantas consultas e chamadas de procedimentos armazenados foram executadas como parte de uma prestação de serviços da solicitação.
 
      Dois conjuntos diferentes de informações de medição de tempo são coletados:
 

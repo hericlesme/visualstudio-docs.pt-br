@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089497"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388209"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo Projeto Web do Django de pesquisas
 
@@ -37,17 +37,17 @@ Um projeto criado usando este modelo é semelhante ao obtido seguindo o tutorial
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Etapa 6-1: Criar o projeto e inicializar o banco de dados
 
-1. No Visual Studio, vá até **Gerenciador de Soluções**, clique com o botão direito na solução "LearningDjango" criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
+1. No Visual Studio, acesse o **Gerenciador de Soluções**, clique com o botão direito do mouse na solução **LearningDjango** criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
 
-1. Na caixa de diálogo Novo Projeto, procure e selecione o modelo "Pesquisas do projeto Web do Django", nomeie o projeto "DjangoPolls" e selecione **OK**.
+1. Na caixa de diálogo Novo Projeto, pesquise e selecione o modelo **Projeto Web de Votações do Django**, nomeie o projeto "DjangoPolls" e selecione **OK**.
 
-1. Como os outros modelos de projeto no Visual Studio, o modelo de "Pesquisas do projeto Web do Django" inclui um arquivo `requirements.txt`, os prompts do Visual Studio perguntam onde instalar essas dependências. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
+1. Como os outros modelos de projeto do Visual Studio, o modelo de "Projeto Web de Votações do Django" inclui um arquivo *requirements.txt*. Os prompts do Visual Studio solicitam o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
 
-1. Quando o Python termina a configuração do ambiente virtual, siga as instruções no `readme.html` exibido para inicializar o banco de dados e criar um superusuário Django (ou seja, um administrador). As etapas são: primeiro clique com o botão direito no projeto "DjangoPolls" no **Gerenciador de Soluções**.Selecione o comando **Python** > **Django Migrate**, clique com o botão direito no projeto novamente, selecione o comando **Python** > **Django Create Superuser** e siga os prompts. (Se você tentar criar um superusuário pela primeira vez, verá um erro porque o banco de dados não foi inicializado).
+1. Quando o Python concluir a configuração do ambiente virtual, siga as instruções no *readme.html* exibido para inicializar o banco de dados e criar um superusuário do Django (ou seja, um administrador). As etapas são primeiro clicar com o botão direito do mouse no projeto **DjangoPolls** no **Gerenciador de Soluções**, selecionar o comando **Python** > **Django Migrate**, clicar com o botão direito do mouse novamente no projeto, selecionar o comando **Python** > **Django Create Superuser** e seguir os prompts. (Se você tentar criar um superusuário pela primeira vez, verá um erro porque o banco de dados não foi inicializado).
 
-1. Defina o projeto "DjangoPolls" para ser o padrão para a solução do Visual Studio clicando com o botão direito nesse projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
+1. Defina o projeto **DjangoPolls** para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
 
-1. Escolha **Depurar > Iniciar Depuração** (F5) ou usar o **Servidor Web** na barra de ferramentas para executar o servidor:
+1. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas para executar o servidor:
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,7 +61,7 @@ Um projeto criado usando este modelo é semelhante ao obtido seguindo o tutorial
 
 1. Você pode deixar o aplicativo em execução para as seções a seguir.
 
-    Se quiser parar o aplicativo e [confirmar as alterações para o controle de origem](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clicando com o botão direito na pasta para o ambiente virtual (provavelmente `env`) e selecione **Ignorar esses itens locais**.
+    Caso deseje interromper o aplicativo e [confirmar as alterações no controle do código-fonte](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clique com o botão direito do mouse na pasta do ambiente virtual (provavelmente **env**) e selecione **Ignorar estes itens locais**.
 
 ### <a name="examine-the-project-contents"></a>Examine o conteúdo do projeto
 
@@ -69,15 +69,15 @@ Conforme observado anteriormente, quase tudo o que está em um projeto criado a 
 
 ### <a name="question-what-does-the-django-migrate-command-do"></a>Pergunta: O que faz o comando Django Migrate?
 
-Resposta: O comando **Django Migrate** especificamente executa o comando `manage.py migrate`, que executa todos os scripts na pasta `app/migrations` que ainda não foi executada anteriormente. Nesse caso, o comando executa o script `0001_initial.py` nessa pasta para configurar o esquema necessário no banco de dados.
+Resposta: O comando **Django Migrate** especificamente executa o comando `manage.py migrate`, que executa todos os scripts na pasta *app/migrations* que não foram executados anteriormente. Nesse caso, o comando executa o script *0001_initial.py* nessa pasta para configurar o esquema necessário no banco de dados.
 
-O script de migração em si é criado pelo comando `manage.py makemigrations`, que examina o arquivo `models.py` do aplicativo, compara-o com o estado atual do banco de dados e, em seguida, gera os scripts necessários para migrar o esquema de banco de dados para coincidir com os modelos atuais. Esse recurso do Django é muito eficiente durante a atualização e modificação dos modelos ao longo do tempo. Ao gerar e executar migrações, você mantém os modelos e o banco de dados em sincronia com facilidade.
+O script de migração em si é criado pelo comando `manage.py makemigrations`, que examina o arquivo *models.py* do aplicativo, compara-o com o estado atual do banco de dados e, em seguida, gera os scripts necessários para migrar o esquema de banco de dados para que ele corresponda aos modelos atuais. Esse recurso do Django é muito eficiente durante a atualização e modificação dos modelos ao longo do tempo. Ao gerar e executar migrações, você mantém os modelos e o banco de dados em sincronia com facilidade.
 
 Você trabalha com uma migração na etapa 6-3 neste artigo.
 
 ## <a name="step-6-2-understand-data-models"></a>Etapa 6-2: Compreender os modelos de dados
 
-Os modelos para o aplicativo, chamado de Pesquisa e Opção, são definidos em `app/models.py`. Cada um é uma classe do Python que deriva de `django.db.models.Model` e usa métodos da classe `models` como `CharField` e `IntegerField` para definir campos no modelo, que são mapeados para colunas de banco de dados.
+Os modelos do aplicativo, chamados Votação e Opção, são definidos em *app/models.py*. Cada um é uma classe do Python que deriva de `django.db.models.Model` e usa métodos da classe `models` como `CharField` e `IntegerField` para definir campos no modelo, que são mapeados para colunas de banco de dados.
 
 ```python
 from django.db import models
@@ -118,15 +118,15 @@ Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém u
 
 A lista completa de tipos de campo é `CharField` (texto limitado) `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Cada campo utiliza alguns atributos, como `max_length`. O atributo `blank=True` significa que o campo é opcional; `null=true` significa que um valor é opcional. Também há um atributo `choices` que limita valores a valores em uma matriz de tuplas de valor de dados/valor de exibição. (Veja a [Referência de campo de modelo](https://docs.djangoproject.com/en/2.0/ref/models/fields/) na documentação do Django).
 
-Você pode confirmar exatamente o que está armazenado no banco de dados, examinando o arquivo `db.sqlite3` no projeto usando uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/). No banco de dados, você verá que um campo de chave estrangeira como `poll` no modelo Escolher está armazenado como `poll_id`; o Django trata o mapeamento automaticamente.
+Você pode confirmar exatamente o que está armazenado no banco de dados examinando o arquivo *db.sqlite3* no projeto usando uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/). No banco de dados, você verá que um campo de chave estrangeira como `poll` no modelo Escolher está armazenado como `poll_id`; o Django trata o mapeamento automaticamente.
 
 Em geral, trabalhar com seu banco de dados no Django significa trabalhar exclusivamente por meio de seus modelos de forma que o Django possa gerenciar o banco de dados subjacente em seu nome.
 
 ### <a name="seed-the-database-from-samplesjson"></a>Propagar o banco de dados de samples.json
 
-Inicialmente, o banco de dados não contém pesquisas. Você pode usar a interface administrativa na URL "/admin" para adicionar pesquisas manualmente, e você também pode visitar a página "/seed" no site em execução para adicionar semente ao banco de dados com pesquisas definidas no arquivo `samples.json` do aplicativo.
+Inicialmente, o banco de dados não contém pesquisas. Você pode usar a interface administrativa na URL "/admin" para adicionar votações manualmente, e também pode visitar a página "/seed" no site em execução para adicionar uma semente ao banco de dados com votações definidas no arquivo *samples.json* do aplicativo.
 
-O projeto `urls.py` do Django tem um padrão de URL adicionado, `url(r'^seed$', app.views.seed, name='seed'),`. O modo de exibição `seed` no `app/views.py` carrega o arquivo `samples.json` e cria os objetos de modelo necessários. O Django, em seguida, cria automaticamente os registros correspondentes no banco de dados subjacente.
+O *urls.py* do projeto do Django tem um padrão de URL adicionado, `url(r'^seed$', app.views.seed, name='seed'),`. A exibição `seed` em *app/views.py* carrega o arquivo *samples.json* e cria os objetos de modelo necessários. O Django, em seguida, cria automaticamente os registros correspondentes no banco de dados subjacente.
 
 Observe o uso do decorador `@login_required` para indicar o nível de autorização para o modo de exibição.
 
@@ -154,55 +154,55 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Para ver o efeito, execute o aplicativo primeiro para verificar se não há alguma pesquisa. Visite a URL "/seed" e, quando o aplicativo retornar para a página inicial, você verá que as pesquisas ficaram disponíveis. Novamente, fique à vontade para examinar o arquivo `db.sqlite3` bruto com uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/).
+Para ver o efeito, execute o aplicativo primeiro para verificar se não há alguma pesquisa. Visite a URL "/seed" e, quando o aplicativo retornar para a página inicial, você verá que as pesquisas ficaram disponíveis. Novamente, fique à vontade para examinar o arquivo *db.sqlite3* bruto com uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/).
 
 ![O aplicativo de pesquisas do Projeto Web do Django com um banco de dados de propagação](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pergunta: É possível inicializar o banco de dados usando o utilitário administrativo Django?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pergunta: É possível inicializar o banco de dados usando o utilitário administrativo do Django?
 
 Resposta: Sim, você pode usar o [comando django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) para realizar a mesma tarefa que a página de propagação no aplicativo. Ao trabalhar em um aplicativo Web completo, você pode usar uma combinação dos dois métodos: inicializar um banco de dados da linha de comando e, em seguida, converter a página de propagação aqui para uma API para a qual você pode enviar qualquer outro JSON arbitrário em vez de depender de um arquivo codificado.
 
 ## <a name="step-6-3-use-migrations"></a>Etapa 6-3: Usar migrações
 
-Quando você executou o comando `manage.py makemigrations` (usando o menu de contexto no Visual Studio) depois de criar o projeto, o Django criou o arquivo `app/migrations/0001_initial.py`. Esse arquivo contém um script que cria as tabelas de banco de dados iniciais.
+Quando você executou o comando `manage.py makemigrations` (usando o menu de contexto no Visual Studio) depois de criar o projeto, o Django criou o arquivo *app/migrations/0001_initial.py*. Esse arquivo contém um script que cria as tabelas de banco de dados iniciais.
 
 Como você inevitavelmente fará alterações a seus modelos ao longo do tempo, o Django facilitará a atualização do esquema de banco de dados subjacente com esses modelos. O fluxo de trabalho geral é o seguinte:
 
-1. Alterar os modelos no seu arquivo `models.py`.
-1. No Visual Studio, clique com o botão direito no projeto no **Gerenciador de Soluções** e selecione o comando **Python** > **Django Make Migrations**. Conforme descrito anteriormente, este comando gera scripts no `app/migrations` para migrar o banco de dados de seu estado atual para o novo estado.
+1. Faça alterações nos modelos no arquivo *models.py*.
+1. No Visual Studio, clique com o botão direito no projeto no **Gerenciador de Soluções** e selecione o comando **Python** > **Django Make Migrations**. Conforme descrito anteriormente, esse comando gera scripts no *app/migrations* para migrar o banco de dados de seu estado atual para o novo estado.
 1. Para aplicar os scripts para o banco de dados real, clique com o botão direito no projeto novamente e selecione **Python** > **Django Migrate**.
 
 O Django controla quais migrações foram aplicadas a qualquer banco de dados determinado, de modo que, quando você executar o comando de migração, o Django aplicará as migrações necessárias. Se você criar um novo banco de dados vazio, por exemplo, executar o comando de migração atualiza-o com seus modelos atuais aplicando todos os scripts de migração. Da mesma forma, se você fizer várias alterações do modelo e gerar migrações de um computador de desenvolvimento, poderá aplicar as migrações cumulativas ao seu banco de dados de produção, executando o comando de migração no servidor de produção. O Django novamente aplica-se apenas a esses scripts de migração que foram gerados desde a última migração do banco de dados de produção.
 
 Para ver o efeito de alterar um modelo, tente as seguintes etapas:
 
-1. Adicionar um campo de autor opcional ao modelo de pesquisa no `app/models.py` adicionando a seguinte linha após o campo `pub_date` para adicionar um campo `author` opcional:
+1. Adicionar um campo de autor opcional ao modelo Poll em *app/models.py* adicionando a seguinte linha após o campo `pub_date` para adicionar um campo `author` opcional:
 
     ```python
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. Salve o arquivo, em seguida, clique com o botão direito no projeto "DjangoPolls" no **Gerenciador de Soluções** e selecione o comando **Python** > **Django Make Migrations**.
-1. Selecione o comando **Project** > **Show All Files** para ver o script recém-gerado na pasta `migrations` cujo nome começa com `002_auto_`. Clique com o botão direito no arquivo e selecione **Include In Project**. Você pode selecionar **Project** > **Show All Files** novamente para restaurar o modo de exibição original. (Veja a segunda pergunta abaixo para obter detalhes sobre esta etapa).
+1. Salve o arquivo e, em seguida, no **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto **DjangoPolls** e selecione o comando **Python** > **Django Make Migrations**.
+1. Selecione o comando **Projeto** > **Mostrar Todos os Arquivos** para ver o script recém-gerado na pasta **migrations**, cujo nome começa com **002_auto_**. Clique com o botão direito no arquivo e selecione **Include In Project**. Você pode selecionar **Project** > **Show All Files** novamente para restaurar o modo de exibição original. (Veja a segunda pergunta abaixo para obter detalhes sobre esta etapa).
 1. Se desejar, abra o arquivo para examinar como os scripts do Django são alterados do estado de modelo anterior para o novo estado.
 1. Clique com o botão direito no projeto do Visual Studio novamente e selecione **Python** > **Django Migrate** para aplicar as alterações ao banco de dados.
 1. Se desejar, abra o banco de dados em um visualizador apropriado para confirmar a alteração.
 
 Em geral, o recurso de migração do Django significa que você nunca precisa gerenciar seu esquema de banco de dados manualmente. Basta fazer alterações em seus modelos, gerar scripts de migração e aplicá-las com o comando de migração.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontece se eu esquecer executar o comando de migração após fazer as alterações aos modelos?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontece se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
 
-Resposta: Se os modelos não corresponderem ao que está no banco de dados, o Django falhará em tempo de execução com as exceções adequadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá um erro "no such column: app_poll.author":
+Resposta: Se os modelos não corresponderem ao que está no banco de dados, o Django falhará em tempo de execução com as exceções adequadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
 
 ![Erro mostrado quando uma alteração de modelo não tiver sido migrada](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pergunta: Por que o Gerenciador de Soluções não mostra os scripts gerados recentemente após executar Django Make Migrations?
 
-Resposta: Embora os scripts gerados recentemente existam na pasta `app/migrations` e sejam aplicavam ao executar o comando **Django Migrate**, eles não são exibidos automaticamente no **Gerenciador de Soluções** porque eles não foram adicionados ao projeto do Visual Studio. Para torná-las visíveis, primeiro selecione o comando de menu **Project** > **Show All Files** ou botão da barra de ferramentas descrito na imagem abaixo. Esse comando faz o **Gerenciador de Soluções** mostrar todos os arquivos na pasta do projeto, com um ícone de contorno pontilhado para itens que não foram adicionados ao projeto em si. Clique com o botão direito nos arquivos que você deseja adicionar e selecione **Include In Project**, que também os inclui no controle de origem com a próxima confirmação.
+Resposta: Embora os scripts recém-gerados estejam na pasta *app/migrations* e sejam aplicados quando o comando **Django Migrate** é executado, eles não são exibidos automaticamente no **Gerenciador de Soluções** porque não foram adicionados ao projeto do Visual Studio. Para torná-las visíveis, primeiro selecione o comando de menu **Project** > **Show All Files** ou botão da barra de ferramentas descrito na imagem abaixo. Esse comando faz o **Gerenciador de Soluções** mostrar todos os arquivos na pasta do projeto, com um ícone de contorno pontilhado para itens que não foram adicionados ao projeto em si. Clique com o botão direito nos arquivos que você deseja adicionar e selecione **Include In Project**, que também os inclui no controle de origem com a próxima confirmação.
 
 ![Comando Include In Project no Gerenciador de Soluções](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pergunta: Posso ver quais migrações seriam aplicadas antes de executar o comando de migração?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pergunta: Posso ver quais migrações serão aplicadas antes de executar o comando de migração?
 
 Resposta: Sim, use o [comando django-admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
@@ -210,7 +210,7 @@ Resposta: Sim, use o [comando django-admin showmigrations](https://docs.djangopr
 
 A maioria dos modos de exibição gerados pelo modelo "Pesquisas de Projeto Web do Django", como os modos de exibição para as páginas Sobre e Contato, é muito semelhantes a exibições criadas pelo modelo "Projeto Web do Django" com o qual você trabalhou anteriormente neste tutorial. A diferença no aplicativo de pesquisas de aplicativo é que sua página inicial usa modelos, assim como várias páginas adicionadas para votação e visualizar os resultados da pesquisa.
 
-Em primeiro lugar, a primeira linha na matriz `urlpatterns` do projeto do Django no arquivo `urls.py` é mais do que apenas um simples roteamento para um modo de exibição do aplicativo. Em vez disso, ele utiliza o próprio arquivo `urls.py` do aplicativo:
+Em primeiro lugar, a primeira linha na matriz `urlpatterns` do projeto do Django no arquivo *urls.py* é mais do que apenas um simples roteamento para uma exibição do aplicativo. Em vez disso, ele efetua pull do próprio arquivo *urls.py* do aplicativo:
 
 ```python
 from django.conf.urls import url, include
@@ -222,7 +222,7 @@ urlpatterns = [
 ]
 ```
 
-O arquivo `app/urls.py` contém um código de roteamento mais interessante (comentários explicativos adicionados):
+O arquivo *app/urls.py* contém um código de roteamento mais interessante (comentários explicativos adicionados):
 
 ```python
 urlpatterns = [
@@ -258,9 +258,9 @@ Se você não estiver familiarizado com as expressões regulares mais complexas 
 
 No Django, a sintaxe `?P<name>pattern` cria um grupo chamado `name`, que é passado como argumentos para exibições na ordem em que aparecem. No código mostrado anteriormente, `PollsDetailView` e `PollsResultsView` recebem um argumento denominado `pk` e `app.views.vote` recebe um argumento denominado `poll_id`.
 
-Você também pode ver que a maioria dos modos de exibição não são referências diretas apenas a uma função de exibição no `app/views.py`. Em vez disso, a maioria se refere a uma classe no mesmo arquivo que deriva de `django.views.generic.ListView` ou `django.views.generic.DetailView`. As classes base fornecem os métodos `as_view`, que levam um argumento `template_name` para identificar o modelo. A classe base `ListView`, como usado para a página inicial, também espera uma propriedade `queryset` que contém os dados e uma propriedade `context_object_name` com o nome de variável pelo qual você deseja se referir aos dados no modelo, nesse caso `latest_poll_list`.
+Você também pode ver que a maioria das exibições não é apenas uma referência direta a uma função de exibição em *app/views.py*. Em vez disso, a maioria se refere a uma classe no mesmo arquivo que deriva de `django.views.generic.ListView` ou `django.views.generic.DetailView`. As classes base fornecem os métodos `as_view`, que levam um argumento `template_name` para identificar o modelo. A classe base `ListView`, como usado para a página inicial, também espera uma propriedade `queryset` que contém os dados e uma propriedade `context_object_name` com o nome de variável pelo qual você deseja se referir aos dados no modelo, nesse caso `latest_poll_list`.
 
-Agora você pode examinar o `PollListView` da página inicial, que é definida da seguinte maneira em `app/views.py`:
+Agora você pode examinar a `PollListView` da home page, que é definida da seguinte maneira em *app/views.py*:
 
 ```python
 class PollListView(ListView):
@@ -276,7 +276,7 @@ class PollListView(ListView):
 
 Tudo o que foi feito aqui é para identificar o modelo de que o modo de exibição funciona com (Pesquisa) e substitui o método `get_context_data` para adicionar os valores `title` e `year` para o contexto.
 
-O núcleo do modelo (`templates/app/index.html`) é o seguinte:
+O núcleo do modelo (*templates/app/index.html*) é o seguinte:
 
 ```html
 {% if latest_poll_list %}
@@ -296,9 +296,9 @@ O núcleo do modelo (`templates/app/index.html`) é o seguinte:
 {% endif %}
 ```
 
-Em suma, o modelo recebe a lista de objetos de pesquisa no `latest_poll_list` e, em seguida, itera por meio dessa lista para criar uma linha da tabela que contém um link para cada pesquisa usando o valor `text` da pesquisa. Na marca `{% url %}`, "app:detail" refere-se ao padrão de url no `app/urls.py` chamado "detail", usando `poll.id` como um argumento. O efeito disso é que o Django cria uma URL usando o padrão apropriado e usa isso para o link. Essa certa garantia de durabilidade significa que você pode alterar esse padrão de URL a qualquer momento e os links gerados automaticamente para corresponder.
+Em suma, o modelo recebe a lista de objetos de pesquisa no `latest_poll_list` e, em seguida, itera por meio dessa lista para criar uma linha da tabela que contém um link para cada pesquisa usando o valor `text` da pesquisa. Na marcação `{% url %}`, "app:detail" refere-se ao padrão de URL em *app/urls.py* chamado "detail", usando `poll.id` como argumento. O efeito disso é que o Django cria uma URL usando o padrão apropriado e usa isso para o link. Essa certa garantia de durabilidade significa que você pode alterar esse padrão de URL a qualquer momento e os links gerados automaticamente para corresponder.
 
-As classes `PollDetailView` e `PollResultsView` no `app/views.py` (não mostrados aqui) são praticamente idênticas a `PollListView` exceto pelo fato de que derivam de `DetailView`. Seus respectivos modelos, `app/templates/details.html` e `app/templates/results.html`, em seguida, colocam os campos apropriados dos modelos em vários controles de HTML. Uma parte exclusiva no `details.html` é que as opções para uma pesquisa estão contidas dentro de um formulário de HTML que, quando é enviado, faz um POST para a URL /vote. Conforme visto anteriormente, esse padrão de URL é roteado para `app.views.vote`, que é implementado da seguinte maneira (observe o argumento `poll_id`, que é novamente um grupo nomeado na expressão regular usada no roteamento para este modo de exibição):
+As classes `PollDetailView` e `PollResultsView` em *app/views.py* (não mostradas aqui) são praticamente idênticas a `PollListView`, exceto pelo fato de que derivam de `DetailView`. Seus respectivos modelos, *app/templates/details.html* e *app/templates/results.html*, colocam então os campos apropriados dos modelos dentro de vários controles HTML. Uma parte exclusiva em *details.html* é que as opções para uma votação estão contidas dentro de um formulário HTML que, quando enviado, executa um POST na URL /vote. Conforme visto anteriormente, esse padrão de URL é roteado para `app.views.vote`, que é implementado da seguinte maneira (observe o argumento `poll_id`, que é novamente um grupo nomeado na expressão regular usada no roteamento para este modo de exibição):
 
 ```python
 def vote(request, poll_id):
@@ -325,9 +325,9 @@ Aqui o modo de exibição não tem seu próprio modelo correspondente como as ou
 
 As últimas partes do modelo "Pesquisas de Projeto Web do Django" são extensões personalizadas para a interface administrativa padrão do Django, conforme mostrado anteriormente neste artigo na etapa 6-1. A interface padrão fornece o usuário e o gerenciamento de grupo, nada mais. O modelo de projeto de pesquisa adiciona recursos que permitem que você gerencie pesquisas também.
 
-Em primeiro lugar, os padrões de URL no `urls.py` do projeto do Django tem `url(r'^admin/', include(admin.site.urls)),` incluído por padrão; o padrão "admin/doc" também está incluído por comentário.
+Em primeiro lugar, os padrões de URL em *urls.py* do projeto do Django tem `url(r'^admin/', include(admin.site.urls)),` incluído por padrão; o padrão "admin/doc" também está incluído, mas está com marca de comentário.
 
-O aplicativo, em seguida, contém o arquivo `admin.py`, que o Django executa automaticamente quando você visita a interface administrativa graças à inclusão de `django.contrib.admin` na matriz `INSTALLED_APPS` de `settings.py`. O código nesse arquivo, conforme fornecido pelo modelo de projeto, é o seguinte:
+Em seguida, o aplicativo contém o arquivo *admin.py*, que o Django executa automaticamente quando você visita a interface administrativa, graças à inclusão de `django.contrib.admin` na matriz `INSTALLED_APPS` de *settings.py*. O código nesse arquivo, conforme fornecido pelo modelo de projeto, é o seguinte:
 
 ```python
 from django.contrib import admin
@@ -370,14 +370,14 @@ A execução de um aplicativo Web no computador de desenvolvimento é apenas uma
 
 - Implante o aplicativo Web em um servidor de produção, como o Serviço de Aplicativo do Azure. Veja [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), que inclui alterações específicas necessárias para aplicativos do Django.
 
-- Personalizar a página 404 criando um modelo chamado `templates/404.html`. Quando presente, o Django usa esse modelo, em vez de seu padrão. Para saber mais, veja [Modos de exibição de erro](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) na documentação do Django.
+- Personalizar a página 404 criando um modelo chamado *templates/404.html*. Quando presente, o Django usa esse modelo, em vez de seu padrão. Para saber mais, veja [Modos de exibição de erro](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) na documentação do Django.
 
-- Escreva testes de unidade no `tests.py`; os modelos de projeto do Visual Studio fornecem pontos iniciais para eles e mais informações podem ser encontradas em [Escrevendo seu primeiro aplicativo Django, parte 5 – teste](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) e [Testando no Django](https://docs.djangoproject.com/en/2.0/topics/testing/) na documentação do Django.
+- Escreva testes de unidade em *tests.py*; os modelos de projeto do Visual Studio fornecem pontos iniciais para eles e mais informações podem ser encontradas em [Escrevendo seu primeiro aplicativo do Django, parte 5 – teste](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) e [Testando no Django](https://docs.djangoproject.com/en/2.0/topics/testing/) na documentação do Django.
 
 - Altere o aplicativo de SQLite para um repositório de dados de nível de produção como PostgreSQL, MySQL e SQL Server (que pode ser hospedado no Azure). Conforme descrito em [Quando usar o SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), o SQLite funciona bem para sites de tráfego baixo a médio com menos de 100 mil acessos por dia, mas não é recomendado para volumes maiores. Também é limitado a um único computador, de modo que ele não pode ser usado em qualquer cenário de vários servidores, como balanceamento de carga e replicação geográfica. Para obter informações sobre o suporte do Django para outros bancos de dados, veja [Instalação do banco de dados](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Você também pode usar o [SDK do Azure para Python](azure-sdk-for-python.md) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs.
 
 - Configure um pipeline de integração contínua/implantação contínua em um serviço como o Visual Studio Team Services. Além de trabalhar com o controle de origem (no VSTS, GitHub ou em outro local), você pode fazer o VSTS automaticamente executar os testes de unidade como um pré-requisito para a versão e também configurar o pipeline para implantar em um servidor de teste para testes adicionais antes de implantar em produção. O VSTS, além disso, integra-se com as soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para obter mais informações, consulte:
 
-  - [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts)
+  - [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Desenvolvimento do Python no Azure com o Visual Studio Team Services (vídeo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

@@ -12,29 +12,29 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977277"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380115"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 
 Você pode gerar testes de unidade para métodos genéricos exatamente como faria para outros métodos. As seções a seguir fornecem informações e exemplos de criação de testes de unidade para métodos genéricos.
 
-## <a name="type-arguments-and-type-constraints"></a>Restrições de tipo e argumentos de tipo
+## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo e restrições de tipo
 
 Quando o Visual Studio gera um teste de unidade para uma classe genérica como `MyList<T>`, ela gera dois métodos: um auxiliar genérico e um método de teste. Se `MyList<T>` tem uma ou mais restrições de tipo, o argumento de tipo deve atender a todas as restrições de tipo. Para certificar-se de que o código genérico em teste funciona conforme o esperado para todas as entradas possíveis, o método de teste chama o método auxiliar genérico com todas as restrições que você deseja testar.
 
 ## <a name="examples"></a>Exemplos
  Os exemplos a seguir ilustram testes de unidade para genéricos:
 
--   [Edição do código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
+-   [Editar o código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
 
--   [Usando uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
+-   [Usar uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
 
-###  <a name="EditingGeneratedTestCode"></a> Exemplo 1: edição do código de teste gerado
+###  <a name="EditingGeneratedTestCode"></a> Exemplo 1: Editando o código de teste gerado
  O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.
 
  O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.
@@ -85,7 +85,7 @@ public void SizeOfLinkedListTest()
 
 5.  Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.
 
-##### <a name="test-method"></a>Método de Teste
+##### <a name="test-method"></a>Método de teste
  O método de teste é compilado para o código que é chamado quando você executa o teste chamado SizeOfLinkedListTest. Ele executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 6 e 7.
 
 1.  Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.
@@ -117,10 +117,10 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [Como depurar durante a execução de um teste em uma solução do ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, confira [Como depurar durante a execução de um teste em uma solução do ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 
-###  <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: usando uma restrição de tipo
+###  <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: Usando uma restrição de tipo
  Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.
 
  A segunda seção mostra código do projeto de teste.
@@ -157,7 +157,7 @@ namespace ClassLibrary2
 }
 ```
 
-#### <a name="test-project"></a>Projeto de Teste
+#### <a name="test-project"></a>Projeto de teste
 
 Assim como acontece com todos os testes de unidade recém-gerados, você deve adicionar instruções Assert não inconclusivas a esse teste de unidade para fazê-lo retornar resultados úteis. Você não os adiciona ao método marcado com o atributo TestMethod, mas sim ao método "TestHelper", que neste teste é chamado de `DataTestHelper<T>()`.
 

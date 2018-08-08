@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177503"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379706"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testar aplicativos do SharePoint com testes de IU codificados
 
@@ -28,7 +28,7 @@ Para saber mais sobre os benefícios de usar testes de IU codificados, consulte 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Criar um teste de IU codificado para um aplicativo do SharePoint
 
-[Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para seus aplicativos do SharePoint é o mesmo processo de criar testes para outros tipos de aplicativos. A gravação e a reprodução têm suporte para todos os controles na interface de **Edição na Web**. A interface para a seleção de categorias e as Web parts são controles da Web padrão.
+[Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para seus aplicativos do SharePoint é o mesmo que criar testes para outros tipos de aplicativos. A gravação e a reprodução têm suporte para todos os controles na interface de **Edição na Web**. A interface para a seleção de categorias e as Web parts são controles da Web padrão.
 
 ![Web parts do SharePoint](../test/media/cuit_sharepoint.png)
 
@@ -94,8 +94,8 @@ Se você estiver gravando ações em uma célula não vazia, a gravação ficar�
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](../sharepoint/create-sharepoint-solutions.md)
-- [Verifying and Debugging SharePoint Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
-- [Building and Debugging SharePoint Solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Profiling the Performance of SharePoint Applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

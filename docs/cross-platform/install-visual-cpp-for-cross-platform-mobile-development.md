@@ -12,20 +12,20 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281087"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251901"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalar Desenvolvimento Mobile com C++ de plataforma cruzada
 
-Você pode usar C++ no Visual Studio para criar aplicativos de Área de Trabalho do Windows, aplicativos UWP (Plataforma Universal do Windows), aplicativos Linux e, agora, os aplicativos para iOS e Android. A carga de trabalho **Desenvolvimento móvel com C++** é um conjunto de componentes para instalação no Visual Studio que inclui modelos de plataforma cruzada do Visual Studio para iOS, Android e UWP. Ela instala as ferramentas e SDKs de plataforma cruzada que você precisa para começar rapidamente, sem a necessidade de localizar, baixar e configurá-los por conta própria. É possível usar essas ferramentas no Visual Studio para criar, editar, depurar e testar seus projetos de plataforma cruzada com facilidade. Este tópico descreve como instalar as ferramentas e softwares de terceiros necessários para desenvolver aplicativos de plataforma cruzada em C++ usando o Visual Studio. Para obter uma visão geral, veja [Visual C++ Móvel de Plataforma cruzada](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+Você pode usar C++ no Visual Studio para criar aplicativos de Área de Trabalho do Windows, aplicativos UWP (Plataforma Universal do Windows), aplicativos Linux e, agora, os aplicativos para iOS e Android. A carga de trabalho **Desenvolvimento móvel com C++** é um conjunto de componentes para instalação no Visual Studio que inclui modelos de plataforma cruzada do Visual Studio para iOS, Android e UWP. Ela instala as ferramentas e SDKs de plataforma cruzada que você precisa para começar rapidamente, sem a necessidade de localizar, baixar e configurá-los por conta própria. É possível usar essas ferramentas no Visual Studio para criar, editar, depurar e testar seus projetos de plataforma cruzada com facilidade. Este tópico descreve como instalar as ferramentas e softwares de terceiros necessários para desenvolver aplicativos de plataforma cruzada em C++ usando o Visual Studio. Para obter uma visão geral, confira [Visual C++ para desenvolvimento móvel multiplataforma](https://go.microsoft.com/fwlink/p/?LinkId=536383)
 
 ## <a name="requirements"></a>Requisitos
 
-- Para ver os requisitos de instalação, veja [Requisitos de sistema da família do Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
+- Para obter os requisitos de instalação, confira [Requisitos do sistema da família de produtos do Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Se estiver usando o Windows 7 ou o Windows Server 2008 R2, você poderá desenvolver código para aplicativos de Área de Trabalho do Windows, bibliotecas e aplicativos do tipo Native Acivity do Android e aplicativos e bibliotecas de código para iOS, mas não aplicativos para a Windows Phone ou UWP.
@@ -105,7 +105,7 @@ Se você estiver usando o Visual Studio 2015, o instalador dele incluirá uma op
 
 ## <a name="install-tools-for-ios"></a>Instalar as ferramentas para iOS
 
-É possível usar o Visual C++ para Desenvolvimento Móvel Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto em seu Mac. Para obter instruções detalhadas sobre a instalação, pré-requisitos e opções de configuração, consulte [Instalar e configurar ferramentas para compilar usando iOS](install-and-configure-tools-to-build-using-ios.md). Se não estiver compilando para iOS, você poderá ignorar esta etapa.
+É possível usar o Visual C++ para Desenvolvimento Móvel Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto em seu Mac. Para obter instruções detalhadas sobre a instalação, os pré-requisitos e as opções de configuração, confira [Instalar e configurar ferramentas de build usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Se não estiver compilando para iOS, você poderá ignorar esta etapa.
 
 ## <a name="install-or-update-dependencies-manually"></a>Instalar ou atualizar as dependências manualmente
 
@@ -118,23 +118,23 @@ Leia as informações a seguir e use estes links para instalar as dependências 
 
 - [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   Por padrão, o instalador coloca as ferramentas Java em C:\Arquivos de Programas (x86) \Java.
+   Por padrão, o instalador coloca as ferramentas Java em *C:\Arquivos de Programas (x86)\Java*.
 
 - [SDK do Android](https://developer.android.com/sdk/index.html#command-tools)
 
-   Durante a instalação, atualize as APIs conforme recomendado. Pelo menos o SDK para o Android 5.0 Lollipop (nível de API 21) deve estar instalado. Por padrão, o instalador coloca o SDK do Android em C:\Arquivos de Programas (x86) \Android\android-sdk.
+   Durante a instalação, atualize as APIs conforme recomendado. Pelo menos o SDK para o Android 5.0 Lollipop (nível de API 21) deve estar instalado. Por padrão, o instalador coloca o SDK do Android em *C:\Arquivos de Programas (x86)\Android\android-sdk*.
 
    É possível executar o aplicativo Gerenciador de SDK no diretório de SDK do Android novamente para atualizar o SDK e instalar ferramentas opcionais e níveis de API adicionais. A instalação das atualizações pode falhar, a menos que você use **Executar como administrador** para executar o aplicativo Gerenciador de SDK. Se tiver problemas ao compilar um aplicativo Android, verifique o Gerenciador de SDK quanto a atualizações para seus SDKs instalados.
 
-   Para usar alguns dos emuladores de Android que vêm com o SDK do Android, você precisa instalar os drivers opcionais do Intel HAXM. Talvez você precise remover o recurso Hyper-V do Windows para instalar os drivers do Intel HAXM com êxito. Você precisa restaurar o recurso Hyper-V para usar os emuladores do Windows Phone e o Emulador do Microsoft Visual Studio para Android. Para saber mais, confira [Aceleração de Hardware do Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+   Para usar alguns dos emuladores de Android que vêm com o SDK do Android, você precisa instalar os drivers opcionais do Intel HAXM. Talvez você precise remover o recurso Hyper-V do Windows para instalar os drivers do Intel HAXM com êxito. Você precisa restaurar o recurso Hyper-V para usar os emuladores do Windows Phone e o Emulador do Microsoft Visual Studio para Android. Para obter mais informações, confira [Aceleração de hardware do Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 - [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   Por padrão, o instalador coloca o NDK do Android em C:\ProgramData\Microsoft\AndroidNDK. Você pode baixar e instalar o NDK do Android novamente para atualizar a instalação do NDK.
+   Por padrão, o instalador coloca o NDK do Android em *C:\ProgramData\Microsoft\AndroidNDK*. Você pode baixar e instalar o NDK do Android novamente para atualizar a instalação do NDK.
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   Por padrão, o instalador coloca o Apache Ant em C:\Arquivos de Programas (x86)\Microsoft Visual Studio 14.0\Apps.
+   Por padrão, o instalador coloca o Apache Ant em *C:\Arquivos de Programas (x86)\Microsoft Visual Studio 14.0\Apps*.
 
 - [Emulador do Microsoft Visual Studio para Android](https://aka.ms/vscomemudownload)
 
@@ -156,5 +156,5 @@ Na maioria dos casos, o Visual Studio detecta as configurações do software de 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Instalar e configurar ferramentas para criação usando iOS](install-and-configure-tools-to-build-using-ios.md)
-- [Visual C++ em plataforma cruzada móvel](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Instalar e configurar ferramentas de build usando o iOS](install-and-configure-tools-to-build-using-ios.md)
+- [Visual C++ para desenvolvimento móvel multiplataforma](https://go.microsoft.com/fwlink/p/?LinkId=536383)

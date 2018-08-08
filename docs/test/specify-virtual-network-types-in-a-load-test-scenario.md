@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978291"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380222"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de rede virtual em um cenário de teste de carga
 
@@ -35,7 +35,7 @@ A *combinação de redes* oferece uma maneira de simular carga de modo mais real
 
  O controle misto permite ajustar facilmente a distribuição de redes em um cenário.
 
- Para obter mais informações, consulte [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+ Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 ## <a name="true-network-emulation"></a>Emulação de rede verdadeira
 
@@ -68,7 +68,7 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 2.  Na coluna **Tipo de rede**, escolha a seta para a nova entrada. Escolha o tipo de rede desejado.
 
-3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, consulte [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 4.  Quando terminar de adicionar redes, escolha **OK**.
 
@@ -80,7 +80,7 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 3.  Selecione a rede na grade e escolha **Remover**.
 
-4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, consulte [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 5.  Quando terminar de remover redes, escolha **OK**.
 

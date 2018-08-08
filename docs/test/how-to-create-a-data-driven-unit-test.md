@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117584"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382575"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
 
@@ -65,7 +65,7 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="BKMK_Creating_a_data_source"></a> Criar uma fonte de dados
+##  <a name="create-a-data-source"></a>Criar uma fonte de dados
  Para testar o método `AddIntegers`, crie uma fonte de dados que especifica um intervalo de valores para os parâmetros e a soma que você espera que seja retornada. Neste exemplo, criaremos um banco de dados do SQL Compact chamado `MathsData` e uma tabela chamada `AddIntegersData` que contém os seguintes nomes de coluna e valores
 
 |FirstNumber|SecondNumber|Sum|
@@ -74,7 +74,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Adicionar um TestContext para a classe de teste
+##  <a name="add-a-testcontext-to-the-test-class"></a>Adicionar um TestContext à classe de teste
  A estrutura de teste de unidade cria um objeto `TestContext` para armazenar as informações de fonte de dados de um teste orientado a dados. Em seguida, a estrutura define esse objeto como o valor da propriedade `TestContext` que você criou.
 
 ```csharp
@@ -88,7 +88,7 @@ public TestContext TestContext
 
  Em seu método de teste, os dados são acessados por meio da propriedade do indexador `DataRow` do `TestContext`.
 
-##  <a name="BKMK_Writing_the_test_method"></a> Escrever o método de teste
+##  <a name="write-the-test-method"></a>Escrever o método de teste
  O método de teste de `AddIntegers` é bastante simples. Para cada linha na fonte de dados, chame `AddIntegers` com os valores de coluna **FirstNumber** e **SecondNumber** como parâmetros e verifique o valor retornado no valor da coluna **Sum**:
 
 ```csharp
@@ -124,9 +124,9 @@ O atributo DataSource tem três construtores.
 [DataSource(dataSourceSettingName)]
 ```
 
- Um construtor com um parâmetro usa informações de conexão armazenadas no arquivo app.config para a solução. O *dataSourceSettingsName* é o nome do elemento XML no arquivo de configuração que especifica as informações de conexão.
+ Um construtor com um parâmetro usa informações de conexão armazenadas no arquivo *app.config* para a solução. O *dataSourceSettingsName* é o nome do elemento XML no arquivo de configuração que especifica as informações de conexão.
 
- Ao usar um arquivo app.config você pode alterar o local da fonte de dados sem fazer alterações no próprio teste de unidade. Para obter informações sobre como criar e usar um arquivo app.config, consulte [Passo a passo: usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ O uso de um arquivo *app.config* permite que você altere o local da fonte de dados sem fazer alterações no teste de unidade propriamente dito. Para obter informações sobre como criar e usar um arquivo *app.config*, confira [Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -152,12 +152,12 @@ O atributo DataSource tem três construtores.
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Execução do teste e exibição dos resultados
- Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste aparece na janela Gerenciador de Testes, no grupo **Testes Não Executados**. Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados.
+##  <a name="run-the-test-and-view-results"></a>Executar o teste e exibir os resultados
+ Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste é exibido na janela **Gerenciador de Testes**, no grupo **Testes Não Executados**. Conforme você executa, escreve e executa novamente os testes, o **Gerenciador de Testes** exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados.
 
- A barra de resultados de teste na parte superior do Gerenciador é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel de detalhes na parte inferior da janela do Gerenciador de Testes. Selecione um teste para exibir seus detalhes no painel inferior.
+ A barra de resultados de teste na parte superior do Gerenciador é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel de detalhes na parte inferior da janela do **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior.
 
- Se você executou o método `AddIntegers_FromDataSourceTest` em nosso exemplo, a barra de resultados fica vermelha e o método de teste é movido para **Testes com falha**. Um teste orientado a dados falhará se qualquer um dos métodos de iteração da fonte de dados falhar. Ao escolher um teste orientado a dados que falhou na janela do Gerenciador de Testes, o painel de detalhes exibe os resultados de cada iteração, que é identificada pelo índice de linha de dados. Em nosso exemplo, parece que o algoritmo `AddIntegers` não manipula valores negativos corretamente.
+ Se você executou o método `AddIntegers_FromDataSourceTest` de nosso exemplo, a barra de resultados fica vermelha e o método de teste é movido para **Testes Reprovados**. Um teste controlado por dados falha se um dos métodos iterados da fonte de dados falha. Quando você escolhe um teste controlado por dados que foi reprovado na janela **Gerenciador de Testes**, o painel de detalhes exibe os resultados de cada iteração que é identificada pelo índice de linha de dados. Em nosso exemplo, parece que o algoritmo `AddIntegers` não manipula valores negativos corretamente.
 
  Quando o método em teste é corrigido e o teste é novamente executado, a barra de resultados ficará verde e o método de teste é movido para o grupo **Teste Aprovado**.
 
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
-- [Escrevendo testes de unidade para .NET Framework com a estrutura de teste de unidade Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [Escrever testes de unidade para o .NET Framework com a estrutura de teste de unidade da Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

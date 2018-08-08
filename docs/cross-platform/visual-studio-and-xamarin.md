@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30bc5e4d14e09852904ca93087bdd99f6f2443ef
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ef599a67dcb81586bd31fd08836c0a95b812bde1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280683"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251221"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 
@@ -39,4 +39,4 @@ Esta documentação ajuda você a avaliar a eficiência total do **Visual Studio
 >  Essas instruções descrevem a configuração de computador mais fácil e simples para desenvolvedores com experiência em Windows e Visual Studio. Com essa configuração, a experiência de desenvolvimento geral é simplificada porque basta precisa interagir com o Mac para usar o simulador do iOS e dispositivos vinculados. Se você tem experiência com Mac, execute o Visual Studio no Parallels ou no VMWare ou use o Visual Studio para Mac. Consulte [Configuração, instalação e verificações para usuários do Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) Microsoft Docs.
 
 > [!NOTE]
->  Se você estiver procurando por uma solução de desenvolvimento de multiplataforma com base em HTML e CSS, confira as Ferramentas do Visual Studio para Apache Cordova conforme descrito em [Desenvolvimento de Multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+>  Caso esteja procurando uma solução de desenvolvimento multiplataforma baseada em HTML e CSS, confira as Ferramentas para Apache Cordova do Visual Studio, conforme descrito em [Desenvolvimento multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974800"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381723"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o Test Agent para executar testes que interajam com a área de trabalho
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
 Se desejar executar testes automatizados que interajam com a área de trabalho, configure o agente para ser executado como um processo em vez de um serviço. Por exemplo, se você desejar executar um teste de IU codificado remotamente usando um controlador de teste e um agente de teste ou se desejar executar um teste e capturar uma gravação de vídeo ao executá-lo, será preciso configurar o agente para ser executado como um processo. Quando você atribui agentes a funções nas configurações de teste usando o Visual Studio ou atribui agentes a funções em seu ambiente usando o Microsoft Test Manager, é preciso alterar a configuração para todos os agentes atribuídos às funções que têm que interagir com a área de trabalho.
 
 > [!WARNING]
-> Se você usar o Microsoft Test Manager para configurar um ambiente de laboratório, ele instalará o agente de teste. É possível especificar no assistente para criação de ambiente que você deseja configurar uma das funções para executar testes de IU codificados.
+> Se você usar o Microsoft Test Manager para configurar um ambiente de laboratório, ele instalará o agente de teste. No **Assistente para Criação de Ambiente**, especifique que você deseja configurar uma das funções para executar testes de IU codificados.
 
 > [!IMPORTANT]
 > O computador que está executando um agente no qual você deseja executar testes de IU codificados não pode ser bloqueado nem ter um protetor de tela ativo.
@@ -79,7 +79,7 @@ Se você estiver executando testes de IU codificados que iniciem um navegador, a
 
      É exibida uma caixa de diálogo **Resumo da configuração** que mostra o status de cada uma das etapas para configurar o agente de teste.
 
-9. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Escolha **Fechar** novamente para fechar a Ferramenta de Configuração do Agente de Teste.
+9. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Em seguida, escolha **Fechar** novamente para fechar a **Ferramenta de Configuração do Test Agent**.
 
     > [!NOTE]
     > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo caso ele não esteja sendo executado, selecione **Iniciar**, **Todos os Programas**, **Microsoft Visual Studio**, **Agente de Teste do Microsoft Visual Studio**.

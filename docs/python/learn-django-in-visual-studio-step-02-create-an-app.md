@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947419"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388248"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Django com exibição e modelos de página
 
@@ -34,11 +34,11 @@ Nesta etapa, você aprenderá a:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Etapa 2-1: Criar um aplicativo com uma estrutura padrão
 
-Um aplicativo do Django é um pacote separado em Python que contém um conjunto de arquivos relacionados para uma finalidade específica. Um projeto do Django pode conter qualquer número de aplicativos, o que reflete o fato de que um host da Web pode servir qualquer número de pontos de entrada separados de um único nome de domínio. Por exemplo, um projeto do Django para um domínio como contoso.com pode conter um aplicativo para www.contoso.com, um segundo aplicativo para support.contoso.com e um aplicativo de terceiro para docs.contoso.com. Nesse caso, o projeto do Django manipula o roteamento de URL e as configurações no nível do site (nos seus arquivos `urls.py` e `settings.py`), enquanto cada aplicativo tem seu próprio estilo e comportamento por meio dos seus roteamentos, modos de exibição, modelos, arquivos estáticos e interfaces administrativas internos.
+Um aplicativo do Django é um pacote separado em Python que contém um conjunto de arquivos relacionados para uma finalidade específica. Um projeto do Django pode conter qualquer número de aplicativos, o que reflete o fato de que um host da Web pode servir qualquer número de pontos de entrada separados de um único nome de domínio. Por exemplo, um projeto do Django para um domínio como contoso.com pode conter um aplicativo para www.contoso.com, um segundo aplicativo para support.contoso.com e um aplicativo de terceiro para docs.contoso.com. Nesse caso, o projeto do Django manipula o roteamento de URL e as configurações no nível do site (nos arquivos *urls.py* e *settings.py*), enquanto cada aplicativo tem seu próprio estilo e comportamento distintos por meio de seus roteamentos, exibições, modelos, arquivos estáticos e interfaces administrativas internas.
 
 Um aplicativo do Django normalmente começa com um conjunto padrão de arquivos. O Visual Studio fornece modelos de item para inicializar um aplicativo do Django dentro de um projeto do Django, junto com um comando de menu integrado que tem a mesma finalidade:
 
-- Modelos: no **Gerenciador de Soluções**, clique com botão direito do mouse no projeto e selecione **Adicionar** > **Novo item**. Na caixa de diálogo **Adicionar Novo Item**, selecione o modelo "Django 1.9 App", especifique o nome do aplicativo no campo **Nome** e selecione **OK**.
+- Modelos: no **Gerenciador de Soluções**, clique com botão direito do mouse no projeto e selecione **Adicionar** > **Novo item**. Na caixa de diálogo **Adicionar Novo Item**, selecione o modelo **Aplicativo do Django 1.9**, especifique o nome do aplicativo no campo **Nome** e selecione **OK**.
 
 - Integrado comando: no **Gerenciador de Soluções**, clique com o botão direito no projeto e selecione **Adicionar** > **Aplicativo do Django**. Esse comando solicita um nome e cria um aplicativo do Django 1.9.
 
@@ -50,16 +50,16 @@ Usando qualquer método, crie um aplicativo com o nome "HelloDjangoApp". O resul
 
 | Item | Descrição |
 | --- | --- |
-| `__init__.py` | O arquivo que identifica o aplicativo como um pacote. |
-| `migrations` | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são discutidas na etapa 6; no momento, a pasta contém simplesmente um arquivo `__init__.py` (o que indica que a pasta define seu próprio pacote de Python). |
-| `templates` | Uma pasta para os modelos de página do Django que contém um único arquivo `index.html`. Modelos são blocos de HTML aos quais os modos de exibição podem adicionar informações para renderizar dinamicamente uma página. Modelos de página "variáveis", como `{{ content }}` em `index.html`, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
-| `admin.py` | O arquivo Python no qual você estende a interface administrativa do aplicativo (veja a etapa 6), que é usada para ver e editar dados em um banco de dados. Inicialmente, esse arquivo contém apenas a instrução `from django.contrib import admin`. O Django inclui uma interface administrativa padrão por meio de entradas no arquivo `settings.py` do projeto do Django, que você pode ativar removendo a marca de comentário das entradas existentes em `urls.py`. |
-| `apps.py` | Um arquivo Python que define uma classe de configuração para o aplicativo (veja abaixo, depois desta tabela). |
-| `models.py` | Modelos são objetos de dados, identificados por funções, por meio dos quais os modos de exibição interagem com o banco de dados subjacente do aplicativo (veja a etapa 6). O Django fornece a camada de conexão de banco de dados para que os aplicativos não precisem se preocupar com esses detalhes. O arquivo `models.py` é um local padrão no qual criar os modelos e, inicialmente, contém apenas a instrução `from django.db import models`. |
-| `tests.py` | Um arquivo Python que contém a estrutura básica de testes de unidade. |
-| `views.py` | Os modos de exibição são o que você normalmente considera páginas da Web, que recebem uma solicitação HTTP e retornam uma resposta HTTP. Os modos de exibição costumam ser renderizados como HTML que os navegadores da Web conseguem exibir, mas um modo de exibição não precisa necessariamente ser visível (como um formulário intermediário). Um modo de exibição é definido por uma função Python que tem a responsabilidade de renderizar o HTML para enviar ao navegador. O arquivo `views.py` é um local padrão no qual criar modos de exibição e, inicialmente, contém apenas a instrução `from django.shortcuts import render`. |
+| **\_\_init\_\_.py** | O arquivo que identifica o aplicativo como um pacote. |
+| **migrations** | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são abordadas na etapa 6; no momento, a pasta contém apenas um arquivo *\_\_init\_\_.py* (o que indica que a pasta define seu próprio pacote do Python). |
+| **templates** | Uma pasta para os modelos de página do Django que contém um *index.html*. de arquivo único. Modelos são blocos de HTML aos quais os modos de exibição podem adicionar informações para renderizar dinamicamente uma página. "Variáveis" de modelos de página, como `{{ content }}` em *index.html*, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
+| **admin.py** | O arquivo Python no qual você estende a interface administrativa do aplicativo (veja a etapa 6), que é usada para ver e editar dados em um banco de dados. Inicialmente, esse arquivo contém apenas a instrução `from django.contrib import admin`. Por padrão, o Django inclui uma interface administrativa padrão por meio de entradas no arquivo *settings.py* do projeto do Django, que você pode ativar removendo a marca de comentário das entradas existentes em *urls.py*. |
+| **apps.py** | Um arquivo Python que define uma classe de configuração para o aplicativo (veja abaixo, depois desta tabela). |
+| **models.py** | Modelos são objetos de dados, identificados por funções, por meio dos quais os modos de exibição interagem com o banco de dados subjacente do aplicativo (veja a etapa 6). O Django fornece a camada de conexão de banco de dados para que os aplicativos não precisem se preocupar com esses detalhes. O arquivo *models.py* é um local padrão no qual criar os modelos e, inicialmente, contém apenas a instrução `from django.db import models`. |
+| **tests.py** | Um arquivo Python que contém a estrutura básica de testes de unidade. |
+| **views.py** | Os modos de exibição são o que você normalmente considera páginas da Web, que recebem uma solicitação HTTP e retornam uma resposta HTTP. Os modos de exibição costumam ser renderizados como HTML que os navegadores da Web conseguem exibir, mas um modo de exibição não precisa necessariamente ser visível (como um formulário intermediário). Um modo de exibição é definido por uma função Python que tem a responsabilidade de renderizar o HTML para enviar ao navegador. O arquivo *views.py* é um local padrão no qual criar exibições e, inicialmente, contém apenas a instrução `from django.shortcuts import render`. |
 
-O conteúdo de `app.py` aparece da seguinte maneira ao usar o nome "HelloDjangoApp":
+O conteúdo de *app.py* é exibido da seguinte maneira ao usar o nome "HelloDjangoApp":
 
 ```python
 from django.apps import AppConfig
@@ -76,7 +76,7 @@ Resposta: A execução do comando **Adicionar** > **Aplicativo do Django** ou o 
 
 Neste ponto, se você executar novamente o projeto no Visual Studio (usando o botão de barra de ferramentas ou **Depurar** > **Iniciar depuração**), você ainda verá a página padrão. Nenhum conteúdo do aplicativo é exibido porque você precisa definir uma página específica do aplicativo e adicionar o aplicativo ao projeto do Django:
 
-1. Na pasta `HelloDjangoApp`, modifique `views.py` para corresponder ao código a seguir, que define um modo de exibição chamado "index":
+1. Na pasta *HelloDjangoApp*, modifique *views.py* para que ele corresponda ao código abaixo, que define uma exibição chamada "index":
 
     ```python
     from django.shortcuts import render
@@ -86,7 +86,7 @@ Neste ponto, se você executar novamente o projeto no Visual Studio (usando o bo
         return HttpResponse("Hello, Django!")
     ```
 
-1. Na pasta `BasicProject` (criada na etapa 1), modifique `urls.py` para corresponder pelo menos ao código a seguir (você pode manter os comentários instrutivos, se quiser):
+1. Na pasta *BasicProject* (criada na etapa 1), modifique *urls.py* para que ele corresponda, pelo menos, ao seguinte código (você poderá manter os comentários instrutivos se desejar):
 
     ```python
     from django.conf.urls import include, url
@@ -99,25 +99,25 @@ Neste ponto, se você executar novamente o projeto no Visual Studio (usando o bo
     ]
     ```
 
-    Cada padrão de URL descreve os modos de exibição para os quais o Django direciona URLs específicos relacionados ao site (ou seja, a parte que segue "https://www.domain.com/"). A primeira entrada em `urlPatterns` que começa com a expressão regular `^$` é o roteamento para a raiz do site, "/". A segunda entrada, `^home$` direcionado especificamente para "/home". É possível ter qualquer número de roteamentos para o mesmo modo de exibição.
+    Cada padrão de URL descreve as exibições para as quais o Django encaminha URLs relativas do site específicas (ou seja, a parte que segue `https://www.domain.com/`). A primeira entrada em `urlPatterns` que começa com a expressão regular `^$` é o roteamento para a raiz do site, "/". A segunda entrada, `^home$` direcionado especificamente para "/home". É possível ter qualquer número de roteamentos para o mesmo modo de exibição.
 
-1. Execute o projeto novamente para ver a mensagem "Olá, Django!" conforme definida pelo modo de exibição. Pare o servidor ao terminar.
+1. Execute o projeto novamente para ver a mensagem **Olá, Django!** conforme definida pelo modo de exibição. Pare o servidor ao terminar.
 
 ### <a name="commit-to-source-control"></a>Confirmar o controle do código-fonte
 
-Como você já fez alterações no seu código e as testou com êxito, agora é o momento ideal para revisar e confirmar as alterações ao controle do código-fonte. Etapas posteriores neste tutorial lembram o momento apropriado para confirmar o controle do código-fonte novamente e encaminham você de volta para esta seção.
+Como você já fez alterações no seu código e as testou com êxito, agora é o momento ideal para revisar e confirmar as alterações ao controle do código-fonte. As etapas posteriores deste tutorial indicam os momentos apropriados para fazer a confirmação no controle do código-fonte novamente e direcionam você mais uma vez para esta seção.
 
 1. Selecione o botão de alterações na parte inferior do Visual Studio (circulado abaixo), que encaminha para o **Team Explorer**.
 
     ![Botão de alterações de controle do código-fonte na barra de status do Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. No **Team Explorer**, digite uma mensagem de confirmação, como "Criar aplicativo inicial do Django" e selecione **Confirmar Tudo**. Quando a confirmação for concluída, será exibida a mensagem "Confirmação de <hash> criada localmente. Sincronize para compartilhar suas alterações com o servidor". Se você quiser enviar alterações por push para o repositório remoto, selecione **Sincronizar**, depois selecione **Push** em **Confirmações de Saída**. Também é possível acumular várias confirmações locais antes de enviar para o repositório remoto.
+1. No **Team Explorer**, digite uma mensagem de confirmação, como "Criar aplicativo inicial do Django" e selecione **Confirmar Tudo**. Quando a confirmação for concluída, será exibida a mensagem **Confirmar \<hash> criada localmente. Sincronize para compartilhar as alterações com o servidor.** Se você quiser enviar alterações por push para o repositório remoto, selecione **Sincronizar**, depois selecione **Push** em **Confirmações de Saída**. Também é possível acumular várias confirmações locais antes de enviar para o repositório remoto.
 
     ![Enviar confirmações por push para repositório remoto no Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
-### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pergunta: Para que serve o prefixo "r" antes das cadeias de caracteres de roteamento?
+### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pergunta: Para que serve o prefixo 'r' antes das cadeias de caracteres de roteamento?
 
-Resposta: O prefixo "r" em uma cadeia de caracteres em Python significa "raw", que instrui o Python a não escapar de nenhum caractere dentro da cadeia. Como as expressões regulares usam muitos caracteres especiais, o uso do prefixo "r" torna muito mais fácil ler essas cadeias de caracteres do que se elas contivessem alguns caracteres de escape '\'.
+Resposta: O prefixo "r" em uma cadeia de caracteres em Python significa "raw", que instrui o Python a não escapar de nenhum caractere dentro da cadeia. Como as expressões regulares usam muitos caracteres especiais, o uso do prefixo 'r' facilita muito a leitura dessas cadeias de caracteres comparado a se elas contivessem alguns caracteres de escape '\\'.
 
 ### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Pergunta: O que significam os caracteres ^ e $ nas entradas de roteamento de URL?
 
@@ -129,7 +129,7 @@ Para fazer experiências com expressões regulares diferentes, use ferramentas o
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Etapa 2-3: Renderizar um modo de exibição usando HTML
 
-A função `index` que você tem até agora em `views.py` gera nada mais que uma resposta HTTP de texto simples para a página. A maioria das páginas da Web reais responde com páginas HTML avançadas que geralmente incorporam dados dinâmicos. Na verdade, a principal razão para definir um modo de exibição usando uma função é poder gerar esse conteúdo dinamicamente.
+A função `index` que você tem até agora em *views.py* não gera nada além de uma resposta HTTP de texto sem formatação para a página. A maioria das páginas da Web reais responde com páginas HTML avançadas que geralmente incorporam dados dinâmicos. Na verdade, a principal razão para definir um modo de exibição usando uma função é poder gerar esse conteúdo dinamicamente.
 
 Como o argumento para `HttpResponse` é apenas uma cadeia de caracteres, você pode criar qualquer HTML que quiser em uma cadeia de caracteres. Como um exemplo simples, substitua a função `index` pelo código a seguir (mantendo as instruções `from` existentes), que gera uma resposta HTML usando o conteúdo dinâmico que é atualizado toda vez que você atualiza a página:
 
@@ -149,7 +149,7 @@ def index(request):
 Execute o projeto novamente para ver uma mensagem como "**Olá, Django!** na segunda-feira, 16 de abril de 2018, às 16:28:10". Atualize a página para atualizar a hora e confirme que o conteúdo está sendo gerado com cada solicitação. Pare o servidor ao terminar.
 
 > [!Tip]
-> Um atalho para parar e reiniciar o projeto é usar o comando de menu **Depurar**  >  **Reiniciar** (Ctrl+Shift+F5) ou o botão de reinicialização na barra de ferramentas de depuração:
+> Um atalho para parar e reiniciar o projeto é usar o comando de menu **Depurar** > **Reiniciar** (**Ctrl**+**Shift**+**F5**) ou o botão de reinicialização na barra de ferramentas de depuração:
 >
 > ![Botão de reinicialização na barra de ferramentas de depuração no Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -161,7 +161,7 @@ Um modelo de página do Django é um bloco de HTML que pode conter qualquer núm
 
 As etapas a seguir demonstram o uso de modelos de página:
 
-1. Na pasta `BasicProject`, que contém o projeto do Django, abra o arquivo `settings.py` e adicione o nome do aplicativo, "HelloDjangoApp", à lista `INSTALLED_APPS`. A adição do aplicativo à lista informa ao projeto do Django que há uma pasta com esse nome contendo um aplicativo:
+1. Na pasta *BasicProject*, que contém o projeto do Django, abra o arquivo *settings.py* e adicione o nome do aplicativo, "HelloDjangoApp", à lista `INSTALLED_APPS`. A adição do aplicativo à lista informa ao projeto do Django que há uma pasta com esse nome contendo um aplicativo:
 
     ```python
     INSTALLED_APPS = [
@@ -170,13 +170,13 @@ As etapas a seguir demonstram o uso de modelos de página:
     ]
     ```
 
-1. Também em `settings.py`, garanta que o objeto `TEMPLATES` contenha a seguinte linha (incluída por padrão), que instrui o Django a procurar por modelos na pasta `templates` de um aplicativo instalado:
+1. Também em *settings.py*, garanta que o objeto `TEMPLATES` contenha a seguinte linha (incluída por padrão), que instrui o Django a procurar modelos na pasta *templates* de um aplicativo instalado:
 
     ```json
     'APP_DIRS': True,
     ```
 
-1. Na pasta `HelloDjangoApp`, abra o `templates/index.html` arquivo de modelo de página para observar se ele contém uma variável `{{ content }}`:
+1. Na pasta *HelloDjangoApp*, abra o arquivo de modelo de página *templates/index.html*, para observar se ele contém uma variável, `{{ content }}`:
 
     ```html
     <html>
@@ -190,7 +190,7 @@ As etapas a seguir demonstram o uso de modelos de página:
     </html>
     ```
 
-1. Na pasta `HelloDjangoApp`, abra `views.py` e substitua a função `index` pelo código a seguir, que usa a função auxiliar `django.shortcuts.render`. O auxiliar `render` fornece uma interface simplificada para trabalhar com modelos de página. Mantenha todas as instruções `from` existentes.
+1. Na pasta *HelloDjangoApp*, abra *views.py* e substitua a função `index` pelo código a seguir, que usa a função auxiliar `django.shortcuts.render`. O auxiliar `render` fornece uma interface simplificada para trabalhar com modelos de página. Mantenha todas as instruções `from` existentes.
 
     ```python
     from django.shortcuts import render   # Added for this step
@@ -207,11 +207,11 @@ As etapas a seguir demonstram o uso de modelos de página:
         )
     ```
 
-    O primeiro argumento para `render`, como você pode ver, é o objeto de solicitação, seguido pelo caminho relativo para o arquivo de modelo dentro da pasta `templates` do aplicativo. Um arquivo de modelo recebe o nome do modo de exibição ao qual ele oferece suporte, se apropriado. O terceiro argumento para `render` é um dicionário de variáveis ao qual o modelo se refere. Você pode incluir objetos no dicionário e, nesse caso, uma variável no modelo pode se referir a `{{ object.property }}`.
+    O primeiro argumento para `render`, como você pode ver, é o objeto de solicitação, seguido do caminho relativo para o arquivo de modelo dentro da pasta *templates* do aplicativo. Um arquivo de modelo recebe o nome do modo de exibição ao qual ele oferece suporte, se apropriado. O terceiro argumento para `render` é um dicionário de variáveis ao qual o modelo se refere. Você pode incluir objetos no dicionário e, nesse caso, uma variável no modelo pode se referir a `{{ object.property }}`.
 
 1. Execute o projeto e observe o resultado. Você deve ver uma mensagem semelhante àquela vista na etapa 2-2, indicando que o modelo funciona.
 
-    Observe, no entanto, que o HTML usado na propriedade `content` é processado apenas como texto simples, porque a função `render` escapa automaticamente esse HTML. O escape automático impede vulnerabilidades acidentais em ataques de injeção: os desenvolvedores geralmente coletam a entrada de uma página e a usam como um valor em outra por meio de um espaço reservado de modelo. O escape também funciona como um lembrete de que é melhor novamente manter o HTML no modelo da página e fora do código. Felizmente, é simples criar variáveis adicionais quando necessário. Por exemplo, altere `templates/index.html` para corresponder à seguinte marcação, que adiciona um título de página e mantém toda a formatação no modelo de página:
+    Observe, no entanto, que o HTML usado na propriedade `content` é processado apenas como texto simples, porque a função `render` escapa automaticamente esse HTML. O escape automático impede vulnerabilidades acidentais em ataques de injeção: os desenvolvedores geralmente coletam a entrada de uma página e a usam como um valor em outra por meio de um espaço reservado de modelo. O escape também funciona como um lembrete de que é melhor novamente manter o HTML no modelo da página e fora do código. Felizmente, é simples criar variáveis adicionais quando necessário. Por exemplo, altere *templates/index.html* para que ele corresponda à seguinte marcação, que adiciona um título de página e mantém toda a formatação no modelo de página:
 
     ```html
     <html>
@@ -245,27 +245,27 @@ As etapas a seguir demonstram o uso de modelos de página:
 
     ![Aplicativo em execução usando o modelo](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Como etapa final, mova seus modelos para uma subpasta com o mesmo nome do seu aplicativo, o que cria um namespace e evita possíveis conflitos com outros aplicativos que você venha a adicionar ao projeto. Ou seja, crie uma subpasta em `templates` chamada `HelloDjangoApp`, mova `index.html` para essa subpasta e modifique a função do modo de exibição `index` para se referir ao novo caminho do modelo, `HelloDjangoApp/index.html`. Em seguida, execute o projeto, verifique se a página é renderizada corretamente e pare o servidor.
+1. <a name="template-namespacing"></a>Como etapa final, mova seus modelos para uma subpasta com o mesmo nome do seu aplicativo, o que cria um namespace e evita possíveis conflitos com outros aplicativos que você venha a adicionar ao projeto. Ou seja, crie uma subpasta em *templates* chamada *HelloDjangoApp*, mova *index.html* para essa subpasta e modifique a função de exibição `index` para que ela se refira ao novo caminho do modelo, *HelloDjangoApp/index.html*. Em seguida, execute o projeto, verifique se a página é renderizada corretamente e pare o servidor.
 
 1. Confirme suas alterações no controle do código-fonte e atualize seu repositório remoto, se desejado, conforme descrito na [etapa 2-2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pergunta: Os modelos de páginas precisam ficar em um arquivo separado?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pergunta: Os modelos de página precisam ficar em um arquivo separado?
 
 Resposta: Embora os modelos geralmente sejam mantidos em arquivos HTML separados, também é possível usar um modelo embutido. No entanto, é recomendável usar um arquivo separado para manter uma distinção clara entre marcação e código.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Pergunta: Os modelos devem usar a extensão de arquivo .html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Pergunta: Os modelos precisam usar a extensão de arquivo .html?
 
-Resposta: A extensão `.html` para arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no segundo argumento para a função `render`. No entanto, o Visual Studio (e outros editores) costuma fornecer recursos como preenchimento de código e coloração de sintaxe com arquivos `.html`, o que supera o fato de os modelos de página não serem estritamente HTML.
+Resposta: A extensão *.html* para arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no segundo argumento para a função `render`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
 
 De fato, quando você está trabalhando com um projeto do Django, o Visual Studio detecta automaticamente quando o arquivo HTML que você está editando é, na verdade, um modelo do Django e fornece determinados recursos de preenchimento automático. Por exemplo, quando você começa a digitar um comentário de modelo de página do Django, `{#`, o Visual Studio fornece automaticamente os caracteres de fechamento `#}`. Os comandos **Comentar Seleção** e **Remover Marca de Comentário da Seleção** (no menu **Editar** > **Avançado** e na barra de ferramentas) também usam comentários de modelo em vez de comentários em HTML.
 
 ### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pergunta: Quando executo o projeto, é exibido um erro indicando que não é possível encontrar o modelo. Qual é o problema?
 
-Resposta: Se forem exibidos erros indicando que o modelo não pode ser encontrado, certifique-se de ter adicionado o aplicativo a `settings.py` do projeto do Django na lista `INSTALLED_APPS`. Sem essa entrada, o Django não conseguirá procurar na pasta `templates` do aplicativo.
+Resposta: Se forem exibidos erros indicando que o modelo não pode ser encontrado, verifique se você adicionou o aplicativo a *settings.py* do projeto do Django na lista `INSTALLED_APPS`. Sem essa entrada, o Django não saberá o que procurar na pasta *templates* do aplicativo.
 
 ### <a name="question-why-is-template-namespacing-important"></a>Pergunta: Por que o namespace do modelo é importante?
 
-Resposta: Quando o Django procura por um modelo referido na função `render`, ele usa qualquer arquivo encontrado primeiro que corresponda ao caminho relativo. Se você tiver vários aplicativos do Django no mesmo projeto que usem as mesmas estruturas de pasta para os modelos, é provável que um aplicativo use inadvertidamente um modelo de outro aplicativo. Para evitar esses erros, sempre crie uma subpasta na pasta `templates` do aplicativo que corresponda ao nome do aplicativo para evitar toda e qualquer duplicação.
+Resposta: Quando o Django procura por um modelo referido na função `render`, ele usa qualquer arquivo encontrado primeiro que corresponda ao caminho relativo. Se você tiver vários aplicativos do Django no mesmo projeto que usem as mesmas estruturas de pasta para os modelos, é provável que um aplicativo use inadvertidamente um modelo de outro aplicativo. Para evitar esses erros, sempre crie uma subpasta na pasta *templates* do aplicativo que corresponda ao nome do aplicativo para evitar toda e qualquer duplicação.
 
 ## <a name="next-steps"></a>Próximas etapas
 

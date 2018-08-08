@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057379"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341657"
 ---
-# <a name="remotely-debugging-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
+# <a name="remotely-debug-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
 O Visual Studio pode iniciar e depurar aplicativos Python local e remotamente em um computador Windows (consulte [Depuração remota](../debugger/remote-debugging.md)). Ela também pode depurar remotamente em um dispositivo ou sistema operacional diferente ou em uma implementação Python que não seja o CPython usando a [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
 
@@ -26,22 +26,22 @@ Ao usar a ptvsd, o código do Python que está sendo depurado hospeda o servidor
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para uma introdução à depuração remota, assista a [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Aprofundamento: depuração remota multiplataforma) (youtube.com, 6min22s), que é aplicável ao Visual Studio 2015 e 2017. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução à depuração remota, assista ao vídeo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (Aprofundamento: Depuração remota multiplataforma) (youtube.com, 6min22s), aplicável ao Visual Studio 2015 e 2017. |
 
-## <a name="setting-up-a-linux-computer"></a>Configurando um computador Linux
+## <a name="set-up-a-linux-computer"></a>Configurar um computador Linux
 
 Os itens a seguir são necessários para acompanhar esse passo a passo:
 
 - Um computador remoto que execute o Python em um sistema operacional como o Mac OSX ou Linux.
 - A porta 5678 (entrada) aberta no firewall desse computador, que é o padrão para a depuração remota.
 
-É possível criar facilmente [máquinas virtuais do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acessá-las usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) do Windows. É conveniente um Ubuntu para a VM, pois o Python é instalado por padrão. Caso contrário, consulte a lista em [Instalar um interpretador do Python de sua escolha](installing-python-interpreters.md) para obter mais locais de download do Python.
+Crie com facilidade uma [máquina virtual do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acesse-a usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) no Windows. Ter o Ubuntu para a VM é conveniente, pois o Python é instalado por padrão. Caso contrário, veja a lista em [Instalar um interpretador do Python de sua escolha](installing-python-interpreters.md) para obter mais locais de download do Python.
 
-Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure, consulte [Abrir portas para uma VM no Azure usando o Portal do Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
+Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure, confira [Abrir portas para uma VM no Azure usando o portal do Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
-## <a name="preparing-the-script-for-debugging"></a>Preparando o script para depuração
+## <a name="prepare-the-script-for-debugging"></a>Preparar o script para depuração
 
-1. No computador remoto, crie um arquivo do Python chamado `guessing-game.py` com o seguinte código:
+1. No computador remoto, crie um arquivo do Python chamado *guessing-game.py* com o seguinte código:
 
     ```python
     import random
@@ -66,9 +66,11 @@ Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure,
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Instale o pacote `ptvsd` no ambiente usando `pip3 install ptvsd`. (Observação: é uma boa ideia registrar a versão do ptvsd instalada no caso de ela ser necessária para a solução de problemas; a [listagem ptvsd](https://pypi.python.org/pypi/ptvsd) também mostra as versões disponíveis.)
+1. Instale o pacote `ptvsd` no ambiente usando `pip3 install ptvsd`. 
+   >[!NOTE]
+   >É uma boa ideia registrar a versão do ptvsd instalada caso ela seja necessária para solução de problemas; a [listagem ptvsd](https://pypi.python.org/pypi/ptvsd) também mostra as versões disponíveis.
 
-1. Habilite a depuração remota adicionando o código abaixo no primeiro ponto possível no `guessing-game.py`, antes de outros códigos. (Embora esse não seja um requisito estrito, é impossível depurar os threads em segundo plano gerados antes que a função `enable_attach` seja chamada.)
+1. Habilite a depuração remota adicionando o código abaixo ao primeiro ponto possível de *guessing-game.py*, antes de outros códigos. (Embora esse não seja um requisito estrito, é impossível depurar os threads em segundo plano gerados antes que a função `enable_attach` seja chamada.)
 
    ```python
    import ptvsd
@@ -82,7 +84,7 @@ Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure,
 > [!Tip]
 > Além de `enable_attach` e `wait_for_attach`, o ptvsd também fornece uma função auxiliar `break_into_debugger`, que serve como um ponto de interrupção programático, caso o depurador seja anexado. Também há uma função `is_attached` que retorna `True` se o depurador é anexado (observe que não há necessidade de verificar esse resultado antes de chamar outras funções `ptvsd`).
 
-## <a name="attaching-remotely-from-python-tools"></a>Anexando remotamente por meio das Ferramentas Python
+## <a name="attach-remotely-from-python-tools"></a>Anexar remotamente por meio das Ferramentas Python
 
 Nestas etapas, definiremos um ponto de interrupção simples para interromper o processo remoto.
 
@@ -90,16 +92,16 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
 
 1. (Opcional) Para ter o IntelliSense para ptvsd no computador local, instale o pacote de ptvsd em seu ambiente de Python.
 
-1. Selecione **Depurar > Anexar ao processo**.
+1. Selecione **Depurar** > **Anexar ao Processo**.
 
 1. No diálogo **Anexar ao Processo** que será exibido, configure o **Tipo de Conexão** como **Python remoto (ptvsd)**. (Em versões anteriores do Visual Studio, esses comandos são denominados **Transporte** e **Depuração remota do Python**.)
 
 1. No campo **Destino da Conexão** (**Qualificador** em versões anteriores), insira `tcp://<secret>@<ip_address>:5678`, em que `<secret>` é a cadeia de caracteres `enable_attach` passada no código Python, `<ip_address>` é o do computador remoto (que pode ser um endereço explícito ou um nome como myvm.cloudapp.net) e `:5678` é o número da porta de depuração remota.
 
     > [!Warning]
-    > Se estiver fazendo uma conexão pela Internet pública, você deverá usar `tcps` e seguir as instruções abaixo para [Proteger a conexão do depurador com SSL](#securing-the-debugger-connection-with-ssl).
+    > Caso esteja fazendo uma conexão pela Internet pública, use `tcps` e siga as instruções abaixo para [Proteger a conexão do depurador com SSL](#securing-the-debugger-connection-with-ssl).
 
-1. Pressione Enter para popular a lista de processos ptvsd disponíveis nesse computador:
+1. Pressione **Enter** para popular a lista de processos do ptvsd disponíveis nesse computador:
 
     ![Inserir o destino da conexão e listar processos](media/remote-debugging-qualifier.png)
 
@@ -131,7 +133,7 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>Protegendo a conexão do depurador com o SSL
+## <a name="secure-the-debugger-connection-with-ssl"></a>Proteger a conexão do depurador com o SSL
 
 Por padrão, a conexão com o servidor de depuração remota do ptvsd é protegida somente pelo segredo e todos os dados são passados em texto sem formatação. Para obter uma conexão mais segura, o ptvsd dá suporte ao SSL, o qual deve ser configurado da seguinte maneira:
 
@@ -158,9 +160,9 @@ Por padrão, a conexão com o servidor de depuração remota do ptvsd é protegi
 1. Proteja o canal adicionando o certificado à AC Raiz Confiável no computador Windows com o Visual Studio:
 
     1. Copie o arquivo de certificado do computador remoto para o computador local.
-    1. Abra o Painel de Controle e acesse **Ferramentas Administrativas > Gerenciar certificados de computador**.
-    1. Na janela exibida, expanda **Autoridades de Certificação Confiáveis** no lado esquerdo, clique com botão direito do mouse em **Certificados** e selecione **Todas as Tarefas > Importar...**.
-    1. Navegue até o arquivo `.cer` copiado do computador remoto, selecione-o e, em seguida, clique nas caixas de diálogo para concluir a importação.
+    1. Abra o **Painel de Controle** e navegue para **Ferramentas Administrativas** > **Gerenciar certificados de computador**.
+    1. Na janela exibida, expanda **Autoridades de Certificação Confiáveis** no lado esquerdo, clique com o botão direito do mouse em **Certificados** e selecione **Todas as Tarefas** > **Importar**.
+    1. Navegue para o arquivo *.cer* copiado do computador remoto, selecione-o e, em seguida, clique nas caixas de diálogo para concluir a importação.
 
 1. Agora, repita o processo de anexação no Visual Studio, conforme descrito anteriormente, usando `tcps://` como protocolo para o **Destino de Conexão** (ou **Qualificador**).
 
@@ -170,11 +172,11 @@ Por padrão, a conexão com o servidor de depuração remota do ptvsd é protegi
 
 O Visual Studio o avisará sobre possíveis problemas de certificado ao se conectar via SSL, conforme descrito abaixo. É possível ignorar os avisos e continuar, porém, embora o canal ainda esteja criptografado contra interceptação, ele pode estar aberto a ataques man-in-the-middle.
 
-1. Caso veja o aviso “o certificado remoto não é confiável” abaixo, significa que o certificado não foi adicionado corretamente à AC Raiz Confiável. Verifique essas etapas e tente novamente.
+1. Se o aviso **o certificado remoto não é confiável** abaixo for exibido, isso significará que o certificado não foi adicionado corretamente à AC Raiz Confiável. Verifique essas etapas e tente novamente.
 
     ![Aviso de certificado SSL confiável](media/remote-debugging-ssl-warning.png)
 
-1. Caso veja o aviso “o nome do certificado remoto não corresponde ao nome do host” abaixo, significa que o nome de host ou endereço IP correto não foi usado como o **Nome Comum** ao criar o certificado.
+1. Se o aviso **O nome do certificado remoto não corresponde ao nome do host** abaixo for exibido, isso significará que o nome do host ou o endereço IP correto não foi usado como o **Nome Comum** durante a criação do certificado.
 
     ![Aviso de nome de host do certificado SSL](media/remote-debugging-ssl-warning2.png)
 

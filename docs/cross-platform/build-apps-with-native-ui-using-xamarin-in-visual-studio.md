@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232384"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381075"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 
@@ -70,7 +70,7 @@ O Visual Studio não tem um modelo de solução para criar aplicativos nativos d
 
     Depois de clicar em OK, a solução **WeatherApp** consiste em um único projeto chamado **WeatherApp**.
 
-2.  Se você desejar direcionar ao iOS, adicione um projeto do iOS à solução. Clique com botão direito do mouse no nome da solução no **Gerenciador de Soluções**, selecione **Adicionar** e **Novo Projeto**.  Na caixa de diálogo **Novo Projeto**, à esquerda, selecione **Visual C#** e, em seguida, **iOS** e **Universal**. (Se ele não estiver lá, poderá ser necessário instalar o Xamarin ou habilitar o recurso do Visual Studio 2017, confira [Instalar e configurar](../cross-platform/setup-and-install.md).) Na lista de modelos, selecione **Aplicativo de Exibição Única (iOS)**. Nomeie-o como **WeatherApp.iOS**.
+2.  Se você desejar direcionar ao iOS, adicione um projeto do iOS à solução. Clique com o botão direito do mouse no nome da solução no **Gerenciador de Soluções** e selecione **Adicionar** e **Novo Projeto**.  Na caixa de diálogo **Novo Projeto**, à esquerda, selecione **Visual C#** e, em seguida, **iOS** e **Universal**. (Se ele não estiver lá, poderá ser necessário instalar o Xamarin ou habilitar o recurso do Visual Studio 2017, confira [Instalar e configurar](../cross-platform/setup-and-install.md).) Na lista de modelos, selecione **Aplicativo de Exibição Única (iOS)**. Nomeie-o como **WeatherApp.iOS**.
 
 3.  Se você desejar direcionar ao Android, adicione um projeto do Android à solução. Na caixa de diálogo **Novo Projeto** à esquerda, selecione **Visual C#** e **Android**. Na lista de modelos, selecione **Aplicativo em Branco (Android)**. Nomeie-o como **WeatherApp.Android**.
 
@@ -86,7 +86,7 @@ O Visual Studio não tem um modelo de solução para criar aplicativos nativos d
 
 6. Adicione o pacote NuGet **Newtonsoft.Json** ao projeto do .NET Standard, que você usará para processar as informações recuperadas de um serviço de dados de clima:
 
-    -   Clique com o botão direito do mouse no projeto **WeatherApp** no **Gerenciador de Soluções** e selecione **Gerenciar pacotes NuGet...**.
+    -   Clique com o botão direito do mouse no projeto **WeatherApp** no **Gerenciador de Soluções** e selecione **Gerenciar Pacotes NuGet...**.
 
          Na janela do NuGet, selecione a guia **Procurar** e pesquise **Newtonsoft**.
 

@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382673"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
-Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *app.config* para testes de unidade. Você aprenderá como criar um arquivo app.config que defina uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:
+Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *app.config* para testes de unidade. Você aprenderá a criar um arquivo *app.config* que define uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:
 
-- Criando um arquivo app.config.
+- Criar um arquivo *app.config*.
 
 - Definindo uma seção de configuração personalizada.
 
@@ -45,21 +46,21 @@ Para concluir esta explicação passo a passo, será necessário:
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Adicionar um arquivo app.config ao projeto
 
-1. Se seu projeto de teste já tem um arquivo app.config, vá para [Definir uma seção de configuração personalizada](#DefineCustomConfigurationSection).
+1. Se o projeto de teste já tem um arquivo *app.config*, vá para [Definir uma seção de configuração personalizada](#define-a-custom-configuration-section).
 
-2. Clique com o botão direito do mouse no projeto de teste no **Gerenciador de Soluções** e, em seguida, selecione **Adicionar** > **Novo Item**.
+2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto de teste e, em seguida, selecione **Adicionar** > **Novo Item**.
 
      A janela **Adicionar Novo Item** é aberta.
 
 3. Selecione o modelo de **Arquivo de Configuração de Aplicativo** e clique em **Adicionar**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Defina uma seção de configuração personalizada
+##  <a name="define-a-custom-configuration-section"></a>Definir uma seção de configuração personalizada
 
 Examine o arquivo *app.config*. Ele contém pelo menos a declaração XML e um elemento raiz.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Como adicionar a seção de configuração personalizada para o arquivo app.config
 
-1. O elemento raiz de app.config deve ser o elemento **configuration**. Crie um elemento **configSections** dentro do elemento **configuration**. O **configSections** deve ser o primeiro elemento no arquivo *app.config*.
+1. O elemento raiz de *app.config* deve ser o elemento **configuration**. Crie um elemento **configSections** dentro do elemento **configuration**. O **configSections** deve ser o primeiro elemento no arquivo *app.config*.
 
 2. Dentro do elemento **configSections**, crie um elemento **section**.
 
@@ -67,14 +68,14 @@ Examine o arquivo *app.config*. Ele contém pelo menos a declaração XML e um e
 
 O elemento **section** deverá ser parecido com este:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
 > [!NOTE]
 > O nome do assembly deve corresponder ao build do Microsoft Visual Studio .NET Framework que você está usando. Defina a versão para 9.0.0.0 se você estiver usando o Visual Studio .NET Framework 3.5. Se você estiver usando o Visual Studio .NET Framework 2.0, defina a versão para 8.0.0.0.
 
-## <a name="define-connection-strings"></a>Definir as cadeias de conexão
+## <a name="define-connection-strings"></a>Definir cadeias de conexão
 
 As cadeias de conexão definem as informações específicas do provedor para acessar fontes de dados. As cadeias de conexão definidas em arquivos de configuração fornecem informações do provedor de dados reutilizáveis em um aplicativo. Nesta seção, você criará duas cadeias de conexão que serão usadas por fontes de dados que são definidas na seção de configuração personalizada.
 
@@ -94,7 +95,7 @@ As cadeias de conexão definem as informações específicas do provedor para ac
 
 No segundo elemento **add**, crie os seguintes atributos e valores para uma conexão com uma planilha do Microsoft Excel:
 
-|||
+|Atributo|Valores|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ No segundo elemento **add**, crie os seguintes atributos e valores para uma cone
 
 O elemento **connectionStrings** deve ser parecido com este:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ Nesta seção, você definirá duas fontes de dados para usar em um teste de uni
 
 No segundo elemento **add**, crie os seguintes atributos e valores para uma fonte de dados do Microsoft Excel:
 
-|||
+|Atributo|Valores|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ O arquivo *app.config* final deve ser parecido com este:
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Criar um teste de unidade que usa fontes de dados definidas em app.config
 
-Agora que um arquivo app.config foi definido, você criará um teste de unidade que usa dados localizados em fontes de dados que são definidas no arquivo app.config. Nesta seção, iremos:
+Agora que um arquivo *app.config* foi definido, você criará um teste de unidade que usa os dados localizados nas fontes de dados definidas no arquivo *app.config*. Nesta seção, iremos:
 
-- Criar fontes de dados localizadas no arquivo app.config.
+- Criar as fontes de dados localizadas no arquivo *app.config*.
 
 - Usar as fontes de dados em dois métodos de teste que comparam os valores em cada fonte de dados.
 
@@ -261,7 +262,7 @@ Agora que um arquivo app.config foi definido, você criará um teste de unidade 
     }
     ```
 
-3. Examine os atributos DataSource. Observe os nomes de configuração do arquivo app.config.
+3. Examine os atributos DataSource. Observe os nomes de configuração do arquivo *app.config*.
 
 4. Compile sua solução e execute testes MyTestMethod e MyTestMethod2.
 
@@ -271,4 +272,4 @@ Agora que um arquivo app.config foi definido, você criará um teste de unidade 
 ## <a name="see-also"></a>Consulte também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-- [Como criar um teste de unidade orientado a dados](../test/how-to-create-a-data-driven-unit-test.md)
+- [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

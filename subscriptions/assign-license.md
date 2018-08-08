@@ -9,18 +9,18 @@ description: Saiba como os administradores podem atribuir licenças aos assinant
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178394"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251699"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Atribuir licenças no portal do administrador de assinaturas do Visual Studio
 
 Como administrador de assinaturas do Visual Studio, você pode usar o portal do administrador para atribuir assinaturas a usuários individuais e grupos de usuários.
 
-Para grupos de usuários, você pode atribuir assinaturas a eles uma de cada vez ou usar o recurso **Adição em Massa** para carregar listas de assinantes com suas informações de assinatura de forma rápida e fácil. 
+Para grupos de usuários, você pode atribuir assinaturas a eles uma de cada vez ou usar o recurso **Adição em Massa** para carregar listas de assinantes e suas informações de assinatura de forma rápida e fácil.
 
 ## <a name="individual-assignments"></a>Atribuições individuais
 
@@ -32,7 +32,7 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
 
    ![Adicionar um único assinante](media\add-single-subscriber.png)
 
-3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, este campo terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o nome, o email de conexão e o email de notificação serão populados automaticamente. 
+3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, este campo terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o nome, o email de conexão e o email de notificação serão populados automaticamente.
 
    ![Adicionar um novo endereço de email de notificação](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
 
   ![Baixar o modelo do Excel para carregar vários assinantes](media\download-template-upload-subscribers.png)
 
-  >![NOTE] Sempre baixe a última versão desse modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
+   > ![NOTE] Sempre baixe a última versão desse modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
 
 1. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (*Referência* é um campo opcional.) Salve o arquivo localmente depois que terminar.
 

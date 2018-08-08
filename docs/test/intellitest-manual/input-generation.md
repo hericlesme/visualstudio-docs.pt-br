@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977771"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341877"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -72,7 +72,7 @@ O [solver de restrição](#constraint-solver) do IntelliTest determina os valore
 O IntelliTest pode [criar instâncias de classes do .NET existentes](#existing-classes) ou você pode usar o IntelliTest para automaticamente [criar objetos fictícios](#parameterized-mocks) que implementam uma interface específica e se comportam de maneiras diferentes dependendo do uso.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Criando instâncias de classes existentes
+## <a name="instantiate-existing-classes"></a>Criar instâncias de classes existentes
 
 **Qual é o problema?**
 
@@ -113,7 +113,7 @@ A resposta convencional é usar *objetos fictícios* com comportamento explícit
 
 Um objeto fictício implementa uma interface (ou estende uma classe não selada). Ele não representa uma implementação real, mas apenas um atalho que permite a execução de testes usando o objeto fictício. Seu comportamento é definido manualmente como parte de cada caso de teste em que ele é usado. Existem muitas ferramentas que facilitam a definição de objetos fictícios e seu comportamento esperado, mas esse comportamento ainda deve ser definido manualmente.
 
-Em vez de valores embutidos em código em objetos fictícios, o IntelliTest pode gerar os valores. Assim como ele permite [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing), o IntelliTest também permite mMocks parametrizados.
+Em vez de valores embutidos em código em objetos fictícios, o IntelliTest pode gerar os valores. Assim como ele permite [teste de unidade parametrizado](test-generation.md#parameterized-unit-testing), o IntelliTest também permite simulações parametrizadas.
 
 As simulações parametrizadas têm dois modos de execução diferentes:
 
@@ -135,7 +135,7 @@ O IntelliTest monitora as instruções executadas conforme ele executa um teste 
 O IntelliTest tenta minimizar o tamanho das matrizes e cadeias de caracteres necessárias para disparar comportamentos de programa interessantes.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Obtendo entradas adicionais
+## <a name="obtain-additional-inputs"></a>Obter entradas adicionais
 
 A classe estática [PexChoose](static-helper-classes.md#pexchoose) pode ser usada para obter entradas adicionais para um teste e pode ser usada para implementar [simulações parametrizadas](#parameterized-mocks).
 

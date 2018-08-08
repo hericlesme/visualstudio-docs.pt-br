@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750916"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382315"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Como especificar opções de plotagem para contadores de representação gráfica
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Como especificar opções de gráfico para contadores de representação gráfica
 
 A caixa de diálogo **Opções de Plotagem** permite alterar a cor e o estilo de linha de um contador plotado em um gráfico. Você também pode corrigir o intervalo em um valor específico ou definir o intervalo para ser ajustado automaticamente com base nos dados da amostra.
 
@@ -25,11 +25,11 @@ A caixa de diálogo **Opções de Plotagem** permite alterar a cor e o estilo de
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Para especificar opções de plotagem para gráficos
 
-1.  No Analisador de Teste de Carga, escolha **Gráficos** na barra de ferramentas do teste de carga.
+1.  No **Analisador de Teste de Carga**, escolha **Grafos** na barra de ferramentas.
 
-     Isso exibe os resultados do teste de carga na exibição de gráficos.
+     Isso exibe os resultados do teste de carga na exibição de grafo.
 
-2.  Na legenda ou no gráfico, clique com o botão direito do mouse na linha de plotagem atual do contador de desempenho cuja opção de plotagem deseja alterar e selecione **Opções de Plotagem**.
+2.  Na legenda ou no grafo, clique com o botão direito do mouse na linha ou na linha de plotagem atual do contador de desempenho cuja opção de plotagem deseja alterar e, em seguida, selecione **Opções de Gráfico**.
 
      A caixa de diálogo **Opções de Plotagem** é exibida.
 
@@ -51,6 +51,5 @@ A caixa de diálogo **Opções de Plotagem** permite alterar a cor e o estilo de
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)

@@ -9,12 +9,12 @@ description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297551"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382445"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 
@@ -24,7 +24,7 @@ A Conta de Desenvolvedor para Windows, incluída com assinaturas selecionadas do
 
 Para usar a conta de desenvolvedor do Windows, será necessário configurar uma conta ou entrar usando uma conta existente.
 
-É recomendável criar uma janela do navegador "privada" para esse processo.  Por exemplo, no Google Chrome, crie uma nova janela "incógnita".  No Internet Explorer, crie uma nova janela "InPRivate".
+É recomendável criar uma janela do navegador "privada" para esse processo.  Por exemplo, no Google Chrome, crie uma nova janela "incógnita".  No Internet Explorer, crie uma janela "InPrivate".
 
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 

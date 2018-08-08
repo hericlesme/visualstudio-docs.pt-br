@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178287"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379476"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
 O tempo necessário para cada página da Web carregar é conhecido como *tempo de resposta*. Quando você cria um teste de desempenho na Web, pode definir uma meta de tempo de resposta para cada solicitação de página da Web no teste de desempenho na Web.
 
@@ -29,7 +29,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 -   A porcentagem de iterações de teste que correspondem à meta de tempo de resposta para a página.
 
--   Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no Analisador de Testes de Carga:
+-   Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no **Analisador de Teste de Carga**:
 
 -   Analisando o tempo de resposta da página da Web na exibição de tabelas
 
@@ -39,7 +39,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Para exibir dados de tempo de resposta em uma tabela
 
-1.  No Analisador de Testes de Carga, escolha **Tabelas** na barra de ferramentas para garantir que a grade da tabela seja exibida.
+1.  No **Analisador de Teste de Carga**, escolha **Tabelas** na barra de ferramentas para garantir que a grade da tabela seja exibida.
 
 2.  Na caixa de listagem suspensa **Tabela**, selecione **Páginas**.
 
@@ -64,15 +64,15 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
     |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:** a meta de tempo da página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
     |**Meta da reunião %**|A porcentagem de solicitações feitas para a página da Web que atingiu a meta de tempo de resposta.|
 
- Para obter mais informações, consulte [Analyze Load Test Results and Errors in the Tables View](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) (Analisar resultados e erros de teste de carga na exibição de tabelas).
+ Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-response-time-data-in-a-graph"></a>Exibir dados de tempo de resposta em um gráfico
+## <a name="view-response-time-data-in-a-graph"></a>Exibir dados de tempo de resposta em um grafo
 
-Você também pode exibir dados de tempo de resposta em um gráfico para ver como eles mudam com o passar do tempo durante o teste de carga. Isso é especialmente útil se seu padrão de carga aumenta conforme a execução do teste (por exemplo, se você usar o padrão de carga por etapa). Para obter mais informações, consulte [Editando padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Você também pode exibir dados de tempo de resposta em um gráfico para ver como eles mudam com o passar do tempo durante o teste de carga. Isso é especialmente útil se seu padrão de carga aumenta conforme a execução do teste (por exemplo, se você usar o padrão de carga por etapa). Para obter mais informações, confira [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Para exibir dados de tempo de resposta em um gráfico
 
-1.  No Analisador de Teste de Carga, escolha **Gráficos** na barra de ferramentas para garantir que o gráfico seja exibido.
+1.  No **Analisador de Teste de Carga**, escolha **Grafos** na barra de ferramentas para garantir que o grafo seja exibido.
 
 2.  Na janela **Contadores**, expanda o nó do cenário no qual você está interessado (por exemplo, `Scenario1`).
 
@@ -86,15 +86,15 @@ Você também pode exibir dados de tempo de resposta em um gráfico para ver com
 
      Os dados são adicionado ao gráfico.
 
-7.  (Opcional) Repita a etapa anterior para Méd. Tempo da Página, Meta de Tempo de Resposta de Página e Total de Páginas.
+7.  (Opcional) Repita a etapa anterior para **Tempo Méd. Página**, **Meta de Tempo de Resposta da Página** e **Total de Páginas**.
 
     > [!NOTE]
-    > A Meta de Tempo de Resposta de Página é constante.
+    > A **Meta de Tempo de Resposta da Página** é constante.
 
- Para obter mais informações, consulte [Analisar resultados de teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analyze Load Test Results and Errors in the Tables View](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) (Analisar resultados de teste de carga e erros na exibição de tabelas)
-- [Como acessar resultados de teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

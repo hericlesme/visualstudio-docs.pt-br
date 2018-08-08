@@ -9,12 +9,12 @@ description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Stud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326985"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380675"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -114,7 +114,7 @@ Para adicionar uma conta alternativa:
 1. Entre no [Portal do Assinante](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sua MSA (Conta da Microsoft).
 2. Clique na guia **Assinaturas**.
 3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
-4. Insira o endereço de email da sua conta corporativa ou de estudante e clique em **Adicionar**. 
+4. Insira o endereço de email de sua conta corporativa ou de estudante e clique em **Adicionar**. 
     ![Conta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.  

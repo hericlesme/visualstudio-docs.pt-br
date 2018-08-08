@@ -10,23 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20eb70b6c3c6308e41599e65a4b00a3e4043e8d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1596c96662870118b8fa721f89b8a9ef1c6b831f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973598"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381527"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa
 
 Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste. Para obter mais informações, consulte [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md).
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
-A propriedade **Tempo de rampa de etapa** é definida na janela Propriedades. Edite as propriedades de cenário do teste de carga no Editor de Testes de Carga.
+A propriedade **Tempo de Rampa de Etapa** é definida na janela **Propriedades**. Edite as propriedades de cenário de teste de carga no **Editor de Teste de Carga**.
 
-A propriedade **Tempo de rampa de etapa** é usada apenas com um padrão de carga de etapa. Para obter mais informações, consulte [Editando padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+A propriedade **Tempo de rampa de etapa** é usada apenas com um padrão de carga de etapa. Para obter mais informações, confira [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 O padrão de carga em etapa é usado para aumentar a carga nos servidores à medida que o teste de carga é executado, de modo que você possa ver como o desempenho varia à medida que a carga de usuários aumenta. Por exemplo, para ver como será o desempenho dos servidores à medida que a carga de usuário aumenta para 2.000 usuários, você pode executar um teste de carga de 10 horas usando um padrão de carga em etapa com as seguintes propriedades:
 
@@ -43,11 +43,11 @@ O padrão de carga em etapa é usado para aumentar a carga nos servidores à med
 Essas configurações têm o teste de carga em execução por 30 minutos (1.800 segundos) nas cargas de 100, 200, 300, até 2.000 usuários.
 
 > [!NOTE]
-> A propriedade **Tempo de rampa de etapa** é a única dessas propriedades que não está disponível para escolha no Novo Assistente de Teste de Carga.
+> A propriedade **Tempo de Rampa de Etapa** é a única dessas propriedades que não está disponível para escolha no **Novo Assistente de Teste de Carga**.
 
 A propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) seja gradual e não imediata. No exemplo, a carga de usuário seria aumentada de 100 para 200 usuários durante um período de 20 segundos (um aumento de cinco usuários por segundo).
 
-## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Para editar a propriedade Tempo de Rampa de Etapa para um padrão de carga em etapa
+## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Para editar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa
 
 1.  Abra um teste de carga.
 
@@ -58,11 +58,11 @@ A propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa par
 3.  Selecione o nó **Padrão de carga de etapa**.
 
     > [!NOTE]
-    > O padrão de carga para o cenário deve ser um padrão de carga em etapa. Caso contrário, o padrão de carga exibirá o tipo de padrão de carga que está atualmente associado ao cenário. Para obter mais informações, consulte [Editando padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+    > O padrão de carga para o cenário deve ser um padrão de carga em etapa. Caso contrário, o padrão de carga exibirá o tipo de padrão de carga que está atualmente associado ao cenário. Para obter mais informações, confira [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 4.  No menu **Exibir**, selecione **Janela de Propriedades**.
 
-     As categorias e as propriedades do cenário são exibidas na janela Propriedades.
+     As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
 5.  Defina o valor para a propriedade **Tempo de rampa de etapa** inserindo um número para os segundos usados em cada etapa para adicionar gradualmente os usuários especificados pela propriedade **Contagem de usuário em etapas**.
 
@@ -70,7 +70,7 @@ A propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa par
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
+- [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
-- [Editando padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057948"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341232"
 ---
 # <a name="azure-sdk-for-python"></a>SDK do Azure para Python
 
@@ -41,7 +41,7 @@ A documentação pode ser encontrada em [azure-sdk-for-python.readthedocs.org](h
 
 O [SDK do Azure para a Central de desenvolvedores do Python](http://azure.microsoft.com/develop/python/) também conta com diversos recursos úteis, incluindo vários tutoriais:
 
-- Criando aplicativos Web com o [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) e [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- Criando aplicativos Web com o [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), o [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) e o [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Armazenamento de Blobs](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Armazenamento de tabelas](/azure/storage/storage-python-how-to-use-table-storage)
 - [Armazenamento de filas](/azure/storage/storage-python-how-to-use-queue-storage)
@@ -54,8 +54,7 @@ Para as APIs públicas sem documentação, os testes de unidade no [repositório
 
 - [Testes de unidade de Armazenamento](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Testes de unidade do Barramento de Serviço](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
-- [Testes de unidade de Gerenciamento de Serviços](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Testes de unidade de Gerenciamento de Recursos](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
+- [Testes de unidade de gerenciamento de serviços](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
 
 ## <a name="support"></a>Suporte
 

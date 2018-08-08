@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232279"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388144"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Flask completo
 
@@ -35,17 +35,17 @@ Este artigo aplica-se também ao modelo "Projeto Web do Flask/Jade", que produz 
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Etapa 4-1: Criar um projeto com base no modelo
 
-1. No Visual Studio, acesse **Gerenciador de Soluções**, clique com o botão direito do mouse na solução "LearningFlask" criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
+1. No Visual Studio, acesse **Gerenciador de Soluções**, clique com o botão direito do mouse na solução **LearningFlask** criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
 
-1. Na caixa de diálogo Novo Projeto, procure e selecione o modelo "Projeto Web do Flask", nomeie o projeto "FlaskWeb" e selecione **OK**.
+1. Na caixa de diálogo Novo Projeto, pesquise e selecione o modelo **Projeto Web do Flask**, nomeie o projeto "FlaskWeb" e selecione **OK**.
 
-1. Como o modelo novamente inclui um arquivo `requirements.txt`, o Visual Studio solicita onde instalar essas dependências. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
+1. Como o modelo novamente inclui um arquivo *requirements.txt*, o Visual Studio solicita o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
 
-1. Após o Visual Studio terminar de configurar o ambiente virtual, defina o projeto "FlaskWeb" para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse nesse projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
+1. Depois que o Visual Studio concluir a configuração do ambiente virtual, defina o projeto **FlaskWeb** para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse nesse projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
 
     ![Gerenciador de Soluções mostrando o projeto FlaskWeb como o projeto de inicialização](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Escolha **Depurar** > **Iniciar Depuração** (F5) ou usar o **Servidor Web** na barra de ferramentas para executar o servidor:
+1. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas para executar o servidor:
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
@@ -59,20 +59,20 @@ Este artigo aplica-se também ao modelo "Projeto Web do Flask/Jade", que produz 
 
 1. Você pode deixar o aplicativo em execução para as seções a seguir.
 
-    Se quiser parar o aplicativo e [confirmar as alterações para o controle de origem](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clicando com o botão direito na pasta para o ambiente virtual (provavelmente `env`) e selecione **Ignorar esses itens locais**.
+    Caso deseje interromper o aplicativo e [confirmar as alterações no controle do código-fonte](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clique com o botão direito do mouse na pasta do ambiente virtual (provavelmente **env**) e selecione **Ignorar estes itens locais**.
 
 ### <a name="examine-what-the-template-creates"></a>Examine o que o modelo cria
 
-O modelo "Projeto Web do Flask" cria a estrutura abaixo. O conteúdo é muito semelhante ao que você criou nas etapas anteriores. A diferença é que o modelo "Projeto Web do Flask" contém mais estrutura na pasta `static`, porque ela inclui jQuery e Bootstrap para obter um design responsivo. O modelo também adiciona uma página Contato. Em geral, se você seguiu as etapas anteriores deste tutorial, você já deve conhecer tudo com base no modelo.
+O modelo "Projeto Web do Flask" cria a estrutura abaixo. O conteúdo é muito semelhante ao que você criou nas etapas anteriores. A diferença é que o modelo "Projeto Web do Flask" contém mais estrutura na pasta *static*, porque ela inclui jQuery e Bootstrap para obter um design responsivo. O modelo também adiciona uma página Contato. Em geral, se você seguiu as etapas anteriores deste tutorial, você já deve conhecer tudo com base no modelo.
 
 - Arquivos na raiz do projeto:
-  - `runserver.py`, um script para executar o aplicativo em um servidor de desenvolvimento.
-  - `requirements.txt` que contém uma dependência no Flask 0.x.
-- A pasta `FlaskWeb` contém todos os arquivos de aplicativo:
-  - `__init.py__` marca o código do aplicativo como um módulo do Python, cria o objeto do Flask e importa os modos de exibição do aplicativo.
-  - `views.py` contém o código para renderizar páginas.
-  - A pasta `static` contém subpastas nomeadas `content` (arquivos CSS), `fonts` (arquivos de fonte) e `scripts` (arquivos JavaScript).
-  - A pasta `templates` contém um modelo de base `layout.html` juntamente com `about.html`, `contact.html` e `index.html` para páginas específicas que estendem, cada uma, `layout.html`.
+  - *runserver.py*, um script para executar o aplicativo em um servidor de desenvolvimento.
+  - *requirements.txt* contendo uma dependência do Flask 0.x.
+- A pasta *FlaskWeb* contém todos os arquivos de aplicativo:
+  - *\_\_init.py\_\_* marca o código do aplicativo como um módulo do Python, cria o objeto do Flask e importa as exibições do aplicativo.
+  - *views.py* contém o código para renderizar páginas.
+  - A pasta *static* contém subpastas chamadas *content* (arquivos CSS), *fonts* (arquivos de fonte) e *scripts* (arquivos JavaScript).
+  - A pasta *templates* contém um modelo base *layout.html* juntamente com *about.html*, *contact.html* e *index.html*, para páginas específicas que estendem *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pergunta: É possível compartilhar um ambiente virtual entre projetos do Visual Studio?
 
@@ -86,7 +86,7 @@ No entanto, para usar um ambiente virtual existente, faça o seguinte:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Etapa 4-2: Entender os modos de exibição e os modelos de página criados pelo modelo de projeto
 
-Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código para esses modos de exibição é encontrado na `FlaskWeb/views.py`. Cada função de exibição simplesmente chama `flask.render_template` com o caminho para um modelo e uma lista de variáveis de argumentos para os valores darem ao modelo. Por exemplo, a página Sobre é tratada pela função `about` (cujo decorador fornece o roteamento de URL):
+Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *FlaskWeb/views.py*. Cada função de exibição simplesmente chama `flask.render_template` com o caminho para um modelo e uma lista de variáveis de argumentos para os valores darem ao modelo. Por exemplo, a página Sobre é tratada pela função `about` (cujo decorador fornece o roteamento de URL):
 
 ```python
 @app.route('/about')
@@ -102,7 +102,7 @@ def about():
 
 As funções `home` e `contact` são quase idênticas, com decoradores semelhantes e argumentos ligeiramente diferentes.
 
-Os modelos estão localizados na pasta `templates` do aplicativo. O modelo de base, `layout.html`, é mais amplo. Ele se refere a todos os arquivos estáticos necessários (JavaScript e CSS), define um bloco nomeado "conteúdo" que outras páginas substituem e fornece outro bloco chamado "scripts". Os seguintes trechos anotados do `layout.html` mostram essas áreas específicas:
+Os modelos estão localizados na pasta *templates* do aplicativo. O modelo base, *layout.html*, é o mais abrangente. Ele se refere a todos os arquivos estáticos necessários (JavaScript e CSS), define um bloco nomeado "conteúdo" que outras páginas substituem e fornece outro bloco chamado "scripts". Os seguintes trechos anotados de *layout.html* mostram essas áreas específicas:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ Os modelos estão localizados na pasta `templates` do aplicativo. O modelo de ba
 </html>
 ```
 
-Os modelos de cada página, `about.html`, `contact.html` e `index.html`, cada uma estende o modelo base `layout.html`. `about.html` é o mais simples e mostra as marcas `{% extends %}` e `{% block content %}`:
+Cada um dos modelos de página individual, *about.html*, *contact.html* e *index.html*, estende o modelo base *layout.html*. *about.html* é o mais simples e mostra as marcações `{% extends %}` e `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,22 +156,22 @@ Os modelos de cada página, `about.html`, `contact.html` e `index.html`, cada um
 {% endblock %}
 ```
 
-`index.html` e `contact.html` usam a mesma estrutura e fornecem mais conteúdo no bloco "conteúdo".
+*index.html* e *contact.html* usam a mesma estrutura e fornecem mais conteúdo no bloco "conteúdo".
 
 ## <a name="the-flaskjade-web-project-template"></a>O modelo Projeto Web do Flask/Jade
 
 Conforme observado no início deste artigo, o Visual Studio fornece um modelo "Projeto Web do Flask/Jade", que cria um aplicativo visualmente idêntico ao produzido pelo "Projeto Web do Flask". A principal diferença é que ele usa o mecanismo de modelagem Jade, que é uma extensão do Jinja que implementa os mesmos conceitos com uma linguagem mais sucinta. Especificamente, o Jade usa palavras-chave em vez de marcas entre delimitadores {% %}, por exemplo, e permite que você se refira a elementos HTML e estilos CSS usando palavras-chave.
 
-Para habilitar o Jade, o modelo de projeto inclui primeiro o pacote pyjade no `requirements.txt`. 
+Para habilitar o Jade, o modelo de projeto inclui primeiro o pacote pyjade em *requirements.txt*. 
 
-O arquivo `__init__.py` do aplicativo contém uma linha para
+O arquivo *\_\_init\_\_.py* do aplicativo contém uma linha para
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
-Na pasta `templates`, você vê arquivos `.jade` em vez de modelos `.html`, e as exibições no `views.py` referenciam esses arquivos em suas chamadas a `flask.render_template`. Caso contrário, o código de modos de exibição é o mesmo.
+Na pasta *templates*, são exibidos arquivos *.jade* em vez de modelos *.html*, e as exibições em *views.py* referenciam esses arquivos em suas chamadas a `flask.render_template`. Caso contrário, o código de modos de exibição é o mesmo.
 
-Ao abrir um dos arquivos `.jade`, é possível ver a expressão mais sucinta de um modelo. Por exemplo, veja o conteúdo de `templates/layout.jade` conforme criado pelo modelo "Projeto Web do Flask/Jade":
+Abrindo um dos arquivos *.jade*, você pode ver a expressão mais sucinta de um modelo. Por exemplo, este é o conteúdo de *templates/layout.jade*, conforme criado pelo modelo "Projeto Web do Flask/Jade":
 
 ```jade
 doctype html
@@ -213,7 +213,7 @@ html
     block scripts
 ```
 
-E este é o conteúdo do `templates/about.jade`, que mostra o uso de `#{ <name>}` para espaços reservados:
+E este é o conteúdo de *templates/about.jade*, mostrando o uso de `#{ <name>}` para espaços reservados:
 
 ```jade
 extends layout

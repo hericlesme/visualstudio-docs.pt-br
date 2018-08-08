@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751995"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379573"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados de teste de carga
+# <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados do teste de carga
 
 Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os agentes, juntamente com um controlador, podem gerar mais carga simulada do que qualquer computador individual. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
-Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você deve identificar onde quer armazenar os resultados do teste de carga usando a janela Administrar Controladores de Teste.
+Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você precisa identificar o local de armazenamento dos resultados do teste de carga usando a janela **Administrar Controladores de Teste**.
 
 Para obter mais informações sobre agentes, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -36,11 +36,11 @@ Para obter mais informações sobre agentes, consulte [Controladores e agentes d
 
 1.  No **Gerenciador de Soluções**, abra o arquivo de teste de carga.
 
-2.  Na barra de ferramentas **Teste de Carga**, selecione **Gerenciar Controladores de Teste**. A caixa de diálogo Gerenciar Controlador de Teste é exibida. Se você estiver usando um agente remotamente, selecione um controlador.
+2.  Na barra de ferramentas **Teste de Carga**, selecione **Gerenciar Controladores de Teste**. A caixa de diálogo **Gerenciar Controlador de Teste** é exibida. Se você estiver usando um agente remotamente, selecione um controlador.
 
      ![Propriedades de conexão de repositório de resultados de teste de carga](../test/media/loadtestconnectionproperties.png) Propriedades de conexão de repositório de resultados de teste de carga
 
-3.  No **Repositório de resultados de testes de carga**, clique em (…) para exibir a caixa de diálogo **Propriedades da Conexão**.
+3.  No **Repositório de resultados do teste de carga**, clique em **(…)** para exibir a caixa de diálogo **Propriedades da Conexão**.
 
 4.  Em **Nome do Servidor**, digite o nome do servidor em que você executou os scripts `LoadTest`.
 
@@ -57,5 +57,5 @@ Para obter mais informações sobre agentes, consulte [Controladores e agentes d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Gerenciando resultados de teste de carga no repositório de resultados de teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

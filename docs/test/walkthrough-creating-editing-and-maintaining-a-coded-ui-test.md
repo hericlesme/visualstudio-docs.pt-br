@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751644"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382390"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -36,25 +36,25 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 6.  Escolha a pasta em que você salvará o projeto. Na caixa de texto **Local**, digite o nome da pasta.
 
-7.  Clique em **OK**.
+7.  Escolha **OK**.
 
-     O WPF Designer for Visual Studio abre e exibe a MainWindow do projeto.
+     O **WPF Designer for Visual Studio** é aberto e exibe a MainWindow do projeto.
 
 8.  Se a caixa de ferramentas não estiver aberta, abra-a. Escolha o menu **Exibir** e a opção **Caixa de Ferramentas**.
 
 9. Na seção **Todos os Controles do WPF**, arraste um controle **Button**, **CheckBox** e **ProgressBar** para a MainWindow na superfície de design.
 
-10. Selecione o controle Button. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
+10. Selecione o controle de **Botão**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
 
-11. Selecione o controle ProgressBar. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
+11. Selecione o controle **ProgressBar**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
 
-12. Selecione o controle Checkbox. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para checkBox1 e desmarque a propriedade **IsEnabled**.
+12. Selecione o controle **Caixa de Seleção**. Na janela **Propriedades**, altere o valor da propriedade **Nome** de \<No Name> para checkBox1 e desmarque a propriedade **IsEnabled**.
 
      ![Aplicativo WPF simples](../test/media/codedui_wpfapp.png)
 
 13. Clique duas vezes no controle de botão para adicionar um manipulador de eventos de clique.
 
-     O MainWindow.xmal.cs é exibido no Editor de Códigos com o cursor no novo método button1_Click.
+     O *MainWindow.xmal.cs* é exibido no Editor de Códigos com o cursor no novo método button1_Click.
 
 14. Na parte superior da classe MainWindow, adicione um delegado. O delegado será usado para a barra de progresso. Para adicionar o delegado, adicione o seguinte código:
 
@@ -141,7 +141,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
      A caixa de diálogo **UIMap – Construtor de Teste de IU Codificado** é exibida, e a janela do Visual Studio é minimizada.
 
-     Para obter mais informações sobre as opções da caixa de diálogo, consulte [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).
+     Para obter mais informações sobre as opções da caixa de diálogo, confira [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).
 
 1. Escolha **Iniciar Gravação** na caixa de diálogo **UIMap – Construtor de Teste de IU Codificado**.
 
@@ -184,7 +184,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 3. No arquivo *CodedUITest1.cs*, localize o método **CodedUITestMethod**, clique com o botão direito do mouse e selecione **Executar testes** ou execute o teste no **Gerenciador de Testes**.
 
-   Durante a execução do teste de IU codificado, o SimpleWPFApp permanece visível. Ele conduz as etapas realizadas no procedimento anterior. No entanto, quando o teste tenta marcar a caixa de seleção do controle de caixa de seleção, a janela **Resultados do Teste** mostra que o teste falhou. Isso ocorre porque o teste tenta marcar a caixa de seleção, mas não sabe que o controle de caixa de seleção permanece desabilitado até a barra de progresso ficar 100% concluída. Você pode corrigir esse e outros problemas semelhantes usando os vários métodos `UITestControl.WaitForControlXXX()` que estão disponíveis para testes de IU codificados. O próximo procedimento demonstrará o uso do método `WaitForControlEnabled()` para corrigir o problema que causou a falha desse teste. Para obter mais informações, consulte [Fazendo testes de IU codificado aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Durante a execução do teste de IU codificado, o SimpleWPFApp permanece visível. Ele conduz as etapas realizadas no procedimento anterior. No entanto, quando o teste tenta marcar a caixa de seleção do controle de caixa de seleção, a janela **Resultados do Teste** mostra que o teste falhou. Isso ocorre porque o teste tenta marcar a caixa de seleção, mas não sabe que o controle de caixa de seleção permanece desabilitado até a barra de progresso ficar 100% concluída. Você pode corrigir esse e outros problemas semelhantes usando os vários métodos `UITestControl.WaitForControlXXX()` que estão disponíveis para testes de IU codificados. O próximo procedimento demonstrará o uso do método `WaitForControlEnabled()` para corrigir o problema que causou a falha desse teste. Para obter mais informações, confira [Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar e executar novamente o teste de IU codificado
 
@@ -314,7 +314,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 10. No **Gerenciador de Soluções**, abra o arquivo *UIMap.Designer.cs*.
 
-11. No arquivo UIMap.Designer.cs, localize a propriedade **UIStartButton1**. Observe que `SearchProperties` está definido como `"buttonA"`:
+11. No arquivo *UIMap.Designer.cs*, localize a propriedade **UIStartButton1**. Observe que `SearchProperties` está definido como `"buttonA"`:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
             }
     ```
 
-     Agora você pode modificar o teste de IU codificado para usar o controle recém-mapeado. Conforme indicado no procedimento anterior, se você quiser substituir métodos ou propriedades no teste de IU codificado, faça isso no arquivo UIMap.cs.
+     Agora você pode modificar o teste de IU codificado para usar o controle recém-mapeado. Conforme indicado no procedimento anterior, caso deseje substituir métodos ou propriedades no teste de IU codificado, faça isso no arquivo *UIMap.cs*.
 
 12. No arquivo *UIMap.cs*, adicione um construtor e especifique a propriedade `SearchProperties` da propriedade `UIStartButton` para usar a propriedade `AutomationID` com um valor de `"buttonA":`
 
@@ -365,6 +365,6 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
-- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Editando testes de IU codificados usando o editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Editar testes de IU codificados usando o editor de teste de IU codificado](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

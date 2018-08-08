@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117622"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380506"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
 
@@ -63,19 +63,19 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 2.  No menu **Testar**, escolha **Executar** e **Executar Todos**.
 
-     O projeto de teste é compilado e executado. A janela Gerenciador de Testes é exibida e o teste é listado em **Testes Aprovados**. O painel Resumo, na parte inferior da janela, fornece mais detalhes sobre o teste selecionado.
+     O projeto de teste é compilado e executado. A janela **Gerenciador de Testes** é exibida e o teste é listado em **Testes Aprovados**. O painel **Resumo** na parte inferior da janela fornece mais detalhes sobre o teste selecionado.
 
      ![Gerenciador de Testes](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Adicione o projeto DLL à solução
 
-1.  No Gerenciador de Soluções, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e então **Adicionar Novo Projeto**.
+1.  No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e então **Adicionar Novo Projeto**.
 
      ![Criar o projeto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Na caixa de diálogo **Adicionar Novo Projeto**, escolha **DLL (aplicativos UWP)**.
 
-3.  Adicione o código a seguir ao arquivo **RooterLib.h**:
+3.  Adicione o código a seguir ao arquivo *RooterLib.h*:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 4.  Adicione o símbolo ROOTERLIB_EXPORTS à linha de comando.
 
-    1.  No Gerenciador de Soluções, escolha o projeto **RooterLib** e escolha **Propriedades** no menu de atalho.
+    1.  No **Gerenciador de Soluções**, escolha o projeto **RooterLib** e, em seguida, escolha **Propriedades** no menu de atalho.
 
          ![Adicionar uma definição de símbolo de pré-processador](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  Na caixa de diálogo Página de Propriedades de RooterLib, expanda **Propriedades de Configuração**, expanda **C++** e escolha **Pré-processador**.
+    2.  Na caixa de diálogo **Página de Propriedades de RooterLib**, expanda **Propriedades de Configuração**, expanda **C++** e escolha **Pré-processador**.
 
-    3.  Escolha **\<<Editar...>** na lista **Definições do Pré-processador** e, em seguida, adicione `ROOTERLIB_EXPORTS` na caixa de diálogo Definições do Pré-processador.
+    3.  Escolha **\<Editar...>** na lista **Definições do Pré-processador** e, em seguida, adicione `ROOTERLIB_EXPORTS` na caixa de diálogo **Definições do Pré-processador**.
 
-5.  Adicione implementações mínimas das funções declaradas. Abra **RooterLib.cpp** e adicione o seguinte código:
+5.  Adicione implementações mínimas das funções declaradas. Abra *RooterLib.cpp* e adicione o seguinte código:
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 1.  Adicione RooterLib ao projeto RooterLibTests.
 
-    1.  No Gerenciador de Soluções, escolha o projeto **RooterLibTests** e, em seguida, clique em **Referências** no menu de atalho.
+    1.  No **Gerenciador de Soluções**, escolha o projeto **RooterLibTests** e, em seguida, escolha **Referências** no menu de atalho.
 
-    2.  Na caixa de diálogo Propriedades do Projeto RooterLib, expanda **Propriedades Comuns** e escolha **Estrutura e Referências**.
+    2.  Na caixa de diálogo **Propriedades do Projeto RooterLib**, expanda **Propriedades Comuns** e escolha **Estrutura e Referências**.
 
     3.  Escolha **Adicionar Nova Referência**
 
     4.  Na caixa de diálogo **Adicionar Referência**, expanda **Solução** e, em seguida, escolha **Projetos**. Então selecione o item **RouterLib**.
 
-2.  Inclua o arquivo de cabeçalho RooterLib em **unittest1.cpp**.
+2.  Inclua o arquivo de cabeçalho RooterLib em *unittest1.cpp*.
 
-    1.  Abra **unittest1.cpp**.
+    1.  Abra *unittest1.cpp*.
 
     2.  Adicione esse código abaixo da linha `#include "CppUnitTest.h"`:
 
@@ -149,7 +149,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  Adicione um teste que use a função importada. Adicione o seguinte código a **unittest1.cpp**:
+3.  Adicione um teste que use a função importada. Adicione o seguinte código a *unittest1.cpp*:
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 4.  Compile a solução.
 
-     O novo teste é exibido no Gerenciador de Testes, no nó **Não Executar Testes**.
+     O novo teste é exibido no **Gerenciador de Testes**, no nó **Não Executar Testes**.
 
-5.  No Gerenciador de Testes, escolha **Executar Todos**.
+5.  No **Gerenciador de Testes**, escolha **Executar Todos**.
 
      ![Êxito no Teste básico](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
     >
     > Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.
 
-2.  No Gerenciador de Testes, escolha **Executar Todos**.
+2.  No **Gerenciador de Testes**, escolha **Executar Todos**.
 
 3.  O teste falhará.
 
@@ -212,7 +212,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
     > [!TIP]
     > Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.
 
-4.  Aprimore o código sob teste para que o novo teste seja aprovado. Adicione o seguinte ao **RooterLib.cpp**:
+4.  Aprimore o código sob teste para que o novo teste seja aprovado. Adicione o seguinte ao *RooterLib.cpp*:
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     ```
 
-5.  Compile a solução e, no Gerenciador de Testes, escolha **Executar Todos**.
+5.  Compile a solução e, no **Gerenciador de Testes**, escolha **Executar Todos**.
 
      Ambos os testes são aprovados.
 
@@ -243,7 +243,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 ##  <a name="Debug_a_failing_test"></a> Depurar um teste que falhou
 
-1.  Adicionar outro teste a **unittest1.cpp**:
+1.  Adicionar outro teste a *unittest1.cpp*:
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     ```
 
-2.  No Gerenciador de Testes, escolha **Executar Todos**.
+2.  No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     O teste falhará. Escolha o nome do teste no Gerenciador de Testes. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do Gerenciador de Testes.
+     O teste falhará. Escolha o nome do teste no **Gerenciador de Testes**. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do **Gerenciador de Testes**.
 
      ![Falha de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
          Quando a execução for interrompida no ponto de interrupção, percorra o código.
 
-    3.  Adicione código ao **RooterLib.cpp** para capturar a exceção:
+    3.  Adicione código ao *RooterLib.cpp* para capturar a exceção:
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
         ```
 
-    1.  No Gerenciador de Testes, escolha **Executar Tudo** para testar o método corrigido e ter certeza de que você não introduziu uma regressão.
+    1.  No **Gerenciador de Testes**, escolha **Executar Tudo** para testar o método corrigido e ter certeza de que você não introduziu uma regressão.
 
  Todos os testes agora foram aprovados.
 

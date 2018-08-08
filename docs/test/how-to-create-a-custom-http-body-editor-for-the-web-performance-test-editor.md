@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177042"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380637"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um Editor de Corpo HTTP Personalizado para o Editor de Testes de Desempenho Web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
 Você pode criar um editor de conteúdo personalizado que permite editar o conteúdo do corpo da cadeia de caracteres ou o conteúdo binário do corpo de uma solicitação de serviço Web, por exemplo, SOAP, REST, asmx, wcf, RIA e outros tipos de solicitação de serviço Web.
 
@@ -44,34 +44,34 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
 
 3.  Na lista de modelos, selecione **Biblioteca de Controle do Windows Forms**.
 
-4.  Na caixa de texto Nome, digite um nome, por exemplo, `MessageEditors`, e escolha **OK**.
+4.  Na caixa de texto **Nome**, digite um nome, por exemplo, `MessageEditors`, e escolha **OK**.
 
     > [!NOTE]
     > Este exemplo usa MessageEditors.
 
-     O projeto é adicionado à nova solução e um <xref:System.Windows.Forms.UserControl> chamado UserControl1.cs é apresentado no Designer.
+     O projeto é adicionado à nova solução e um <xref:System.Windows.Forms.UserControl> chamado *UserControl1.cs* é apresentado no Designer.
 
 5.  Da **Caixa de Ferramentas**, na categoria **Controles Comuns**, arraste uma <xref:System.Windows.Forms.RichTextBox> para a superfície de UserControl1.
 
 6.  Escolha o glifo de marcação de ação (![Glifo de Marcação Inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do controle <xref:System.Windows.Forms.RichTextBox> e, em seguida, selecione **Encaixar no Contêiner Pai**.
 
-7.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto da Biblioteca do Windows Forms e selecione **Propriedades**.
+7.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto da Biblioteca do Windows Forms e selecione **Propriedades**.
 
-8.  Na página Propriedades, selecione a guia **Aplicativo**.
+8.  Em **Propriedades**, selecione a guia **Aplicativo**.
 
 9. Na lista suspensa **Estrutura de destino**, selecione **.NET Framework 4**.
 
-10. A caixa de diálogo Modificação do Framework de Destino é exibida.
+10. A caixa de diálogo **Alteração da Estrutura de Destino** é exibida.
 
 11. Escolha **Sim**.
 
-12. No Gerenciador de Soluções, clique com o botão direito do mouse no nó **Referências** e selecione **Adicionar Referência**.
+12. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó **Referências** e selecione **Adicionar Referência**.
 
 13. A caixa de diálogo **Adicionar Referência** é exibida.
 
 14. Escolha a guia .**NET**, role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e clique em **OK**.
 
-15. Se o Designer de Exibição ainda não estiver aberto, no Gerenciador de Soluções, clique com o botão direito do mouse em **UserControl1.cs** e selecione **Designer de Exibição**.
+15. Se o **Designer de Exibição** ainda não estiver aberto, no **Gerenciador de Soluções**, clique com o botão direito do mouse em **UserControl1.cs** e, em seguida, selecione **Designer de Exibição**.
 
 16. Na superfície de design, clique com o botão direito do mouse e selecione **Exibir Código**.
 
@@ -121,7 +121,7 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Adicionar uma classe ao projeto de biblioteca de controle do Windows
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Adicionar uma classe ao projeto da Biblioteca de Controles do Windows
 
 Adicione uma classe ao projeto. Será usado para implementar as interfaces <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Para criar uma classe e implementar o código de interface IStringHttpBodyEditorPlugin
 
-1.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto da Biblioteca de Controle do Windows Forms e clique em **Adicionar Novo Item**.
+1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto da Biblioteca de Controles do Windows Forms e selecione **Adicionar Novo Item**.
 
 2.  A caixa de diálogo **Adicionar Novo Item** é exibida.
 
@@ -282,20 +282,20 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Para criar e implantar o DLL resultante para o IStringHttpBodyEditorPlugin e o IBinaryHttpBodyEditorPlugin
 
-1.  No menu Build, escolha **Build \<nome do projeto de biblioteca de controle do Windows Form>**.
+1.  No menu **Build**, escolha **Compilar \<nome do projeto da Biblioteca de Controles do Windows Form>**.
 
 2.  Feche todas as instâncias do Visual Studio.
 
     > [!NOTE]
     > Fechar o Visual Studio garante que o arquivo *.dll* não seja bloqueado antes que você tente copiá-lo.
 
-3.  Copie o arquivo *.dll* resultante da pasta *bin\debug* de seus projetos (por exemplo, *MessageEditors.dll*) para %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Copie o arquivo *.dll* resultante da pasta *bin\debug* dos projetos (por exemplo, *MessageEditors.dll*) para *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Abra o Visual Studio.
 
      O *. dll* agora está registrado no Visual Studio.
 
-## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Verifique os plug-ins usando um Teste de desempenho Web
+## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Verificar os plug-ins usando um Teste de Desempenho Web
 
 ### <a name="to-test-your-plug-ins"></a>Para testar plug-ins
 
@@ -305,17 +305,17 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 3.  Quando terminar a gravação, no Editor de Testes de Desempenho Web, expanda a solicitação para o serviço Web e selecione **Corpo da string** ou um **Corpo binário**.
 
-4.  Na janela Propriedades, selecione Corpo da string ou Corpo Binário e escolha as reticências (…).
+4.  Na janela Propriedades, selecione Corpo da Cadeia de Caracteres ou Corpo Binário e escolha as reticências **(…)**.
 
      A caixa de diálogo **Editar corpo de dados HTTP** é exibida.
 
-5.  Agora você pode editar os dados e escolher OK. Isso chama o método GetNewValue aplicável para atualizar o conteúdo no <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5.  Agora você pode editar os dados e escolher **OK**. Isso chama o método GetNewValue aplicável para atualizar o conteúdo no <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
-## <a name="compile-the-code"></a>Compile o código
+## <a name="compile-the-code"></a>Compilar o código
 
 Verifique se o framework de destino para o projeto da Biblioteca de Controles do Windows é o .NET Framework 4.5. Por padrão, os projetos de biblioteca de controle do Windows destinam-se à estrutura do cliente do .NET Framework 4.5, que não permitirá a inclusão de referência de Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-Para obter mais informações, consulte [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md).
+Para obter mais informações, confira [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
 ## <a name="see-also"></a>Consulte também
 
@@ -325,9 +325,9 @@ Para obter mais informações, consulte [Página Aplicativo, Designer de Projeto
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como criar um plug-in de nível de solicitação](../test/how-to-create-a-request-level-plug-in.md)
-- [Codificando uma regra de extração personalizada para um teste de desempenho Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Codificando uma regra de validação personalizada para um teste de desempenho Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Como criar um plug-in no nível da solicitação](../test/how-to-create-a-request-level-plug-in.md)
+- [Codificar uma regra de extração personalizada para um teste de desempenho Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Codificar uma regra de validação personalizada para um teste de desempenho Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)
 - [Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845750"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382084"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento Orientado por Testes com o Gerenciador de Testes
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 
 É recomendável que você crie testes de unidade para ajudar a manter seu código funcionando corretamente muitas etapas incrementais de desenvolvimento. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Adaptadores estão disponíveis para as estruturas comumente usadas e você pode escrever seus próprios adaptadores para outras estruturas.
 
@@ -28,7 +28,7 @@ ms.locfileid: "34845750"
 
 -   Consulte todas as informações que você precisa em uma janela.
 
-## <a name="using-test-explorer"></a>Usando o Gerenciador de Testes
+## <a name="use-test-explorer"></a>Usar o Gerenciador de Testes
  ![Gerenciador de Testes de Unidade mostrando o botão Executar Todos](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes
@@ -39,7 +39,7 @@ ms.locfileid: "34845750"
 
     1.  Criar um projeto de teste.
 
-         Na caixa de diálogo **Novo Projeto**, expanda **Visual Basic**, **Visual C#** ou **Visual C++** e escolha **Teste**.
+         Na caixa de diálogo **Novo Projeto**, expanda **Visual Basic** > **Visual C#** ou **Visual C++** e, em seguida, escolha **Teste**.
 
          Selecione **Projeto de teste de unidade**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "34845750"
 
 2.  Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
-3.  Na barra de menus, escolha **Teste**, **Executar testes de unidade**, **Todos os testes**.
+3.  Na barra de menus, escolha **Teste** > **Executar Testes de Unidade** > **Todos os Testes**.
 
      A solução é criada e os testes são executados.
 
@@ -69,16 +69,16 @@ ms.locfileid: "34845750"
 > Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Passo a passo: Usando testes de unidade para desenvolver um método
  Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
-#### <a name="creating-the-test-and-method"></a>Criando o teste e o método
+### <a name="create-the-test-and-method"></a>Criar o teste e o método
 
 1.  Crie um projeto de biblioteca de classes do Visual C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.
 
 2.  Criar um projeto de teste.
 
-    -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.
+    -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#** > **Teste** e, em seguida, escolha **Projeto de Teste de Unidade**.
 
          ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ ms.locfileid: "34845750"
 
 4.  Gere o método do teste.
 
-    1.  Coloque o cursor em `Rooter`, em seguida, no menu de atalho, escolha **Gerar**, **Novo Tipo**.
+    1.  Coloque o cursor em `Rooter` e, em seguida, no menu de atalho, escolha **Gerar** > **Novo Tipo**.
 
     2.  Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.
 
-    3.  Coloque o cursor em `SquareRoot`, em seguida, no menu de atalho, escolha **Gerar**, **Stub do método**.
+    3.  Coloque o cursor em `SquareRoot` e, em seguida, no menu de atalho, escolha **Gerar** > **Stub do Método**.
 
 5.  Execute o teste de unidade.
 
-    1.  No menu **Teste**, escolha **Executar Testes de Unidade**, **Todos os Testes**.
+    1.  No menu **Teste**, escolha **Executar Testes de Unidade** > **Todos os Testes**.
 
          A solução é criada e executada.
 
@@ -132,7 +132,7 @@ ms.locfileid: "34845750"
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Após cada alteração, faça todos os testes serem aprovados
 
-1.  Em `MyMath\Rooter.cs`, aprimore o código de `SquareRoot`:
+1.  Em *MyMath\Rooter.cs*, melhore o código de `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)

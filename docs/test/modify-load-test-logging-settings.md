@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968188"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379651"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
@@ -25,14 +25,14 @@ O *controlador de teste* armazena em spool todos os dados de exemplo do teste de
 
 |Tarefa|Tópicos associados|
 |----------|-----------------------|
-|**Especificar a frequência de salvamento de logs durante uma execução de teste de carga:** você pode especificar a frequência com que deseja que o log do teste seja salvo quando o teste de carga é executado.|-   [Como especificar com que frequência os logs de teste são salvos](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se falhas no teste são salvas nos logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Especificar a frequência de salvamento de logs durante uma execução de teste de carga:** você pode especificar a frequência com que deseja que o log do teste seja salvo quando o teste de carga é executado.|-   [Como especificar a frequência com que os logs de teste são salvos](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Definir o tamanho máximo de arquivo para o arquivo de log:** você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho de arquivo máximo que deseja usar para o arquivo de log.|[Como especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
-Uma propriedade relacionada é o armazenamento de **Detalhes de tempo**. Para obter mais informações, consulte [Como configurar a coleta de detalhes completos para habilitar o gráfico de atividade de usuário virtual](../test/how-to-configure-load-tests-to-collect-full-details.md).
+Uma propriedade relacionada é **Armazenamento de Detalhes de Tempo**. Para saber mais, confira [Como configurar a coleta de detalhes completos para habilitar o gráfico de atividade do usuário virtual](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Definindo configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

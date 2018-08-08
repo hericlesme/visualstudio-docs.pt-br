@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978145"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380857"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -33,7 +33,7 @@ Para obter informações sobre como executar testes em uma linha de comando, con
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- O projeto Banco. Consulte [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md).
+- O projeto Banco. Confira [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md).
 
 ## <a name="create-a-project-to-test"></a>Criar um projeto para teste
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. No menu **Arquivo**, selecione **Adicionar** > **Novo Projeto**.
 
-2. Na caixa de diálogo Novo Projeto, expanda **Instalado**, expanda **Visual C#** e escolha **Testar**.
+2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e, em seguida, escolha **Teste**.
 
 3. Na lista de modelos, selecione **Projeto de Teste de Unidade**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. No projeto **BankTests** adicione uma referência ao projeto **Bank**.
 
-   No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de contexto.
+   No **Gerenciador de Soluções**, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de contexto.
 
-6. Na caixa de diálogo Gerenciador de Referências, expanda **Solução** e marque o item **Banco**.
+6. Na caixa de diálogo **Gerenciador de Referências**, expanda **Solução** e, em seguida, marque o item **Banco**.
 
 ## <a name="create-the-test-class"></a>Criar a classe de teste
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Executar o teste novamente
 
-No Gerenciador de testes, escolha **Executar Todos** para executar novamente o teste. A barra verde/vermelho fica verde para indicar que o teste foi aprovado, e o teste é movido para o grupo **Testes Aprovados**.
+No **Gerenciador de Testes**, escolha **Executar Todos** para executar o teste novamente. A barra verde/vermelho fica verde para indicar que o teste foi aprovado, e o teste é movido para o grupo **Testes Aprovados**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Usar testes de unidade para melhorar o código
 

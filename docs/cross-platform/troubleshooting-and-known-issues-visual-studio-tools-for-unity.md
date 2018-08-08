@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153898"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251569"
 ---
-# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
+# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
 
 Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.
 
@@ -54,7 +54,7 @@ Isso deve corrigir o problema. Caso o problema persista, execute um prompt de co
 
 Vários plug-ins do Unity como Parse, FMOD, UMP (Player de Mídia Universal), ZFBrowser ou Embedded Browser usam threads nativos. Isso é um problema quando um plug-in acaba anexando um thread nativo ao tempo de execução, fazendo chamadas de bloqueio para o sistema operacional. Isso significa que o Unity não consegue interromper esse thread para o depurador (ou o recarregamento de domínio) e trava.
 
-Para o FMOD, há uma solução alternativa, você pode passar o [sinalizador](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialização FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE para desabilitar o processamento assíncrono e executar todo o processamento no thread principal.
+Para o FMOD, há uma solução alternativa. Você pode passar o [sinalizador](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialização `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para desabilitar o processamento assíncrono e executar todo o processamento no thread principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Projeto incompatível no Visual Studio
 
@@ -104,7 +104,7 @@ O USB é bastante rápido para a depuração, e as Ferramentas do Visual Studio 
 
 Tente atualizar o Visual Studio 2015 para atualização 3.
 
-## <a name="known-issues"></a>Problemas Conhecidos
+## <a name="known-issues"></a>Problemas conhecidos
 
  Há problemas conhecidos nas Ferramentas do Visual Studio para Unity, decorrentes de como o depurador interage com a versão mais antiga do compilador C# do Unity. Estamos trabalhando para ajudar a corrigir esses problemas, mas, enquanto isso, você poderá enfrentar os seguintes problemas:
 
@@ -114,7 +114,7 @@ Tente atualizar o Visual Studio 2015 para atualização 3.
 
 - A intervenção ou saída de métodos pode se comportar incorretamente, especialmente em iteradores ou em instruções switch.
 
-## <a name="reporting-errors"></a>Erros de relatório
+## <a name="report-errors"></a>Relatar erros
 
  Ajude-nos a melhorar a qualidade das Ferramentas do Visual Studio para Unity enviando relatórios de erro quando ocorrerem falhas, congelamentos ou outros erros. Isso nos ajuda a investigar e corrigir problemas nas Ferramentas do Visual Studio para Unity. Obrigado!
 

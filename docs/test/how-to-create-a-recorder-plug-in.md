@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176207"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382059"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravador
+# <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravação
 
-O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas de gravação do teste de desempenho da Web, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
+O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas do **Gravador de Teste de Desempenho Web**, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
 
-Um plug-in de gravador permite que você execute sua própria correlação personalizada em parâmetros dinâmicos. Com a funcionalidade de correlação interna, os testes de desempenho Web detectam os parâmetros dinâmicos na gravação da Web no momento da conclusão ou quando você usa **Promover parâmetros dinâmicos a parâmetros de teste na Web** na barra de ferramentas do Editor de Testes de Desempenho Web. No entanto, a funcionalidade de detecção interna nem sempre encontra todos os parâmetros dinâmicos. Por exemplo, ela não encontra uma ID da sessão, que normalmente tem seu valor alterado entre 5 a 30 minutos. Portanto, você precisa executar manualmente o processo de correlação.
+Um plug-in de gravador permite que você execute sua própria correlação personalizada em parâmetros dinâmicos. Com a funcionalidade de correlação interna, os testes de desempenho Web detectam os parâmetros dinâmicos na gravação da Web no momento da conclusão ou quando você usa **Promover Parâmetros Dinâmicos a Parâmetros de Teste na Web** na barra de ferramentas do **Editor de Testes de Desempenho Web**. No entanto, a funcionalidade de detecção interna nem sempre encontra todos os parâmetros dinâmicos. Por exemplo, ela não encontra uma ID da sessão, que normalmente tem seu valor alterado entre 5 a 30 minutos. Portanto, você precisa executar manualmente o processo de correlação.
 
 O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você escreva código para seu próprio plug-in personalizado. Este plug-in pode executar a correlação ou modificar o teste de desempenho na Web de várias maneiras antes de ser salvo e apresentado no Editor de Testes de Desempenho Web. Portanto, se você determinar que uma variável dinâmica específica deve ser correlacionada para muitas de suas gravações, será possível automatizar o processo.
 
@@ -29,13 +29,13 @@ Um plug-in de gravação também pode ser usado para adicionar regras de extraç
 
 Os procedimentos a seguir descrevem como criar o código rudimentar para um plug-in de gravação, implantar o plug-in e executar o plug-in. O código de exemplo após os procedimentos demonstra como usar o Visual C# para criar um plug-in de gravação personalizado para correlação de parâmetro dinâmico.
 
-## <a name="creating-a-recorder-plug-in"></a>Criando um plug-in de gravação
+## <a name="create-a-recorder-plug-in"></a>Criar um plug-in do gravador
 
 ### <a name="to-create-a-recorder-plug-in"></a>Para criar um plug-in de gravação
 
 1.  Abra uma solução que contenha o projeto de teste de carga e desempenho na Web com o teste de desempenho na Web para o qual você deseja criar um plug-in de gravação.
 
-2.  No Gerenciador de Soluções, clique com o botão direito do mouse na solução, selecione **Adicionar** e escolha **Novo Projeto**.
+2.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, selecione **Adicionar** e, em seguida, escolha **Novo Projeto**.
 
      A caixa de diálogo **Adicionar Novo Projeto** é exibida.
 
@@ -45,9 +45,9 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 5.  Na caixa de texto **Nome**, digite um nome para o plug-in de gravador.
 
-     A biblioteca de classes é adicionada ao Gerenciador de Soluções e a nova classe é aberta no Editor de Códigos.
+     A biblioteca de classes é adicionada ao **Gerenciador de Soluções** e a nova classe é aberta no **Editor de Códigos**.
 
-6.  No Gerenciador de Soluções, na nova pasta de projeto de biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
+6.  No **Gerenciador de Soluções**, na nova pasta de projeto da biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
 
     > [!TIP]
     > Um exemplo de uma nova pasta de projeto de biblioteca de classes é **RecorderPlugins**.
@@ -58,7 +58,7 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 8.  Role para baixo, selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e escolha **OK**.
 
-     O **Microsoft.VisualStudio.QualityTools.WebTestFramework** é adicionado à pasta **Referências** do Gerenciador de Soluções.
+     O **Microsoft.VisualStudio.QualityTools.WebTestFramework** é adicionado à pasta **Referências** do **Gerenciador de Soluções**.
 
 9. Escreva o código para o plug-in de gravação. Primeiro, crie uma nova classe pública que derive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,7 +81,7 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 11. Adicione mais código de acordo com o que você deseja que o plug-in de gravação execute depois da gravação da Web. Por exemplo, você pode adicionar código para manipular a correlação personalizada, conforme mostrado no exemplo abaixo. Também é possível criar um plug-in de gravação para tarefas como converter comentários em transações ou adicionar regras de validação ao teste de desempenho na Web.
 
-12. No menu **Build**, escolha Compilar \<nome do projeto de biblioteca de classes>.
+12. No menu **Build**, escolha **Compilar \<nome do projeto de biblioteca de classes>**.
 
 13. Em seguida, implante o plug-in de gravador para que ele seja registrado com o Visual Studio.
 
@@ -89,9 +89,9 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 Depois de compilar o plug-in de gravação, será necessário colocar a DLL resultante em um dos dois locais:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*versão*>\WebTestPlugins
+-   *%USERPROFILE%\Meus Documentos\Visual Studio \<* versão *>\WebTestPlugins*
 
 > [!WARNING]
 > Depois de copiar o plug-in de gravador em um dos dois locais, você deverá reiniciar o Visual Studio para que ele seja registrado.
@@ -102,7 +102,7 @@ Depois de compilar o plug-in de gravação, será necessário colocar a DLL resu
 
      A caixa de diálogo **Habilitar WebTestRecordPlugins** é exibida.
 
-2.  Marque a caixa de seleção do plug-in de gravação e escolha OK.
+2.  Marque a caixa de seleção do plug-in de gravador e escolha **OK**.
 
      Depois que o teste de desempenho na Web concluir a gravação, o novo plug-in de gravação será executado.
 

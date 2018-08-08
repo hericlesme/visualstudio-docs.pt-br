@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7208d3086450604678b1fce78d4f6784bd38d50f
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065589"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251615"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemplos de desenvolvimento móvel multiplataforma
 Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multiplataforma geram exemplos completos que podem ser usados para aprendizado. Além disso, o Centro de Desenvolvimento do Windows contém vários aplicativos de exemplo que você pode baixar e experimentar no Visual Studio.  
@@ -52,4 +52,4 @@ Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multi
   
  Para abrir um dos exemplos no Visual Studio, baixe o arquivo zip e abra a página **Propriedades** do arquivo baixado no Explorer. Escolha o botão **Desbloquear** e, em seguida, **OK**. Extraia o conteúdo do arquivo zip em um local conveniente e, em seguida, abra a pasta C++ na amostra extraída e abra o arquivo da solução.  
   
- Para compilar a amostra, pressione F7 ou, na barra de menus, escolha **Compilar**, **Compilar Solução**.
+ Para compilar a amostra, pressione **F7** ou, na barra de menus, escolha **Compilar**, **Compilar Solução**.

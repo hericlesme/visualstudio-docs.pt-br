@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844687"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379632"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 
@@ -44,7 +44,7 @@ Se você souber a estrutura em que você está interessado:
 
 2. Digite o nome da estrutura na caixa **Localizar**.
 
-3. Escolha a estrutura na lista de resultados para navegar até a página do Visual Studio Marketplace da ferramenta.
+3. Escolha a estrutura na lista de resultados para navegar para a página do **Visual Studio Marketplace** da ferramenta.
 
 Para procurar uma lista de estruturas juntamente com outras ferramentas de teste:
 
@@ -54,7 +54,7 @@ Para procurar uma lista de estruturas juntamente com outras ferramentas de teste
 
 3. Na lista **Categoria** (rotulada como **Mostrando**), expanda o nó **Ferramentas** e, em seguida, escolha **Teste**.
 
-4. Escolha uma estrutura na lista de resultados para navegar até uma página do Visual Studio Marketplace da ferramenta.
+4. Escolha uma estrutura na lista de resultados para navegar para uma página do **Visual Studio Marketplace** da ferramenta.
 
 ## <a name="update-to-the-latest-test-adapters"></a>Atualizar para os adaptadores de teste mais recentes
 
@@ -66,7 +66,7 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
 2. Clique na guia **Atualizações** e procurar os adaptadores de teste NUnit ou xUnit que estão instalados.
 
-3. Selecione cada adaptador de teste e, em seguida, selecione a versão estável mais recente no menu suspenso.
+3. Selecione cada adaptador de teste e, em seguida, selecione a última versão estável no menu suspenso.
 
 4. Escolha o botão **Instalar**.
 

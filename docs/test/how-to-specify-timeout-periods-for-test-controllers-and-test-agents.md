@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979042"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379254"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como especificar períodos de tempo limite para controladores e agentes de teste
 
@@ -26,7 +26,7 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
 
  Para editar várias configurações de tempo limite de um controlador de teste ou de um agente de teste, modifique os seguintes arquivos de configuração usando os nomes de chaves e valores nas tabelas:
 
--   Controlador de teste: QTController.exe.config
+-   Controlador de teste: *QTController.exe.config*
 
     |Nome da chave|Descrição|Valor|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
     |AgentInitializeTimeout|Número de segundos da espera pela inicialização de todos os agentes e seus coletores de dados no início de uma execução de teste, antes de cancelar a execução. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
     |AgentCleanupTimeout|Número de segundos da espera pela limpeza de todos os agentes e seus coletores de dados, antes de concluir a execução do teste. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
 
--   Test Agent: QTAgentService.exe.config
+-   Test Agent: *QTAgentService.exe.config*
 
     |Nome da chave|Descrição|Valor|
     |--------------|-----------------|-----------|
@@ -46,9 +46,9 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Para especificar opções de tempo limite de agente para um controlador de teste
 
-1. Abra o arquivo de configuração XML QTCcontroller.exe.config localizado em %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Abra o arquivo de configuração XML *QTCcontroller.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. localize a marca `<appSettings>`.
+2. Localize a marcação `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -80,9 +80,9 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Para especificar opções de tempo limite de agente para um agente de teste
 
-1. Abra o arquivo de configuração XML QTAgentService.exe.config localizado em <letra da unidade>\ProgramFiles (x86)\Microsoft Visual Studio 2017\Common7\IDE\.
+1. Abra o arquivo de configuração XML *QTAgentService.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. localize a marca `<appSettings>`.
+2. Localize a marcação `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -115,7 +115,7 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
 ## <a name="see-also"></a>Consulte também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
-- [Modificando configurações de registro em log de teste de carga](../test/modify-load-test-logging-settings.md)
-- [Configurando portas para Test Controllers e Test Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
+- [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Como especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Como associar um Test Controller ou um Test Agent a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Como associar um controlador de teste ou um agente de teste a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 242a8a5521d53e631e69036a94434f892fb2e19c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281174"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380786"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -104,7 +104,7 @@ R: Sim. Como assinante do Visual Studio, você obtém acesso a canais especializ
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: O que acontece quando minha assinatura Pluralsight termina?
 R: No final de sua assinatura gratuita do Pluralsight, você tem duas opções:
-- Você obtém acesso gratuito por 12 meses (confira a [tabela de qualificação](#eligibility) para ver se sua assinatura está qualificada) a um conjunto limitado de 50 cursos em uma das três áreas principais, como: desenvolvimento de aplicativos na nuvem; IA, aprendizado de máquina e dados e DevOps na nuvem. Espere receber um email do Pluralsight para solicitar o acesso gratuito após a expiração. Confira uma [lista de cursos](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) disponíveis em cada biblioteca parcial.
+- Você obtém acesso gratuito por 12 meses (confira a [tabela de qualificação](#eligibility) para ver se a sua assinatura está qualificada) a um conjunto limitado de 50 cursos em uma das três áreas principais, incluindo: desenvolvimento de aplicativos na nuvem; IA, aprendizado de máquina e dados e DevOps na nuvem. Espere receber um email do Pluralsight para solicitar o acesso gratuito após a expiração. Confira uma [lista de cursos](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) disponíveis em cada biblioteca parcial.
 - Você pode optar por comprar uma assinatura diretamente do Pluralsight com um desconto de 10%, que dá acesso ao catálogo de curso completo.  Entre em contato com [Pluralsight](http://www.pluralsight.com) para obter todos os detalhes.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>P: Minha empresa renova sua assinatura do Visual Studio por meio de um Contrato Enterprise. O benefício do Pluralsight é restaurado?

@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154216"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252460"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 
 ## <a name="install-visual-studio"></a>Instalar o Visual Studio
 
-### <a name="unity-bundled-installation"></a>Instalação de pacote do Unity
+### <a name="unity-bundled-installation"></a>Instalação em pacote do Unity
 
 Começando pelo Unity 2018.1, o Visual Studio é o editor de script padrão de C# para Unity e está incluído no Assistente de Download do Unity, bem como na ferramenta de instalação do Unity Hub.
 
@@ -77,7 +77,7 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 1. Após a seleção do Visual Studio na lista **Editor de Script Externo**, confirme se a caixa de seleção **Anexo do Editor** está selecionada.
 
-1. Feche a caixa de diálogo Preferências para concluir o processo de configuração.
+1. Feche a caixa de diálogo **Preferências** para concluir o processo de configuração.
 
 ## <a name="support-for-older-versions"></a>Suporte para versões mais antigas
 
@@ -93,4 +93,4 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 ## <a name="next-steps"></a>Próximas etapas
 
- Para saber como trabalhar e como depurar seu projeto do Unity no Visual Studio, consulte [Usando as Ferramentas do Visual Studio para Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Para saber como trabalhar com o projeto do Unity no Visual Studio e como depurá-lo, confira [Ferramentas do Visual Studio para Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

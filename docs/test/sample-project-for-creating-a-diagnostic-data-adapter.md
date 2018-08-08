@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977109"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380764"
 ---
-# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Projeto de amostra para criar um adaptador de dados de diagnóstico
+# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Projeto de exemplo para criação de um adaptador de dados de diagnóstico
 
 "MyDiagnosticDataAdapter" é um adaptador de dados de diagnóstico simples que pode anexar um arquivo de log aos resultados do teste quando você executa testes.
 
@@ -324,7 +324,7 @@ Veja a seguir um exemplo de arquivo de configuração para seu editor de configu
 
 ```
 
-## <a name="compiling-the-code"></a>Compilando o código
+## <a name="compile-the-code"></a>Compilar o código
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Para criar o projeto de código para este adaptador de diagnóstico
 
@@ -354,7 +354,7 @@ Veja a seguir um exemplo de arquivo de configuração para seu editor de configu
 
 7.  Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  No Gerenciador de Soluções, clique com o botão direito do mouse em **Referências** e selecione **Adicionar Referência**.
+    1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione **Adicionar Referência**.
 
     2.  Escolha **Procurar** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -364,7 +364,7 @@ Veja a seguir um exemplo de arquivo de configuração para seu editor de configu
 
 8.  Copie a classe do adaptador de dados de diagnóstico listada anteriormente neste documento na classe da sua biblioteca de classes. Salve essa classe.
 
-9. Para adicionar um controle de usuário ao projeto, clique com o botão direito do mouse no projeto MyDataCollector no Gerenciador de Soluções, aponte para **Adicionar** e escolha **Controle do Usuário**. Escolha **Adicionar**.
+9. Para adicionar um controle de usuário ao projeto, clique com o botão direito do mouse no projeto **MyDataCollector** no **Gerenciador de Soluções**, aponte para **Adicionar** e, em seguida, escolha **Controle de Usuário**. Escolha **Adicionar**.
 
 10. Usando a Caixa de Ferramentas, adicione um rótulo ao controle de usuário e altere a propriedade Texto para **Nome de Arquivo:**.
 
@@ -375,15 +375,15 @@ Veja a seguir um exemplo de arquivo de configuração para seu editor de configu
     > [!NOTE]
     > Por padrão, o controle de usuário é chamado UserControl1. Verifique se o código de classe do controle de usuário usa o nome do seu controle de usuário.
 
-13. Para criar o arquivo de configuração, no **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, aponte para **Adicionar** e escolha **Novo Item**. Opte por selecionar **Arquivo de Configuração de Aplicativo** e, em seguida, escolha **Adicionar**. Isso adicionará um arquivo chamado **App.config** à sua solução.
+13. Para criar o arquivo de configuração, no **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, aponte para **Adicionar** e escolha **Novo Item**. Opte por selecionar **Arquivo de Configuração de Aplicativo** e, em seguida, escolha **Adicionar**. Isso adicionará um arquivo chamado *App.config* à sua solução.
 
 14. Copie o XML do exemplo que foi fornecido antes no arquivo XML. Salve o arquivo.
 
-15. Compile a solução e copie o assembly compilado e o arquivo `App.config` no diretório *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
+15. Compile a solução e, em seguida, copie o assembly compilado e o arquivo *App.config* para o diretório *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
 16. Crie configurações de teste que usem esse adaptador de diagnóstico de dados personalizado. Defina as configurações de teste para coletar um arquivo que existe.
 
-     Se estiver executando seus testes no Microsoft Test Manager, você poderá atribuir essas configurações de teste ao seu plano de teste antes de executar os testes ou usar o comando Executar com opções para atribuir e substituir configurações de teste. Para obter mais informações sobre as configurações de teste, consulte [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+     Se estiver executando seus testes no Microsoft Test Manager, você poderá atribuir essas configurações de teste ao seu plano de teste antes de executar os testes ou usar o comando Executar com opções para atribuir e substituir configurações de teste. Para obter mais informações sobre as configurações de teste, confira [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Execute os testes usando as configurações de teste com o adaptador de dados de diagnóstico selecionado.
 
@@ -392,6 +392,6 @@ Veja a seguir um exemplo de arquivo de configuração para seu editor de configu
 ## <a name="see-also"></a>Consulte também
 
 - [Como criar um adaptador de dados de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Como criar um editor personalizado para dados para o adaptador de dados de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Como criar um editor personalizado de dados para o adaptador de dados de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Como instalar um adaptador de dados de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Criando um adaptador de dados de diagnóstico para coletar dados personalizados ou afetar um computador de teste](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Criar um adaptador de dados de diagnóstico para coletar dados personalizados ou afetar um computador de teste](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751395"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380242"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Usando a legenda de exibição dos gráficos para analisar testes de carga
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar a legenda da exibição Grafos para analisar testes de carga
 
 A exibição Gráficos do Analisador de Testes de Carga inclui um painel de legenda que exibe informações para cada contador de desempenho associado ao gráfico selecionado atualmente.
 
@@ -31,18 +31,18 @@ As seguintes informações estão contidas na legenda:
 -   **Intervalo:** esta coluna exibe o intervalo do eixo y do contador de desempenho. Por padrão, esse valor se ajustará automaticamente à medida que o intervalo de dados de exemplo mudar. Um intervalo definido automaticamente sempre será a próxima potência de 10 maior que o valor máximo; isso inclui potências negativas de dez. Um gráfico pode conter vários contadores, cada um com um intervalo diferente. Por isso, o eixo y não é identificado com nenhum intervalo específico, e sim identificado com valores de 0-100 que representam uma porcentagem do intervalo total para cada contador. Por exemplo, para um contador com um intervalo de 1.000, um ponto de dados de 60 no eixo y corresponderia a um valor de 600 para o contador.
 
     > [!NOTE]
-    > Você pode desativar o ajuste de valor do intervalo automático bloqueando o intervalo em um valor específico. Quando o intervalo é bloqueado, todos os valores excedendo o intervalo são exibidos como o valor máximo que você especificou na parte superior do gráfico. Use a caixa de diálogo **Opções de plotagem** para bloquear o intervalo em um valor específico. Para obter mais informações, consulte [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Você pode desativar o ajuste de valor do intervalo automático bloqueando o intervalo em um valor específico. Quando o intervalo é bloqueado, todos os valores excedendo o intervalo são exibidos como o valor máximo que você especificou na parte superior do gráfico. Use a caixa de diálogo **Opções de plotagem** para bloquear o intervalo em um valor específico. Para obter mais informações, confira [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
 
 -   **Contador:** as quatro colunas chamadas **Contador**, **Instância**, **Categoria** e **Computador** identificam com exclusividade o contador de desempenho.
 
--   **Cor:** a coluna **Cor** mostra a cor e o estilo da linha plotada do contador de desempenho. Use a caixa de diálogo **Opções de plotagem** para alterar a cor ou o estilo da linha de um contador de desempenho no gráfico. A caixa de diálogo **Opções de plotagem** está disponível no menu de atalho da legenda. Para obter mais informações, consulte [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Cor:** a coluna **Cor** mostra a cor e o estilo da linha plotada do contador de desempenho. Use a caixa de diálogo **Opções de plotagem** para alterar a cor ou o estilo da linha de um contador de desempenho no gráfico. A caixa de diálogo **Opções de plotagem** está disponível no menu de atalho da legenda. Para obter mais informações, confira [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
 
 -   **Estatísticas:** as colunas **Mín.**, **Máx.**, **Média** e **Último** mostram as respectivas estatísticas do contador de desempenho. Esses valores correspondem aos dados exibidos na região visível do gráfico. Por exemplo, se você ampliar uma região de uma execução, as estatísticas da legenda refletirão valores somente da área ampliada. A coluna "Último" é o valor do contador de desempenho do intervalo de amostragem concluído mais recentemente.
 
     > [!NOTE]
     > A coluna Último só é exibida na legenda do Analisador de Testes de Carga quando o teste de carga está em execução.
 
-     Para obter mais informações, consulte [Como ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 A seleção de um item na legenda faz o seguinte:
 
@@ -55,10 +55,10 @@ A seleção de um item na legenda faz o seguinte:
 -   Permite acessar a caixa de diálogo **Opções de plotagem** do contador.
 
 > [!TIP]
-> Você pode usar o botão suspenso **Opções de gráfico** na barra de ferramentas do Analisador de Teste de Carga e selecione **Mostrar legenda** para mostrar ou ocultar o painel **Legenda** associado à exibição do gráfico.
+> Use o botão suspenso **Opções de Grafo** na barra de ferramentas do **Analisador de Teste de Carga** e selecione **Mostrar Legenda** para mostrar ou ocultar o painel **Legenda** associado à exibição de grafo.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md)
-- [Como ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
-- [Analisar resultados de teste de carga na exibição de gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Como especificar opções de gráfico para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md)
+- [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)

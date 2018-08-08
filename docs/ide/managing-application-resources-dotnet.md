@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064604"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381641"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -38,7 +38,7 @@ Em um projeto de código gerenciado, abra a janela de propriedades do projeto. V
 
 - Clicando com o botão direito do mouse no nó do projeto, no **Gerenciador de Soluções**, e selecionar **Propriedades**
 - Digitando "propriedades do projeto" na janela do **Início Rápido**
-- Escolhendo **Alt**+**Enter** na janela do **Gerenciador de Soluções**
+- Escolhendo **Alt**+**Enter** no **Gerenciador de Soluções**
 
 Selecione a guia **Recursos**. Você poderá adicionar um arquivo *.resx* se o projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
 

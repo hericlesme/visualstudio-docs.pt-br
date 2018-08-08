@@ -11,55 +11,55 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63449029b6e67b04face1e9bd339df233ce01c95
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c626bbe213ee81b8a79b55213d02bd69cc55470f
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056583"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341706"
 ---
-# <a name="installing-debugging-symbols-for-python-interpreters"></a>Instalando símbolos de depuração para interpretadores do Python
+# <a name="install-debugging-symbols-for-python-interpreters"></a>Instalar símbolos de depuração para interpretadores do Python
 
-Para fornecer uma experiência de depuração completa, o [depurador de modo misto do Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) no Visual Studio precisa de símbolos de depuração para que o interpretador do Python sendo usado analise várias estruturas de dados internas. Para o python27.dll, por exemplo, o arquivo de símbolo correspondente é python27.pdb; para o python36.dll, o arquivo de símbolo é python36.pdb. Cada versão do interpretador também fornece arquivos de símbolo para diversos módulos.
+Para fornecer uma experiência de depuração completa, o [depurador de modo misto do Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) no Visual Studio precisa de símbolos de depuração para que o interpretador do Python sendo usado analise várias estruturas de dados internas. Para *python27.dll*, por exemplo, o arquivo de símbolo correspondente é *python27.pdb*; para *python36.dll*, o arquivo de símbolo é *python36.pdb*. Cada versão do interpretador também fornece arquivos de símbolo para diversos módulos.
 
-Com o Visual Studio 2017, os interpretadores "Python 3" e "Anaconda 3" instalam automaticamente seus respectivos símbolos e o Visual Studio encontra esses símbolos de forma automática. No Visual Studio 2015 e versões anteriores ou ao usar outros interpretadores, é necessário baixar os símbolos separadamente e, em seguida, apontar o Visual Studio para eles por meio do diálogo **Ferramentas > Opções** na guia **Depuração > Símbolos**. Essas etapas são descritas nas seções a seguir.
+Com o Visual Studio 2017, os interpretadores do Python 3 e do Anaconda 3 instalam automaticamente seus respectivos símbolos e o Visual Studio encontra esses símbolos de forma automática. No Visual Studio 2015 e anterior, ou ao usar outros interpretadores, é necessário baixar os símbolos separadamente e, em seguida, apontar o Visual Studio para eles por meio da caixa de diálogo **Ferramentas** > **Opções** na guia **Depuração** > **Símbolos**. Essas etapas são descritas nas seções a seguir.
 
 É possível que o Visual Studio faça solicitações quando precisar de símbolos, normalmente ao iniciar uma sessão de depuração de modo misto. Nesse caso, ele exibe uma caixa de diálogo com duas opções:
 
-- A **caixa de diálogo Abrir configurações de símbolo** abre a caixa de diálogo **Opções** para a guia **Depuração > Símbolos**.
-- **Baixar símbolos para o interpretador** abrirá esta página de documentação, nesse caso, selecione, **Ferramentas > Opções** e navegue até a guia **Depuração > Símbolos** para continuar.
+- A **caixa de diálogo Abrir configurações de símbolo** abre a caixa de diálogo **Opções** na guia **Depuração** > **Símbolos**.
+- **Baixar símbolos para o interpretador** abrirá esta página de documentação. Nesse caso, selecione, **Ferramentas** > **Opções** e navegue para a guia **Depuração** > **Símbolos** para continuar.
 
     ![Solicitação de símbolos de depuração de modo misto](media/mixed-mode-debugging-symbols-required.png)
 
-## <a name="downloading-symbols"></a>Baixando símbolos
+## <a name="download-symbols"></a>Baixar símbolos
 
 - Python 3.5 e versões posteriores: adquira símbolos de depuração por meio do instalador do Python. Selecione **Instalação personalizada**, selecione **Avançar** para ir para as **Opções Avançadas** e, em seguida, marque as caixas para **Baixar símbolos de depuração** e **Baixar binários de depuração**:
 
     ![Instalador do Python 3.x, incluindo símbolos de depuração](media/mixed-mode-debugging-symbols-installer35.png)
 
-    Então, os arquivos de símbolo (`.pdb`) serão encontrados na pasta de instalação raiz (arquivos de símbolo para módulos individuais também estarão na pasta `DLLs`). Por isso, o Visual Studio os localiza automaticamente e nenhuma etapa adicional é necessária.
+    Em seguida, os arquivos de símbolo (*.pdb*) são encontrados na pasta de instalação raiz (os arquivos de símbolo para módulos individuais também estão na pasta *DLLs*). Por isso, o Visual Studio os localiza automaticamente e nenhuma etapa adicional é necessária.
 
-- Python 3.4.x e versões anteriores: os símbolos estão disponíveis como arquivos .zip para download em [distribuições oficiais](#official-distributions) ou [Enthought Canopy](#enthought-canopy). Após o download, extraia os arquivos para uma pasta local para continuar, como uma pasta `Symbols` dentro da pasta do Python.
+- Python 3.4.x e anterior: os símbolos estão disponíveis como arquivos *.zip* para download nas [distribuições oficiais](#official-distributions) ou no [Enthought Canopy](#enthought-canopy). Após o download, extraia os arquivos para uma pasta local para continuar, como uma pasta *Symbols* dentro da pasta do Python.
 
     > [!Important]
-    > Os símbolos são diferentes entre builds secundárias do Python e entre compilações de 32 e 64 bits, assim, é desejável que as versões sejam correspondentes. Para verificar o interpretador usado, expanda o **nó** *Ambientes do Python* do projeto no Gerenciador de Soluções e anote o nome do ambiente. Em seguida, mude para a **janela** *Ambientes do Python* e anote o local de instalação. Em seguida, abra uma janela de comando nesse local e inicie `python.exe`, que exibirá a versão exata e se ela é de 32 ou 64 bits.
+    > Os símbolos são diferentes entre builds secundárias do Python e entre compilações de 32 e 64 bits, assim, é desejável que as versões sejam correspondentes. Para verificar o interpretador usado, expanda o *nó* **Ambientes do Python** do projeto no **Gerenciador de Soluções** e anote o nome do ambiente. Em seguida, mude para a **janela** *Ambientes do Python* e anote o local de instalação. Em seguida, abra uma janela Comando nesse local e inicie *python.exe*, que exibirá a versão exata e se ela é de 32 ou 64 bits.
 
 - Para qualquer outra distribuição do Python de terceiros, como o ActiveState Python, será necessário entrar em contato com os autores dessa distribuição e solicitar que eles forneçam símbolos. No entanto, o WinPython incorpora o interpretador padrão do Python sem alterações; portanto, use símbolos da distribuição oficial para o número de versão correspondente.
 
-## <a name="pointing-visual-studio-to-the-symbols"></a>Apontando o Visual Studio para os símbolos
+## <a name="point-visual-studio-to-the-symbols"></a>Apontar o Visual Studio para os símbolos
 
-Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para que o Visual Studio os reconheça. Se os símbolos tiverem sido instalados por meio do Python 3.5 ou um instalador posterior, o Visual Studio os localizará automaticamente.
+Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para que o Visual Studio os reconheça. Se os símbolos foram instalados por meio do Python 3.5 ou de um instalador posterior, o Visual Studio os encontra automaticamente.
 
-1. Selecione o menu **Ferramentas > Opções** e acesse **Depuração > Símbolos**.
+1. Selecione o menu **Ferramentas** > **Opções** e navegue para **Depuração** > **Símbolos**.
     
-1. Selecione o botão **Adicionar** na barra de ferramentas (descrita abaixo), digite a pasta em que os símbolos baixados foram expandidos (em que `python.pdb` está localizado, como `c:\python34\Symbols`, conforme mostrado abaixo) e selecione **OK**. 
+1. Selecione o botão **Adicionar** na barra de ferramentas (descrita abaixo), insira a pasta em que os símbolos baixados foram expandidos (em que *python.pdb* está localizado, como *c:\python34\Symbols*, conforme mostrado abaixo) e selecione **OK**. 
 
     ![Opções de símbolos do depurador de modo misto](media/mixed-mode-debugging-symbols.png)
 
 1. Durante uma sessão de depuração, o Visual Studio também pode solicitar o local de um arquivo de origem para o interpretador de Python. Se você baixou os arquivos de origem (de [python.org/downloads](https://www.python.org/downloads), por exemplo), certamente será possível apontar para eles também.
 
 > [!Note]
-> As funcionalidades de cache de símbolo mostradas no diálogo são usadas para criar um cache local de símbolos obtidos de uma fonte online. Essas funcionalidades não serão necessárias com os símbolos do interpretador de Python, uma vez que os símbolos já estão presentes localmente. Em qualquer caso, consulte [Especifique Símbolos e Arquivos de Origem no Depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) para obter mais detalhes.
+> As funcionalidades de cache de símbolo mostradas no diálogo são usadas para criar um cache local de símbolos obtidos de uma fonte online. Essas funcionalidades não serão necessárias com os símbolos do interpretador de Python, uma vez que os símbolos já estão presentes localmente. De qualquer maneira, veja [Especificar símbolos e arquivos de origem no depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) para obter mais detalhes.
 
 ## <a name="official-distributions"></a>Distribuições oficiais
 
@@ -92,6 +92,6 @@ Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para 
 
 ## <a name="enthought-canopy"></a>Enthought Canopy
 
-O Enthought Canopy fornece símbolos para seus binários a partir da versão 1.2. Eles são instalados automaticamente juntamente com a distribuição, mas você ainda precisa adicionar manualmente a pasta que os contém ao caminho do símbolo, conforme descrito anteriormente. Para uma instalação típica por usuário do Canopy, os símbolos estão localizados em `%UserProfile%\AppData\Local\Enthought\Canopy\User\Scripts` para a versão de 64 bits e em `%UserProfile%\AppData\Local\Enthought\Canopy32\User\Scripts` para a versão de 32 bits.
+O Enthought Canopy fornece símbolos para seus binários a partir da versão 1.2. Eles são instalados automaticamente juntamente com a distribuição, mas você ainda precisa adicionar manualmente a pasta que os contém ao caminho do símbolo, conforme descrito anteriormente. Para uma instalação típica por usuário do Canopy, os símbolos estão localizados em *%UserProfile%\AppData\Local\Enthought\Canopy\User\Scripts* para a versão de 64 bits e em *%UserProfile%\AppData\Local\Enthought\Canopy32\User\Scripts* para a versão de 32 bits.
 
 O Enthought Canopy 1.1 e anterior, bem como o EPD (Enthought Python Distribution), não fornecem símbolos de interpretador e, portanto, não são compatíveis com a depuração de modo misto.

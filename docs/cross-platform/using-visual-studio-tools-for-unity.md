@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155575"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251712"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
 Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Abrir scripts do Unity com o Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Abrir scripts do Unity no Visual Studio
 
 Depois que o Visual Studio é [definido como o editor de script externo para Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio), abrir qualquer script do editor do Unity iniciará ou trocará automaticamente para o Visual Studio com o script escolhido aberto. Clique duas vezes em um script em seu projeto do Unity.
 
@@ -33,7 +33,7 @@ Outra opção é abrir o Visual Studio sem um script aberto no editor de código
 
  Você pode acessar a documentação de script do Unity rapidamente pelo Visual Studio. Se as Ferramentas do Visual Studio para Unity não encontrarem a documentação da API localmente, elas tentarão localizá-la online.
 
-- No Visual Studio, destaque ou coloque o cursor sobre a API do Unity sobre a qual deseja saber mais e depois pressione **Ctrl + Alt + M, Ctrl + H**
+- No Visual Studio, realce ou posicione o cursor sobre a API do Unity sobre a qual deseja saber mais e, em seguida, pressione **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>Intellisense para mensagens da API do Unity
 
@@ -45,7 +45,7 @@ Outra opção é abrir o Visual Studio sem um script aberto no editor de código
 
 1. Após digitar as letras "**ont**", uma lista de sugestões do IntelliSense será exibida.
 
-  ![Usando o IntelliSense](media/vstu_intellisense1.png)
+  ![Usando IntelliSense](media/vstu_intellisense1.png)
 
 1. A seleção na lista pode ser alterada de três maneiras:
 
@@ -71,7 +71,7 @@ Você pode usar o assistente do MonoBehavior para exibir uma lista de todos os m
 
 Para criar definições de método MonoBehavior vazias usando o assistente do MonoBehavior:
 
-1. No Visual Studio, posicione o cursor onde quiser que os métodos sejam inseridos e pressione **Ctrl+Shift+M** para iniciar o assistente do MonoBehavior.
+1. No Visual Studio, posicione o cursor no local em que deseja inserir os métodos e, em seguida, pressione **Ctrl**+**Shift**+**M** para iniciar o assistente do MonoBehavior.
 
 1. Na janela **Criar métodos de script**, marque a caixa de seleção ao lado do nome de cada método que você quer adicionar.
 
@@ -91,7 +91,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
  O Gerenciador de Projetos do Unity exibe todos os seus arquivos e diretórios de projeto do Unity da mesma maneira que o Editor do Unity. Isso é diferente de navegar nos scripts do Unity com a solução normal do Gerenciador de Soluções do Visual Studio, que os organiza em projetos e em uma solução gerada pelo Visual Studio.
 
-- No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt+Shift+E**
+- No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt**+**Shift**+**E**
 
      ![Exibir a janela Gerenciador de Projetos do Unity. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -99,7 +99,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
  Você pode exibir as mensagens do console do Unity dentro do Visual Studio quando ele estiver conectado a uma instância do Unity. Isso inclui erros e avisos do Unity. As mensagens são exibidas na janela **Lista de Erros** do Visual Studio; mensagens de erro do Unity são exibidas na guia **Erros**, as mensagens de aviso na guia **Avisos** e outras mensagens, por exemplo, as mensagens enviadas usando a API do Unity Debug. Log, são exibidas na guia **Mensagens**.
 
- Para ver as mensagens, seu projeto do Unity deve estar conectado ao Visual Studio, conforme descrito na seção [Depuração do Unity](#unity-debugging).
+ Para ver as mensagens, o projeto do Unity precisa estar conectado ao Visual Studio, conforme descrito na seção [Depuração do Unity](#unity-debugging).
 
  Se não desejar visualizar erros, avisos e mensagens do Unity na janela **Lista de Erros** do Visual Studio, desabilite-os no menu Configuração.
 
@@ -107,7 +107,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
  Ferramentas do Visual Studio para Unity permitem depurar scripts do editor e jogos para seu projeto do Unity usando um depurador poderoso do Visual Studio.
 
-### <a name="debugging-in-the-unity-editor"></a>Depuração no editor do Unity
+### <a name="debug-in-the-unity-editor"></a>Depuração no editor do Unity
 
 #### <a name="start-debugging"></a>Iniciar a depuração
 
@@ -141,9 +141,9 @@ Para maior conveniência, você pode alterar o botão **Anexar ao Unity** para o
 
 O botão de reprodução muda para **Anexar ao Unity e Reproduzir**. Agora, ao clicar nesse botão ou usar o atalho de teclado **F5**, alterna automaticamente para o editor do Unity e executa o jogo no editor, além de anexar o depurador do Visual Studio.
 
-Clicar no botão **Parar** no Visual Studio ou usar o atalho de teclado **Shift+F5** interromperá automaticamente o jogo no editor do Unity.
+Se você clicar no botão **Parar** no Visual Studio ou usar o atalho de teclado **Shift**+**F5**, o jogo será interrompido automaticamente no editor do Unity.
 
-### <a name="debugging-unity-player-builds"></a>Depuração de builds de player do Unity
+### <a name="debug-unity-player-builds"></a>Depuração de builds de player do Unity
 
 Você pode depurar builds de desenvolvimento de vários player do Unity com o Visual Studio.
 
@@ -177,7 +177,7 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 > [!IMPORTANT]
 > Como as Ferramentas do Visual Studio para Unity e a instância do Unity se comunicam por um soquete de rede UDP, o firewall pode perguntar sobre ele. Se isso acontecer, você precisará autorizar a conexão para que o VSTU e o Unity possam se comunicar.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Depurando uma DLL em seu projeto do Unity
+### <a name="debug-a-dll-in-your-unity-project"></a>Depurar uma DLL no projeto do Unity
 
  Muitos desenvolvedores do Unity estão escrevendo componentes de código como DLLs externas para que a funcionalidade que desenvolvem possa ser facilmente compartilhada com outros projetos. Ferramentas do Visual Studio para Unity facilitam a depuração do código nessas DLLs perfeitamente com outro código no seu projeto do Unity.
 
@@ -214,9 +214,9 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 |Comando|Atalho|Nome de comando de atalho|
 |-------------|--------------|---------------------------|
-|Abrir o Assistente do MonoBehavior|**Ctrl+Shift+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Abrir o Gerenciador de Projetos do Unity|**Alt+Shift+E**|**View.UnityProjectExplorer**|
-|Acessar a documentação do Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|
+|Abrir o Assistente do MonoBehavior|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Abrir o Gerenciador de Projetos do Unity|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
+|Acessar a documentação do Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
 |Anexar ao depurador do Unity (player ou editor)|***nenhum padrão***|**Debug.AttachUnityDebugger**|
 
- Será possível alterar as combinações de teclas de atalho se não desejar o padrão. Para obter informações sobre como mudá-las, consulte [Identificando e personalizando atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Será possível alterar as combinações de teclas de atalho se não desejar o padrão. Para obter informações sobre como alterá-las, confira [Identificar e personalizar atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

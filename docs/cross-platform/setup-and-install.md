@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924363"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251186"
 ---
 # <a name="setup-and-install"></a>Instalar e configurar
 
@@ -38,13 +38,13 @@ Se você tiver problemas para usar a plataforma Xamarin depois de realizar essa 
 
 ###  <a name="for-targeting-windows-and-android"></a>Para direcionamento ao Windows e ao Android
 
-Confira [Requisitos de sistema da família de produtos do Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) para saber quais são os pré-requisitos detalhados para instalar o Visual Studio 2017.
+Confira [Requisitos do sistema da família de produtos do Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) para obter os pré-requisitos detalhados para instalação do Visual Studio 2017.
 
 Instale o Visual 2017 em um computador Windows físico (não em uma máquina virtual) que execute o Windows 10 com todas as atualizações instaladas.
 
 ### <a name="for-targeting-ios"></a>Para direcionamento ao iOS
 
-Para direcionar a emuladores e dispositivos iOS usando o computador Windows, você também precisará de um Mac ou um Mac mini em rede que execute o macOS 10.12 ou posterior e o Xcode 8.3. Confira [Instalar e configurar o Visual Studio para Mac](/visualstudio/mac/installation) para obter requisitos mais detalhados.
+Para direcionar a emuladores e dispositivos iOS usando o computador Windows, você também precisará de um Mac ou um Mac mini em rede que execute o macOS 10.12 ou posterior e o Xcode 8.3. Confira [Configurar e instalar o Visual Studio para Mac](/visualstudio/mac/installation) para obter requisitos mais detalhados.
 
 <a name="windows" />
 
@@ -84,9 +84,9 @@ Enquanto a instalação estiver em execução, você poderá continuar com as in
 
 1.  Crie uma ID Apple gratuita em [https://appleid.apple.com](https://appleid.apple.com/) se você ainda não tiver uma. Essa ID Apple é necessária para instalar e entrar no Xcode.
 
-2.  Baixe e instale o Xcode de [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e adicione o ID Apple, conforme descrito em [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Adicionar sua conta no Xcode) (apple.com).
+2.  Baixe e instale o Xcode em [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e adicione a ID da Apple, conforme descrito em [Adicionar sua conta ao Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  Baixe e instale o Visual Studio para Mac, seguindo as instruções em [Instalar e configurar o Visual Studio para Mac](/visualstudio/mac/installation).
+3.  Baixe e instale o Visual Studio para Mac seguindo as instruções de [Configurar e instalar o Visual Studio para Mac](/visualstudio/mac/installation).
 
 4.  Depois de concluir a instalação do Xamarin nos computadores Windows e Mac, siga as instruções em [Conectando-se ao Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) para que você possa trabalhar com o iOS e o Mac usando Visual Studio no computador Windows.
 

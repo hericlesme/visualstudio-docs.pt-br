@@ -12,16 +12,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454564"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251805"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas para criação usando iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas de build usando o iOS
 
-É possível usar o Visual C++ para Desenvolvimento Móvel Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.
+É possível usar o Visual C++ para Desenvolvimento Móvel de Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.
 
 > [!NOTE]
 > Para saber mais sobre como usar os serviços hospedados em nuvem do Mac, em vez de um Mac, confira [Configurar o Visual Studio para se conectar ao seu Mac hospedado na nuvem](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). As instruções são para compilação usando as Ferramentas do Visual Studio para Apache Cordova. Para usar as instruções para compilar usando C++, substitua vcremote por remotebuild.
@@ -50,11 +50,11 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
 - Um identidade de assinatura do iOS configurada no Xcode
 
-   Para obter informações detalhadas de como obter uma identidade de assinatura do iOS, consulte [Maintaining Your Signing Identities and Certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) (Mantendo seus certificados e identidades de assinatura) na Biblioteca do Desenvolvedor de iOS. Para ver ou definir a identidade de assinatura no Xcode, abra o menu do **Xcode** e escolha **Preferences** (Preferências). Selecione **Accounts** (Contas) e escolha sua Apple ID e, em seguida, escolha o botão **View Details** (Exibir Detalhes).
+   Para obter informações detalhadas sobre como obter uma Identidade de Assinatura do iOS, confira [Manter os certificados e as identidades de assinatura](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) na Biblioteca do Desenvolvedor do iOS. Para ver ou definir a identidade de assinatura no Xcode, abra o menu do **Xcode** e escolha **Preferences** (Preferências). Selecione **Accounts** (Contas) e escolha sua Apple ID e, em seguida, escolha o botão **View Details** (Exibir Detalhes).
 
 - Se você estiver usando um dispositivo iOS para desenvolvimento, um perfil de provisionamento será configurado no Xcode para seu dispositivo
 
-   Para obter informações detalhadas sobre a criação de perfis de provisionamento, consulte [Creating Provisioning Profiles Using Member Center](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) (Criando perfis de provisionamento usando a central de membros) na Biblioteca do Desenvolvedor de iOS.
+   Para obter informações detalhadas sobre como criar Perfis de provisionamento, confira [Criar perfis de provisionamento usando a Central de Associados](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) na Biblioteca do Desenvolvedor do iOS.
 
 - [Node.js](https://nodejs.org/)
 
@@ -68,9 +68,9 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
 ##  <a name="Install"></a> Instalar o agente remoto para iOS
 
-Quando você instala o Visual C++ para Desenvolvimento Móvel Multiplataforma, o Visual Studio pode se comunicar com [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac, para transferir arquivos, compilar e executar seu aplicativo iOS e enviar comandos de depuração.
+Quando você instala o Visual C++ para Desenvolvimento Móvel de Multiplataforma, o Visual Studio pode se comunicar com [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac, para transferir arquivos, compilar e executar seu aplicativo iOS e enviar comandos de depuração.
 
-Antes de instalar o agente remoto, verifique se os [Pré-requisitos](#Prerequisites) foram satisfeitos e se você instalou o [Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Antes de instalar o agente remoto, verifique se os [Pré-requisitos](#Prerequisites) foram atendidos e se você instalou o [Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Para baixar e instalar o agente remoto
 
@@ -125,7 +125,7 @@ Depois de iniciar o agente remoto, você pode usá-lo no Visual Studio até par�
 
 #### <a name="to-stop-the-remote-agent"></a>Para parar o agente remoto
 
-- Na janela do Terminal em que o vcremote está em execução, digite `Control+C`.
+- Na janela do Terminal em que o vcremote está em execução, insira **Control**+**C**.
 
 ##  <a name="ConfigureVS"></a> Configurar o agente remoto no Visual Studio
 
@@ -158,7 +158,7 @@ Para se conectar ao agente remoto do Visual Studio, você deve especificar a con
 
    Se o emparelhamento não for bem-sucedido, verifique se o agente remoto está em execução seguindo as etapas em [Iniciar o agente remoto](#Start). Se muito tempo tiver decorrido desde que o PIN do agente remoto foi gerado, siga as etapas em [Gerar um novo PIN de segurança](#GeneratePIN) no Mac e tente novamente. Se você estiver usando o nome de host do seu Mac, tente usar o endereço IP no campo **Nome do Host** em vez disso.
 
-1. Atualize o nome da pasta no campo **Raiz Remota** para especificar a pasta usada pelo agente remoto em seu diretório inicial (~) no Mac. Por padrão, o agente remoto usa /Users/`username`/vcremote como a raiz remota.
+1. Atualize o nome da pasta no campo **Raiz Remota** para especificar a pasta usada pelo agente remoto no diretório base (*~*) no Mac. Por padrão, o agente remoto usa /Users/`username`/vcremote como a raiz remota.
 
 1. Escolha **OK** para salvar as configurações de conexão de emparelhamento remoto.
 
@@ -220,7 +220,7 @@ Por motivos de segurança, os certificados de servidor que emparelham o Visual S
 
    `vcremote --serverDir directory_path`
 
-   em que *directory_path* é o local no seu Mac para colocar os arquivos de log, compilações e certificados de servidor. Por padrão, esse local é /Users/*nome do usuário*/vcremote. As compilações são organizadas por número de build nesse local.
+   em que *directory_path* é o local no seu Mac para colocar os arquivos de log, compilações e certificados de servidor. Por padrão, esse local é */Users/\<nome de usuário>/vcremote*. As compilações são organizadas por número de build nesse local.
 
 - Para usar um processo em segundo plano para capturar `stdout` e `stderr` para um arquivo chamado server.log, digite:
 

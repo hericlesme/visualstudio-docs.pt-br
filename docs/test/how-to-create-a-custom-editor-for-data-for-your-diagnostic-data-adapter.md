@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6141defb2248cf79888b0ed94824a827bd36815f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976302"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380372"
 ---
-# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Como criar um editor personalizado para dados do adaptador de dados de diagnóstico
+# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Como criar um editor personalizado de dados para o adaptador de dados de diagnóstico
 
 Ao criar um adaptador de dados de diagnóstico, talvez você queira permitir que o usuário final configure dados específicos quando o adaptador de dados de diagnóstico personalizado for selecionado para suas configurações de teste. Por exemplo, você pode selecionar os dados da configuração que especificam quais chaves do Registro extrair, que nível de carga de rede simular ou em que diretório encontrar arquivos temporários ou de trabalho a serem anexados.
 
@@ -27,14 +27,14 @@ Para criar seu próprio editor, você criará um controle de usuário que implem
 
 O adaptador de dados de diagnóstico pode usar um <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> para especificar a classe do editor a ser usada na edição das configurações de dados de diagnóstico.
 
-Você também especifica os dados de configuração padrão que deseja usar.  Consulte [Projeto de amostra para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md) para ver um exemplo de configuração padrão.
+Você também especifica os dados de configuração padrão que deseja usar.  Confira [Projeto de exemplo para criação de um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md) para obter uma configuração padrão de exemplo.
 
 Use o seguinte procedimento para criar um editor personalizado a fim de atualizar dados das configurações de teste quando o adaptador de diagnóstico de dados personalizado for usado.
 
 > [!NOTE]
-> Para criar um editor personalizado, você deve primeiro criar o adaptador de dados de diagnóstico que tem <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> aplicado à classe. Você pode usar a propriedade opcional <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute.HelpUri*> nesse atributo para especificar a fonte de conteúdo da ajuda para seu editor. Para obter mais informações sobre como criar seu próprio adaptador de dados de diagnóstico, consulte [Como criar um adaptador de dados de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md).
+> Para criar um editor personalizado, você deve primeiro criar o adaptador de dados de diagnóstico que tem <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> aplicado à classe. Você pode usar a propriedade opcional <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute.HelpUri*> nesse atributo para especificar a fonte de conteúdo da ajuda para seu editor. Para obter mais informações sobre como criar o adaptador de dados de diagnóstico, confira [Como criar um adaptador de dados de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md).
 
-Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, consulte [Projeto de amostra para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, confira [Projeto de exemplo para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>Para criar um editor personalizado para o adaptador de dados de diagnóstico
 
@@ -176,9 +176,9 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
 12. Edite os campos em seu editor personalizado conforme necessário e escolha **Salvar**.
 
-13. Se estiver executando seus testes no Microsoft Test Manager, você poderá atribuir essas configurações de teste ao seu plano de teste antes de executar os testes ou usar o comando **Executar com opções** para atribuir e substituir configurações de teste. Para obter mais informações sobre as configurações de teste, consulte [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+13. Se estiver executando seus testes no Microsoft Test Manager, você poderá atribuir essas configurações de teste ao seu plano de teste antes de executar os testes ou usar o comando **Executar com opções** para atribuir e substituir configurações de teste. Para obter mais informações sobre as configurações de teste, confira [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
-14. Para que seja possível usar o novo editor de configuração com um adaptador de dados de diagnóstico, você deve aplicar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> a cada classe do adaptador de dados de diagnóstico que você deseja usar o editor e recompilá-las e reinstalá-las no computador cliente. Para obter mais informações sobre como instalar adaptadores de dados de diagnóstico e editores de configuração, consulte [Como instalar um adaptador de dados de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+14. Para que seja possível usar o novo editor de configuração com um adaptador de dados de diagnóstico, você deve aplicar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> a cada classe do adaptador de dados de diagnóstico que você deseja usar o editor e recompilá-las e reinstalá-las no computador cliente. Para obter mais informações sobre como instalar adaptadores de dados de diagnóstico e editores de configuração, confira [Como instalar um adaptador de dados de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
 15. Execute seus testes usando as configurações de teste com o adaptador de dados de diagnóstico selecionado.
 
@@ -191,6 +191,6 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 - <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
-- [Criando um adaptador de dados de diagnóstico para coletar dados personalizados ou afetar um computador de teste](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Criar um adaptador de dados de diagnóstico para coletar dados personalizados ou afetar um computador de teste](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)
 - [Projeto de amostra para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)

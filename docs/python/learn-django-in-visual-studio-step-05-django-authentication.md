@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946969"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388365"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
 **Etapa anterior: [Usar o modelo Projeto Web completo do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar qualquer um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em `settings.py` no projeto do Django.
+Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em *settings.py* do projeto do Django.
 
 Nesta etapa, você aprenderá:
 
@@ -33,15 +33,15 @@ Nesta etapa, você aprenderá:
 
 As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envolvidas do projeto:
 
-1. Se você ainda não seguiu as instruções no arquivo `readme.html` na raiz do projeto para criar uma conta de superusuário (administrador), faça isso agora.
+1. Se você ainda não seguiu as instruções do arquivo *readme.html* na raiz do projeto para criar uma conta de superusuário (administrador), faça isso agora.
 
-1. Execute o aplicativo do Visual Studio usando **Depurar** > **Iniciar Depuração** (F5). Quando o aplicativo aparecer no navegador, observe que a opção **Login** aparecerá no canto superior direito da barra de navegação.
+1. Execute o aplicativo no Visual Studio usando **Depurar** > **Iniciar Depuração** (**F5**). Quando o aplicativo aparecer no navegador, observe que a opção **Login** aparecerá no canto superior direito da barra de navegação.
 
     ![Controle de logon na página do aplicativo do Projeto Web do Django](media/django/step05-login-control.png)
 
-1. Abra o `templates/app/layout.html` e observe que o elemento `<div class="navbar ...>` contém a marca `{% include app/loginpartial.html %}`. A marca `{% include %}` instrui o sistema de modelos do Django a efetuar pull do conteúdo do arquivo incluído neste momento no modelo que o contém.
+1. Abra *templates/app/layout.html* e observe que o elemento `<div class="navbar ...>` contém a marcação `{% include app/loginpartial.html %}`. A marca `{% include %}` instrui o sistema de modelos do Django a efetuar pull do conteúdo do arquivo incluído neste momento no modelo que o contém.
 
-1. Abra `templates/app/loginpartial.html` e observe como ele usa a marca `{% if user.is_authenticated %}` condicional juntamente com uma marca `{% else %}` para renderizar diferentes elementos da interface do usuário, dependendo se o usuário realizou a autenticação ou não:
+1. Abra *templates/app/loginpartial.html* e observe como ele usa a marcação condicional `{% if user.is_authenticated %}` juntamente com uma marcação `{% else %}` para renderizar diferentes elementos da interface do usuário, dependendo se o usuário realizou a autenticação:
 
     ```html
     {% if user.is_authenticated %}
@@ -62,7 +62,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
     {% endif %}
     ```
 
-1. Como nenhum usuário é autenticado quando você inicia o aplicativo pela primeira vez, esse código de modelo renderiza apenas o link "Fazer logon" para o caminho relativo "logon". Conforme especificado em `urls.py` (mostrado na seção anterior), essa rota é mapeada para a exibição `django.contrib.auth.views.login`. Essa exibição recebe os seguintes dados:
+1. Como nenhum usuário é autenticado quando você inicia o aplicativo pela primeira vez, esse código de modelo renderiza apenas o link "Fazer logon" para o caminho relativo "logon". Conforme especificado em *urls.py* (mostrado na seção anterior), essa rota é mapeada para a exibição `django.contrib.auth.views.login`. Essa exibição recebe os seguintes dados:
 
     ```python
     {
@@ -76,7 +76,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
     }
     ```
 
-    Aqui, `template_name` identifica o modelo da página de logon, nesse caso `templates/app/login.html`. A propriedade `extra_context` é adicionada aos dados de contexto padrão fornecidos para o modelo. Por fim, `authentication_form` especifica uma classe de formulário para usar com o logon no modelo, ele será exibido como o objeto `form`. O valor padrão é `AuthenticationForm` (de `django.contrib.auth.views`). Em vez disso, o modelo de projeto do Visual Studio usa o formulário definido no arquivo `forms.py` do aplicativo:
+    Aqui, `template_name` identifica o modelo da página de logon, nesse caso, *templates/app/login.html*. A propriedade `extra_context` é adicionada aos dados de contexto padrão fornecidos para o modelo. Por fim, `authentication_form` especifica uma classe de formulário a ser usada com o logon; no modelo, ele é exibido como o objeto `form`. O valor padrão é `AuthenticationForm` (de `django.contrib.auth.views`). Em vez disso, o modelo de projeto do Visual Studio usa o formulário definido no arquivo *forms.py* do aplicativo:
 
     ```python
     from django import forms
@@ -97,7 +97,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
     Como você pode ver, essa classe de formulário deriva de `AuthenticationForm` e, especificamente, substitui os campos de nome de usuário e senha para adicionar texto de espaço reservado. O modelo do Visual Studio inclui esse código explícito considerando que você possa querer personalizar o formulário, por exemplo, adicionando uma validação de força de senha.
 
-1. Quando você navega para a página de logon, em seguida, a aplicativo renderiza o modelo `login.html`. As variáveis `{{ form.username }}` e `{{ form.password }}` renderizam os formulários `CharField` de `BootstrapAuthenticationForm`. Há também uma seção interna para mostrar erros de validação e um elemento predefinido para efetuar logons em redes sociais, se você optar por adicionar esses serviços.
+1. Quando você navega para a página de logon, o aplicativo renderiza o modelo *login.html*. As variáveis `{{ form.username }}` e `{{ form.password }}` renderizam os formulários `CharField` de `BootstrapAuthenticationForm`. Há também uma seção interna para mostrar erros de validação e um elemento predefinido para efetuar logons em redes sociais, se você optar por adicionar esses serviços.
 
     ```html
     {% extends "app/layout.html" %}
@@ -146,13 +146,13 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando você envia o formulário, o Django tenta autenticar suas credenciais (como as credenciais do superusuário). Se a autenticação falhar, você permanecerá na página atual, mas `form.errors` será definido como true. Se a autenticação for bem-sucedida, o Django navegará para a URL relativa no campo "avançar", `<input type="hidden" name="next" value="/" />`, que, nesse caso, é a página inicial (`/`).
 
-1. Agora, quando a página inicial for novamente renderizada, a propriedade `user.is_authenticated` será true quando o modelo `loginpartial.html` for renderizado. Como resultado, você verá uma mensagem "Olá (nome de usuário)" e "Fazer logoff". Você pode usar `user.is_authenticated` em outras partes do aplicativo para verificar a autenticação.
+1. Agora, quando a home page for novamente renderizada, a propriedade `user.is_authenticated` será verdadeira quando o modelo *loginpartial.html* for renderizado. Como resultado, você verá uma mensagem **Olá, (nome de usuário)** e **Fazer logoff**. Você pode usar `user.is_authenticated` em outras partes do aplicativo para verificar a autenticação.
 
     ![Mensagem de Olá e controle de logon na página do aplicativo do Projeto Web do Django](media/django/step05-logoff-control.png)
 
 1. Para verificar se o usuário autenticado está autorizado a acessar recursos específicos, você precisa recuperar as permissões específicas do usuário do banco de dados. Para obter mais informações, confira [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Usando o sistema de autenticação do Django) (documentos do Django).
 
-1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, abra o projeto `urls.py` do Django e remova os comentários das seguintes entradas:
+1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, abra o *urls.py* do projeto do Django e remova os comentários das seguintes entradas:
 
     ```python
     from django.conf.urls import include
@@ -171,7 +171,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
     ![Interface de administrador do Django](media/django/step05-administrator-interface.png)
 
-1. A parte final do fluxo de autenticação é fazer logoff. Como você pode ver em `loginpartial.html`, o link **Fazer logoff** simplesmente faz um POST para a URL relativa "/login", que é tratada pelo modo de exibição interno `django.contrib.auth.views.logout`. Esse modo de exibição não exibe interfaces do usuário e apenas navega para a página inicial (como mostrado em `urls.py` para o padrão "^logout$"). Se você quiser exibir uma página de logoff, primeiro altere o padrão da URL conforme mostrado a seguir para adicionar uma propriedade "template_name" e remover a propriedade "next_page":
+1. A parte final do fluxo de autenticação é fazer logoff. Como você pode ver em *loginpartial.html*, o link **Fazer logoff** apenas faz um POST para a URL relativa "/login", que é manipulada pela exibição interna `django.contrib.auth.views.logout`. Essa exibição não exibe nenhuma interface do usuário e apenas navega para a home page (conforme mostrado em *urls.py* para o padrão "^logout$"). Se você quiser exibir uma página de logoff, primeiro altere o padrão da URL conforme mostrado a seguir para adicionar uma propriedade "template_name" e remover a propriedade "next_page":
 
     ```python
     url(r'^logout$',
@@ -183,7 +183,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
         name='logout')
     ```
 
-    Em seguida, crie `templates/app/loggedoff.html` com o seguinte conteúdo (mínimo):
+    Em seguida, crie *templates/app/loggedoff.html* com o seguinte conteúdo (mínimo):
 
     ```html
     {% extends "app/layout.html" %}
@@ -198,7 +198,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é o objetivo da marca {% crsf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da marcação {% crsf_token %} exibida nos elementos \<form\>?
 
 Resposta: A marca `{% crsf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (crsf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 

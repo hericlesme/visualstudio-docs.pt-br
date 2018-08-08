@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280270"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379875"
 ---
 # <a name="introducing-live-unit-testing"></a>Introdução ao Live Unit Testing
 
@@ -27,13 +27,13 @@ O Live Unit Testing é uma tecnologia disponível no Visual Studio 2017 versão 
 
 - Indica se os testes de unidade cobrem o código adequadamente e mostra o código que não está coberto pelos testes de unidade. O Live Unit Testing representa graficamente a cobertura de código em tempo real para que você possa ver rapidamente quantos testes cobrem cada linha de código e quantas linhas não estão cobertas por nenhum teste de unidade.
 
-Se você tiver uma solução que inclua um ou mais projetos de teste de unidade, habilite o Live Unit Testing selecionando **Testar**, **Live Unit Testing**, **Iniciar** no menu de nível superior do Visual Studio.
+Caso tenha uma solução que inclua um ou mais projetos de teste de unidade, habilite o Live Unit Testing selecionando **Teste** > **Live Unit Testing** > **Iniciar** no menu de nível superior do Visual Studio.
 
 Para saber mais sobre o Live Unit Testing:
 
 - Consulte o tutorial de Introdução, [Introdução ao Live Unit Testing no Visual Studio](live-unit-testing-start.md).
 
-- Leia a documentação detalhada, [Use Live Unit testing with Visual Studio 2017 Enterprise Edition](live-unit-testing.md) (Usar o Live Unit Testing no Visual Studio 2017 Enterprise Edition).
+- Leia a documentação detalhada [Usar o Live Unit Testing no Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
 
 - Leia [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas para usar o Live Unit Testing.
 

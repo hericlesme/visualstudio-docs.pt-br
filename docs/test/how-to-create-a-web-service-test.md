@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180068"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380662"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
 
 Você pode usar um teste de desempenho na Web para testar serviços Web. Usando as opções **Inserir solicitação** e **Inserir solicitação de serviço Web**, você pode personalizar as solicitações individuais no **Editor de Testes de Desempenho Web** para localizar páginas de serviço Web. Normalmente, você não exibe essas páginas no aplicativo Web. Portanto, você deve personalizar a solicitação para acessar essas páginas.
 
-Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Você pode baixá-lo do [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Baixe-o no [Kit de Início do ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
  **Requisitos**
 
@@ -37,7 +37,7 @@ Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. 
 
 3.  Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Abra uma sessão separada do navegador e digite a URL da página .asmx na barra de ferramentas **Endereço**. Selecione o método que você deseja testar e examine a mensagem SOAP. Contém `SOAPAction`.
+4.  Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço**. Selecione o método que você deseja testar e examine a mensagem SOAP. Contém `SOAPAction`.
 
 5.  No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse na solicitação e selecione **Adicionar Cabeçalho** para adicionar um novo cabeçalho. Na propriedade **Nome**, digite `SOAPAction`. Na propriedade **Valor**, digite o valor que você vê em `SOAPAction`, como `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. 
      </soap:Envelope>
      ```
 
-9. Retorne ao **Editor de Testes de Desempenho Web** e escolha as reticências (…) na propriedade de **Corpo da string**. Cole o conteúdo da área de transferência na propriedade.
+9. Retorne ao **Editor de Testes de Desempenho Web** e, em seguida, escolha as reticências **(…)** na propriedade **Corpo da Cadeia de Caracteres**. Cole o conteúdo da área de transferência na propriedade.
 
 10. Você deve substituir todos os valores de espaço reservado do XML com os valores válidos para que o teste seja aprovado. No exemplo anterior, substitua as duas instâncias de `string` e uma de `int`. Essa operação de serviço Web somente será concluída se houver um usuário registrado que tenha feito um pedido.
 

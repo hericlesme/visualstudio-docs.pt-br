@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: dd6208c690190db3d50f35d661d6e2b53157aeee
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947109"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388261"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -41,7 +41,7 @@ No decorrer dessas etapas, você criará uma única solução do Visual Studio q
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - Visual Studio 2017 no Windows com as seguintes opções:
-  - A carga de trabalho **desenvolvimento do Python** (guia **Carga de Trabalho** no instalador). Para ver instruções, confira [Como instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md).
+  - A carga de trabalho **desenvolvimento do Python** (guia **Carga de Trabalho** no instalador). Para obter instruções, confira [Instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md).
   - **GIT para Windows** e **Extensão GitHub para Visual Studio** na guia **Componentes individuais** em **Code Tools**.
 
 Os modelos de projeto do Flask são incluídos com todas as versões anteriores das Ferramentas Python para Visual Studio, embora os detalhes possam ser diferentes do que foi discutido neste tutorial.
@@ -56,17 +56,17 @@ No momento, não há suporte para o desenvolvimento do Python no Visual Studio p
 
 1. Nos campos, na parte inferior da caixa de diálogo, insira as informações a seguir (conforme mostrado no gráfico anterior) e, em seguida, escolha **OK**:
 
-    - **Nome**: definir o nome do projeto do Visual Studio como "BasicProject". Esse nome também é usado para o projeto do Flask.
+    - **Nome**: defina o nome do projeto do Visual Studio como **BasicProject**. Esse nome também é usado para o projeto do Flask.
     - **Local**: especifique um local no qual criar o projeto e a solução do Visual Studio.
-    - **Nome da solução**: definido como "LearningFlask", apropriado para a solução como um contêiner para vários projetos neste tutorial.
+    - **Nome da solução**: definido como **LearningFlask**, apropriado para a solução como um contêiner para vários projetos neste tutorial.
     - **Criar diretório para a solução**: deixar definido (o padrão).
-    - **Criar um novo repositório Git**: escolha essa opção (que é clara por padrão) para que o Visual Studio crie um repositório Git local quando criar a solução. Se você não vir essa opção, execute o instalador do Visual Studio 2017 e adicione o Git para Windows e a extensão do GitHub para Visual Studio à guia **Componentes individuais** em **Ferramentas de código**.
+    - **Criar um novo repositório Git**: escolha essa opção (que é clara por padrão) para que o Visual Studio crie um repositório Git local quando criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio 2017 e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
 
-1. Após alguns instantes, o Visual Studio fará uma solicitação em uma caixa de diálogo com a mensagem "Este projeto requer pacotes externos" (mostrada abaixo). Essa caixa de diálogo é exibida, porque o modelo inclui um arquivo `requirements.txt` que referencia o pacote Flask 1.x mais recente. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
+1. Após alguns instantes, o Visual Studio fará uma solicitação em uma caixa de diálogo com a mensagem **Este projeto exige pacotes externos** (mostrado abaixo). Essa caixa de diálogo é exibida porque o modelo inclui um arquivo *requirements.txt* que referencia o último pacote do Flask 1.x. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
 
     ![Solicitação dizendo que o projeto requer pacotes externos](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
-1. Escolha a opção **Eu vou instalá-los sozinho**. Crie o ambiente virtual logo em seguida para garantir que ele será excluído do controle do código-fonte. (O ambiente pode ser criado em `requirements.txt`).
+1. Escolha a opção **Eu vou instalá-los sozinho**. Crie o ambiente virtual logo em seguida para garantir que ele será excluído do controle do código-fonte. (O ambiente pode ser sempre criado com base em *requirements.txt*.)
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Etapa 1-2: Examinar os controles do Git e publicar em um repositório remoto
 
@@ -85,7 +85,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 
     ![Janela do Team Explorer na página Alterações](media/flask/step01-team-explorer-changes.png)
 
-1. Na barra de status do Visual Studio, marque o botão de confirmação não enviada (a seta para cima com um "2") para abrir a página **Sincronização** no **Team Explorer**. Como você tem apenas um repositório local, a página oferece opções simples para publicar o repositório em diferentes repositórios remotos.
+1. Na barra de status do Visual Studio, marque o botão de confirmação não enviada (a seta para cima com um **2**) para abrir a página **Sincronização** no **Team Explorer**. Como você tem apenas um repositório local, a página oferece opções simples para publicar o repositório em diferentes repositórios remotos.
 
     ![Janela do Team Explorer mostrando opções do repositório Git disponíveis para o controle do código-fonte](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 1. Ao trabalhar com este tutorial, adquira o hábito de usar periodicamente os controles no Visual Studio para confirmar e enviar alterações por push. Este tutorial envia-lhe lembretes nos pontos apropriados.
 
 > [!Tip]
-> Para navegar rapidamente no **Team Explorer**, marque o cabeçalho (que diz "Alterações" ou "Efetuar push" nas imagens acima) para ver um menu pop-up das páginas disponíveis.
+> Para navegar rapidamente no **Team Explorer**, selecione o cabeçalho (que indica **Alterações** ou **Efetuar Push** nas imagens acima) para ver um menu pop-up das páginas disponíveis.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte a partir do início de um projeto?
 
@@ -120,7 +120,7 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
     ![Comando Adicionar Ambiente Virtual no Gerenciador de Soluções](media/flask/step01-add-virtual-environment-command.png)
 
-1. Uma caixa de diálogo **Adicionar Ambiente Virtual** é exibida contendo a mensagem "Encontramos um arquivo requirements.txt." Esta mensagem indica que o Visual Studio usa esse arquivo para configurar o ambiente virtual.
+1. Uma caixa de diálogo **Adicionar Ambiente Virtual** é exibida contendo a mensagem **Encontramos um arquivo requirements.txt.** Esta mensagem indica que o Visual Studio usa esse arquivo para configurar o ambiente virtual.
 
     ![Caixa de diálogo Adicionar Ambiente Virtual com a mensagem requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -128,37 +128,37 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
 1. Caso seja solicitado, concorde com os privilégios de administrador e aguarde alguns minutos enquanto o Visual Studio baixa e instala pacotes, que, para o Flask e para suas dependências, significa expandir cerca de mil arquivos em mais de 100 subpastas. Você pode ver o progresso na janela **Saída** no Visual Studio. Enquanto você aguarda, analise as seções de perguntas a seguir. Também é possível ver uma descrição das dependências do Flask na página [instalação do Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
 
-1. Nos controles do GIT do Visual Studio (na barra de status), selecione o indicador de alterações (que mostra "99\*") que abre a página **Alterações** no **Team Explorer**.
+1. Nos controles do GIT do Visual Studio (na barra de status), selecione o indicador de alterações (mostrando **99&#42;**) que abre a página **Alterações** no **Team Explorer**.
 
-    A criação do ambiente virtual apresentou centenas de alterações, mas nenhuma delas precisará ser incluída no controle do código-fonte já que você (ou qualquer outra pessoa que venha a clonar o projeto) poderá sempre recriar o ambiente em `requirements.txt`.
+    A criação do ambiente virtual apresentou centenas de alterações, mas nenhuma delas precisará ser incluída no controle do código-fonte já que você (ou qualquer outra pessoa que venha a clonar o projeto) poderá sempre recriar o ambiente com base em *requirements.txt*.
 
-    Para excluir o ambiente virtual, clique com o botão direito do mouse na pasta `env` e escolha **Ignorar esses itens locais**.
+    Para excluir o ambiente virtual, clique com o botão direito do mouse na pasta **env** e selecione **Ignorar estes itens locais**.
 
     ![Como ignorar um ambiente virtual em alterações de controle do código-fonte](media/flask/step01-ignore-local-items.png)
 
-1. Depois de excluir o ambiente virtual, as únicas alterações que restam são as referentes ao arquivo de projeto e ao arquivo `.gitignore`. O arquivo `.gitignore` contém uma entrada adicional para a pasta de ambiente virtual. Você pode clicar duas vezes no arquivo para ver uma comparação.
+1. Depois de excluir o ambiente virtual, as únicas alterações restantes são as referentes ao arquivo de projeto e a *.gitignore*. O arquivo *.gitignore* contém uma entrada adicional para a pasta do ambiente virtual. Você pode clicar duas vezes no arquivo para ver uma comparação.
 
 1. Digite uma mensagem de confirmação, escolha o botão **Confirmar Todos** e, se desejar, envie as confirmações por push para o repositório remoto.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pergunta: Por que criar um ambiente virtual?
 
-Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do seu aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolve um aplicativo, você invariavelmente introduzirá muitos pacotes úteis do Python. Ao manter os pacotes em um ambiente virtual específico do projeto, você pode atualizar facilmente o arquivo `requirements.txt` do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de compilação, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o `requirements.txt` (é por isso que o ambiente não precisa estar no controle do código-fonte). Para saber mais, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do seu aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolver um aplicativo, invariavelmente, você introduzirá muitos pacotes úteis do Python. Mantendo os pacotes em um ambiente virtual específico do projeto, você pode atualizar com facilidade o arquivo *requirements.txt* do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de build, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o *requirements.txt* (é por isso que o ambiente não precisa estar no controle do código-fonte). Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pergunta: Como faço para remover um ambiente virtual que já está confirmado no controle do código-fonte?
 
-Resposta: Primeiro, edite seu arquivo `.gitignore` para excluir a pasta: localize a seção final que traz o comentário `# Python Tools for Visual Studio (PTVS)` e adicione uma nova linha para a pasta do ambiente virtual, como `/BasicProject/env`. (Como o Visual Studio não mostra o arquivo no **Gerenciador de Soluções**, abra-o diretamente usando o comando de menu **Arquivo** > **Abrir** > **Arquivo**. Você também pode abrir o arquivo no **Team Explorer**: na página **Configurações**, escolha **Configurações do Repositório**, vá para a seção **Ignorar e Arquivos de Atributos** e marque o link **Editar** ao lado de `.gitignore`).
+Resposta: Primeiro, edite o arquivo *.gitignore* para excluir a pasta: localize a seção ao final com o comentário `# Python Tools for Visual Studio (PTVS)` e adicione uma nova linha à pasta do ambiente virtual, como `/BasicProject/env`. (Como o Visual Studio não mostra o arquivo no **Gerenciador de Soluções**, abra-o diretamente usando o comando de menu **Arquivo** > **Abrir** > **Arquivo**. Abra também o arquivo no **Team Explorer**: na página **Configurações**, selecione **Configurações do Repositório**, vá para a seção **Arquivos Ignorar e de Atributos** e, em seguida, selecione o link **Editar** ao lado de **.gitignore**.)
 
-Depois, abra uma janela de comando, navegue até a pasta, como `BasicProject`, que contém a pasta do ambiente virtual, como `env`, e execute `git rm -r env`. Em seguida, confirme essas alterações na linha de comando (`git commit -m 'Remove venv'`) ou confirme na página **Alterações** do **Team Explorer**.
+Em segundo lugar, abra uma janela Comando, navegue para a pasta, como *BasicProject*, que contém a pasta do ambiente virtual, como *env*, e execute `git rm -r env`. Em seguida, confirme essas alterações na linha de comando (`git commit -m 'Remove venv'`) ou confirme na página **Alterações** do **Team Explorer**.
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>Etapa 1-4: Examinar o código de texto clichê
 
-1. Quando a criação do projeto for concluída, você verá a solução e o projeto no **Gerenciador de Soluções**, em que o projeto contém apenas dois arquivos, `app.py` e `requirements.txt`:
+1. Quando a criação do projeto for concluída, você verá a solução e o projeto no **Gerenciador de Soluções**, em que o projeto contém apenas dois arquivos, *app.py* e *requirements.txt*:
 
     ![Arquivos de projeto em branco do Flask no Gerenciador de Soluções](media/flask/step01-blank-flask-project-in-solution-explorer.png)
 
-1. Conforme observado anteriormente, o arquivo `requirements.txt` especifica a dependência de pacote do Flask. A presença desse arquivo é que faz com que você seja convidado a criar um ambiente virtual ao desenvolver o projeto pela primeira vez.
+1. Conforme observado anteriormente, o arquivo *requirements.txt* especifica a dependência de pacote do Flask. A presença desse arquivo é que faz com que você seja convidado a criar um ambiente virtual ao desenvolver o projeto pela primeira vez.
 
-1. O único arquivo `app.py` contém três partes. A primeira é uma instrução `import` do Flask, criando uma instância da classe `Flask`, atribuída à variável `app` e, em seguida, atribuindo uma variável `wsgi_app` (útil ao implantar um host da Web, mas não usada no momento):
+1. O único arquivo *app.py* contém três partes. A primeira é uma instrução `import` do Flask, criando uma instância da classe `Flask`, atribuída à variável `app` e, em seguida, atribuindo uma variável `wsgi_app` (útil ao implantar um host da Web, mas não usada no momento):
 
     ```python
     from flask import Flask
@@ -190,11 +190,11 @@ Depois, abra uma janela de comando, navegue até a pasta, como `BasicProject`, q
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pergunta: qual é a finalidade do argumento __nome__ para a classe do Flask?
+### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pergunta: Qual é a finalidade do argumento __name__ para a classe do Flask?
 
 Resposta: o argumento é o nome do módulo ou do pacote do aplicativo e informa ao Flask onde procurar modelos, arquivos estáticos e outros recursos que pertencem ao aplicativo. Para aplicativos contidos em um único módulo, `__name__` é sempre o valor adequado. Também é importante para as extensões que precisam de informações de depuração. Para obter mais informações, e outros argumentos, confira a [documentação de classes do Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
-### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pergunta: uma função pode ter mais de um decorador de rota?
+### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pergunta: Uma função pode ter mais de um decorador de rota?
 
 Resposta: sim, será possível usar quantos decoradores você quiser se a mesma função servir para várias rotas. Por exemplo, para usar a função `hello` para "/" e "/hello", use o seguinte código:
 
@@ -208,7 +208,7 @@ def hello():
 
 <a name="qa-url-variables"></a>
 
-### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pergunta: como o Flask trabalha com rotas de URL de variável e parâmetros de consulta?
+### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pergunta: Como o Flask trabalha com rotas de URL de variável e parâmetros de consulta?
 
 Resposta: em uma rota, marque qualquer variável com `<variable_name>`, e o Flask passará a variável para a função usando um argumento nomeado. A variável pode fazer parte do caminho da URL ou em um parâmetro de consulta. Por exemplo, uma rota no formato de `'/hello/<name>` gera um argumento de cadeia de caracteres chamado `name` para a função e o uso de `?message=<msg>` na rota analisa o valor fornecido para o parâmetro de consulta "message=" e o passa para a função como `msg`:
 
@@ -224,15 +224,15 @@ Os parâmetros de consulta também estão disponíveis por meio da propriedade `
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt a partir de um ambiente virtual depois de instalar outros pacotes?
 
-Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direito do mouse no ambiente virtual e escolha o comando **Gerar requirements.txt**. É recomendável usar esse comando periodicamente conforme você modifica o ambiente e confirma as alterações em `requirements.txt` para o controle do código-fonte juntamente com quaisquer outras alterações de código que dependam desse ambiente. Se você configurar a integração contínua em um servidor de compilação, deverá gerar o arquivo e confirmar as alterações sempre que modificar o ambiente.
+Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direito do mouse no ambiente virtual e escolha o comando **Gerar requirements.txt**. É recomendável usar esse comando periodicamente conforme você modifica o ambiente e confirma as alterações em *requirements.txt* no controle do código-fonte, juntamente com outras alterações de código que dependem desse ambiente. Se você configurar a integração contínua em um servidor de compilação, deverá gerar o arquivo e confirmar as alterações sempre que modificar o ambiente.
 
 ## <a name="step-1-5-run-the-project"></a>Etapa 1-5: Executar o projeto
 
-1. No Visual Studio, escolha **Depurar** > **Iniciar Depuração** (F5) ou usar o **Servidor Web** na barra de ferramentas (o navegador que você vê pode variar):
+1. No Visual Studio, selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas (o navegador visto pode variar):
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
-1. Qualquer comando atribui um número da porta aleatório à variável de ambiente PORT e, em seguida, executa `python app.py`. O código inicia o aplicativo usando essa porta dentro do servidor de desenvolvimento do Flask. Se o Visual Studio informar "Falha ao iniciar o depurador" através de uma mensagem que alerta para a ausência de um arquivo de inicialização, clique com o botão direito do mouse `app.py` no **Gerenciador de Soluções** e escolha **Definir como Arquivo de Inicialização**.
+1. Qualquer comando atribui um número da porta aleatório à variável de ambiente PORT e, em seguida, executa `python app.py`. O código inicia o aplicativo usando essa porta dentro do servidor de desenvolvimento do Flask. Se o Visual Studio informar **Falha ao iniciar o depurador** com uma mensagem que alerta para a ausência de um arquivo de inicialização, clique com o botão direito do mouse em **app.py** no **Gerenciador de Soluções** e selecione **Definir como Arquivo de Inicialização**.
 
 1. Ao iniciar o servidor, você vê uma janela do console aberta que exibe o log do servidor. O Visual Studio abre automaticamente um navegador para `http://localhost:<port>`, em que você verá a mensagem renderizada pela função `hello`:
 

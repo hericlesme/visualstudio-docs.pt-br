@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692350"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382733"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Definir uma propriedade de automação exclusiva para controles UWP para teste
 
@@ -48,13 +48,13 @@ Defina **AutomationProperties.AutomationId** como **ButtonX** explicitamente no 
 
 Defina **AutomationProperties.Name** como **ButtonY** explicitamente no XAML do controle.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>Atribuir nomes exclusivos
 
-No Blend para Visual Studio, é possível selecionar uma opção para atribuir nomes exclusivos a elementos interativos, como botões, caixas de listagem, caixas de combinação e caixas de texto. Isso dá aos controles valores exclusivos para **AutomationProperties.Name**.
+No Blend para Visual Studio, selecione uma opção para atribuir nomes exclusivos a elementos interativos como botões, caixas de listagem, caixas de combinação e caixas de texto, que fornece aos controles valores exclusivos para **AutomationProperties.Name**.
 
 Para atribuir nomes exclusivos a controles existentes, selecione **Ferramentas** > **Nomear elementos interativos**.
 
@@ -140,7 +140,7 @@ Você pode usar um modelo de controle para que cada instância de um tipo espec�
 </Style>
 ```
 
-Quando você define duas instâncias de um botão usando esse modelo de controle, a ID de automação é definida como a cadeia de caracteres de conteúdo exclusiva para os controles no modelo, como mostra o XAML a seguir:
+Quando você define duas instâncias de um botão usando esse modelo de controle, a ID de automação é definida como a cadeia de caracteres de conteúdo exclusivo para os controles no modelo, como mostra o seguinte XAML:
 
 ```xaml
 <Button Content="Button1" Style="{StaticResource MyButton}" Width="140"/>
@@ -149,7 +149,7 @@ Quando você define duas instâncias de um botão usando esse modelo de controle
 
 ### <a name="dynamic-controls"></a>Controles dinâmicos
 
-Se tiver controles criados dinamicamente do código e não criados estaticamente ou por meio de modelos em arquivos XAML, será necessário definir as propriedades **Content** ou **Name** para o controle. Isso garante que cada controle dinâmico tenha uma propriedade de automação exclusiva. Por exemplo, se houver uma caixa de seleção que deve ser exibida quando você seleciona um item de lista, você poderá definir essas propriedades, como mostrado aqui:
+Se tiver controles criados dinamicamente do código e não criados estaticamente ou por meio de modelos em arquivos XAML, será necessário definir as propriedades **Content** ou **Name** para o controle. Essa ação garante que cada controle dinâmico tenha uma propriedade de automação exclusiva. Por exemplo, se houver uma caixa de seleção que deve ser exibida quando você seleciona um item de lista, você poderá definir essas propriedades, como mostrado aqui:
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)

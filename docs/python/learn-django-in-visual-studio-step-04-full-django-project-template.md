@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090043"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388170"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Django completo
 
@@ -35,19 +35,19 @@ O modelo também fornece autenticação básica, que é abordada na etapa 5.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Etapa 4-1: Criar um projeto com base no modelo
 
-1. No Visual Studio, vá até **Gerenciador de Soluções**, clique com o botão direito na solução "LearningDjango" criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
+1. No Visual Studio, acesse o **Gerenciador de Soluções**, clique com o botão direito do mouse na solução **LearningDjango** criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
 
-1. Na caixa de diálogo Novo Projeto, procure e selecione o modelo "Projeto Web do Django", nomeie o projeto "DjangoWeb" e selecione **OK**.
+1. Na caixa de diálogo Novo Projeto, pesquise e selecione o modelo **Projeto Web do Django**, nomeie o projeto "DjangoWeb" e selecione **OK**.
 
-1. Como o modelo novamente inclui um arquivo `requirements.txt`, o Visual Studio solicita onde instalar essas dependências. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
+1. Como o modelo novamente inclui um arquivo *requirements.txt*, o Visual Studio solicita o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões.
 
-1. Quando o Visual Studio termina a configuração do ambiente virtual, siga as instruções no `readme.html` exibido para criar um superusuário Django (ou seja, um administrador). Basta clicar com o botão direito do mouse no projeto do Visual Studio e selecionar o comando **Python** > **Criar Superusuário do Django** e, em seguida, seguir os prompts. Registre seu nome de usuário e senha que usa ao exercitar os recursos de autenticação do aplicativo.
+1. Quando o Visual Studio concluir a configuração do ambiente virtual, siga as instruções do *readme.html* exibido para criar um superusuário do Django (ou seja, um administrador). Basta clicar com o botão direito do mouse no projeto do Visual Studio e selecionar o comando **Python** > **Criar Superusuário do Django** e, em seguida, seguir os prompts. Registre seu nome de usuário e senha que usa ao exercitar os recursos de autenticação do aplicativo.
 
-1. Defina o projeto "DjangoWeb" para ser o padrão para a solução do Visual Studio clicando com o botão direito nesse projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
+1. Defina o projeto **DjangoWeb** para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
 
     ![Gerenciador de Soluções mostrando o projeto DjangoWeb como o projeto de inicialização](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Escolha **Depurar** > **Iniciar Depuração** (F5) ou usar o **Servidor Web** na barra de ferramentas para executar o servidor:
+1. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas para executar o servidor:
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,19 +61,19 @@ O modelo também fornece autenticação básica, que é abordada na etapa 5.
 
 1. Você pode deixar o aplicativo em execução para as seções a seguir.
 
-    Se quiser parar o aplicativo e [confirmar as alterações para o controle de origem](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clicando com o botão direito na pasta para o ambiente virtual (provavelmente `env`) e selecione **Ignorar esses itens locais**.
+    Caso deseje interromper o aplicativo e [confirmar as alterações no controle do código-fonte](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), primeiro abra a página **Alterações** no **Team Explorer**, clique com o botão direito do mouse na pasta do ambiente virtual (provavelmente **env**) e selecione **Ignorar estes itens locais**.
 
 ### <a name="examine-what-the-template-creates"></a>Examine o que o modelo cria
 
 No nível mais amplo, o modelo "Projeto Web do Django" cria a seguinte estrutura:
 
 - Arquivos na raiz do projeto:
-  - `manage.py`, o utilitário administrativo do Django.
-  - `db.sqlite3`, um banco de dados padrão SQLite.
-  - `requirements.txt` que contém uma dependência no Django 1.x.
-  - `readme.html`, um arquivo que é exibido no Visual Studio depois de criar o projeto. Conforme observado na seção anterior, siga as instruções aqui para criar uma conta de superusuário (administrador) para o aplicativo.
-- A pasta `app` contém todos os arquivos de aplicativo, incluindo exibições, modelos, testes, formulários, modelos e arquivos estáticos (veja a etapa 4-2). Normalmente, você renomeie esta pasta para usar um nome de aplicativo mais diferente.
-- A pasta `DjangoWeb` (projeto do Django) contém os arquivos de projeto típicos do Django: `__init__.py`, `settings.py`, `urls.py` e `wsgi.py`. Usando o modelo de projeto, `settings.py` já está configurado para o aplicativo e o arquivo de banco de dados, e `urls.py` já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
+  - *manage.py*, o utilitário administrativo do Django.
+  - *db.sqlite3*, banco de dados SQLite padrão.
+  - *requirements.txt* contendo uma dependência Django 1.x.
+  - *readme.html*, um arquivo que é exibido no Visual Studio após a criação do projeto. Conforme observado na seção anterior, siga as instruções aqui para criar uma conta de superusuário (administrador) para o aplicativo.
+- A pasta *app* contém todos os arquivos do aplicativo, incluindo exibições, modelos, testes, formulários, modelos e arquivos estáticos (veja a etapa 4-2). Normalmente, você renomeie esta pasta para usar um nome de aplicativo mais diferente.
+- A pasta *DjangoWeb* (projeto do Django) contém os arquivos de projeto típicos do Django: *\_\_init\_\_.py*, *settings.py*, *urls.py* e *wsgi.py*. Usando o modelo de projeto, *settings.py* já está configurado para o aplicativo e o arquivo de banco de dados, e *urls.py* já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pergunta: É possível compartilhar um ambiente virtual entre projetos do Visual Studio?
 
@@ -87,7 +87,7 @@ No entanto, para usar um ambiente virtual existente, faça o seguinte:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Etapa 4-2: Entender os modos de exibição e os modelos de página criados pelo modelo de projeto
 
-Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código para esses modos de exibição é encontrado na pasta `app/views`. Cada função de exibição simplesmente chama `django.shortcuts.render` com o caminho para um modelo e um objeto de dicionário simples. Por exemplo, a página Sobre é tratada pela função `about`:
+Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *app/views*. Cada função de exibição simplesmente chama `django.shortcuts.render` com o caminho para um modelo e um objeto de dicionário simples. Por exemplo, a página Sobre é tratada pela função `about`:
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-Os modelos estão localizados na pasta `templates/app` do aplicativo (e geralmente você deseja renomear `app` para o nome do seu aplicativo real). O modelo de base, `layout.html`, é mais amplo. Ele se refere a todos os arquivos estáticos necessários (JavaScript e CSS), define um bloco nomeado "conteúdo" que outras páginas substituem e fornece outro bloco chamado "scripts". Os seguintes trechos anotados do `layout.html` mostram essas áreas específicas:
+Os modelos estão localizados na pasta *templates/app* do aplicativo (e, geralmente, você deseja renomear *app* com o nome do aplicativo real). O modelo base, *layout.html*, é o mais abrangente. Ele se refere a todos os arquivos estáticos necessários (JavaScript e CSS), define um bloco nomeado "conteúdo" que outras páginas substituem e fornece outro bloco chamado "scripts". Os seguintes trechos anotados de *layout.html* mostram essas áreas específicas:
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ Os modelos estão localizados na pasta `templates/app` do aplicativo (e geralmen
 </html>
 ```
 
-Os modelos de cada página, `about.html`, `contact.html` e `index.html`, cada uma estende o modelo base `layout.html`. `about.html` é o mais simples e mostra as marcas `{% extends %}` e `{% block content %}`:
+Cada um dos modelos de página individual, *about.html*, *contact.html* e *index.html*, estende o modelo base *layout.html*. *about.html* é o mais simples e mostra as marcações `{% extends %}` e `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,9 +159,9 @@ Os modelos de cada página, `about.html`, `contact.html` e `index.html`, cada um
 {% endblock %}
 ```
 
-`index.html` e `contact.html` usam a mesma estrutura e fornecem mais conteúdo no bloco "conteúdo".
+*index.html* e *contact.html* usam a mesma estrutura e fornecem mais conteúdo no bloco "conteúdo".
 
-Na pasta `templates/app` também está uma quarta página `login.html`, juntamente com `loginpartial.html` que é colocada em `layout.html` usando `{% include %}`. Esses arquivos de modelo são discutidos na etapa 5 na autenticação.
+Na pasta *templates/app*, também se encontra uma quarta página *login.html*, junto com *loginpartial.html*, que é inserida em *layout.html* com `{% include %}`. Esses arquivos de modelo são discutidos na etapa 5 na autenticação.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pergunta: {% block %} e {% endblock %} podem ser recuados no modelo de página do Django?
 
@@ -169,7 +169,7 @@ Resposta: Sim, os modelos de página do Django funcionam bem se você recuar mar
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Etapa 4-3: Entender o roteamento de URL criado pelo modelo
 
-O arquivo `urls.py` do projeto do Django conforme criados pelo modelo "Projeto Web do Django" contém o seguinte código:
+O arquivo *urls.py* do projeto do Django criado pelo modelo "Projeto Web do Django" contém o seguinte código:
 
 ```python
 from datetime import datetime
@@ -204,9 +204,9 @@ urlpatterns = [
 ]
 ```
 
-Os três primeiros padrões de URL mapeiam diretamente para os modos de exibição `home`, `contact` e `about` no arquivo `views.py` do aplicativo. Os padrões `^login/$` e `^logout$`, por outro lado, usam modos de exibição internos do Django em vez de exibições definidas pelo aplicativo. As chamadas para o método `url` também incluem dados adicionais para personalizar o modo de exibição. A Etapa 5 explora essas chamadas.
+Os três primeiros padrões de URL são mapeados diretamente para as exibições `home`, `contact` e `about` no arquivo *views.py* do aplicativo. Os padrões `^login/$` e `^logout$`, por outro lado, usam modos de exibição internos do Django em vez de exibições definidas pelo aplicativo. As chamadas para o método `url` também incluem dados adicionais para personalizar o modo de exibição. A Etapa 5 explora essas chamadas.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pergunta: No projeto que criei, por que o padrão de URL "sobre" usa '^about' em vez de '^about$' como mostrado aqui?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pergunta: No projeto que criei, por que o padrão de URL "about" usa '^about' em vez de '^about$', como mostrado aqui?
 
 Resposta: A falta do '$' à direita na expressão regular foi um erro simples em várias versões do modelo do projeto. O padrão de URL funciona perfeitamente bem para uma página chamada "sobre", mas sem o '$' à direita, o padrão de URL também corresponde a URLs como "about=django", "about09876", "aboutoflaughter" e assim por diante. O '$' à direita é mostrado aqui para criar um padrão de URL que corresponde a *somente* "sobre".
 

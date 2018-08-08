@@ -2,7 +2,7 @@
 title: Usar o Visual Studio para criar um aplicativo Web ASP.NET Core em C#
 description: Saiba como criar um aplicativo Web do ASP.NET Core no Visual Studio com C#, passo a passo.
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 07/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
 ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380610"
+ms.locfileid: "39382653"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -29,7 +29,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de projeto vem com todos os arquivos de modelo para criar um aplicativo Web, antes mesmo de você adicionar alguma coisa!
+Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. Veja como.
 
 1. Abra o Visual Studio 2017.
 
@@ -37,7 +37,11 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
 
 1. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo Web ASP.NET Core**. Em seguida, nomeie o arquivo `HelloWorld` e escolha **OK**.
 
-   ![Crie o novo projeto de aplicativo Web ASP.NET Core para C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
+1. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web** e escolha **OK**.
+
+  ![Exibir o arquivo .gif animado que mostra como criar um projeto ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+
+  Logo depois, o Visual Studio abre o arquivo de projeto.
 
    > [!NOTE]
    > Se você não vir a categoria de modelo de projeto **.NET Core**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo.
@@ -50,58 +54,30 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
    >
    > (Talvez você precise fechar o Visual Studio antes de continuar a instalar a nova carga de trabalho.)
 
-1. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web** e escolha **OK**.
+## <a name="create-and-run-the-app"></a>Criar e executar o aplicativo
 
-   ![Caixa de diálogo Novo Aplicativo Web ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
-
-Logo depois, o Visual Studio abre o arquivo de projeto.
-
-## <a name="create-the-app"></a>Criar o aplicativo
+Em seguida, você criará e executará o aplicativo Web "Olá, Mundo". Veja como.
 
 1. No **Gerenciador de Soluções**, expanda a pasta **Páginas** e, em seguida, escolha **About.cshtml**.
-
-   ![Escolha o arquivo About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Este arquivo corresponde a uma página chamada **Sobre** no aplicativo Web.
 
    ![A página Sobre no aplicativo Web](../ide/media/csharp-aspnet-about-page.png)
 
-   No editor, você verá o código HTML para a área de "informações adicionais" da página **Sobre**.
-
-   ![O código HTML para a área de informações adicionais no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
-
 1. Altere o texto de "informações adicionais" para dizer "**Olá, Mundo!**".
 
-   ![Mudar o código HTML padrão para a área de informações adicionais no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
-
-1. No **Gerenciador de Soluções**, expanda **About.cshtml** e, em seguida, escolha **About.cshtml.cs**. (Esse arquivo também corresponde à página **Sobre** em seu aplicativo Web.)
-
-   ![Escolha o arquivo About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-about-page-code-file.png)
-
-   No editor, você verá o código de C# que inclui o texto para a área "Descrição do aplicativo" da página **sobre**.
-
-   ![O código de C# para a área de descrição do aplicativo no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+1. No **Gerenciador de Soluções**, expanda **About.cshtml** e, em seguida, escolha **About.cshtml.cs**.
 
 1. Alterar o texto da mensagem de "Descrição do aplicativo" para dizer "**Qual é a minha mensagem?**".
 
-   ![Altere o texto da mensagem padrão para a área de descrição do aplicativo no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+1. Escolha **IIS Express** ou pressione **Ctrl**+**F5** para executar o aplicativo e abri-lo em um navegador da Web.
 
-## <a name="run-the-app"></a>Executar o aplicativo
-
-1. Pressione **Ctrl**+**F5** para executar o aplicativo e abri-lo em um navegador da Web.
+  ![Exibir o arquivo .gif animado que mostra como criar e executar um aplicativo Web ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Se você receber uma mensagem de erro que diz **Não é possível se conectar ao servidor Web “IIS Express”**, feche o Visual Studio e abra-o usando a opção **Executar como administrador** clicando com o botão direito do mouse ou no menu de contexto. Em seguida, execute o aplicativo novamente.
 
-1. Na parte superior da página da Web, escolha **Sobre**.
-
-   ![Selecione Sobre na página da Web](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. Exiba o texto atualizado que você adicionou para a página **Sobre**.
-
-   ![Exibir a página Sobre atualizada que inclui o texto que você adicionou](../ide/media/csharp-aspnet-about-page-hello-world.png)
-
-1. Feche o navegador da Web.
+1. Verifique se a página **About** inclui o texto atualizado.
 
 Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre o C#, o ASP.NET Core e o IDE (ambiente de desenvolvimento integrado) do Visual Studio.
 

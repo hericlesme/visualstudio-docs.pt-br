@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180045"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379365"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar a porcentagem de usuários virtuais que usam dados de cache da Web
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar o percentual de usuários virtuais que usam dados de cache da Web
 
-Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá alterar as propriedades dos cenários de forma a atender suas necessidades e objetivos de teste usando o **Editor de Teste de Carga**. Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá alterar as propriedades dos cenários de forma a atender suas necessidades e objetivos de teste usando o **Editor de Teste de Carga**. Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
-A propriedade de **Percentual de novos usuários** é definida na janela Propriedades. Edite as propriedades de cenário do teste de carga no Editor de Testes de Carga.
+A propriedade **Percentual de novos Usuários** é definida na janela **Propriedades**. Edite as propriedades de cenário de teste de carga no **Editor de Teste de Carga**.
 
 A propriedade **Percentual de novos usuários** afeta a maneira como o teste de carga simula o armazenamento em cache que seria executado por um navegador da Web. Por padrão, a propriedade de **Percentual de novos usuários** é definida como 0%. Se o valor da propriedade **Percentual de novos usuários** for definido como 100%, cada execução de teste de desempenho Web em um teste de carga será tratada como um usuário de primeira vez no site que não tem nenhum conteúdo do site no cache de visitas anteriores do navegador. Assim, todas as solicitações do teste na Web, incluindo todas as solicitações dependentes como imagens, são baixadas.
 
@@ -40,7 +40,7 @@ Se você estiver testando a carga de um site que tem um número significativo de
 
 3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
-     As categorias e as propriedades do cenário são exibidas na janela Propriedades.
+     As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
 4. Defina o valor da propriedade **Percentual de Novos Usuários** digitando um número para o percentual de novos usuários.
 

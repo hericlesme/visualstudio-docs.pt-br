@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056905"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341591"
 ---
-# <a name="formatting-python-code"></a>Formatando o código do Python
+# <a name="format-python-code"></a>Formatar o código do Python
 
-O Visual Studio permite reformatar rapidamente o código para que ele corresponda às opções de formatação pré-configuradas.
+O Visual Studio permite que você reformate rapidamente o código para que ele corresponda às opções de formatação pré-configuradas.
 
-- Para formatar uma seleção: selecione **Editar > Avançado > Seleção de Formato** ou pressione Ctrl+E, F.
-- Para formatar todo o arquivo: selecione **Editar > Avançado > Formatar Documento** ou pressione Ctrl+E, D.
+- Para formatar uma seleção: selecione **Editar** > **Avançado** > **Seleção de Formato** ou pressione **Ctrl**+**E** > **F**.
+- Para formatar todo o arquivo: selecione **Editar** > **Avançado** > **Formatar Documento** ou pressione **Ctrl**+**E** > **D**.
 
-As opções são definidas em **Ferramentas > Opções > Editor de Texto > Python > Formatação** e em suas abas aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
+As opções são definidas por meio de **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Formatação** e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
 
 ![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
 
 As opções de formatação por padrão são definidas para corresponder a um subconjunto do [guia de estilo PEP 8](http://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações para as outras três guias são descritas neste artigo.
 
-O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [Preencher Parágrafo de Comentário](#fill-comment-paragraph-command) ao menu **Editar > Avançado**, conforme descrito em uma seção posterior.
+O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [**Preencher Parágrafo de Comentário**](#fill-comment-paragraph-command) ao menu **Editar** > **Avançado**, conforme descrito em uma seção posterior.
 
 ## <a name="spacing"></a>Espaçamento
 
@@ -43,7 +43,7 @@ O **espaçamento** controla o local em que espaços são inseridos ou removidos 
 
 Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
-| Opção Definições de Classe | Selecionado | Limpo |
+| Opção de definições de classe | Selecionado | Limpo |
 | --- | --- | --- | 
 | Insere espaço entre o nome de uma declaração da classe e a lista de bases | `class X (object): pass` | `class X(object): pass` | 
 | Inserir espaço dentro dos parênteses da lista de bases | `class X( object ): pass` | `class X(object): pass` |
@@ -51,7 +51,7 @@ Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 <br/>
 
-| Opção Definições de Função | Selecionado | Limpo |
+| Opção de definições de função | Selecionado | Limpo |
 | --- | --- | --- |
 | Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros | `def X (): pass` | `def X(): pass` | 
 | Inserir espaço dentro dos parênteses da lista de parâmetros | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -110,7 +110,7 @@ O **Encapsulamento** permite que você defina a **Largura máxima do comentário
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Preencher Parágrafo de Comentário
 
-A opção **Editar > Avançado > Preencher Parágrafo de Comentário** (Ctrl+E, P) reflui e formata o texto de comentário, combinando linhas curtas e dividindo as longas.
+A opção **Editar** > **Avançado** > **Preencher Parágrafo de Comentário** (**Ctrl**+**E** > **P**) reflui e formata o texto de comentário, combinando linhas curtas e dividindo as longas.
 
 Por exemplo:
 

@@ -1,7 +1,7 @@
 ---
 title: Publicando um aplicativo Python no Serviço de Aplicativo do Azure
 description: Como publicar um aplicativo Web em Python diretamente no Serviço de Aplicativo do Azure a partir do Visual Studio, incluindo o conteúdo necessário para o arquivo web.config.
-ms.date: 09/27/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 249774da4ef088ae1f8a0b11c932d7ed92d1bcde
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032236"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310092"
 ---
 # <a name="publishing-to-azure-app-service"></a>Publicando no Serviço de Aplicativo do Azure
+
+> [!Important]
+> Atualmente, não há suporte para a implantação de aplicativos do Python no Serviço de Aplicativo do Azure para Linux no Visual Studio. A Microsoft também planeja reprovar o Python no Serviço de Aplicativo no Windows. As atualizações serão postadas neste artigo, quando estiverem disponíveis. Enquanto isso, você pode fazer a implantação no Serviço de Aplicativo no Linux usando contêineres. Para obter mais informações, confira [Implantar um aplicativo Web do Python no Aplicativo Web para Contêineres](/azure/app-service/containers/quickstart-python).
 
 O Visual Studio oferece a capacidade de publicar um aplicativo Web do Python no Serviço de Aplicativo do Azure. Publicar no Serviço de Aplicativo do Azure significa copiar os arquivos necessários para o servidor e a configurar um arquivo `web.config` adequado que instrui o servidor Web como inicializar o aplicativo.
 

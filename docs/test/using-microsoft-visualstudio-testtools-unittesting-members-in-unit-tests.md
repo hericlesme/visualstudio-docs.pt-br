@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975540"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381586"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
 
@@ -33,7 +33,7 @@ Para ajudar a fornecer uma visão geral mais clara da estrutura de teste de Unid
 
 ### <a name="members-used-for-data-driven-testing"></a>Membros usados para teste controlado por dados
 
-Use os seguintes elementos para configurar testes de unidade controlados por dados. Para saber mais, veja [Criar um Teste de Unidade Controlado por Dados](../test/how-to-create-a-data-driven-unit-test.md) e [Usar um Arquivo de Configuração para Definir uma Fonte de Dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, confira [Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md) e [Usar um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -45,7 +45,7 @@ Use os seguintes elementos para configurar testes de unidade controlados por dad
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos usados para estabelecer uma ordem de chamada
 
-Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, confira [Anatomia de um teste de unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atributos para assemblies
 
@@ -71,7 +71,7 @@ ClassInitialize e ClassCleanup são chamadas logo após a classe ser carregada e
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos usados para identificar classes de teste e métodos
 
-Cada classe de teste deve ter o atributo `TestClass` e cada método de teste deve ter o atributo `TestMethod`. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Cada classe de teste deve ter o atributo `TestClass` e cada método de teste deve ter o atributo `TestMethod`. Para obter mais informações, confira [Anatomia de um teste de unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -79,7 +79,7 @@ Cada classe de teste deve ter o atributo `TestClass` e cada método de teste dev
 
 ## <a name="assert-classes-and-related-exceptions"></a>Classes Assert e exceções relacionadas
 
-Testes de unidade podem verificar comportamentos específicos do aplicativo pelo uso de vários tipos de asserções, exceções e atributos. Para obter mais informações, consulte [Usando as Classes Assert](../test/using-the-assert-classes.md).
+Testes de unidade podem verificar comportamentos específicos do aplicativo pelo uso de vários tipos de asserções, exceções e atributos. Para obter mais informações, confira [Usando as classes Assert](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

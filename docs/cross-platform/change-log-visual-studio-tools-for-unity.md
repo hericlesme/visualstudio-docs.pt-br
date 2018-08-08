@@ -10,12 +10,12 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 395b76e7cebbf774f60c845462cd758ac8e737d1
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232436"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381049"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 Log de alterações de Ferramentas do Visual Studio para Unity.
@@ -487,7 +487,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
     -   Adicionada uma opção para configurar a visibilidade das mensagens MonoBehavior.
 
-    -   Removidas páginas de propriedade do Visual Studio que não são relevantes para projetos do Unity.
+    -   Remoção das páginas de propriedades do Visual Studio que não são relevantes para projetos do Unity.
 
 ### <a name="bug-fixes"></a>Correções de bug
 

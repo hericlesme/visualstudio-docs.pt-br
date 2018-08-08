@@ -11,23 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232212"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341863"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
 Um *ambiente* Python é um contexto em que você executa o código Python e inclui ambientes globais, virtuais e conda. Um ambiente é composto por um interpretador, uma biblioteca (normalmente a Biblioteca Padrão do Python) e um conjunto de pacotes instalados. Juntos, esses componentes determinam quais constructos de linguagem e qual sintaxe são válidos, qual funcionalidade do sistema operacional pode ser acessada e quais pacotes podem ser usados.
 
-No Visual Studio no Windows, a janela [Janela Ambientes do Python](#the-python-environments-window), conforme descrito neste artigo, é o local em que você gerencia esses ambientes e seleciona um como padrão para novos projetos. Para qualquer projeto, também é possível [selecionar um ambiente específico](selecting-a-python-environment-for-a-project.md), em vez de usar o padrão.
+No Visual Studio no Windows, a janela [**Ambientes do Python**](#the-python-environments-window), conforme descrito neste artigo, é o local em que você gerencia esses ambientes e seleciona um como o padrão para novos projetos. Para qualquer projeto, também é possível [selecionar um ambiente específico](selecting-a-python-environment-for-a-project.md), em vez de usar o padrão.
 
-**Observação**: se você for um novo usuário do Python no Visual Studio, veja os seguintes artigos para obter as informações necessárias:
-
-- [Trabalhando com o Python no Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Instalando o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md)
+>[!NOTE]
+>Caso esteja conhecendo agora o Python no Visual Studio, confira os seguintes artigos para obter as informações necessárias:
+>
+>- [Trabalhar com o Python no Visual Studio](overview-of-python-tools-for-visual-studio.md)
+>- [Instalar o suporte ao Python no Visual Studio](installing-python-support-in-visual-studio.md)
 
 Observe também que você não pode gerenciar ambientes para código Python abertos somente como uma pasta usando o comando **Arquivo** > **Abrir** > **Pasta**. Em vez disso, [Crie um projeto em Python com o código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) para aproveitar os recursos do ambiente do Visual Studio.
 
@@ -37,22 +38,22 @@ Se desejar instalar pacotes em um ambiente, confira a [referência da guia Pacot
 
 ### <a name="global-environments"></a>Ambientes globais
 
-Cada instalação do Python (por exemplo, Python 2.7, Python 3.6, Anaconda 4.4.0 etc., confira [Selecionar e instalar interpretadores Python](installing-python-interpreters.md)) mantém seu próprio ambiente global. Cada ambiente é composto pelo interpretador do Python específico, sua biblioteca padrão e por um conjunto de pacotes pré-instalados. A instalação de um pacote em um ambiente global o torna disponível para todos os projetos que usam esse ambiente. Se o ambiente estiver em uma área de proteção do sistema de arquivos (dentro de `c:\program files`, por exemplo), a instalação de pacotes exigirá privilégios de administrador.
+Cada instalação do Python (por exemplo, Python 2.7, Python 3.6, Anaconda 4.4.0 etc., confira [Instalar interpretadores do Python](installing-python-interpreters.md)) mantém seu próprio ambiente global. Cada ambiente é composto pelo interpretador do Python específico, sua biblioteca padrão e por um conjunto de pacotes pré-instalados. A instalação de um pacote em um ambiente global o torna disponível para todos os projetos que usam esse ambiente. Se o ambiente estiver em uma área de proteção do sistema de arquivos (dentro de *c:\Arquivos de Programas*, por exemplo), a instalação de pacotes exigirá privilégios de administrador.
 
-Os ambientes globais estão disponíveis para todos os projetos no computador. No Visual Studio, selecione um ambiente global como o padrão, que é usado para todos os projetos, a menos que você escolha especificamente um diferente para um projeto. Para saber mais, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
+Os ambientes globais estão disponíveis para todos os projetos no computador. No Visual Studio, selecione um ambiente global como o padrão, que é usado para todos os projetos, a menos que você escolha especificamente um diferente para um projeto. Para obter mais informações, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="virtual-environments"></a>Ambientes virtuais
 
 Como os pacotes instalados em um ambiente global estão disponíveis para todos os projetos que usam esse ambiente, poderão ocorrer conflitos quando dois projetos exigirem pacotes incompatíveis ou versões diferentes do mesmo pacote. Ambientes virtuais evitam esses conflitos usando o interpretador e a biblioteca padrão de um ambiente global, mas mantêm seus próprios armazenamentos de pacote em pastas isolados.
 
-No Visual Studio, é possível criar um ambiente virtual para um projeto específico, que é armazenado em uma subpasta no projeto. O Visual Studio fornece um comando para gerar um arquivo `requirements.txt` do ambiente virtual, tornando mais fácil recriar o ambiente em outros computadores. Para saber mais, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+No Visual Studio, é possível criar um ambiente virtual para um projeto específico, que é armazenado em uma subpasta no projeto. O Visual Studio fornece um comando para gerar um arquivo *requirements.txt* no ambiente virtual, facilitando a recriação do ambiente em outros computadores. Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Ambientes do Conda
 
 Um ambiente do conda é aquele criado usando a ferramenta `conda`, ou com o gerenciamento do conda integrado no Visual Studio 2017 versão 15.7 e superior. (Exige o Anaconda ou Miniconda; o Anaconda está disponível por meio do instalador do Visual Studio. Consulte [Instalação – Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
 
 > [!Note]
-> Para obter melhores resultados com ambientes do conda, use o conda 4.4.8 ou posterior (as versões do conda são diferentes das versões do Anaconda). Instalando o Anaconda 5.1 por meio do instalador do Visual Studio 2017
+> Para obter melhores resultados com ambientes do conda, use o conda 4.4.8 ou posterior (as versões do conda são diferentes das versões do Anaconda). Instale o Anaconda 5.1 por meio do instalador do Visual Studio 2017.
 
 Para ver a versão do conda, na qual os ambientes do conda são armazenados, bem como outras informações, execute `conda info` em um prompt de comando do Anaconda (ou seja, um prompt de comando no qual o Anaconda está no caminho):
 
@@ -79,21 +80,21 @@ O Visual Studio 2017 versão 15.7 e posterior detecta ambientes do conda automat
 Os ambientes conhecidos pelo Visual Studio são exibidos na janela **Ambientes Python**. Para abrir a janela, use um dos seguintes métodos:
 
 - Selecione o comando de menu **Exibir** > **Outras Janelas** > **Ambientes do Python**.
-- Clique com o botão direito no nó **Ambientes do Python** de um projeto no Gerenciador de Soluções e selecione **Exibir Todos os Ambientes do Python**:
+- Clique com o botão direito do mouse no nó **Ambientes do Python** de um projeto no **Gerenciador de Soluções** e selecione **Exibir Todos os Ambientes do Python**:
 
     ![Comando Exibir Todos os Ambientes no Gerenciador de Soluções](media/environments-view-all.png)
 
-Em ambos os casos, a janela **Ambientes do Python** é exibida como uma guia irmã do Gerenciador de Soluções:
+Em ambos os casos, a janela **Ambientes do Python** é exibida como uma guia irmã do **Gerenciador de Soluções**:
 
 ![Janela Ambientes do Python](media/environments-default-view.png)
 
 O Visual Studio segue o [PEP 514](https://www.python.org/dev/peps/pep-0514/) para identificar os ambientes instalados usando o Registro. Se um ambiente esperado na lista não for exibido, confira [Manually identify an existing environment](#manually-identify-an-existing-environment) (Identificar manualmente um ambiente existente).
 
-Selecionar um ambiente na lista exibe várias propriedades e comandos para esse ambiente na guia **Visão geral**. Por exemplo, é possível ver na imagem acima que o local do interpretador é `C:\Python36-32`. Use a lista suspensa embaixo da lista de ambientes para alternar para diferentes guias como **Pacotes** e **IntelliSense**. Essas guias são descritas na [referência à guia da janela Ambientes do Python](python-environments-window-tab-reference.md).
+Selecionar um ambiente na lista exibe várias propriedades e comandos para esse ambiente na guia **Visão geral**. Por exemplo, é possível ver na imagem acima que o local do interpretador é *C:\Python36-32*. Use a lista suspensa embaixo da lista de ambientes para alternar para diferentes guias como **Pacotes** e **IntelliSense**. Essas guias são descritas na [referência à guia da janela Ambientes do Python](python-environments-window-tab-reference.md).
 
-Selecionar um ambiente não o ativa de nenhuma maneira. O ambiente padrão, mostrado em negrito na lista, é o ambiente ativado no momento que o Visual Studio usa para projetos novos. Para ativar um ambiente diferente, use o comando **Tornar esse o ambiente padrão para novos projetos**. Dentro do contexto de um projeto, sempre é possível ativar um ambiente diferente. Para saber mais, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
+Selecionar um ambiente não o ativa de nenhuma maneira. O ambiente padrão, mostrado em negrito na lista, é o ambiente ativado no momento que o Visual Studio usa para projetos novos. Para ativar um ambiente diferente, use o comando **Tornar esse o ambiente padrão para novos projetos**. Dentro do contexto de um projeto, sempre é possível ativar um ambiente diferente. Para obter mais informações, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
-À direita de cada ambiente listado está um controle que abre uma janela interativa para esse ambiente. (No Visual Studio 2017 15.5 e anterior, é exibido outro controle que atualiza o banco de dados do IntelliSense para esse ambiente. Confira [Environments window tab reference](python-environments-window-tab-reference.md#intellisense-tab) (Referência à guia da janela Ambientes) para obter detalhes sobre o banco de dados).
+À direita de cada ambiente listado está um controle que abre uma janela **Interativa** nesse ambiente. (No Visual Studio 2017 15.5 e anterior, é exibido outro controle que atualiza o banco de dados do IntelliSense para esse ambiente. Confira [Referência à guia da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab) para obter detalhes sobre o banco de dados.)
 
 > [!Tip]
 > Ao expandir a janela **Ambientes do Python** até o tamanho suficiente, você obtém uma exibição mais completa de seus ambientes que pode ser mais conveniente para trabalhar.
@@ -109,36 +110,34 @@ Selecionar um ambiente não o ativa de nenhuma maneira. O ambiente padrão, most
 
 ### <a name="what-if-no-environments-appear"></a>E se nenhum ambiente aparecer?
 
-Se nenhum ambiente aparecer, isso significa que o Visual Studio não conseguiu detectar as instalações de Python nos locais padrão. Por exemplo, você pode ter instalado o Visual Studio 2017 mas limpou todas as opções de interpretador nas opções do instalador para a carga de trabalho do Python. Da mesma forma, você pode ter instalado o Visual Studio 2015 ou anterior, mas não instalou um interpretador manualmente (confira [Como instalar interpretadores Python](installing-python-interpreters.md)).
+Se nenhum ambiente aparecer, isso significa que o Visual Studio não conseguiu detectar as instalações de Python nos locais padrão. Por exemplo, você pode ter instalado o Visual Studio 2017 mas limpou todas as opções de interpretador nas opções do instalador para a carga de trabalho do Python. Da mesma forma, você pode ter instalado o Visual Studio 2015 ou anterior, mas não instalou um interpretador manualmente (confira [Instalar interpretadores do Python](installing-python-interpreters.md)).
 
-Se você souber que tem um intérprete Python em seu computador, mas o Visual Studio (qualquer versão) não detectá-lo, use o comando **+Personalizado...**  para especificar o local manualmente. Consulte a próxima seção, [Identificar manualmente um ambiente existente](#manually-identify-an-existing-environment).
+Se você souber que tem um interpretador do Python no computador, mas o Visual Studio (qualquer versão) não detectá-lo, use o comando **+ Personalizado** para especificar o local manualmente. Consulte a próxima seção, [Identificar manualmente um ambiente existente](#manually-identify-an-existing-environment).
 
 > [!Tip]
 > O Visual Studio detecta atualizações para um interpretador existente, como a atualização do Python 2.7.11 para 2.7.14 usando os instaladores de python.org. Durante o processo de instalação, o ambiente mais antigo desaparece da lista **Ambientes Python** antes de a atualização aparecer em seu lugar.
 >
-> No entanto, se você mover manualmente um interpretador e seu ambiente usando o sistema de arquivos, o Visual Studio não saberá o novo local. Para saber mais, veja [Mover um intérprete](installing-python-interpreters.md#moving-an-interpreter).
+> No entanto, se você mover manualmente um interpretador e seu ambiente usando o sistema de arquivos, o Visual Studio não saberá o novo local. Para obter mais informações, confira [Mover um interpretador](installing-python-interpreters.md#move-an-interpreter).
 
 ## <a name="fix-or-delete-invalid-environments"></a>Corrigir ou excluir ambientes inválidos
 
-Se o Visual Studio encontra entradas de Registro para um ambiente, mas o caminho para o interpretador é inválido, a janela Ambientes do Python mostra o nome com uma fonte riscada:
+Se o Visual Studio encontra entradas do Registro para um ambiente, mas o caminho para o interpretador é inválido, a janela **Ambientes do Python** mostra o nome com uma fonte riscada:
 
 ![A janela Ambientes do Python mostrando um ambiente inválido](media/environments-invalid-entry.png)
 
 Para corrigir um ambiente que você deseja manter, primeiro tente usar o processo **Reparar** do instalador dele. Os instaladores para o Python 3.x padrão, por exemplo, incluem essa opção.
 
-Para corrigir um ambiente que não tem uma opção de reparo, ou para remover um ambiente inválido, use as etapas a seguir para modificar o Registro diretamente. O Visual Studio atualiza automaticamente a janela Ambientes do Python quando você faz alterações no Registro.
+Para corrigir um ambiente que não tem uma opção de reparo, ou para remover um ambiente inválido, use as etapas a seguir para modificar o Registro diretamente. O Visual Studio atualiza automaticamente a janela **Ambientes do Python** quando você faz alterações no Registro.
 
-1. Execute `regedit.exe`.
-1. Navegue até `HKEY_LOCAL_MACHINE\SOFTWARE\Python` para interpretadores de 32 bits ou `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` para interpretadores de 64 bits. Para o IronPython, procure por `IronPython`.
-1. Expanda o nó que corresponde à distribuição, como `PythonCore` para o CPython ou `ContinuumAnalytics` para o Anaconda. Para o IronPython, expanda o nó de número de versão.
-1. Inspecione os valores sob o nó `InstallPath`:
+1. Execute *regedit.exe*.
+1. Navegue para **HKEY_LOCAL_MACHINE\SOFTWARE\Python** para interpretadores de 32 bits ou **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** para interpretadores de 64 bits. Para o IronPython, procure **IronPython**.
+1. Expanda o nó que corresponde à distribuição, como **PythonCore** para o CPython ou **ContinuumAnalytics** para o Anaconda. Para o IronPython, expanda o nó de número de versão.
+1. Inspecione os valores no nó **InstallPath**:
 
     ![Entradas do Registro para uma instalação típica do CPython](media/environments-registry-entries.png)
 
-    - Se o ambiente ainda existir no computador, altere o valor de `ExecutablePath` para o local correto. Corrija também os valores `(Default)` e `WindowedExecutablePath` conforme necessário.
-    - Se o ambiente não existir mais no computador e você desejar removê-lo da janela Ambientes do Python, exclua o nó pai de `InstallPath`, tais como `3.6` na imagem acima.
-
-<a name="manually-identifying-an-existing-environment"></a>
+    - Se o ambiente ainda existir no computador, altere o valor de **ExecutablePath** para o local correto. Corrija também os valores **(Padrão)** e **WindowedExecutablePath**, conforme necessário.
+    - Se o ambiente não existir mais no computador e você desejar removê-lo da janela **Ambientes do Python**, exclua o nó pai de **InstallPath**, como **3.6** na imagem acima.
 
 ## <a name="manually-identify-an-existing-environment"></a>Identificar manualmente um ambiente existente
 
@@ -150,9 +149,9 @@ Use as seguintes etapas para identificar um ambiente instalado em um local não 
 
 1. Insira um nome para o ambiente no campo **Descrição**.
 
-1. Insira ou procure (usando **...***) o caminho do interpretador no campo **Caminho do prefixo**.
+1. Insira ou procure (usando **...**) o caminho do interpretador no campo **Caminho do prefixo**.
 
-1. Se o Visual Studio detectar um interpretador Python nessa localização (como o caminho mostrado abaixo para um ambiente de conda), ele habilitará o comando **Detecção Automática**. Selecionar **Detecção Automática* preenche os campos restantes. Você também pode preencher esses campos manualmente.
+1. Se o Visual Studio detectar um interpretador Python nessa localização (como o caminho mostrado abaixo para um ambiente de conda), ele habilitará o comando **Detecção Automática**. A seleção de **Detecção Automática** preenche os campos restantes. Você também pode preencher esses campos manualmente.
 
     ![Habilitar o comando Detecção Automática](media/environments-custom-2.png)
 
@@ -176,14 +175,14 @@ Use as seguintes etapas para identificar um ambiente instalado em um local não 
 
     ![Criação bem-sucedida de um ambiente do conda](media/environments-conda-2.png)
 
-1. No Visual Studio, você pode ativar um ambiente do conda para um projeto da mesma forma como faria com qualquer outro ambiente, conforme descrito em [Selecionando um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
+1. No Visual Studio, você pode ativar um ambiente do Conda para um projeto da mesma forma como faria com qualquer outro ambiente, conforme descrito em [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
 1. Para instalar pacotes no ambiente, use a [guia Pacotes](python-environments-window-tab-reference.md#packages-tab).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Instalar interpretadores do Python](installing-python-interpreters.md)
+- [Instalar intérpretes do Python](installing-python-interpreters.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
-- [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
+- [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)
 - [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)
