@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251797"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586541"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -70,7 +70,7 @@ Os modelos **Votações do Projeto Web da \<estrutura>** criam um aplicativo Web
 
 ## <a name="install-project-requirements"></a>Instalar requisitos de projeto
 
-Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de diálogo é exibida para ajudá-lo a instalar os pacotes necessários usando o PIP. Também recomendamos o uso de um [ambiente virtual](selecting-a-python-environment-for-a-project.md#using-virtual-environments) para projetos Web, para que as dependências corretas sejam incluídas durante a publicação do site:
+Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de diálogo é exibida para ajudá-lo a instalar os pacotes necessários usando o PIP. Também recomendamos o uso de um [ambiente virtual](selecting-a-python-environment-for-a-project.md#use-virtual-environments) para projetos Web, para que as dependências corretas sejam incluídas durante a publicação do site:
 
 ![Caixa de diálogo que instala os pacotes necessários para um modelo de projeto](media/template-web-requirements-txt-wizard.png)
 

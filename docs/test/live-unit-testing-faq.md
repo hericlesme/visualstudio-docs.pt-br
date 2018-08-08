@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382598"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586493"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -77,13 +77,13 @@ A **Janela de Saída** (quando o menu suspenso Live Unit Testing está seleciona
 
 - No mínimo, um projeto na solução deve ter uma referência ao NuGet ou uma referência direta à estrutura de teste do xUnit, NUnit ou MSTest. Esse projeto também deve referenciar um pacote NuGet de adaptadores de teste do Visual Studio correspondente. O adaptador de teste do Visual Studio também pode ser referenciado por meio de um arquivo *.runsettings*. O arquivo *.runsettings* precisa ter uma entrada como o seguinte exemplo:
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Por que o Live Unit Testing mostra uma cobertura incorreta depois de atualizar o adaptador de teste referenciado nos Projetos do Visual Studio para a versão com suporte?
 
@@ -268,4 +268,4 @@ Talvez você não veja ícones no editor se os assemblies que o Live Unit Testin
 
 ## <a name="see-also"></a>Consulte também
 
-[Teste de Unidade Dinâmica](live-unit-testing.md)
+- [Teste de Unidade Dinâmica](live-unit-testing.md)

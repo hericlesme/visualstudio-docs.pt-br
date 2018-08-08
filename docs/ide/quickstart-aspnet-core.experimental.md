@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382653"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469133"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -79,17 +79,16 @@ Em seguida, você criará e executará o aplicativo Web "Olá, Mundo". Veja como
 
 1. Verifique se a página **About** inclui o texto atualizado.
 
+1. Feche o navegador da Web.
+
 Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre o C#, o ASP.NET Core e o IDE (ambiente de desenvolvimento integrado) do Visual Studio.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para saber mais, continue com os tutoriais a seguir:
+Para saber mais, continue com o tutorial a seguir:
 
 > [!div class="nextstepaction"]
 > [Introdução ao C# e ao ASP.NET no Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Introdução ao ASP.NET Core MVC e ao Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Consulte também
 

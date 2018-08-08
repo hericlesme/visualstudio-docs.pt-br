@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341827"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500115"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
 Os desenvolvedores passam muito tempo no editor de código, portanto o [Suporte a Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
 
-O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira [Etapa 3 do tutorial: Usar a janela do REPL Interativo](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) para obter detalhes.
+O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira [Etapa 3 do tutorial: Usar a janela do REPL Interativo](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
 
 |   |   |
 |---|---|

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341863"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586561"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -46,7 +46,7 @@ Os ambientes globais estão disponíveis para todos os projetos no computador. N
 
 Como os pacotes instalados em um ambiente global estão disponíveis para todos os projetos que usam esse ambiente, poderão ocorrer conflitos quando dois projetos exigirem pacotes incompatíveis ou versões diferentes do mesmo pacote. Ambientes virtuais evitam esses conflitos usando o interpretador e a biblioteca padrão de um ambiente global, mas mantêm seus próprios armazenamentos de pacote em pastas isolados.
 
-No Visual Studio, é possível criar um ambiente virtual para um projeto específico, que é armazenado em uma subpasta no projeto. O Visual Studio fornece um comando para gerar um arquivo *requirements.txt* no ambiente virtual, facilitando a recriação do ambiente em outros computadores. Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+No Visual Studio, é possível criar um ambiente virtual para um projeto específico, que é armazenado em uma subpasta no projeto. O Visual Studio fornece um comando para gerar um arquivo *requirements.txt* no ambiente virtual, facilitando a recriação do ambiente em outros computadores. Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Ambientes do Conda
 
