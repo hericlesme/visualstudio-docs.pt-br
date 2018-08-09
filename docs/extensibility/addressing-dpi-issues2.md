@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154324"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638659"
 ---
 # <a name="address-dpi-issues"></a>Questões DPI
 Um número crescente de dispositivos é fornecidos com telas de "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores necessitará de conteúdo a ser escalado verticalmente para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o principal alvo para monitores de alta densidade é móvel (tablets, laptops clamshell e telefones) de dispositivos de computação.  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Consulte o <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentação no MSDN.  
   
- A tabela a seguir mostra exemplos de como as imagens devem ser dimensionadas em PPP correspondente fatores de dimensionamento. As imagens em verde denotam nossa prática recomendada a partir do Visual Studio 2013 (100 a 200% dimensionamento DPI):  
+ A tabela a seguir mostra exemplos de como as imagens devem ser dimensionadas em PPP correspondente fatores de dimensionamento. As imagens descritas em laranja denotam nossa prática recomendada a partir do Visual Studio 2013 (100 a 200% dimensionamento DPI):  
   
  ![Problemas DPI dimensionando](../extensibility/media/dpi-issues-scaling.png "questões de DPI dimensionamento")  
   

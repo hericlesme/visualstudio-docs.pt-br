@@ -1,5 +1,5 @@
 ---
-title: Elemento de associações | Microsoft Docs
+title: Elemento KeyBindings | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141409"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636805"
 ---
-# <a name="keybindings-element"></a>Elemento de associações
-O elemento de associações de grupos de elementos KeyBinding e outros agrupamentos de associações.  
+# <a name="keybindings-element"></a>Elemento KeyBindings
+O elemento KeyBindings agrupa elementos de associação de teclas e os outros agrupamentos de associações de teclas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -42,14 +42,14 @@ O elemento de associações de grupos de elementos KeyBinding e outros agrupamen
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica os atalhos de teclado para os comandos.|  
-|[Associações](../extensibility/keybindings-element.md)|Agrupa elementos de KeyBinding e outros agrupamentos de associações.|  
+|[Associações de teclas](../extensibility/keybindings-element.md)|Agrupa elementos de associação de teclas e os outros agrupamentos de associações de teclas.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -59,7 +59,7 @@ O elemento de associações de grupos de elementos KeyBinding e outros agrupamen
   
 ## <a name="example"></a>Exemplo  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -70,4 +70,4 @@ O elemento de associações de grupos de elementos KeyBinding e outros agrupamen
   
 ## <a name="see-also"></a>Consulte também  
  [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

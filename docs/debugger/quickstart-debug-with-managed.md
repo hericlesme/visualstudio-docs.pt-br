@@ -1,5 +1,5 @@
 ---
-title: Depurar o código gerenciado | Microsoft Docs
+title: Depurar código gerenciado | Microsoft Docs
 description: Depurar c# ou Visual Basic usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dc9c9acfed229e4215c32e2e924ba1601ce88b6
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34476876"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637517"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Início rápido: Depurar com código gerenciado usando o depurador do Visual Studio
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Guia de início rápido: Depurar com código gerenciado usando o depurador do Visual Studio
 
-O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
+O depurador do Visual Studio fornece muitos recursos poderosos para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto 
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
-2. Em **Visual C#** ou **Visual Basic**, escolha **.NET Core**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Core)**.
+2. Sob **Visual c#** ou **Visual Basic**, escolha **.NET Core**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Core)**.
 
-     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de área de trabalho do .NET** e **.NET Core** carga de trabalho, escolha **modificar**.
+     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de área de trabalho do .NET** e **.NET Core** carga de trabalho, em seguida, escolha **modificar**.
 
 3. Digite um nome como **MyDbgApp** e clique em **Okey**.
 
     O Visual Studio cria o projeto.
 
-4. Em Program.cs ou Module1. vb, substitua o código a seguir
+4. Na *Program.cs* ou *Module1.vb*, substitua o código a seguir
 
     ```csharp
     class Program
@@ -126,32 +126,32 @@ O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a 
 
 ## <a name="set-a-breakpoint"></a>Definir um ponto de interrupção
 
-Um *ponto de interrupção* é um marcador que indica onde o Visual Studio deve suspender a execução de código para que você pode dar uma olhada os valores das variáveis ou o comportamento de memória ou se deve ou não uma ramificação de código é obtendo executada. É o recurso mais básico na depuração.
+Um *ponto de interrupção* é um marcador que indica onde o Visual Studio deve suspender sua execução de código para que você pode dar uma olhada em como os valores das variáveis ou o comportamento de memória ou se deseja ou não uma ramificação de código está sendo executada. É o recurso mais básico na depuração.
 
 1. Para definir o ponto de interrupção, clique na medianiz à esquerda do `doWork` chamada de função (ou selecione a linha de código e pressione **F9**).
 
-    ![Definir um ponto de interrupção](../debugger/media/dbg-qs-set-breakpoint-csharp.png "definir um ponto de interrupção")
+    ![Defina um ponto de interrupção](../debugger/media/dbg-qs-set-breakpoint-csharp.png "definir pontos de interrupção")
 
-2. Agora, pressione **F5** (ou escolha **Depurar > Iniciar depuração**).
+2. Agora pressione **F5** (ou escolha **Depurar > Iniciar depuração**).
 
     ![Um ponto de interrupção](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "um ponto de interrupção")
 
-    A pausa do depurador onde você pode definir o ponto de interrupção. A instrução em que a execução do aplicativo e o depurador é pausada é indicada pela seta amarela. A linha com o `doWork` chamada de função ainda não foi executada.
+    A pausa do depurador em que você definiu o ponto de interrupção. A instrução em que a execução do depurador e o aplicativo está em pausa é indicada pela seta amarela. A linha com o `doWork` chamada de função ainda não foi executada.
 
     > [!TIP]
-    > Se você tiver um ponto de interrupção em um loop ou recursão, ou se você tiver muitos pontos de interrupção que você frequentemente percorrer, use um [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para certificar-se de que seu código está suspenso somente quando condições específicas forem atendidas. Um ponto de interrupção condicional pode economizar tempo e ele pode também facilitam a depurar problemas difíceis de reproduzir.
+    > Se você tiver um ponto de interrupção em um loop ou recursão ou se você tiver muitos pontos de interrupção que percorre com frequência, use uma [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para certificar-se de que seu código seja suspenso apenas quando condições específicas forem atendidas. Um ponto de interrupção condicional pode economizar tempo e ele pode também tornar mais fácil depurar os problemas que são difíceis de reproduzir.
 
 ## <a name="navigate-code"></a>Navegue pelos códigos
 
-Há diferentes comandos para instruir o depurador para continuar. Vamos mostrar um comando de navegação de código útil que há de novo no Visual Studio de 2017.
+Há diferentes comandos para instruir o depurador para continuar. Vamos mostrar um comando de navegação de código úteis que há de novo no Visual Studio 2017.
 
-Enquanto está em pausa no ponto de interrupção, passe o mouse sobre a instrução `c1.AddLast(20)` até que o verde **execução clique** botão ![executar em, clique em](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparece e, em seguida, pressione a **Execução clique** botão.
+Enquanto está em pausa no ponto de interrupção, passe o mouse sobre a instrução `c1.AddLast(20)` até que o verde **executar com um clique** botão ![executar com um clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparece e, em seguida, pressione a **Executar com um clique** botão.
 
-![Execução clique](../debugger/media/dbg-qs-run-to-click-csharp.png "execução clique")
+![Executar com um clique](../debugger/media/dbg-qs-run-to-click-csharp.png "executar com um clique")
 
-O aplicativo continua a execução, chamada `doWork`e faz uma pausa na linha de código em que você clicou no botão.
+O aplicativo continua a execução, chamando `doWork`e fará uma pausa na linha de código em que você clicou no botão.
 
-Comandos comuns do teclado usados para percorrer o código incluem **F10** e **F11**. Para obter mais instruções detalhadas, consulte o [guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
+Comandos de teclado comuns usados para percorrer o código inclua **F10** e **F11**. Para obter mais instruções detalhadas, consulte o [guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecionar variáveis em um datatip
 
@@ -159,29 +159,29 @@ Comandos comuns do teclado usados para percorrer o código incluem **F10** e **F
 
     ![Exibir um datatip](../debugger/media/dbg-qs-data-tip-csharp.png "exibir um datatip")
 
-    O datatip mostra o valor atual de `c1` variável e permite que você inspecione suas propriedades. Durante a depuração, se você vir um valor que você não espera, você provavelmente terá um bug nas linhas anteriores ou chamadas do código. 
+    O datatip mostra o valor atual do `c1` variável e permite que você inspecione suas propriedades. Durante a depuração, se você vir um valor que não esperava, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. 
 
-2. Expanda datatip para examinar os valores de propriedade atual o `c1` objeto.
+2. Expanda o datatip para examinar os valores de propriedade atuais do `c1` objeto.
 
-3. Se você deseja fixar o datatip para que você pode continuar a ver o valor de `c1` enquanto você executar o código, clique no ícone de pino pequeno. (Você pode mover o datatip fixado em um local conveniente.)
+3. Se você deseja fixar o datatip de modo que você pode continuar a ver o valor do `c1` enquanto você executa o código, clique no ícone de pino pequeno. (Você pode mover o datatip fixado em um local conveniente.)
 
-## <a name="edit-code-and-continue-debugging"></a>Edite o código e continuar a depuração
+## <a name="edit-code-and-continue-debugging"></a>Editar o código e continuar a depuração
 
-Se você identificar uma alteração que você deseja testar no seu código no meio de uma sessão de depuração, você pode fazer isso, muito.
+Se você identificar uma alteração que você deseja testar em seu código no meio de uma sessão de depuração, você pode fazer isso, muito.
 
-1. Clique na segunda instância de `c2.First.Value` e alterar `c2.First.Value` para `c2.Last.Value`.
+1. Clique na segunda instância do `c2.First.Value` e altere `c2.First.Value` para `c2.Last.Value`.
 
-2. Pressione **F10** (ou **Depurar > passar por**) algumas vezes para avançar o depurador e execute o código editado.
+2. Pressione **F10** (ou **Depurar > Depuração parcial**) algumas vezes para avançar o depurador e executar o código editado.
 
     ![Editar e continuar](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "editar e continuar")
 
-    **F10** avança a instrução de depurador um em uma hora, mas as etapas sobre funções em vez de avançá-los (ainda executa o código que você ignorar).
+    **F10** avança uma instrução do depurador a um tempo, mas as etapas sobre funções em vez de Avançar neles (ainda executa o código que você ignore).
 
 Para obter mais informações sobre como usar Editar e continuar e limitações de recursos, consulte [editar e continuar](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Você talvez queira obter uma visão de alto nível de recursos do depurador junto com links para mais informações.
+Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Você talvez queira obter uma visão detalhada de recursos do depurador, juntamente com links para obter mais informações.
 
 > [!div class="nextstepaction"]
 > [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
