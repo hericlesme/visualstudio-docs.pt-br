@@ -1,5 +1,0 @@
-# [Referência de JavaScript](javascript-reference.md)
-## [Informações de versão](javascript-version-information.md)
-## [Erros JavaScript](javascript-errors.md)
-### [Erros de tempo de execução JavaScript](javascript-run-time-errors.md)
-### [Erros de sintaxe JavaScript](javascript-syntax-errors.md)
