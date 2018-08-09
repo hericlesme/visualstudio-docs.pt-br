@@ -2,10 +2,9 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) instalado com as cargas de trabalho apropriadas para seu idioma de preferência:
   * ASP.NET: **ASP.NET e desenvolvimento web**
-  * ASP.NET Core: Carga de trabalho o ASP.NET e **desenvolvimento de plataforma cruzada do .NET Core** carga de trabalho
   * Node. js: **desenvolvimento do Node. js**
 
-* Uma assinatura do Azure. Se você ainda não tiver a assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), que inclui US $200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
+* Uma assinatura do Azure. Se você ainda não tiver a assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), que inclui US $200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
 
 * Um projeto ASP.NET Core, .NET Core ou Node. js. Se você ainda não tiver um projeto, selecione uma opção abaixo:
   * ASP.NET: Siga [guia de início rápido: usar o Visual Studio para criar seu primeiro aplicativo web ASP.NET Core](../../ide/quickstart-aspnet-core.md), ou use **arquivo** > **novo projeto**, selecione  **Visual c#** > **.NET Core**, em seguida, selecione **aplicativo Web ASP.NET Core**. Quando solicitado, selecione a **aplicativo Web (Model-View-Controller)** modelo, verifique se **sem autenticação** está selecionado e, em seguida, selecione **Okey**.
