@@ -1,17 +1,17 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: Scripts | Microsoft Docs
-ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+title: JavaScript | Microsoft Docs
+ms.openlocfilehash: 45b67c450b8165808ca8a1042e21d9c5e0b54c84
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
-ms.locfileid: "29989207"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008532"
 ---
-# <a name="scripting-technologies"></a>Tecnologias de script
+# <a name="javascript-technologies-in-visual-studio"></a>Tecnologias do JavaScript no Visual Studio
 
-Esta página fornece links para JavaScript, TypeScript, documentação de referência baseada em ECMAScript e links para tecnologias do Visual Studio que permitem escrever aplicativos usando essas linguagens.
+Esta página fornece links para a documentação com base em TypeScript e JavaScript para permitir que você escreva aplicativos no Visual Studio usando essas linguagens.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -44,42 +44,6 @@ Esta página fornece links para JavaScript, TypeScript, documentação de refer�
                     </div>
                     <div class="cardText">
                         <h3>Introdução ao UWP (Aplicativos Universais do Windows)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="http://www.typescriptlang.org/docs/tutorial.html">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_TS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Saiba mais sobre o TypeScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Saiba mais sobre JavaScript</h3>
                     </div>
                 </div>
             </div>
@@ -140,60 +104,6 @@ Esta página fornece links para JavaScript, TypeScript, documentação de refer�
         </div>
         </a>
     </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Saiba mais sobre hospedagem em tempo de execução do JavaScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="https://docs.microsoft.com/scripting/winscript/windows-script-interfaces">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Interfaces do Windows Script (arquivo morto)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://msdn.microsoft.com/library/d1et7k7c(v=vs.84).aspx">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>JScript e VBScript (arquivo morto)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
 </ul>
 
 <hr>
@@ -201,7 +111,7 @@ Esta página fornece links para JavaScript, TypeScript, documentação de refer�
 
 <p><ul class="panelContent cardsW">
     <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -214,12 +124,51 @@ Esta página fornece links para JavaScript, TypeScript, documentação de refer�
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
+        <a href="http://www.typescriptlang.org/docs/tutorial.html">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>TypeScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-edge/hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>Hospedagem do Tempo de Execução do JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/fdee6589(v%3dvs.94)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Interfaces do Windows Script (arquivo morto)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c(v%3dvs.84)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>JScript e VBScript (arquivo morto)</h3>
                     </div>
                 </div>
             </div>
