@@ -9,12 +9,12 @@ ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3b2aee5bd4fe8a9e65f82cbcbc90edfb583bbbb
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 091caf9db4152b7c349fdf717d97639b360bb602
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117726"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513018"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Gerar um construtor no Visual Studio
 
@@ -56,7 +56,7 @@ Esta geração de código aplica-se a:
 
 1. Selecione **Gerar construtor** no menu suspenso.
 
-   A caixa de diálogo **Selecionar membros** é aberta.
+   A caixa de diálogo **Selecionar membros** abre.
 
 1. Selecione os membros que você deseja incluir como parâmetros do construtor. Você pode ordená-los usando as setas para cima e para baixo. Escolha **OK**.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978366"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511441"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -24,7 +24,7 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
 
 O teste de unidade tem o maior efeito sobre a qualidade do código quando é parte integrante do fluxo de trabalho de desenvolvimento de software. Assim que você escrever uma função ou outro bloco de código do aplicativo, crie testes de unidade que verifique o comportamento do código em resposta a casos padrão, limite e incorretos de dados de entrada e verifique se não houve nenhuma suposição explícita ou implícita feita pelo código. Com o *desenvolvimento orientado por testes*, você cria os testes de unidade antes de escrever o código e, portanto, os testes de unidade são usados tanto como documentação de design quando especificações funcionais.
 
-Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Quando você usar o IntelliTest para explorar seu código .NET, poderá gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para seu código](http://msdn.microsoft.com/library/dn823749.aspx).
+Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Quando você usar o IntelliTest para explorar seu código .NET, poderá gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para seu código](generate-unit-tests-for-your-code-with-intellitest.md).
 
 O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Confira [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
@@ -40,7 +40,7 @@ Para obter uma introdução ao teste de unidade que leva você diretamente para 
 
 ## <a name="the-mybank-solution-example"></a>O exemplo da solução MyBank
 
-Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são escritos em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
+Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são gravados em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
 
  ![Solução MyBank](../test/media/ute_mybanksolution.png)
 
@@ -58,7 +58,7 @@ Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBa
 
 -   *IAccount.cs* define uma interface `IAccount` padrão de uma conta, incluindo métodos de depósito e saque de ativos de uma conta e de recuperação do saldo da conta.
 
--   *CheckingAccount.cs* contém a classe `CheckingAccount` que implementa a interface `IAccounts` de uma conta corrente.
+-   *CheckingAccount.cs* contém a classe `CheckingAccount` que implementa a interface `IAccount` de uma conta corrente.
 
 Sabemos por experiência própria que uma das coisas que um saque de conta corrente deve fazer é garantir que o valor sacado seja, no máximo, o que existe como saldo na conta. Podemos substituir o método `IAccount.Withdraw` na `CheckingAccount` por um método que verifica essa condição. O método pode ser mais ou menos assim:
 
@@ -311,7 +311,7 @@ O método atribuído é executado uma vez para cada linha na tabela. O **Gerenci
 
  Saiba mais sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
- **P: como posso testar métodos no meu código que possuem dependências externas?**
+ **P: posso testar métodos no meu código que possuem dependências externas?**
 
  **R:** Sim. Se você tiver o Visual Studio Enterprise, o Microsoft Fakes pode ser usado com método de teste que você escrever usando estruturas de teste de unidade para código gerenciado.
 

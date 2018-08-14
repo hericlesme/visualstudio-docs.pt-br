@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251748"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499013"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -44,7 +44,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 À medida que você desenvolve seu aplicativo, normalmente, você precisa adicionar novos arquivos de diferentes tipos ao projeto. Para adicionar esses arquivos, clique com o botão direito do mouse no projeto e selecione **Adicionar** > **Item existente** com o qual você procura um arquivo para adicionar ou **Adicionar** > **Novo item**, que abre uma caixa de diálogo com uma variedade de modelos de item. Conforme descrito na referência de [modelos de item](python-item-templates.md), as opções incluem arquivos vazios do Python, uma classe do Python, um teste de unidade e vários arquivos relacionados a aplicativos Web. Explore essas opções com um projeto de teste para saber o que está disponível em sua versão do Visual Studio.
 
-Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no **Gerenciador de Soluções**. O arquivo de inicialização é o arquivo executado quando você inicia a depuração (**F5** ou **Depurar** > **Iniciar Depuração**) ou quando você executa o projeto na janela interativa (**Shift**+**Alt**+**F5** ou **Depurar** > **Executar Projeto na janela Interativa do Python**). Para alterá-lo, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Arquivo de Inicialização**.
+Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no **Gerenciador de Soluções**. O arquivo de inicialização é o arquivo executado quando você inicia a depuração (**F5** ou **Depurar** > **Iniciar Depuração**) ou quando você executa o projeto na janela **interativa** (**Shift**+**Alt**+**F5** ou **Depurar** > **Executar Projeto na janela Interativa do Python**). Para alterá-lo, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Arquivo de Inicialização**.
 
 > [!Tip]
 > Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, o Visual Studio não saberá com qual arquivo do Python iniciar quando tentar executar o projeto. Nesse caso, o Visual Studio 2017 versão 15.6 e posterior mostra um erro; as versões anteriores abrem uma janela de Saída com o interpretador do Python em execução ou você vê a janela de Saída aparecer, mas, em seguida, desaparecer quase imediatamente. Se você observar algum desses comportamentos, verifique se haverá um arquivo de inicialização atribuído.

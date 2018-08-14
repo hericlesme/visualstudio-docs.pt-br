@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206811"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468566"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: analisar dados de uso da CPU no Visual Studio (ASP.NET)
 
@@ -31,9 +31,6 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 1. No Visual Studio, escolha **Arquivo** > **Novo Projeto**.
 
 1. Em **Visual C#**, escolha **Web**e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET (.NET Framework)**.
-
-    > [!NOTE]
-    > A ferramenta de Uso da CPU não é compatível atualmente com o ASP.NET Core.
 
 1. Digite um nome como **MyProfilingApp_MVC** e clique em **OK**.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748225"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513394"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -37,26 +37,26 @@ As listas de preenchimento do IntelliSense no C# contêm tokens de Listar Membro
 
 - Métodos de extensão
 
-A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de conclusão filtradas](#filtered-completion-lists).
+A lista de conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de conclusão filtradas](#filtered-completion-lists).
 
-## <a name="code-snippets-in-completion-lists"></a>Trechos de código em listas de conclusão
+### <a name="code-snippets-in-completion-lists"></a>Trechos de código em listas de conclusão
 
-No C#, a lista de preenchimento inclui trechos de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os trechos de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut) do trecho. Para obter mais informações sobre os trechos de código disponíveis no C# por padrão, consulte [Trechos de código do C#](../ide/visual-csharp-code-snippets.md).
+No C#, a lista de preenchimento inclui trechos de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os trechos de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut-element) do trecho. Para obter mais informações sobre os trechos de código disponíveis no C# por padrão, consulte [Trechos de código do C#](../ide/visual-csharp-code-snippets.md).
 
-## <a name="language-keywords-in-completion-lists"></a>Palavras-chave de linguagem em listas de conclusão
+### <a name="language-keywords-in-completion-lists"></a>Palavras-chave de linguagem em listas de conclusão
 
 No C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave da linguagem C#, consulte [Palavras-chave do C#](/dotnet/csharp/language-reference/keywords/index).
 
-## <a name="extension-methods-in-completion-lists"></a>Métodos de extensão em listas de conclusão
+### <a name="extension-methods-in-completion-lists"></a>Métodos de extensão em listas de conclusão
 
 No C#, a lista de conclusão inclui métodos de extensão que estão no escopo.
 
 > [!NOTE]
 > A lista de conclusão não exibe todos os métodos de extensão para objetos <xref:System.String>.
 
-Os métodos de extensão usam um ícone diferente dos métodos de instância. Para obter uma listagem de ícones de lista, consulte [Modo de Exibição de Classe e ícones do Pesquisador de Objetos](../ide/class-view-and-object-browser-icons.md). Quando um método de instância e um método de extensão com o mesmo nome estão no escopo, a lista de preenchimento exibe o ícone do método de extensão.
+Os métodos de extensão usam um ícone diferente dos métodos de instância. Para obter um guia de referência dos ícones de lista, confira [Modo de Exibição de Classe e ícones do Pesquisador de Objetos](../ide/class-view-and-object-browser-icons.md). Quando um método de instância e um método de extensão com o mesmo nome estão no escopo, a lista de preenchimento exibe o ícone do método de extensão.
 
-## <a name="filtered-completion-lists"></a>Listas de preenchimento filtradas
+### <a name="filtered-completion-lists"></a>Listas de preenchimento filtradas
 
 O IntelliSense remove membros desnecessários da lista de preenchimento usando filtros. O C# filtra as listas de preenchimento exibidas para estes itens:
 
@@ -78,13 +78,17 @@ O IntelliSense remove membros desnecessários da lista de preenchimento usando f
 
 - A **ajuda do parâmetro** classifica automaticamente para a primeira sobrecarga de método que corresponde aos parâmetros, conforme eles são inseridos. Se houver várias sobrecargas de método disponíveis, será possível usar as setas para cima e para baixo para navegar para a próxima sobrecarga possível na lista.
 
-## <a name="most-recently-used-members"></a>Membros usados mais recentemente
+### <a name="most-recently-used-members"></a>Membros usados mais recentemente
 
-O IntelliSense lembra os membros selecionados recentemente na caixa pop-up [Listar Membros](../ide/using-intellisense.md) quanto à conclusão automática de nome de objeto. Na próxima vez que você usar a Lista de Membros, os membros usados mais recentemente serão mostrados na parte superior. O histórico dos membros mais usados recentemente é limpo entre cada sessão no IDE.
+O IntelliSense lembra os membros selecionados recentemente na caixa pop-up [Listar Membros](../ide/using-intellisense.md) quanto à conclusão automática de nome de objeto. Na próxima vez que você usar a **Lista de Membros**, os membros usados mais recentemente serão mostrados na parte superior. O histórico dos membros mais usados recentemente é limpo entre cada sessão do Visual Studio.
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-Ao digitar [override](/dotnet/csharp/language-reference/keywords/override) e, em seguida, pressionar **Espaço**, o IntelliSense exibe todos os membros da classe base válidos que podem ser substituídos em uma caixa de listagem pop-up. Digitar o tipo de retorno do método após `override` solicitará ao IntelliSense para mostrar apenas os métodos que retornam o mesmo tipo. Quando o IntelliSense não conseguir encontrar nenhuma correspondência, ele exibirá todos os membros da classe base.
+Ao digitar [override](/dotnet/csharp/language-reference/keywords/override) e, em seguida, pressionar **Espaço**, o IntelliSense exibe todos os membros da classe base válidos que podem ser substituídos em uma caixa de listagem pop-up. Digitar o tipo de retorno do método após `override` solicitará que o IntelliSense mostre apenas os métodos que retornam o mesmo tipo. Quando o IntelliSense não conseguir encontrar nenhuma correspondência, ele exibirá todos os membros da classe base.
+
+### <a name="ai-enhanced-intellisense"></a>IntelliSense aprimorado com a inteligência artificial
+
+Você pode instalar uma [extensão do IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) experimental para Visual Studio, a qual fornece listas de conclusão do IntelliSense aprimoradas com a inteligência artificial. Essa extensão prevê a API mais provavelmente correta a ser usada, em vez de apenas apresentar uma lista de membros em ordem alfabética. Ele usa os seus padrões e contexto de código atuais para fornecer a lista dinâmica.
 
 ## <a name="automatic-code-generation"></a>Geração automática de código
 
@@ -104,9 +108,9 @@ A opção **Remover e Classificar Usos** classifica e remove as declarações `u
 
 ### <a name="implement-interface"></a>Implementar interface
 
-O IntelliSense fornece uma opção para ajudá-lo a implementar uma [interface](/dotnet/csharp/language-reference/keywords/interface) enquanto estiver trabalhando no editor de códigos. Normalmente, para implementar uma interface corretamente, é necessário criar uma declaração de método para cada membro da interface na classe. Usando o IntelliSense, depois de digitar o nome de uma interface em uma declaração de classe, uma lâmpada de **Ações Rápidas** é exibida. A lâmpada oferece a opção de implementar a interface automaticamente, usando a nomenclatura explícita ou implícita. Na nomenclatura explícita, as declarações de método levam o nome da interface; na nomenclatura implícita, as declarações de método não indicam a interface à qual pertencem. Um método de interface explicitamente nomeado só pode ser acessado por meio de uma instância de interface, e não por meio de uma instância de classe. Para obter mais informações, consulte [Implementação explícita da interface](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+O IntelliSense fornece uma opção para ajudá-lo a implementar uma [interface](/dotnet/csharp/language-reference/keywords/interface) enquanto estiver trabalhando no editor de códigos. Normalmente, para implementar uma interface corretamente, é necessário criar uma declaração de método para cada membro da interface na classe. Usando o IntelliSense, depois de digitar o nome de uma interface em uma declaração de classe, uma lâmpada de **Ações Rápidas** é exibida. A lâmpada oferece a opção de implementar a interface automaticamente, usando a nomenclatura explícita ou implícita. Na nomenclatura explícita, as declarações de método levam o nome da interface. Na nomenclatura implícita, as declarações de método não indicam a interface à qual pertencem. Um método de interface explicitamente nomeado só pode ser acessado por meio de uma instância de interface, e não por meio de uma instância de classe. Para obter mais informações, consulte [Implementação explícita da interface](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
-A implementação da interface gerará o número mínimo de stubs de método necessários para atender à interface. Se uma classe base implementar partes da interface, os stubs não serão regenerados.
+A implementação da interface gera o número mínimo de stubs de método necessários para atender à interface. Se uma classe base implementar partes da interface, os stubs não serão regenerados.
 
 ### <a name="implement-abstract-base-class"></a>Implementar classe base abstrata
 

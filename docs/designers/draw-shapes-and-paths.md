@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923943"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513085"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
+
 No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exemplo: um retângulo, um círculo ou uma elipse. Um *caminho* é uma versão mais flexível de uma forma. É possível reformatar ou combiná-los para obter novas formas.
 
- Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exibições de alta resolução. Caso queira saber mais sobre gráficos vetoriais, consulte [O que são Gráficos Vetoriais](https://www.youtube.com/watch?v=MoCSwF0n-io) ou [gráficos vetoriais](http://www.webopedia.com/TERM/V/vector_graphics.html).
-
- **Neste tópico:**
-
--   [Desenhar uma forma](#Shape)
-
--   [Desenhar um caminho](#Path)
-
--   [Converter uma forma em um caminho](#Convert)
-
--   [Combinar caminhos](#Combine)
-
--   [Criar um caminho composto](#Compound)
-
--   [Criar um caminho de recorte](#Clipping)
+Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exibições de alta resolução. Caso queira saber mais sobre gráficos vetoriais, consulte [O que são Gráficos Vetoriais](https://www.youtube.com/watch?v=MoCSwF0n-io) ou [gráficos vetoriais](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
 ##  <a name="Shape"></a> Desenhar uma forma
  É possível encontrar formas no painel **Ativos**.
@@ -103,7 +90,7 @@ No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exempl
 ##  <a name="Combine"></a> Combinar caminhos
  É possível combinar caminhos e formas em um único caminho.
 
- ![Combinar demarcadores](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+ ![Combinar caminhos](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|

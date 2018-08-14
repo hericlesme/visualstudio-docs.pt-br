@@ -11,31 +11,31 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce7a388a9cc26ba84796710ff6f94395890a3df
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057642"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513514"
 ---
-# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
+# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte para Python no Visual Studio
 
 > [!Note]
-> O suporte ao Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte ao Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> O suporte para Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte para Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte ao Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
+1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte para Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Instalar Visual Studio 2017 Community</a>
+    > [Instalar Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > A edição Community é para desenvolvedores individuais, aprendizado em sala de aula, pesquisa acadêmica e desenvolvimento de software livre. Para outros usos, instale o <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> ou o <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > A edição Community é para desenvolvedores individuais, aprendizado em sala de aula, pesquisa acadêmica e desenvolvimento de software livre. Para outros usos, instale o [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) ou o [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. O instalador apresenta uma lista de cargas de trabalho, que são grupos de opções relacionadas para áreas de desenvolvimento específicas. Para Python, selecione a carga de trabalho **Desenvolvimento do Python** e selecione **Instalar**:
 
     ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](media/installation-python-workload.png)
 
-1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, pressione ALT + I para abrir a Janela interativa do Python e digite `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
+1. Para testar rapidamente o suporte para Python, inicie o Visual Studio, pressione **Alt**+**I** para abrir a **Janela interativa do Python** e digite `2+2`. Se você não vir a saída de **4**, verifique as etapas novamente.
 
     ![Testando o Python por meio da janela interativa](media/installation-interactive-test.png)
 
@@ -46,8 +46,6 @@ ms.locfileid: "37057642"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
-- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalar o suporte para Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md)
+- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations)

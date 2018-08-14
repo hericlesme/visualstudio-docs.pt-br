@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251134"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499537"
 ---
 # <a name="django-web-project-template"></a>Modelo de projeto Web Django
 
-O [Django](https://www.djangoproject.com/) é uma estrutura do Python de alto nível projetada para um desenvolvimento da Web rápido, seguro e escalonável. O suporte do Python no Visual Studio fornece vários modelos de projeto para configurar a estrutura de um aplicativo Web baseado em Django. Para usar um modelo no Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**, pesquise "Django" e selecione um dentre os modelos **Projeto Web em Branco do Django**, **Projeto Web do Django** e **Projeto Web de Votações do Django**. Confira o [Tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obter um passo a passo de todos os modelos.
+O [Django](https://www.djangoproject.com/) é uma estrutura do Python de alto nível projetada para um desenvolvimento da Web rápido, seguro e escalonável. O suporte para Python no Visual Studio fornece vários modelos de projeto para configurar a estrutura de um aplicativo Web baseado em Django. Para usar um modelo no Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**, pesquise "Django" e selecione um dentre os modelos **Projeto Web em Branco do Django**, **Projeto Web do Django** e **Projeto Web de Votações do Django**. Confira o [Tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obter um passo a passo de todos os modelos.
 
 O Visual Studio fornece o IntelliSense completo para projetos do Django:
 
@@ -52,7 +52,7 @@ O console de gerenciamento do Django é acessado por meio de vários comandos no
 
     ![Console](media/template-django-console-shell.png)
 
-- **Banco de Dados de Sincronização do Django**: executa `manage.py syncdb` em uma janela interativa:
+- **Banco de Dados de Sincronização do Django**: executa `manage.py syncdb`em uma janela **interativa**:
 
     ![Console](media/template-django-console-sync-db.png)
 

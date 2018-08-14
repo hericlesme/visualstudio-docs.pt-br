@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425151"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469146"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um trecho de código
 Você pode criar um trecho de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o trecho à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Trechos de Código** (**Ferramentas** > **Gerenciador de Trechos de Código**).
@@ -34,8 +34,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -55,7 +54,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 
 2.  Preencha o título do trecho, por exemplo, "Hello World VB", no elemento **Title**.
 
-3.  Preencha a linguagem do trecho no atributo **Languages** do elemento **Code**. Para este exemplo, use "VB".
+3.  Preencha a linguagem do trecho no atributo **Language** do elemento **Code**. Para este exemplo, use "VB".
 
 4.  Adicione um código na seção **CDATA** dentro do elemento **Code**, por exemplo:
 
@@ -191,7 +190,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Imports>
     ```
 
-4.  Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento **Declarations** sob o elemento **Snippet** e, a ele, adicione um elemento **Literal** com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:
+4.  Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento **Declarations** no elemento **Snippet** e, a ele, adicione um elemento **Literal** com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:
 
     ```xml
     <Declarations>

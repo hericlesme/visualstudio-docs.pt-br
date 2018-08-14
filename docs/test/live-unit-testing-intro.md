@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7ad8526f8e44165dc92a914ddf15765065f42569
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379875"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586880"
 ---
 # <a name="introducing-live-unit-testing"></a>Introdução ao Live Unit Testing
 
@@ -42,6 +42,6 @@ Para saber mais sobre o Live Unit Testing:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Recursos relacionados
-[Ferramentas de teste de código](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Realizar teste de unidade do código](unit-test-your-code.md)
+- [Ferramentas de teste de código](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Efetuar teste de unidade em seu código](unit-test-your-code.md)
 

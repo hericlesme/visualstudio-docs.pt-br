@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341877"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511646"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
 O IntelliTest gera entradas para [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing) analisando as condições de branch no programa. As entradas do teste são escolhidas com base em se elas podem disparar novos comportamentos de ramificação do programa. A análise é um processo incremental. Ela refina um predicado **q: I -> {true, false}** nos parâmetros de entrada de teste formal **I**. **q** representa o conjunto de comportamentos que o IntelliTest já observou. Inicialmente, **p: = false**, uma vez que ainda não foi observado nada.
 

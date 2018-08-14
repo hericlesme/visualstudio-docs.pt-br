@@ -11,39 +11,39 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057230"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511750"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela interativa REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
 
-**Etapa anterior: [escrevendo e executando código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Etapa anterior: [Gravar e executar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
-A *janela interativa* do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela interativa fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
+A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
-1. Abra a janela interativa clicando com o botão direito do mouse no ambiente de projeto do Python no Gerenciador de Soluções (como "Python 3.6 (32 bits)", mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir > Outras Janelas > Janelas Interativas do Python** no menu principal do Visual Studio.
+1. Abra a janela **Interativa** clicando com o botão direito do mouse no ambiente de projeto do Python no **Gerenciador de Soluções** (como **Python 3.6 (32 bits)**, mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir** > **Outras Janelas** > **Janelas Interativas do Python** no menu principal do Visual Studio.
 
-1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
+1. A janela **Interativa** abre-se abaixo do editor com o prompt padrão de REPL do Python **>>>**. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela **Interativa** maior, arraste o separador entre as duas janelas:
 
     ![Janela interativa Python: arrastando para redimensionar](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Você pode redimensionar todas as janelas no Visual Studio, arrastando os separadores de bordas. Você também pode arrastar e retirar janelas para fora do quadro do Visual Studio e reorganizá-las da forma que quiser dentro do quadro. Para obter detalhes completos, consulte [Personalizando layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md).
+    > Você pode redimensionar todas as janelas no Visual Studio, arrastando os separadores de bordas. Você também pode arrastar e retirar janelas para fora do quadro do Visual Studio e reorganizá-las da forma que quiser dentro do quadro. Para obter detalhes completos, confira [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Insira algumas instruções, como `print("Hello, Visual Studio")`, e expressões, como `123/456`, para ver resultados imediatos:
 
     ![Resultados imediatos da janela interativa do Python](media/vs-getting-started-python-12-interactive2.png)
 
-1. Ao começar a escrever uma instrução de várias linhas, como uma definição de função, a janela interativa mostrará o prompt `...` do Python para linhas em continuação, o que, ao contrário do REPL de linha de comando, proporcionará recuo automático:
+1. Ao começar a escrever uma instrução de várias linhas, como uma definição de função, a janela **Interativa** mostrará o prompt **...** do Python para linhas em continuação, o que, ao contrário do REPL de linha de comando, proporcionará recuo automático:
 
     ![Janela interativa do Python com continuação de instrução](media/vs-getting-started-python-13-interactive3.png)
 
-1. A janela interativa fornece um histórico completo de tudo o que foi inserido e é uma melhoria do REPL de linha de comando com itens de histórico de várias linhas. Por exemplo, com facilidade, é possível cancelar toda a definição da função `f` como uma única unidade e alterar o nome para `make_double`, em vez de recriar a função linha por linha.
+1. A janela **Interativa** fornece um histórico completo de tudo o que foi inserido, e é uma melhoria do REPL de linha de comando com itens de histórico de várias linhas. Por exemplo, com facilidade, é possível cancelar toda a definição da função `f` como uma única unidade e alterar o nome para `make_double`, em vez de recriar a função linha por linha.
 
-1. O Visual Studio pode enviar várias linhas de código de uma janela do editor para a janela interativa. Essa capacidade permite que você mantenha o código em um arquivo de origem e envie facilmente partes específicas dele para a janela interativa. Assim, você poderá trabalhar com esses fragmentos de código no ambiente REPL rápido em vez de ter que executar o programa inteiro. Para ver esse recurso, primeiro substitua o loop `for` no arquivo `PythonApplication1.py` pelo seguinte:
+1. O Visual Studio pode enviar várias linhas de código de uma janela do editor para a janela **Interativa**. Essa capacidade permite que você mantenha o código em um arquivo de origem e envie facilmente partes específicas dele para a janela **Interativa**. Assim, você poderá trabalhar com esses fragmentos de código no ambiente REPL rápido em vez de ter que executar o programa inteiro. Para ver esse recurso, primeiro substitua o loop `for` no arquivo *PythonApplication1.py* pelo seguinte:
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
@@ -51,14 +51,14 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selecione apenas as instruções `import` e `from` no arquivo `.py`, clique com o botão direito do mouse e selecione **Enviar para Interactive** (ou pressione CTRL + ENTER). O fragmento de código será imediatamente colado na janela interativa e executado. Agora selecione a função `make_dot_string` e repita o mesmo comando, que executa novamente esse fragmento de código. Como o código define uma função, é possível testar essa função rapidamente chamando-a algumas vezes:
+1. Selecione apenas as instruções `import` e `from` no arquivo *.py*, clique com o botão direito do mouse e selecione **Enviar para Interactive** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Agora selecione a função `make_dot_string` e repita o mesmo comando, que executa novamente esse fragmento de código. Como o código define uma função, é possível testar essa função rapidamente chamando-a algumas vezes:
 
     ![Enviando o código para a janela interativa e testando-o](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > O uso de CTRL + ENTER no editor *sem* uma seleção, executará a linha de código atual na janela interativa e posicionará automaticamente o cursor na próxima linha. Com esse recurso, ao pressionar CTRL + ENTER repetidamente você terá uma maneira conveniente de percorrer o código, o que não é possível somente com a linha de comando do Python. Isso também permitirá que você percorra o código sem executar o depurador e sem, necessariamente, começar desde o início do programa.
+    > O uso de **Ctrl**+**Enter** no editor *sem* uma seleção, executará a linha de código atual na janela **Interativa** e posicionará automaticamente o cursor na próxima linha. Com esse recurso, ao pressionar **Ctrl**+**Enter** repetidamente, você terá uma maneira conveniente de percorrer o código, o que não é possível somente com a linha de comando do Python. Isso também permitirá que você percorra o código sem executar o depurador e sem, necessariamente, começar desde o início do programa.
 
-1. Você também pode copiar e colar várias linhas de código de qualquer fonte na janela interativa, como no trecho a seguir, o que é difícil fazer com o REPL da linha de comando do Python. Ao colar, a janela interativa executa o código como se você o tivesse digitado:
+1. Você também pode copiar e colar várias linhas de código de qualquer fonte na janela **Interativa**, como no trecho a seguir, o que é difícil fazer com o REPL da linha de comando do Python. Ao colar, a janela **Interativa** executa o código como se você o tivesse digitado:
 
     ```python
     for i in range(360):
@@ -68,13 +68,13 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
     ![Colando várias linhas de código usando o comando Enviar para Interativa](media/vs-getting-started-python-15-interactive5.png)
 
-1. Como você pode ver, esse código funciona bem, mas a saída não é muito interessante. Um valor de etapa diferente no loop `for` mostraria mais da curva do cosseno. Felizmente, como todo o loop `for` está no histórico do REPL como uma única unidade, é fácil voltar e fazer as alterações desejadas e, em seguida, testar a função novamente. Pressione a seta para cima para, primeiro, recuperar o loop `for`. Em seguida, pressione as setas à esquerda ou direita para iniciar a navegação no código (até que você faça isso, as setas para baixo e para cima continuam a percorrer o histórico). Navegue até a especificação `range` e altere-a para `range(0, 360, 12)`. Em seguida, pressione CTRL + ENTER (em qualquer lugar no código) para executar toda a instrução novamente:
+1. Como você pode ver, esse código funciona bem, mas a saída não é muito interessante. Um valor de etapa diferente no loop `for` mostraria mais da curva do cosseno. Felizmente, como todo o loop `for` está no histórico do REPL como uma única unidade, é fácil voltar e fazer as alterações desejadas e, em seguida, testar a função novamente. Pressione a seta para cima para, primeiro, recuperar o loop `for`. Em seguida, pressione as setas à esquerda ou direita para iniciar a navegação no código (até que você faça isso, as setas para baixo e para cima continuam a percorrer o histórico). Navegue até a especificação `range` e altere-a para `range(0, 360, 12)`. Em seguida, pressione **Ctrl**+**Enter** (em qualquer lugar no código) para executar toda a instrução novamente:
 
     ![Edição de uma declaração anterior na janela interativa](media/vs-getting-started-python-16-interactive6.png)
 
 1. Repita o processo para fazer experiências com configurações de etapas diferentes, até encontrar um valor que você mais goste. Você também pode fazer a curva se repetir, aumentando o intervalo, por exemplo, `range(0, 1800, 12)`.
  
-1. Quando estiver satisfeito com o código escrito na janela interativa, selecione-o, clique com o botão direito do mouse e selecione **Copiar Código** (CTRL+SHIFT+C) e, em seguida, cole-o no editor. Observe como esse recurso especial do Visual Studio omite automaticamente qualquer saída, bem como os prompts `>>>` e `...`. Por exemplo, a imagem abaixo mostra o uso do comando **Copiar Código** em uma seleção que inclui os prompts e a saída:
+1. Quando estiver satisfeito com o código escrito na janela **Interativa**, selecione-o, clique com o botão direito do mouse e selecione **Copiar Código** (**Ctrl**+**Shift**+**C**) e cole-o no editor. Observe como esse recurso especial do Visual Studio omite automaticamente qualquer saída, bem como os prompts `>>>` e `...`. Por exemplo, a imagem abaixo mostra o uso do comando **Copiar Código** em uma seleção que inclui os prompts e a saída:
 
     ![Comando copiar código da janela interativa em uma seleção com prompts e saída](media/vs-getting-started-python-17-interactive7.png)
 
@@ -86,16 +86,16 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
         print(s)
     ```
 
-    Se quiser copiar o conteúdo exato da janela interativa, incluindo os prompts e a saída, basta usar o comando **Copiar** padrão.
+    Se quiser copiar o conteúdo exato da janela **Interativa**, incluindo os prompts e a saída, basta usar o comando **Copiar** padrão.
 
-1. O que você acabou de fazer é usar o ambiente de REPL rápido da janela interativa para trabalhar em detalhes de uma pequena parte de código e, em seguida, adicionou convenientemente esse código ao arquivo de origem do seu projeto. Agora, ao executar o código novamente com CTRL + F5 (ou **Depurar > Iniciar Sem Depurar**), você verá exatamente os resultados desejados.
+1. O que você acabou de fazer é usar o ambiente de REPL rápido da janela **Interativa** para trabalhar em detalhes de uma pequena parte de código e adicionou convenientemente esse código ao arquivo de origem do seu projeto. Agora, ao executar o código novamente com **Ctrl**+**F5** (ou **Depurar** > **Iniciar sem Depurar**), você verá exatamente os resultados desejados.
 
 ## <a name="next-step"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Executando o código no depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+> [Executar o código no depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
-- [Usando a Janela interativa](python-interactive-repl-in-visual-studio.md)
-- [Usando o IPython REPL](interactive-repl-ipython.md)
+- [Usar a Janela Interativa](python-interactive-repl-in-visual-studio.md)
+- [Usar o IPython REPL](interactive-repl-ipython.md)

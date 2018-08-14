@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118233"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586411"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 
@@ -30,15 +30,15 @@ No entanto, o Visual Studio ignora a variável de ambiente do caminho de pesquis
 
 Dessa forma, o Visual Studio fornece um meio para especificar caminhos de pesquisa diretamente nos projetos e ambientes. O código que você executa ou depura no Visual Studio recebe os caminhos de pesquisa no valor de `PYTHONPATH` (e outras variáveis equivalentes). Ao adicionar caminhos de pesquisa, o Visual Studio inspeciona as bibliotecas nessas localizações e compila bancos de dados do IntelliSense para elas quando necessário (Visual Studio 2017 versão 15.5 e anterior; a criação do banco de dados pode demorar algum tempo, dependendo do número de bibliotecas).
 
-Para adicionar um caminho de pesquisa, clique com o botão direito do mouse no item **Caminhos de Pesquisa** no Gerenciador de Soluções, selecione **Adicionar Pasta ao Caminho de Pesquisa...** e selecione a pasta a ser incluída. Esse caminho é usado para qualquer ambiente associado ao projeto. (Você poderá ver erros se o ambiente tiver base no Python 3, e você tentar adicionar um caminho de pesquisa aos módulos do Python 2.7.)
+Para adicionar um caminho de pesquisa, clique com o botão direito do mouse no item **Caminhos de Pesquisa** no **Gerenciador de Soluções**, escolha **Adicionar Pasta ao Caminho de Pesquisa** e escolha a pasta a ser incluída. Esse caminho é usado para qualquer ambiente associado ao projeto. (Você poderá ver erros se o ambiente tiver base no Python 3, e você tentar adicionar um caminho de pesquisa aos módulos do Python 2.7.)
 
-Os arquivos com uma extensão `.zip` ou `.egg` também podem ser adicionados como caminhos de pesquisa selecionando **Adicionar Arquivo Morto Zip para Caminho de Pesquisa...**. Assim como ocorre com pastas, o conteúdo desses arquivos é examinado e disponibilizado para o IntelliSense.
+Os arquivos com uma extensão *.zip* ou *.egg* também podem ser adicionados como caminhos de pesquisa quando **Adicionar Arquivo Morto Zip para Caminho de Pesquisa** for escolhido. Assim como ocorre com pastas, o conteúdo desses arquivos é examinado e disponibilizado para o IntelliSense.
 
-Se estiver usando regularmente os mesmos caminhos de pesquisa e o conteúdo não for alterado com frequência, poderá ser mais eficiente instalá-lo na pasta de pacotes do site. Em seguida, o caminho de pesquisa é analisado e armazenado no banco de dados do IntelliSense, sempre é associado ao ambiente pretendido e não exige a adição de um caminho de pesquisa a cada projeto.
+Se estiver usando regularmente os mesmos caminhos de pesquisa e o conteúdo não for alterado com frequência, poderá ser mais eficiente instalá-lo na pasta de pacotes do site. Em seguida, o caminho de pesquisa é analisado e armazenado no banco de dados do IntelliSense. Ele sempre é associado ao ambiente pretendido e não exige a adição de um caminho de pesquisa a cada projeto.
 
-## <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Consulte também
 
-- [Gerenciando ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
-- [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
+- [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)

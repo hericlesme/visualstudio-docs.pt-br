@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079142"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511229"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Início rápido: Usar o editor de códigos
 
@@ -157,14 +157,21 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você concluiu este Início Rápido do editor do Visual Studio. Em seguida, experimente alguns dos outros Inícios Rápidos do ambiente de desenvolvimento do Visual Studio, como [Início Rápido: Projetos e soluções](../ide/quickstart-projects-solutions.md) ou [Início Rápido: Personalizar o Visual Studio](../ide/quickstart-personalize-the-ide.md), veja mais maneiras de [Navegar pelo código](../ide/navigating-code.md) ou confira os links para obter mais informações sobre os recursos abordados. Caso contrário, boa codificação!
+Você concluiu este Início Rápido do editor do Visual Studio. Em seguida, experimente mais alguns Inícios Rápidos do ambiente de desenvolvimento do Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Início Rápido: Personalizar o Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Início Rápido: Personalizar o Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)
 - [Trechos de código](../ide/code-snippets.md)
+- [Navegar pelo código](../ide/navigating-code.md)
 - [Estrutura de tópicos](../ide/outlining.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
 - [Refatoração](../ide/refactoring-in-visual-studio.md)

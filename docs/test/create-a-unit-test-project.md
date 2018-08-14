@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235044"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586854"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
@@ -42,16 +42,17 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 5.  Se o código que você deseja testar estiver em outro local, consulte [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md) para obter informações sobre como adicionar referências.
 
 ## <a name="next-steps"></a>Próximas etapas
- **Escrevendo testes de unidade**
 
  Consulte uma das seguintes seções:
 
--   [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+**Escrevendo testes de unidade**
 
--   [Escrevendo Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
+- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 
--   [Usar a estrutura do MSTest em testes de unidade](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Escrevendo Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Executando testes de unidade**
+- [Usar a estrutura do MSTest em testes de unidade](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Executando testes de unidade**
 
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)

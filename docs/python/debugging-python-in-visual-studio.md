@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251927"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498961"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -155,9 +155,7 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 | **Caminho do Interpretador** | Substitui o caminho associado ao ambiente atual. O valor pode ser útil para iniciar o script com um interpretador não padrão. |
 | **Variáveis de ambiente** | Nessa caixa de texto multilinha, adicione entradas com o formato \<NAME>=\<VALUE>. Como essa configuração é aplicada por último, na parte superior das variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de Caminhos de Pesquisa, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Janelas imediata e interativa
+## <a name="immediate-and-interactive-windows"></a>Janelas imediatas e interativas
 
 Há duas janelas interativas que podem ser usadas durante uma sessão de depuração: a janela **Imediata** padrão do Visual Studio e a janela **Interativa de Depuração do Python**.
 

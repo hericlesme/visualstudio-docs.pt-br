@@ -10,25 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151c697ebe431da8799d4da98eceb1a00dd526
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 197c36a9b4d92c5be248b0948b5a9927052d551b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977492"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586439"
 ---
-# <a name="image-editor-examples"></a>Exemplos do Editor de Imagem
+# <a name="image-editor-examples"></a>Exemplos do Editor de Imagens
 
 Os artigos nesta seção da documentação contêm exemplos que demonstram como você pode usar o Editor de imagens.
-
-## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
 |[Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md)|Demonstra como criar uma textura básica.|
-|[Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Demonstra como criar uma textura de formato DDS que tem alfa pré-multiplicado que você pode usar em um aplicativo Direct2D ou WWA.|
 |[Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)|Demonstra como gerar níveis MIP de uma imagem.|
-|[Usando ativos 3D em jogos ou aplicativos](../designers/using-3-d-assets-in-your-game-or-app.md)|Descreve como você pode usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para processar ativos 3D ao criar seu projeto ou solução para que eles estejam prontos para uso em seu aplicativo. Estratégias de carregamento de diferentes tipos de ativos em seu aplicativo também são discutidas.|
+|[Usando ativos 3D em jogos ou aplicativos](../designers/using-3-d-assets-in-your-game-or-app.md)|Descreve como você pode usar o Visual Studio para processar ativos 3D ao criar seu projeto ou solução para que eles estejam prontos para uso em seu aplicativo. Estratégias de carregamento de diferentes tipos de ativos em seu aplicativo também são discutidas.|
 |[Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|
 |[Como exportar uma textura que tenha Alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|
 |[Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|

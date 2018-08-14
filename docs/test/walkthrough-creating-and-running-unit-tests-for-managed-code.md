@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380857"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469107"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -151,7 +151,7 @@ Há pelo menos três comportamentos que precisam ser verificados:
 
 - O método lançará um <xref:System.ArgumentOutOfRangeException> se o valor do débito for maior que o saldo.
 
-- O método gerará <xref:System.ArgumentOutOfRangeException> se o valor do débito for menor que zero.
+- O método gerará um <xref:System.ArgumentOutOfRangeException> se o valor do débito for menor que zero.
 
 - Se o valor do débito for válido, o método subtrairá o valor do débito do saldo da conta.
 
@@ -210,7 +210,7 @@ Um método de teste deve atender aos seguintes requisitos:
 
 ### <a name="analyze-the-test-results"></a>Analisar os resultados de teste
 
-O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEquals`, a mensagem exibe o que era esperado (o parâmetro **Expected\<*value*>**) e o que foi, de fato, recebido (o parâmetro **Actual\<*value*>**). Você esperava que o saldo diminuísse, mas em vez disso, na verdade, ele aumentou pelo valor do saque.
+O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEqual`, a mensagem exibe o que era esperado (o parâmetro **Expected\<*value*>**) e o que foi, de fato, recebido (o parâmetro **Actual\<*value*>**). Você esperava que o saldo diminuísse, mas em vez disso, ele aumentou pelo valor do saque.
 
 O teste de unidade revelou um bug: o valor do saque foi *adicionado* ao saldo da conta quando deveria ser *subtraído*.
 

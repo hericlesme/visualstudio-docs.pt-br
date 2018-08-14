@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177861"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469061"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -109,7 +109,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 
 ## <a name="use-a-different-unit-test-framework"></a>Usar uma estrutura de teste de unidade diferente
 
-Você pode executar testes de unidade no Visual Studio usando estruturas de teste de terceiros, como Boost, Google e nUnit. Use o plug-in para essa estrutura para que o executor de teste do Visual Studio possa funcionar com ela.
+Você pode executar testes de unidade no Visual Studio usando estruturas de teste de terceiros, como Boost, Google e NUnit. Use o plug-in para essa estrutura para que o executor de teste do Visual Studio possa funcionar com ela.
 
 Veja a seguir as etapas para habilitar estruturas de teste de terceiros:
 

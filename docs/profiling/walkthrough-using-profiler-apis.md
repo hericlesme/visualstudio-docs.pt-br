@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572967"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468204"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usar APIs do criador de perfil
+# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usando APIs do criador de perfil
+
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.  
   
  As etapas neste passo a passo geralmente se aplicam a um aplicativo C/C++. Para cada idioma, você precisará configurar o ambiente de compilação adequadamente.  
@@ -50,7 +51,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Você pode desativar a coleta de dados na linha de comando sem o uso de uma chamada de API. As etapas a seguir pressupõem que o ambiente de compilação de linha de comando está configurado para executar as ferramentas de criação de perfil e como suas ferramentas de desenvolvimento. Isso inclui as configurações necessárias para VSInstr e VSPerfCmd. Confira as Ferramentas de criação de perfil de linha de comando.  
+ Você pode desativar a coleta de dados na linha de comando sem usar uma chamada de API. As etapas a seguir pressupõem que o ambiente de compilação de linha de comando está configurado para executar as ferramentas de criação de perfil e como suas ferramentas de desenvolvimento. Isso inclui as configurações necessárias para VSInstr e VSPerfCmd. Confira as [Ferramentas de criação de perfil de linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="limit-data-collection-using-profiler-apis"></a>Limitar a coleta de dados usando APIs do criador de perfil  
   
@@ -59,7 +60,7 @@ DataCollection.CurrentId);
 1.  Crie um novo projeto C# no Visual Studio, ou use uma compilação de linha de comando, dependendo de sua preferência.  
   
     > [!NOTE]
-    >  O build precisa referenciar a biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+    >  A compilação deve fazer referência à biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
 2.  Copie e cole o código a seguir em seu projeto:  
   
@@ -69,47 +70,51 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
@@ -144,19 +149,19 @@ DataCollection.CurrentId);
   
 2.  Para criar o perfil de um aplicativo gerenciado, digite o comando a seguir para definir as variáveis de ambiente apropriadas:  
   
-     **VsPefCLREnv /traceon**  
+     **VsPerfCLREnv /traceon**  
   
-3.  Digite este comando:**VSInstr \<filename>.exe**  
+3.  Digite este comando: **VSInstr \<filename>.exe**  
   
-4.  Digite este comando:**VSPerfCmd /start:trace /output:\<filename>.vsp**  
+4.  Digite este comando: **VSPerfCmd /start:trace /output:\<filename>.vsp**  
   
-5.  Digite este comando:**VSPerfCmd /globaloff**  
+5.  Digite este comando: **VSPerfCmd /globaloff**  
   
 6.  Execute seu programa.  
   
-7.  Digite este comando:**VSPerfCmd /shutdown**  
+7.  Digite este comando: **VSPerfCmd /shutdown**  
   
-8.  Digite este comando:**VSPerfReport /calltrace:\<filename>.vsp**  
+8.  Digite este comando: **VSPerfReport /calltrace:\<filename>.vsp**  
   
      Um arquivo .*csv* é criado no diretório atual com os dados de desempenho resultantes.  
   

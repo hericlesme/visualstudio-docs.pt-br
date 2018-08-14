@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927341"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513168"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -178,13 +178,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.GoToPrevLocation|**Shift+F8**|
 |Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
-|Edit.MoveControlDownGrid|**Seta para baixo**|
+|Edit.MoveControlDownGrid|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|
 |Edit.MoveControlLeftGrid|**Seta para a esquerda**|
 |Edit.MoveControlRight|**Ctrl+Seta para a direita**|
 |Edit.MoveControlRightGrid|**Seta para a direita**|
 |Edit.MoveControlUp|**Ctrl+seta para cima**|
-|Edit.MoveControlUpGrid|**Seta para cima**|
+|Edit.MoveControlUpGrid|**Seta para Cima**|
 |Edit.NavigateTo|**Ctrl+,**|
 |Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Shift+K, Ctrl+Shift+N**|
@@ -700,9 +700,9 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.CharRight|**Seta para a direita**|
 |Edit.CharRightExtend|**Shift+Seta para a direita**|
 |Edit.InsertTab|**Tab**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift+Seta para baixo**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift+Seta para cima**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|
@@ -791,7 +791,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.CollapseAllOutlining|**Ctrl+M, Ctrl+A**|
 |Edit.CollapseCurrentRegion|**Ctrl+M, Ctrl+S**|
 |Edit.CollapseTag|**Ctrl+M, Ctrl+T**|
-|Edit.CollapsetoDefinitions|**Ctrl+M, Ctrl+O**|
+|Edit.CollapseToDefinitions|**Ctrl+M, Ctrl+O**|
 |Edit.CommentSelection|**Ctrl+K, Ctrl+C**|
 |Edit.CompleteWord|**Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita**|
 |Edit.CopyParameterTip|**Ctrl+Shift+Alt+C**|
@@ -814,7 +814,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.InsertTab|**Tab**|
 |Edit.LineCut|**Ctrl+L**|
 |Edit.LineDelete|**Ctrl+Shift+L**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift+Seta para baixo**|
 |Edit.LineDownExtendColumn|**Shift+Alt+Seta para baixo**|
 |Edit.LineEnd|**End**|
@@ -826,7 +826,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.LineStartExtend|**Shift+Home**|
 |Edit.LineStartExtendColumn|**Shift+Alt+Home**|
 |Edit.LineTranspose|**Shift+Alt+T**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift+Seta para cima**|
 |Edit.LineUpExtendColumn|**Shift+Alt+Seta para cima**|
 |Edit.ListMembers|**Ctrl+J**|
@@ -920,10 +920,10 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 
 |Comandos|Atalhos de teclado|
 |--------------|------------------------|
-|Edit.MoveControlDown|**Seta para baixo**|
+|Edit.MoveControlDown|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Seta para a esquerda**|
 |Edit.MoveControlRight|**Seta para a direita**|
-|Edit.MoveControlUp|**Seta para cima**|
+|Edit.MoveControlUp|**Seta para Cima**|
 |Edit.ScrollColumnLeft|**Ctrl+Seta para a esquerda**|
 |Edit.ScrollColumnRight|**Ctrl+Seta para a direita**|
 |Edit.ScrollLineDown|**Ctrl+Seta para baixo**|
@@ -1031,9 +1031,9 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.DocumentStart|**Início**|
 |Edit.DocumentStartExtend|**Shift+Home**|
 |Edit.InsertTab|**Tab**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift+Seta para cima**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift+Seta para baixo**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|

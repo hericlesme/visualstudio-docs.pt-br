@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704568"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468537"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Atualizar o Dotfuscator CE (Community Edition)
 
@@ -60,14 +60,6 @@ Embora o Dotfuscator Community Edition forneça um nível básico de proteção,
   * [Comportamentos de defesa do aplicativo][check-actions] adicionais.
   * A capacidade de fornecer um período de aviso antes da data limite do fim da vida útil do aplicativo.
   * A capacidade de notificar o código do aplicativo durante um período de aviso do fim da vida útil ou após a data limite.
-  * Criptografia de telemetria.
-* *Monitoramento de aplicativos*
-  * A capacidade de coletar e salvar as informações coletadas durante interrupções de rede temporárias.
-  * A capacidade de coletar informações de identificação pessoal.
-  * Uso ilimitado de [acompanhamento de recursos][features].
-  * A capacidade de acompanhar exceções capturadas e geradas pelo código, além de exceções sem tratamento.
-  * A capacidade de acompanhar exceções em assemblies `.dll`.
-  * Criptografia de telemetria.
 
 O Dotfuscator Professional é o [.NET Obfuscator][net-obfuscator] padrão do setor e é adequado para desenvolvedores empresariais que precisam de atualizações de produto, manutenção e suporte contínuos.
 Além disso, o Dotfuscator Professional oferece maior integração com o Visual Studio e é licenciado para uso comercial.
@@ -88,7 +80,6 @@ Para obter mais informações sobre os recursos avançados de proteção de apli
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

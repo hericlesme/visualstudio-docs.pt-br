@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382520"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586446"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introdução ao Live Unit Testing no Visual Studio
 
@@ -383,5 +383,5 @@ Isso fornece informações suficientes para uma investigação preliminar do bug
 ---
 
 ## <a name="see-also"></a>Consulte também
-[Live Unit Testing no Visual Studio](live-unit-testing.md)
-[Perguntas frequentes sobre Live Unit Testing](live-unit-testing-faq.md)
+- [Live Unit Testing no Visual Studio](live-unit-testing.md)
+- [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md)

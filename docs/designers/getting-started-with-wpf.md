@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829407c024eb378170d033932d404d65f8e8791c
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c7ae99208f48ffa2c8820f8c2765f72a6ae67a6e
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924202"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586867"
 ---
 # <a name="get-started-with-wpf"></a>Introdução ao WPF
 
@@ -23,10 +23,10 @@ O Windows Presentation Foundation (WPF) é uma estrutura de interface do usuári
 
 ## <a name="where-should-i-start"></a>Onde devo começar?
 
-|||
+|Assunto|Artigos|
 |-|-|
 |Desejo ir diretamente para...|[Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
-| Desejo comparar ferramentas de design XAML... |[Projetar XAML no Visual Studio e no Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
+|Desejo comparar ferramentas de design XAML...|[Projetar XAML no Visual Studio e no Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
 |Novo no .NET?|[Visão geral do .NET framework](/dotnet/framework/get-started/overview)<br /><br /> [Fundamentos do aplicativo](/dotnet/standard/application-essentials)<br /><br /> [Introdução ao Visual C# e ao Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|
 |Quero saber mais sobre o WPF...|[Introdução ao WPF](../designers/introduction-to-wpf.md)<br /><br /> [Visão geral do XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Controles](/dotnet/framework/wpf/controls/)<br /><br /> [Visão geral da associação de dados](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Vinculação de dados do WPF com o LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |Você é um desenvolvedor de Windows Forms?|[Controles dos Windows Forms e controles do WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Cenários compatíveis em interoperação entre o WPF e o Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917993"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512542"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos usados com frequência no Visual Studio
 
@@ -57,7 +57,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**Enter** [Editor de Texto, Designer de Relatórios, Designer de Formulários do Windows]<br /><br /> ou **Shift+Enter** [Editor de Texto]|
-|Edit.CollapsetoDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de Texto]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de Texto]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de Texto]|
 |Edit.CompleteWord|**Alt+Seta para a Direita** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br /> ou **Ctrl+Barra de espaços** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br /> ou **Ctrl+K**, **W** [Designer de Fluxo de Trabalho]<br /><br /> ou **Ctrl+K, Ctrl+W** [Designer de Fluxo de Trabalho]|
 |Edit.Copy|**Ctrl+C** [Global]<br /><br /> ou **Ctrl+Insert** [Global]|
