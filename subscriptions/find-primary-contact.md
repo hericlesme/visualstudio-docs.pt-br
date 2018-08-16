@@ -9,12 +9,12 @@ description: Assinaturas do Visual Studio – Localizando o Contato Principal
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69ef519d18dbfd52646f8cadb27e842a14c6135c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 2a9108009e497a4685659cdc904e77352f94365a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325204"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637975"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Localizando o Contato Principal associado a assinaturas do Visual Studio
 
@@ -23,12 +23,15 @@ Para concluir a integração da organização ao portal de administração de as
 1. Para localizar seu Contato Principal, visite o Centro de Empresas da Microsoft em: https://www.Microsoft.com/licensing/servicecenter e clique em **Entrar**.
 
 2. Na guia Licenças, selecione **Resumo do Relacionamento** na lista suspensa.
-    ![Escolher relacionamento](_img/locate-primary-contact/vlsc-relationship.png)
+    > [!div class="mx-imgBorder"]
+    > ![Escolher relacionamento](_img/locate-primary-contact/vlsc-relationship.png)
    
 3. Selecione o número de contrato aplicável. 
-    ![Escolher contrato](_img/locate-primary-contact/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Escolher contrato](_img/locate-primary-contact/vlsc-agreement.png)
 
 4. Selecione a guia **Contatos**.  O Contato Principal aparecerá na lista de contatos associados ao contrato. 
-    ![Escolher contatos](_img/locate-primary-contact/vlsc-contacts.png)
+    > [!div class="mx-imgBorder"]
+    > ![Escolher contatos](_img/locate-primary-contact/vlsc-contacts.png)
 
 
