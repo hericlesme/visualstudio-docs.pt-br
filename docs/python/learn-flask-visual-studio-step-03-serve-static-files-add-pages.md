@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388131"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637637"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -27,7 +27,7 @@ Nas etapas anteriores deste tutorial, você aprendeu como criar um aplicativo m�
 Nesta etapa, você aprenderá a:
 
 > [!div class="checklist"]
-> - Usar modelos de item do Visual Studio para criar rapidamente novos arquivos de diferentes tipos com código clichê conveniente (etapa 3-1)
+> - Usar modelos de item do Visual Studio para adicionar rapidamente novos arquivos de diferentes tipos com código clichê conveniente (etapa 3-1)
 > - Fornecer arquivos estáticos do código (etapa 3-2, opcional)
 > - Adicionar mais páginas ao aplicativo (etapa 3-3)
 > - Usar a herança do modelo para criar um cabeçalho e uma barra de navegação usados nas páginas (etapa 3-4)
@@ -89,7 +89,7 @@ Em qualquer caso, você pode organizar os arquivos em *static* como desejar.
 
 ### <a name="serve-a-static-file-from-code"></a>Fornecer um arquivo estático do código
 
-O Flask fornece uma função chamada `serve_static_file` que você pode chamar por meio do código para referenciar qualquer arquivo dentro da pasta *static* do projeto. O processo a seguir cria um ponto de extremidade de API simples que retorna um arquivo de dados estáticos).
+O Flask fornece uma função chamada `serve_static_file` que você pode chamar por meio do código para referenciar qualquer arquivo dentro da pasta *static* do projeto. O processo a seguir cria um ponto de extremidade de API simples que retorna um arquivo de dados estáticos.
 
 1. Se você ainda não fez isto, crie uma pasta *static*: no **Gerenciador de Soluções**, clique com o botão direito do mouse na pasta **HelloFlask** no projeto do Visual Studio, selecione **Adicionar** > **Nova pasta** e nomeie a pasta `static`.
 

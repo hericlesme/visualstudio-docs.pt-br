@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388287"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637611"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
 
@@ -29,7 +29,7 @@ Nesta etapa, você aprenderá a:
 > [!div class="checklist"]
 > - Criar um projeto com base no modelo e inicializar o banco de dados (etapa 5-1)
 > - Compreender os modelos de dados (etapa 5-2)
-> - Compreender os armazenamentos de dados de backup e (etapa 5-3)
+> - Compreender os armazenamentos de dados de backup (etapa 5-3)
 > - Compreender os detalhes da votação e as visualizações dos resultados (etapa 5-4)
 
 O Visual Studio também fornece o modelo "Projeto Web de Votações do Flask/Jade", que produz um aplicativo idêntico, mas usa a extensão do Jade para o mecanismo de modelagem do Jinja. Para obter detalhes, confira [Etapa 4 – Modelo Projeto Web do Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,7 +40,7 @@ O Visual Studio também fornece o modelo "Projeto Web de Votações do Flask/Jad
 
 1. Na caixa de diálogo Novo Projeto, pesquise e selecione o modelo **Projeto Web de Votações do Flask**, nomeie o projeto "FlaskPolls" e selecione **OK**.
 
-1. Como os outros modelos de projeto do Visual Studio, o modelo de "Projeto Web de Votações do Flask" inclui um arquivo *requirements.txt*. Os prompts do Visual Studio solicitam o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões. (Esse modelo requer o Flask, bem como os pacotes azure-storage e pymongo; o "Pesquisas do Projeto Web do Flask/Jade" também requerem pyjade.)
+1. Como os outros modelos de projeto do Visual Studio, o modelo de "Projeto Web de Votações do Flask" inclui um arquivo *requirements.txt*. O Visual Studio solicita o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões. (Esse modelo requer o Flask, bem como os pacotes azure-storage e pymongo; o "Pesquisas do Projeto Web do Flask/Jade" também requerem pyjade.)
 
 1. Defina o projeto **FlaskPolls** para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
 

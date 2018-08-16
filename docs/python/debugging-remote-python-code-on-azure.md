@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341781"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008613"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Depurar o código do Python remotamente no Azure
 
@@ -48,7 +48,7 @@ Conforme indicado, construa uma URL usando o segredo de *web.debug.config*, que 
 
 ![Determinando o ponto de extremidade do depurador em um Serviço de Aplicativo do Azure](media/azure-remote-debugging-secret.png)
 
-A URL de que você precisa agora está no formato `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`, em que você substitui &lt;secret&gt; e &lt;site_name&gt; na cadeia de caracteres pelos valores específicos.
+A URL necessária agora está no formato `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`. Substitua &lt;secret&gt; e &lt;site_name&gt; da cadeia de caracteres pelos valores específicos.
 
 Para anexar o depurador, selecione **Depurar** > **Anexar ao Processo**, selecione **Depuração remota do Python** no menu suspenso **Transporte**, insira a URL na **Caixa de texto qualificadora** e pressione **Enter**. Se o Visual Studio puder se conectar com êxito ao Serviço de Aplicativo, ele mostrará um único processo do Python na lista. Selecione-o e, em seguida, **Anexar** para iniciar a depuração:
 

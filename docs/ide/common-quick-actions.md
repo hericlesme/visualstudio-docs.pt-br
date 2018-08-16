@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063720"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638349"
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>Tornar o método assíncrono
 
-Ao usar a palavra-chave `await` ou `Await` em um método, espera-se que o próprio método seja marcado com a palavra-chave `async` ou `Async`.  No entanto, se esse não for o caso, uma Ação Rápida será exibida, que permitirá tornar o método assíncrono. Use a opção **Tornar o método ou a função síncrona** do menu Ações Rápidas.
+Ao usar a palavra-chave `await` ou `Await` em um método, espera-se que o próprio método seja marcado com a palavra-chave `async` ou `Async`.  No entanto, se esse não é o caso, é exibida uma Ação Rápida que torna o método assíncrono. Use a opção **Tornar o método ou a função síncrona** do menu Ações Rápidas.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>Remover usos/importações desnecessários
 
-A Ação Rápida **Remover Usos/Importações Desnecessários** removerá todas as instruções `using` e `Import` não utilizadas do arquivo atual.  Ao selecionar esse item, as importações de namespace não utilizadas serão removidas imediatamente.
+A Ação Rápida **Remover Usos/Importações Desnecessários** remove todas as instruções `using` e `Import` não utilizadas do arquivo atual.  Ao selecionar esse item, as importações de namespace não utilizadas são removidas.
 
 |  Linguagens Aplicáveis |  Versão compatível |
 |  -------------------- | ----------------  |
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>Usar nomes inferidos
 
-Estas Ações rápidas indicam quando os usuários podem usar nomes de membro inferidos em tipos anônimos ou usar os nomes de elemento de tupla inferidos do C# 7.1.
+Esta Ação Rápida destaca quando o código pode ser simplificado para usar nomes de membros inferidos em tipos anônimos ou nomes de elemento inferidos em tuplas.
 
 ```csharp
 // Before
@@ -897,7 +897,7 @@ var tuple = (age, name);
 
 ### <a name="deconstruct-tuple-declaration"></a>Desconstruir declaração de tupla
 
-Esta Ação rápida permite desconstruir declarações de variável de tupla.
+Esta Ação Rápida permite desconstruir declarações de variável de tupla.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Tornar o método síncrono
 
-Ao usar a palavra-chave `async` ou `Async` em um método, espera-se que, em algum lugar desse método, a palavra-chave `await` ou `Await` também seja usada.  No entanto, se esse não for o caso, uma Ação Rápida será exibida, que permitirá tornar o método síncrono, removendo a palavra-chave `async` ou `Async` e alterando o tipo de retorno. Use a opção **Tornar o método síncrono** do menu Ações Rápidas.
+Ao usar a palavra-chave `async` ou `Async` em um método, espera-se que, dentro desse método a palavra-chave `await` ou `Await` também seja usada.  No entanto, se esse não é o caso, é exibida uma Ação Rápida que torna o método síncrono removendo a palavra-chave `async` ou `Async` e alterando o tipo de retorno. Use a opção **Tornar o método síncrono** do menu Ações Rápidas.
 
 ```csharp
 // Before

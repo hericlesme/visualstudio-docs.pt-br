@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747874"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008389"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Criar um teste de matemática temporizado
+
 Neste tutorial, você cria um teste no qual o tomador de teste deve responder a quatro problemas aritméticos aleatórios dentro de um tempo especificado. Você aprenderá como:
 
 -   Gere números aleatórios usando a classe de <xref:System.Random>.
@@ -29,16 +30,16 @@ Neste tutorial, você cria um teste no qual o tomador de teste deve responder a 
 
 -   Execute operações aritméticas básicas no código.
 
- Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes.
+Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes:
 
- ![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png) Teste que você cria neste tutorial
+![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
- Para baixar uma versão concluída do teste, veja [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Para baixar uma versão concluída do teste, veja [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
->  O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.
+> O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

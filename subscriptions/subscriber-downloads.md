@@ -9,12 +9,12 @@ description: Saiba como localizar e baixar os produtos da Microsoft incluídos n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326339"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637731"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.
@@ -41,26 +41,26 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura do Visual Studio Professional e uma associação ao Visual Studio Dev Essentials associadas à mesma ID de conexão, os downloads mostrados serão os incluídas na assinatura do Professional, mesmo que você esteja exibindo os benefícios do Dev Essentials no momento.
 
 Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página.
-
-![Página de downloads do assinante](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Página de downloads do assinante](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 Por exemplo, se você escolher o **Visual Studio 2017** na lista Ferramentas para Desenvolvedores, será exibida uma lista de downloads do Visual Studio 2017 disponíveis.
-
-![Downloads do Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Downloads do Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
 
 Selecione facilmente sua arquitetura, linguagem e tipo de arquivo usando os menus suspensos disponíveis. Escolha as opções de preferência e clique em **Baixar** para começar a baixar o produto.
 
 ### <a name="displaying-download-details"></a>Exibindo detalhes do download
 
 Clicar no nome do produto ou no link **Informações** exibirá os detalhes desse download e fornecerá acesso às notas de versão do produto.
-
-![Detalhes de download do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Detalhes de download do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
 
 No painel de detalhes, também é possível clicar na guia **Chaves** para verificar o status das suas chaves do produto (Product Keys).
-
-![Chaves do produto (Product Keys) do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Chaves do produto (Product Keys) do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Obtendo chaves do produto (Product Keys)
 Para obter uma chave do produto (Product Key) para o download, é possível clicar na chave azul com o rótulo **Obter chave** ou, se você já estiver exibindo o painel de detalhes, clique em **Solicitar chave** na guia **chaves**.
-
-![Solicitar chaves do produto (Product Keys) do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Solicitar chaves do produto (Product Keys) do Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-claim-keys.png)

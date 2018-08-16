@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 899720242910b97bf4ffd9fc4a847b6902b7574a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341729"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008428"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -77,7 +77,7 @@ Usando esse método, fique ciente de que você não pode depurar o próprio inic
 
 Para todas as versões anteriores do Visual Studio, a depuração direta de modo misto é habilitada apenas ao iniciar um projeto do Python no Visual Studio, pois os projetos do C/C++ usam somente o depurador nativo. No entanto, você pode anexar o depurador separadamente:
 
-1. Inicie o projeto C++ sem depuração (**Depurar** > **Iniciar sem depuração** ou **Ctrl**+**F5**).
+1. Inicie o projeto C++ sem depuração (**Depurar** > **Iniciar sem Depuração** ou **Ctrl**+**F5**).
 1. Selecione **Depurar** > **Anexar ao Processo**. Na caixa de diálogo exibida, selecione o processo apropriado e, em seguida, use o botão **Selecionar** para abrir a caixa de diálogo **Selecionar Tipo de Código** na qual você pode selecionar o **Python**:
 
     ![Selecionando Python como o tipo de depuração ao anexar um depurador](media/mixed-mode-debugging-attach-type.png)

@@ -9,12 +9,12 @@ description: A entrada poderá falhar se forem usados aliases ou nomes amigávei
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327057"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637676"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -50,11 +50,14 @@ Siga estas etapas para adicionar um novo assinante com uma conta de diretório.
 1. Acesse o [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (Volume Licensing Service Center) e entre.
 2. Na página Administrador do VLSC, clique em **Assinaturas** e em **Assinaturas do Visual Studio**.
 
-    ![Menu de assinaturas](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Menu de assinaturas](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Clique no **Número do Contrato** associado à assinatura do Visual Studio.
 
-    ![Selecionar contrato](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Selecionar contrato](_img/vlsc/vlsc-agreement.png)
 
 4. Clique em **Atribuir Assinatura**.
 5. Selecione o **Nível de Assinatura** desejado.

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512077"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639426"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabalhar com Python no Visual Studio
 
@@ -36,7 +36,7 @@ O Visual Studio fornece suporte de linguagem de primeira classe para o Python. E
 
 ## <a name="step-1-create-a-new-python-project"></a>Etapa 1: criar um novo projeto do Python
 
-Um *projeto* é a forma como o Visual Studio gerencia todos os arquivos que são reunidos para produzir um único aplicativo, incluindo código-fonte, recursos, configurações e assim por diante. Um projeto formaliza e mantém a relação entre todos os arquivos do projeto, bem como os recursos externos que são compartilhados entre vários projetos. Sendo assim, o projeto permite que seu aplicativo expanda facilmente e cresça de maneira muito mais fácil do que simplesmente gerenciar relacionamentos de um projeto em pastas ad-hoc, scripts, arquivos de texto e até mesmo em sua própria mente.
+Um *projeto* é a forma como o Visual Studio gerencia todos os arquivos que são reunidos para produzir um único aplicativo, incluindo código-fonte, recursos, configurações e assim por diante. Um projeto formaliza e mantém a relação entre todos os arquivos do projeto, bem como os recursos externos que são compartilhados entre vários projetos. Sendo assim, os projetos permitem que seu aplicativo expanda facilmente e cresça de maneira muito mais fácil do que simplesmente gerenciar relacionamentos de um projeto em pastas ad-hoc, scripts, arquivos de texto e até mesmo em sua própria mente.
 
 Neste tutorial você começará com um projeto simples, contendo um único arquivo de código vazio.
 
@@ -46,7 +46,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
     ![Nova caixa de diálogo mostrando os projetos do Python](media/vs-getting-started-python-01-new-project.png)
 
-    Observe como o suporte para Python no Visual Studio inclui uma variedade de modelos de projeto, incluindo aplicativos Web usando as estruturas Bottle, Flask e Django. No entanto, para as finalidades deste passo a passo, vamos começar com um projeto vazio.
+    Observe como o suporte do Python no Visual Studio inclui uma variedade de modelos de projeto, incluindo aplicativos Web usando as estruturas Bottle, Flask e Django. No entanto, para as finalidades deste passo a passo, vamos começar com um projeto vazio.
 
 1. Selecione o modelo **Aplicativo Python**, especifique um nome para o projeto e selecione **OK**.
 
