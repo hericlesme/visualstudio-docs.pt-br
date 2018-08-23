@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057155"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635431"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Definir uma inspeção nas variáveis usando a inspeção e QuickWatch Windows no Visual Studio
 Enquanto você estiver depurando, você pode usar o **Watch** e **QuickWatch** windows para inspecionar variáveis e expressões.  A diferença é que o **Watch** janela pode exibir diversas variáveis, enquanto o **QuickWatch** janela exibe uma única variável por vez. 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Modo de exibição dinâmico e a janela Inspeção  
  Algumas linguagens de script (por exemplo, Python ou JavaScript) usam dinâmico ou [digitação pato](https://en.wikipedia.org/wiki/Duck_typing), e linguagens .NET (na versão 4.0 e posterior) dão suporte a objetos que são difíceis de observar usando janelas de depuração normais, porque eles pode ter métodos e propriedades de tempo de execução que não podem ser exibidos.  
   
- Quando a janela de observação exibe um objeto criado a partir de um tipo que implementa o [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), o depurador adiciona um especial **modo de exibição dinâmico** nó para o **Autos**  exibir. Esse nó mostra os membros dinâmicos do objeto dinâmico, mas não permite editar os valores dos membros.  
+ Quando a janela de observação exibe um objeto criado a partir de um tipo que implementa o <xref:System.Dynamic.IDynamicMetaObjectProvider>, o depurador adiciona um especial **modo de exibição dinâmico** nó para o **Autos** exibir. Esse nó mostra os membros dinâmicos do objeto dinâmico, mas não permite editar os valores dos membros.  
   
  Se o botão direito do mouse qualquer filho de um **modo de exibição dinâmico** e escolha **Adicionar inspeção**, o depurador vai inserir uma nova variável de inspeção que converte um objeto em um objeto dinâmico. Em outras palavras, **nome do objeto** torna-se (**objeto (dinâmico)). Nome**.  
   

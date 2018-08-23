@@ -4,12 +4,12 @@ hide_bc: true
 title: Documentação do Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 13b3dbbc5c5307d7a98bfdf9bd8900436daee2b1
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449059"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635178"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -75,6 +75,158 @@ ms.locfileid: "34449059"
     <div class="container">
         <h1>Documentação do Visual Studio</h1>
         <ul class="pivots">
+            <li>
+                <li>
+                <a href="#get-started">Introdução</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Saiba como usar o Visual Studio</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />Iniciar um tour guiado</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />Gravar e editar código</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />Compilar seu código</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="" />Depurar seu código</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />Testar seu código</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="" />Acessar dados localmente ou na nuvem</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Introdução com um tutorial</h3>
+                                                <h4>Escolha uma linguagem de programação</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">                                                    <li>
+                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Está com pressa? Experimente um início rápido de cinco minutos</h3>
+                                                <h4>Crie um "Olá, mundo" na linguagem de sua escolha.</h4>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Ou escolha o que você deseja desenvolver</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Aplicativo universal do Windows</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Aplicativo da área de trabalho do Windows</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="">
+Aplicativo móvel</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="">
+Jogo do Unity</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt="">
+Aplicativo Web com ASP.NET Core</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
             <li>
                 <a href="#features">Tarefas</a>
                 <ul id="features">
@@ -285,6 +437,25 @@ ms.locfileid: "34449059"
                                                 <div class="cardText">
                                                     <h3>Colaboração</h3>
                                                     <p>Compartilhar, editar e depurar o código em um ambiente de colaboração em tempo real. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Desenvolver com contêineres</h3>
+                                                    <p>Use contêineres para isolar componentes modulares e melhorar a escalabilidade.</p>
                                                 </div>
                                             </div>
                                         </div>
