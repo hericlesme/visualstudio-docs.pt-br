@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118537"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635675"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação
   Este passo a passo demonstra como criar um fluxo de trabalho sequencial básico que incorpora o uso de formulários de associação e iniciação. Esses são os formulários ASPX que permitem que os parâmetros a ser adicionado a um fluxo de trabalho quando ele pela primeira vez é associado pelo administrador do SharePoint (o formulário de associação), e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).  
@@ -62,7 +62,7 @@ ms.locfileid: "37118537"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.  
   
 -   Visual Studio.  
   
