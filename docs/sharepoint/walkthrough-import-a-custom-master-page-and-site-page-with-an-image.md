@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3fb68b4a84c6771c9430f2e8974ee485462b8563
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ea327f48bb1a1b04aa4b20601b8bdb3f7dfbb847
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945839"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634674"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem
   Este passo a passo demonstra como importar uma página mestra personalizada do SharePoint e uma página de site que possui uma imagem em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.  
@@ -39,7 +39,7 @@ ms.locfileid: "37945839"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você deve ter os seguintes componentes para concluir este passo a passo:  
   
--   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.  
   
 -   Visual Studio.  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131863"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623880"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -92,7 +92,7 @@ Em seguida, criaremos um aplicativo que contém alguns bugs.
 
     Para o .NET Core na **novo projeto** caixa de diálogo, escolha **Visual c#**, **.NET Core** na seção modelos instalados e, em seguida, no painel central, selecione  **Aplicativo (.NET Core) do console**.
 
-    Se você não vir essas modelo, você deve instalar a carga de trabalho apropriada (consulte as etapas anteriores).
+    Se você não vir esses modelos, você deve instalar a carga de trabalho apropriada (consulte as etapas anteriores).
 
 1. No **nome** , digite **ConsoleApp FirstApp** e clique em **Okey**.
 
@@ -228,7 +228,7 @@ Em seguida, criaremos um aplicativo que contém alguns bugs.
 
 1. Clique o **reinicie** ![aplicativo reiniciar](../debugger/media/dbg-tour-restart.png "RestartApp") botão na barra de ferramentas Depurar (**Ctrl** + **Shift**   +  **F5**).
 
-    O aplicativo faz uma pausa no ponto de interrupção que você definir. O hightlighting amarelo indica onde o depurador estiver pausado (a linha amarela de código ainda não foi executada).
+    O aplicativo faz uma pausa no ponto de interrupção que você definir. O realce amarelo indica onde o depurador estiver pausado (a linha amarela de código ainda não foi executada).
 
 1. Passe o mouse sobre o `GalaxyType` variável à direita e, em seguida, à esquerda do ícone de chave inglesa, expanda `theGalaxy.GalaxyType`. Você verá que `GalaxyType` contém uma propriedade `MyGType`, e o valor da propriedade é definido como `Spiral`.
 
@@ -303,7 +303,7 @@ Em seguida, criaremos um aplicativo que contém alguns bugs.
 
     Examinar o código, você verá um erro de digitação no `case 'l'` instrução. Ele deve ser `case 'I'`.
 
-1. Clique no código de `case 'l'`e substituí-lo por ' 'I' case.
+1. Clique no código de `case 'l'` e substitua-a por `case 'I'`.
 
 1. Remova o ponto de interrupção e, em seguida, clique no **reiniciar** botão reiniciar o aplicativo.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851819"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627335"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Especifique se deseja depurar somente código do usuário usando o Just My Code no Visual Studio
 Você pode configurar o Visual Studio para depurar system, estrutura e outras chamadas de não usuário e recolhe essas chamadas na janela de pilha de chamadas automaticamente. O recurso que habilita ou desabilita esse comportamento é chamado *Just My Code*. Este tópico descreve como usar o apenas meu código em projetos c#, Visual Basic, C++ e JavaScript.
@@ -67,7 +67,9 @@ Para a maioria das linguagens de programação, apenas meu código está habilit
 ##  <a name="BKMK_C___Just_My_Code"></a> Apenas meu código do C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Código de usuário e de não usuário  
- O Apenas Meu Código do C++ é diferente do Apenas Meu Código do .NET Framework e do JavaScript porque o comportamento de depuração é independente do comportamento da pilha de chamadas.  
+O Apenas Meu Código do C++ é diferente do Apenas Meu Código do .NET Framework e do JavaScript porque o comportamento de depuração é independente do comportamento da pilha de chamadas.  
+
+A partir de 15,8 de 2017 do Visual Studio, você pode especificar se deseja habilitar apenas meu código para usar o C++ **ferramentas** > **opções** > **depuração**  >  **Gerais** > **habilitar apenas meu código** (ela é habilitada por padrão). Isso é equivalente a usar o [/JMC (apenas meu código de depuração)](/cpp/build/reference/jmc) comutador de compilador.
   
  **Pilhas de chamadas**  
   
@@ -88,7 +90,7 @@ Para a maioria das linguagens de programação, apenas meu código está habilit
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamento de depuração  
  Quando você **intervir** (atalho de teclado: F11) código de não usuário do código do usuário, o depurador percorre o código para a próxima linha de código do usuário. Quando você **depuração circular** (teclado: Shift + F11), o depurador executa a próxima linha de código do usuário. Se nenhum código de usuário for encontrado, a execução continua até que o aplicativo sai, um ponto de interrupção é atingido, ou ocorrerá uma exceção.  
   
- Se o depurador for interrompido em um código de não usuário (por exemplo, se um comando Interromper Tudo parar em um código de não usuário), a depuração continua no código de não usuário.  
+ Se o depurador for interrompido em um código de não usuário (por exemplo, se um comando Interromper Tudo parar em um código de não usuário), a depuração continua no código de não usuário.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Comportamento de exceção  
  Quando o depurador atinge uma exceção, ele parar na exceção independentemente de estar ou não no usuário ou código de não usuário. O **User-unhandled** as opções a **exceções** caixa de diálogo são ignorados.  

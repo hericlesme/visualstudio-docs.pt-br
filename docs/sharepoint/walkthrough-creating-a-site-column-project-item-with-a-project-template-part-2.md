@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ecd69f6527348e39c4eadeef6f17b396852bf39
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118386"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626010"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
@@ -48,7 +48,7 @@ ms.locfileid: "37118386"
   
  Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e Visual Studio. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do Windows, SharePoint e Visual Studio.
   
 -   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   

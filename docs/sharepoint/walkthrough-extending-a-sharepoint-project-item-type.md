@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7d0604e0e80fcb0fa14c65bd57669f60e68fd11
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118259"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626140"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Passo a passo: Estender um tipo de item de projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados comerciais (BDC) no SharePoint. Por padrão, quando você cria um modelo usando esse item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibam os dados.  
@@ -42,7 +42,7 @@ ms.locfileid: "37118259"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio.  
   
 -   O [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117830"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634732"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estenda o Gerenciador de servidores para exibir web parts
   No Visual Studio, você pode usar o **conexões do SharePoint** nó do **Gerenciador de servidores** para componentes de exibição nos sites do SharePoint. No entanto, **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste passo a passo, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada uma conectada site do SharePoint.  
@@ -48,7 +48,7 @@ ms.locfileid: "37117830"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e do Visual Studio. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do Windows, SharePoint e do Visual Studio.  
   
 -   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   

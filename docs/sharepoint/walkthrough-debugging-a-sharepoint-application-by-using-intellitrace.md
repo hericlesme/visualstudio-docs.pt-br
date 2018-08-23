@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118460"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624442"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Passo a passo: Depurar um aplicativo do SharePoint usando o IntelliTrace
 
@@ -52,7 +52,7 @@ Usando o IntelliTrace, você pode depurar mais facilmente soluções do SharePoi
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Edições com suporte do Windows e do SharePoint. Ver [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Edições com suporte do Windows e do SharePoint.
 
 - Visual Studio Enterprise.
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118359"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635226"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Passo a passo: Criar uma web part para SharePoint usando um designer
 
@@ -46,7 +46,7 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Edições com suporte do Windows e do SharePoint. Ver [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Edições com suporte do Windows e do SharePoint.
 
 ## <a name="create-a-web-part-project"></a>Criar um projeto de web part
 

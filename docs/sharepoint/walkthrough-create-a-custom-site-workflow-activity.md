@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118370"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627351"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Passo a passo: Criar uma atividade de fluxo de trabalho de site personalizada
   Este passo a passo demonstra como criar uma atividade personalizada para um fluxo de trabalho de nível de site usando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Fluxos de trabalho de nível de site se aplica a todo o site, não apenas uma lista no site.) A atividade personalizada cria uma lista de avisos de backup e, em seguida, copia o conteúdo da lista de anúncios para ele.  
@@ -48,7 +48,7 @@ ms.locfileid: "37118370"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.
   
 -   Visual Studio.  
   

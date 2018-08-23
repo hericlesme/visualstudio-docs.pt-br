@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498987"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635126"
 ---
 # <a name="ide-constants"></a>Constantes IDE
 
@@ -54,30 +54,30 @@ O <xref:Microsoft.VisualStudio.VSConstants> classe fornece constantes que são e
 |Valor|Descrição|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Uma constante retornada pelas interfaces ao comportamento assíncrono quando o objeto em questão no já está ocupado|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "dados de documento incompatível".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "O pacote não carregado".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica que o "Projeto já existe".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "Falha na configuração do projeto".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "O projeto não carregado".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "Solução já aberta".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "Solução não está aberta".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Um erro HRESULT que é específico para o Visual Studio "dados de documento incompatível".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Um erro HRESULT que é específico para o Visual Studio e que indica "Não carregado o pacote."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Um erro HRESULT que é específico para o Visual Studio e que indica que o "Projeto já existe".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Um erro HRESULT que é específico para o Visual Studio e que indica "Falha na configuração do projeto".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Um erro HRESULT que é específico para o Visual Studio e que indica "O projeto não carregado".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Um erro HRESULT que é específico para o Visual Studio e que indica "Solução já aberta".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Um erro HRESULT que é específico para o Visual Studio e que indica "Solução não abrir".|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Retornado por interfaces de compilação que tenham parâmetros para especificar uma matriz do <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> interface, mas a implementação pode aplicar apenas o método para todas as saídas.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|O <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método retornará esse valor se o documento tem um formato que não pode ser aberto no editor.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Um valor HRESULT que indica que o usuário pressionasse o botão Voltar em um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] assistente.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Um valor HRESULT que indica que o usuário pressionasse o botão Voltar em um assistente do Visual Studio.|
 
 ## <a name="visual-studio-constants"></a>Constantes do Visual Studio
 
 |Valor|Descrição|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Um erro HRESULT que é específico para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e que indica "Projeto encaminhado".|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Uma constante que é específica para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para "marcador de caixa de ferramentas".|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Uma constante que é específica para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método que indica o início da modalidade.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Uma constante que é específica para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método que indica o fim da modalidade.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Uma constante que é específica para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método indicando que as métricas de barra de comando foram alterados.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Uma constante que é específica para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que indica que um cookie não foi definido.|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identificador do item que representa a ausência de um item de projeto. Esse valor é usado quando não houver nenhuma seleção atual.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identificador do item que representa a raiz de uma hierarquia de projeto e é usado para identificar a hierarquia inteira, em vez de um único item.|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identificador do item que representa o item selecionado no momento ou os itens, que podem incluir a raiz da hierarquia.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Um erro HRESULT que é específico para o Visual Studio e que indica "Projeto encaminhado".|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Uma constante que é específica para o Visual Studio para um "marcador de caixa de ferramentas".|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Uma constante que é específica para o Visual Studio para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método que indica o início da modalidade.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Uma constante que é específica para o Visual Studio para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método que indica o fim da modalidade.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Uma constante que é específica para o Visual Studio para transmitir uma mensagem de notificação por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> método indicando que as métricas de barra de comando foram alterados.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Uma constante que é específica para o Visual Studio que indica que um cookie não foi definido.|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Um identificador de item do Visual Studio que representa a ausência de um item de projeto. Esse valor é usado quando não houver nenhuma seleção atual.|
+|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Um identificador de item do Visual Studio que representa a raiz de uma hierarquia de projeto e é usado para identificar a hierarquia inteira, em vez de um único item.|
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Um identificador de item do Visual Studio que representa o item selecionado no momento ou os itens, que podem incluir a raiz da hierarquia.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Descreve qual componente do IDE apenas foi selecionado, em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> chamar, por exemplo.
