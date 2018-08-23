@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118366"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635535"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Passo a passo: Criar uma lista externa no SharePoint usando dados corporativos
 
@@ -49,7 +49,7 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Edições com suporte do Windows e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Edições com suporte do Windows e do SharePoint.
 
 - Acesso ao banco de dados de exemplo AdventureWorks. Para obter mais informações sobre como instalar o banco de dados AdventureWorks, consulte [bancos de dados de exemplo do SQL Server](http://go.microsoft.com/fwlink/?LinkID=117483).
 
