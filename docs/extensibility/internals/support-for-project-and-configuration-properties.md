@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f137f5044c24ec9a187868c273b1dd752cd86a5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513086"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902617"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) pode exibir propriedades do projeto e configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário pode definir propriedades de seu aplicativo.  
   
  Selecionando um nó do projeto no **Gerenciador de soluções** e, em seguida, clicando em **propriedades** sobre o **projeto** menu, você pode abrir uma caixa de diálogo que inclui o projeto e a configuração Propriedades. Na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]e tipos derivados desses idiomas, essa caixa de diálogo é exibida como uma página com guias do projeto do [geral, ambiente, caixa de diálogo Opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não está em compilação: passo a passo: expondo o projeto e propriedades de configuração (c#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
- A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar a fonte de instruções de código e compilação em [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar a fonte de instruções de código e compilação em [MPF de projetos – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Persistência de projeto e propriedades de configuração  
  Propriedades do projeto e configuração são mantidas em um arquivo de projeto que tem qualquer extensão de nome de arquivo associado ao tipo de projeto, por exemplo,. csproj,. vbproj e .myproj. Projetos de linguagem normalmente usam um arquivo de modelo para gerar o arquivo de projeto. No entanto, há, na verdade, de várias maneiras para associar modelos e tipos de projeto. Para obter mais informações, consulte [descrição do diretório de modelo (. Os arquivos de Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
@@ -84,7 +84,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
  O <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, e <xref:System.ComponentModel.DescriptionAttribute> atributos determinam o layout, rotulagem e a descrição das propriedades de projeto e configuração em uma página de propriedades genérico. Esses atributos determinar a categoria, nome de exibição e descrição da opção, respectivamente.  
   
 > [!NOTE]
->  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+>  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   
  Considere o fragmento de código a seguir:  
   

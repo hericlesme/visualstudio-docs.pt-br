@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639120"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902813"
 ---
 # <a name="extend-projects"></a>Estender projetos
 Projetos e soluções são as maneiras em que o Visual Studio organiza os arquivos de código e recursos em unidades de compilação e implantação. Você pode encontrar mais informações sobre projetos de [projetos (SDK do Visual Studio)](../extensibility/extending-projects.md).  
   
- Você pode criar seus próprios tipos de projeto com o SDK do Visual Studio e a estrutura de pacote gerenciado para projetos, que pode ser baixado em [estrutura de pacote gerenciado para projetos](http://mpfproj12.codeplex.com/). Para entender como os projetos personalizados são implementados, consulte [nova geração de projeto: nos bastidores, parte um](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Você pode criar seus próprios tipos de projeto com o SDK do Visual Studio e a estrutura de pacote gerenciado para projetos, que pode ser baixado em [estrutura de pacote gerenciado para projetos](https://github.com/tunnelvisionlabs/MPFProj10). Para entender como os projetos personalizados são implementados, consulte [nova geração de projeto: nos bastidores, parte um](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Os tópicos nesta seção descrevem como criar projetos personalizados e como gerenciar diferentes tipos de solução do Visual Studio.  
   
