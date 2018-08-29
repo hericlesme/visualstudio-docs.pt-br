@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297761"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138759"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio 2017 adicionando ou removendo cargas de trabalho e componentes
 
@@ -66,16 +66,7 @@ Veja como.
 
 Se você não quiser usar o recurso prático Cargas de Trabalho para personalizar a instalação do Visual Studio, escolha a opção **Componentes Individuais** do Instalador do Visual Studio, selecione o que deseja e siga os prompts.
 
-## <a name="get-support"></a>Obter suporte
-
-Às vezes, as coisas podem dar errado. Se a instalação do Visual Studio falhar, confira a página [Solução de problemas de instalação e de atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter ajuda. Você também pode contatar nosso [chat ao vivo](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para obter ajuda na instalação. Para obter mais informações, confira a [página “Fale Conosco” do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Aqui estão algumas outras opções de suporte:
-
-* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
-* Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
-* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Consulte também
 
