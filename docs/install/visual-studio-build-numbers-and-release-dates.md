@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/02/2018
+ms.date: 08/20/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef62980f3e6eca10732502fa97c453628e4e33b1
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499026"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138461"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio 2017
 
@@ -25,6 +25,10 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.0 versão prévia 1 | Visualizar | 20 de agosto de 2018 | 15.9.28016.0 |
+| 15.8.1 | Versão | 17 de agosto de 2018 | 15.8.28010.2003 |
+| 15.8.0 | Versão | 14 de agosto de 2018 | 15.8.28010.0 |
+| 15.0.17 | Versão | 14 de agosto de 2018 | 15.0.26228.49 |
 | 15.7.6 | Versão | 2 de agosto de 2018 | 15.7.27703.2047 |
 | 15.0.16 | Versão | 2 de agosto de 2018 | 15.0.26228.48 |
 | 15.8.0 Versão Prévia 5 | Visualizar | 26 de julho de 2018 | 15.8.27924.0 |
@@ -140,16 +144,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.1 Versão prévia 1 | Visualizar | 7 de março de 2017 | 15.0.26304.0 |
 | 15.0.0 | Versão | 7 de março de 2017 | 15.0.26228.4 |
 
-## <a name="get-support"></a>Obter suporte
-
-Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Aqui estão algumas outras opções de suporte:
-
-* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
-* Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
-* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Consulte também
 

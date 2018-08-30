@@ -16,70 +16,86 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382403"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054550"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
-## <a name="test-discovery"></a>Descoberta de teste
-
-### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. O Gerenciador de Testes não está detectando meus testes definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como descobrir estes testes?
+## <a name="dynamic-test-discovery"></a>Detecção de testes dinâmica
+**O Gerenciador de Testes não está detectando meus testes definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como faço para descobrir estes testes?**
 
   Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Teste**.
 
   A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Uma compilação é necessária para que esses testes sejam descobertos com precisão. Nas visualizações 15.6, a descoberta baseada em assembly (o detector tradicional) é executada somente depois de compilações. Essa configuração significa que a Detecção de Testes em Tempo Real detecta o máximo de testes possível durante a edição e a detecção baseada em assembly permite que os testes definidos de forma dinâmica apareçam após um build. A Descoberta de Teste em Tempo Real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após uma compilação.
 
-### <a name="2-what-does-the--plus-symbol-that-appears-in-the-top-line-of-test-explorer-mean"></a>2. O que significa o '+' (sinal de mais) que aparece na linha superior do Gerenciador de Testes?
+## <a name="test-explorer--plus-symbol"></a>Sinal de "+" (adição) do Gerenciador de Testes
+**O que significa o "+" (sinal de adição) exibido na linha superior do Gerenciador de Testes?**
 
   O '+' (sinal de adição) indica que mais testes poderão ser detectados após um build se a detecção baseada em assembly estiver ativada. Ele será exibido quando forem detectados testes definidos dinamicamente no projeto.
 
   ![Linha de resumo do sinal de adição](media/testex-plussymbol.png)
 
-### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. A descoberta baseada em assembly não está mais funcionando para o projeto. Como ativar novamente?
+## <a name="assembly-based-discovery"></a>Descoberta baseada em assembly
+**A descoberta baseada em assembly não está mais funcionando no meu projeto. Como faço para ativá-la novamente?**
 
   Acesse **Ferramentas** > **Opções** > **Teste** e marque a caixa **Adicionalmente, descobrir testes de assemblies compilados após builds.**
 
   ![Opção baseada em assembly](media/testex-toolsoptions.png)
 
-### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. Agora os testes são exibidos no Gerenciador de Testes enquanto digito, sem a necessidade de compilar o projeto. O que mudou?
+## <a name="real-time-test-discovery"></a>Detecção de testes em tempo real
+**Agora os testes são exibidos no Gerenciador de Testes enquanto digito, sem a necessidade de compilar o projeto. O que mudou?**
 
   Esse recurso chama-se [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para descobrir testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento de detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira a Pergunta frequente nº 1.
 
-### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. Quais linguagens e estruturas de teste podem usar a Descoberta de Teste em Tempo Real?
+## <a name="real-time-test-discovery-compatibility"></a>Compatibilidade da detecção de testes em tempo real
+**Quais linguagens e estruturas de teste podem usar a detecção de testes em tempo real?**
 
   A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) só funciona em linguagens gerenciadas (C# e Visual Basic), pois é compilada com o compilador Roslyn. Por enquanto, a Descoberta de Teste em Tempo Real só funciona para as estruturas xUnit, NUnit e MSTest.
 
-### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. Como posso ativar logs para o Gerenciador de Testes?
+## <a name="test-explorer-logs"></a>Logs do Gerenciador de Testes
+**Como faço para ativar logs no Gerenciador de Testes?**
 
   Navegue para **Ferramentas** > **Opções** > **Teste** e localize a seção Log.
 
-### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. Por que meus testes em projetos UWP não são detectados enquanto eu não implanto meu aplicativo?
+## <a name="uwp-test-discovery"></a>Detecção de testes da UWP
+**Por que meus testes em projetos UWP não são detectados enquanto eu não implanto o aplicativo?**
 
   Os testes UWP têm como destino um tempo de execução diferente quando o aplicativo é implantado. Isso significa que para detectar testes com precisão em projetos UWP você precisa compilar seu projeto e também implantá-lo.
 
-### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Como funciona a classificação de resultados de teste no modo de exibição de hierarquia?
+## <a name="test-explorer-sorting"></a>Classificação do Gerenciador de Testes
+**Como funciona a classificação de resultados de teste no modo de exibição de hierarquia?**
 
   O modo de exibição de hierarquia classifica os testes em ordem alfabética e não por resultado. As outras configurações de agrupamento normalmente classificam os resultados de teste por resultado e, em seguida, em ordem alfabética. Veja o grupo diferente pelas opções na imagem a seguir para comparação. Você pode fornecer comentários sobre o design [neste assunto do GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
 
-### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. Na exibição de hierarquia, há ícones passados, com falha, ignorados e não executados ao lado dos agrupamentos Projeto, Namespace e Classe. O que esses ícones significam?
+## <a name="test-explorer-hierarchy-view"></a>Modo de exibição da hierarquia do Gerenciador de Testes
+**No modo de exibição de hierarquia, há ícones passados, com falha, ignorados e não executados ao lado dos agrupamentos Projeto, Namespace e Classe. O que esses ícones significam?**
 
   Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe refletem o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
   ![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
 
-### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.
+## <a name="search-by-file-path"></a>Pesquisar por caminho do arquivo
+**Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.**
 
 O filtro de caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida na versão prévia 3 da versão 15.7 do Visual Studio 2017. Esse recurso tinha pouco uso, e o Gerenciador de Testes pode recuperar os métodos de teste com mais rapidez com a exclusão desse recurso. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
 
-## <a name="features"></a>Recursos
+## <a name="test-adapter-nuget-reference"></a>Referência ao NuGet do adaptador de teste
+**No Visual Studio 2017, versão 15.8, meus testes são detectados, mas não são executados**.
 
-### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>Como ativar sinalizadores de recursos para experimentar os novos recursos de teste?
+Todos os projetos de teste devem incluir a referência ao NuGet do adaptador de teste do .NET no arquivo .csproj. Caso contrário, a saída desse teste será exibida no projeto se a detecção por uma extensão do adaptador de teste for iniciada após um build, ou se o usuário tentar executar os testes selecionados: 
+
+O **projeto de teste{} não faz referência a nenhum adaptador do NuGet do .NET. A execução ou a detecção de testes pode não funcionar para esse projeto. Recomendamos fazer referencia aos adaptadores de teste do NuGet em cada projeto de teste do .NET na solução.**
+
+Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Isso melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+## <a name="using-feature-flags"></a>Como usar sinalizadores de recursos
+**Como faço para ativar sinalizadores de recursos para experimentar os novos recursos de teste?**
 
 Sinalizadores de recursos são usados para enviar partes experimentais ou incompletas do produto para usuários ávidos que gostariam de fazer comentários antes que os recursos sejam fornecidos oficialmente. Eles podem desestabilizar a experiência de IDE. Use-os somente em ambientes de desenvolvimento seguros, como máquinas virtuais. Sinalizadores de recursos são sempre configurações que você usa por sua própria conta e risco. Você pode ativar funcionalidades experimentais com a [extensão de sinalizadores de recursos](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) ou por meio do Prompt de Comando do Desenvolvedor.
 
