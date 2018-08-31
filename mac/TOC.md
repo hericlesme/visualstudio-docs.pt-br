@@ -62,6 +62,7 @@
 ## [Desenvolvimento de jogos Unity](unity-tools.md)
 ### [Instalação](setup-vsmac-tools-unity.md)
 ### [Usando ferramentas do Unity](using-vsmac-tools-unity.md)
+### [Usando o .NET 4.x no Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Log de Alterações](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Acessibilidade](accessibility.md)
