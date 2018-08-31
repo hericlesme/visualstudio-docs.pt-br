@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945800"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225042"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 O Microsoft Native mínimo regras enfocam os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.
@@ -81,6 +81,12 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C6704](../code-quality/c6704.md)|Erro de Expressão de Anotação inesperada|
 |[C6705](../code-quality/c6705.md)|Número esperado de argumentos para anotação não corresponde ao número de argumentos real para anotação|
 |[C6706](../code-quality/c6706.md)|Erro inesperado de anotação para anotação|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|O parâmetro que está sendo anotado deve ser um ponteiro|
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|

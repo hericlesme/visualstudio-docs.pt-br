@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945826"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225120"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de regras recomendadas nativo
 
@@ -148,6 +148,9 @@ A regras nativas recomendadas enfocam os problemas mais críticos e comuns no se
 |[C26116](../code-quality/c26116.md)|Falha ao adquirir ou manter bloqueio|
 |[C26117](../code-quality/c26117.md)|Liberando bloqueio não mantido|
 |[C26140](../code-quality/c26140.md)|Erro de anotação do SAL de simultaneidade|
+|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
+|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|A expressão não é verdadeira nesta chamada|
 |[C28021](../code-quality/c28021.md)|O parâmetro que está sendo anotado deve ser um ponteiro|
 |[C28022](../code-quality/c28022.md)|As classes de função sobre esta função não coincidem com as classes de função no typedef usado para defini-lo.|
