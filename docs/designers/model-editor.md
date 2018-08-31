@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978418"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626772"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -48,14 +48,14 @@ Esta seção descreve como adicionar um modelo 3D ao seu projeto do Visual Studi
 
    ![Caixa de diálogo Adicionar Novo Item com cena 3D selecionada](media/add-new-3d-scene.png)
 
-3. Insira o **Nome** do arquivo de modelo e, em seguida, selecione **Adicionar**.
+   > [!NOTE]
+   > Se você não vir a categoria **Elementos Gráficos** na caixa de diálogo **Adicionar Novo Item**, talvez seja necessário instalar o componente **Editores de imagens e modelos 3D**. Feche a caixa de diálogo e, em seguida, selecione **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus para abrir o **Instalador do Visual Studio**. Selecione a guia **Componentes individuais** e, em seguida, selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**. Selecione **Modificar**.
+   >
+   > ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
+   >
+   > Se você tiver o componente **Editores de imagens e modelos 3D** instalado e a categoria de modelo **Elementos Gráficos** ainda não for exibida, observe que essa categoria será exibida apenas para determinados tipos de projeto, por exemplo, aplicativos de console.
 
-> [!NOTE]
-> Se você não vir a categoria **Elementos Gráficos** na caixa de diálogo **Adicionar Novo Item**, talvez seja necessário instalar o componente **Editores de imagens e modelos 3D**. Feche a caixa de diálogo e, em seguida, selecione **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus para abrir o **Instalador do Visual Studio**. Selecione a guia **Componentes individuais** e, em seguida, selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**. Selecione **Modificar**.
->
-> ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
->
-> Se você tiver o componente **Editores de imagens e modelos 3D** instalado e a categoria de modelo **Elementos Gráficos** ainda não for exibida, observe que essa categoria será exibida apenas para determinados tipos de projeto, por exemplo, aplicativos de console.
+3. Insira o **Nome** do arquivo de modelo e, em seguida, selecione **Adicionar**.
 
 ### <a name="axis-orientation"></a>Orientação do eixo
 

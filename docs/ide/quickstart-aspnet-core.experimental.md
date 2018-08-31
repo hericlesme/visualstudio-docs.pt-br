@@ -1,6 +1,6 @@
 ---
 title: Usar o Visual Studio para criar um aplicativo Web ASP.NET Core em C#
-description: Saiba como criar um aplicativo Web do ASP.NET Core no Visual Studio com C#, passo a passo.
+description: Saiba como criar um aplicativo Web simples do Olá, Mundo no Visual Studio com C# e ASP.NET Core, passo a passo.
 ms.custom: mvc
 ms.date: 07/30/2018
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4462edff04933dfcb3d334a841982ff0406270ba
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469133"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627195"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468771"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626958"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -84,7 +84,7 @@ O Visual Studio ajuda você a gerenciar a complexidade de um projeto à medida q
 
 Modelos de projeto e de item automatizam o processo de configuração de diferentes tipos de projetos e arquivos, economizando tempo e eliminando a necessidade de gerenciar detalhes complexos e propensos a erros. O Visual Studio fornece modelos para projetos da Web, do Azure, de ciência de dados, de console e de outros tipos, juntamente com modelos de arquivos, como classes do Python, testes de unidade, configuração da Web do Azure, HTML e até mesmo aplicativos Django.
 
-[![Modelos de projeto e de item do Python no Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Modelos de projeto e de item do Python no Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Para saber mais:
 
@@ -114,7 +114,7 @@ Para saber mais:
 
 A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Visual Studio permite a criação de perfil com interpretadores baseados em CPython e inclui a capacidade de comparar o desempenho entre diferentes execuções de criação de perfil.
 
-[![Resultados do criador de perfil do Visual Studio para um projeto Python](media/profiling-results.png)](media/profiling-results.png)
+[![Resultados do criador de perfil do Visual Studio para um projeto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Para saber mais:
 
@@ -159,7 +159,7 @@ R. Não no momento, mas você pode votar na solicitação no [UserVoice](https:/
 
 **P. O que pode ser usado para criar a interface do usuário com o Python?**
 
-R. A oferta principal nessa área é o [Projeto Qt](https://www.qt.io/qt-for-application-development/), com associações de Python conhecidas como [PySide (a associação oficial)](http://wiki.qt.io/PySide) (consulte também [Downloads do PySide](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). No momento, o suporte para Python no Visual Studio não inclui quaisquer ferramentas específicas para desenvolvimento da interface do usuário.
+R. A oferta principal nessa área é o [Projeto Qt](https://www.qt.io/qt-for-application-development/), com associações de Python conhecidas como [PySide (a associação oficial)](http://wiki.qt.io/PySide) (consulte também [Downloads do PySide](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). No momento, o suporte do Python no Visual Studio não inclui quaisquer ferramentas específicas para desenvolvimento da interface do usuário.
 
 **P. Um projeto do Python pode produzir um executável autônomo?**
 

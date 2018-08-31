@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844385"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627309"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e o Visual Studio
 
@@ -34,7 +34,6 @@ Você pode fazer quase tudo no IDE do Visual Studio como um usuário normal. Voc
 |----------|----------|--------------------------|
 |Instalação|Instale o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md)|
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo da Ajuda local](../ide/install-and-manage-local-content.md)|
-|Tipos de aplicativo|Desenvolver soluções do SharePoint.|[Requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |Caixa de Ferramentas|Adicionar controles COM clássicos à **Caixa de ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|
 |Compilação|Usar eventos de pós-build que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Incluir uma etapa de registro ao criar projetos C++.||

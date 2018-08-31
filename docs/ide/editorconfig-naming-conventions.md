@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926477"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626727"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -46,6 +46,7 @@ Para descrever o tipo de símbolos aos quais aplicar a regra de nomenclatura, es
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os símbolos)
+- namespace
 - classe
 - struct
 - interface
@@ -56,6 +57,9 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - evento
 - delegado
 - parâmetro
+- type_parameter
+- local
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Níveis de acessibilidade de símbolos
 
@@ -71,6 +75,7 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - particulares
 - protegidos
 - protected\_internal or protected_friend
+- local
 
 > [!NOTE]
 > Não especifique um nível de acessibilidade como parte de sua convenção de nomenclatura se a acessibilidade não for aplicável ao tipo de símbolo para o qual você está direcionando. Por exemplo, parâmetros não tem níveis de acessibilidade. Se você especificar um nível de acessibilidade para uma convenção de nomenclatura de parâmetro, a regra de nomenclatura não funcionará corretamente.

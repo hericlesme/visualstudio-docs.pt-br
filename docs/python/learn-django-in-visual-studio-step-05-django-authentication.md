@@ -1,7 +1,7 @@
 ---
 title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 5
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388365"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626610"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
