@@ -49,6 +49,7 @@
 ##### [Perguntas frequentes sobre a migração de administração do VLSC](vlsc-admin-faq.md)
 ##### Integrar sua organização
 ###### [Integração após migração](post-migration-onboarding.md)
+###### [Migração de Open e Open License](open-migration.md)
 ###### [Comunicações por email sobre a integração](volume-license-onboarding-email.md)
 ###### [Localize seu PCN](find-pcn.md)
 ###### [Localizar seu contato principal](find-primary-contact.md)
