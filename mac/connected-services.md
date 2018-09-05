@@ -2,15 +2,15 @@
 title: Serviços Conectados
 description: Adicione o armazenamento de dados, a autenticação e as notificações por push do Azure a aplicativos móveis usando o Visual Studio para Mac
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: d907684982f29947243b3b33aec1e18dbf95a101
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957730"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224342"
 ---
 # <a name="connected-services-walkthrough"></a>Passo a passo do Connected Services
 

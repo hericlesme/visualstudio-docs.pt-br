@@ -1,16 +1,16 @@
 ---
 title: Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 description: Descubra como gerenciar as configurações de privacidade no Visual Studio para Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: b09dfc87d5fc672002b922efec7b1213dcaf87cd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34469132"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223915"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 

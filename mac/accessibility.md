@@ -1,16 +1,16 @@
 ---
 title: Acessibilidade
 description: Este artigo apresenta as funcionalidades de acessibilidade do Visual Studio para Mac e como elas podem ser habilitadas.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: b1b2cb26f6e42486e8740bf9610baeeb308a9b66
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eda5e78888a3d50c628033d9f4331ab3789b20c8
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870532"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224096"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
