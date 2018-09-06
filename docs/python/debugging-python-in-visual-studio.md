@@ -1,7 +1,7 @@
 ---
 title: Depurando código em Python
 description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498961"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626649"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -80,7 +80,7 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 | **Depuração Circular** | **Shift**+**F11** | Executa o código até o final da função atual e, em seguida, executa em etapas até a instrução de chamada.  Esse comando é útil quando não é necessário depurar o restante da função atual. |
 | **Executar até o cursor** | **Ctrl**+**F10** | Executa o código até a localização do cursor no editor. Esse comando permite ignorar facilmente um segmento de código que não precisa ser depurado. |
 | **Definir Próxima Instrução** | **Ctrl**+**Shift**+**F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
-| **Mostrar Próxima Instrução** | **Alt**+**Num**+**&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
+| **Mostrar Próxima Instrução** | **Alt**+**Num** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
 
@@ -149,11 +149,11 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 
 | Opção | Descrição |
 | --- | --- |
-| **Caminhos de Pesquisa** | Esses valores correspondem ao que é mostrado no nó Caminhos de Pesquisa do projeto no **Gerenciador de Soluções**. É possível modificar esse valor aqui, mas é mais fácil usar o **Gerenciador de Soluções**, que permite procurar pastas e converter os caminhos automaticamente no formato relativo. |
+| **Caminhos de Pesquisa** | Esses valores correspondem ao que é mostrado no nó **Caminhos de Pesquisa** do projeto no **Gerenciador de Soluções**. É possível modificar esse valor aqui, mas é mais fácil usar o **Gerenciador de Soluções**, que permite procurar pastas e converter os caminhos automaticamente no formato relativo. |
 | **Argumentos de Script** | Esses argumentos são adicionados ao comando usado para iniciar o script, aparecendo após o nome de arquivo do script. O primeiro item aqui está disponível para o script como `sys.argv[1]`, o segundo como `sys.argv[2]` e assim por diante. |
 | **Argumentos do Interpretador** | Esses argumentos são adicionados à linha de comando do inicializador antes do nome do script. Os argumentos comuns aqui são `-W ...` para controlar avisos, `-O` para otimizar o programa ligeiramente e `-u` para usar o E/S não armazenado em buffer. Provavelmente, os usuários do IronPython usarão esse campo para passar opções `-X`, como `-X:Frames` ou `-X:MTA`. |
 | **Caminho do Interpretador** | Substitui o caminho associado ao ambiente atual. O valor pode ser útil para iniciar o script com um interpretador não padrão. |
-| **Variáveis de ambiente** | Nessa caixa de texto multilinha, adicione entradas com o formato \<NAME>=\<VALUE>. Como essa configuração é aplicada por último, na parte superior das variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de Caminhos de Pesquisa, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
+| **Variáveis de ambiente** | Nessa caixa de texto multilinha, adicione entradas com o formato \<NAME>=\<VALUE>. Como essa configuração é aplicada por último, com base nas variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de **Caminhos de Pesquisa**, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
 
 ## <a name="immediate-and-interactive-windows"></a>Janelas imediatas e interativas
 
@@ -192,48 +192,44 @@ A janela **Interativa de Depuração** tem seu próprio conjunto de opções, qu
 
 ![Opções da Janela Interativa de Depuração](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Usar o depurador experimental
+<a name="use-the-experimental-debugger"></a>
 
-A partir do Visual Studio 2017 Versão Prévia 4.0, você pode aceitar o uso do "depurador experimental", que se baseia no ptvsd versão 4.1 ou superior. Para aceitar, selecione o comando de menu **Ferramentas** > **Opções**, em seguida, navegue para **Python** > **Experimental** na caixa de diálogo Opções e selecione **Usar depurador experimental**.
+## <a name="use-the-legacy-debugger"></a>Usar o depurador herdado
 
-O depurador experimental é compatível apenas com ambientes limitados do Python, conforme descrito na seguinte tabela:
+O Visual Studio 2017 versões 15.8 e posteriores usam um depurador com base no ptvsd versão 4.1 ou superior. Esta versão do ptvsd é compatível com o Python 2.7 e o Python 3.5 ou superior. Se você estiver usando o Python 2.6, 3.1 a 3.4 ou o IronPython, o Visual Studio mostrará o erro **O depurador não dá suporte a este ambiente do Python**:
 
-| Versão do Python | Compatível com o depurador experimental |
-| --- | --- |
-| 2.6 | Não |
-| 2.7 | Sim |
-| 3.1 a 3.4 | Não |
-| 3.5 e versões posteriores | Sim |
-| IronPython | Não |
+![Erro: o depurador não dá suporte a esse ambiente do Python, quando o depurador é usado](media/debugging-experimental-incompatible-error.png)
 
-Se você tentar usar o depurador experimental com um ambiente incompatível, o Visual Studio mostrará o erro **O depurador é incompatível com este ambiente**:
+Nesses casos, você precisa usar o depurador mais antigo (o que é o padrão no Visual Studio 2017 versões 15.7 e anteriores). Selecione o comando de menu **Ferramentas** > **Opções**, navegue até **Python** > **Depuração** e selecione a opção **Usar depurador herdado**.
 
-![Erro "O depurador é incompatível com este ambiente" ao usar o depurador experimental](media/debugging-experimental-incompatible-error.png)
+Se você tiver instalado uma versão mais antiga do ptvsd no ambiente atual (como uma versão 4.0.x anterior ou uma versão 3.x necessária para a depuração remota), o Visual Studio poderá mostrar um erro ou aviso.
 
-Selecione o comando **Desabilitar o depurador experimental**, que limpa a opção **Usar depurador experimental**.
+O erro **Não foi possível carregar o pacote do depurador** será exibido se você tiver instalado o ptvsd 3.x:
 
-> [!Note]
-> O aviso não é atualmente mostrado no Python 3.3 e 3.4.
+![Erro: o pacote do depurador não pôde ser carregado, quando o depurador é usado](media/debugging-experimental-version-error.png)
 
-Se você instalou uma versão mais antiga do ptvsd no ambiente atual (como uma versão 4.0.x anterior de uma versão 3.x obrigatória para depuração remota), o Visual Studio mostra o erro **O pacote do depurador não pôde ser carregado** ou o aviso **O pacote do depurador está desatualizado**:
+Nesse caso, selecione **Usar o depurador herdado** para definir a opção **Usar depurador herdado** e reinicie o depurador.
 
-![Erro "O pacote do depurador não pôde ser carregado" ao usar o depurador experimental](media/debugging-experimental-version-error.png)
+O aviso **O pacote do depurador está desatualizado** será exibido se você tiver instalado uma versão 4.x anterior do ptvsd:
 
-![Aviso "O pacote do depurador está desatualizado" ao usar o depurador experimental](media/debugging-experimental-version-warning.png)
-
-Para gerenciar a instalação do ptvsd, use a guia **Pacotes** na janela **Ambientes do Python** ou os seguintes comandos na linha de comando:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Aviso: o pacote do depurador está desatualizado, quando o depurador é usado](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Embora você possa optar por ignorar o aviso em algumas versões do ptvsd, o Visual Studio poderá não funcionar corretamente.
+
+Para gerenciar a instalação do ptvsd:
+
+1. Navegue até a guia **Pacotes** na janela **Ambientes do Python**.
+
+1. Insira "ptvsd" na caixa de pesquisa e examine a versão do ptvsd instalada:
+
+    ![Verificando a versão do ptvsd na janela Ambientes do Python](media/debugging-experimental-check-ptvsd.png)
+
+1. Se a versão for inferior à 4.1.1a9 (a versão empacotada com o Visual Studio), selecione o **X** à direita do pacote para desinstalar a versão mais antiga. Assim, o Visual Studio passará a usar a versão empacotada. (Você também pode desinstalar com o PowerShell usando `pip uninstall ptvsd`.)
+
+1. Como alternativa, você pode atualizar o pacote ptvsd para sua versão mais recente. Insira `ptvsd --upgrade -pre` na caixa de pesquisa, em seguida, selecione **Executar o comando: pip install ptvsd --upgrade -pre**. (Você também pode usar o mesmo comando no PowerShell).
+
+    ![Fornecendo o comando upgrade na janela Ambientes do Python](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Consulte também
 

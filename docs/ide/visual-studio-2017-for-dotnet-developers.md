@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468267"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626581"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
@@ -46,12 +46,12 @@ Estes são os atalhos populares do Visual Studio:
 | **Ctrl**+**.** (também **Alt**+**Enter** no Perfil C#) | Ações e Refatorações Rápidas | Veja quais correções de código, ações de geração de código, refatorações ou outras ações rápidas estão disponíveis na posição do cursor ou na seleção do código |
 | **Ctrl**+**D** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6** e posterior) |
 | **Shift**+**Alt**+**+**/**-** | Expandir/Reduzir seleção | Expande ou reduz a seleção atual no editor (disponível no **Visual Studio 2017 versão 15.5** e posteriores) |
-| **Shift** + **Alt** + **Ins** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
+| **Ctrl** + **Alt** + **.** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
 | **Ctrl**+**Q** | Início Rápido | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar a depuração | Inicie a depuração do aplicativo |
 | **Ctrl**+**F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |
-| **Ctrl**+**K**,**D** (Perfil Padrão) ou **Ctrl**+**E**,**D** (Perfil C#) | Formatar Documento | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
-| **Ctrl**+**\\**,**E** (Perfil Padrão) ou **Ctrl**+**W**,**E** (Perfil C#) | Exibir Lista de Erros | Veja todos os erros no documento, no projeto ou na solução |
+| **Ctrl**+**K**,**D** (Perfil Padrão) ou **Ctrl**+**E**,**D** (Perfil C#) | [Formatar Documento](code-styles-and-quick-actions.md#format-document-command) | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
+| **Ctrl**+**\\**,**Ctrl**+**E** (Perfil Padrão) ou **Ctrl**+**W**,**E** (Perfil do C#) | Exibir Lista de Erros | Veja todos os erros no documento, no projeto ou na solução |
 | **Alt** + **PgUp/PgDn** | Ir para o problema seguinte/anterior | Vá para o erro, aviso ou sugestão seguinte/anterior no documento (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
 
 > [!NOTE]

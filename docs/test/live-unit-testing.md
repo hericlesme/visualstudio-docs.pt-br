@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586437"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626925"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing com o Visual Studio 2017
 
@@ -59,29 +59,42 @@ Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuG
 
 ## <a name="configure-live-unit-testing"></a>Configurar o Live Unit Testing
 
-Configure o Live Unit Testing selecionando **Ferramentas** > **Opções** no menu de nível superior do Visual Studio e, em seguida, selecionando **Live Unit Testing** no painel esquerdo da caixa de diálogo **Opções**. A figura a seguir mostra as opções de configuração do Live Unit Testing disponíveis na caixa de diálogo.
+Configure o Live Unit Testing selecionando **Ferramentas** > **Opções** na barra de menus de nível superior do Visual Studio e, em seguida, selecionando **Live Unit Testing** no painel esquerdo da caixa de diálogo **Opções**.
+
+> [!TIP]
+> Depois que o Live Unit Testing for habilitado (veja a próxima seção, [Iniciar, pausar e parar o Live Unit Testing](#start-pause-and-stop-live-unit-testing)), abra também a caixa de diálogo **Opções** selecionando **Teste** > **Live Unit Testing** > **Opções**.
+
+A figura a seguir mostra as opções de configuração de Live Unit Testing disponíveis na caixa de diálogo:
 
   ![Image](./media/lut-options.png)
 
 As opções configuráveis incluem:
 
-- Se o Live Unit Testing é pausado quando uma solução é desenvolvida e depurada
+- Se o Live Unit Testing é pausado quando uma solução é criada e depurada.
 
 - Se o Live Unit Testing é pausado quando a energia da bateria do sistema fica abaixo de um limite especificado.
+
 - Se o Live Unit Testing é executado automaticamente quando uma solução é aberta.
+
+- Se você deseja habilitar o símbolo de depuração e a geração de comentário da documentação XML.
+
 - O diretório no qual deseja armazenar os dados persistentes.
-   O botão **Excluir Dados Persistentes** permite excluir todos os dados persistentes. Isso é útil quando o Live Unit Testing se comporta de forma imprevisível ou inesperada, o que sugere que os dados persistentes foram corrompidos.
+
+- A capacidade de excluir todos os dados persistentes. Isso é útil quando o Live Unit Testing se comporta de forma imprevisível ou inesperada, o que sugere que os dados persistentes foram corrompidos.
+   
 - O intervalo após o qual um caso de teste atinge o tempo limite; o padrão é 30 segundos.
+
 - O número máximo de processos de teste criados pelo Live Unit Testing.
+
 - A quantidade máxima de memória que os processos do Live Unit Testing podem consumir.
+
 - O nível de informações gravadas na janela **Saída** do Live Unit Testing.
+
    As opções incluem sem log (**None**), somente mensagens de erro (**Error**), mensagens de erro e mensagens informativas (**Info**, o padrão) ou todos os detalhes (**Verbose**).
 
-Também é possível exibir a saída detalhada na janela **Saída** do Live Unit Testing atribuindo um valor igual a “1” a uma variável de ambiente em nível de usuário chamada `VS_UTE_DIAGNOSTICS` e reiniciando o Visual Studio.
+   Também é possível exibir a saída detalhada na janela **Saída** do Live Unit Testing atribuindo um valor igual a “1” a uma variável de ambiente no nível do usuário chamada `VS_UTE_DIAGNOSTICS` e reiniciando o Visual Studio.
 
-Para capturar mensagens de log detalhadas do MSBuild do Live Unit Testing em um arquivo, defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildLog` com o nome do arquivo que conterá o log.
-
-Depois que o Live Unit Testing for habilitado (veja a próxima seção, [Iniciar, pausar e parar o Live Unit Testing](#start-pause-and-stop-live-unit-testing)), abra também a caixa de diálogo **Opções** selecionando **Teste** > **Live Unit Testing** > **Opções**.
+   Para capturar mensagens de log detalhadas do MSBuild do Live Unit Testing em um arquivo, defina a variável de ambiente no nível do usuário `LiveUnitTesting_BuildLog` com o nome do arquivo que conterá o log.
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>Iniciar, pausar e parar o Live Unit Testing
 

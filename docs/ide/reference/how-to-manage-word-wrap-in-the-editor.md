@@ -14,23 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447982"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626774"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra de texto no Editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra automática de linha no editor
 
 É possível definir e desmarcar a opção **Quebra automática de linha**. Quando essa opção for definida, a parte de uma linha longa que se estender além da largura atual da janela Editor de Código será exibida na próxima linha. Quando essa opção estiver desmarcada, por exemplo, para facilitar o uso de numeração de linha, será possível rolar para a direita para ver os finais das linhas longas.
 
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Procedimento
-
-### <a name="to-set-word-wrap-preferences"></a>Para definir preferências de quebra automática de linha
+## <a name="to-set-word-wrap-preferences"></a>Para definir preferências de quebra automática de linha
 
 1.  No menu **Ferramentas**, selecione **Opções**.
 
@@ -47,7 +42,15 @@ ms.locfileid: "34447982"
 4.  Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.
 
     > [!NOTE]
-    >  Essas setas de lembrete não são adicionadas ao seu código: elas são apenas para exibição.
+    > Essas setas de lembrete não são adicionadas ao código, elas são apenas para exibição.
+
+## <a name="known-issues"></a>Problemas conhecidos
+
+Se você estiver familiarizado com a quebra automática de linha no Notepad++, Sublime Text, ou Visual Studio Code, fique ciente dos seguintes problemas em que o Visual Studio tem um comportamento diferente dos outros editores:
+
+* [O clique triplo não seleciona a linha inteira](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [O comando Recortar não exclui a linha inteira](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
+* [A tecla End pressionada duas vezes não move o cursor para o fim da linha](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Consulte também
 

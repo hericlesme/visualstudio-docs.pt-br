@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283452"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626847"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -51,7 +51,7 @@ Você pode encontrar uma série de recursos avançados no menu **Editar** > **Av
 
 |||
 |-|-|
-|Formatar Documento|Define o recuo adequado das linhas de código e move as chaves para separar linhas no documento.|
+|[Formatar Documento](code-styles-and-quick-actions.md#format-document-command)|Define o recuo adequado das linhas de código e move as chaves para separar linhas no documento.|
 |Formatar Seleção|Define o recuo adequado das linhas de código e move as chaves para separar linhas na seleção.|
 |Tabular linhas selecionadas|Troca espaços à esquerda por tabulações quando for apropriado.|
 |Cancelar tabulação das linhas selecionadas|Troca tabulações à esquerda por espaços. Se você desejar converter todos os espaços em seu arquivo para tabulações (ou todas as tabulações para espaços), você poderá usar os comandos `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Esses comandos não são exibidos nos menus do Visual Studio, mas você pode chamá-los por meio da janela **Acesso Rápido** ou da janela Comando.|

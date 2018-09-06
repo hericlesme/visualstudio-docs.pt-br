@@ -1,7 +1,6 @@
 ---
 title: ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos Xamarin | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231850"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634935"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos Xamarin
+# <a name="devops-with-xamarin-apps"></a>DevOps com aplicativos Xamarin
 
 O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados para Android, iOS e Windows usando C#, .NET e Visual Studio. O Xamarin permite que uma grande parte do código seja compartilhada entre plataformas, com apenas um pequeno percentual precisando ser específico da plataforma. Para obter mais informações sobre o Xamarin em si, consulte [Visual Studio e Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
-Desenvolver aplicativos para plataformas modernas envolve muito mais atividades do que apenas escrever código. Essas atividades, conhecidas como DevOps (desenvolvimento + operações), abrangem o ciclo de vida completo do aplicativo e incluem trabalhos de planejando e acompanhando, elaboração e implementação de código, gerenciamento de um repositório de código-fonte, execução de builds, gerenciamento de integrações contínuas e implantações, teste (incluindo testes de unidade e testes de interface do usuário), execução de várias formas de diagnóstico em ambientes de desenvolvimento e produção e monitoramento do desempenho do aplicativo e dos comportamentos do usuário em tempo real por meio de telemetria e análise.
+Desenvolver aplicativos para plataformas modernas envolve muito mais atividades do que apenas escrever código. Essas atividades, conhecidas como DevOps (desenvolvimento + operações), abrangem o ciclo de vida completo do aplicativo e incluem trabalhos de planejamento e acompanhando, elaboração e implementação de código, gerenciamento de um repositório de código-fonte, execução de builds, gerenciamento de integrações e implantações contínuas, testes (incluindo testes de unidade e testes de IU), execução de várias formas de diagnóstico em ambientes de desenvolvimento e produção e monitoramento de desempenho do aplicativo e dos comportamentos do usuário em tempo real por meio de telemetria e análise.
 
-O Visual Studio, junto com o Visual Studio Team Services e o Team Foundation Server, proporciona uma variedade de recursos de DevOps, também conhecidos como ALM ou Gerenciamento do Ciclo de Vida do Aplicativo. Muitos deles são totalmente aplicáveis a projetos de plataforma cruzada.
+O Visual Studio, junto com o Visual Studio Team Services e o Team Foundation Server, oferece uma variedade de funcionalidades de DevOps. Muitos deles são totalmente aplicáveis a projetos de plataforma cruzada. Isso vale principalmente para os aplicativos Xamarin, porque eles são criados com C# e .NET, que são usados para a criação de algumas ferramentas de DevOps. Outras ferramentas exigem uma integração forte com os ambientes de build e de tempo de execução. Uma vez que os aplicativos Xamarin são executados em plataformas não Windows e usam a implementação Mono do .NET, o Xamarin fornece ferramentas especializadas para determinadas necessidades.
 
-Isso é especialmente verdadeiro com aplicativos Xamarin, pois eles são criados com C# e .NET, em torno dos quais algumas ferramentas ALM são criadas. Outras ferramentas exigem integração com ambientes de build e tempo de execução. Uma vez que os aplicativos Xamarin são executados em plataformas não Windows e usam a implementação Mono do .NET, o Xamarin fornece ferramentas especializadas para determinadas necessidades.
-
-As tabelas a seguir identificam os recursos do Visual Studio ALM que você pode esperar que funcionem bem com um projeto do Xamarin e quais delas têm limitações. Consulte a documentação vinculada para obter detalhes sobre os recursos em si.
+As tabelas a seguir identificam quais recursos de DevOps no Visual Studio devem funcionar bem com um projeto do Xamarin e quais têm limitações. Consulte a documentação vinculada para obter detalhes sobre os recursos em si.
 
 ## <a name="agile-tools"></a>Ferramentas agile
 

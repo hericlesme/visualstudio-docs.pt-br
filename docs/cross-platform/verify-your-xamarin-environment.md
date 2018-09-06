@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233081"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626959"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificar o ambiente do Xamarin
 
@@ -54,7 +54,7 @@ Essas ações criam uma solução com quatro projetos: um projeto de biblioteca 
 
   ![Selecionar o Emulador do Visual Studio para Android como um destino de depuração](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verificação 3")
 
-  Para obter mais informações, confira [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Apresentando o Emulador do Visual Studio para Android) (blog do ALM do Visual Studio). Se você encontrar problemas ao obter o emulador, confira [Solução de problemas de Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Você também pode criar novos perfis de dispositivo para o emulador selecionando **Ferramentas > Android > Gerenciador do Android Emulator**.
+  Para obter informações mais detalhadas, confira [Apresentando o Emulador do Visual Studio para Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) no blog Microsoft DevOps. Se você encontrar problemas ao obter o emulador, confira [Solução de problemas de Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Você também pode criar novos perfis de dispositivo para o emulador selecionando **Ferramentas > Android > Gerenciador do Android Emulator**.
 
 3. Pressione **F5** para compilar e implantar o programa no emulador ou dispositivo Android.
 
