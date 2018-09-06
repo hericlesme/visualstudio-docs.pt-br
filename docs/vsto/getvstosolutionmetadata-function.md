@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d21b0d2b90441f0b9be543933e7243dd41440b02
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e6289a0d19bc6621d98edfc974ad265791876a70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670725"
 ---
 # <a name="getvstosolutionmetadata-function"></a>Função GetVstoSolutionMetadata
-  Essa API dá suporte à infraestrutura do Office e não se destina a ser usado diretamente no seu código.  
+  Essa API dá suporte à infraestrutura do Office e não se destina a ser usado diretamente do seu código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```c  
+```csharp
 HRESULT WINAPI GetVstoSolutionMetadata(  
     LPCWSTR lpwszSolutionMetadataKey,  
     ISolutionMetadata** ppSolutionInfo  
@@ -39,6 +40,6 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 |*ppSolutionInfo*|Não use.|  
   
 ## <a name="return-value"></a>Valor retornado  
- Se a função tiver êxito, ele retorna **S_OK**. Se a função falhar, ele retorna um código de erro.  
+ Se a função obtiver êxito, retorna **S_OK**. Se a função falhar, ele retornará um código de erro.  
   
   

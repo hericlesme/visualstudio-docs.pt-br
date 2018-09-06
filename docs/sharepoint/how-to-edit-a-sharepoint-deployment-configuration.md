@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118376"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774788"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: editar uma configuração de implantação do SharePoint
   Você pode criar uma configuração de implantação ou modificar uma configuração de implantação existente. Por exemplo, você pode executar uma única etapa ou alterar a ordem das etapas no processo de implantação. Você talvez queira criar ou modificar as configurações de implantação porque não não possível alterar as configurações internas e adicionadas programaticamente.  
@@ -33,7 +33,7 @@ ms.locfileid: "37118376"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Para criar uma configuração de implantação do SharePoint  
   
-1.  Na **Gerenciador de soluções**, escolha um projeto do SharePoint e, em seguida, na barra de menus, escolha **Project**, * ProjectName ***propriedades**.  
+1.  Na **Gerenciador de soluções**, escolha um projeto do SharePoint e, em seguida, na barra de menus, escolha **Project**, _ProjectName_**propriedades**.  
   
 2.  Sobre o **SharePoint** guia, escolha o **New** botão.  
   

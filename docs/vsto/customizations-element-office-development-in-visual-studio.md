@@ -17,16 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669786"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personalizações&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `customizations` elemento o `vstov4` namespace contém todas as informações sobre como instalar e carregar cada solução do Office.  
   
-## <a name="syntax-for-document-level-customizations"></a>Sintaxe de personalizações no nível do documento  
+## <a name="syntax-for-document-level-customizations"></a>Sintaxe para personalizações no nível do documento  
   
 ```xml
 <customizations>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/17/2018
 </customizations>  
 ```  
   
-## <a name="syntax-for-vsto-add-ins"></a>Sintaxe de suplementos do VSTO  
+## <a name="syntax-for-vsto-add-ins"></a>Sintaxe para suplementos VSTO  
   
 ```xml
 <customizations>  
@@ -64,15 +65,15 @@ ms.lasthandoff: 05/17/2018
  O `customizations` elemento tem o seguinte elemento filho.  
   
 ### <a name="customization"></a>Personalização  
- Necessário. O `customization` elemento o `vstov4` namespace está definido em [ &#60;personalização&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Necessário. O `customization` elemento na `vstov4` namespace está definido no [ &#60;personalização&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
-## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento  
+## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível de documento  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra o `customizations` elemento para uma personalização no nível do documento.  
+ O exemplo de código a seguir ilustra o `customizations` elemento para uma personalização no nível de documento.  
   
 > [!NOTE]  
->  Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+>  Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
@@ -86,10 +87,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customizations>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>Exemplo de um suplemento do VSTO  
+## <a name="example-of-a-vsto-add-in"></a>Exemplo de um suplemento do VSTO  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra o `customizations` elemento para um suplemento do VSTO. Isso é um Add-in do Outlook VSTO que inclui as regiões de formulário. Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+ O exemplo de código a seguir ilustra o `customizations` elemento para um suplemento do VSTO. Isso é um Add-in do VSTO do Outlook que inclui as regiões do formulário. Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   

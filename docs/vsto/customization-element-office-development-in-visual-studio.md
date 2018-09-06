@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f1344b69aaf098f766aeafddfd23cea84d1a981
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669957"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio)
-  O `customization` elemento o `vstov4` namespace descreve uma solução específica. Os elementos filho são diferentes para personalizações no nível do documento e suplementos do VSTO.  
+  O `customization` elemento o `vstov4` namespace descreve uma solução específica do Office. Os elementos filho são diferentes para personalizações no nível de documento e suplementos do VSTO.  
   
-## <a name="syntax-for-document-level-customizations"></a>Sintaxe de personalizações no nível do documento  
+## <a name="syntax-for-document-level-customizations"></a>Sintaxe para personalizações no nível do documento  
   
 ```xml
 <customization  
@@ -35,7 +36,7 @@ ms.lasthandoff: 05/17/2018
 </customization>  
 ```  
   
-## <a name="syntax-for-vsto-add-ins"></a>Sintaxe de suplementos do VSTO  
+## <a name="syntax-for-vsto-add-ins"></a>Sintaxe para suplementos VSTO  
   
 ```xml
 <customization  
@@ -65,18 +66,18 @@ ms.lasthandoff: 05/17/2018
  O `customization` elemento tem o seguinte elemento filho.  
   
 #### <a name="document"></a>documento  
- O `document` elemento o `vstov4` namespace está definido em [ &#60;documento&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  
+ O `document` elemento na `vstov4` namespace está definido no [ &#60;documentos&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  
   
 ### <a name="vsto-add-ins"></a>Suplementos do VSTO  
  O `customization` elemento tem o seguinte elemento filho.  
   
 #### <a name="appaddin"></a>appAddin  
- O `appAddin` elemento o `vstov4` namespace está definido em [ &#60;appAddin&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
+ O `appAddin` elemento na `vstov4` namespace está definido no [ &#60;appAddin&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
   
-## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento  
+## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível de documento  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra o `customization` elemento para uma personalização no nível do documento. Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+ O exemplo de código a seguir ilustra o `customization` elemento para uma personalização no nível de documento. Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
@@ -87,10 +88,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customization>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>Exemplo de um suplemento do VSTO  
+## <a name="example-of-a-vsto-add-in"></a>Exemplo de um suplemento do VSTO  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra o `customization` elemento para um suplemento do VSTO. Isso é um Add-in do Outlook VSTO que inclui as regiões de formulário. Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+ O exemplo de código a seguir ilustra o `customization` elemento para um suplemento do VSTO. Isso é um Add-in do VSTO do Outlook que inclui as regiões do formulário. Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   

@@ -15,26 +15,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 283fd069e0de72af92f7999871190c6c8a0d345b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db805aa1e00d672b4a0579e546a6827e9135b909
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669801"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
-  Chamado logo antes de um gerenciado VSTO suplemento é descarregado.  
+  Chamado pouco antes um gerenciado suplemento VSTO é descarregado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```c++
+```csharp
 HRESULT Unload();  
 ```  
   
 ## <a name="return-value"></a>Valor retornado  
- Um valor HRESULT que indica se o método foi concluída com êxito.  
+ Um valor HRESULT que indica se o método concluída com êxito.  
   
 ## <a name="remarks"></a>Comentários  
- Este método não é chamado pelas versões atuais do Microsoft Office. Este método está reservado para uso futuro.  
+ Esse método não é chamado por versões atuais do Microsoft Office. Este método está reservado para uso futuro.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IManagedAddin](../vsto/imanagedaddin-interface.md)   

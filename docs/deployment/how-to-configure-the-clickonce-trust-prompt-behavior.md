@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155091"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774801"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como: configurar o comportamento do prompt confiável do ClickOnce
 Você pode configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalação de aplicativos do ClickOnce, como aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation, aplicativos de console, navegador do WPF os aplicativos e soluções do Office. Configurar o prompt de confiança, definindo as chaves do registro no computador de cada usuário final.  
@@ -59,11 +59,11 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
     1.  Clique em **inicie**e, em seguida, clique em **executar**.  
   
-    2.  No **aberto** , digite `regedit32`e, em seguida, clique em **Okey**.  
+    2.  No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.  
   
 2.  Localize a seguinte chave do registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Se a chave não existir, crie-o.  
   
@@ -122,7 +122,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 2.  Localize a seguinte chave do registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Se a chave não existir, crie-o.  
   

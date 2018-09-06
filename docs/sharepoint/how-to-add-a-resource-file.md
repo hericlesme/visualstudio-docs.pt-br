@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756565"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774640"
 ---
 # <a name="how-to-add-a-resource-file"></a>Como: adicionar um arquivo de recurso
   Os comandos para adicionar arquivos de recurso é no menu de atalho do nó da solução e nós de recurso no Gerenciador de soluções. Para obter mais informações, consulte [soluções do SharePoint Localizando](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -41,7 +41,7 @@ ms.locfileid: "36756565"
   
 4.  No **adicionar recurso** caixa de diálogo, escolha uma cultura para o arquivo de recurso, como o inglês (Estados Unidos).  
   
-     Esta etapa adiciona um arquivo de recurso global à sua solução no formato, recurso * x ***.*** cultura ***.** resx, tais como, *Resource1.en resx*.  
+     Esta etapa adiciona um arquivo de recurso global à sua solução no formato, Resource_x_**.** _cultura_**.** resx, tais como, *Resource1.en resx*.  
   
 5.  Quando o **Editor de recursos** é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos ao arquivo de recurso.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36756565"
   
 2.  Na **Gerenciador de soluções**, abra o menu de atalho para o nome de um recurso sob a **recursos** nó e, em seguida, escolha **adicionar recurso**.  
   
-     Esta etapa adiciona um arquivo de recurso para o recurso no formato * ResourceFileName ***.*** cultura ***.** resx, tais como, *Feature1.en resx*.  
+     Esta etapa adiciona um arquivo de recurso para o recurso no formato _ResourceFileName_**.** _cultura_**resx**, por exemplo, *Feature1.en resx*.  
   
 3.  Quando o **Editor de recursos** é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos ao arquivo de recurso.  
   

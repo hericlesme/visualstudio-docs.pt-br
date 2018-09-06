@@ -17,40 +17,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670759"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitetura de soluções do Office no Visual Studio
   Os tópicos nesta seção fornecem informações sobre o funcionam das soluções criadas usando as ferramentas de desenvolvedor do Office no Visual Studio.  
   
 > [!NOTE]  
->  Interessado em desenvolvimento de soluções que estendem a experiência do Office em [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com suplementos do VSTO e soluções, e você pode criá-los usando quase qualquer tecnologia, como JavaScript, HTML5, CSS3 e XML de programação da web.  
+>  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)  
- Descreve o trabalho de personalizações no nível do documento como, e como elas são consideradas diferente, o desenvolvedor e o usuário final.  
+ Descreve como nível de documento personalizações de trabalho, e como elas são consideradas diferentemente, o desenvolvedor e o usuário final.  
   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)  
  Descreve os componentes de suplementos do VSTO e como eles são carregados por aplicativos.  
   
- [Visual Studio Tools para Office Runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio Tools for Office Runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Descreve as diferentes versões do tempo de execução que é usado para soluções do Office.  
   
- [Entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
- Descreve as chaves do registro que são necessárias em computadores de usuário final para descobrir e carregar suplementos do VSTO.  
+ [Entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
+ Descreve as chaves do registro que são necessários nos computadores de usuário final para descobrir e carregar suplementos do VSTO.  
   
- [Visão geral de propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md)  
+ [Visão geral das propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md)  
  Explica como as propriedades de documento personalizadas funcionam em personalizações no nível do documento.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Fornece uma introdução ao uso do Microsoft Office como uma plataforma para desenvolver soluções de negócios.  
   
- [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Fornece links para informações sobre como configurar um computador de desenvolvimento para criar Office soluções, como começar a criar soluções e o que mudou desde as versões anteriores das ferramentas de desenvolvedor do Office no Visual Studio.  
+ [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ Fornece links para informações sobre como configurar um computador de desenvolvimento para criar o Office soluções, como começar a criar soluções e o que mudou desde as versões anteriores das ferramentas de desenvolvedor do Office no Visual Studio.  
   
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
  Fornece links para informações sobre como criar soluções do Office.  

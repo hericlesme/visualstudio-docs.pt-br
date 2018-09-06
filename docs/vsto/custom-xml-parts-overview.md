@@ -1,5 +1,5 @@
 ---
-title: Visão geral das partes XML personalizada
+title: Visão geral de partes XML personalizado
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -26,47 +26,48 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e99e64de135ab46baf40a959986c041538c09593
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669783"
 ---
-# <a name="custom-xml-parts-overview"></a>Visão geral das partes XML personalizada
-  Você pode inserir dados XML em documentos para alguns aplicativos do Microsoft Office. Quando você inserir dados XML em um documento, os dados são denominados uma *parte XML personalizada*.  
+# <a name="custom-xml-parts-overview"></a>Visão geral de partes XML personalizado
+  Você pode inserir dados XML em documentos para alguns aplicativos do Microsoft Office. Quando você insere dados XML em um documento, os dados são denominados um *parte XML personalizada*.  
   
- Você pode criar e modificar partes XML personalizadas em um documento usando um suplemento do VSTO ou solução no Visual Studio no nível do documento. Você não precisa iniciar o aplicativo do Microsoft Office para criar e modificar partes XML personalizadas.  
+ Você pode criar e modificar partes XML personalizadas em um documento usando um suplemento do VSTO ou solução no Visual Studio de nível de documento. Você não precisa iniciar o aplicativo do Microsoft Office para criar e modificar partes XML personalizadas.  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de documento e a projetos de suplemento do VSTO para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e de aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de documento e projetos de suplemento do VSTO para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
->  O Visual Studio também permite que você para objetos de dados do cache em personalizações no nível do documento. Esse recurso é diferente de partes XML personalizadas, embora haja algumas semelhanças. Para obter mais informações, consulte [armazenado em cache dados em personalizações no nível do documento](../vsto/cached-data-in-document-level-customizations.md).  
+>  Visual Studio também permite aos objetos de dados de cache em personalizações no nível do documento. Esse recurso é diferente de partes XML personalizadas, embora haja algumas semelhanças. Para obter mais informações, consulte [armazenado em cache dados personalizações no nível do documento](../vsto/cached-data-in-document-level-customizations.md).  
   
 ## <a name="understand-custom-xml-parts"></a>Entender as partes XML personalizadas  
- Partes XML personalizadas foram introduzidos no sistema Microsoft Office 2007, juntamente com os formatos XML abertos. Esses formatos incluem novos formatos de arquivo baseado em XML para o Excel, PowerPoint e Word (como *. xlsx*, *. pptx*, e *. docx*). Documentos nesses formatos consistem em arquivos XML (também chamado *partes XML*) que são organizados em pastas em um arquivo ZIP. A maioria das partes XML são partes internas que ajudam a definir a estrutura e o estado do documento. No entanto, os documentos também podem conter partes XML personalizadas, o que pode ser usado para armazenar dados XML arbitrário nos documentos.  
+ Partes XML personalizadas foram introduzidas no 2007 Microsoft Office system, junto com os formatos XML abertos. Esses formatos incluem novos formatos de arquivo baseado em XML para o Excel, PowerPoint e Word (como *. xlsx*, *pptx*, e *. docx*). Documentos nesses formatos consistem em arquivos XML (também denominada *partes XML*) que são organizados em pastas em um arquivo ZIP. A maioria das partes XML são partes internas que ajudam a definir a estrutura e o estado do documento. No entanto, os documentos também podem conter partes XML personalizadas, o que pode ser usado para armazenar dados arbitrários do XML em documentos.  
   
- O arquivo XML de formatos de habilitar os aplicativos para trabalhar com documentos de maneiras que não são possíveis com os mais antigos formatos de arquivo binário (como *. xls*, *. ppt*, e *. doc*). Qualquer aplicativo que pode ler arquivos ZIP pode examinar e modificar o conteúdo dos documentos, mesmo se o Microsoft Office não estiver instalado.  
+ Habilitar aplicativos para trabalhar com documentos de maneiras que não são possíveis com os formatos de arquivo binário mais antigos de formatos de arquivo XML (como *. xls*, *ppt*, e *. doc*). Qualquer aplicativo que pode ler arquivos ZIP pode examinar e modificar o conteúdo dos documentos, mesmo se o Microsoft Office não está instalado.  
   
- Para obter mais informações sobre a estrutura de Open XML e partes XML personalizadas, consulte os seguintes artigos:  
+ Para obter mais informações sobre a estrutura do Open XML e partes XML personalizadas, consulte os seguintes artigos:  
   
--   [Apresentando os formatos de arquivo Office Open XML (2007)](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Apresentando os formatos de arquivo do Office (2007) Open XML](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
   
--   [Como: manipular documentos nos formatos XML abertos](http://msdn.microsoft.com/en-us/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Como: manipular documentos nos formatos XML abertos](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
   
--   [Passo a passo: Formato de XML do Word 2007](http://msdn.microsoft.com/en-us/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Passo a passo: Formato de XML do Word 2007](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
   
--   [Criar documentos do Word 2007 usando formatos XML abertos](http://msdn.microsoft.com/en-us/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Criar documentos do Word 2007 usando os formatos XML abertos](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
   
 > [!NOTE]  
->  Word, Excel e PowerPoint também permitem usar partes XML personalizadas em documentos que são salvos nos formatos de arquivo binário. No entanto, se um documento é salvo em um formato binário, você não pode adicionar ou modificar partes XML personalizadas sem iniciar o aplicativo do Microsoft Office.  
+>  Excel, Word e PowerPoint também permitem que você usar partes XML personalizadas em documentos que são salvos nos formatos de arquivo binário. No entanto, se um documento for salvo em um formato binário, não é possível adicionar ou modificar partes XML personalizadas sem iniciar o aplicativo Microsoft Office.  
   
 ## <a name="create-and-modify-custom-xml-parts"></a>Criar e modificar partes XML personalizadas  
- Você pode criar ou modificar partes XML personalizadas quando o documento está aberto no aplicativo do Office, ou quando o documento é fechado, mesmo se o Microsoft Office não estiver instalado.  
+ Você pode criar ou modificar partes XML personalizadas quando o documento está aberto no aplicativo do Office, ou quando o documento é fechado, mesmo se o Microsoft Office não está instalado.  
   
 ### <a name="modify-xml-parts-while-the-office-application-is-running"></a>Modificar partes XML enquanto o aplicativo do Office está em execução  
- Você pode trabalhar com partes XML personalizadas usando uma personalização no nível do documento ou um suplemento do VSTO. Se você estiver usando uma personalização no nível do documento, você normalmente trabalhará com partes XML personalizadas que estão no documento de personalizado. Se você estiver usando um suplemento do VSTO, você pode criar ou modificar partes XML personalizadas em qualquer documento que está aberto no aplicativo.  
+ Você pode trabalhar com partes XML personalizadas, usando uma personalização no nível de documento ou um suplemento do VSTO. Se você estiver usando uma personalização no nível de documento, você normalmente irá trabalhar com partes XML personalizadas que estão no documento personalizado. Se você estiver usando um suplemento do VSTO, você pode criar ou modificar partes XML personalizadas em qualquer documento que está aberto no aplicativo.  
   
- Para criar uma parte XML personalizada usando o Visual Studio, adicione um novo <xref:Microsoft.Office.Core.CustomXMLPart> para o <xref:Microsoft.Office.Core.CustomXMLParts> coleção no documento. Para mais informações, consulte os seguintes tópicos:  
+ Para criar uma parte XML personalizada usando o Visual Studio, adicione um novo <xref:Microsoft.Office.Core.CustomXMLPart> para o <xref:Microsoft.Office.Core.CustomXMLParts> coleta no documento. Para mais informações, consulte os seguintes tópicos:  
   
 -   [Como: adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
@@ -75,13 +76,13 @@ ms.lasthandoff: 05/17/2018
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar partes XML sem iniciar o aplicativo do Office  
  Você pode adicionar ou modificar uma parte XML personalizada sem iniciar o Excel, PowerPoint ou Word. Isso é útil se você quiser trabalhar com dados XML em um documento em um computador que não tenha instalados, como um servidor de aplicativos do Microsoft Office.  
   
- Para adicionar uma parte XML personalizada sem iniciar o Microsoft Office, use classes do SDK de XML aberta. Essas classes são projetadas para fornecer acesso ao conteúdo de Open XML que é específico para documentos do Office. Por exemplo, para adicionar uma parte XML personalizada a uma pasta de trabalho do Excel, você usa o [AddNewPart\<T >](http://msdn.microsoft.com/en-us/47c348c0-77ab-a504-5097-bcd6a213921a) método de um [WorkbookPart](http://msdn.microsoft.com/en-us/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) objeto. Para obter mais informações, consulte [Open XML SDK 2.0](http://msdn.microsoft.com/en-us/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Para adicionar uma parte XML personalizada sem iniciar o Microsoft Office, use classes no SDK do XML aberto. Essas classes são projetadas para fornecer acesso ao conteúdo XML aberto que é específico para documentos do Office. Por exemplo, para adicionar uma parte XML personalizada para uma pasta de trabalho do Excel, use o [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) método de um [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) objeto. Para obter mais informações, consulte [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Associar partes XML personalizadas aos controles de conteúdo do Word  
- Você pode vincular controles de conteúdo em uma solução de palavras para os elementos em uma parte XML personalizada. Quando um controle de conteúdo é associado a uma parte XML personalizada, os dados na parte XML personalizada são exibidos na interface do usuário (IU) do controle de conteúdo. Se um usuário editar texto no controle, o elemento XML correspondente é atualizado automaticamente. Da mesma forma, se os valores de elemento nas partes XML personalizadas são alterados, os controles de conteúdo que estão associados aos elementos XML exibem os novos dados. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
+ Você pode associar controles de conteúdo em uma solução do Word a elementos em uma parte XML personalizada. Quando um controle de conteúdo é associado a uma parte XML personalizada, os dados na parte XML personalizada são exibidos na interface do usuário (IU) do controle de conteúdo. Se um usuário edita o texto do controle, o elemento XML correspondente é atualizado automaticamente. Da mesma forma, se os valores de elemento em que as partes XML personalizadas são alterados, os controles de conteúdo que são associados aos elementos XML exibem os novos dados. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Esquemas XML e dados em personalizações no nível do documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
+ [Esquemas e dados em personalizações no nível de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
  [Como: adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Controles de conteúdo](../vsto/content-controls.md)   

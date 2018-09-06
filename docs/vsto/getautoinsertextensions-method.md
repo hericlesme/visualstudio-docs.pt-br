@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670105"
 ---
 # <a name="getautoinsertextensions-method"></a>Método GetAutoInsertExtensions
   Obtém informações sobre os aplicativos do Office que serão inseridos automaticamente durante a depuração.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="syntax"></a>Sintaxe  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -36,10 +37,10 @@ HRESULT GetAutoInsertExtensions(
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|*psaExtensionNames*|Os nomes de extensão dos aplicativos do Office.|  
+|*psaExtensionNames*|Os nomes de extensão dos aplicativos para Office.|  
   
 ## <a name="return-value"></a>Valor retornado  
- Um valor HRESULT que indica se o método foi concluída com êxito.  
+ Um valor HRESULT que indica se o método concluída com êxito.  
   
 ## <a name="remarks"></a>Comentários  
  Cada aplicativo do Office a ser inserido é retornado como um nome de extensão de aplicativo do Office, que corresponde a um valor em **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. O host deve pesquisar esses valores no registro e, em seguida, inserir automaticamente as extensões.  

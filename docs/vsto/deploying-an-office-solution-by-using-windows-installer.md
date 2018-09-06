@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382611"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775708"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implantar uma solução do Office usando o Windows Installer
 Saiba como criar um instalador do Windows para sua solução do Office usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -141,7 +141,7 @@ Você configura a **OfficeAddInSetup** projeto para incluir a saída do seu proj
   
 3. Na parte inferior a **Assistente de projeto** , escolha o **arquivos de aplicativo** botão, que mostra a ilustração a seguir.  
   
-   ![O botão de arquivos do aplicativo. ] (../vsto/media/installshield-applicationfiles.png "Botão o arquivos do aplicativo.")  
+   ![O botão de arquivos do aplicativo. ](../vsto/media/installshield-applicationfiles.png "Botão o arquivos do aplicativo.")  
   
 4. No **arquivos de aplicativo** , escolha o **adicionar saídas do projeto** botão.  
   
@@ -161,7 +161,7 @@ Você configura a **OfficeAddInSetup** projeto para incluir a saída do seu proj
   
    O **arquivos de aplicativo** página agora contém o arquivo de saída do projeto, o manifesto de implantação e o manifesto do aplicativo, como mostra a ilustração a seguir.  
   
-   ![Os arquivos de saída do seu projeto de instalação. ] (../vsto/media/installshield-outputfiles.png "Os arquivos de saída do seu projeto de instalação.")  
+   ![Os arquivos de saída do seu projeto de instalação. ](../vsto/media/installshield-outputfiles.png "Os arquivos de saída do seu projeto de instalação.")  
   
   
 ## <a name="Configure"></a>Configurar os componentes dependentes como pré-requisitos  
@@ -252,7 +252,7 @@ O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Run
   
 11. No **Redistributable** página do projeto do InstallShield, escolha o **atualizar** botão para atualizar a lista de componentes redistribuíveis, como mostra a ilustração a seguir.  
   
-   ![O botão de atualização. ] (../vsto/media/installshield-refreshbutton.png "No botão Atualizar.")  
+   ![O botão de atualização. ](../vsto/media/installshield-refreshbutton.png "No botão Atualizar.")  
   
 12. Na lista de componentes redistribuíveis, selecione a **Visual Studio 2010 Tools for Office Runtime** caixa de seleção.  
   
@@ -309,7 +309,7 @@ As instalações por usuário exigem apenas um instalador independente do Office
   
 2. Na parte inferior a **Assistente de projeto** , escolha o **registro do aplicativo** botão, que mostra a ilustração a seguir.  
   
-   ![O botão de registro do aplicativo. ] (../vsto/media/installshield-applicationregistry.gif "Botão o registro do aplicativo.")  
+   ![O botão de registro do aplicativo. ](../vsto/media/installshield-applicationregistry.gif "Botão o registro do aplicativo.")  
   
    O **registro de aplicativo** página será exibida.  
   
@@ -447,7 +447,7 @@ Para modificar as propriedades personalizadas, você deve criar um programa que 
   
 3. Na parte inferior a **Assistente de projeto** , escolha o **arquivos de aplicativo** botão, que mostra a ilustração a seguir.  
   
-   ![O botão de arquivos do aplicativo. ] (../vsto/media/installshield-applicationfiles.png "Botão o arquivos do aplicativo.")  
+   ![O botão de arquivos do aplicativo. ](../vsto/media/installshield-applicationfiles.png "Botão o arquivos do aplicativo.")  
   
 4. No **arquivos de aplicativo** , escolha o **adicionar saídas do projeto** botão.  
   
@@ -526,7 +526,7 @@ Para modificar as propriedades personalizadas, você deve criar um programa que 
   
 9. Na barra de menus, escolha **construir** > **Build OfficeAddInSetup**.  
   
-   Depois que a compilação for concluída, você pode localizar o *setup.exe* arquivo da **OfficeAddInSetup** projeto no seguinte local: *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   Depois que a compilação for concluída, você pode localizar o *setup.exe* arquivo da **OfficeAddInSetup** projeto no seguinte local: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>Consulte também  
