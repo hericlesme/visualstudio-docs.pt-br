@@ -1,5 +1,5 @@
 ---
-title: Instalando suporte para Python
+title: Instalando suporte do Python
 description: Como instalar as PTVS (Ferramentas Python para Visual Studio) no Visual Studio 2017, 2015, 2013, 2012 e 2010, incluindo opções e locais de instalação.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,30 +11,30 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499897"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627095"
 ---
-# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Como instalar o suporte para Python no Visual Studio no Windows
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Como instalar o suporte do Python no Visual Studio no Windows
 
-Para instalar o suporte para Python para Visual Studio (também conhecido como Ferramentas Python para Visual Studio ou PTVS), siga as instruções na seção que corresponda à sua versão do Visual Studio:
+Para instalar o suporte do Python para Visual Studio (também conhecido como Ferramentas Python para Visual Studio ou PTVS), siga as instruções na seção que corresponda à sua versão do Visual Studio:
 
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e anterior](#visual-studio-2013-and-earlier)
 
-Para o Visual Studio 2015 e anterior, também é necessário [instalar separadamente um interpretador do Python](installing-python-interpreters.md) de sua escolha (Python 3.5 e anterior; não há suporte para a versão 3.6 e a mensagem **Versão 3.6 do Python sem suporte será gerada**). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
+Para o Visual Studio 2015 e anteriores, também é necessário [instalar separadamente um interpretador de Python](installing-python-interpreters.md) da sua escolha (Python 3.5 e anteriores. Não há suporte para a versão 3.6 ou posteriores e é gerada uma mensagem como **Python versão 3.6 sem suporte**). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
 
-Para testar rapidamente o suporte para Python depois de seguir as etapas de instalação, abra a janela **Interativa do Python** pressionando **Alt**+**I** e inserindo `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
+Para testar rapidamente o suporte do Python depois de seguir as etapas de instalação, abra a janela **Interativa do Python** pressionando **Alt**+**I** e inserindo `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
 
 > [!Tip]
 > A carga de trabalho do Python inclui a extensão útil Cookiecutter, que fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Para obter detalhes, confira [Usar o Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
-> O suporte para Python não está disponível atualmente no Visual Studio para Mac, mas está disponível no Mac e no Linux por meio do Visual Studio Code. Confira [Perguntas e respostas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
+> O suporte ao Python não está disponível atualmente no Visual Studio para Mac, mas está disponível no Mac e no Linux por meio do Visual Studio Code. Confira [Perguntas e respostas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -74,7 +74,7 @@ Para testar rapidamente o suporte para Python depois de seguir as etapas de inst
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sobre como instalar o suporte para Python no Visual Studio.|
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sobre como instalar o suporte do Python no Visual Studio.|
 
 ### <a name="troubleshooting"></a>Solução de problemas
 
@@ -110,7 +110,7 @@ Se você encontrar problemas ao instalar ou executar o Python no Visual Studio, 
 
 ## <a name="install-locations"></a>Locais de instalação
 
-Por padrão, o suporte para Python é instalado para todos os usuários em um computador.
+Por padrão, o suporte do Python é instalado para todos os usuários em um computador.
 
 Para o Visual Studio 2017, a carga de trabalho do Python é instalada em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*, em que &lt;VS_edition&gt; é Community, Professional ou Enterprise.
 

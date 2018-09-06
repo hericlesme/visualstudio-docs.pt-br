@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667009"
 ---
-# <a name="working-with-r-in-visual-studio"></a>Trabalhando com o R no Visual Studio
+# <a name="work-with-r-in-visual-studio"></a>Trabalhar com o R no Visual Studio
 
 O R é uma linguagem altamente extensível e um ambiente para gráficos e computação estatística. Ele é distribuído gratuitamente sob a Licença Pública Geral GNU, dispõe de suporte à comunidade forte e é conhecido por sua capacidade de gerar plotagens de qualidade de publicação incluindo fórmulas e símbolos matemáticos. Você pode saber mais sobre o R em [r-project.org](https://www.r-project.org/about.html) e [Uma introdução ao R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
 
@@ -28,7 +29,7 @@ As RTVS (Ferramentas do R para Visual Studio) são uma extensão de [software li
 Para experimentar o R no Visual Studio:
 
 - [Instale as Ferramentas do R](installing-r-tools-for-visual-studio.md).
-- Siga o guia de [Introdução](getting-started-with-r.md), bem como os artigos [Exemplos](getting-started-samples.md) e [Obtendo ajuda](getting-started-help.md).
+- Siga o guia de [Introdução](getting-started-with-r.md) e os artigos [Exemplos](getting-started-samples.md) e [Obtendo ajuda](getting-started-help.md).
 
 Depois, siga os links abaixo para saber mais sobre recursos relacionados ao R, bem como os próprios recursos gerais do Visual Studio.
 
@@ -52,8 +53,8 @@ Confira também as [Perguntas frequentes](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Envie-nos seus comentários!
 
-1. **Problemas do Github**: a melhor maneira de alcançar a equipe de RTVS é [registrar um problema no GitHub](https://github.com/Microsoft/RTVS/issues) ou usar o menu **Ferramentas R > Comentários**.
+1. **Problemas do GitHub**: a melhor maneira de entrar em contato com a equipe de RTVS é [registrar um problema no GitHub](https://github.com/Microsoft/RTVS/issues) ou usar o menu **Ferramentas R** > **Comentários**.
 
-1. **Envie um Smiley/Rosto Triste**: o menu **Ferramentas R > Comentários** é uma maneira rápida de enviar comentários e anexar arquivos de log das RTVS para auxiliar no diagnóstico do seu problema. (Os logs serão registrados nos `%temp%/RTVSlogs.zip` caso você queira enviá-los separadamente.) O log será desabilitado se você tiver cancelado a telemetria do Visual Studio por meio do comando de menu **Ajuda > Comentários > Configurações** ou durante a instalação.
+1. **Envie um Smiley/Rosto Triste**: o menu **Ferramentas R** > **Comentários** é uma maneira rápida de enviar comentários e anexar arquivos de log das RTVS para auxiliar no diagnóstico do seu problema. (Os logs são registrados em *%temp%/RTVSlogs.zip* caso você queira enviá-los separadamente.) O log será desabilitado se você tiver cancelado a telemetria do Visual Studio por meio do comando de menu **Ajuda** > **Comentários** > **Configurações** ou durante a instalação.
 
 1. **Email**: você pode enviar comentários diretos para a equipe em *rtvsuserfeedback (arroba) microsoft.com*.

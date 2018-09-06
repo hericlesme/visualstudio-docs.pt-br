@@ -1,10 +1,9 @@
 ---
-title: Localizar código usando comandos Ir Para
-ms.date: 09/26/2017
+title: Ir para arquivo, ir para símbolo, ir para linha
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447187"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627232"
 ---
 # <a name="find-code-using-go-to-commands"></a>Localizar código usando comandos Ir Para
 
@@ -56,12 +55,13 @@ Por padrão, o item especificado é pesquisado em todos os itens de solução. N
 Para restringir sua pesquisa para um tipo de elemento de código específico, especifique um prefixo na caixa de pesquisa ou selecione um dos cinco ícones de filtro:
 
 Prefixo | Ícone | Atalho | Descrição
-:----: | ---- | -------- | ---
-\#     | ![Ícone do símbolo](media/gotoall_symbolicon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir para o símbolo especificado
-f      | ![Ícone de Arquivo](media/gotoall_fileicon.png)     | **Ctrl**+**1**, **Ctrl**+**F** | Ir para o arquivo especificado
-m      | ![Ícone do Membro](media/gotoall_membericon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir para o membro especificado
-t      | ![Ícone de Tipo](media/gotoall_typeicon.png)     | **Ctrl**+**1**, **Ctrl**+**T** | Ir para o tipo especificado
-:      | ![Ícone de Linha](media/gotoall_lineicon.png)     | **Ctrl**+**G**         | Ir para o número de linha especificado
+:-: | - | - | -
+:| ![Ícone de linha](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Ir para o número de linha especificado
+f| ![Ícone de arquivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir para o arquivo especificado
+r| ![Ícone de arquivos recentes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir para o arquivo visitado recentemente especificado
+t| ![Ícone de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir para o tipo especificado
+m| ![Ícone de membros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir para o membro especificado
+\#| ![Ícone de símbolos](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir para o símbolo especificado
 
 ### <a name="filter-to-a-specific-location"></a>Filtrar por um local específico
 

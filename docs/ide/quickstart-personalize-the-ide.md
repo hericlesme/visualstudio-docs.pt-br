@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512555"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627056"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: Personalizar o Editor e o IDE do Visual Studio
 
-Neste início rápido de 5 a 10 minutos, personalizaremos o tema de cores do Visual Studio e duas cores de texto no editor de texto.
+Neste início rápido de 5 a 10 minutos, nós personalizaremos o tema de cores do Visual Studio, selecionando o tema escuro. Além disso, personalizaremos as cores para dois tipos diferentes de texto no editor de texto.
 
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
@@ -97,19 +97,7 @@ Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar 
 
 Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esperamos que você explore as outras opções de personalização na caixa de diálogo **Opções**, para realmente ter um Visual Studio personalizado.
 
-## <a name="next-steps"></a>Próximas etapas
-
-> [!div class="nextstepaction"]
-> [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Início Rápido: Escrever o código no editor](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizar o editor](../ide/customizing-the-editor.md)
 - [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)

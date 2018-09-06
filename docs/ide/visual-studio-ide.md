@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381166"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627196"
 ---
-# <a name="visual-studio-overview"></a>Visão geral do Visual Studio
+# <a name="welcome-to-the-visual-studio-ide"></a>Bem-vindo ao IDE do Visual Studio
 
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
 O Visual Studio está disponível para o Windows e o Mac. O [Visual Studio para Mac](/visualstudio/mac/) tem muitas das mesmas funcionalidades do Visual Studio 2017 e é otimizado para o desenvolvimento de aplicativos móveis e multiplataforma.
 
-Este artigo aborda o Visual Studio 2017 para Windows. Ele apresenta as funcionalidades básicas do IDE. Vamos examinar algumas coisas que você pode fazer com o Visual Studio, incluindo a criação de um projeto simples, o uso do [IntelliSense](using-intellisense.md) como recurso de codificação e a depuração de um aplicativo para ver o valor de uma variável durante a execução do programa. Além disso, vamos fazer um tour pelas várias janelas de ferramentas.
+Este artigo de visão geral concentra-se no Visual Studio 2017 para Windows. Ele apresenta as funcionalidades básicas do IDE. Vamos examinar algumas coisas que você pode fazer com o Visual Studio, incluindo a criação de um projeto simples, o uso do [IntelliSense](using-intellisense.md) como recurso de codificação e a depuração de um aplicativo para ver o valor de uma variável durante a execução do programa. Além disso, vamos fazer um tour pelas várias janelas de ferramentas.
 
 ## <a name="install-the-visual-studio-ide"></a>Instalar o IDE do Visual Studio
 
@@ -256,21 +256,32 @@ Personalize a interface do usuário do Visual Studio, incluindo a alteração do
 
    O tema de cores para todo o IDE é alterado para **Escuro**.
 
-   ![VS em um tema escuro](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio no tema escuro](media/quickstart-personalize-dark-theme.png)
 
 Para conhecer outras maneiras pelas quais você pode personalizar o IDE, confira [Personalizar o Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Saiba mais
+## <a name="next-steps"></a>Próximas etapas
 
-Você deseja criar um aplicativo para um telefone Android ou iOS? E quanto a um jogo 3D ou um aplicativo habilitado para a nuvem? Para saber mais sobre essas e outras funcionalidades do Visual Studio, confira [Funcionalidades do Visual Studio 2017](../ide/advanced-feature-overview.md).
+Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutórios:
 
-Caso deseje apenas começar a codificar agora, escolha um dos tópicos do Início Rápido no sumário, como [Criar seu primeiro aplicativo Web ASP.NET Core](quickstart-aspnet-core.md).
+- Familiarize-se com o editor de códigos em [Saiba como usar o editor de códigos](quickstart-editor.md)
 
-Confira também os cursos gratuitos do Visual Studio disponíveis na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+- Aprenda como o Visual Studio organiza o código em [Saiba mais sobre projetos e soluções](quickstart-projects-solutions.md)
+
+Se você estiver pronto para mergulhar em mais codificação, um dos seguintes inícios rápidos específicos a uma linguagem será a próxima etapa recomendada:
+
+- [Usar o Visual Studio para criar seu primeiro aplicativo Web em Python](quickstart-python.md)
+
+- [Usar o Visual Studio para criar seu primeiro aplicativo Web em C#](quickstart-aspnet-core.md)
+
+- [Usar o Visual Studio para criar seu primeiro aplicativo Web em Node.js](quickstart-nodejs.md)
+
+- [Introdução ao C++ no Visual Studio](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>Consulte também
 
-* [Mais funcionalidades do Visual Studio](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [O blog do Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Descubra [mais recursos do Visual Studio](../ide/advanced-feature-overview.md)
+- Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Leia [The Visual Studio blog](https://blogs.msdn.microsoft.com/visualstudio/) (O blog do Visual Studio)
+- Confira os cursos gratuitos do Visual Studio em [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
+- Baixe o Visual Studio em [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

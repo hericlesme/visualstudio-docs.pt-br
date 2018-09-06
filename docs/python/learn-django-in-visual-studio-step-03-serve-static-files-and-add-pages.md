@@ -1,7 +1,7 @@
 ---
 title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 3
 description: Uma explicação dos conceitos básicos do Django no contexto de projetos do Visual Studio, demonstrando especificamente como fornecer arquivos estáticos, adicionar páginas ao aplicativo e usar a herança do modelo
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388339"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626693"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -27,7 +27,7 @@ Nas etapas anteriores deste tutorial, você aprendeu como criar um aplicativo m�
 Nesta etapa, você aprenderá a:
 
 > [!div class="checklist"]
-> - Usar modelos de item do Visual Studio para criar rapidamente novos arquivos de diferentes tipos com código clichê conveniente (etapa 3-1)
+> - Usar modelos de item do Visual Studio para adicionar rapidamente novos arquivos de diferentes tipos com código clichê conveniente (etapa 3-1)
 > - Configurar o projeto em Django para fornecer arquivos estáticos (etapa 3-2)
 > - Adicionar mais páginas ao aplicativo (etapa 3-3)
 > - Usar a herança do modelo para criar um cabeçalho e uma barra de navegação usados nas páginas (etapa 3-4)
@@ -78,7 +78,7 @@ Você pode organizar os arquivos usando qualquer estrutura de pastas desejada de
     }
     ```
 
-1. Substitua o conteúdo do arquivo *templates/HelloDjangoApp/index.html* do aplicativo pelo código a seguir, que substitui o elemento `<strong>` usado na etapa 2 por um `<span>` que referencia a classe de estilo `message`. O uso de uma classe de estilo dessa maneira oferece muito mais flexibilidade ao estilo do elemento. (Se você não moveu *index.html* para uma subpasta em *templates*, veja [namespace de modelo](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) na etapa 2.)
+1. Substitua o conteúdo do arquivo *templates/HelloDjangoApp/index.html* do aplicativo pelo código a seguir, que substitui o elemento `<strong>` usado na etapa 2 por um `<span>` que referencia a classe de estilo `message`. O uso de uma classe de estilo dessa maneira oferece muito mais flexibilidade ao estilo do elemento. (Se você ainda não moveu o *index.html* para uma subpasta nos *modelos* ao usar o VS 2017 15.7 e anteriores, veja [Namespacing de modelo](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) na etapa 2-4.)
 
     ```html
     <html>
@@ -186,7 +186,7 @@ Um modelo de base delineia blocos usando as marcas `{% block <block_name> %}` e 
 
 As etapas a seguir demonstram a herança:
 
-1. Na pasta *templates/HelloDjangoApp* do aplicativo, crie um arquivo HTML (usando o menu de contexto **Adicionar** > **Novo item** ou **Adicionar** > **Página HTML**) chamado `layout.html` e substitua o conteúdo pela marcação abaixo. Veja que esse modelo contém um bloco chamado "conteúdo", que representa tudo o que as páginas de referência precisam substituir:
+1. Na pasta *templates/HelloDjangoApp* do aplicativo, crie um arquivo HTML (usando o menu de contexto **Adicionar** > **Novo item** ou **Adicionar** > **Página HTML**) chamado *layout.html* e substitua seu conteúdo pela marcação abaixo. Veja que esse modelo contém um bloco chamado "conteúdo", que representa tudo o que as páginas de referência precisam substituir:
 
     ```html
     <!DOCTYPE html>

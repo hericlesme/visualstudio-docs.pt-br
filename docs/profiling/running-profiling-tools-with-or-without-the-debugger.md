@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268263"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626576"
 ---
-# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar Ferramentas de Criação de Perfil com ou sem o depurador
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas das quais (por exemplo, **Utilização de CPU** e **Uso de Memória**) podem ser executadas com ou sem o depurador. Ferramentas de desempenho de não depurador não devem ser executadas em configurações de versão, enquanto ferramentas integradas ao depurador destinam-se a ser executadas em configurações de depuração.  
+
+Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Devo executar a ferramenta com ou sem o depurador?  
  Ferramentas de desempenho integradas ao depurador permitem fazer muitas coisas que as ferramentas de não depurador não podem, como definir pontos de interrupção e inspecionar os valores de variáveis. Ferramentas de não depurador oferecem uma experiência mais próxima da que os usuários do aplicativo lançado verão.  
@@ -100,7 +102,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 |||  
 |-|-|  
-|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|A linha do tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
+|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|  
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais grafos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os grafos mestres serão exibidos.|  
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|Você pode recolher e expandir os gráficos individuais.|  

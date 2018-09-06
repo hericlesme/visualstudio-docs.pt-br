@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263647"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626644"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 Use a ferramenta de diagnóstico **Uso de Memória** integrada no depurador para localizar perdas de memória e uso de memória ineficiente. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
@@ -24,6 +24,8 @@ Use a ferramenta de diagnóstico **Uso de Memória** integrada no depurador para
 -   Também é possível comparar (diff) dois instantâneos de um aplicativo para encontrar áreas no código que causam o aumento do uso da memória com o passar do tempo.  
 
 Para obter instruções detalhadas, consulte o tutorial [Analisar o uso de memória](../profiling/memory-usage.md). Para analisar o uso de memória sem anexar o depurador, consulte [Uso de memória sem o depurador](memory-usage-without-debugging2.md).
+
+Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
   
 ## <a name="blogs-and-videos"></a>Blogs e vídeos  
 
@@ -37,4 +39,4 @@ Para obter instruções detalhadas, consulte o tutorial [Analisar o uso de memó
 
 ## <a name="see-also"></a>Consulte também
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

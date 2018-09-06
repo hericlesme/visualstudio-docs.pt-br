@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388118"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627274"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
 
@@ -104,12 +104,13 @@ Caso encontre problemas enquanto estiver usando o Visual Studio ou tenha sugest�
 
 Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos com a interface do usuário. Para explorar mais:
 
-- Faça um tour mais detalhado pelo Visual Studio e até mesmo explore a depuração na [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Saiba mais sobre o editor de códigos](../ide/quickstart-editor.md)
 
-- Procure a seção **Elementos gerais de interface do usuário** da documentação do VS, que fornece mais detalhes sobre janelas como [Lista de Erros](../ide/reference/error-list-window.md), [Saída](../ide/reference/output-window.md), [Propriedades](../ide/reference/properties-window.md) e [Caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Saiba mais sobre projetos e soluções](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Início rápido: personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Início Rápido: Escrever o código no editor](../ide/quickstart-editor.md)
-- [Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)
+- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Alterar as cores do tema e da fonte](../ide/quickstart-personalize-the-ide.md)

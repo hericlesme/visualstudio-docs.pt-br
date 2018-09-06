@@ -1,6 +1,6 @@
 ---
-title: Navegar pelo código no Visual Studio
-ms.date: 09/26/2017
+title: Comandos de navegação de código
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448604"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627168"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -84,11 +84,19 @@ Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em 
 
 - **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
 
+- **Ir para Arquivo Recente** (**Ctrl**+**1**, **Ctrl**+**R**): mover para o arquivo visitado recentemente na solução especificado (novo no Visual Studio 2017 versão 15.8).
+
 - **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
 
 - **Ir para Membro** (**Ctrl**+**1**, **Ctrl**+**M**): mover para o membro especificado na solução.
 
 - **Ir para Símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): mover para o símbolo especificado na solução.
+
+No Visual Studio 2017 versão 15.8 e posteriores, os seguintes comandos de navegação **Ir Para** também estão disponíveis:
+
+- **Ir para Próximo Problema no Arquivo** (**Alt**+**PgDn**) e **Ir para o Problema Anterior no Arquivo** (**Alt**+**PgUp**)
+
+- **Ir para Local da Última Edição** (**Ctrl**+**Shift**+**Backspace**)
 
 Veja mais informações sobre esses comandos no tópico [Localizar código usando os comandos Ir Para](../ide/go-to.md).
 

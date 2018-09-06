@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469048"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627197"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -23,7 +23,7 @@ No Visual Studio de 2017, você pode adicionar um arquivo [EditorConfig](http://
 As configurações do EditorConfig são compatíveis com vários editores de códigos e IDEs, incluindo o Visual Studio. Ele é um componente portátil que acompanha o seu código e pode impor estilos de codificação mesmo fora do Visual Studio.
 
 > [!NOTE]
-> Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado** > **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D**). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig.
+> Quando você adiciona um arquivo EditorConfig ao projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado**  >  **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D** no perfil padrão). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig. Você pode definir quais configurações do EditorConfig deseja que **Formatar Documento** aplique à [página de opções de **Formatação**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Consistência de codificação
 
