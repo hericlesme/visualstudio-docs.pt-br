@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808635"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281137"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto c# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, executar seu aplicativo.
@@ -97,7 +97,7 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
 
      Você deve ver que a janela principal do aplicativo do WPF está aberta no computador remoto.
   
-14. Se necessário, execute a ação para o ponto de interrupção. Você deve ver que o ponto de interrupção está ativo. Caso contrário, os símbolos para o aplicativo ainda não carregado. Tente novamente e se isso não funcionar, obter informações sobre o carregamento de símbolos e como solucioná-los no [configurações de símbolo de Noções básicas sobre arquivos de símbolo e o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. Se necessário, execute a ação para o ponto de interrupção. Você deve ver que o ponto de interrupção está ativo. Caso contrário, os símbolos para o aplicativo ainda não carregado. Tente novamente e se isso não funcionar, obter informações sobre o carregamento de símbolos e como solucioná-los no [configurações de símbolo de Noções básicas sobre arquivos de símbolo e o Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. No computador do Visual Studio, você deve ver que a execução foi interrompido no ponto de interrupção.
   

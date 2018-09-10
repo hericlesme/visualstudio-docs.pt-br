@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632996"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282803"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo inválido no conjunto de caracteres (JavaScript)
-Você tentou criar uma expressão regular com um intervalo de conjunto de caractere inválido. Conjuntos de caracteres devem variar de caracteres simples, como a-z ou 0-9; Você não pode incluir classes de caractere como \w em um conjunto de caracteres. O primeiro caractere no intervalo também deve vir antes do segundo caractere no intervalo. Por exemplo:  
+Você tentou criar uma expressão regular com um intervalo de conjunto de caractere inválido. Conjuntos de caracteres devem variar desde caracteres únicos, como a-z ou 0 a 9; Você não pode incluir classes de caractere como \w em um conjunto de caracteres. O primeiro caractere no intervalo também deve vir antes do segundo caractere no intervalo. Por exemplo:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Use caracteres apenas único para compor o conjunto de caracteres de expressão regular e verifique se que eles estão na ordem correta.  
+-   Use caracteres único apenas para compor o seu conjunto de caracteres de expressão regular e verifique se que eles estão na ordem correta.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxe de expressão regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

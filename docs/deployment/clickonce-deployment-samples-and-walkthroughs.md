@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077559"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282257"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Instruções passo a passo e exemplos de implantação do ClickOnce
 Esta seção contém exemplos de aplicativos, exemplo de código e orientações passo a passo que ilustram a sintaxe, estrutura e técnicas usadas para implantar o Windows Forms, WPF e aplicativos de console.  
@@ -40,5 +40,5 @@ Esta seção contém exemplos de aplicativos, exemplo de código e orientações
 |[Baixar assemblies sob demanda com a implantação do ClickOnce usando o designer de API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Explica como baixar assemblies do aplicativo somente quando eles forem usados pela primeira vez pelo aplicativo.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo de Visual Studio](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Passo a passo de Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Exemplos do Visual Studio](../ide/visual-studio-samples.md)

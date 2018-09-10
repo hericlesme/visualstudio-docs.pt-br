@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512247"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280565"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -73,7 +73,7 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Em tempo de execução, o subsistema do Visual Studio pkgdef mesclará essas entradas no arquivo de configuração de tempo de execução do processo do Visual Studio (sob *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) elementos. Essa é a maneira recomendada para permitir que o processo do Visual Studio encontrar o assembly, porque ele evita a pesquisa por meio de caminhos de investigação.
+    Em tempo de execução, o subsistema do Visual Studio pkgdef mesclará essas entradas no arquivo de configuração de tempo de execução do processo do Visual Studio (sob *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementos. Essa é a maneira recomendada para permitir que o processo do Visual Studio encontrar o assembly, porque ele evita a pesquisa por meio de caminhos de investigação.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagir a essa alteração interruptiva
 
@@ -87,7 +87,7 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 
 ### <a name="global-com-registration"></a>Registro global de COM
 
-* Anteriormente, o Visual Studio instalado várias chaves do registro para os hives HKEY_CLASSES_ROOT e HKEY_LOCAL_MACHINE para dar suporte ao registro de COM nativo. Para eliminar esse impacto, o Visual Studio agora usa [ativação sem registro para componentes COM](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Anteriormente, o Visual Studio instalado várias chaves do registro para os hives HKEY_CLASSES_ROOT e HKEY_LOCAL_MACHINE para dar suporte ao registro de COM nativo. Para eliminar esse impacto, o Visual Studio agora usa [ativação sem registro para componentes COM](https://msdn.microsoft.com/library/ms973913.aspx).
 * Como resultado, a maioria das cargas de TLB / OLB / arquivos DLL em % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv não são mais instalados por padrão pelo Visual Studio. Agora, esses arquivos são instalados sob [INSTALLDIR] com correspondentes manifestos COM sem registro usados pelo processo de host do Visual Studio.
 * Como resultado, o código externo que se baseia no registro global de COM para interfaces COM do Visual Studio não encontrará esses registros. O código em execução dentro do processo do Visual Studio não verá uma diferença.
 
@@ -106,5 +106,5 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 
 * Código externo deve ser convertido para usar a ativação sem registro para componentes COM também.
 * Componentes externos podem encontrar o local do Visual Studio [seguindo as diretrizes aqui](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* É recomendável que componentes externos usam a [Gerenciador de configurações externas](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) em vez de ler/gravar diretamente para chaves de registro do Visual Studio.
+* É recomendável que componentes externos usam a [Gerenciador de configurações externas](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) em vez de ler/gravar diretamente para chaves de registro do Visual Studio.
 * Verifique se os componentes de que sua extensão está usando podem ter implementado outra técnica para o registro. Por exemplo, as extensões do depurador podem ser capazes de tirar proveito dos novos [msvsmon registro do arquivo JSON COM](migrate-debugger-COM-registration.md).

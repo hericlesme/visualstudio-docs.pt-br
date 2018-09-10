@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058598"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281670"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
 Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.  
@@ -41,7 +41,7 @@ Se você desejar depurar uma função de API do Windows que tenha os símbolos d
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Para obter o nome decorado, consulte [exibindo nomes decorados](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Para obter o nome decorado, consulte [exibindo nomes decorados](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Consulte também  
  [Perguntas frequentes do código nativo de depuração](../debugger/debugging-native-code-faqs.md)   

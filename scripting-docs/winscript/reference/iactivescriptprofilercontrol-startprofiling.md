@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724866"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281709"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Inicia a criação de perfil no mecanismo de script. O mecanismo de script cria uma instância do objeto profiler Fazendo uma chamada para [CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec).  
+Inicia a criação de perfil no mecanismo de script. O mecanismo de script cria uma instância do objeto criador de perfil, fazendo uma chamada para [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,10 +40,10 @@ HRESULT StartProfiling(
  [in] Identificador de classe (CLSID) do objeto criador de perfil a ser criado.  
   
  `dwEventMask`  
- [in] Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos em [enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos no [enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Um valor de 4 bytes que é passado para o objeto do criador de perfil.  
+ [in] Um valor de 4 bytes que é passado para o objeto de criador de perfil.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um HRESULT. Os valores possíveis são:  

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626108"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280631"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 O **Ferramentas > Opções > Depuração > geral** página permite que você defina as opções descritas neste artigo.
@@ -72,7 +72,7 @@ Condição 2 e 3, a exceção é às vezes detectada pelo código gerenciado em 
   
 - **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (c# e JavaScript somente)** executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos nas janelas variáveis. O resultado é exibido como uma cadeia de caracteres em vez do nome de tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Habilitar o suporte do servidor de origem** informa o depurador do Visual Studio para obter os arquivos de origem de servidores de origem que implementam o SrcSrv (`srcsrv.dll`) protocolo. Team Foundation Server e as ferramentas de depuração para Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte o [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) documentação. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Habilitar o suporte do servidor de origem** informa o depurador do Visual Studio para obter os arquivos de origem de servidores de origem que implementam o SrcSrv (`srcsrv.dll`) protocolo. Team Foundation Server e as ferramentas de depuração para Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte o [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) documentação. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Pois lendo *. PDB* arquivos pode executar código arbitrário em arquivos, certifique-se de que você confia no servidor.  

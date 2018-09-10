@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078635"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280669"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como: assinar novamente os manifestos de aplicativo e implantação
 Depois de fazer alterações às propriedades de implantação no manifesto do aplicativo para aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation (xbap) ou soluções do Office, você deve reassinar o aplicativo e manifestos de implantação com um certificado. Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.  
@@ -33,7 +33,7 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
  Outro cenário em que você pode assinar novamente os manifestos é quando desejam que seus clientes assinar o aplicativo e manifestos de implantação com seu próprio certificado.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Assinar novamente o aplicativo e manifestos de implantação  
- Este procedimento pressupõe que você já tem algumas alterações ao arquivo de manifesto de aplicativo (*. manifest*). Para obter mais informações, consulte [como: alterar as propriedades de implantação](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Este procedimento pressupõe que você já tem algumas alterações ao arquivo de manifesto de aplicativo (*. manifest*). Para obter mais informações, consulte [como: alterar as propriedades de implantação](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para assinar novamente o aplicativo e a implantação de manifestos com Mage.exe  
   

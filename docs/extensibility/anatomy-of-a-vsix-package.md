@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0279ffaf8f1024b4c11fb0689eed03f577e25a6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152442"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281748"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote VSIX
 Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual Studio, junto com os metadados do Visual Studio usa para classificar e instalar as extensões. Se os metadados está contido no manifesto do VSIX e o *[Content_Types]. XML* arquivo. Um pacote VSIX também pode conter um ou mais *Extension.vsixlangpack* arquivos para fornecer localizado texto da instalação e pode conter outros pacotes VSIX para instalar dependências.  
@@ -31,7 +31,7 @@ Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual 
 >  Os nomes dos arquivos incluídos em pacotes VSIX não devem incluir espaços nem caracteres reservados em identificadores de URI (Uniform Resource), como definido em [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>O manifesto do VSIX  
- O manifesto do VSIX contém informações sobre a extensão a ser instalado e segue o esquema de VSX. Para obter mais informações, consulte [referência de esquema 1.0 de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para um manifesto do VSIX de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ O manifesto do VSIX contém informações sobre a extensão a ser instalado e segue o esquema de VSX. Para obter mais informações, consulte [referência de esquema 1.0 de extensão do VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para um manifesto do VSIX de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  O manifesto do VSIX deve ser nomeado `extension.vsixmanifest` quando ele é incluído em um ^. VSIX * arquivo.  
   
@@ -46,7 +46,7 @@ Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual 
   
  Se um usuário tenta instalar uma extensão que tenha dependências, o instalador verifica se os assemblies necessários estão instalados no sistema de usuário. Se os assemblies necessários não foram encontrados **extensões e atualizações** exibe uma lista de assemblies ausentes.  
   
- Se o manifesto de extensão inclui um ou mais [referência](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elementos **extensões e atualizações** compara o manifesto de cada referência para as extensões que estão instalados no sistema e instala o extensão referenciada se ele não ainda estiver instalado. Se uma versão anterior de uma extensão referenciada estiver instalada, a versão mais recente substitui-lo.  
+ Se o manifesto de extensão inclui um ou mais [referência](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) elementos **extensões e atualizações** compara o manifesto de cada referência para as extensões que estão instalados no sistema e instala o extensão referenciada se ele não ainda estiver instalado. Se uma versão anterior de uma extensão referenciada estiver instalada, a versão mais recente substitui-lo.  
   
  Se um projeto em uma solução multiprojeto inclui uma referência a outro projeto na mesma solução, o pacote VSIX inclui as dependências do projeto. Você pode substituir esse comportamento clicando-se a referência para o projeto interno e, em seguida, no **propriedades** janela, definindo o **saída grupos incluídos no VSIX** propriedade `BuiltProjectOutputGroup`.  
   
@@ -55,7 +55,7 @@ Um pacote VSIX é um *VSIX* arquivo que contém um ou mais extensões do Visual 
 ## <a name="installation-location"></a>Local de instalação  
  Durante a instalação, **extensões e atualizações** procura o conteúdo do pacote VSIX em uma pasta sob *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Por padrão, a instalação se aplica somente ao usuário atual, pois *% LocalAppData %* é um diretório específico do usuário. No entanto, se você definir a [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento do manifesto para `True`, a extensão será instalada em *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* e estará disponível para todos os usuários do computador.  
+ Por padrão, a instalação se aplica somente ao usuário atual, pois *% LocalAppData %* é um diretório específico do usuário. No entanto, se você definir a [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento do manifesto para `True`, a extensão será instalada em *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* e estará disponível para todos os usuários do computador.  
   
 ## <a name="contenttypesxml"></a>[Content_Types]. XML  
  O *[Content_Types]. XML* arquivo identifica os tipos de arquivo expandido *VSIX* arquivo. Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o arquivo propriamente dito. Para obter mais informações sobre esse arquivo, consulte [a estrutura do arquivo [Content_types]. XML](the-structure-of-the-content-types-dot-xml-file.md).  

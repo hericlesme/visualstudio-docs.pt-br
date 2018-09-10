@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499384"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283451"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -230,7 +230,7 @@ Depois que sua classe de cliente de linguagem é implementada, você precisará 
 
 ### <a name="mef"></a>MEF
 
-O Visual Studio usa [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) para gerenciar seus pontos de extensibilidade. O [exportar](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) atributo indica para o Visual Studio que essa classe deve ser escolhida como um ponto de extensão e carregada no momento apropriado.
+O Visual Studio usa [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) para gerenciar seus pontos de extensibilidade. O [exportar](/dotnet/api/system.componentmodel.composition.exportattribute) atributo indica para o Visual Studio que essa classe deve ser escolhida como um ponto de extensão e carregada no momento apropriado.
 
 Para usar o MEF, você também deve definir o MEF como um ativo no manifesto do VSIX.
 

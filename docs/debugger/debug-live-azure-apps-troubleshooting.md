@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151999"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284101"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos para instantâneo de depuração no Visual Studio
 
@@ -42,7 +42,7 @@ Siga estas etapas:
 
 - Clique o **alterar configurações de símbolo...** link nesta página. No **depuração > símbolos** configurações, adicionar um diretório de cache de símbolo. Reinicie a depuração de instantâneo depois que o caminho do símbolo foi definido.
 
-   Os símbolos ou arquivos. PDB, disponíveis em seu projeto devem corresponder à sua implantação do serviço de aplicativo. A maioria das implantações (implantação por meio do Visual Studio, CI/CD com VSTS ou do Kudu, etc.) será publicar os arquivos de símbolo ao longo de seu serviço de aplicativo. Definir o diretório de cache de símbolo permite que o Visual Studio para usar esses símbolos.
+   Os símbolos ou arquivos. PDB, disponíveis em seu projeto devem corresponder à sua implantação do serviço de aplicativo. A maioria das implantações (implantação por meio do Visual Studio, CI/CD com Pipelines do Azure ou o Kudu, etc.) será publicar os arquivos de símbolo ao longo de seu serviço de aplicativo. Definir o diretório de cache de símbolo permite que o Visual Studio para usar esses símbolos.
 
    ![Configurações de símbolo](../debugger/media/snapshot-troubleshooting-symbol-settings.png "configurações de símbolo")
 

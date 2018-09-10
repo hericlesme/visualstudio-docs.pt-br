@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755879"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281020"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar arquivos de despejo com o Visual Studio
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arquivo de despejo; Localize os binários, do pdb e arquivo de origem para um arquivo de despejo.
@@ -55,7 +55,7 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
 
 -   O Visual Studio pode depurar arquivos de despejo de aplicativos nativos em dispositivos ARM. O Visual Studio também pode depurar arquivos de despejo de aplicativos gerenciados em dispositivos ARM, mas somente no depurador nativo.
 
--   Para depurar [modo de kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) arquivos de despejo, baixe as ferramentas de depuração para Windows que faz parte do [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   Para depurar [modo de kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) arquivos de despejo, baixe as ferramentas de depuração para Windows que faz parte do [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   O Visual Studio não pode depurar arquivos de despejo salvos no formato de despejo mais antigo conhecido como um [despejo completo do modo de usuário](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Observe que um despejo completo do modo de usuário não é igual a um despejo com heap.
 
@@ -114,5 +114,5 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
 ## <a name="see-also"></a>Consulte também
 
 - [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

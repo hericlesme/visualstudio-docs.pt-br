@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512285"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280877"
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 
-O **tarefas** janela se parece com o **Threads** janela, exceto que mostra informações sobre <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), ou [WinJS. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objetos em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread.
+O **tarefas** janela se parece com o **Threads** janela, exceto que mostra informações sobre <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), ou [WinJS. Promise ](/previous-versions/windows/apps/br211867(v=win.10)) objetos em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread.
 
 No código gerenciado, você pode usar o **tarefas** janela quando você trabalha com <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos ou com o **await** e **async** palavras-chave (**Await** e **Async** no Visual Basic). Para obter mais informações sobre as tarefas no código gerenciado, consulte [programação paralela](/dotnet/standard/parallel-programming/index).
 
 No código nativo, você pode usar o **tarefas** janela quando você trabalha com [grupos de tarefas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmos em paralelo](/cpp/parallel/concrt/parallel-algorithms), [agentes assíncronos](/cpp/parallel/concrt/asynchronous-agents), e [tarefas leves](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Para obter mais informações sobre as tarefas no código nativo, consulte [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime).
 
-No JavaScript, você pode usar a janela tarefas quando você estiver trabalhando com a promessa `.then` código. Ver [programação assíncrona em JavaScript (aplicativos UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.
+No JavaScript, você pode usar a janela tarefas quando você estiver trabalhando com a promessa `.then` código. Ver [programação assíncrona em JavaScript (aplicativos UWP)](/previous-versions/windows/apps/hh700330(v=win.10)) para obter mais informações.
 
 Você pode usar o **tarefas** janela sempre que você invadir o depurador. Você pode acessá-lo na **Debug** menu clicando **Windows** e, em seguida, clicando em **tarefas**. A ilustração a seguir mostra a **tarefas** janela no modo padrão.
 

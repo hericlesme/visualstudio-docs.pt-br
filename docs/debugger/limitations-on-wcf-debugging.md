@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058517"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280644"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 Há três modos de começar a depuração de um serviço WCF:  
@@ -63,7 +63,7 @@ Há três modos de começar a depuração de um serviço WCF:
   
 -   O serviço deve fazer parte da solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que você está depurando.  
   
--   O serviço deve ser hospedado. Ele pode fazer parte de um projeto do site (Sistema de Arquivos e HTTP), projeto de aplicativo Web (Sistema de Arquivos e HTTP) ou projeto da biblioteca de serviço WCF. Os projetos da biblioteca de serviço WCF podem ser bibliotecas de serviço ou bibliotecas de serviço de fluxo de trabalho.  
+-   O serviço deve ser hospedado. Pode ser parte de um projeto de Site da Web (sistema de arquivos e HTTP), o projeto de aplicativo Web (sistema de arquivos e HTTP) ou o projeto da biblioteca de serviço do WCF. Os projetos da biblioteca de serviço WCF podem ser bibliotecas de serviço ou bibliotecas de serviço de fluxo de trabalho.  
   
 -   O serviço deve ser chamado de um cliente WCF.  
   

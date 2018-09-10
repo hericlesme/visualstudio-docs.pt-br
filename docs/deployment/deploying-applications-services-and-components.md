@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231220"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279109"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guia de início rápido: Introdução à implantação no Visual Studio
 
@@ -114,7 +114,7 @@ Você pode habilitar o desenvolvimento e testes Implantando seus aplicativos em 
 
 ## <a name="devops-deployment"></a>Implantação de DevOps
 
-Em um ambiente de equipe, você pode usar o Visual Studio Team Services (VSTS) para habilitar a implantação contínua do seu aplicativo. Para obter mais informações, consulte [Build e versão](/vsts/build-release/index) e [implantar no Azure](/vsts/deploy-azure/index).
+Em um ambiente de equipe, você pode usar Pipelines do Azure para habilitar a implantação contínua do seu aplicativo. Para obter mais informações, consulte [Pipelines do Azure](/azure/devops/pipelines/index) e [implantar no Azure](/azure/devops/deploy-azure/index).
 
 ## <a name="deployment-for-other-app-types"></a>Implantação para outros tipos de aplicativos
 
@@ -122,7 +122,7 @@ Em um ambiente de equipe, você pode usar o Visual Studio Team Services (VSTS) p
 | --- | --- | --- |
 | **Aplicativo do Office** | Você pode publicar um suplemento do Office no Visual Studio. | [Implantar e publicar seu suplemento do Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Serviço WCF ou OData**  | Outros aplicativos podem usar os serviços RIA WCF que você implanta em um servidor web. | [Desenvolvendo e implantando WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | O LightSwitch não é mais suportado no Visual Studio 2017, mas ainda pode ser implantado do Visual Studio 2015 e anteriores. | [Implantando aplicativos do LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | O LightSwitch não é mais suportado no Visual Studio 2017, mas ainda pode ser implantado do Visual Studio 2015 e anteriores. | [Implantando aplicativos do LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
 
 ## <a name="next-steps"></a>Próximas etapas
 

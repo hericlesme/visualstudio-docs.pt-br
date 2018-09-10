@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178381"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281527"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um serviço de dados do WCF com WPF e Entity Framework
 Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que é hospedado em um [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo web e, em seguida, acessá-lo de um aplicativo Windows Forms.
@@ -106,7 +106,7 @@ A próxima etapa, você criará um [!INCLUDE[adonet_edm](../data-tools/includes/
 7.  No **escolha sua versão** , escolha o **Entity Framework 5.0** botão de opção e, em seguida, escolha o **próxima** botão.
 
     > [!NOTE]
-    >  Para usar a versão mais recente do Entity Framework 6 com os serviços WCF, você precisará instalar o pacote NuGet de provedor do WCF Data Services Entity Framework. Ver [usar o WCF Data Services 5.6.0 com o Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Para usar a versão mais recente do Entity Framework 6 com os serviços WCF, você precisará instalar o pacote NuGet de provedor do WCF Data Services Entity Framework. Ver [usar o WCF Data Services 5.6.0 com o Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  No **Choose Your Database Objects** página, expanda o **tabelas** nó, selecione o **clientes** caixa de seleção e, em seguida, escolha o **concluir** botão.
 

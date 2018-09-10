@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326108"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283529"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar e depurar soluções do SharePoint
   Em geral, compilando e depurando soluções do SharePoint é o mesmo que a compilação e depuração de outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Os tópicos nesta seção explicam as diferenças que existem.  
@@ -44,8 +44,8 @@ ms.locfileid: "36326108"
 ## <a name="debug-and-test-sharepoint-solutions"></a>Depurar e testar soluções do SharePoint
  Antes de depurar, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia o *. wsp* pacote ao servidor do SharePoint, ativa o Site e os recursos no escopo da Web e, em alguns casos, inicia o projeto. Em outros casos, talvez você precise abrir o projeto manualmente. Para obter mais informações, consulte [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md) e [soluções do SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Depurar e verifique se a soluções do SharePoint com o uso de recursos do ALM
- Recursos do Visual Studio ALM, como testes de unidade e o IntelliTrace permitem que você mais precisa identificar problemas em suas soluções do SharePoint. Criação de perfil permite que você localizar e identificar áreas de problema de desempenho em suas soluções do SharePoint. Para obter mais informações, consulte [Verificando e depurando código do SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) e [criação de perfil de desempenho de aplicativos do SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Depurar e verifique se a soluções do SharePoint usando recursos de serviços de DevOps do Azure
+ Recursos de serviços de DevOps do Azure, como testes de unidade e o IntelliTrace permitem que você mais precisa identificar problemas em suas soluções do SharePoint. Criação de perfil permite que você localizar e identificar áreas de problema de desempenho em suas soluções do SharePoint. Para obter mais informações, consulte [Verificando e depurando código do SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) e [criação de perfil de desempenho de aplicativos do SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
   
 ## <a name="security-during-the-build-process"></a>Segurança durante o processo de compilação
  Para empacotar ou implantar soluções do SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] deve ter permissão para copiar arquivos para o servidor do SharePoint. Você deve executar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] como um processo elevado e seu usuário de conta deve ser um administrador de coleções de sites no servidor do SharePoint. Além disso, você deve especificar se o seu projeto é uma solução em área restrita ou uma solução de farm. Para obter mais informações, consulte [diferenças entre em modo seguro e soluções de Farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  

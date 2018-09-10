@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670226"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279531"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 Um thread é uma sequência de instruções para que o sistema operacional aloque tempo no processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.  
@@ -95,7 +95,7 @@ Depurar um aplicativo com vários thread que tenha uma interface de usuário pod
  [Threading](/dotnet/standard/threading/index)  
  Conceitos de segmentação na programação de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], incluindo o código de exemplo.  
   
- [Multithreading em componentes](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Multithreading em componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Como usar multithreading em componentes de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  [Suporte de multithreading para código anterior (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

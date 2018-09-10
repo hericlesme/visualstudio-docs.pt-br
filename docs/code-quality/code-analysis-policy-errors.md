@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175885"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278914"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 Os seguintes erros ocorrem se a política de análise de código não for atendida no check-in:
 
  **As configurações de análise de código para um ou mais projetos não são compatíveis com a política de análise de código.**
 
- Os requisitos de análise de código fazer check-in para o controle de fonte do projeto de equipe não foi atendida para um ou mais projetos de código. Esse erro pode ser causado por uma ou mais das seguintes condições:
+ Os requisitos de análise de código fazer check-in para o controle de código-fonte do projeto não foi atendida para um ou mais projetos de código. Esse erro pode ser causado por uma ou mais das seguintes condições:
 
 1.  Análise de código não está habilitada na compilação para todos os projetos na solução.
 
-2.  A regra local definida para o projeto no Visual Studio tem menos restritivo **ação** configuração do que a regra de projeto de equipe, por exemplo, definir uma regra que é definida como **ação**=**erro**  no servidor tem sua **ação** definido como **aviso** ou **nenhum** na regra definida que está sendo executado no Visual Studio).
+2.  A regra local definida para o projeto no Visual Studio tem menos restritivo **ação** configuração do que a regra de projeto, por exemplo, definir uma regra que é definida como **ação**=**erro** no servidor tem sua **ação** definido como **aviso** ou **nenhum** na regra definida que está sendo executado no Visual Studio).
 
-3.  A regra no conjunto especificada no Visual Studio não contém todas as regras que são especificadas na regra de conjunto especificada na análise de código check-in política de projeto de equipe.
+3.  A regra no conjunto especificada no Visual Studio não contém todas as regras que são especificadas na regra definir especificada na análise de código check-in de política para o projeto.
 
  **A política de análise de código falha. Há erros no projeto {0} ou a compilação não está atualizada.**
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512051"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280073"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
@@ -34,7 +34,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
  Embora a análise de quadro seja primordialmente pensada para ajudá-lo a alcançar um desempenho de renderização mais rápido, ela também pode ajudá-lo a atingir uma qualidade visual aprimorada para um determinado destino de desempenho ou reduzir o consumo de energia de GPU.  
   
- Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
+ Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Usando a análise de quadro  
  Antes de usar a análise de quadro, você precisa capturar informações gráficas de seu aplicativo enquanto ele é executado, exatamente como você faria ao usar qualquer uma das ferramentas do analisador de gráficos. Em seguida, na janela de documento (. vsglog) do log de gráficos, escolha o **análise de quadros** guia.  
@@ -72,14 +72,14 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="timeline"></a>Linha do tempo  
  A linha do tempo mostra uma visão geral dos horários de chamadas de desenho em relação umas às outras. Como barras maiores correspondem a horários de desenho maiores, você pode usá-las para localizar rapidamente as chamadas de desenho mais custosas no quadro. Quando o quadro capturado contiver um número muito grande de chamadas de desenho, diversas chamadas de desenho são combinadas em uma única barra, cujo comprimento é a soma dessas chamadas de desenho.  
   
- ![A linha do tempo mostra o desenho&#45;chamar os custos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![A linha do tempo mostra o desenho&#45;chamar os custos. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Você pode deixar o ponteiro sobre uma barra para ver a qual evento de chamada de desenho a barra corresponde. Escolher a barra faz com que a lista de eventos seja sincronizada com esse evento.  
   
 #### <a name="table"></a>Tabela  
  A tabela de números abaixo da linha do tempo mostra o desempenho relativo de cada variante de renderização para cada chamada de desenho em relação à renderização padrão do seu aplicativo. Cada coluna exibe uma variante de renderização diferente e cada linha representa uma chamada de desenho diferente identificada na coluna mais à esquerda; a partir daí, é possível seguir um link até o evento na janela Lista de Eventos de Gráficos.  
   
- ![A tabela de resumo mostra as variantes diferentes. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![A tabela de resumo mostra as variantes diferentes. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  A segunda coluna mais à esquerda na Tabela de Resumo exibe o horário de renderização de linha de base de seu aplicativo, ou seja, a quantidade de tempo necessária para que a renderização padrão do seu aplicativo conclua a chamada de desenho. As colunas restantes mostram o desempenho relativo de cada variante de renderização como uma porcentagem da linha de base de forma que facilite ver se o desempenho foi aprimorado. Porcentagens superiores a 100% levam mais tempo do que a linha de base, ou seja, o desempenho foi reduzido; porcentagens inferiores a 100% levam menos tempo, indicando que o desempenho foi aumentado.  
   
@@ -88,7 +88,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="hot-draw-calls"></a>Chamadas de desenho "ativas"  
  Para chamar atenção para chamadas de desenho que consomem uma proporção maior do tempo de renderização geral ou que podem ser incomumente mais lentas por motivos que podem ser evitados, a linha que contém essas chamadas de desenho "ativas" é exibida em vermelho quando seu horário de linha de base tem mais de um desvio padrão em relação ao horário de linha de base médio de todas as chamadas de desenho no quadro.  
   
- ![Essa chamada DrawIndexed tem variantes quentes e frios. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Essa chamada DrawIndexed tem variantes quentes e frios. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Significância estatística  
  Para chamar atenção para as variações de renderização que possuem maior relevância, a Análise de Quadro determina a significância estatística de cada variante de renderização e exibe aquelas de são significativas em negrito. Aquelas que aprimoram o desempenho são exibidas em verde, e as que reduzem o desempenho, em vermelho. Os resultados que não são estatisticamente significativos são exibidos em fonte normal.  
@@ -103,12 +103,12 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plataformas que não oferecem suporte a contadores de hardware  
  A maioria das plataformas não oferece suporte completo a contadores de GPU de hardware; isso inclui todas as GPUs oferecidas atualmente pela Intel, AMD e nVidia. Quando não há contadores de hardware para coleta, somente uma tabela de Detalhes é exibida, e ela contém o horário absoluto médio de todas as variantes.  
   
- ![A tabela de detalhes e algumas variantes de reprodução. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![A tabela de detalhes e algumas variantes de reprodução. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plataformas que oferecem suporte a contadores de hardware  
  No caso de plataformas que oferecem suporte a contadores de GPU de hardware, por exemplo, SOC da nVidia T40 e todos os SOCs da Qualcomm, diversas tabelas de Detalhes são exibidas, uma para cada variante. Cada contador de hardware disponível é coletado para cada variante de renderização e exibido em sua própria tabela de Detalhes.  
   
- ![Contadores de hardware são exibidos quando houver suporte. ] (media/pix_frame.png "pix_frame")  
+ ![Contadores de hardware são exibidos quando houver suporte. ](media/pix_frame.png "pix_frame")  
   
  As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de gargalos de desempenho de maneira bastante precisa.  
   

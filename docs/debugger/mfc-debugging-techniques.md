@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059238"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282997"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.  
@@ -83,7 +83,7 @@ _asm int 3
  [Neste tópico](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> A macro TRACE  
- Para exibir mensagens de seu programa no depurador [janela de saída](../ide/reference/output-window.md), você pode usar o [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro ou o MFC [rastreamento](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Como o [asserções](../debugger/c-cpp-assertions.md), as macros de rastreamento estão ativas somente na versão de depuração do seu programa e desaparecem quando compiladas na versão de lançamento.  
+ Para exibir mensagens de seu programa no depurador [janela de saída](../ide/reference/output-window.md), você pode usar o [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro ou o MFC [rastreamento](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Como o [asserções](../debugger/c-cpp-assertions.md), as macros de rastreamento estão ativas somente na versão de depuração do seu programa e desaparecem quando compiladas na versão de lançamento.  
   
  Os exemplos a seguir mostram algumas das maneiras como você pode usar o **rastreamento** macro. Como o `printf`, o **rastreamento** macro pode lidar com um número de argumentos.  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  O MFC fornece classes e funções para detectar a memória alocada, mas nunca desalocada.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Acompanhando alocações de memória  
- No MFC, você pode usar a macro [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) em vez da **novos** perdas de operador para ajudar a localizar a memória. Na versão de depuração do programa, o `DEBUG_NEW` controla o nome de arquivo e o número de linha para cada objeto que aloca. Quando você compila uma versão de lançamento do seu programa `DEBUG_NEW` resolve para um simples **nova** operação sem os nome e a linha número informações do arquivo. Dessa forma, você não paga penalidade de velocidade da versão de lançamento do programa.  
+ No MFC, você pode usar a macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) em vez da **novos** perdas de operador para ajudar a localizar a memória. Na versão de depuração do programa, o `DEBUG_NEW` controla o nome de arquivo e o número de linha para cada objeto que aloca. Quando você compila uma versão de lançamento do seu programa `DEBUG_NEW` resolve para um simples **nova** operação sem os nome e a linha número informações do arquivo. Dessa forma, você não paga penalidade de velocidade da versão de lançamento do programa.  
   
  Se você não deseja reescrever o programa inteiro para usar `DEBUG_NEW` em vez de **nova**, você pode definir essa macro nos arquivos de origem:  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Para habilitar ou desabilitar o diagnóstico de memória**  
   
--   Chame a função global [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar ou desabilitar o alocador de diagnóstico de memória. Como o diagnóstico de memória é ativado por padrão na biblioteca de depuração, você normalmente usará essa função para desativá-la temporariamente, o que aumenta a velocidade de execução do programa e reduz a saída de diagnóstico.  
+-   Chame a função global [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar ou desabilitar o alocador de diagnóstico de memória. Como o diagnóstico de memória é ativado por padrão na biblioteca de depuração, você normalmente usará essa função para desativá-la temporariamente, o que aumenta a velocidade de execução do programa e reduz a saída de diagnóstico.  
   
  **Para selecionar os recursos de diagnóstico de memória específicos com afxMemDF**  
   
--   Se você quiser um controle mais preciso sobre os recursos de diagnóstico de memória, você pode seletivamente ativar recursos de diagnóstico de memória individuais e desativar, definindo o valor da variável global MFC [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Essa variável pode ter os seguintes valores conforme especificado pelo tipo enumerado **afxMemDF**.  
+-   Se você quiser um controle mais preciso sobre os recursos de diagnóstico de memória, você pode seletivamente ativar recursos de diagnóstico de memória individuais e desativar, definindo o valor da variável global MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Essa variável pode ter os seguintes valores conforme especificado pelo tipo enumerado **afxMemDF**.  
   
     |Valor|Descrição|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tirar instantâneos de memória  
   
-1.  Criar uma [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objeto e a chamada a [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) função de membro. Isso cria o primeiro instantâneo de memória.  
+1.  Criar uma [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) objeto e a chamada a [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) função de membro. Isso cria o primeiro instantâneo de memória.  
   
 2.  Depois que seu programa executar as operações de alocação e desalocação de memória, crie outro objeto `CMemoryState` e chame `Checkpoint` para esse objeto. Isso obtém um segundo instantâneo do uso da memória.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  No  **\<projeto > páginas de propriedades** caixa de diálogo, clique o **Configuration Manager** botão.  
   
-    2.  No [caixa de diálogo do Configuration Manager](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), localize seu projeto na grade. No **Configuration** coluna, selecione  **\<novo... >**.  
+    2.  No [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. No **Configuration** coluna, selecione  **\<novo... >**.  
   
-    3.  No [caixa de diálogo nova configuração de projeto](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), digite um nome para a nova configuração, como "Depuração parcial", o **nome de configuração do projeto** caixa.  
+    3.  No [caixa de diálogo nova configuração de projeto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), digite um nome para a nova configuração, como "Depuração parcial", o **nome de configuração do projeto** caixa.  
   
     4.  No **copiar configurações de** , escolha **versão**.  
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 10a5883e655fc5ee8a37bbe61f531b6b266ebb55
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077926"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281879"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Implantar pré-requisitos para aplicativos de 64 bits
 A implantação do ClickOnce oferece suporte à instalação de aplicativos em plataformas de 64 bits. As plataformas de destino são **x86** para plataformas de 32 bits **x64** para máquinas compatíveis com os conjuntos de instruções AMD64 e EM64T e **Itanium** para o processador de Itanium de 64 bits.  
@@ -46,4 +46,4 @@ A implantação do ClickOnce oferece suporte à instalação de aplicativos em p
 ## <a name="see-also"></a>Consulte também  
  [Implantar aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md)   
  [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Aplicativos de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps)
