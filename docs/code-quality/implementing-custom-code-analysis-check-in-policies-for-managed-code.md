@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281449"
+ms.locfileid: "44321093"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar políticas de check-in de análise de código personalizadas para código gerenciado
 
@@ -60,7 +60,7 @@ Para criar uma regra personalizada definida para um projeto de DevOps do Azure, 
 
 1. Na **Gerenciador de controle do código-fonte**, clique com botão direito na nova pasta e, em seguida, clique em **adicionar itens à pasta**.
 
-     Para obter mais informações, consulte [Git e repositórios Azure](/azure/devops/repos/git/overview).
+     Para obter mais informações, consulte [Git e repositórios Azure](/azure/devops/repos/git/overview?view=vsts).
 
 2. Clique em que a regra definir o arquivo que você criou e clique **concluir**.
 

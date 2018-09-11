@@ -9,18 +9,18 @@ description: Saiba mais sobre o benefício de Suporte Prioritário incluído nas
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567149"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289363"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Suporte Prioritário em assinaturas do Visual Studio
 
 O benefício de Suporte Prioritário fornece acesso a uma variedade de fóruns da comunidade de suporte em que você pode pesquisar postagens existentes ou fazer novas perguntas.  Se a comunidade não responder sua dúvida dentro de dois dias, a equipe de suporte da Microsoft fornecerá uma resposta.
 
-Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados para receber suporte prioritário por meio de um grande número de fóruns que abrangem diversos tópicos.
+Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados para receber suporte prioritário por meio de um grande número de fóruns que abrangem diversos tópicos.  Clique em qualquer um dos links abaixo para ir diretamente para esse fórum.  
 
 ## <a name="included-forums"></a>Fóruns incluídos
 

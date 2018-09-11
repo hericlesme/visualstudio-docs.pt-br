@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284127"
+ms.locfileid: "44321249"
 ---
 # <a name="using-the-code-metrics-results-window"></a>Usando a janela de resultados de métricas de código
 
@@ -102,9 +102,9 @@ Você pode selecionar e copiar uma linha de dados de métricas de código seleci
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>Criando um item de trabalho com base nos resultados de métricas de código
 
-Você pode criar uma [Azure quadros](/azure/devops/boards/index) resulta de item de trabalho que se baseia na **resultados de métricas de código** janela. Quando o item de trabalho é criado, o Visual Studio entra automaticamente em um título a **Title** dados de métricas de campo e o código sob o **histórico** guia.
+Você pode criar uma [Azure quadros](/azure/devops/boards/index?view=vsts) resulta de item de trabalho que se baseia na **resultados de métricas de código** janela. Quando o item de trabalho é criado, o Visual Studio entra automaticamente em um título a **Title** dados de métricas de campo e o código sob o **histórico** guia.
 
-Para obter mais informações sobre os quadros de Azure itens de trabalho, consulte [itens de trabalho](/azure/devops/boards/work-items/index).
+Para obter mais informações sobre os quadros de Azure itens de trabalho, consulte [itens de trabalho](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para criar um item de trabalho com base em um resultado
 

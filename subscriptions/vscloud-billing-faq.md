@@ -9,12 +9,12 @@ description: Perguntas sobre cobrança para assinaturas de nuvem.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303316"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289425"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 
@@ -26,9 +26,9 @@ ms.locfileid: "36303316"
 R: Não. Todas as assinaturas de nuvem do Visual Studio precisam ser compradas usando uma assinatura do Azure. (Considere isso como sua conta de cobrança do Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>P: Quais tipos de assinaturas do Azure podem ser usadas para comprar assinaturas de nuvem do Visual Studio?
-R: Quase todas as assinaturas do Azure podem ser usadas. São permitidas as assinaturas do Azure conectadas ao [EA (Contrato Enterprise)](https://azure.microsoft.com/pricing/enterprise-agreement/), as assinaturas do Azure configuradas por CSPs (Provedores de Soluções na Nuvem), as assinaturas do Azure configuradas por meio de revendedores do Microsoft Open License, as assinaturas do Azure pagas conforme o uso e até mesmo as assinaturas do Azure que os assinantes do Visual Studio configuram como um benefício do assinante (mas não é possível usar o crédito mensal para pagar por mais assinaturas do Visual Studio).
+R: A maioria das assinaturas do Azure podem ser usadas – damos suporte a assinaturas do Azure conectadas ao seu [EA (Enterprise Agreement)](https://azure.microsoft.com/pricing/enterprise-agreement/), assinaturas do Azure configuradas por CSPs (provedores de solução de nuvem), assinaturas do Azure configuradas por meio de revendedores Microsoft Open License e assinaturas do Azure pagas conforme o uso.
 
-A única exceção notável é que não é possível usar a [Avaliação gratuita do Azure](https://azure.microsoft.com/pricing/free-trial/).
+Alguns tipos de assinaturas do Azure, incluindo a [avaliação gratuita do Azure](https://azure.microsoft.com/pricing/free-trial/) e as assinaturas incluídas como benefícios do assinante nas assinaturas do Visual Studio, não podem ser usadas.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>P: É necessário comprar outros serviços do Azure?
 R: Não. Se você quiser comprar somente assinaturas de nuvem do Visual Studio por meio do Azure, você poderá fazer isso.

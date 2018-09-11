@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício do suporte técnico incluído na ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326922"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289361"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -23,7 +23,8 @@ Resolva problemas de reparo em ambientes que não são de produção. (O benefí
    > [!NOTE]
    > Nem todas as assinaturas de um determinado nível são elegíveis para receber incidentes de suporte. As assinaturas adquiridas por meio do FTE, do NFR, do MPN, do MCT e de outros programas não recebem incidentes de suporte. Se sua assinatura não for elegível para receber os incidentes de suporte técnico, o bloco Suporte Técnico não aparecerá em seus benefícios disponíveis.
 
-   ![Bloco do benefício do Suporte Técnico](_img\vs-tech-support\vs-tech-support-tile.png)
+> [!div class="mx-imgBorder"]
+> ![Bloco do benefício do Suporte Técnico](_img\vs-tech-support\vs-tech-support-tile.png)
 
 
 1.  Para começar a usar seu benefício Suporte Técnico, clique em **Conversar para ativar** no bloco Suporte Técnico. 
@@ -31,8 +32,8 @@ Resolva problemas de reparo em ambientes que não são de produção. (O benefí
 3.  Para concluir o processo, será necessário fornecer ao representante:
     - O endereço de email usado para entrar em sua assinatura
     - A ID de assinatura, que pode ser encontrada na guia [Assinaturas](https://my.visualstudio.com/subscriptions).
-
-    ![Benefício do suporte técnico: encontrar a ID da assinatura](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
     > [!NOTE]
@@ -46,11 +47,13 @@ Quando a ID do Contrato e a ID do Acesso estiverem configuradas e você precisar
 ### <a name="submit-an-incident-online"></a>Enviar um incidente online
 
 1.  Para [enviar um incidente online](http://support.microsoft.com/oas/), especifique o produto com o qual você precisa de ajuda. Você pode selecioná-lo nas várias listas ou pesquisá-lo pelo nome. Para enviar um incidente do Visual Studio Enterprise 2017, por exemplo, clique em **Visual Studio** no grupo **Ferramentas para Desenvolvedores**.
-    ![Benefício do Suporte Técnico – selecionar o produto do incidente](_img\vs-tech-support\vs-tech-support-select-product.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Benefício do Suporte Técnico – selecionar o produto do incidente](_img\vs-tech-support\vs-tech-support-select-product.png)
 
 2.  Escolha o produto para o qual você precisa de suporte. (Por exemplo, clique em **Visual Studio Enterprise 2017** na lista de produtos do Visual Studio.)
 3.  Na página **Criar um incidente**, selecione o tipo de problema aplicável na lista suspensa. Para nosso exemplo, vamos escolher **IDE (Ambiente de Desenvolvimento Integrado)**.
-    ![Benefício do suporte técnico: criar incidente](_img\vs-tech-support\vs-tech-support-create-incident.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Benefício do suporte técnico: criar incidente](_img\vs-tech-support\vs-tech-support-create-incident.png)
 
 4.  Em seguida, escolha a **Categoria** que melhor atende à sua dúvida/problema. Para nosso exemplo, vamos escolher **Ferramentas de arquiteto.**
 5.  Clique em **Iniciar Solicitação**.
@@ -60,7 +63,8 @@ Quando a ID do Contrato e a ID do Acesso estiverem configuradas e você precisar
     - Insira a ID de acesso e a ID do contrato
     - Clique em **Adicionar**
 7.  Após adicionar o contrato de suporte, ele aparecerá na lista de contratos de suporte profissional. Escolha-o e clique em **Continuar**.
-     ![Benefício do suporte técnico: pagamento](_img\vs-tech-support\vs-tech-support-payment.png)
+    > [!div class="mx-imgBorder"]     
+    > ![Benefício do suporte técnico: pagamento](_img\vs-tech-support\vs-tech-support-payment.png)
 
 8.  Forneça as informações de contato e o método de contato preferencial e clique em **Continuar**.
 9.  Forneça um título para o incidente de suporte e descreva o problema.

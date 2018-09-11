@@ -1,28 +1,28 @@
 ---
 title: EditorConfig
 description: Usando um arquivo editorconfig para habilitar estilos de codificação de projeto consistentes no Visual Studio para Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 336ec5ef0779bcd67302bea7b51851dced531a7d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
+ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957383"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "43223997"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Criando e editando um arquivo EditorConfig personalizado
 
-No Visual Studio para Mac, você pode adicionar um arquivo [EditorConfig](http://editorconfig.org/) ao seu projeto ou base de código para impor estilos de codificação consistente para todas as pessoas que trabalham na base de código. As configurações declaradas no arquivo EditorConfig têm precedência sobre as configurações do editor de texto globais do Visual Studio. Usar EditorConfig dentro de seu projeto ou base de código permite que você defina o estilo de codificação, as preferências e os avisos para seu projeto. Isso torna mais fácil para todos os usuários do Visual Studio para Mac aderirem às práticas de codificação de um projeto.
+No Visual Studio para Mac, você pode adicionar um arquivo [EditorConfig](http://editorconfig.org/) ao seu projeto ou solução para impor estilos de codificação consistente para todas as pessoas que trabalham na base de código. As configurações declaradas no arquivo EditorConfig têm precedência sobre as configurações do editor de texto globais do Visual Studio para Mac. Usar um arquivo do EditorConfig dentro de seu projeto ou base de código permite que você defina o estilo de codificação, as preferências e os avisos para seu projeto. Devido ao arquivo fazer parte de sua base de código, ele facilita para todos os usuários a adesão às práticas de codificação de um projeto, independentemente do IDE ou editor de código que eles usam.
 
 Arquivos [EditorConfig](http://editorconfig.org/) são compatíveis com muitos editores de código e IDEs, incluindo o Visual Studio 2017. 
 
 ## <a name="supported-settings"></a>Configurações com suporte
 
-O editor no Visual Studio é compatível com o conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
+O editor no Visual Studio para Mac é compatível com o conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
 
 - `indent_style`
 - `indent_size`
@@ -33,19 +33,25 @@ O editor no Visual Studio é compatível com o conjunto principal de [propriedad
 - `insert_final_newline`
 - `root`
 
-EditorConfig também dá suporte à [Formatação de estilo de código](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) em C#.
+O EditorConfig também dá suporte a [convenções de codificação](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) em C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>Adicionar um arquivo EditorConfig a um projeto
 
 ### <a name="adding-a-new-editorconfig-file"></a>Adicionando um novo arquivo EditorConfig
 
-1. Abra seu projeto no Visual Studio para Mac. Selecione o nó do projeto ao qual deseja adicionar arquivos.
+1. Abra seu projeto no Visual Studio para Mac. Selecione o nó de solução ou do projeto ao qual você deseja adicionar o arquivo EditorConfig. Adicionar o arquivo ao diretório da solução aplica as configurações de .editorconfig a todos os projetos na solução. 
 
-2. Com o nó do projeto selecionado, vá até **Arquivo > Novo Arquivo…** na barra de menus para abrir a caixa de diálogo **Novo Arquivo**.
+2. Clique com o botão direito do mouse no nó e selecione **Adicionar > Novo Arquivo...** para abrir a caixa de diálogo **Novo Arquivo**:
+
+    ![Itens de menu de conteúdo](media/editorconfig-image0.png)
 
 3. Escolha **Diversos > Arquivo de Texto Vazio** e dê a ele um **Nome** `.editorconfig`. Pressione **Novo** para criar o arquivo e abri-lo no editor:
 
     ![Caixa de diálogo Novo Arquivo](media/editorconfig-image1.png)
+
+    Adicionar o item no nível da solução automaticamente cria e aninha-o em uma pasta **Itens de Solução**:
+
+    ![O item de solução é exibido no painel de soluções](media/editorconfig-image1a.png)
 
 4. Edite o arquivo. Por exemplo:
 
@@ -64,28 +70,40 @@ EditorConfig também dá suporte à [Formatação de estilo de código](https://
     csharp_new_line_before_open_brace = none
     ```
 
-4. Adicionar o arquivo não atualiza automaticamente as configurações. Para refletir as configurações do arquivo `.editorconfig`, selecione o nó do projeto e escolha **Editar > Formatar > Formatar Documento** na barra de menus:
+4. As configurações do arquivo `.editorconfig` serão aplicadas a qualquer novo código que você escrever, mas o código existente talvez precise ser reformatado para ser consistente com as novas configurações. Para aplicar as configurações do arquivo `.editorconfig` a um arquivo de origem existente, abra o arquivo e escolha **Editar > Formatar > Formatar Documento** na barra de menus:
 
     ![Item de menu Formatar Documento](media/editorconfig-image2.png)
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Adicionando um arquivo EditorConfig existente
 
-Se estiver trabalhando com um projeto ou solução que já contém um arquivo `.editorconfig`, você não precisará fazer para aplicar as configurações. Novas linhas de código serão formatadas de acordo com as configurações de EditorConfig. Observe que, enquanto o Visual Studio para Mac respeita arquivos `.editorconfig` no nível da solução, eles podem não aparecer no Painel de Soluções porque arquivos que começam com `.` são arquivos ocultos no macOS.
+Se estiver trabalhando com um projeto ou solução que já contém um arquivo `.editorconfig`, você não precisará fazer para aplicar as configurações. Novas linhas de código serão formatadas de acordo com as configurações de EditorConfig. 
 
-Talvez você queira reutilizar um arquivo `.editorconfig` existente em seu projeto. Para adicionar um arquivo existente, primeiro você precisará exibir arquivos ocultos no Localizador digitando o seguinte comando no **Terminal**:
+Talvez você queira reutilizar um arquivo `.editorconfig` existente em seu projeto. Para adicionar um arquivo existente, faça o seguinte:
 
-```bash
-$ defaults write com.apple.Finder AppleShowAllFiles true
-$ killall Finder
-```
+1. Clique com o botão direito do mouse na pasta que você deseja adicionar a e selecione **Adicionar > Adicionar Arquivos...**.
 
-Quando o arquivo `.editorconfig` estiver visível, arraste-o para o nó do projeto. Quando vir a seguinte caixa de diálogo, selecione a opção **Copiar o arquivo para o diretório** e selecione **OK**:
+2. Navegue até o diretório do arquivo necessário. 
 
-![Item de menu Formatar Documento](media/editorconfig-image3.png)
+3. Arquivos começando com `.` (tais como `.editorconfig`) são arquivos ocultos no macOS, então pressione **Command + Shift + .** para tornar o arquivo `.editorconfig` visível.
 
-Para refletir as configurações do arquivo `.editorconfig`, selecione o nó do projeto e escolha **Editar > Formatar > Formatar Documento** na barra de menus.
+4. Selecione o arquivo `.editorconfig` e clique em **Abrir**:
+
+    ![janela adicionando um novo campo](media/editorconfig-image3b.png)
+
+5. Quando vir a seguinte caixa de diálogo, selecione a opção **Copiar o arquivo para o diretório** e selecione **OK**:
+
+    ![Opções da caixa de diálogo Adicionar arquivo à pasta](media/editorconfig-image3.png)
+
+### <a name="reflecting-editorconfig-settings"></a>Refletindo as configurações de .editorconfig
+
+Depois de adicionar um arquivo EditorConfig a sua base de código, qualquer novo código adicionado é formatado automaticamente de acordo com as configurações especificadas. O código existente não reflete automaticamente as configurações, a menos que você formate a base de código.
+
+Para refletir as configurações do arquivo `.editorconfig`, selecione o nó da solução e escolha **Editar > Formatar > Formatar Documento** na barra de menus:
+
+![Formatar documento na barra de menus](media/editorconfig-image3a.png)
 
 ## <a name="editing-an-editorconfig-file"></a>Editando um arquivo EditorConfig
+
 
 Os arquivos EditorConfig usam um layout de arquivo simples para especificar as configurações, que é explicado abaixo usando um exemplo anterior:
 
@@ -123,7 +141,7 @@ Para obter mais informações sobre as configurações de EditorConfig disponív
 
 ## <a name="override-editorconfig-settings"></a>Substituir as configurações de EditorConfig
 
-É possível ter mais de um arquivo `.editorconfig` em cada solução. O Visual Studio para Mac lê arquivos `.editorconfig` de cima para baixo na solução, adicionando e substituindo configurações conforme faz isso. Isso significa que as configurações de `.editorconfig` _mais próximas_ do arquivo que você está editando terão precedência. 
+É possível ter mais de um arquivo `.editorconfig` em cada solução. O Visual Studio para Mac lê arquivos `.editorconfig` de cima para baixo na solução, adicionando e substituindo configurações conforme realiza tal leitura. Isso significa que as configurações no `.editorconfig` _mais próximo_ ao arquivo que você está editando terão precedência. As configurações são obtidas do `.editorconfig` na mesma pasta (se houver), do `.editorconfig` na pasta pai (se houver), e assim por diante até que `root=true` seja encontrado.  
 
 Se você quiser garantir que _nenhuma_ configuração de nenhum arquivo `.editorconfig` de nível superior seja aplicada a essa parte da base de código, adicione a propriedade `root=true` ao topo do arquivo `.editorconfig` de nível inferior:
 

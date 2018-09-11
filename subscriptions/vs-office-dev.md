@@ -3,18 +3,18 @@ title: Benefício de Desenvolvedor do Office 365 nas assinaturas do Visual Studi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2018
+ms.date: 11/12/2017
 ms.topic: Get-Started-Article
 description: Saiba mais sobre o benefício de assinatura de Desenvolvedor do Office 365 incluído em sua assinatura do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280540"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289516"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>O benefício de assinatura de Desenvolvedor do Office 365 em assinaturas do Visual Studio
 
@@ -29,28 +29,28 @@ Os assinantes com assinaturas selecionadas do Visual Studio Enterprise recebem o
 3. Quando o processo de entrada estiver concluído, você verá a página Benefícios de Assinaturas.  Se você tem mais de uma assinatura, você pode alternar entre as assinaturas, clicando na seta suspensa no canto superior direito, abaixo da faixa de opções preta.  O bloco do benefício da assinatura de desenvolvedor do Office 365 está na categoria Ferramentas.  Use a seta à direita da linha de blocos para rolar até que o bloco do Office fique visível.
 
 4. Localize o bloco da Assinatura de Desenvolvedor do Office 365 na seção Ferramentas.  Clique no link **Obter Código** na parte inferior do bloco do benefício.   Quando o código tiver sido recuperado, clique em **Ativar**.
-
-    ![Bloco do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bloco do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  A próxima etapa é para criar uma conta.  Forneça suas informações de contato e clique em **Avançar**.
-
-    ![Conta do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Conta do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
 6.  Forneça as informações solicitadas sobre onde você usará a assinatura e clique em **Avançar**.  As informações são usadas para determinar a disponibilidade da assinatura e os impostos aplicáveis.
-
-    ![Informações de contato do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Informações de contato do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
 7.  Crie o nome de usuário e senha para a sua conta.
-
-    ![Nome de usuário do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Nome de usuário do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
 8.  Forneça um número de telefone e escolha se deseja receber um código de confirmação por telefone ou SMS.  Isso ajuda a verificar se a conta está sendo criada por uma pessoa real. Insira o código que você recebeu e clique em **Avançar**.
 
 9.  Neste momento, você poderá ser solicitado a entrar.  Se você tiver mais de uma conta mostrada na página de logon do Office 365, escolha a conta associada com esta assinatura.
 
 10. A próxima página confirmará que a sua assinatura está disponível sem nenhum custo.  Clique em **Próximo** para continuar.
-
-    ![Qual é a aparência do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-price.png)
+    > [!div class="mx-imgBorder"]
+    > ![Qual é a aparência do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-price.png)
 
 11. Na finalização da "Etapa 3", você deverá selecionar uma "Forma de pagamento".  Há duas formas de pagamento disponíveis.  A primeira opção seria adicionar um **Cartão de crédito** (como exibido abaixo) e a segunda opção é uma **Fatura**.  Em ambos os casos, um pedido de $0,00 será enviado ao clicar em **Fazer Pedido**.
 
@@ -58,8 +58,8 @@ Os assinantes com assinaturas selecionadas do Visual Studio Enterprise recebem o
     > Os assinantes que não desejam fornecer um cartão de crédito devem selecionar a forma de pagamento **Fatura**.  Você também pode selecionar **Pagar por ano** para limitar o recebimento de faturas a uma vez por ano.
 
 12. Neste ponto, você resgatou com êxito o benefício da assinatura de desenvolvedor do Office 365.  Você verá uma página de confirmação do pedido.  A página fornecerá um link para a [página de conexão](https://portal.office.com "página de conexão do Office 365").  É recomendável adicionar a página aos favoritos para uso posterior.  Registre também a ID de usuário mostrada na página.  (Você também receberá um email de boas-vindas no endereço fornecido ao configurar a conta).  Clique em **Iniciar Configuração** para continuar.
-
-    ![Pedido de benefício de desenvolvedor do Office 365 confirmado](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pedido de benefício de desenvolvedor do Office 365 confirmado](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
@@ -86,8 +86,8 @@ R: Configuração do benefício da Assinatura de Desenvolvedor do Office 365
     > Para entrar em https://portal.office.com, você precisará usar a nova ID de usuário da assinatura de desenvolvedor do Office 365, que foi criada na etapa 7 acima.
 
 2. Depois de clicar em **Iniciar Configuração**, a "Etapa 1" pedirá para se conectar a um domínio existente, que já seja seu ou para continuar usando a configuração de locatário durante o processo de resgate.  No exemplo abaixo, optamos por continuar usando nosso domínio "appsbyjane2017.onmicrosoft.com".
-
-    ![Centro de administração do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centro de administração do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
 3.  A Etapa 2 permite que os administradores adicionem usuários à conta do Office 365.  Adicione os usuários desejados e, em seguida, clique em **Avançar**.
@@ -104,11 +104,11 @@ R: Configuração do benefício da Assinatura de Desenvolvedor do Office 365
     - OneDrive for Business
 
 5.  Escolha o idioma preferencial e clique em **Instalar**.
+    > [!div class="mx-imgBorder"]
+    > ![Instalar aplicativos do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-    ![Instalar aplicativos do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-
-6. Clique em **Executar** para iniciar a instalação imediatamente ou clique em **Salvar** para salvar o pacote de instalação em seu computador e instalar mais tarde.
+6.  Clique em **Executar** para iniciar a instalação imediatamente ou clique em **Salvar** para salvar o pacote de instalação em seu computador e instalar mais tarde.
 
 7.  Quando a caixa de diálogo Controle de Conta de Usuário for exibida, clique em **Sim** para permitir que o Office instale no computador.
 

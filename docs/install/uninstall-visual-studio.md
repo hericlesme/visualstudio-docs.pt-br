@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 592c2404d45619d313106526d051d4e18ffc8888
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138658"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43288977"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
 
@@ -57,7 +57,6 @@ Para remover completamente todas as instalações do Visual Studio 2017, bem com
 
 ## <a name="see-also"></a>Consulte também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
 * [Modificar o Visual Studio 2017](modify-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
-* [Remover o Visual Studio](remove-visual-studio.md)
+* [Desinstalar o Visual Studio para Mac](/visualstudio/mac/uninstall)

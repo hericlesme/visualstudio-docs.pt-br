@@ -9,12 +9,12 @@ description: Saiba como tirar proveito do benefício de Chat de Consultoria do A
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280797"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289379"
 ---
 # <a name="azure-advisory-chat"></a>Chat de Consultoria do Azure
 
@@ -25,16 +25,16 @@ Obtenha ajuda para começar a usar o Azure em tempo real! Inclui consultoria par
 É fácil usar o Chat de Consultoria do Azure.
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Localize o bloco de Chat de Consultoria do Azure na seção de Suporte e clique em **Iniciar chat agora**.
-
-    ![Bloco do Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bloco do Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Você verá uma notificação de que, no momento, o serviço é fornecido apenas em inglês, com a exceção do suporte para problemas de conta, cobrança e assinatura.  Clique em **Continue**.
-
-    ![Aviso de Isenção de Responsabilidade do Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Aviso de Isenção de Responsabilidade do Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. E isso é tudo.  Será aberta uma janela de chat, e você verá um status que indica onde você está na fila.  O chat será respondido pelo próximo especialista disponível.
-
-    ![Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Qualificação
 

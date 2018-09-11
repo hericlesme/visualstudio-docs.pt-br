@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283633"
+ms.locfileid: "44321262"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. Apresentaremos alguns dos mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para fazer o que você deseja.
@@ -76,7 +76,7 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
 
 -   VSPackages básicos: [criando uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Modelo de projeto VSIX: [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md) 
+-   Modelo de projeto VSIX: [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Como obtenho minha extensão para se parecer com o Visual Studio?
  Obtenha ótimas dicas para projetar a interface do usuário para a sua extensão em [diretrizes de experiência de usuário do Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -87,4 +87,4 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
 ## <a name="how-can-i-distribute-my-extension"></a>Como distribuir o minha extensão?
  Você pode instalar sua extensão em outro computador ou enviá-lo para seus amigos como um arquivo. VSIX, que podem ser instalado clicando duas vezes nele. Você pode encontrar mais informações sobre pacotes VSIX [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Você também pode publicar sua extensão no Visual Studio Marketplace, que se torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão no Marketplace, consulte [instruções passo a passo: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview).
+ Você também pode publicar sua extensão no Visual Studio Marketplace, que se torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão no Marketplace, consulte [instruções passo a passo: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts).

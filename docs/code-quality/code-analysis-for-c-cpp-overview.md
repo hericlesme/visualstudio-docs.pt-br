@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280981"
+ms.locfileid: "44320703"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 
@@ -64,7 +64,7 @@ Talvez você queira exigem que o código de origem todos os check-ins satisfaça
 
 ## <a name="team-build-integration"></a>Integração do Team Build
 
-Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo de compilação. Para obter mais informações, consulte [Pipelines do Azure](/azure/devops/pipelines/index).
+Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo de compilação. Para obter mais informações, consulte [Pipelines do Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício Visual Studio App Center incluído em
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282532"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289337"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -29,16 +29,16 @@ O App Center é o controle de missões para aplicativos.
 1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do App Center do Visual Studio e clique em **Introdução**.
-
-    ![Bloco App Center do VS](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bloco App Center do VS](_img/vs-app-center/vs-app-center-tile.png)
 
 3. Em seguida, crie uma conta.  Você pode usar contas existentes da Microsoft, do Google, do GitHub ou do Facebook para fazer logon ou criar uma nova conta, fornecendo o nome de usuário, o email e a senha.  Clique em **Criar conta** para continuar.
-
-    ![Criar conta do App Center do VS](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Criar conta do App Center do VS](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. E isso é tudo.  Basta clicar em **Adicionar nova organização** ou **Adicionar novo aplicativo** para começar!
-
-    ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |

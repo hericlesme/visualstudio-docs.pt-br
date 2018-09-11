@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício Azure incluído em sua assinatura do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379730"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289312"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -53,21 +53,22 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
-
-    ![Bloco do Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bloco do Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Preencha as informações necessárias para criar sua assinatura do Azure, clique na caixa de seleção para aceitar os termos e condições e, em seguida, clique em **Inscrever-se**:
-
-    ![Inscrição do Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Inscrição do Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Quando sua conta estiver pronta, você terá a opção de escolher um plano de suporte do Azure (vendido separadamente) ou de começar a usar sua assinatura do Azure.
-
-    ![Preparação do Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Preparação do Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  O Painel do Azure será carregado e, na primeira utilização, haverá a opção de fazer um tour.  O tour consiste em uma série de dicas de tela que indicarão como você pode realizar uma variedade de tarefas e localizar informações relevantes.  Ao concluir ou fechar o tour, o Painel do Azure será exibido.
 
 6.  Marque o [Portal do Azure](https://portal.azure.com) para facilitar os próximos acessos.
-![Painel do Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Painel do Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Perguntas Frequentes
 

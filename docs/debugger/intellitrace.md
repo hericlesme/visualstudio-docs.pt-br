@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280773"
+ms.locfileid: "44321011"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
 
 - Registrar eventos específicos
 
-     Examinar o código relacionado, dados que aparecem na **Locals** janela durante eventos do depurador e informações de chamada de função
+   Examinar o código relacionado, dados que aparecem na **Locals** janela durante eventos do depurador e informações de chamada de função
 
 - Depurar erros que são difíceis de reproduzir ou que ocorrem na implantação
 
@@ -46,7 +46,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 |||
 |-|-|
 |**Depure meu aplicativo com o IntelliTrace:**<br /><br /> -Mostre eventos anteriores.<br />-Mostrar-me informações de chamadas com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que o IntelliTrace coleta.|- [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />- [Histórico de depuração](../debugger/historical-debugging.md)<br />- [Exibir instantâneos usando o retrocesso do IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|- [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|- [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Coletar dados do IntelliTrace de aplicativos implantados**|- [Usando o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Inicie a depuração de um arquivo de log do IntelliTrace (arquivo. itrace).**|- [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Você pode salvar dados do IntelliTrace a partir destas fontes:
 
 - Seu aplicativo falha em um computador de teste, mas é executado com êxito em um computador de desenvolvimento.
 
-     Você pode coletar dados do IntelliTrace do Microsoft Test Manager, salvar os dados em um arquivo .iTrace e anexar esse arquivo a um item de trabalho do Team Foundation Server para investigação posterior. Ver [coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) e [Use dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Você pode coletar dados do IntelliTrace do Microsoft Test Manager, salvar os dados em um arquivo .iTrace e anexar esse arquivo a um item de trabalho do Team Foundation Server para investigação posterior. Ver [coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) e [Use dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - Um bug ou uma falha ocorre em um aplicativo implantado.
 
@@ -129,9 +129,7 @@ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, ex
 
 - **Eventos do .NET framework**
 
-     Por padrão, o IntelliTrace registra os eventos mais comuns do .NET Framework. Por exemplo:
-
-    - Para um evento de marcar caixa de seleção, o IntelliTrace coleta o estado e o texto da caixa de seleção.
+   Por padrão, o IntelliTrace registra os eventos mais comuns do .NET Framework. Por exemplo, ror um evento de caixa de seleção verificar, o IntelliTrace coleta o estado da caixa de seleção e o texto.
 
 - **Eventos de aplicativo do SharePoint 2010 e SharePoint 2013**
 
@@ -175,13 +173,15 @@ Para controlar a quantidade de informações de chamadas que o IntelliTrace cole
 
 Por padrão, o IntelliTrace coleta dados somente para eventos do IntelliTrace selecionados. Isso pode ou não pode causar lentidão na seu aplicativo, dependendo da estrutura e organização do seu código. Por exemplo, se o IntelliTrace registra um evento muitas vezes, isso pode retardar o aplicativo. Ele também pode fazer você considerar refatorar seu aplicativo.
 
-A coleta de informações de chamada pode significativamente mais lento seu aplicativo. Ela também pode aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos .iTrace) que você possa estar salvando em disco. Para minimizar esses efeitos, colete informações de chamada somente para os módulos desejados.  Para alterar o tamanho máximo dos seus arquivos. itrace, vá para **ferramentas**, **opções**, **IntelliTrace**, **avançado**. 
+A coleta de informações de chamada pode significativamente mais lento seu aplicativo. Ela também pode aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos .iTrace) que você possa estar salvando em disco. Para minimizar esses efeitos, colete informações de chamada somente para os módulos desejados.  Para alterar o tamanho máximo dos seus arquivos. itrace, vá para **ferramentas**, **opções**, **IntelliTrace**, **avançado**.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 [Recursos do IntelliTrace](../debugger/intellitrace-features.md)
-[diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)
-[usar dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)
+
+[Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)
+
+[Usar dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogs
 

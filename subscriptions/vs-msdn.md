@@ -9,12 +9,12 @@ description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280294"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289314"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
 
@@ -33,17 +33,17 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 ### <a name="printed-edition"></a>Edição impressa
 1.  Para começar a receber sua assinatura da MSDN Magazine, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2.  Localize o bloco MSDN Magazine na seção de Desenvolvimento Profissional e clique em **Assinar** no bloco de assinatura da MSDN Magazine. (Clique no "!" no canto inferior direito do bloco para acessar a edição digital).
-
-    ![Bloco do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bloco do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
 
 
 3.  Na página do MSDN Magazine, escolha seu tipo de assinatura preferencial.  Você pode escolher a edição digital gratuita, independentemente de onde você mora.  A versão impressa está disponível gratuitamente para residentes dos EUA.  Para endereços fora dos EUA são aplicados encargos de frete.
-
-    ![Assinaturas do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Assinaturas do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
 4.  Forneça as informações de contato solicitadas e clique em **Enviar**.  (A versão da revista selecionada aparecerá na seção Assinatura da Revista.  Se você tiver escolhido a edição impressa, na primeira opção estará escrito **Sim!  Quero receber um ano (12 exemplares) da MSDN Magazine gratuitamente**.)
-
-    ![Perfil do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Perfil do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-profile.png)
 
 5.  E isso é tudo.  Dependendo da versão da revista escolhida, você começará a receber revistas impressas ou emails com links para as versões online mais recentes com a próxima edição.  Aproveite!
 

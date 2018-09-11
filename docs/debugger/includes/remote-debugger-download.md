@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 491b01d87e4f1a9980143e9ffcc501b3cda7c922
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a9867acf2a0877322b85d25c3af781ccfdd3f58c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39189260"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44343243"
 ---
 1.  No dispositivo ou servidor máquina que você deseja depurar (em vez do computador que executa o Visual Studio), obtenha a versão correta das ferramentas remotas.
 
@@ -21,8 +21,8 @@ ms.locfileid: "39189260"
     |-|-|-|
     |Visual Studio 2017 (versão mais recente)|[Ferramentas remotas](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|A versão mais recente das ferramentas remotas é compatível com todas as versões do Visual Studio 2017. Sempre Baixe a versão correspondente do seu sistema operacional do dispositivo (x x86, x64 ou ARM64). No Windows Server, consulte [desbloquear o download do arquivo](../../debugger/remote-debugging-unblock-file-download.md) para obter ajuda para baixar as ferramentas remotas.|
     |Visual Studio 2015|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Ferramentas remotas para Visual Studio 2015 estão disponíveis no My.VisualStudio.com. Se solicitado, Junte-se a versão gratuita [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programa, ou entre com sua ID de assinatura do Visual Studio. No Windows Server, consulte [desbloquear o download do arquivo](../../debugger/remote-debugging-unblock-file-download.md) para obter ajuda para baixar as ferramentas remotas.|
-    |Visual Studio 2013|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Baixar a página na documentação do Visual Studio 2013|
-    |Visual Studio 2012|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Baixar a página na documentação do Visual Studio 2012|
+    |Visual Studio 2013|[Ferramentas remotas](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#Installing_the_Remote_Tools)|Baixar a página na documentação do Visual Studio 2013|
+    |Visual Studio 2012|[Ferramentas remotas](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#BKMK_Installing_the_Remote_Tools)|Baixar a página na documentação do Visual Studio 2012|
 
 2.  Na página de download, escolha a versão das ferramentas que corresponde ao seu sistema operacional (x86, x64, ARM ou ARM64) e baixar as ferramentas remotas.
 
