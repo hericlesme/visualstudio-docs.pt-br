@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623736"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384221"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Aprenda a depurar usando o Visual Studio
 
@@ -31,7 +31,7 @@ Este artigo apresenta os recursos do depurador do Visual Studio no passo a passo
 |---------|---------|
 |  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre depuração, que mostra etapas semelhantes. |
 
-Embora o aplicativo de demonstração é c# e C++, os recursos são aplicáveis ao Visual Basic, JavaScript e outras linguagens com suporte pelo Visual Studio (exceto onde observado). As capturas de tela estão em c#. Para alternar entre o c# e o código de exemplo do C++, use o filtro de idioma no canto superior direito da página.
+Embora o aplicativo de demonstração é c# e C++, os recursos são aplicáveis ao Visual Basic, JavaScript e outras linguagens com suporte pelo Visual Studio (exceto onde observado). As capturas de tela estão em c#. Para alternar entre o c# e C++ o código de exemplo neste artigo, use o filtro de idioma no canto superior direito desta página.
 
 Neste tutorial, você irá:
 
@@ -286,9 +286,9 @@ Neste tutorial, você irá:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
-1. No `foreach` loop do `Main` função (`for` loop for em C++ `main` função), defina um ponto de interrupção clicando na margem esquerda da primeira linha de código.
+1. No `foreach` loop do `Main` função (`for` loop for em C++ `main` função), defina um ponto de interrupção clicando na margem esquerda da seguinte linha de código:
 
-    ![Defina um ponto de interrupção](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (ou, `shape->Draw()` em C++)
 
     Um círculo vermelho aparece em que você definiu o ponto de interrupção.
 
@@ -296,7 +296,7 @@ Neste tutorial, você irá:
 
 6. Pressione **F5** ou o **iniciar depuração** botão, o aplicativo é iniciado, e o depurador executa a linha de código em que você definiu o ponto de interrupção.
 
-    ![Um ponto de interrupção](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Defina e atinja um ponto de interrupção](../debugger/media/get-started-set-breakpoint.gif)
 
     A seta amarela representa a instrução na qual o depurador pausou a, que também suspende a execução de aplicativo no mesmo ponto (esta instrução ainda não foi executada).
 
@@ -308,9 +308,7 @@ Neste tutorial, você irá:
 
 Em grande parte, podemos usar os atalhos de teclado aqui, porque ele é uma boa maneira de obter rápida no seu aplicativo em execução no depurador (comandos equivalentes, como o menu de comandos são mostrados entre parênteses).
 
-1. Pressione **F11** (ou escolha **Depurar > intervir**) uma vez (várias vezes em c#) até que você pause sobre o `shape.Draw` chamada de método no `Main` método (`shape->Draw` em C++).
-
-1. Pressione **F11** mais uma vez para avançar no código para o `Rectangle` classe.
+1. Enquanto está em pausa na `shape.Draw` chamada de método na `Main` método (`shape->Draw` em C++), pressione **F11** (ou escolha **Depurar > intervir**) para avançar no código para o `Rectangle` classe.
 
      ![Use F11 para entrar em código](../debugger/media/get-started-f11.png "F11 intervir")
 
@@ -364,19 +362,19 @@ Clique o **reinicie** ![aplicativo reiniciar](../debugger/media/dbg-tour-restart
 
 Quando você pressiona **reiniciar**, ele economiza tempo em comparação com o aplicativo de parar e reiniciar o depurador. O depurador pausa no primeiro ponto de interrupção é atingido pela execução de código.
 
-O depurador novamente para no ponto de interrupção definido, além de `foreach` loop (`for` loop for em C++).
+O depurador novamente para no ponto de interrupção definido na `shape.Draw()` método (`shape->Draw()` em C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecionar variáveis com dicas de dados
 
 Recursos que permitem que você inspecione as variáveis são um dos recursos mais úteis do depurador, e há diferentes maneiras de fazê-lo. Muitas vezes, quando você tenta depurar um problema, você está tentando descobrir se as variáveis são armazenar os valores que você espera que eles têm em um momento específico.
 
-1. Enquanto está em pausa na `foreach` loop (`for` loop for em C++), pressione **F11** depois.
-
-1. Passe o mouse sobre o `shapes` objeto e você verá o valor de propriedade padrão, o `Count` propriedade.
+1. Enquanto está em pausa na `shape.Draw()` método (`shape->Draw()` em C++), passe o mouse sobre o `shapes` objeto e você verá o valor de propriedade padrão, o `Count` propriedade.
 
 1. Expanda o `shapes` objeto para ver todas as suas propriedades, como o primeiro índice da matriz `[0]`, que tem um valor de `Rectangle` (c#) ou um endereço de memória (C++).
 
-     ![Exibir uma dica de dados](../debugger/media/get-started-data-tip.png "exibir uma dica de dados")
+     ![Exibir uma dica de dados](../debugger/media/get-started-data-tip.gif "exibir uma dica de dados")
+
+    Você pode expandir ainda mais os objetos para exibir suas propriedades, como o `Height` propriedade do retângulo.
 
     Muitas vezes, durante a depuração, você deseja uma maneira rápida de verificar valores de propriedade em objetos e as dicas de dados são uma boa maneira de fazê-lo.
 
