@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890351"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282164"
 ---
 # <a name="display-data-in-blend"></a>Exibir dados no Blend
 
@@ -43,7 +43,7 @@ Se você já tiver criado as classes que descrevem a estrutura dos dados, será 
 
 Para gerar dados de exemplo com base em uma classe, abra um documento XAML e, no painel **Dados**, clique no botão **Criar dados de exemplo** ![Ícone Criar dados de exemplo](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e, em seguida, clique em **Criar Dados de Exemplo da Classe**.
 
-**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo de uma classe](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
+**Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Criar dados de exemplo de uma classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Assista a um vídeo curto:** ![Ícone de reprodução](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mix up some data binding with Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg) (Combinar algumas associações de dados com o Blend).
 
@@ -53,7 +53,7 @@ Para gerar dados de exemplo com base em uma classe, abra um documento XAML e, no
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar dados dinâmicos em um aplicativo de loja ou de telefone
 
-Confira [Trabalhar com arquivos e dados (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
+Confira [Trabalhar com arquivos e dados (XAML)](/previous-versions/windows/apps/br229562(v=win.10)).
 
 ## <a name="see-also"></a>Consulte também
 

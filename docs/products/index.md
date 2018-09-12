@@ -5,12 +5,12 @@ title: Documentação do Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690592"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44339665"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +42,7 @@ ms.locfileid: "34690592"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,7 +52,7 @@ ms.locfileid: "34690592"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>Aumente a produtividade da equipe com as ferramentas de projeto e os relatórios Agile. Compilar, testar e implantar projetos de controle de origem com ferramentas de CI/CD modernas.</p>
                                                 </div>
                                             </div>
@@ -61,7 +61,7 @@ ms.locfileid: "34690592"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                <a href="/tfs/" title="Team Foundation Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -118,7 +118,7 @@ ms.locfileid: "34690592"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Centro de Aplicativos do Visual Studio">
+                                <a href="/appcenter/" title="Centro de Aplicativos do Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -137,7 +137,7 @@ ms.locfileid: "34690592"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Centro de Aplicativos do Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Assinaturas do Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

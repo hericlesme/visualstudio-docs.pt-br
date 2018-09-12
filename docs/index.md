@@ -4,12 +4,12 @@ hide_bc: true
 title: Documentação do Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
-ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: cfbfa4d355466e429831e4c07e2e74c72b6876ed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225104"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281104"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -353,7 +353,7 @@ Aplicativo Web com ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -372,7 +372,7 @@ Aplicativo Web com ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -383,7 +383,7 @@ Aplicativo Web com ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Crie e lance continuamente seus aplicativos na nuvem e implemente práticas Agile com VSTS.</p>
+                                                    <p>Crie e libere seus aplicativos na nuvem e implemente práticas do Agile continuamente com o Azure DevOps Services.</p>
                                                 </div>
                                             </div>
                                         </div>

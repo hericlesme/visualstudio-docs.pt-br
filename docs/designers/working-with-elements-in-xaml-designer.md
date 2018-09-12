@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078921"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279655"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Adicionando um elemento a um layout
- *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Você pode usar vários elementos filho `Panel`, como [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.
+ *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Você pode usar vários elementos filho `Panel`, como [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) e [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.
 
  Por padrão, um painel `Grid` é usado como o contêiner de layout de nível superior em uma página ou formulário. Você pode adicionar painéis de layout, controles ou outros elementos dentro do layout de página de nível superior.
 
@@ -33,7 +33,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
     -   Arraste um elemento da **Caixa de Ferramentas** para a prancheta.
 
-    -   Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.
+    -   Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) ou [Retângulo](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) e desenhe um elemento no painel ativo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos
  Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos, na janela Estrutura de Tópicos do Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** de um elemento está definida). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.

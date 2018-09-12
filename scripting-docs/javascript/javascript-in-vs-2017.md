@@ -18,16 +18,16 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008402"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280032"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
-O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode usar a maioria ou todos os auxílios de edição padrão (trechos de código IntelliSense, e assim por diante) ao escrever o código JavaScript no Visual Studio IDE. Você pode escrever código JavaScript para muitos tipos de aplicativos e serviços.
+O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode usar a maioria ou todos os auxílios de edição padrão (snippets de código IntelliSense, e assim por diante) ao escrever o código JavaScript no Visual Studio IDE. Você pode escrever código JavaScript para muitos tipos de aplicativos e serviços.
 
 > [!NOTE]
 > Nós reunimos os esforços de toda a comunidade para fazer com que o [Docs da Web do MDN](https://developer.mozilla.org/en-US/) seja o recurso de desenvolvimento principal único da Web, redirecionando todas as (500 ou mais páginas) de referência da API JavaScript da Microsoft do docs.microsoft.com para seu equivalente do MDN. Para obter detalhes, confira o [comunicado](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
@@ -255,7 +255,7 @@ Não há mais suporte para o VSDoc em favor do [JSDoc](http://usejsdoc.org/about
 
 ### <a name="intellisensejs-extensions"></a>Extensões `.intellisense.js`
 
-Anteriormente, você podia criar [extensões do IntelliSense](https://msdn.microsoft.com/en-us/library/hh874692.aspx) que permitiam que você adicionasse resultados de conclusão personalizados para bibliotecas de terceiros.
+Anteriormente, você podia criar [extensões do IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) que permitiam que você adicionasse resultados de conclusão personalizados para bibliotecas de terceiros.
 Essas extensões eram bastante difíceis de gravar e instalar e referenciá-las era trabalhoso, então com a atualização, o novo serviço de linguagem não dará suporte a esses arquivos.
 Como uma alternativa mais fácil, você pode escrever um arquivo de definição de TypeScript para fornecer os mesmos benefícios do IntelliSense que as antigas extensões `.intellisense.js`.
 Você pode aprender mais sobre a criação de arquivos de declaração (`.d.ts`) [aqui](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

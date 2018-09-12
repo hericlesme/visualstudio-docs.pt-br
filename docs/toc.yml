@@ -240,32 +240,32 @@ items:
       - name: Gerar e corrigir código
         href: ide/code-generation-in-visual-studio.md
         items:
-        - name: Trechos de código
+        - name: Snippets de código
           items:
-          - name: Usar trechos de código
+          - name: Usar snippets de código
             href: ide/code-snippets.md
             items:
-            - name: Referência de trechos de código C#
+            - name: Referência de snippets de código C#
               href: ide/visual-csharp-code-snippets.md
-            - name: Referência de trechos de código C++
+            - name: Referência de snippets de código C++
               href: ide/visual-cpp-code-snippets.md
             - name: Inserir comentários XML
               href: ide/reference/generate-xml-documentation-comments.md
-            - name: Usar trechos de código surround-with
+            - name: Usar snippets de código surround-with
               href: ide/how-to-use-surround-with-code-snippets.md
             - name: Práticas recomendadas
               href: ide/best-practices-for-using-code-snippets.md
-          - name: Criar trechos de código
+          - name: Criar snippets de código
             items:
-            - name: 'Passo a passo: Criar um trecho de código'
+            - name: 'Passo a passo: Criar um snippet de código'
               href: ide/walkthrough-creating-a-code-snippet.md
-            - name: Distribuir trechos de código
+            - name: Distribuir snippets de código
               href: ide/how-to-distribute-code-snippets.md
-            - name: Funções de trecho de código
+            - name: Funções de snippet de código
               href: ide/code-snippet-functions.md
-            - name: Referência de esquema dos trechos de código
+            - name: Referência de esquema dos snippets de código
               href: ide/code-snippets-schema-reference.md
-            - name: Solução de problemas de trechos de código
+            - name: Solução de problemas de snippets
               href: ide/troubleshooting-snippets.md
         - name: Ações Rápidas
           href: ide/quick-actions.md
@@ -596,8 +596,8 @@ items:
         href: ide/how-to-configure-projects-to-target-multiple-platforms.md
     - name: MSBuild...
       href: msbuild/msbuild.md
-    - name: VSTS e TFS...
-      href: /vsts/build-release/index
+    - name: Azure Pipelines e TFS...
+      href: /azure/devops/pipelines/index?view=vsts
     - name: Especificar eventos de build (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Especificar eventos de build (C#)
@@ -698,7 +698,7 @@ items:
       href: ide/preview-changes.md
     - name: Escolher Itens da Caixa de Ferramentas, Componentes WPF
       href: ide/reference/choose-toolbox-items-wpf-components.md
-    - name: Seletor de trecho de código
+    - name: Seletor de snippet de código
       href: ide/reference/code-snippet-picker.md
     - name: Janela Comando
       href: ide/reference/command-window.md
@@ -1067,9 +1067,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Fale conosco
     href: ide/talk-to-us.md
-ms.openlocfilehash: bc5dc1f9c447fd9183aeacbc14fa19376df87816
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 361b27107471cbd90be5312bca8a214d7324883f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224482"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320587"

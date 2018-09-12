@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750084"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774602"
 ---
 # <a name="crosssession"></a>CrossSession
 A opção *VSPerfCmd.exe* **CrossSession** permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.  
@@ -37,10 +37,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Iniciar:** `Method`  
  A opção **Iniciar** inicializa o criador de perfil para o método de criação de perfil especificado.  
   
- **Attach:** *PID*[**,***PID*]  
+ **Anexar:** _PID_[**,**_PID_]  
  Inicia a criação de perfil dos processos especificados.  
   
- **Detach**[**:***PID*[,*PID*]]  
+ **Desanexar**[**:**_PID_[,_PID_]]  
  Para a criação de perfil dos processos especificados.  
   
 ## <a name="example"></a>Exemplo  
