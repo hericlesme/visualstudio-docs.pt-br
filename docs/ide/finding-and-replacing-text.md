@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626729"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384234"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
-Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) ou [Localizar/Substituir em Arquivos](#find-replace-in-files). Novo no Visual Studio 2017 versão 15.8, você pode localizar e substituir *algumas* instâncias de um padrão usando a *[seleção de vários cursores](#multi-caret-selection)*.
+Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files). Novo no Visual Studio 2017 versão 15.8, você pode localizar e substituir *algumas* instâncias de um padrão usando a *[seleção de vários cursores](#multi-caret-selection)*.
 
 > [!TIP]
 > Se você está renomeando os símbolos de código, como variáveis e métodos, é melhor *[refatorá-los](../ide/reference/rename.md)* em vez de usar o recurso Localizar e Substituir. A refatoração é inteligente e reconhece o escopo, enquanto o recurso Localizar e Substituir substitui cegamente todas as instâncias.

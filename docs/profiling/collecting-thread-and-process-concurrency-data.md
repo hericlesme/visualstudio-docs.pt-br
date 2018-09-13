@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548319"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775541"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Coletar dados de simultaneidade de thread e do processo
 
@@ -31,11 +31,11 @@ O método de criação de perfil de simultaneidade das Ferramentas de Criação 
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
-É possível especificar outras opções na caixa de diálogo *Sessão de Desempenho***Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:
+É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:
 
 - No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.
 
-As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo *Sessão de Desempenho***Páginas de Propriedades** quando você cria o perfil usando o método de simultaneidade.
+As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de simultaneidade.
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|

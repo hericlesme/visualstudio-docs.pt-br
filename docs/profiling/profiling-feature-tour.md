@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626609"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320833"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
 
@@ -156,7 +156,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim| 
-|[Uso da CPU](../profiling/cpu-usage.md)|sim (veja a observação)|sim|sim (veja a observação)|
+|[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
 |[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no| 
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|

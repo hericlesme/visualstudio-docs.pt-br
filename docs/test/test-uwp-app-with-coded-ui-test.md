@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694055"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668127"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Criar um teste de IU codificado para testar um aplicativo UWP
 
@@ -128,7 +128,7 @@ A primeira etapa é criar um aplicativo UWP simples no qual executar o teste.
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. Em seguida, precisamos obter a **AutomationId** do [aplicativo](#create-a-simple-universal-windows-app) UWP que você deseja testar. Abra o menu **Iniciar** do Windows para ver o bloco do aplicativo. Em seguida, arraste o ![Ícone de destino](media/target-icon.png) da ferramenta de fios na caixa de diálogo **Construtor de Teste de IU Codificado** para o bloco do aplicativo. Quando uma caixa azul surgir ao redor do bloco, libere o mouse.
+1. Em seguida, precisamos obter a **AutomationId** do [aplicativo](#create-a-uwp-app-to-test) UWP que você deseja testar. Abra o menu **Iniciar** do Windows para ver o bloco do aplicativo. Em seguida, arraste o ![Ícone de destino](media/target-icon.png) da ferramenta de fios na caixa de diálogo **Construtor de Teste de IU Codificado** para o bloco do aplicativo. Quando uma caixa azul surgir ao redor do bloco, libere o mouse.
 
    ![Ferramenta de fios](media/cross-hair-tool.png)
 

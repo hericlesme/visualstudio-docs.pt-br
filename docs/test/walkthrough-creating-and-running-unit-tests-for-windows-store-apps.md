@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d4640616b12a07c475503d45f9297c1bbf663f91
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380477"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284114"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Passo a passo: criar e executar testes de unidade para aplicativos UWP
 
@@ -109,4 +109,4 @@ No **Editor de Códigos**, edite o teste de unidade e adicione as declarações 
 ## <a name="see-also"></a>Consulte também
 
 - [Testar aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)
-- [Compilar e testar um aplicativo da UWP](/vsts/build-release/apps/windows/universal?tabs=vsts)
+- [Compilar e testar um aplicativo da UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

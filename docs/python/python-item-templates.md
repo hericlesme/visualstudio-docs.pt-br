@@ -1,7 +1,7 @@
 ---
 title: Modelos de item para projetos do Python
 description: Uma lista de referência de modelos de item para o projeto do Python que estão disponíveis na caixa de diálogo Adicionar > Novo Item no Visual Studio.
-ms.date: 04/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008288"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776028"
 ---
 # <a name="python-item-templates"></a>Modelos de item do Python
 
@@ -52,7 +52,7 @@ A tabela a seguir explica brevemente o efeito de cada modelo de item em um proje
 >
 > ![Alterando a configuração de publicação](media/template-web-publish-config.png)
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciar projetos Python – Modelos de projetos](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modelos de projeto Web do Python](python-web-application-project-templates.md)

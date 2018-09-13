@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889961"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283685"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a criar aplicativos Web e Windows baseados em XAML. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da **Caixa de Ferramentas** e configurando propriedades na janela **Propriedades**. Você também pode editar XAML diretamente no modo de exibição XAML.
@@ -41,7 +41,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Guias de alinhamento** As guias de alinhamento são *limites de alinhamento* que são exibidos como linhas vermelhas tracejadas para mostrar quando as bordas dos controles estão alinhadas ou quando as linhas de base de texto estão alinhadas. Os limites de alinhamento só são exibidos quando a opção de **ajuste a guias de alinhamento** está habilitada.
 
- **Trilhos de grade** Trilhos `Grid` são usados para gerenciar linhas e colunas em um painel de [Grade](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
+ **Trilhos de grade** Trilhos `Grid` são usados para gerenciar linhas e colunas em um painel de [Grade](/uwp/api/Windows.UI.Xaml.Controls.Grid). Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
 
  **Adornos de Grade** Um adorno de Grade é exibido como um triângulo que tem uma linha vertical ou horizontal anexada a ele no trilho da Grade. Quando você arrasta um adorno de Grade, as larguras ou alturas das linhas ou colunas adjacentes são atualizadas conforme você move o mouse.
 
@@ -49,7 +49,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Alças de redimensionamento** As alças de redimensionamento são exibidas em controles selecionados e permitem redimensionar o controle. Quando você redimensiona um controle, os valores de largura e altura geralmente são exibidos para ajudar a dimensionar o controle. Para obter mais informações sobre a manipulação de controles no modo de exibição de **Design**, confira [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Margens** As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) em **Layout** na janela Propriedades.
+ **Margens** As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](/uwp/api/windows.ui.xaml.frameworkelement.margin) em **Layout** na janela Propriedades.
 
  **Adornos de margem** Você pode usar adornos de margem para alterar as margens de um elemento relativo ao respectivo contêiner de layout. Quando um adorno de margem está aberto, uma margem não está definida, e o adorno de margem exibe uma cadeia quebrada. Quando a margem não está definida, os elementos permanecem em vigor quando o contêiner de layout é redimensionado no tempo de execução. Quando um adorno de margem está fechado, ele exibe uma cadeia ininterrupta, e os elementos são movidos com a margem enquanto o contêiner de layout é redimensionado no tempo de execução (a margem permanece fixa).
 

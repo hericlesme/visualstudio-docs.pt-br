@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156e3c45c0ccbc9ad9393a2baf7536bf317335bc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262826"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775159"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Coletar dados de tempo detalhados usando a instrumentação
 O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injeta código de criação de perfil em uma cópia de um módulo. O código registra cada entrada, saída e a chamada de função das funções no módulo durante uma execução de criação de perfil. O método de instrumentação é útil para coletar informações detalhadas de tempo sobre uma seção do seu código e para compreender o impacto das operações de entrada e saída sobre o desempenho do aplicativo.  
@@ -32,11 +32,11 @@ O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../
 -   Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Instrumentação**.  
   
 ## <a name="common-tasks"></a>Tarefas comuns
- É possível especificar outras opções na caixa de diálogo *Sessão de Desempenho***Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  
+ É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  
   
 -   No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
   
- As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo *Sessão de Desempenho***Páginas de Propriedades** quando você cria o perfil usando o método de instrumentação.  
+ As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de instrumentação.  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  

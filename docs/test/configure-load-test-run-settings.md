@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382416"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283323"
 ---
 # <a name="configure-load-test-run-settings"></a>Definir configurações de execução de teste de carga
 
@@ -37,6 +37,6 @@ A configuração de execução inicial é criada quando você cria um teste de c
 |**Especificar a contagem de iteração de teste em configurações de execução de teste de carga:** você pode especificar o número de vezes em que todos os testes de unidade e desempenho e na Web devem ser executados em todos os cenários dos testes de carga configurando a propriedade **Iterações do teste**.|-   [Como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Especificar a taxa de amostragem para uma configuração de execução de teste de carga:** você pode especificar com que frequência o teste de carga coleta dados do contador de desempenho configurando a propriedade **Taxa de amostragem**.|-   [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Especificar a opção de armazenamento dos detalhes de tempo:** você pode especificar como deseja que os detalhes do teste de carga sejam salvos configurando a propriedade **Armazenamento de detalhes de medição de tempo**.|-   [Como especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Especificar o período de retenção de recurso de teste:** acelerar o teste > corrigir > testar o ciclo novamente, mantendo os recursos de teste por um período especificado, definindo a propriedade **Tempo de retenção de recursos**.|-   [Manter os recursos para acelerar o teste de carga](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Especificar o período de retenção de recurso de teste:** acelerar o teste > corrigir > testar o ciclo novamente, mantendo os recursos de teste por um período especificado, definindo a propriedade **Tempo de retenção de recursos**.|-   [Manter os recursos para acelerar o teste de carga](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**Usar parâmetros de contexto:** você pode usar parâmetros de contexto para parametrizar uma cadeia de caracteres. Por exemplo, quando o teste de carga contém um teste de desempenho Web que usa um servidor Web parametrizado, você pode adicionar um parâmetro de contexto às configurações de execução que seja mapeado para um servidor diferente.|-   [Como adicionar parâmetros de contexto a uma configuração de execução](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Configurando as propriedades do registro em log do teste:** você pode configurar com que frequência os dados são gravados no log associado às configurações de execução de teste de carga. Isso pode ser importante quando você está executando um teste de carga grande ou complexo porque o log poderia ter vários gigabytes.<br /><br /> Você também pode configurar o arquivo de log a ser salvo automaticamente quando o teste de carga não ajuda na depuração e na análise do aplicativo.|-   [Modificando as configurações de registro em log do teste de carga](../test/modify-load-test-logging-settings.md)|

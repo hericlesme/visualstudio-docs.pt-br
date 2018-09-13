@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252460"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283100"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 
@@ -85,7 +85,7 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 - Para o Visual Studio 2015 Community, Visual Studio 2015 Professional ou Visual Studio 2015 Enterprise:
 
-   [Baixe as Ferramentas do Visual Studio 2015 para Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Baixe as Ferramentas do Visual Studio 2015 para Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > As Ferramentas do Visual Studio para Unity exigem o Unity 5.2 e superiores, além de uma versão do Visual Studio que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. Para verificar se as Ferramentas do Visual Studio para Unity estão habilitadas na sua instalação do Unity, selecione **Sobre o Unity** no menu do **Ajuda** e procure o texto “Ferramentas do Microsoft Visual Studio para Unity habilitadas” na parte inferior esquerda da caixa de diálogo.

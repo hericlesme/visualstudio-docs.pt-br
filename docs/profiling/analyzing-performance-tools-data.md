@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690846"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668261"
 ---
 # <a name="analyze-performance-tools-data"></a>Analisar dados de ferramentas de desempenho
 Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem exibir e analisar problemas de desempenho do aplicativo. Esta seção apresenta uma visão geral dos relatórios de desempenho e das exibições que podem ser usados para examinar dados de desempenho.  
@@ -44,4 +44,4 @@ Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsp
 ## <a name="see-also"></a>Consulte também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

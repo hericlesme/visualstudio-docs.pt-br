@@ -1,7 +1,7 @@
 ---
 title: Início Rápido – Criar um projeto do Python usando em modelo
 description: Neste início rápido, crie um projeto do Visual Studio para Python usando um modelo interno para compilar um aplicativo básico em Flask.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586453"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995996"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Início Rápido: criar um projeto do Python com base em um modelo no Visual Studio
 
-Depois de [instalar o suporte para Python no Visual Studio 2017](installing-python-support-in-visual-studio.md), é fácil criar um novo projeto do Python usando uma variedade de modelos. Neste Início Rápido, crie um aplicativo simples em Flask usando um modelo. O projeto resultante é semelhante ao projeto que você cria manualmente em [Início Rápido: criar um aplicativo Web com o Flask](../ide/quickstart-python.md).
+Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python-support-in-visual-studio.md), é fácil criar um novo projeto do Python usando uma variedade de modelos. Neste Início Rápido, crie um aplicativo simples em Flask usando um modelo. O projeto resultante é semelhante ao projeto que você cria manualmente em [Início Rápido: criar um aplicativo Web com o Flask](../ide/quickstart-python.md).
 
 1. Inicie o Visual Studio 2017.
 

@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749454"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668054"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
-O Visual Studio contém uma variedade de [ferramentas de criação de perfil e diagnóstico](../profiling/profiling-tools.md), incluindo um criador de perfil de memória nativa.  Esse criador de perfil vincula [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) do provedor de heap e fornece uma análise de como a memória está sendo alocada e utilizada.  Por padrão, essa ferramenta só pode analisar alocações feitas do heap padrão do Windows e todas as alocações fora desse heap nativo não serão exibidas.
+O Visual Studio contém uma variedade de [ferramentas de criação de perfil e diagnóstico](../profiling/profiling-feature-tour.md), incluindo um criador de perfil de memória nativa.  Esse criador de perfil vincula [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) do provedor de heap e fornece uma análise de como a memória está sendo alocada e utilizada.  Por padrão, essa ferramenta só pode analisar alocações feitas do heap padrão do Windows e todas as alocações fora desse heap nativo não serão exibidas.
 
 Há vários casos em que você pode desejar usar seu próprio heap personalizado e evitar a sobrecarga de alocação do heap padrão.  Por exemplo, você poderá usar [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) para alocar uma grande quantidade de memória no início do aplicativo ou do jogo e depois gerenciar seus próprios blocos nessa lista.  Nesse cenário, a ferramenta de criador de perfil de memória só verá essa alocação inicial e não o gerenciamento personalizado feito na parte de memória.  No entanto, ao usar o Provedor ETW de Heap Nativo Personalizado, é possível informar a ferramenta sobre as alocações que estão sendo feitas fora do heap padrão.
 
@@ -155,8 +155,8 @@ O heap padrão *Heap NT* tem a mesma aparência que anteriormente, com a adiçã
 Assim como ocorre com o heap padrão do Windows, também é possível usar essa ferramenta para comparar instantâneos e procurar perdas e danos no heap personalizado, que é descrito na documentação principal [Uso de memória](../profiling/memory-usage.md).
 
 > [!TIP]
-> O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar**>**Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar**>**Windows**>**Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
+> O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
 ## <a name="see-also"></a>Consulte também
-[Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)  
+[Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)  
 [Uso de Memória](../profiling/memory-usage.md)

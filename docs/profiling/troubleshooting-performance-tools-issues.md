@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572339"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668111"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Solução de problemas das ferramentas de desempenho
 Você pode ter um dos seguintes problemas ao usar as ferramentas de criação de perfil:  
   
--   [Nenhum dado é coletado pelas ferramentas de criação de perfil](#NoDataCollected)  
+-   [Nenhum dado é coletado pelas ferramentas de criação de perfil](#no-data-is-collected-by-the-profiling-tools)  
   
--   [As Exibições de Desempenho e os relatórios exibem números para nomes de função](#NoSymbols)  
+-   [As Exibições de Desempenho e os relatórios exibem números para nomes de função](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Nenhum dado é coletado pelas ferramentas de criação de perfil  
  Depois que você analisa um aplicativo, um arquivo de dados de criação de perfil (.*vsp*) não é criado e você recebe o seguinte aviso na janela de **Saída** ou na janela Comando:  
