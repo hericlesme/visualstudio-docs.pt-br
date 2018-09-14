@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c02ce23c341df377bc16b56cdd85769acf5582c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f56b81f3f3ce16f509f29791e28992402c222f9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917740"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551986"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: os métodos devem manter uma transparência consistente durante a substituição dos métodos base
 |||
@@ -28,20 +28,20 @@ ms.locfileid: "31917740"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Essa regra é acionado quando um método marcado com o <xref:System.Security.SecurityCriticalAttribute> substitui um método que é transparente ou marcados com o <xref:System.Security.SecuritySafeCriticalAttribute>. A regra também é acionado quando um método que é transparente ou marcados com o <xref:System.Security.SecuritySafeCriticalAttribute> substitui um método marcado com um <xref:System.Security.SecurityCriticalAttribute>.
+ Essa regra é acionada quando um método marcado com o <xref:System.Security.SecurityCriticalAttribute> substitui um método transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute>. A regra também é acionado quando um método transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> substitui um método marcado com um <xref:System.Security.SecurityCriticalAttribute>.
 
  A regra é aplicada durante a substituição de um método virtual ou a implementação de uma interface.
 
-## <a name="rule-description"></a>Descrição da Regra
- Essa regra é acionado em tentativas de alterar a acessibilidade de segurança de um método a cadeia de herança. Por exemplo, se um método virtual em uma classe base é crítico para segurança ou transparente, em seguida, a classe derivada deve substituí-la com um método crítico para segurança ou transparente. Por outro lado, se o virtual é crítico de segurança, a classe derivada deve substituí-la com um método de segurança crítica. A mesma regra aplica-se para implementar métodos de interface.
+## <a name="rule-description"></a>Descrição da regra
+ Essa regra é acionada em tentativas de alterar a acessibilidade de segurança de um método na cadeia de herança. Por exemplo, se um método virtual em uma classe base é transparente ou de segurança crítica, em seguida, a classe derivada deve substitui-lo com um método transparente ou de segurança crítica. Por outro lado, se o virtual é crítico para segurança, a classe derivada deve substituí-la com um método crítico de segurança. A mesma regra se aplica para implementar métodos de interface.
 
- Regras de transparência são aplicadas quando o código é JIT compilado em vez de em tempo de execução, para que o cálculo de transparência não tem informações de tipo dinâmico. Portanto, o resultado do cálculo de transparência deve ser capaz de ser determinada exclusivamente dos tipos estáticos compilação JIT, independentemente do tipo dinâmico.
+ Regras de transparência são aplicadas quando o código é o JIT compilado em vez de no tempo de execução para que o cálculo de transparência não tem informações de tipo dinâmico. Portanto, o resultado do cálculo de transparência deve ser capaz de ser determinada exclusivamente dos tipos estáticos que está sendo compilado por JIT, independentemente do tipo dinâmico.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, altere a transparência do método que está substituindo um método virtual ou implementando uma interface para corresponder a transparência de virtual ou o método de interface.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, altere a transparência do método que está substituindo um método virtual ou implementar uma interface para coincidir com a transparência da virtual ou o método de interface.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima avisos dessa regra. Violações desta regra resultará em um tempo de execução <xref:System.TypeLoadException> para assemblies que usam a transparência de nível 2.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Não suprima avisos dessa regra. As violações dessa regra resultará em um tempo de execução <xref:System.TypeLoadException> para assemblies que usam a transparência de nível 2.
 
 ## <a name="examples"></a>Exemplos
 

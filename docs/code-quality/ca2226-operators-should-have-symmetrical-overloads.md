@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920622"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549765"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: os operadores devem ter sobrecargas simétricas
 |||
@@ -29,21 +29,21 @@ ms.locfileid: "31920622"
 |NomeDoTipo|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis|
+|Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
  Um tipo implementa o operador de igualdade ou de desigualdade e não implementa o operador oposto.
 
-## <a name="rule-description"></a>Descrição da Regra
- Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos geralmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.
+## <a name="rule-description"></a>Descrição da regra
+ Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos normalmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.
 
- O compilador c# emite um erro para violações desta regra.
+ O compilador c# emite um erro para as violações dessa regra.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, implementar a igualdade e operadores de desigualdade ou remova o que está presente.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, implementar a igualdade e os operadores de desigualdade, ou remover o que está presente.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra. O tipo não funcionará de forma consistente com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Não suprima um aviso nessa regra. O tipo não funcionará de maneira consistente com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1046: não sobrecarregar operador Equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

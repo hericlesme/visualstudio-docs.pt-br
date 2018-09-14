@@ -1,5 +1,5 @@
 ---
-title: 'CA2101: Especificar marshaling para argumentos de cadeia de caracteres P Invoke'
+title: 'CA2101: especifique o marshaling para argumentos de cadeia de caracteres de P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918851"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548275"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: especificar marshaling para argumentos da cadeia de caracteres P/Invoke
 |||
@@ -29,20 +29,20 @@ ms.locfileid: "31918851"
 |NomeDoTipo|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
 |Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Invocação de uma plataforma membro permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não empacotar explicitamente a cadeia de caracteres.
+ Uma invocação de plataforma permite chamadores parcialmente confiáveis, o membro tem um parâmetro de cadeia de caracteres e não realizar marshaling explicitamente a cadeia de caracteres.
 
-## <a name="rule-description"></a>Descrição da Regra
- Quando você converter de Unicode em ANSI, é possível que nem todos os caracteres Unicode podem ser representados em uma página de código ANSI específica. *Mapeamento de melhor ajuste* tenta resolver esse problema, substituindo um caractere para o caractere que não pode ser representado. O uso desse recurso pode causar uma potencial vulnerabilidade de segurança porque você não pode controlar o caractere que é escolhido. Por exemplo, um código mal-intencionado pode criar uma cadeia de caracteres Unicode que contém caracteres que não são encontrados em uma página de código específico, que são convertidos em caracteres especiais do sistema de arquivos, como intencionalmente '... ' ou '/'. Observe também que as verificações de segurança para caracteres especiais ocorrem com frequência para que a cadeia de caracteres é convertida em ANSI.
+## <a name="rule-description"></a>Descrição da regra
+ Quando você converte de Unicode para ANSI, é possível que nem todos os caracteres Unicode podem ser representados em uma página de código ANSI específica. *Mapeamento de melhor ajuste* tenta resolver esse problema substituindo um caractere para o caractere que não pode ser representado. O uso desse recurso pode causar uma vulnerabilidade de segurança potencial porque não é possível controlar o caractere que é escolhido. Por exemplo, um código mal-intencionado pode criar uma cadeia de caracteres Unicode que contém caracteres que não são encontrados em uma página de código em particular, que são convertidos em caracteres especiais do sistema de arquivos, como intencionalmente '.. ' ou '/'. Observe também que as verificações de segurança para caracteres especiais com frequência ocorrerem antes que a cadeia de caracteres é convertida em ANSI.
 
- Mapeamento de melhor ajuste é o padrão para a conversão não gerenciado, WChar para MByte. A menos que você desabilite explicitamente o mapeamento de melhor ajuste, seu código pode conter uma vulnerabilidade de segurança explorável devido a esse problema.
+ Mapeamento de melhor ajuste é o padrão para a conversão não gerenciado, WChar para MByte. A menos que você desabilita explicitamente o mapeamento de melhor ajuste, seu código pode conter uma vulnerabilidade de segurança explorável por causa desse problema.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, tipos de dados de cadeia de caracteres para empacotá-lo explicitamente.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, explicitamente realizar marshaling de tipos de dados de cadeia de caracteres.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo

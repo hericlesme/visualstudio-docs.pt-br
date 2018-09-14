@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915578"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552052"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31915578"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Os nomes dos dois tipos, membros, parâmetros ou espaços para nome totalmente qualificados são idênticos quando eles são convertidos em minúsculas.
+ Os nomes dos dois tipos, membros, parâmetros ou espaços para nomes totalmente qualificados são idênticos quando eles são convertidos em minúsculas.
 
-## <a name="rule-description"></a>Descrição da Regra
- Os identificadores de namespaces, tipos, membros e parâmetros não podem se diferenciar apenas por maiúsculas porque linguagens com o Common Language Runtime como destino não precisam diferenciar maiúsculas e minúsculas. Por exemplo, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] é uma linguagem de maiusculas e minúsculas amplamente usada.
+## <a name="rule-description"></a>Descrição da regra
+ Os identificadores de namespaces, tipos, membros e parâmetros não podem se diferenciar apenas por maiúsculas porque linguagens com o Common Language Runtime como destino não precisam diferenciar maiúsculas e minúsculas. Por exemplo, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] é uma linguagem diferencia maiusculas de minúsculas amplamente utilizada.
 
- Esta regra é disparada em membros publicamente visíveis apenas.
+ Essa regra é acionada em apenas a membros publicamente visível.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Selecione um nome exclusivo quando comparado a outros identificadores em minúsculas.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Selecione um nome exclusivo quando comparado a outros identificadores no diferenciando maiusculas de minúsculas.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra. Não pode ser utilizada em todos os idiomas disponíveis na biblioteca de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Não suprima um aviso nessa regra. A biblioteca não pode ser utilizada em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
- O exemplo a seguir demonstra uma violação desta regra.
+ O exemplo a seguir demonstra uma violação dessa regra.
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 

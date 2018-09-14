@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c872685445dddaf55efc8c5880b053c865ff2351
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04e8348dc77222fbc06887efebf44c735eb7c8f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898161"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550015"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: os membros não devem expor determinados tipos concretos
 |||
@@ -32,24 +32,24 @@ ms.locfileid: "31898161"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um membro visível externamente é um determinado tipo concreto ou expõe certos tipos concretos por meio de um de seus parâmetros ou valor de retorno. No momento, esta regra relata exposição dos seguintes tipos concretos:
+ Um membro visível externamente é um determinado tipo concreto ou expõe determinados tipos concretos por meio de um de seus parâmetros ou valor de retorno. No momento, esta regra relata a exposição dos tipos concretos a seguir:
 
--   Um tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Um tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
-## <a name="rule-description"></a>Descrição da Regra
- Um tipo concreto é um tipo que tem uma implementação completa e, por isso, uma instância pode ser criada. Para permitir que o amplo uso do membro, substitua o tipo concreto com a interface sugerida. Isso permite que o membro aceitar qualquer tipo que implementa a interface ou ser usado onde um tipo que implementa a interface é esperado.
+## <a name="rule-description"></a>Descrição da regra
+ Um tipo concreto é um tipo que tem uma implementação completa e, por isso, uma instância pode ser criada. Para permitir o uso difundido do membro, substitua o tipo concreto a interface sugerida. Isso permite que o membro aceitar qualquer tipo que implementa a interface ou ser usado onde um tipo que implementa a interface é esperado.
 
- A tabela a seguir lista os tipos concretos destino e suas substituições sugeridas.
+ A tabela a seguir lista os tipos de concretos de destino e suas substituições sugeridas.
 
 |Tipo concreto|Substituição|
 |-------------------|-----------------|
 |<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Usando a interface separa o membro de uma implementação específica de uma fonte de dados XML.|
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, altere o tipo concreto para a interface sugerida.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, altere o tipo concreto para a interface sugerida.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir uma mensagem dessa regra se a funcionalidade específica fornecida pelo tipo concreto é necessária.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir uma mensagem da regra se a funcionalidade específica fornecida pelo tipo concreto é necessária.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1011: considere passar os tipos base como parâmetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

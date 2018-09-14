@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609e765e5c5013ea0903683439f313f7de95017
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e829ae7f3546556ad80d0dd4c1d5d5b80eae9a4f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917535"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547416"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: tipos devem ser pelo menos críticos como tipos base e interfaces
 |||
@@ -28,15 +28,15 @@ ms.locfileid: "31917535"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo transparente é derivado de um tipo que está marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityCriticalAttribute>, ou um tipo que está marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> atributo é derivado de um tipo que está marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+ Um tipo transparente é derivado de um tipo que é marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> ou o <xref:System.Security.SecurityCriticalAttribute>, ou um tipo que é marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> atributo é derivado de um tipo que é marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo.
 
-## <a name="rule-description"></a>Descrição da Regra
- Esta regra é acionada quando um tipo derivado tem um atributo de transparência de segurança que não é tão crítico quanto seu tipo de base ou interface implementada. Apenas os tipos críticos podem derivar os tipos de base críticos ou implementar interfaces críticos, e apenas os tipos críticos ou de segurança crítica podem derivar dos tipos de base críticos de segurança ou implementar interfaces críticas de segurança. Violações desta regra de transparência de nível 2 resultam em um <xref:System.TypeLoadException> para o tipo derivado.
+## <a name="rule-description"></a>Descrição da regra
+ Esta regra é acionada quando um tipo derivado tem um atributo de transparência de segurança que não é tão crítico quanto seu tipo de base ou interface implementada. Apenas os tipos críticos podem derivar os tipos de base críticos ou implementar interfaces críticos, e apenas os tipos críticos ou de segurança crítica podem derivar dos tipos de base críticos de segurança ou implementar interfaces críticas de segurança. As violações desta regra de transparência de nível 2 resultam em um <xref:System.TypeLoadException> para o tipo derivado.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir essa violação, marque o tipo derivado ou implementação com um atributo de transparência é pelo menos crítico como o tipo base ou interface.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir essa violação, marque o tipo derivado ou implementação com um atributo de transparência é pelo menos tão crítico como o tipo base ou interface.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo

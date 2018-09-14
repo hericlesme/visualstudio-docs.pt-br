@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ce14b7da80775a9837b5e92f25d141276226cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73c52965d31d66f21cdf738816d7ea9c0a8afbdf
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900509"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549594"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: substituir argumentos repetitivos por matriz de parâmetros
 |||
@@ -29,21 +29,21 @@ ms.locfileid: "31900509"
 |NomeDoTipo|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Um método público ou protegido em um tipo público tem mais de três parâmetros e seus três parâmetros são do mesmo tipo.
+ Um método público ou protegido em um tipo público tem mais de três parâmetros e seus três últimos parâmetros são do mesmo tipo.
 
-## <a name="rule-description"></a>Descrição da Regra
- Use uma matriz de parâmetros em vez de argumentos repetidos quando o número exato de argumentos é desconhecido e os argumentos de variável são do mesmo tipo, ou podem ser passados como o mesmo tipo. Por exemplo, o <xref:System.Console.WriteLine%2A> método fornece uma sobrecarga de uso geral que usa uma matriz de parâmetros para aceitar qualquer número de <xref:System.Object> argumentos.
+## <a name="rule-description"></a>Descrição da regra
+ Use uma matriz de parâmetros em vez de argumentos repetidos, quando o número exato de argumentos é desconhecido e os argumentos variáveis forem do mesmo tipo, ou podem ser passados como o mesmo tipo. Por exemplo, o <xref:System.Console.WriteLine%2A> método fornece uma sobrecarga de uso geral que usa uma matriz de parâmetros para aceitar qualquer número de <xref:System.Object> argumentos.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, substitua os argumentos repetidos com uma matriz de parâmetros.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, substitua os argumentos repetidos com uma matriz de parâmetros.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É sempre seguro suprimir um aviso dessa regra; No entanto, esse design pode causar problemas de usabilidade.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É sempre seguro suprimir um aviso nessa regra; No entanto, esse design pode causar problemas de usabilidade.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que violam essa regra.
+ O exemplo a seguir mostra um tipo que viola essa regra.
 
  [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

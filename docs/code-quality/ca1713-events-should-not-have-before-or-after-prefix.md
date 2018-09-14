@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e3d513188093a29aa9f7bb1c9f83b9c70e54d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc6d8b78ff1b00d1c5e5a6c6a597855243ea12fb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915307"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550708"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: os eventos não devem ter um prefixo anterior ou posterior
 |||
@@ -34,13 +34,13 @@ ms.locfileid: "31915307"
 ## <a name="cause"></a>Causa
  O nome de um evento começa com 'Before' ou 'After'.
 
-## <a name="rule-description"></a>Descrição da Regra
- Nomes de evento devem descrever a ação que gera o evento. Para nomear eventos relacionados acionados em uma sequência específica, use o presente ou o pretérito para indicar a posição relativa na sequência de ações. Por exemplo, quando um par de eventos de nomenclatura que é gerado quando um recurso de fechamento, você pode nomeá-lo 'De fechamento' e 'Fechado', em vez de 'BeforeClose' e 'AfterClose'.
+## <a name="rule-description"></a>Descrição da regra
+ Nomes de evento devem descrever a ação que aciona o evento. Para nomear eventos relacionados acionados em uma sequência específica, use o presente ou o pretérito para indicar a posição relativa na sequência de ações. Por exemplo, quando um par de eventos de nomenclatura que é gerado ao fechar um recurso, você pode nomeá-lo 'De fechamento' e 'Fechado', em vez de 'BeforeClose' e 'AfterClose'.
 
- Convenções de nomenclatura fornecem uma aparência comum para bibliotecas de destino do common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por uma pessoa com experiência em desenvolvimento de código gerenciado.
+ Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Remova o prefixo do nome do evento e considere alterar o nome para usar o presente ou no passado de um verbo.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Remover o prefixo do nome do evento e considere alterar o nome para usar o presente ou o pretérito de um verbo.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.

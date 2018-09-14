@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5863f4d8ca4db47f7e537f0b1abc5eb280434c80
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916793"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551776"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: declarações seguras
+
 |||
 |-|-|
 |NomeDoTipo|SecureAsserts|
@@ -32,16 +33,18 @@ ms.locfileid: "31916793"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método declara uma permissão e nenhuma verificação de segurança é realizada no chamador.
+ Um método declara uma permissão e não executa nenhuma verificação de segurança do chamador.
 
-## <a name="rule-description"></a>Descrição da Regra
- A declaração de uma permissão de segurança sem realizar verificações de segurança pode deixar uma fraqueza de segurança explorável no código. Um exame da pilha de segurança para quando uma permissão de segurança é declarada. Se você declarar uma permissão sem realizar verificações no chamador, o chamador indiretamente pode executar códigos usando suas permissões. Declara sem verificações de segurança são permitidos apenas quando tiver certeza de que a declaração não pode ser usada de maneira prejudicial. Uma declaração é inofensiva se o código que você chamar é inofensivo, ou os usuários não é possível passar informações arbitrárias ao código que você chama.
+## <a name="rule-description"></a>Descrição da regra
+ A declaração de uma permissão de segurança sem realizar verificações de segurança pode deixar uma fraqueza de segurança explorável no código. Uma movimentação de pilha de segurança para quando uma permissão de segurança é declarada. Se você declarar uma permissão sem executar nenhuma verificação no chamador, o chamador pode executar indiretamente código por meio de suas permissões. Declara sem verificações de segurança são permitidas, se você tiver certeza, que a declaração não pode ser usada de modo prejudicial. Uma declaração é inofensiva, se o código que você chame é inofensivo, ou se os usuários não é possível passar informações arbitrárias para código que você chama.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, adicione uma exigência de segurança para o método ou seu tipo declarativo.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, adicione uma exigência de segurança para o método ou seu tipo declarativo.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso dessa regra somente após uma análise cuidadosa de segurança.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Suprima um aviso nessa regra somente após uma análise atenta da segurança.
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)
+
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)

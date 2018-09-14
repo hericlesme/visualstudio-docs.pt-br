@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915956"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550499"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: não usar a prioridade de processo ociosa
 |||
@@ -34,11 +34,11 @@ ms.locfileid: "31915956"
 ## <a name="cause"></a>Causa
  Essa regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.
 
-## <a name="rule-description"></a>Descrição da Regra
- Não defina a prioridade do processo como Ocioso. Processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando ele não esteja ocioso e, portanto, bloquearão standby.
+## <a name="rule-description"></a>Descrição da regra
+ Não defina a prioridade do processo como Ocioso. Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando estariam ocioso e, assim, bloquearão em espera.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+## <a name="how-to-fix-violations"></a>Como corrigir violações
  Definir processos `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e considerações de mobilidade podem ser ignoradas com segurança.

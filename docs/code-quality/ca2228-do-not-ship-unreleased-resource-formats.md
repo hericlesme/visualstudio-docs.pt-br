@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f444779fc5db725c090f96ec51a86d8427a14d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919175"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547537"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: não remeter formatos de recurso não lançados
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31919175"
 |NomeDoTipo|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis|
+|Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
  Um arquivo de recurso foi criado usando uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que não é suportada atualmente.
 
-## <a name="rule-description"></a>Descrição da Regra
- Arquivos de recursos que foram criados usando versões de pré-lançamento do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] não pode ser usado por versões com suporte do .NET Framework.
+## <a name="rule-description"></a>Descrição da regra
+ Arquivos de recursos que foram compilados usando versões de pré-lançamento do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] não podem ser utilizados por versões com suporte do .NET Framework.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, criar o recurso usando uma versão com suporte a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, crie o recurso usando uma versão compatível do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.

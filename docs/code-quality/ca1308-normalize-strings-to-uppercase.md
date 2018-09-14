@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cda66d2a43ee3fde8e3e7b2d22a64a09655da3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897137"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545694"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: normalizar cadeias de caracteres para maiúsculas
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31897137"
 |NomeDoTipo|NormalizeStringsToUppercase|
 |CheckId|CA1308|
 |Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
  Uma operação normaliza uma cadeia de caracteres em minúsculas.
 
-## <a name="rule-description"></a>Descrição da Regra
- As cadeias de caracteres devem ser normalizadas em maiúsculas. Um pequeno grupo de caracteres, quando eles são convertidos em minúsculas, não é possível fazer uma viagem de ida e. Para fazer uma viagem de ida e meios para converter os caracteres de uma localidade para outra localidade que representa dados de caracteres de forma diferente e, em seguida, com precisão recuperar os caracteres originais dos caracteres convertidos.
+## <a name="rule-description"></a>Descrição da regra
+ As cadeias de caracteres devem ser normalizadas em maiúsculas. Um pequeno grupo de caracteres, quando eles são convertidos em minúsculas, não é possível fazer uma viagem de ida e volta. Para fazer uma viagem de ida e volta o meio para converter os caracteres de uma localidade para outra localidade que representa dados de caracteres de forma diferente e, em seguida, com precisão recuperar os caracteres originais dos caracteres convertidos.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Altere as operações que converter cadeias de caracteres em minúsculas, para que as cadeias de caracteres são convertidas em letras maiusculas em vez disso. Por exemplo, altere `String.ToLower(CultureInfo.InvariantCulture)` para `String.ToUpper(CultureInfo.InvariantCulture)`.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Altere as operações que convertem cadeias de caracteres em minúsculas, para que as cadeias de caracteres são convertidas em letras maiusculas em vez disso. Por exemplo, altere `String.ToLower(CultureInfo.InvariantCulture)` para `String.ToUpper(CultureInfo.InvariantCulture)`.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir uma mensagem de aviso quando você não estiver fazendo a decisão de segurança com base no resultado (por exemplo, quando você estiver exibindo-la na interface de usuário).
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir uma mensagem de aviso quando você não estiver fazendo a decisão de segurança com base no resultado (por exemplo, quando você exibe na interface do usuário).
 
 ## <a name="see-also"></a>Consulte também
  [Avisos de globalização](../code-quality/globalization-warnings.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4039e7f0d3c520a85d152329720d3253cab2140a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ba8ef8cc0b75ed70ea6e98be2a4bac3e041e1d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901585"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552010"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: evitar membros estáticos em tipos visíveis COM
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31901585"
 |NomeDoTipo|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
 |Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Um tipo que está especificamente marcado como visível para COM Component Object Model () contém um `public``static` método.
+ Um tipo que é marcado especificamente como visível para COM Component Object Model () contém um `public``static` método.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  COM não oferece suporte `static` métodos.
 
- Essa regra ignora a propriedade e acessadores de eventos, métodos ou métodos que são marcados como usando a sobrecarga de operador de <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo ou o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.
+ Essa regra ignora a propriedade e acessadores de eventos, métodos ou métodos que são marcados usando qualquer um de sobrecarga de operador de <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo ou o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.
 
- Por padrão, os seguintes são visíveis no COM: assemblies, tipos públicos, membros de instância pública em tipos públicos e todos os membros de tipos de valor público.
+ Por padrão, a seguir é visível no COM: assemblies, tipos públicos, membros de instância pública em tipos públicos e todos os membros de tipos de valor público.
 
- Para esta regra ocorrer, um nível de conjunto <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definido como `false` e classe - <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definido como `true`, como mostra o código a seguir.
+ Para esta regra para ocorrer, um nível de conjunto <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definida como `false` e a classe - <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definida como `true`, como mostra o código a seguir.
 
 ```csharp
 using System;
@@ -60,27 +60,27 @@ namespace Samples
 }
 ```
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, altere o design para usar um método de instância que fornece a mesma funcionalidade que o `static` método.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, altere o projeto para usar um método de instância que fornece a mesma funcionalidade que o `static` método.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso dessa regra, se um cliente COM não exigir acesso à funcionalidade fornecida pelo `static` método.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra, se um cliente COM não exigir acesso à funcionalidade fornecida pelo `static` método.
 
 ## <a name="example-violation"></a>Violação de exemplo
 
 ### <a name="description"></a>Descrição
- A exemplo a seguir mostra um `static` método que violam essa regra.
+ A exemplo a seguir mostra um `static` método que viola essa regra.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
 
 ### <a name="comments"></a>Comentários
- Neste exemplo, o **Book.FromPages** método não pode ser chamado de COM.
+ Neste exemplo, o **Book.FromPages** método não pode ser chamado COM.
 
 ## <a name="example-fix"></a>Correção de exemplo
 
 ### <a name="description"></a>Descrição
- Para corrigir a violação no exemplo anterior, você pode alterar o método para um método de instância, mas que não faz sentido nesta instância. É a melhor solução aplicar explicitamente `ComVisible(false)` para o método para torná-lo, desmarque para outros desenvolvedores que o método não pode ser visto no COM.
+ Para corrigir a violação no exemplo anterior, você pode alterar o método para um método de instância, mas que não faz sentido nesta instância. Uma solução melhor é aplicar explicitamente `ComVisible(false)` para o método para deixar claro para outros desenvolvedores que o método não pode ser visto de COM.
 
  O exemplo a seguir aplica-se <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> para o método.
 

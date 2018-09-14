@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c1a622519e08d4b56fdd8e6811ec039f9d3871
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b81ac3fcedf4f09c37bbe3aeeb6b7d2b572af8ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896176"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550668"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: os métodos de interface devem ser chamáveis por tipos filho
 |||
@@ -29,21 +29,21 @@ ms.locfileid: "31896176"
 |NomeDoTipo|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
  Um tipo visível externamente sem lacre fornece uma implementação de método explícita de uma interface pública e não fornece um método visível externamente alternativo com o mesmo nome.
 
-## <a name="rule-description"></a>Descrição da Regra
- Considere a possibilidade de um tipo base que explicitamente implementa um método de interface pública. Um tipo derivado do tipo base pode acessar o método de interface herdada por meio de uma referência para a instância atual (`this` em c#) que é convertido para a interface. Se o tipo derivado novamente (explicitamente) implementa o método de interface herdada, a implementação base não pode mais ser acessada. A chamada por meio da referência de instância atual invocará a implementação derivada; Isso causa recursão e um estouro de pilha eventual.
+## <a name="rule-description"></a>Descrição da regra
+ Considere um tipo base que implementa explicitamente um método de interface pública. Um tipo derivado do tipo base pode acessar o método de interface herdada apenas por meio de uma referência à instância atual (`this` em c#) que é convertido para a interface. Se o tipo derivado (explicitamente) reimplementa o método de interface herdada, a implementação base não pode mais ser acessada. A chamada por meio de referência de instância atual invocará a implementação derivada; Isso causa recursão e um estouro de pilha eventual.
 
- Essa regra não relata uma violação de uma implementação explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando externamente visível `Close()` ou `System.IDisposable.Dispose(Boolean)` método é fornecido.
+ Essa regra não relata uma violação para uma implementação explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando um visível externamente `Close()` ou `System.IDisposable.Dispose(Boolean)` método é fornecido.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, implemente um novo método que expõe a mesma funcionalidade e é visível para tipos derivados ou alterar uma implementação não explícitas. Se uma alteração significativa é aceitável, uma alternativa é fazer o tipo lacrado.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, implemente um novo método que expõe a mesma funcionalidade e é visível para tipos derivados ou alterar para uma implementação não explícitas. Se uma alteração significativa é aceitável, uma alternativa é tornar o tipo selado.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso de que essa regra se um método externamente visível for fornecido, que tem a mesma funcionalidade, mas o método implementado explicitamente um nome diferente.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra, se um método visível externamente é fornecida que tem a mesma funcionalidade, mas o método implementado explicitamente um nome diferente.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo `ViolatingBase`, que viola a regra e um tipo, `FixedBase`, que mostra uma correção para a violação.

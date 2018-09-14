@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c33df3775d0a267c35c80abd73d27a580a586da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d41310ba5c6e52add891a4a8d034c774f9f74d2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917318"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549593"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: os assemblies de nível 2 não devem conter LinkDemands
 |||
@@ -28,15 +28,15 @@ ms.locfileid: "31917318"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Uma classe ou membro de classe está usando um <xref:System.Security.Permissions.SecurityAction> em um aplicativo que está usando a segurança de nível 2.
+ Uma classe ou membro de classe está usando um <xref:System.Security.Permissions.SecurityAction> em um aplicativo que está usando segurança de nível 2.
 
-## <a name="rule-description"></a>Descrição da Regra
- LinkDemands são preteridos no conjunto de regras de segurança nível 2. Em vez de usar LinkDemands para aplicar a segurança em tempo de compilação just-in-time (JIT), marque os métodos, tipos e campos com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+## <a name="rule-description"></a>Descrição da regra
+ LinkDemands são preteridos no conjunto de regras de segurança nível 2. Em vez de usar LinkDemands para impor a segurança em tempo de compilação just-in-time (JIT), marque os métodos, tipos e campos com o <xref:System.Security.SecurityCriticalAttribute> atributo.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remova o <xref:System.Security.Permissions.SecurityAction> e marcar o tipo ou membro com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remova os <xref:System.Security.Permissions.SecurityAction> e marque o tipo ou membro com o <xref:System.Security.SecurityCriticalAttribute> atributo.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo

@@ -1,5 +1,5 @@
 ---
-title: 'P-Invoke ca5122: declarações não devem ser seguras crítico'
+title: 'CA5122: as declarações de P-Invoke não devem ser críticas para segurança'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e73af173dd7e82a139c204051c72480a50e38fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 371f027782c4cf598bb234107e94aaea2bc896fc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920751"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549833"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: declarações P/Invoke não devem ser críticas para segurança
 |||
@@ -43,10 +43,10 @@ public class C
 
  Neste exemplo, `C.Beep(...)` foi marcado como um método crítico de segurança.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  Os métodos são marcados como SecuritySafeCritical quando executam uma operação confidencial de segurança, mas também são seguros para serem usados pelo código transparente. Uma das regras básicas do modelo de transparência de segurança é que o código transparente nunca pode chamar diretamente o código nativo por P/Invoke. Por isso, a marcação de um P/Invoke como crítico de segurança não permitirá que o código transparente o chame, e é enganosa na análise de segurança.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para tornar P/Invoke disponível para o código transparente, exponha um método wrapper crítico de segurança para ele:
 
 ```csharp
@@ -67,5 +67,5 @@ class C
 
 ```
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.

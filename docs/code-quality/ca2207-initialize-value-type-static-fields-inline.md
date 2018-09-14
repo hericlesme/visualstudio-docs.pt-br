@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883e5d842346a0821b54b2b4eacad3cbc92028b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5730acf02cf12dce6d98e7cbd1b6f38f7ece05e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917680"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550564"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: inicializar campos estáticos de tipo de valor embutido
 |||
@@ -29,20 +29,20 @@ ms.locfileid: "31917680"
 |NomeDoTipo|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis|
+|Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
  Um tipo de valor declara um construtor estático explícito.
 
-## <a name="rule-description"></a>Descrição da Regra
- Quando um tipo de valor é declarado, passa por uma inicialização padrão, onde todos os campos de tipo de valor são definidos como zero e todos os campos de tipo de referência são definidos como `null` (`Nothing` no Visual Basic). Um construtor estático explícito só é garantido para ser executado antes de um construtor de instância ou um membro estático do tipo é chamado. Portanto, se o tipo é criado sem chamar um construtor de instância, o construtor estático não é garantido para ser executado.
+## <a name="rule-description"></a>Descrição da regra
+ Quando um tipo de valor é declarado, ele passa por uma inicialização padrão em que todos os campos de tipo de valor são definidos como zero e todos os campos de tipo de referência são definidos como `null` (`Nothing` no Visual Basic). Um construtor estático explícito é garantido somente para executar antes de um construtor de instância ou um membro estático do tipo é chamado. Portanto, se o tipo é criado sem chamar um construtor de instância, o construtor estático não é garantido para ser executado.
 
- Se todos os dados estáticos são inicializado embutido e nenhum construtor estático explícito é declarado, os compiladores c# e Visual Basic, adicione o `beforefieldinit` sinalizador à definição de classe MSIL. Os compiladores também adicionar um construtor estático particular que contém o código de inicialização estática. Este construtor estático privado é garantido para ser executado antes de qualquer campo estático do tipo é acessado.
+ Se todos os dados estáticos é inicializado embutido e nenhum construtor estático explícito é declarado, os compiladores c# e Visual Basic, adicione o `beforefieldinit` sinalizador à definição de classe MSIL. Os compiladores também adicionar um construtor estático privado que contém o código de inicialização estática. Este construtor estático privado é garantido para ser executado antes de qualquer campo estático do tipo é acessado.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra inicializar todos os dados estáticos quando ele é declarado e remover o construtor estático.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra inicializar todos os dados estáticos quando ele é declarado e remova o construtor estático.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas

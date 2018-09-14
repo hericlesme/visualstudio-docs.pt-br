@@ -17,32 +17,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce7e5de528e8b0c0a6f128fa9f7d68c1b9f385c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11359e021d5c297c0782bf95fe35997b0a1b5be5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919798"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548407"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: os métodos de descarte devem chamar o descarte da classe base
+
 |||
 |-|-|
 |NomeDoTipo|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis|
+|Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
- Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName> herda de um tipo que implementa também <xref:System.IDisposable>. O <xref:System.IDisposable.Dispose%2A> não chama o método do tipo herdo o <xref:System.IDisposable.Dispose%2A> método do tipo pai.
+ Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName> herda de um tipo que também implementa <xref:System.IDisposable>. O <xref:System.IDisposable.Dispose%2A> método do tipo de herança não chama o <xref:System.IDisposable.Dispose%2A> método do tipo pai.
 
-## <a name="rule-description"></a>Descrição da Regra
- Se um tipo herda de um tipo descartável, ele deverá chamar o <xref:System.IDisposable.Dispose%2A> método do tipo de base em seu próprio <xref:System.IDisposable.Dispose%2A> método. Chamar o método do tipo base Dispose garante que todos os recursos criados pelo tipo de base são lançados.
+## <a name="rule-description"></a>Descrição da regra
+ Se um tipo herda de um tipo descartável, ele deve chamar o <xref:System.IDisposable.Dispose%2A> método do tipo base de dentro de seu próprio <xref:System.IDisposable.Dispose%2A> método. Chamar o método de tipo base Dispose garante que todos os recursos criados pelo tipo de base são liberados.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, chame `base`.<xref:System.IDisposable.Dispose%2A> no seu <xref:System.IDisposable.Dispose%2A> método.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, chame `base`.<xref:System.IDisposable.Dispose%2A> no seu <xref:System.IDisposable.Dispose%2A> método.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso de que essa regra se a chamada para `base`.<xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra, se a chamada para `base`.<xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo `TypeA` que implementa <xref:System.IDisposable>.
@@ -50,9 +51,11 @@ ms.locfileid: "31919798"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo `TypeB` que herda do tipo `TypeA` e chama corretamente seu <xref:System.IDisposable.Dispose%2A> método.
+ O exemplo a seguir mostra um tipo `TypeB` que herda do tipo `TypeA` e chama corretamente sua <xref:System.IDisposable.Dispose%2A> método.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.IDisposable?displayProperty=fullName> [Padrão de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [Padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern)

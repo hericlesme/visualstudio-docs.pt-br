@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898032"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547679"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: evitar parâmetros excessivos em tipos genéricos
 |||
@@ -34,14 +34,14 @@ ms.locfileid: "31898032"
 ## <a name="cause"></a>Causa
  Um tipo genérico visível externamente tem mais de dois parâmetros de tipo.
 
-## <a name="rule-description"></a>Descrição da Regra
- Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. É geralmente óbvio com um parâmetro de tipo, como em `List<T>`e, em certos casos com dois parâmetros de tipo, como em `Dictionary<TKey, TValue>`. Se houver mais de dois parâmetros de tipo, a dificuldade torna-se muito grande para a maioria dos usuários (por exemplo, `TooManyTypeParameters<T, K, V>` em c# ou `TooManyTypeParameters(Of T, K, V)` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+## <a name="rule-description"></a>Descrição da regra
+ Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. É normalmente óbvio com um parâmetro de tipo, como em `List<T>`e, em alguns casos com dois parâmetros de tipo, como em `Dictionary<TKey, TValue>`. Se houver mais de dois parâmetros de tipo, a dificuldade ficará muito grande para a maioria dos usuários (por exemplo, `TooManyTypeParameters<T, K, V>` em c# ou `TooManyTypeParameters(Of T, K, V)` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, altere o design para usar não mais do que dois parâmetros de tipo.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, altere o design para usar não mais do que dois parâmetros de tipo.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso dessa regra, a menos que o design absolutamente requer mais de dois parâmetros de tipo. Fornecer genéricos em uma sintaxe que seja fácil de entender e usar reduz o tempo que é necessário para saber mais e aumenta a taxa de adoção de novas bibliotecas.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Não suprima um aviso nessa regra, a menos que o design absolutamente requer mais de dois parâmetros de tipo. Fornecer genéricos em uma sintaxe fácil de entender e usar reduz o tempo que é necessário para saber mais e aumenta a taxa de adoção de novas bibliotecas.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1010: as coleções devem implementar a interface genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 969c4f73148401f0a4f389f86b866023c316298c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 527086fa2b17de0330b394a7041232312f3b1719
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919338"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547210"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: o código transparente não deve ser protegido com LinkDemands
 |||
@@ -28,19 +28,19 @@ ms.locfileid: "31919338"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método transparente exige um <xref:System.Security.Permissions.SecurityAction> ou outra exigência de segurança.
+ Um método transparente requer um <xref:System.Security.Permissions.SecurityAction> ou outra exigência de segurança.
 
-## <a name="rule-description"></a>Descrição da Regra
- Esta regra é acionada em métodos transparentes que exigem LinkDemands para serem acessados. O código transparente de segurança não deve ser responsável por verificar a segurança de uma operação e, assim, não deve exigir permissões. Porque os métodos transparentes devem para ser segurança neutra, eles deverão não tomar decisões de segurança. Além disso, código crítico seguro, que toma decisões de segurança, não deve ser confiável no código transparente para feitas anteriormente essa decisão.
+## <a name="rule-description"></a>Descrição da regra
+ Essa regra é acionada em métodos transparentes que exigem LinkDemands para acessá-los. O código transparente de segurança não deve ser responsável por verificar a segurança de uma operação e, assim, não deve exigir permissões. Porque os métodos transparentes devem para ser segurança neutra, eles deverão não tomar decisões de segurança. Além disso, código crítico seguro, que toma decisões de segurança, não deve ser confiando no código transparente para feitas anteriormente essa decisão.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remova a demanda de link no método transparente ou marcar o método com <xref:System.Security.SecuritySafeCriticalAttribute> verificações de atributo se ele estiver executando a segurança, como as exigências de segurança.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remova a demanda de link no método transparente ou marcar o método com <xref:System.Security.SecuritySafeCriticalAttribute> verificações de atributo se ele está executando a segurança, como demandas de segurança.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir, a regra dispara no método porque o método é transparente e está marcado com um LinkDemand <xref:System.Security.PermissionSet> que contém um <xref:System.Security.Permissions.SecurityAction>.
+ No exemplo a seguir, a regra é acionada no método porque o método é transparente e é marcado com um LinkDemand <xref:System.Security.PermissionSet> que contém um <xref:System.Security.Permissions.SecurityAction>.
 
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 

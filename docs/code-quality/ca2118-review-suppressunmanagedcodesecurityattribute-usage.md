@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3eeff4eca5bcc6d2490fc077501726e3ba7e8de1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917170"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549839"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute
+
 |||
 |-|-|
 |NomeDoTipo|ReviewSuppressUnmanagedCodeSecurityUsage|
@@ -34,41 +35,45 @@ ms.locfileid: "31917170"
 ## <a name="cause"></a>Causa
  Um tipo público ou protegido ou membro tem o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.
 
-## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Altera o comportamento do sistema de segurança padrão para os membros que execute o código não gerenciado usando invocação de plataforma ou interoperabilidade COM. Em geral, o sistema faz uma [dados e modelagem](/dotnet/framework/data/index) para permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica se todos os chamadores na pilha de chamadas para a permissão. Quando o atributo estiver presente, o sistema faz uma [demandas de Link](/dotnet/framework/misc/link-demands) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é a compilação JIT.
+## <a name="rule-description"></a>Descrição da regra
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Altera o comportamento do sistema de segurança padrão para membros que executem código não gerenciado usando invocação de plataforma ou interoperabilidade de COM. Em geral, o sistema faz uma [dados e modelagem](/dotnet/framework/data/index) para permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica todos os chamadores na pilha de chamadas para a permissão. Quando o atributo estiver presente, o sistema faz uma [demandas de Link](/dotnet/framework/misc/link-demands) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado por JIT.
 
- Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você colocar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (que não seja o chamador imediato) não precisa de permissão de código não gerenciado para executar código não gerenciado. Dependendo do membro público ações e manipulação de entrada, ele pode permitir que chamadores não confiáveis para a funcionalidade de acesso restringido normalmente ao código confiável.
+ Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você colocar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (que não seja o chamador imediato) precisa de permissão de código não gerenciado para executar código não gerenciado. Dependendo do membro público ações e manipulação de entrada, ele pode permitir que os chamadores não confiáveis para acessar a funcionalidade normalmente restringido ao código confiável.
 
- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] se baseia em verificações de segurança para impedir que os chamadores tenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora normais de segurança, o seu código representa uma ameaça grave se ele pode ser usado para ler ou gravar em memória do processo. Observe que o risco não está limitado a métodos que intencionalmente fornecem acesso para processar memória; Ele também está presente em qualquer cenário em que um código mal-intencionado pode obter acesso por qualquer meio, por exemplo, fornecendo entrada surpreendente, malformada ou inválida.
+ O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] se baseia em verificações de segurança para impedir que os chamadores tenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora a segurança normal, seu código representa uma ameaça grave se ele pode ser usado para ler ou gravar na memória do processo. Observe que não é limitado a métodos que intencionalmente fornecem acesso para processar a memória; o risco Ele também está presente em qualquer cenário em que código mal-intencionado pode obter o acesso por qualquer meio, por exemplo, fornecendo entrada surpreendente, malformada ou inválida.
 
- A política de segurança padrão não conceder permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou um membro de um dos seguintes grupos:
+ A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou é um membro de um dos seguintes grupos:
 
--   Grupo de códigos de zona Meu computador
+- Grupo de códigos de zona Meu computador
 
--   Grupo de códigos do Microsoft forte nome
+- Grupo de códigos do Microsoft forte nome
 
--   Grupo de códigos de nome de alta segurança ECMA
+- Grupo de códigos do ECMA forte nome
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Leia com atenção o seu código para garantir que esse atributo é absolutamente necessário. Se você não estiver familiarizado com a segurança de código gerenciado ou não entende as implicações de segurança de usar esse atributo, removê-lo do seu código. Se o atributo é necessário, você deve garantir que os chamadores não é possível usar seu código maliciosamente. Se seu código não tem permissão para executar código não gerenciado, esse atributo não tem nenhum efeito e deve ser removido.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Examine cuidadosamente o código para garantir que esse atributo é absolutamente necessário. Se você não estiver familiarizado com a segurança do código gerenciado ou não compreende as implicações de segurança de usar esse atributo, remova-o do seu código. Se o atributo for necessário, você deve garantir que os chamadores não é possível usar seu código maliciosamente. Se seu código não tem permissão para executar código não gerenciado, esse atributo não tem nenhum efeito e deve ser removido.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Para suprimir com segurança um aviso dessa regra, você deve garantir que seu código não fornece os chamadores acessem operações nativo ou recursos que podem ser usados de forma destrutivas.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Para suprimir com segurança um aviso nessa regra, você deve garantir que seu código não fornece os chamadores acesso a operações nativas ou recursos que podem ser usados de forma destrutivas.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
  O exemplo a seguir viola a regra.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
  No exemplo a seguir, o `DoWork` método fornece um caminho de código publicamente acessível para o método de invocação de plataforma `FormatHardDisk`.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
-## <a name="example"></a>Exemplo
- No exemplo a seguir, o método público `DoDangerousThing` faz com que uma violação. Para resolver a violação, `DoDangerousThing` devem ser feitas em particular, e o acesso a ele deve ser por meio de um método público protegido por uma exigência de segurança, conforme ilustrado pelo `DoWork` método.
+## <a name="example-3"></a>Exemplo 3:
+ No exemplo a seguir, o método público `DoDangerousThing` faz com que uma violação. Para resolver a violação `DoDangerousThing` deve ser feito particular e acesso a ele deve ser por meio de um método público, protegido por uma exigência de segurança, conforme ilustrado pelo `DoWork` método.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines) [dados e modelagem](/dotnet/framework/data/index) [demandas de Link](/dotnet/framework/misc/link-demands)
+
+- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>
+- [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)
+- [Dados e modelagem](/dotnet/framework/data/index)
+- [Demandas de link](/dotnet/framework/misc/link-demands)

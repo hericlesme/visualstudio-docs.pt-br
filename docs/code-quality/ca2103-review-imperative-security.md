@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a20dc939b305e3ec917f57bcd9f7cc8f8aa735f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f8975e3118e9907bf4688efe93dc60646b6d80b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914901"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547680"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: revisar segurança obrigatória
+
 |||
 |-|-|
 |NomeDoTipo|ReviewImperativeSecurity|
@@ -34,16 +35,18 @@ ms.locfileid: "31914901"
 ## <a name="cause"></a>Causa
  Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.
 
-## <a name="rule-description"></a>Descrição da Regra
- Segurança obrigatória usa objetos gerenciados para especificar permissões e ações de segurança durante a execução de código, em comparação comparada a segurança declarativa, que usa atributos para armazenar permissões e ações nos metadados. Segurança obrigatória é muito flexível, porque você pode definir o estado de um objeto de permissão e selecione as ações de segurança usando as informações que não estão disponíveis até o tempo de execução. Junto com que a flexibilidade vem o risco de que as informações de tempo de execução que você pode usar para determinar que o estado de uma permissão não permanecem inalteradas desde que a ação está em vigor.
+## <a name="rule-description"></a>Descrição da regra
+ Segurança imperativa usa objetos gerenciados para especificar as permissões e as ações de segurança durante a execução de código, em comparação comparada a segurança declarativa, que usa atributos para armazenar as permissões e as ações nos metadados. Segurança obrigatória é muito flexível, pois você pode definir o estado de um objeto de permissão e selecione as ações de segurança usando as informações que não estão disponíveis até que o tempo de execução. Junto com que a flexibilidade vem o risco de que as informações de tempo de execução que você usa para determinar que o estado de uma permissão não permanece inalteradas desde que a ação está em vigor.
 
  Use a segurança declarativa sempre que possível. As solicitações declarativas são mais fáceis de entender.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Examine as demandas de segurança obrigatória para certificar-se de que o estado da permissão não se baseia em informações que podem ser alterados desde que a permissão está sendo usada.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Examine as demandas de segurança obrigatória para certificar-se de que o estado da permissão não se baseia nas informações que podem ser alterados desde que a permissão está sendo usada.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso de que essa regra se a permissão não depende de alteração de dados. No entanto, é melhor alterar a demanda fundamental para seu equivalente declarativa.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra, se a permissão não se baseia na alteração de dados. No entanto, é melhor alterar a demanda imperativa para seu equivalente declarativo.
 
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines) [dados e modelagem](/dotnet/framework/data/index)
+
+- [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)
+- [Dados e modelagem](/dotnet/framework/data/index)

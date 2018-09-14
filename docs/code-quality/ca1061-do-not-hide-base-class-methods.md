@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd0927a9b8bcd0f4be7c020a25a32d6c9675ca05
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a78ec9c7678c2f0f88d4fd08f441eedb221bbeb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900532"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545496"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: não ocultar métodos de classe base
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31900532"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo derivado declara um método com o mesmo nome e com o mesmo número de parâmetros como um de seus métodos base; um ou mais dos parâmetros são um tipo base do parâmetro correspondente no método base; e os parâmetros restantes têm tipos que são idênticos para os parâmetros correspondentes no método de base.
+ Um tipo derivado declara um método com o mesmo nome e com o mesmo número de parâmetros como um de seus métodos base; um ou mais dos parâmetros é um tipo base do parâmetro correspondente no método base; e quaisquer parâmetros restantes têm tipos que são idênticos aos parâmetros correspondentes no método base.
 
-## <a name="rule-description"></a>Descrição da Regra
- Um método em um tipo base é ocultado por um método com o mesmo nome em um tipo derivado quando a assinatura do parâmetro do método derivado difere somente pelos tipos que são mais fracos derivada que os tipos correspondentes na assinatura do parâmetro do método base.
+## <a name="rule-description"></a>Descrição da regra
+ Um método em um tipo base permanece oculto por um método nomeado identicamente em um tipo derivado quando a assinatura do parâmetro do método derivado difere somente pelos tipos que são mais fracos derivadas que os tipos correspondentes na assinatura do parâmetro do método base.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remover ou renomear o método ou alterar a assinatura de parâmetro para que o método não oculta o método base.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remover ou renomear o método ou altere a assinatura do parâmetro para que o método não oculta o método base.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo

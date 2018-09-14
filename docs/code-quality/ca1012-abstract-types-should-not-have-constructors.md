@@ -13,37 +13,41 @@ ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 195f64d6ccb06c551c729d1b1b640e42e689654f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897324"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550525"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: tipos abstratos não devem ter construtores
+
 |||
 |-|-|
 |NomeDoTipo|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
  Um tipo público é abstrato e tem um construtor público.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  Construtores em tipos abstratos só podem ser chamados por tipos derivados. Como construtores públicos criam instâncias de um tipo e não é possível criar instâncias de um tipo abstrato, um tipo abstrato com um construtor público é projetado incorretamente.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, tornar o construtor protegido ou não declarar o tipo como abstrato.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, verifique o construtor protegido ou não declarar o tipo como abstrato.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra. O tipo abstrato tem um construtor público.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir contém um tipo abstrato que violam essa regra.
+ O exemplo a seguir contém um tipo abstrato que viola essa regra.
 
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
  [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]

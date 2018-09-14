@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 669f0ffc2e61d67bd57e965a4030b17af1eb1bb2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 033c7a73c404a2bd5146a17a1a7b4f2fa8b9c540
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914582"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545707"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: não usar temporizadores que impeçam alterações no estado de energia
 |||
@@ -34,11 +34,11 @@ ms.locfileid: "31914582"
 ## <a name="cause"></a>Causa
  Um temporizador tem um intervalo definido para ocorrer mais de uma vez por segundo.
 
-## <a name="rule-description"></a>Descrição da Regra
- Não pesquise com mais frequência do que uma vez por segundo ou use timers que ocorrem com mais frequência do que uma vez por segundo. A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos.
+## <a name="rule-description"></a>Descrição da regra
+ Não faça sondagens com mais frequência do que uma vez por segundo ou use timers que ocorrem com mais frequência do que uma vez por segundo. A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Definir intervalos de timer para ocorrem menos de uma vez por segundo.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Definir intervalos de timer para ocorrer a menos de uma vez por segundo.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Essa regra deve ser suprimida somente se o timer de acionamento mais de uma vez por segundo é necessário e considerações de mobilidade podem ser ignoradas.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Essa regra deve ser suprimida somente se o temporizador de acionamento mais de uma vez por segundo é necessária e considerações de mobilidade podem ser ignoradas com segurança.

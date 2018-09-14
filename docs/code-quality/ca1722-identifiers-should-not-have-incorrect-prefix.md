@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959ce5c3e108aa9a1aa339d33b7bad8243adfb7c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcb0bfe07c9e9fb843ea6c7a0960b96cc09339b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915002"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549450"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: os identificadores não devem ter prefixo incorreto
 |||
@@ -34,17 +34,17 @@ ms.locfileid: "31915002"
 ## <a name="cause"></a>Causa
  Um identificador tem um prefixo incorreto.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  Por convenção, somente determinados elementos de programação têm nomes que começam com um prefixo específico.
 
- Nomes de tipo não tem um prefixo específico e não devem ser prefixados com um 'c'. Esta regra relata violações para nomes de tipo, como 'CMyClass' e não relata violações para nomes de tipo como 'Cache'.
+ Nomes de tipo não têm um prefixo específico e não devem ser prefixados com um 'c'. Esta regra relata violações para nomes de tipo como 'CMyClass' e não relata violações para nomes de tipo como 'Cache'.
 
- Convenções de nomenclatura fornecem uma aparência comum para bibliotecas de destino do common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por uma pessoa com experiência em desenvolvimento de código gerenciado.
+ Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Essa consistência reduz a curva de aprendizado necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+## <a name="how-to-fix-violations"></a>Como corrigir violações
  Remova o prefixo do identificador.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas

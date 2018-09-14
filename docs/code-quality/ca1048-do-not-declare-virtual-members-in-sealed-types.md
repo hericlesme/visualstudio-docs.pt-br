@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ba776cb423773ca6c5a4646bbf30531cd2d27f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59a1bd75ce2e9f437661fa2b2034f8e31f729ef9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897350"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546714"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: não declarar membros virtuais em tipos lacrados
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31897350"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo público está lacrado e declara um método que é `virtual` (`Overridable` no Visual Basic) e não final. Essa regra não relata violações para tipos de delegado, que devem seguir esse padrão.
+ Um tipo público é selado e declara um método que se deve tanto `virtual` (`Overridable` no Visual Basic) e não final. Essa regra não relata violações para tipos de delegado, que devem seguir esse padrão.
 
-## <a name="rule-description"></a>Descrição da Regra
- Os tipos declaram métodos como virtuais de forma que a herança de tipos possa substituir a implementação do método virtual. Por definição, você não pode herdar de um tipo lacrado, fazendo com que um método virtual de um tipo lacrado sem sentido.
+## <a name="rule-description"></a>Descrição da regra
+ Os tipos declaram métodos como virtuais de forma que a herança de tipos possa substituir a implementação do método virtual. Por definição, você não pode herdar de um tipo selado, tornando um método virtual em um tipo lacrado sem sentido.
 
- Os compiladores do Visual Basic e c# não permitir que tipos de violam essa regra.
+ Os compiladores do Visual Basic e c# não permitem tipos violar essa regra.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, que o método não virtual ou torne o tipo herdado.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, tornar o método não virtual ou tornar o tipo herdável.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra. Deixar o tipo em seu estado atual pode causar problemas de manutenção e não oferece nenhum benefício.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que violam essa regra.
+ O exemplo a seguir mostra um tipo que viola essa regra.
 
  [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

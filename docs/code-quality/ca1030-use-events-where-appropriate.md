@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9349321319b8bab81a2d9e7b52e7f2d25e87f796
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900048"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547536"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: usar eventos quando apropriado
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31900048"
 |NomeDoTipo|UseEventsWhereAppropriate|
 |CheckId|CA1030|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Um nome de método pública, protegida ou privada começa com um dos seguintes:
+ Um nome de método público, protegido ou particular começa com um dos seguintes:
 
--   Complemento
+- Complemento
 
--   RemoveOn
+- RemoveOn
 
--   Incêndio
+- Fogo
 
--   Gerar
+- Gerar
 
-## <a name="rule-description"></a>Descrição da Regra
- Essa regra detecta métodos que têm nomes que seriam usados normalmente em eventos. Eventos seguem o padrão de design do observador ou assinar a publicação; elas são usadas quando uma alteração de estado em um objeto deve ser comunicada aos outros objetos. Se um método é chamado em resposta a uma alteração de estado claramente definida, o método deve ser chamado por um manipulador de eventos. Os objetos que chamam o método devem acionar eventos, em vez de chamar o método diretamente.
+## <a name="rule-description"></a>Descrição da regra
+ Essa regra detecta métodos que têm nomes que seriam usados normalmente em eventos. Os eventos seguem o padrão de design do observador ou publicar-assinar; eles são usados quando uma alteração de estado em um objeto deve ser comunicada aos outros objetos. Se um método é chamado em resposta a uma alteração de estado claramente definida, o método deve ser invocado por um manipulador de eventos. Os objetos que chamam o método devem acionar eventos, em vez de chamar o método diretamente.
 
- Alguns exemplos comuns de eventos são encontrados em aplicativos de interface de usuário em que uma ação do usuário, como clicar em um botão faz com que um segmento de código a ser executado. O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento não é limitado às interfaces do usuário; ele deve ser usado em qualquer lugar, você deverá comunicar o estado muda para um ou mais objetos.
+ Alguns exemplos comuns de eventos são encontrados em aplicativos de interface do usuário em que uma ação do usuário, como clicar em um botão faz com que um segmento de código a ser executado. O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento não é limitado a interfaces do usuário; ele deve ser usado em qualquer lugar, você deve comunicar o estado muda para um ou mais objetos.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Se o método é chamado quando o estado de um objeto é alterado, considere alterar o projeto para usar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Se o método é chamado quando o estado de um objeto é alterado, considere alterar o design para usar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprimir um aviso de que essa regra se o método não funciona com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Suprimir um aviso nessa regra, se o método não funciona com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281719"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552091"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar arquivos de símbolo (.pdb) e de origem no depurador do Visual Studio
 Um arquivo de banco de dados (. PDB) do programa, também chamado de um arquivo de símbolo, mapeia os identificadores que você cria no código-fonte para classes, métodos e outros códigos para os identificadores que são usadas em executáveis compilados do seu projeto. O arquivo .pdb também mapeia as instruções no código-fonte para instruções de execução nos arquivos executáveis. O depurador usa essas informações para determinar duas informações cruciais:
@@ -215,7 +215,7 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma DL
 4.  Nas informações de origem do .pdb do módulo. Esse pode ser o local do arquivo de origem quando o módulo foi compilado ou pode ser um comando para um servidor de origem.  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Localizar e carregar arquivos de origem com as páginas Source/No de nenhum símbolo carregado  
- Quando o depurador interrompe a execução em um local onde o arquivo de origem não está disponível, ele exibirá os **nenhuma origem carregada** ou **nenhum símbolo carregado** páginas que podem ajudá-lo a localizar o arquivo de origem. O **nenhum símbolo carregado** aparece quando o depurador não é possível localizar um arquivo de símbolo (. PDB) para o arquivo executável concluir sua pesquisa. A página Nenhum Símbolo fornece opções para procurar o arquivo. Se o .pdb for encontrado depois que você executar uma das opções e se o depurador puder recuperar o arquivo de origem usando as informações no arquivo de símbolos, a origem será exibida. Caso contrário, uma **nenhuma origem carregada** página será exibida que descreve o problema. A página exibe links de opções que podem executar ações que podem resolver o problema.  
+ Quando o depurador interrompe a execução em um local onde o arquivo de origem não está disponível, ele exibirá os **nenhuma origem carregada** ou **nenhum símbolo carregado** páginas que podem ajudá-lo a localizar o arquivo de origem. O **nenhum símbolo carregado** aparece quando o depurador não é possível localizar um arquivo de símbolo (. PDB) para o arquivo executável concluir sua pesquisa. A página Nenhum Símbolo fornece opções para procurar o arquivo. Se o. PDB for encontrado depois que você execute uma das opções e o depurador pode recuperar o arquivo de origem usando as informações no arquivo de símbolos, a fonte será exibida. Caso contrário, uma **nenhuma origem carregada** página será exibida que descreve o problema. A página exibe links de opções que podem executar ações que podem resolver o problema.  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Adicionar caminhos de pesquisa do arquivo de origem a uma solução  
  Você pode especificar uma rede ou diretórios locais para procurar arquivos de origem.  

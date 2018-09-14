@@ -14,16 +14,20 @@ ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 62270ac1917dea24586247ade5f8f5e802f84707
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0627d246fe9f9f72a95cded7daf8d2c94bf20b3a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914387"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546927"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: evitar herança excessiva
+
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveInheritance|
@@ -34,14 +38,14 @@ ms.locfileid: "31914387"
 ## <a name="cause"></a>Causa
  Um tipo está mais de quatro níveis abaixo na hierarquia de herança.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. Essa regra limita a análise de hierarquias no mesmo módulo.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, derivar o tipo de um tipo base que é menos detalhado na hierarquia de herança ou eliminar alguns dos tipos de base intermediários.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, derivar o tipo de um tipo base que é menos detalhado na hierarquia de herança ou eliminar alguns dos tipos de base intermediários.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso dessa regra. No entanto, o código pode ser mais difíceis de manter. Observe que, dependendo da visibilidade de tipos de base, resolver violações desta regra pode criar as alterações recentes. Por exemplo, removendo tipos base públicos é uma alteração significativa.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra. No entanto, o código pode ser mais difícil de manter. Observe que, dependendo da visibilidade de tipos base, resolver as violações dessa regra pode criar alterações significativas. Por exemplo, a remoção de tipos de base públicos é uma alteração significativa.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo que viola a regra.

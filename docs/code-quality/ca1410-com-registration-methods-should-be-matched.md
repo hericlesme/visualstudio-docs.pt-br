@@ -14,33 +14,37 @@ ms.assetid: f3b2e62d-fd66-4093-9f0c-dba01ad995fd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9043425c69f95f5cb7cc414b0efe877b7db8e238
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d4cbff52a5b5b5ef5fc46ef0b2f93926f097485
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915089"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550877"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: os métodos de registro COM devem ser correspondentes
+
 |||
 |-|-|
 |NomeDoTipo|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
 |Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Um tipo declara um método marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> de atributo, mas não declara um método marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo, ou vice-versa.
+ Um tipo declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> de atributo, mas não declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo, ou vice-versa.
 
-## <a name="rule-description"></a>Descrição da Regra
- Para clientes do modelo de objeto de componente (COM) para criar um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tipo, o tipo deve primeiro ser registrado. Se estiver disponível, um método marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo é chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo é chamado durante o processo de cancelamento de registro para reverter as operações do método de registro.
+## <a name="rule-description"></a>Descrição da regra
+ Para clientes do modelo de objeto de componente (COM) criar um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tipo, o tipo deve primeiro ser registrado. Se ele estiver disponível, um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo é chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo é chamado durante o processo de cancelamento de registro para reverter as operações do método de registro.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, adicione o método de cancelamento de registro ou registro correspondente.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, adicione o método de cancelamento de registro ou registro correspondente.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
@@ -53,4 +57,7 @@ ms.locfileid: "31915089"
  [CA1411: os métodos de registro COM não devem estar visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrando Assemblies COM](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe (ferramenta de registro de Assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+
+- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
+- [Registrando assemblies usando COM](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Regasm.exe (Ferramenta de Registro de Assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

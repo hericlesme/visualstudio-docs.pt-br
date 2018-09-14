@@ -1,5 +1,5 @@
 ---
-title: 'CA1901: Declarações P Invoke devem ser portáteis'
+title: 'CA1901: as declarações de P-Invoke devem ser portáteis'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915015"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550629"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: as declarações de P/Invoke devem ser portáteis
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31915015"
 |NomeDoTipo|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebrar - se a P/Invoke é visível fora do assembly. Não separáveis - se a P/Invoke não é visível fora do assembly.|
+|Alteração Significativa|Quebrando - se o valor de P/Invoke é visível fora do assembly. Não separável - se o valor de P/Invoke não é visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
- Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke e verifica se o seu tamanho, quando passa por marshaling para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. É a violação mais comum dessa regra passar um inteiro de tamanho fixo onde a variável dependente de plataforma, o tamanho de ponteiro é necessária.
+ Essa regra avalia o tamanho de cada parâmetro e o valor retornado de um P/Invoke e verifica se o seu tamanho, quando passa por marshaling para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. A violação dessa regra mais comuns é passar um inteiro de tamanho fixo em que uma variável dependente de plataforma, tamanho de ponteiro é necessária.
 
-## <a name="rule-description"></a>Descrição da Regra
- Qualquer um dos seguintes cenários viola essa regra ocorre:
+## <a name="rule-description"></a>Descrição da regra
+ Qualquer um dos cenários a seguir viola essa regra ocorre:
 
--   O valor de retorno ou parâmetro é digitado como um inteiro de tamanho fixo quando ele deve ser digitado como um `IntPtr`.
+- O valor de retorno ou parâmetro é digitado como um inteiro de tamanho fixo quando ele deve ser digitado como um `IntPtr`.
 
--   O valor de retorno ou parâmetro é digitado como um `IntPtr` quando ele deve ser digitado como um inteiro de tamanho fixo.
+- O valor de retorno ou parâmetro é digitado como um `IntPtr` quando ele deve ser digitado como um inteiro de tamanho fixo.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Você pode corrigir essa violação usando `IntPtr` ou `UIntPtr` representar identificadores em vez de `Int32` ou `UInt32`.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Você pode corrigir essa violação usando `IntPtr` ou `UIntPtr` para representar os identificadores em vez de `Int32` ou `UInt32`.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Você não deve suprimir este aviso.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Você não deve suprimir esse aviso.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir demonstra uma violação desta regra.
+ O exemplo a seguir demonstra uma violação dessa regra.
 
 ```csharp
 internal class NativeMethods
@@ -59,7 +59,7 @@ internal class NativeMethods
 }
 ```
 
- Neste exemplo, o `nIconIndex` parâmetro seja declarado como um `IntPtr`, que é de 4 bytes de largura em uma plataforma de 32 bits e de 8 bytes de largura em uma plataforma de 64 bits. A declaração não gerenciada que segue, você verá que `nIconIndex` é um inteiro sem sinal de 4 bytes em todas as plataformas.
+ Neste exemplo, o `nIconIndex` parâmetro é declarado como um `IntPtr`, que é de 4 bytes de largura em uma plataforma de 32 bits e 8 bytes de largura em uma plataforma de 64 bits. Na declaração não gerenciada que segue, você pode ver que `nIconIndex` é um inteiro sem sinal de 4 bytes em todas as plataformas.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,

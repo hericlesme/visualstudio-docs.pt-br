@@ -14,16 +14,20 @@ ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9dec006f3684259541811e905eaf75a790c3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900282"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547822"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: o armazenamento de enum deve ser Int32
+
 |||
 |-|-|
 |NomeDoTipo|EnumStorageShouldBeInt32|
@@ -34,14 +38,14 @@ ms.locfileid: "31900282"
 ## <a name="cause"></a>Causa
  O tipo subjacente de uma enumeração pública não é <xref:System.Int32?displayProperty=fullName>.
 
-## <a name="rule-description"></a>Descrição da Regra
- Uma enumeração é um tipo de valor que define um conjunto de constantes nomeadas relacionadas. Por padrão, o <xref:System.Int32?displayProperty=fullName> tipo de dados é usado para armazenar o valor da constante. Embora você possa alterar esse tipo subjacente, não é necessário ou recomendado na maioria dos cenários. Observe que nenhum ganho de desempenho significativa é obtido usando um tipo de dados que é menor do que <xref:System.Int32>. Se você não pode usar o tipo de dados padrão, você deve usar um do sistema CLS (Common Language)-compatível com tipos integrais, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, ou <xref:System.Int64> para certificar-se de que todos os valores da enumeração podem ser representados em Linguagens de programação compatíveis com CLS.
+## <a name="rule-description"></a>Descrição da regra
+ Uma enumeração é um tipo de valor que define um conjunto de constantes nomeadas relacionadas. Por padrão, o <xref:System.Int32?displayProperty=fullName> tipo de dados é usado para armazenar o valor da constante. Embora você possa alterar esse tipo subjacente, não é necessário ou recomendado na maioria dos cenários. Observe que nenhum ganho de desempenho significativa é obtido por meio de um tipo de dados é menor do que <xref:System.Int32>. Se você não pode usar o tipo de dados padrão, você deve usar um do sistema CLS (Common Language)-compatível com tipos integrais, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, ou <xref:System.Int64> para certificar-se de que todos os valores da enumeração podem ser representados em Linguagens de programação compatíveis com CLS.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, a menos que existem problemas de tamanho ou compatibilidade, use <xref:System.Int32>. Em situações onde <xref:System.Int32> não é grande o suficiente para manter os valores, use <xref:System.Int64>. Se a compatibilidade com versões anteriores requer um tipo de dados menor, use <xref:System.Byte> ou <xref:System.Int16>.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, a menos que haja problemas de compatibilidade ou de tamanho, use <xref:System.Int32>. Para situações em que <xref:System.Int32> não é grande o suficiente para manter os valores, use <xref:System.Int64>. Se a compatibilidade com versões anteriores requer um tipo de dados menor, use <xref:System.Byte> ou <xref:System.Int16>.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso dessa regra somente se os problemas de compatibilidade com versões anteriores a exige. Em aplicativos, falha de acordo com esta regra, geralmente não causa problemas. Em bibliotecas, onde a interoperabilidade de linguagem é necessária, falha de acordo com essa regra pode afetar adversamente a seus usuários.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Suprima um aviso nessa regra somente se os problemas de compatibilidade com versões anteriores a exige. Em aplicativos, falha em cumprir com esta regra geral, não causa problemas. Em bibliotecas, onde a interoperabilidade de linguagem é necessária, a não conformidade com esta regra poderá afetar negativamente seus usuários.
 
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
 
@@ -52,7 +56,7 @@ ms.locfileid: "31900282"
  [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
  [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Exemplo de como corrigir
+## <a name="example-of-how-to-fix"></a>Exemplo de como a correção
 
 ### <a name="description"></a>Descrição
  O exemplo a seguir corrige a violação anterior, alterando o tipo de dados subjacente para <xref:System.Int32>.
@@ -73,4 +77,8 @@ ms.locfileid: "31900282"
  [CA1712: não usar valores de enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> <xref:System.Int64?displayProperty=fullName>
+
+- <xref:System.Byte?displayProperty=fullName>
+- <xref:System.Int16?displayProperty=fullName>
+- <xref:System.Int32?displayProperty=fullName>
+- <xref:System.Int64?displayProperty=fullName>

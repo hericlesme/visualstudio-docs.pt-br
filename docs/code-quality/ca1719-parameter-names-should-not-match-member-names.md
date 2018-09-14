@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915330"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546883"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: os nomes de parâmetro não devem corresponder aos nomes de membro
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31915330"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- O nome de um membro visível externamente corresponde, em uma comparação de maiusculas e minúsculas, o nome de um dos seus parâmetros.
+ O nome de um membro visível externamente corresponde, em uma comparação diferencia maiusculas de minúsculas, o nome de um dos seus parâmetros.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  Um nome de parâmetro deve informar o significado de um parâmetro e um nome de membro deve informar o significado de um membro. Seria um design raro se eles fossem iguais. A nomenclatura de um parâmetro com o mesmo nome do membro não é intuitiva e dificulta o uso da biblioteca.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+## <a name="how-to-fix-violations"></a>Como corrigir violações
  Selecione um nome de parâmetro que não coincide com o nome do membro.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Para novos desenvolvimentos, nenhum conhecidos situações ocorrer onde você deve suprimir um aviso dessa regra. Para bibliotecas de envio, você talvez precise suprimir um aviso dessa regra.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Para novos desenvolvimentos, nenhum conhecidos ocorrem de cenários em que você deve suprimir um aviso nessa regra. Para o envio de bibliotecas, talvez você precise suprimir um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

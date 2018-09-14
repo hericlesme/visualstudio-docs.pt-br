@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e7b501019ed2891a30d1f0359aee6405c4444
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 485a1e18f1c1047b84fa186cfcae1fde4bebe1df
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918443"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549963"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Não nomeie valores de enumeração &#39;reservado&#39;
 |||
@@ -34,24 +34,24 @@ ms.locfileid: "31918443"
 ## <a name="cause"></a>Causa
  O nome de um membro de enumeração contém a palavra "reservados".
 
-## <a name="rule-description"></a>Descrição da Regra
- Esta regra pressupõe que um membro da enumeração que tenha um nome que contém "reserved" não é usado atualmente, mas é um espaço reservado a ser renomeado ou removido em uma versão futura. Renomear ou remover um membro é uma alteração drástica. Você não deve esperar os usuários ignorem um membro apenas porque seu nome contém "reservados", nem você pode confiar em usuários para ler ou obedecer a documentação. Além disso, como membros reservados aparecem em pesquisadores de objetos e ambientes de desenvolvimento integrado inteligentes, eles podem causar confusão sobre quais membros estão sendo realmente usados.
+## <a name="rule-description"></a>Descrição da regra
+ Esta regra pressupõe que um membro da enumeração que tenha um nome que contém "reserved" não é usado atualmente, mas é um espaço reservado a ser renomeado ou removido em uma versão futura. Renomear ou remover um membro é uma alteração drástica. Você não deve esperar que os usuários ignorem um membro apenas porque seu nome contém "reservados", nem você pode contar os usuários leiam ou obedecer a documentação. Além disso, como membros reservados aparecem em ambientes de desenvolvimento integrado inteligente e pesquisadores de objetos, eles podem causar confusão sobre quais membros são realmente sendo usados.
 
- Em vez de usar um membro reservado, adicione um novo membro de enumeração na versão futura. Na maioria dos casos a adição do novo membro não é uma alteração significativa, como a adição não faz com que os valores dos membros originais para alterar.
+ Em vez de usar um membro reservado, adicione um novo membro à enumeração na versão futura. Na maioria dos casos a adição do novo membro não é uma alteração significativa, desde que a adição não faz com que os valores dos membros originais para alterar.
 
- Em um número limitado de casos a adição de um membro é uma alteração significativa, mesmo quando os membros originais mantém seus valores originais. Basicamente, o novo membro não pode ser retornado de caminhos de código existente sem quebrar os chamadores que usam um `switch` (`Select` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrução no valor de retorno que abrange a lista inteira de membro e que gerará uma exceção do caso padrão. Uma preocupação secundária é que o código do cliente pode não tratar a alteração no comportamento dos métodos de reflexão como <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Da mesma forma, se o novo membro deve ser retornado de métodos existentes ou uma incompatibilidade de aplicativos conhecidos ocorre devido ao uso de reflexão ruim, a única solução incondicional é:
+ Em um número limitado de casos a adição de um membro é uma alteração significativa, mesmo quando os membros originais retêm seus valores originais. Basicamente, o novo membro não pode ser retornado de caminhos de código existente sem interromper os chamadores que usam um `switch` (`Select` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrução no valor de retorno que abrange a lista inteira de membro e que geram uma exceção caso padrão. Uma preocupação secundária é que o código de cliente talvez não lidar com a alteração no comportamento dos métodos de reflexão, como <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Da mesma forma, se o novo membro tiver a serem retornados de métodos existentes ou uma incompatibilidade de aplicativos conhecidos ocorre devido ao uso de reflexão ruim, a única solução incondicional é:
 
-1.  Adicione uma nova enumeração que contém os membros originais e novos.
+1.  Adicione uma nova enumeração que contém os membros novos e originais.
 
 2.  Marque a enumeração original com o <xref:System.ObsoleteAttribute?displayProperty=fullName> atributo.
 
- Siga o mesmo procedimento para qualquer tipos visíveis externamente ou membros que expõem a enumeração original.
+ Siga o mesmo procedimento para todos os tipos visíveis externamente ou membros que expõem a enumeração original.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remova ou renomeie o membro.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remova ou renomeie o membro.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso dessa regra para um membro que é usado no momento ou para bibliotecas tiveram enviado anteriormente.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra para um membro que é usado no momento ou para bibliotecas que foram enviados anteriormente.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918488"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549387"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: evitar campos privados não usados
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31918488"
 |NomeDoTipo|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
  Essa regra é relatada quando um campo particular em seu código existe, mas não é usado por qualquer caminho de código.
 
-## <a name="rule-description"></a>Descrição da Regra
+## <a name="rule-description"></a>Descrição da regra
  Foram detectados campos particulares que aparentemente não são acessados no assembly.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remova o campo ou adicionar o código que o usa.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remova o campo ou adicionar código que o usa.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso dessa regra.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

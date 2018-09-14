@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915591"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551763"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: evitar classes internas sem instâncias
 |||
@@ -29,47 +29,47 @@ ms.locfileid: "31915591"
 |NomeDoTipo|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não recentes|
+|Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
  Uma instância de um tipo no nível de assembly não é criada pelo código no assembly.
 
-## <a name="rule-description"></a>Descrição da Regra
- Essa regra tenta localizar uma chamada para um dos construtores de tipo e informa uma violação se nenhuma chamada for encontrada.
+## <a name="rule-description"></a>Descrição da regra
+ Essa regra tenta localizar uma chamada para um dos construtores de tipo e relata uma violação se nenhuma chamada for encontrada.
 
- Os seguintes tipos não são examinados por essa regra:
+ Os seguintes tipos não são verificados por essa regra:
 
--   Tipos de valor
+- Tipos de valor
 
--   Tipos abstratos
+- Tipos abstratos
 
--   Enumerações
+- Enumerações
 
--   Delegados
+- Delegados
 
--   Tipos de matriz emitido pelo compilador
+- Tipos de matriz emitidos pelo compilador
 
--   Tipos que não pode ser instanciado e que definem `static` (`Shared` no Visual Basic) somente métodos.
+- Tipos que não pode ser instanciada e que definem `static` (`Shared` no Visual Basic) apenas métodos.
 
- Se você aplicar <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> para o assembly que está sendo analisado, esta regra não ocorrerá em qualquer construtores que são marcados como `internal` porque você não pode determinar se um campo está sendo usado por outro `friend` assembly.
+ Se você aplicar <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> ao assembly que está sendo analisado, essa regra não ocorrerá nos construtores que são marcados como `internal` porque você não pode determinar se um campo está sendo usado por outro `friend` assembly.
 
- Embora você não é possível contornar essa limitação na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] análise de código, o FxCop autônomo externo ocorrerá em construtores internos se cada `friend` assembly está presente na análise.
+ Mesmo que não é possível contornar essa limitação na análise de código do Visual Studio, o FxCop autônomo externo ocorrer em construtores internos se cada `friend` assembly está presente na análise.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, remova o tipo ou adicione o código que usa. Se o tipo contém apenas os métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emitindo um construtor de instância pública padrão:
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
 
--   Um construtor particular para tipos de destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versões 1.0 e 1.1.
+- Um construtor particular para tipos que se destinam [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versões 1.0 e 1.1.
 
--   O `static` (`Shared` no Visual Basic) modificador para tipos de destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- O `static` (`Shared` no Visual Basic) modificador para tipos que se destinam [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso dessa regra. É recomendável que você suprime este aviso nas seguintes situações:
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ É seguro suprimir um aviso nessa regra. É recomendável que você suprimir esse aviso nas seguintes situações:
 
--   A classe é criada por meio de métodos de reflexão de associação tardia, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- A classe é criada por meio de métodos de reflexão de associação tardia como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   A classe é criada automaticamente pelo tempo de execução ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por exemplo, as classes que implementam <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- A classe é criada automaticamente pelo tempo de execução ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por exemplo, as classes que implementam <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   A classe é passada como um parâmetro de tipo genérico que tem uma nova restrição. Por exemplo, o exemplo a seguir gerará esta regra.
+- A classe é passada como um parâmetro de tipo genérico que tem uma nova restrição. Por exemplo, o exemplo a seguir irá disparar essa regra.
 
     ```csharp
     internal class MyClass
@@ -90,7 +90,7 @@ ms.locfileid: "31915591"
     mc.Create();
     ```
 
- Nessas situações, é recomendável que você suprime este aviso.
+ Nessas situações, é recomendável que suprimir este aviso.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)

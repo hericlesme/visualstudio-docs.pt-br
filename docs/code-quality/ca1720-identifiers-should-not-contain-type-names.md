@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915623"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548790"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: os identificadores não devem conter nomes de tipo
+
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldNotContainTypeNames|
@@ -38,106 +39,106 @@ ms.locfileid: "31915623"
 
  O nome de um membro visível externamente contém um nome de tipo de dados específicos de idioma.
 
-## <a name="rule-description"></a>Descrição da Regra
- Nomes de parâmetros e membros são melhor usados para se comunicar seu significado que to descrevem o tipo, o que deve ser fornecido pelas ferramentas de desenvolvimento. Nomes de membros, se um nome de tipo de dados deve ser usado, use um nome de independente da linguagem em vez de um idioma específico. Por exemplo, em vez do c# tipo nome 'int', use o nome de tipo de dados independente de idioma, Int32.
+## <a name="rule-description"></a>Descrição da regra
+ Nomes de parâmetros e membros são melhor usados para se comunicar seu significado que to descrevem seu tipo, que deve ser fornecido pelas ferramentas de desenvolvimento. Para nomes de membros, se um nome de tipo de dados deve ser usado, usam um nome independente de linguagem em vez de um idioma específico. Por exemplo, em vez do c# tipo nome 'int', use o nome do tipo de dados independente de idioma, Int32.
 
- Cada token discreto no nome do parâmetro ou um membro é verificado em relação os seguintes nomes de tipo de dados específicos de idioma, de uma maneira de maiusculas e minúsculas:
+ Cada token discreto no nome do parâmetro ou membro é verificado em relação os seguintes nomes de tipo de dados específicos de idioma, no diferenciando maiusculas de minúsculas:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Abreviado
+- Abreviado
 
--   UShort
+- UShort
 
--   int
+- int
 
--   UInt
+- UInt
 
--   Inteiro
+- Inteiro
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Não assinado
+- Não assinado
 
--   Assinado
+- Assinado
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- Além disso, os nomes de parâmetro também são verificados contra os seguintes nomes de tipo de dados independente de idioma, de uma maneira de maiusculas e minúsculas:
+Além disso, os nomes de um parâmetro também são verificados em relação os seguintes nomes de tipo de dados independente de idioma, diferenciando maiusculas de minúsculas:
 
--   Objeto
+- Objeto
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   Cadeia de Caracteres
+- Cadeia de Caracteres
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Ponteiro
+- Ponteiro
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Simples
+- Simples
 
--   Duplo
+- Duplo
 
--   Decimal
+- Decimal
 
--   Guid
+- Guid
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- **Se acionado em relação a um parâmetro:**
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ **Se disparado em relação a um parâmetro:**
 
- Substitua o identificador de tipo de dados no nome do parâmetro com um termo que descreve melhor seu significado ou um termo mais genérico, como 'value'.
+ Substitua o identificador de tipo de dados no nome do parâmetro com um termo que melhor descreve seu significado ou um termo mais genérico, como 'value'.
 
- **Se acionado em relação a um membro:**
+ **Se disparado em relação a um membro:**
 
- Substitua o identificador de tipo de dados específicos de idioma no nome do membro com um termo que descreve melhor seu significado, um equivalente independente de idioma ou um termo mais genérico, como 'value'.
+ Substitua o identificador de tipo de dados específicos de idioma no nome do membro com um termo que melhor descreve seu significado, um equivalente independente da linguagem ou um termo mais genérico, como 'value'.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Uso ocasional de nomes de parâmetro e o membro de tipo pode ser apropriado. No entanto, para novos desenvolvimentos, nenhum conhecidos situações ocorrer onde você deve suprimir um aviso dessa regra. Para bibliotecas que têm anterior fornecido, você terá que suprimir um aviso dessa regra.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Uso ocasional de nomes de parâmetro e de membros com base no tipo pode ser apropriado. No entanto, para novos desenvolvimentos, nenhum conhecidos ocorrem de cenários em que você deve suprimir um aviso nessa regra. Para bibliotecas que têm anterior enviados, você pode ter que suprimir um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

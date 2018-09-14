@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Declarar P-invoca corretamente'
+title: 'CA1415: declare os P-Invokes corretamente'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a690baeb804d3722d442c30077cc07d260a8952
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915757"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548641"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: declarar P/Invokes corretamente
 |||
@@ -29,18 +29,18 @@ ms.locfileid: "31915757"
 |NomeDoTipo|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Separação de não - se a P/Invoke que declara que o parâmetro não pode ser vista fora do assembly. Quebrar - se P/Invoke que declara o parâmetro pode ser visto fora do assembly.|
+|Alteração Significativa|Separação de não - se o valor de P/Invoke, que declara o parâmetro não pode ser vista de fora do assembly. Quebrando - se que o P/Invoke que declara o parâmetro pode ser visto de fora do assembly.|
 
 ## <a name="cause"></a>Causa
- Uma plataforma de invocar o método foi declarado incorretamente.
+ Uma plataforma de invocação de método é declarado incorretamente.
 
-## <a name="rule-description"></a>Descrição da Regra
- Uma plataforma de chamar código não gerenciado do método acessa e é definido usando o `Declare` palavra-chave em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. No momento, esta regra de aparência para declarações de métodos que se destinam a funções do Win32 que tem um ponteiro para um parâmetro de estrutura OVERLAPPED de invocação de plataforma e o parâmetro gerenciado correspondente não é um ponteiro para um <xref:System.Threading.NativeOverlapped?displayProperty=fullName> estrutura.
+## <a name="rule-description"></a>Descrição da regra
+ Uma plataforma de chamar código não gerenciado do método acessos e é definido usando o `Declare` palavra-chave na [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. No momento, esta regra procura declarações de método que se destinam a funções do Win32 que têm um ponteiro para um parâmetro de estrutura OVERLAPPED de invocação de plataforma e o parâmetro gerenciado correspondente não é um ponteiro para um <xref:System.Threading.NativeOverlapped?displayProperty=fullName> estrutura.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, declare corretamente a plataforma de invocação de método.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, declarar corretamente a plataforma de invocação de método.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo

@@ -14,16 +14,21 @@ ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3864cbef5a5ba6c013d05112af46d641aa3c1634
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31895972"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547683"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: os indexadores não devem ser multidimensionais
+
 |||
 |-|-|
 |NomeDoTipo|IndexersShouldNotBeMultidimensional|
@@ -32,16 +37,16 @@ ms.locfileid: "31895972"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo público ou protegido contém um indexador público ou protegido que utiliza mais de um índice.
+ Um tipo público ou protegido contém um indexador público ou protegido que usa mais de um índice.
 
-## <a name="rule-description"></a>Descrição da Regra
- Indexadores, ou seja, propriedades indexadas, devem usar um único índice. Indexadores multidimensionais podem reduzir significativamente a usabilidade da biblioteca. Se o projeto requer vários índices, reconsidere se o tipo representa um repositório de dados lógico. Caso contrário, use um método.
+## <a name="rule-description"></a>Descrição da regra
+ Indexadores, ou seja, propriedades indexadas, devem usar um único índice. Indexadores multidimensionais podem reduzir significativamente a usabilidade da biblioteca. Se o projeto requer vários índices, reconsidere se o tipo representa um armazenamento de dados lógicos. Caso contrário, use um método.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação desta regra, alterar o design para usar uma única inteiro ou um índice de cadeia de caracteres ou usar um método em vez de indexador.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para corrigir uma violação dessa regra, alterar o design para usar um índice de cadeia de caracteres ou inteiro solitário ou usar um método em vez do indexador.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso dessa regra somente depois de se considerar cuidadosamente a necessidade do indexador não padrão.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Suprima um aviso nessa regra somente após considerar cuidadosamente a necessidade do indexador não padrão.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo, `DayOfWeek03`, com um indexador multidimensional que viola a regra. O indexador pode ser visto como um tipo de conversão e, portanto, mais apropriado é exposto como um método. O tipo é reprojetado no `RedesignedDayOfWeek03` para satisfazer a regra.

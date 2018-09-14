@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f732e22d53b4d469f73c4ef3efc753240fa6841f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918091"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549781"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: os métodos transparentes talvez não usem declarações de segurança
 |||
@@ -33,34 +33,34 @@ ms.locfileid: "31918091"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Código que está marcado como <xref:System.Security.SecurityTransparentAttribute> não tem permissões suficientes para assert.
+ Código que está marcado como <xref:System.Security.SecurityTransparentAttribute> não tem permissões suficientes para declarar.
 
-## <a name="rule-description"></a>Descrição da Regra
- Esta regra analisa todos os métodos e tipos em um assembly que é a 100% transparente ou misto transparente crítica e sinaliza qualquer uso declarativo ou imperativo de <xref:System.Security.CodeAccessPermission.Assert%2A>.
+## <a name="rule-description"></a>Descrição da regra
+ Esta regra analisa todos os métodos e tipos em um assembly que é qualquer um dos 100% transparente ou misto transparente/crítico e sinaliza qualquer uso declarativo ou obrigatório do <xref:System.Security.CodeAccessPermission.Assert%2A>.
 
- No tempo de execução, todas as chamadas para <xref:System.Security.CodeAccessPermission.Assert%2A> do código de transparência fará com que um <xref:System.InvalidOperationException> seja gerada. Isso pode ocorrer em ambos os assemblies transparente de 100% e também em assemblies mistos transparente críticos onde um método ou tipo é declarado transparente, mas inclui uma asserção declarativa ou obrigatória.
+ No tempo de execução, todas as chamadas para <xref:System.Security.CodeAccessPermission.Assert%2A> no código transparent fará com que um <xref:System.InvalidOperationException> seja lançada. Isso pode ocorrer em ambos os assemblies de 100% transparente e também em assemblies mistos transparente/crítico em que um tipo ou método é declarado transparente, mas inclui um Assert declarativa ou imperativa.
 
- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 introduziu um recurso chamado *transparência*. Tipos, campos, interfaces, classes e métodos individuais podem ser transparente ou crítico.
+ O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 introduziu um recurso chamado *transparência*. Tipos, campos, interfaces, classes e métodos individuais podem ser transparente ou crítica.
 
- Código transparente não é permitido para elevar os privilégios de segurança. Portanto, todas as permissões concedidas ou exigidos dele automaticamente são passadas por meio do código para o domínio de aplicativo do chamador ou host. Elevações exemplos de declarações, LinkDemands, SuppressUnmanagedCode, e `unsafe` código.
+ O código transparente não é permitido para elevar privilégios de segurança. Portanto, todas as permissões concedidas ou exigidas dele automaticamente são passadas por meio do código para o domínio de aplicativo do chamador ou o host. As elevações exemplos de declarações, LinkDemands, SuppressUnmanagedCode, e `unsafe` código.
 
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para resolver o problema, uma marca o código que chama o Assert com o <xref:System.Security.SecurityCriticalAttribute>, ou remover o Assert.
+## <a name="how-to-fix-violations"></a>Como corrigir violações
+ Para resolver o problema, a marcar o código que chama o Assert com o <xref:System.Security.SecurityCriticalAttribute>, ou remover o Assert.
 
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima uma mensagem dessa regra.
+## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
+ Não suprima uma mensagem a partir dessa regra.
 
 ## <a name="example"></a>Exemplo
- Este código falhará se `SecurityTestClass` é transparente, quando o `Assert` método lança um <xref:System.InvalidOperationException>.
+ Este código falhará caso `SecurityTestClass` é transparente, quando o `Assert` método lança um <xref:System.InvalidOperationException>.
 
  [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
 
 ## <a name="example"></a>Exemplo
- Uma opção é o método SecurityTransparentMethod no exemplo a seguir de revisão de código e se o método é considerado seguro para elevação, marcar SecurityTransparentMethod com segurança crítica isso requer que um detalhadas, completa e livre de erro de segurança auditoria deve ser executada no método junto com qualquer explicativo que ocorrem dentro do método em Assert:
+ Uma opção é o método SecurityTransparentMethod no exemplo a seguir de revisão de código e se o método é considerado seguro para elevação, marque SecurityTransparentMethod com seguro-crítica. Isso requer que uma auditoria de segurança detalhada, completo e livre de erros deve ser executada no método junto com qualquer explicativos que ocorrem dentro do método em Assert:
 
  [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
 
- Outra opção é remover o Assert do código e permitir que qualquer arquivo subsequente fluxo de demandas de permissão e/s além SecurityTransparentMethod ao chamador. Isso permite que as verificações de segurança. Nesse caso, nenhuma auditoria de segurança geralmente é necessário, porque as demandas de permissão fluirá para o chamador e/ou o domínio de aplicativo. Demandas de permissão em conjunto são controladas pela política de segurança e hospedagem de ambiente e concessões de permissão do código-fonte.
+ Outra opção é remover o Assert do código e permitir que qualquer arquivo subsequente de fluxo de demandas de permissão e/s além SecurityTransparentMethod ao chamador. Isso permite que verificações de segurança. Nesse caso, nenhuma auditoria de segurança é necessária, porque as demandas de permissão fluirão para o chamador e/ou o domínio do aplicativo. Demandas de permissão de perto são controladas pela política de segurança, concessões de permissão de código-fonte e ambiente de hospedagem.
 
 ## <a name="see-also"></a>Consulte também
  [Avisos de segurança](../code-quality/security-warnings.md)
