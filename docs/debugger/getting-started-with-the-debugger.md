@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384221"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612682"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Aprenda a depurar usando o Visual Studio
 
@@ -444,4 +444,4 @@ Recursos que permitem que você inspecione as variáveis são um dos recursos ma
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Você talvez queira obter uma visão detalhada de recursos do depurador, juntamente com links para obter mais informações.
 
 > [!div class="nextstepaction"]
-> [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+> [Dicas e truques do depurador](../debugger/debugger-tips-and-tricks.md)

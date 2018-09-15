@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303075"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612721"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -145,7 +145,7 @@ Selecione uma operação na exibição de resumo para exibir mais detalhes.
 
 Para obter mais informações, consulte [Uso de rede](../profiling/network-usage.md).
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Se familiarizar mais com como o depurador se anexa ao aplicativo
+## <a name="modules_window"></a> Se familiarizar mais com como o depurador se anexa ao aplicativo
 
 Para anexar a seu aplicativo em execução, o depurador carrega arquivos de símbolo (. PDB) gerados para o mesmo build exato do aplicativo que você está tentando depurar. Em alguns cenários, um pouco conhecimento dos arquivos de símbolo pode ser útil. Você pode examinar como o Visual Studio carrega os arquivos de símbolo usando o **módulos** janela.
 
