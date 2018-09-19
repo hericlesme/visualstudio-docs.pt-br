@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468239"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548784"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
 
-Se você estiver compartilhando um projeto com outras pessoas, usando um sistema de compilação ou pretender [publicá-lo no Microsoft Azure](python-azure-cloud-service-project-template.md), precisará especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
+Se você estiver compartilhando um projeto com outras pessoas, usando um sistema de compilação ou pretender [publicá-lo no Microsoft Azure](python-azure-cloud-service-project-template.md), precisará especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
 
 Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisitos (usando `-r <full path to file>` durante a instalação de um pacote), mas o Visual Studio fornece suporte específico para *requirements.txt*:
 
@@ -38,7 +38,7 @@ Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisi
 
 Como os arquivos *requirements.txt* se destinam a congelar os requisitos do ambiente, todos os pacotes instalados são escritos com versões precisas. Usar versões precisas garante que você possa reproduzir facilmente seu ambiente em outra máquina. Os pacotes serão incluídos, mesmo se eles foram instalados com um intervalo de versão, como uma dependência de outro pacote ou com um instalador que não seja o PIP.
 
-Se um pacote não puder ser instalado pelo PIP e for exibido em um arquivo *requirements.txt*, toda a instalação falhará. Nesse caso, edite manualmente o arquivo para excluir esse pacote ou use as [opções do PIP](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para se referir a uma versão instalável do pacote. Por exemplo, você pode preferir usar [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar uma dependência e adicionar a opção `--find-links <path>` ao *requirements.txt*:
+Se um pacote não puder ser instalado pelo PIP e for exibido em um arquivo *requirements.txt*, toda a instalação falhará. Nesse caso, edite manualmente o arquivo para excluir esse pacote ou use as [opções do PIP](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para se referir a uma versão instalável do pacote. Por exemplo, você pode preferir usar [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar uma dependência e adicionar a opção `--find-links <path>` ao *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

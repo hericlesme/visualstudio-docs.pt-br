@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício do suporte técnico incluído na ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289361"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701759"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -32,12 +32,13 @@ Resolva problemas de reparo em ambientes que não são de produção. (O benefí
 3.  Para concluir o processo, será necessário fornecer ao representante:
     - O endereço de email usado para entrar em sua assinatura
     - A ID de assinatura, que pode ser encontrada na guia [Assinaturas](https://my.visualstudio.com/subscriptions).
+
     > [!div class="mx-imgBorder"]
     > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Como enviar um incidente

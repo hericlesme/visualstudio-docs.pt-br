@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008428"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552078"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -104,7 +104,7 @@ Clicar duas vezes em um quadro de chamada o torna ativo e abre o código-fonte a
 
 ### <a name="step-between-python-and-native-code"></a>Etapa entre o Python e o código nativo
 
-Ao usar os comandos **Intervir** (**F11**) ou **Depuração Circular** (**Shift**+**F11**), o depurador de modo misto manipulará corretamente as alterações entre os tipos de código. Por exemplo, quando o Python chama um método de um tipo implementado no C, a intervenção em uma chamada a esse método é interrompida no início da função nativa que implementa o método. Da mesma forma, quando o código nativo chama uma função de API do Python, isso resulta na invocação do código do Python. Por exemplo, a intervenção em um `PyObject_CallObject` em um valor de função que foi originalmente definido no Python é interrompida no início da função do Python. Também há suporte para a intervenção do Python para nativo em funções nativas invocadas do Python por meio de [ctypes](http://docs.python.org/3/library/ctypes.html).
+Ao usar os comandos **Intervir** (**F11**) ou **Depuração Circular** (**Shift**+**F11**), o depurador de modo misto manipulará corretamente as alterações entre os tipos de código. Por exemplo, quando o Python chama um método de um tipo implementado no C, a intervenção em uma chamada a esse método é interrompida no início da função nativa que implementa o método. Da mesma forma, quando o código nativo chama uma função de API do Python, isso resulta na invocação do código do Python. Por exemplo, a intervenção em um `PyObject_CallObject` em um valor de função que foi originalmente definido no Python é interrompida no início da função do Python. Também há suporte para a intervenção do Python para nativo em funções nativas invocadas do Python por meio de [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Exibição de valores PyObject no código nativo
 
@@ -137,7 +137,7 @@ A **[exibição do Python]** não é mostrada automaticamente para tipos criados
 
 No entanto, para o Python 2.x, cada tipo de objeto normalmente declara seu cabeçalho como uma coleção de campos embutidos e não há nenhuma associação entre os tipos criados personalizados e `PyObject` no nível do sistema de tipos do código C/C++. Para habilitar nós da **[exibição do Python]** para esses tipos personalizados, edite o arquivo *PythonDkm.natvis* no [diretório de instalação das ferramentas Python](installing-python-support-in-visual-studio.md#install-locations) e adicione outro elemento ao XML do struct C ou da classe C++.
 
-Uma opção alternativa (e melhor) é seguir o [PEP 3123](http://www.python.org/dev/peps/pep-3123/) e usar um campo `PyObject ob_base;` explícito em vez de `PyObject_HEAD`, embora isso nem sempre seja possível por motivos de compatibilidade com versões anteriores.
+Uma opção alternativa (e melhor) é seguir o [PEP 3123](https://www.python.org/dev/peps/pep-3123/) e usar um campo `PyObject ob_base;` explícito em vez de `PyObject_HEAD`, embora isso nem sempre seja possível por motivos de compatibilidade com versões anteriores.
 
 ### <a name="native-values-view-in-python-code"></a>Exibição de valores Nativos no código do Python
 

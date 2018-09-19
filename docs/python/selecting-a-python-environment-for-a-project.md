@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586372"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551656"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Como atribuir qual ambiente Python é usado para um projeto
 
@@ -114,7 +114,7 @@ Saiba que as entradas exibidas podem não ser precisas e a instalação e desins
 Observe também que o Visual Studio não oferece suporte no momento ao uso de `conda` para instalar os pacotes em um ambiente conda. Use `conda` na linha de comando.
 
 > [!Tip]
-> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. O `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
+> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. O `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
 
 ## <a name="see-also"></a>Consulte também
 
