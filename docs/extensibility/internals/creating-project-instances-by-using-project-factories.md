@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498898"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370712"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Criar instâncias de projetos usando fábricas de projeto
 Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar um *fábrica de projeto* para criar instâncias de objetos do projeto. Uma fábrica de projeto é semelhante a uma fábrica de classes padrão para objetos cocreatable do COM. No entanto, os objetos do projeto não são cocreatable; eles só podem ser criados usando uma fábrica de projeto.  
@@ -28,7 +28,7 @@ Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
  Você pode implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface em uma classe em seu projeto. Normalmente, residem em seu próprio módulo.  
   
- Para obter um exemplo de uma implementação do `IVsProjectFactory` interface, consulte *PrjFac.cpp*, que está contido no [projeto básico](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) diretório de exemplo.  
+ Para obter um exemplo de uma implementação do `IVsProjectFactory` interface, consulte *PrjFac.cpp*, que está contido no [projeto básico](https://www.microsoft.com/download/details.aspx?id=55984) diretório de exemplo.  
   
  Projetos que dão suporte ao que está sendo agregada por um proprietário devem manter uma chave de proprietário no seu arquivo de projeto. Quando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método é chamado em um projeto com uma chave de proprietário, o projeto de propriedade converte sua chave de proprietário para uma fábrica de projeto, GUID, em seguida, chama o `CreateProject` método nesta fábrica de projeto para fazer a criação real.  
   

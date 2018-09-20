@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512246"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370985"
 ---
 # <a name="context-parameters"></a>Parâmetros de contexto
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE), você pode adicionar assistentes para a **novo projeto**, **Adicionar Novo Item**, ou **adicionar Sub projeto** caixas de diálogo. Os assistentes adicionados estão disponíveis na **arquivo** menus ou clicando em um projeto no **Gerenciador de soluções**. O IDE passa parâmetros de contexto para a implementação do assistente. Os parâmetros de contexto definem o estado do projeto quando o IDE chama o assistente.  
@@ -67,4 +67,4 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de dese
  [Parâmetros personalizados](../../extensibility/internals/custom-parameters.md)   
  [Assistentes](../../extensibility/internals/wizards.md)   
  [Arquivo do assistente (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Parâmetros de contexto para iniciar assistentes](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Parâmetros de contexto para iniciar assistentes](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

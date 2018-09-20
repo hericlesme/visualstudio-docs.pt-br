@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321158"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371089"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -182,7 +182,7 @@ O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende e
 
  **Diagrama de dependência**
 
-Para certificar-se de que está em conflito com o design não ocorra durante o desenvolvimento de código, a equipe usa a validação de dependência em compilações que é executada no Team Foundation Build. Eles também pode criar uma tarefa MSBuild personalizada para exigir validação de dependência em suas operações de check-in. Eles usam relatórios de compilação para coletar erros de validação.
+Para certificar-se de que está em conflito com o design não ocorra durante o desenvolvimento de código, a equipe usa a validação de dependência em compilações que é executada em DevOps do Azure. Eles também pode criar uma tarefa MSBuild personalizada para exigir validação de dependência em suas operações de check-in. Eles usam relatórios de compilação para coletar erros de validação.
 
 Consulte:
 
@@ -234,7 +234,7 @@ Conforme as equipes concluem cada tarefa, eles verificam o código no controle d
 
 O dinner Now tem uma grande coleção de testes automatizados, que a Lucerne pode reutilizar porque quase todos ainda se aplicam. A Lucerne também pode criar esses testes e adicionar novos para cobrir a nova funcionalidade. Ambos também usam o Visual Studio para executar testes manuais.
 
-Para certificar-se de que o código está de acordo com o design, as equipes configuram suas compilações no Team Foundation Build para incluir a validação de dependência. Se qualquer conflito ocorrer, um relatório é gerado com os detalhes.
+Para certificar-se de que o código está de acordo com o design, as equipes configuram suas compilações no DevOps do Azure para incluir a validação de dependência. Se qualquer conflito ocorrer, um relatório é gerado com os detalhes.
 
 Consulte:
 

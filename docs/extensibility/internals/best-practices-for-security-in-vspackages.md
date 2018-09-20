@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513342"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370687"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Práticas recomendadas de segurança em VSPackages
 Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] no seu computador, você deve estar executando em um contexto com credenciais administrativas. A unidade básica de segurança e a implantação de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicativo é o [VSPackage](../../extensibility/internals/vspackages.md). Um VSPackage deverá ser registrado usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], que também requer credenciais administrativas.  
@@ -31,8 +31,8 @@ Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 
   
  Os usuários devem garantir que eles instalar VSPackages somente de fontes confiáveis. As empresas desenvolvendo os VSPackages fortemente devem nomear e assiná-las garantir que o usuário dessa violação é impedido. As empresas desenvolvendo os VSPackages devem examinar suas dependências externas, como serviços da web e de instalação remota, para avaliar e corrigir quaisquer problemas de segurança.  
   
- Para obter mais informações, consulte [segura de diretrizes de codificação para o .NET Framework](http://msdn.microsoft.com/library/d55zzx87.aspx).  
+ Para obter mais informações, consulte [segura de diretrizes de codificação para o .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).  
   
 ## <a name="see-also"></a>Consulte também  
- [Segurança de suplemento](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
- [Segurança DDEX](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [Segurança de suplemento](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
+ [Segurança DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)

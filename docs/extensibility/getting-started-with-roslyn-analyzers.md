@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497843"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370582"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introdução ao analisadores Roslyn
 
@@ -26,13 +26,13 @@ Com os analisadores de código ao vivo, com base em projeto no Visual Studio, os
 
 [Adicionar correções de código passo a passo: fornecer correções de usuários para problemas de analisador](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Introdução e instruções passo a passo do analisador do mundo real de falar](http://channel9.msdn.com/events/Build/2015/3-725)
+[Introdução e instruções passo a passo do analisador do mundo real de falar](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Analisador do mundo real Roslyn](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que você também pode assistir como um [falar](http://channel9.msdn.com/events/Build/2015/3-725)
+[Analisador do mundo real Roslyn](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que você também pode assistir como um [falar](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Vários exemplos no github, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Introdução e tour alguns analisadores falar](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[Introdução e tour alguns analisadores falar](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499693"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370660"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obter informações de fonte e cor para a colorização do texto
 O processo que processa ou exibe texto coloridos serão em elementos de (UI) interface do usuário depende do tipo de projeto, sua tecnologia e desenvolvedor preferências. O **fontes e cores** página de propriedades armazena as configurações.
@@ -50,4 +50,4 @@ Depois que você obteve informações de fonte e cor, analisar o texto a ser exi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [Use fontes e texto](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [Trabalhar com cores](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI (interface gráfica de dispositivo)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI (interface gráfica de dispositivo)](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)
