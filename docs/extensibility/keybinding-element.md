@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639318"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495291"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 O elemento de associação de teclas Especifica atalhos de teclado para os comandos.  
@@ -39,12 +39,12 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário.|  
-|id|Necessário.|  
-|editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
-|CHAVE1|Necessário. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|GUID|Obrigatório.|  
+|id|Obrigatório.|  
+|editor|Obrigatório. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
+|CHAVE1|Obrigatório. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |Mod1|Opcional. Qualquer combinação de **Ctrl**, **Alt**, e **Shift** separados por espaço.|  
-|Key2|Opcional. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|Key2|Opcional. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |Mod2|Opcional. Qualquer combinação de **Ctrl**, **Alt**, e **Shift** separados por espaço.|  
 |Emulador|Opcional.|  
 |Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  

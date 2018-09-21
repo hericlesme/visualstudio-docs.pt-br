@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586802"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495681"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referência do Visual Studio SDK
 Esta seção contém informações sobre namespaces, namespaces relacionados e outras áreas de interesse do Visual Studio para desenvolvedores que usam o SDK do Visual Studio.  
@@ -223,7 +223,7 @@ Esta seção contém informações sobre namespaces, namespaces relacionados e o
  <xref:Microsoft.VisualStudio.Threading>  
  Usado para threading do Visual Studio.  
   
- [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) usados para serviços conectados do Visual Studio.  
+ [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) usados para serviços conectados do Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) enumeração  
  Especifica os sinalizadores de host do IntelliSense.  

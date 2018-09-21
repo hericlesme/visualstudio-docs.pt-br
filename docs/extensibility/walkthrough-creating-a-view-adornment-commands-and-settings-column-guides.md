@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499985"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496097"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Passo a passo: Criar um adorno de exibição, comandos e configurações (guias de coluna)
 Você pode estender o editor de texto/código do Visual Studio com comandos e efeitos de exibição. Este artigo mostra como começar com um recurso de extensão popular, guias de coluna. Guias de coluna são visualmente luz linhas desenhadas em modo de exibição do editor de texto para ajudá-lo a gerenciar seu código para as larguras das colunas específicas. Especificamente, o código formatado pode ser importante para os exemplos incluem em documentos, postagens de blog ou relatórios de bugs.  
@@ -35,7 +35,7 @@ Você pode estender o editor de texto/código do Visual Studio com comandos e ef
   
 -   Adicionar suporte para invocar os comandos da janela de comando do Visual Studio  
   
- Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Observação**: neste passo a passo, você deve colar uma grande quantidade de código em alguns arquivos gerados pelos modelos de extensão do Visual Studio. No entanto, em breve neste passo a passo fará referência a uma solução completa no github com outros exemplos de extensão. O código completo é um pouco diferente porque tem ícones de comando real em vez de usar generictemplate ícones.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Projeto de código concluído  
  Em breve haverá um projeto do github de exemplos de extensibilidade do Visual Studio e o projeto concluído estará lá. Este artigo será atualizado para apontar lá quando isso acontece. O projeto de exemplo completo pode ter diferentes guids e terá uma faixa de bitmaps diferentes para os ícones de comando.  
   
- Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>Consulte também  
  [Dentro do editor](../extensibility/inside-the-editor.md)   

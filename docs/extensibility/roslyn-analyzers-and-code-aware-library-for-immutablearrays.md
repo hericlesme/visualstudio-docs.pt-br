@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637715"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495915"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays
 
@@ -307,13 +307,13 @@ Agora, você pode pressionar **F5** para executar o seu analisador em uma segund
 
 ## <a name="talk-video-and-finish-code-project"></a>Se comunicar com vídeo e concluir o projeto de código
 
-Você pode ver neste exemplo, desenvolvidos e discutido mais detalhadamente em [essa conversa](http://channel9.msdn.com/events/Build/2015/3-725).  Palestra demonstra o analisador de trabalho e orienta você por meio de compilá-lo.
+Você pode ver neste exemplo, desenvolvidos e discutido mais detalhadamente em [essa conversa](https://channel9.msdn.com/events/Build/2015/3-725).  Palestra demonstra o analisador de trabalho e orienta você por meio de compilá-lo.
 
 Você pode ver o código concluído [aqui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  As subpastas *DoNotUseImmutableArrayCollectionInitializer* e *DoNotUseImmutableArrayCtor* cada um tem um arquivo c# para localizar problemas e correções de um arquivo c# que implementa o código que mostram-se das Visual Studio lâmpada da interface do usuário.  Observe que o código concluído tem um pouco mais de abstração para evitar buscando a ImmutableArray\<T > tipo de objeto repetidamente.  Ele usa aninhadas ações registradas para salvar o objeto de tipo em um contexto que está disponível sempre que as ações de sub (analisar a criação do objeto e analisar as inicializações de coleção) execute.
 
 ## <a name="see-also"></a>Consulte também
 
-* [\\Palestra de \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\Palestra de \Build 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código completo no GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Vários exemplos no GitHub, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Outros documentos no site do GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

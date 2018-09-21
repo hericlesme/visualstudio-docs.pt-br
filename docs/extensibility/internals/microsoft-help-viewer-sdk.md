@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513368"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495993"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 Este artigo contém as seguintes tarefas para integradores do Visual Studio Help Viewer:  
@@ -822,13 +822,13 @@ Para testar isso como se implantado:
 ### <a name="additional-resources"></a>Recursos adicionais  
 Para a API de tempo de execução, consulte [API de Ajuda do Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Para obter informações adicionais sobre como usar a API de Ajuda, consulte [exemplos de código do Visualizador de ajuda](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Para obter informações adicionais sobre como usar a API de Ajuda, consulte [exemplos de código do Visualizador de ajuda](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Para fornecer comentários sobre esses componentes, use [Microsoft Connect](http://connect.microsoft.com/).  
   
 Envie sugestões de recursos ao [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Para obter ajuda adicional, experimente o [fóruns do sistema de Ajuda e documentação do desenvolvedor do MSDN](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Para obter ajuda adicional, experimente o [fóruns do sistema de Ajuda e documentação do desenvolvedor do MSDN](https://social.msdn.microsoft.com/Forums)  
   
 Atualizações em quebrar o problema, consulte o [Leiame do Visualizador de ajuda](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

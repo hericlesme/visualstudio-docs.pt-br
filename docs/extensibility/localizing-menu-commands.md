@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638024"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495447"
 ---
 # <a name="localize-menu-commands"></a>Localizar os comandos de menu
 Você pode fornecer o texto localizado para comandos de menu e barra de ferramentas criando localizada *VSCT* localizadas e arquivos *. resx* arquivos para o VSPackage e, em seguida, atualizar os arquivos de projeto incorporar o alterações.  
@@ -37,7 +37,7 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
   
 2.  Faça uma cópia do *filename.en US.vsct* para cada idioma localizado.  
   
-     Nome de cada cópia *filename. { Localidade} VSCT*, onde *{localidade}* é um nome de cultura específica. Para obter uma lista de valores de nome de cultura, consulte [IDs de localidade atribuídas pela Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Nome de cada cópia *filename. { Localidade} VSCT*, onde *{localidade}* é um nome de cultura específica. Para obter uma lista de valores de nome de cultura, consulte [IDs de localidade atribuídas pela Microsoft](/windows/uwp/publish/supported-languages).  
   
      Eles *filename. Locale.VSCT* arquivos conterá o texto de menu traduzido para o seu pacote.  
   

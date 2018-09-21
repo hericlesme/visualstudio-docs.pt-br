@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498666"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495239"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Passo a passo: Criar um editor de núcleo e registrar um tipo de arquivo do editor
 Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo quando um arquivo com o *.myext* extensão de nome de arquivo é carregado.  
@@ -37,7 +37,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
 ### <a name="to-create-the-vspackage"></a>Para criar o VSPackage  
   
--   Inicie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e crie um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage nomeado `MyPackage`, conforme descrito na [passo a passo: criar um comando de menu VSPackage](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Inicie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e crie um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage nomeado `MyPackage`, conforme descrito na [passo a passo: criar um comando de menu VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para adicionar a fábrica do editor  
   

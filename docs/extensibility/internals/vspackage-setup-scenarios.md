@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510660"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495928"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 
@@ -31,7 +31,7 @@ Os cenários abordados neste tópico não são suas únicas opções, mas eles s
 
 ### <a name="make-your-components-independent"></a>Verifique seus componentes independentes
 
-Depois de identificar e preencher um componente, atribua um `GUID`e implantar o componente, você não pode alterar sua composição. Se você alterar a composição de um componente, o componente resultante deve ser um novo componente com um novo `GUID`. Devido a esses fatos, a maior flexibilidade de controle de versão é que, fazendo cada unidade auto-suficiente, independente do componente. Para obter mais informações sobre as regras que regem os componentes, consulte [alterar o código do componente](/windows/desktop/Msi/changing-the-component-code) e [o que acontece se o componente de regras são divididas?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Depois de identificar e preencher um componente, atribua um `GUID`e implantar o componente, você não pode alterar sua composição. Se você alterar a composição de um componente, o componente resultante deve ser um novo componente com um novo `GUID`. Devido a esses fatos, a maior flexibilidade de controle de versão é que, fazendo cada unidade auto-suficiente, independente do componente. Para obter mais informações sobre as regras que regem os componentes, consulte [alterar o código do componente](/windows/desktop/Msi/changing-the-component-code) e [o que acontece se o componente de regras são divididas?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Não misture recursos compartilhados e particulares em um componente
 
@@ -77,7 +77,7 @@ Nesse caso, o VSPackage é um VSPackage gerenciado instalado no cache de assembl
 
 ![Instalador de atualização de pacote do VS lado a lado do VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo inferno da DLL com o .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo inferno da DLL com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Consulte também
 
