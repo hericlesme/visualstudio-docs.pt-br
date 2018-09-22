@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495720"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542455"
 ---
 # <a name="intellitrace-features"></a>funcionalidades do IntelliTrace
 
@@ -50,7 +50,7 @@ Se você estiver depurando, pare a depuração. Vá para **Ferramentas > Opçõe
 
 ## <a name="Snapshots"></a> Coletar instantâneos
 
-Isso não é habilitado por padrão, mas IntelliTrace pode capturar instantâneos do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, acesse **Ferramentas > Opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para obter mais informações, consulte [exibir instantâneos usando o retrocesso do IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
+Isso não é habilitado por padrão, mas IntelliTrace pode capturar instantâneos do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, acesse **Ferramentas > Opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para obter mais informações, consulte [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)
 
 Instantâneos estão disponíveis no Visual Studio Enterprise 2017 versão 15.5 e posterior, e ela requer a atualização de aniversário do Windows 10 ou superior.  Para aplicativos .NET Core e ASP.NET Core, o Visual Studio Enterprise 2017 versão 15.7 é necessária. Para aplicativos nativos de direcionamento do Windows, versão do Visual Studio Enterprise 2017 15,9 Preview 2 é necessária.
 

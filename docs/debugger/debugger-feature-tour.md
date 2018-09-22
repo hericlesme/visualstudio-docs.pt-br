@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433542"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542410"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primeiro, examine o depurador do Visual Studio
 
@@ -211,7 +211,7 @@ Para obter mais informações, consulte [depurar aplicativos ASP.NET dinâmicos 
 
 ![Etapa para trás e para frente botões](../debugger/media/intellitrace-step-back-icons-description.png  "botões Voltar e Avançar")
 
-Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/how-to-use-intellitrace-step-back.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
+Para obter mais informações, consulte o [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md) página.
 
 ## <a name="next-steps"></a>Próximas etapas
 

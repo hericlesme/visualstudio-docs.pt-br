@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433448"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542423"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>O que há de novo no depurador no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ O depurador inclui esses novos recursos:
 
     ![Etapa para trás e para frente botões](../debugger/media/intellitrace-step-back-icons-description.png  "botões Voltar e Avançar")
 
-    Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/how-to-use-intellitrace-step-back.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
+    Para obter mais informações, consulte o [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md) página.
 
 - O **auxiliar de exceção** substitui o Assistente de exceção e aparece em uma caixa de diálogo não modal onde ocorreu o erro. O **auxiliar de exceção** fornece um acesso mais rápido para quaisquer exceções internas, análises adicionais pelo depurador (se disponível) e ter acesso imediato à **configurações de exceção** da exceção. O auxiliar de exceção também podem ser arrastado para um modo de exibição flutuante se ele está bloqueando algo que você precisa ver.
 

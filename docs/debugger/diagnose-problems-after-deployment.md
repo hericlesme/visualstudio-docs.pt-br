@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320729"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542501"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnosticar problemas após a implantação
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnosticar problemas após a implantação usando o IntelliTrace
 
 Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantação usando o IntelliTrace, inclua informações de compilação com a versão para permitir que o Visual Studio localize automaticamente os arquivos de origem e símbolos corretos que são necessárias para depurar o log do IntelliTrace.
 
@@ -27,48 +27,27 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
  **Você precisará:**
 
--   Visual Studio 2017, Visual Studio 2015 ou Team Foundation Server 2017, 2015, 2013, 2012 ou 2010 para configurar sua compilação
+-   Visual Studio, DevOps do Azure ou o Team Foundation Server 2017, 2015, 2013, 2012 ou 2010 para configurar sua compilação
 
 -   Para monitorar seu aplicativo e registrar dados de diagnóstico use o Microsoft Monitoring Agent
 
 -   Visual Studio Enterprise (mas não as edições Professional ou Community) para examinar dados de diagnóstico e depurar seu código com o IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Etapa 1: Inclua informações com sua versão de compilação
- Configure seu processo de compilação para criar um manifesto de compilação (BuildInfo.config file) de seu projeto Web e inclua esse manifesto em sua liberação. Esse manifesto contém informações sobre o projeto, sobre o controle do código-fonte e o sistema de compilação utilizados para criar uma compilação específica. Essas informações ajudam o Visual Studio a encontrar o código-fonte e os símbolos correspondentes após abrir o log do IntelliTrace para revisar os eventos registrados.
+ Configurar o processo de compilação para criar um manifesto de compilação (*Buildinfo* arquivo) para a web de projeto e inclua esse manifesto em sua versão. Esse manifesto contém informações sobre o projeto, sobre o controle do código-fonte e o sistema de compilação utilizados para criar uma compilação específica. Essas informações ajudam o Visual Studio a encontrar o código-fonte e os símbolos correspondentes após abrir o log do IntelliTrace para revisar os eventos registrados.
 
 ###  <a name="AutomatedBuild"></a> Crie o manifesto de compilação para uma compilação automatizada usando o Team Foundation Server
 
  Siga essas etapas caso use Team Foundation Version Control ou Git.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> DevOps do Azure e o Team Foundation Server 2017
 
- Configure seu pipeline de compilação para adicionar os locais de seu código-fonte, compilação e símbolos ao manifesto de compilação (Buildinfo config). O Team Foundation Build automaticamente cria esse arquivo e coloca-o em sua pasta de saída do projeto.
+Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em seguida, removido. Para depurar aplicativos web ASP.NET após a implantação, use um dos seguintes métodos:
 
-1.  Se você já tiver um pipeline de build usando o modelo do ASP.NET Core (.NET Framework), você pode [editar seu pipeline de compilação ou criar um novo pipeline de compilação.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Para implantação no Azure, use [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Visualizar o pipeline no TFS 2017 de compilação](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Se você precisar usar o IntelliTrace, abra o projeto no Visual Studio e carregar os arquivos de símbolo de compilação correspondente. Você pode carregar arquivos de símbolo a **módulos** janela ou por meio da configuração de símbolos no **ferramentas** > **opções** > **depuração**   >  **Símbolos**.
 
-2.  Se você criar um novo modelo, escolha o modelo do ASP.NET Core (.NET Framework).
-
-     ![Escolha o modelo de processo de compilação &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Especifique onde salvar o arquivo de símbolos (PDB) de forma que o código-fonte seja indexado automaticamente.
-
-     Se você usar um modelo personalizado, verifique se o modelo tem uma atividade para indexar o código-fonte. Posteriormente, adicione um argumento de MSBuild para especificar onde salvar o arquivo de símbolos.
-
-     ![Configurar o caminho de símbolos no pipeline de build TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Para obter mais informações sobre símbolos, consulte [publicar dados de símbolo](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Adicione este argumento de MSBuild para incluir os locais do TFS e de símbolos ao arquivo de manifesto da compilação:
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Qualquer um que possa acessar seu servidor Web pode ver esses locais no manifesto de compilação. Certifique-se de que o servidor de código-fonte é seguro.
-
-6.  Execute uma nova compilação.
-
-    Vá para [etapa 2: liberar seu aplicativo](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Configure seu pipeline de compilação para adicionar os locais de seu código-fonte, compilação e símbolos ao manifesto de compilação (Buildinfo config). O Team Foundation Build automaticamente cria esse arquivo e coloca-o em sua pasta de saída do projeto.

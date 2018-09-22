@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496006"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542435"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 
 |||
 |-|-|
-|**Depure meu aplicativo com o IntelliTrace:**<br /><br /> -Mostre eventos anteriores.<br />-Mostrar-me informações de chamadas com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que o IntelliTrace coleta.|- [Exibir instantâneos usando o retrocesso do IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)<br />- [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />- [Histórico de depuração](../debugger/historical-debugging.md)|
+|**Depure meu aplicativo com o IntelliTrace:**<br /><br /> -Mostre eventos anteriores.<br />-Mostrar-me informações de chamadas com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que o IntelliTrace coleta.|- [Inspecione o estado anterior do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />- [Histórico de depuração](../debugger/historical-debugging.md)|
 |**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|- [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Coletar dados do IntelliTrace de aplicativos implantados**|- [Usando o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Inicie a depuração de um arquivo de log do IntelliTrace (arquivo. itrace).**|- [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, ex
 
 Você pode configurar o IntelliTrace para capturar instantâneos em cada ponto de interrupção e evento de etapa do depurador. O IntelliTrace registra o estado do aplicativo completo em cada instantâneo, que permite a você exibir variáveis complexas e avaliar expressões.
 
-Ver [exibir instantâneos usando o retrocesso do IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Ver [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
 
 **Coletar informações de chamada de função**
 
