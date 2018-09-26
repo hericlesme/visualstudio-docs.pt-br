@@ -1,7 +1,7 @@
 ---
 title: Ordem de build de destinos | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178950"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774939"
 ---
 # <a name="target-build-order"></a>Ordem de build de destino
 Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. É possível usar esses atributos para especificar a ordem na qual os destinos são executados:  
@@ -114,7 +114,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
 
     Destinos que listam o destino condicional em `BeforeTargets` ou `AfterTargets` ainda são executados na ordem prescrita
   
-4.  Antes de um destino ser executado, seus destinos `DependsOnTargets` são executados.  
+4.  Antes que um destino seja executado ou ignorado, se o atributo `Condition` estava ausente ou não foi avaliado para `false`, os destinos de `DependsOnTargets` serão executados.  
   
 5.  Antes da execução de um destino, ou de ignorá-lo, qualquer destino que contiver um atributo `BeforeTargets` será executado.  
   

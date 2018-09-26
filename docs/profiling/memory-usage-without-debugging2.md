@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265718"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668133"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analisar o uso de memória sem o depurador do Visual Studio
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
@@ -32,7 +32,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo UWP XAML. Se você quiser analisar o uso de memória no aplicativo UWP que usa JavaScript e HTML, confira [Analisar o uso de memória (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar uma a sessão de diagnóstico de uso de memória  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Iniciar uma a sessão de diagnóstico de uso de memória  
   
 1.  Abra um projeto universal do Windows em C# no Visual Studio.  
   
@@ -42,7 +42,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
      ![Iniciar uma sessão de diagnóstico de uso de memória](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Monitorar o uso de memória  
+## <a name="monitor-memory-use"></a>Monitorar o uso de memória  
  Embora você possa usar a ferramenta **Uso de Memória** para gerar relatórios detalhados que podem ser usados para encontrar e corrigir problemas, você também pode usá-la para estudar os efeitos de memória em tempo real de um cenário que esteja desenvolvendo ativamente.  
   
  Quando você inicia uma sessão de diagnóstico, seu aplicativo é iniciado e a janela **Ferramentas de Diagnóstico** mostra um gráfico de linha do tempo do uso de memória do aplicativo.  
@@ -56,12 +56,12 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  Para parar uma sessão de monitoramento sem criar um relatório, apenas feche a janela de diagnóstico. Para gerar um relatório quando você tiver tirado instantâneos de memória, escolha **Parar**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Tirar instantâneos do estado de memória do aplicativo  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Tirar instantâneos do estado de memória do aplicativo  
  Se você descobrir um problema de memória que deseja investigar, será possível tirar instantâneos durante a sessão de diagnóstico para capturar objetos na memória em momentos específicos. Como o aplicativo usa uma grande variedade de tipos de objetos, talvez você queira concentrar sua análise em um cenário. Também é uma boa ideia obter um instantâneo de linha de base do aplicativo antes de aparecer um problema de memória, outro instantâneo após a primeira ocorrência do problema e um ou mais instantâneos adicionais se você puder repetir o cenário.  
   
  Para a coleta de instantâneos, inicie uma nova sessão de diagnóstico. Escolha **Tirar Instantâneo** quando quiser capturar os dados da memória. Para gerar um relatório, escolha **Parar**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Página de visão geral do uso de memória  
+##  <a name="memory-usage-overview-page"></a>Página de visão geral de uso de memória  
  Depois de parar a coleta de dados, a ferramenta Uso de Memória para o aplicativo e exibe o relatório geral.  
   
  ![Página de visão geral do uso de memória](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -69,9 +69,9 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Exibições de instantâneo do uso de memória  
  Você usa as exibições de instantâneos para abrir relatórios detalhados em novas janelas do Visual Studio. Há dois tipos de exibições de instantâneos:  
   
--   Um [Relatório de detalhes do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra os tipos e as instâncias em um instantâneo.  
+-   Um [Relatório de detalhes do instantâneo](#snapshot-reports) mostra os tipos e as instâncias em um instantâneo.  
   
--   Um [Relatório de diferenças (dif) do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compara os tipos e as instâncias em dois instantâneos.  
+-   Um [Relatório de diferenças (dif) do instantâneo](#snapshot-difference-diff-reports) compara os tipos e as instâncias em dois instantâneos.  
   
  ![Links de exibição de instantâneo](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -84,7 +84,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|O texto do link mostra a diferença entre o tamanho total de objetos na memória no momento desse instantâneo e o tamanho total do instantâneo anterior.<br /><br /> O texto do link é um número positivo quando o tamanho da memória desse instantâneo for maior do que o anterior, e um número negativo quando o tamanho for menor. O texto do link **Linha de Base** indica que esse instantâneo é o primeiro na sessão de diagnóstico, **Nenhuma Diferença** indica que a diferença é igual a zero.<br /><br /> Escolha esse link para exibir um relatório diferente do instantâneo, que é classificado pela diferença no tamanho total das instâncias dos tipos.|  
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|O texto do link mostra a diferença entre o tamanho total de objetos de memória nesse instantâneo e o número de objetos no instantâneo anterior.<br /><br /> Escolha esse link para exibir um relatório diferente do instantâneo, que é classificado pela diferença na contagem total das instâncias dos tipos.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Relatórios de instantâneos  
+## <a name="snapshot-reports"></a>Relatórios de instantâneos  
  ![Relatório de instantâneo do uso de memória](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Árvores de relatórios de instantâneos  
@@ -119,7 +119,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 ####  <a name="BKMK_Just_My_Code"></a> Apenas Meu Código  
  O filtro **Apenas Meu Código** oculta a maioria das instâncias geradas pelo código externo. Tipos externos são de propriedade do sistema operacional, de componentes do Framework ou gerados pelo compilador.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Relatórios de detalhes do instantâneo  
+## <a name="snapshot-details-reports"></a>Relatórios de detalhes do instantâneo  
  Você usa um relatório de detalhes do instantâneo para se concentrar em um instantâneo de uma sessão de diagnóstico. Para abrir um relatório de detalhes, escolha um dos links em uma exibição de instantâneo, como mostrado na figura a seguir. Os dois links abrem o mesmo relatório, a única diferença é a ordem de classificação inicial da árvore **Heap Gerenciado** no relatório. Em ambos os casos, você pode mudar a ordem de classificação depois que o relatório abre.  
   
  ![Links para o relatório do instantâneo na exibição de instantâneo](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -158,7 +158,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos contidos no tipo.<br /><br /> No caso de uma instância, o tamanho do objeto, excluindo o tamanho dos objetos contidos no objeto.|  
 |**Tamanho Inclusivo (Bytes)**|O tamanho total das instâncias do tipo ou o tamanho da instância, incluindo o tamanho dos objetos contidos.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Relatórios de diferenças (dif) do instantâneo  
+## <a name="snapshot-difference-diff-reports"></a>Relatório de diferenças (dif) do instantâneo  
  O relatório de diferença (dif) do instantâneo mostra as mudanças entre um instantâneo primário e o instantâneo que foi tirado imediatamente antes dele. Para abrir um relatório de diferença, escolha um dos links em uma exibição de instantâneo, como mostrado na figura a seguir. Os dois links abrem o mesmo relatório, a única diferença é a ordem de classificação inicial da árvore **Heap Gerenciado** no relatório. Você pode mudar a ordem de classificação depois que o relatório abre.  
   
  ![Links para o relatório do de diferenças em uma exibição de instantâneo](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -203,6 +203,6 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 ## <a name="see-also"></a>Consulte também  
  [Memória JavaScript](../profiling/javascript-memory.md)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)  
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)  
  [Práticas recomendadas de desempenho para aplicativos UWP em C++, C# e Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)

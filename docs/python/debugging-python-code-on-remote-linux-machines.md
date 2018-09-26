@@ -1,7 +1,7 @@
 ---
 title: Depuração de código Python em computadores remotos com Linux
 description: Como usar o Visual Studio para depurar o código Python em execução em computadores remotos com Linux, incluindo as etapas de configuração necessárias, segurança e solução de problemas.
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341657"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774680"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
@@ -126,6 +126,9 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
 
     | Versão do Visual Studio | Versão das ferramentas do Python/ptvsd |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9 (depurador herdado: 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (depurador herdado: 3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |

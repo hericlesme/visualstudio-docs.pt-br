@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666508"
 ---
 # <a name="package-manager"></a>Gerenciador de pacotes
 
-O gerenciador de pacotes das RTVS (Ferramentas do R para Visual Studio) é uma interface do usuário para gerenciar os pacotes R. Para abri-lo, selecione **Ferramentas do R > Janelas > Pacotes** ou pressione Ctrl + 7.
+O gerenciador de pacotes das RTVS (Ferramentas do R para Visual Studio) é uma interface do usuário para gerenciar os pacotes R. Para abri-lo, selecione **Ferramentas do R** > **Windows** > **Pacotes** ou pressione **Ctrl**+**7**.
 
 O gerenciador de pacotes tem três guias. Cada guia exibe uma lista de pacotes relevantes à esquerda e detalhes específicos para o pacote selecionado à direita, incluindo versão do pacote, descrição, licença, local de instalação e links para outras informações relevantes. Caixa de pesquisa no canto superior direito permite filtrar a lista.
 
@@ -41,5 +42,5 @@ O gerenciador de pacotes tem três guias. Cada guia exibe uma lista de pacotes r
 
 Os pacotes são instalados nos seguintes locais:
 
-- Os pacotes principais que vêm incluídos nas RTVS são instalados em `C:\Program Files\Microsoft\R Client\R_SERVER\library`
-- Os pacotes adicionais são instalados em `%userprofile%\Documents\R\win-library\3.3`
+- Os pacotes principais incluídos nas RTVS são instalados em *C:\Arquivos de Programas\Microsoft\R Client\R_SERVER\library*
+- Pacotes adicionais são instalados em *%userprofile%\Documents\R\win-library\3.3*

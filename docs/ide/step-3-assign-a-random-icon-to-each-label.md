@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8aac613f4fe8a93ebd31127e26bcd92218b6300
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748238"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775845"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Etapa 3: Atribuir um ícone aleatório a cada rótulo
 Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito desafiador. Para evitar isso, atribua os ícones aleatoriamente aos controles de rótulo no seu formulário usando um método `AssignIconsToSquares()`.
@@ -49,7 +49,7 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
 
      Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Veja [Como faço para executar em etapas com o depurador do Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.
 
-3.  Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no **Form1***constructor*, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Uso de construtores e destruidores](http://msdn.microsoft.com/library/2z08e49e.aspx) no Visual Basic para obter mais informações.
+3.  Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no **construtor**_Form1_, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Uso de construtores e destruidores](http://msdn.microsoft.com/library/2z08e49e.aspx) no Visual Basic para obter mais informações.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

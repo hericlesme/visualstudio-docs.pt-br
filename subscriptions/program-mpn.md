@@ -9,12 +9,12 @@ description: Detalhes de quais assinaturas são oferecidas, quais regras se apli
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281024"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283568"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -54,7 +54,7 @@ Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Profess
 
 Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares gratuitos para desenvolvimento, incluindo o SQL Server Developer Edition.
 
-A assinatura do Visual Studio Professional (MPN) não inclui benefícios do VSTS, créditos mensais do Azure, suporte técnico, treinamento, nem outros benefícios do assinante que estão disponíveis com as assinaturas do Visual Studio oferecidas comercialmente.
+A assinatura do MPN (Visual Studio Professional) não inclui benefícios do Azure DevOps Services, créditos mensais do Azure, suporte técnico, treinamento nem outros benefícios do assinante que estão disponíveis com as assinaturas do Visual Studio oferecidas comercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrição somente para uso interno
 As regras do MPN estipulam que todos os softwares oferecidos como um benefício do programa somente podem ser usados internamente. Isso se aplica aos softwares oferecidos para serem usados pelos assinantes individuais do Visual Studio e aos benefícios gerais de licença de software do MPN.

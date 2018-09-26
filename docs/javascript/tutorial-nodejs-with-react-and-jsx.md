@@ -2,7 +2,7 @@
 title: Criar um aplicativo Node.js e React
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567136"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124996"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -31,6 +31,30 @@ Neste tutorial, você aprenderá como:
 > * Adicionar código React ao seu aplicativo
 > * Transcompilar JSX
 > * Anexar o depurador
+
+## <a name="before-you-begin"></a>Antes de começar
+
+Aqui está algumas perguntas frequentes rápidas para apresentar alguns conceitos principais.
+
+### <a name="what-is-nodejs"></a>O que é o Node.js?
+
+O Node.js é um ambiente de tempo de execução do JavaScript do servidor que executa o JavaScript no servidor.
+
+### <a name="what-is-npm"></a>O que é o npm?
+
+npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes facilita para os programadores publicar e compartilhar o código-fonte das bibliotecas do Node.js e foi projetado para simplificar a instalação, a atualização e a desinstalação de bibliotecas.
+
+### <a name="what-is-react"></a>O que é React?
+
+O React é uma estrutura de front-end para criar uma interface do usuário.
+
+### <a name="what-is-jsx"></a>O que é o JSX?
+
+O JSX é uma extensão da sintaxe de JavaScript, normalmente usada com o React para descrever os elementos de interface do usuário. O código JSX deve ser transcompilado para JavaScript simples antes que possa ser executado em um navegador.
+
+### <a name="what-is-webpack"></a>O que é o webpack?
+
+O webpack empacota arquivos JavaScript para que eles possam ser executados em um navegador. Ele também pode transformar ou empacotar outros recursos e ativos. Geralmente, é usado para especificar um compilador, como Babel ou TypeScript, para transcompilar código JSX ou TypeScript para JavaScript simples.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -62,13 +86,15 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
 
     ![Projeto Node.js no Gerenciador de Soluções](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No sistema de arquivos, este projeto é representado por um arquivo *.njsproj* na pasta do projeto. Você pode definir propriedades e variáveis de ambiente associadas ao projeto clicando com o botão direito do mouse no projeto e escolhendo **Propriedades**. Você pode fazer o ciclo com outras ferramentas de desenvolvimento, uma vez que o arquivo de projeto não faz alterações personalizadas na fonte do projeto Node.js.
+    (1) Realçado em **negrito** no projeto, usando o nome fornecido na caixa de diálogo **Novo Projeto**. No sistema de arquivos, este projeto é representado por um arquivo *.njsproj* na pasta do projeto. Você pode definir propriedades e variáveis de ambiente associadas ao projeto clicando com o botão direito do mouse no projeto e escolhendo **Propriedades**. Você pode fazer o ciclo com outras ferramentas de desenvolvimento, porque o arquivo de projeto não faz alterações personalizadas na fonte do projeto Node.js.
 
-    * No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
+    (2) No nível superior, há uma solução que, por padrão, tem o mesmo nome do projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
 
-    * O nó de npm mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
+    (3) O nó do npm mostra os pacotes npm instalados. Clique com o botão direito do mouse no nó do npm para pesquisar e instalar pacotes npm usando uma caixa de diálogo ou instalar e atualizar pacotes usando as configurações de *package.json* e as opções de clique com o botão direito do mouse no nó do npm.
 
-    * Arquivos de projeto como *server.js* aparecem no nó do projeto. *server.js* é o arquivo de inicialização do projeto.
+    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações sobre esse arquivo, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md)
+
+    (5) Arquivos de projeto como *server.js* aparecem no nó do projeto. *server.js* é o arquivo de inicialização do projeto e é por isso que ele é exibido em **negrito**. Defina o arquivo de inicialização clicando com o botão direito do mouse em um arquivo no projeto e selecionando **Definir como arquivo de inicialização do Node.js**.
 
 ## <a name="add-npm-packages"></a>Adicionar pacotes npm
 
@@ -95,26 +121,26 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
     O arquivo *package.json* do projeto é atualizado com as informações do novo pacote, incluindo a versão do pacote.
 
-1. Em vez de usar a interface do usuário para pesquisar e adicionar o restante dos pacotes um de cada vez, cole o seguinte código em package.json. Para fazer isso, substitua a seção `dependencies` por este código:
+1. Em vez de usar a interface do usuário para pesquisar e adicionar o restante dos pacotes um de cada vez, cole o seguinte código em package.json. Para fazer isso, adicione uma seção `dependencies` com este código:
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    Se não houver uma seção `dependencies` na sua versão do modelo em branco, você deve adicioná-lo em vez de substituir a seção existente.
+    Se já houver uma seção `dependencies` em sua versão do modelo em branco, basta substituí-la pelo código JSON anterior. Para obter mais informações sobre o uso desse arquivo, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md)
 
 1. Clique com o botão direito do mouse no nó **npm** no projeto e escolha **Atualizar Pacotes npm**.
 
-    No painel inferior, escolha a janela de **Saída** para ver o progresso da instalação dos pacotes. A instalação pode levar alguns minutos e talvez você não veja os resultados imediatamente. Para ver a saída, verifique se marcou **Npm** no campo **Mostrar saída de** na janela **Saída**.
+    No painel inferior, escolha a janela de **Saída** para ver o progresso da instalação dos pacotes. A instalação pode levar alguns minutos e talvez você não veja os resultados imediatamente. Para ver a saída, verifique se marcou **Npm** no campo **Mostrar saída de** na janela de **Saída**.
 
     Estes são os módulos npm que aparecem no Gerenciador de Soluções após a instalação.
 
@@ -270,7 +296,7 @@ Nas etapas anteriores, você adicionou *webpack-config.js* ao projeto. Em seguid
 
     ![Execute o webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    Se encontrar erros em vez da saída anterior, você precisará resolvê-para que seu aplicativo funcione. Se as versões de seu pacote npm forem diferentes das versões mostradas neste tutorial, isso poderá ser uma fonte de erros. Uma maneira de corrigir erros é usar as versões exatas mostradas nas etapas anteriores. Além disso, se uma ou mais dessas versões de pacote tiver sido preterida e gerar um erro, talvez você precise instalar uma versão mais recente para corrigir erros.
+    Se encontrar erros em vez da saída anterior, você precisará resolvê-para que seu aplicativo funcione. Se as versões de seu pacote npm forem diferentes das versões mostradas neste tutorial, isso poderá ser uma fonte de erros. Uma maneira de corrigir erros é usar as versões exatas mostradas nas etapas anteriores. Além disso, se uma ou mais dessas versões de pacote tiver sido preterida e gerar um erro, talvez você precise instalar uma versão mais recente para corrigir erros. Para obter informações sobre como usar *package.json* para controlar as versões do pacote de npm, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md).
 
 1. No Gerenciador de Soluções, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Pasta Existente** e, em seguida, escolha a pasta *dist* e escolha **Selecionar Pasta**.
 

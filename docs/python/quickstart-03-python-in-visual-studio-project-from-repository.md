@@ -1,7 +1,7 @@
 ---
 title: Início Rápido – Clonar um repositório de código Python
 description: Neste início rápido, crie um projeto de Python em Visual Studio por meio da clonagem do repositório de koans do Python usando o Visual Studio Team Explorer.
-ms.date: 06/26/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636818"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281683"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Início Rápido: clonar um repositório de código do Python no Visual Studio
 
@@ -30,9 +30,9 @@ Depois de [instalar o suporte do Python no Visual Studio 2017](installing-python
 
 1. Inicie o Visual Studio.
 
-1. Selecione **Exibir** > **Team Explorer** para abrir a janela do **Team Explorer**, na qual é possível se conectar ao GitHub ou ao Visual Studio Team Services ou clonar um repositório. Se a página **Conectar** não estiver exibida abaixo, selecione o ícone de plug na barra de ferramentas superior, que levará você à página.
+1. Selecione **Exibir** > **Team Explorer** para abrir a janela do **Team Explorer**, em que é possível se conectar ao GitHub ou ao Azure Repos ou clonar um repositório. Se a página **Conectar** não estiver exibida abaixo, selecione o ícone de plug na barra de ferramentas superior, que levará você à página.
 
-    ![Janela do Team Explorer mostrando o Visual Studio Team Services, o GitHub e a clonagem de um repositório](media/team-explorer.png)
+    ![Janela do Team Explorer mostrando o Azure Repos, o GitHub e a clonagem de um repositório](media/team-explorer.png)
 
 1. Em **Repositórios Git Locais**, selecione o comando **Clonar**, insira `https://github.com/gregmalcolm/python_koans` no campo de URL, insira uma pasta para os arquivos clonados e selecione o botão **Clonar**.
 

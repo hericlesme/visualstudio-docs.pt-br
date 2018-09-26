@@ -9,22 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381980"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280916"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::CppUnitTestFramework`. Use essas APIs para gravar testes de unidade do C++ com base em Microsoft Native Unit Test Framework. Há um [Exemplo de Uso](#example) no final do tópico.
 
- Os arquivos de cabeçalho estão localizados na pasta *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include**.
+ Os arquivos de cabeçalho estão localizados na pasta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
 
- Os arquivos lib estão localizados na pasta *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib**.
+ Os arquivos lib estão localizados na pasta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
 
-Caminhos de cabeçalho e lib são automaticamente configurados em um projeto de teste nativo.
+Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de teste nativo.
 
 ##  <a name="In_this_topic"></a> Neste tópico
  [CppUnitTest.h](#cppUnitTest_h)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477477"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668116"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
 
@@ -32,10 +32,10 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
 |[Amostragem](#sampling)|Coleta dados estatísticos sobre o trabalho executado por um aplicativo.|
 |[Instrumentação](#instrumentation)|Coleta informações de tempo detalhados sobre cada chamada de função.|
 |[Simultaneidade](#concurrency)|Coleta informações detalhadas sobre aplicativos multithread.|
-|[Memória do .NET](#net_memory)|Coleta informações detalhadas sobre coleta de lixo e de alocação de memória do .NET.|
-|[Interações de Camada](#tier_interaction)|Coleta informações sobre chamadas de função ADO.NET síncronas para um banco de dados do SQL Server.<br /><br /> A criação de perfil de interação de camadas pode ser coletada usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.|
+|[Memória do .NET](#net-memory)|Coleta informações detalhadas sobre coleta de lixo e de alocação de memória do .NET.|
+|[Interações de Camada](#tier-interaction)|Coleta informações sobre chamadas de função ADO.NET síncronas para um banco de dados do SQL Server.<br /><br /> A criação de perfil de interação de camadas pode ser coletada usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.|
 
-Usando alguns dos métodos de criação de perfil, você também pode coletar dados adicionais, como contadores de desempenho de software e hardware. Para mais informações, consulte [Coletando dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md).
+Usando alguns dos métodos de criação de perfil, você também pode coletar dados adicionais, como contadores de desempenho de software e hardware. Para obter mais informações, confira [Coletar dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>Amostragem
 

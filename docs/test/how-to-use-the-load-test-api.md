@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7454b75054f06bb35237b344552a268eed3798e1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379270"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282737"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Como usar a API de teste de carga
 
@@ -30,7 +30,7 @@ Você também pode criar plug-ins para testes de desempenho na Web. Para obter m
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Para usar o namespace LoadTesting
 
-1.  Abra um projeto de teste de carga e de desempenho na Web que contenha um teste de carga.
+1.  Abra um projeto de teste de carga e de desempenho Web que contenha um teste de carga.
 
 2.  Adicione um novo projeto de biblioteca de classes Visual C# ou Visual Basic à sua solução de teste.
 

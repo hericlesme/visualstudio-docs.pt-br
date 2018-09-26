@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668169"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-A opção VSPerfCmd.exe **Sys** define o evento de criação de perfil que é amostrado aos eventos de chamada do sistema (chamadas de função do aplicativo de perfil para o sistema operacional) e, opcionalmente, altera o número de chamadas em um intervalo de amostragem do padrão de 10.  
+A opção **Sys** de *VSPerfCmd.exe* define o evento de criação de perfil cuja amostra é fornecida aos eventos de chamada do sistema (chamadas de função do aplicativo cujo perfil é criado para o sistema operacional) e, opcionalmente, altera o número de chamadas em um intervalo de amostragem do padrão de 10.  
   
  **Sys** só pode ser usada em uma linha de comando que também contém a opção de **Inicialização** ou **Anexar**.  
   
@@ -69,6 +70,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
+ [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

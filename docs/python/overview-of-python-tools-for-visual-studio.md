@@ -1,7 +1,7 @@
 ---
 title: Visão geral do suporte para Python no Visual Studio no Windows
 description: Resumo dos recursos do Python no Visual Studio, que fazem dele o melhor IDE do Python no Windows (também conhecido como PTVS, Ferramentas Python para Visual Studio).
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626958"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320963"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -39,6 +39,8 @@ A janela **Ambientes do Python** do Visual Studio (mostrada abaixo em uma exibi�
 
 ![Exibição expandida da janela Ambientes do Python](media/environments-expanded-view.png)
 
+Use o comando **Abrir janela interativa** para executar o Python de maneira interativa no contexto do Visual Studio. Use o comando **Abrir no PowerShell** para abrir uma janela Comando separada na pasta do ambiente selecionado. Nessa janela Comando, você pode executar qualquer script de Python. 
+
 Para saber mais:
 
 - Vídeo (00:02:35): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
@@ -47,7 +49,7 @@ Para saber mais:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
-O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting. O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, **Ir para Definição**, **Localizar Todas as Referências** e trechos de código. A integração direta com a [janela Interativa](#interactive-window) ajuda você a desenvolver rapidamente um código Python que já está salvo em um arquivo.
+O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting. O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, **Ir para Definição**, **Localizar Todas as Referências** e snippets de código. A integração direta com a [janela Interativa](#interactive-window) ajuda você a desenvolver rapidamente um código Python que já está salvo em um arquivo.
 
 ![Preenchimento de código para código Python no Visual Studio](media/code-editing-completions-simple.png)
 
@@ -62,7 +64,7 @@ Para saber mais:
 
 ## <a name="interactive-window"></a>Janela Interativa
 
-Para cada ambiente do Python conhecido para o Visual Studio, você pode abrir facilmente o mesmo ambiente interativo (REPL) de um interpretador de Python diretamente no Visual Studio, em vez de usar um prompt de comando separado. Também é possível mudar facilmente de ambiente.
+Para cada ambiente do Python conhecido para o Visual Studio, você pode abrir facilmente o mesmo ambiente interativo (REPL) de um interpretador de Python diretamente no Visual Studio, em vez de usar um prompt de comando separado. Também é possível mudar facilmente de ambiente. (Para abrir um prompt de comando separado, selecione o ambiente desejado na janela **Ambientes do Python** e, em seguida, selecione o comando **Abrir no PowerShell**, conforme explicado anteriormente em [Suporte para vários intérpretes](#support-for-multiple=interpreters).)
 
 ![Janela interativa do Python no Visual Studio](media/interactive-window.png)
 
@@ -163,7 +165,7 @@ R. A oferta principal nessa área é o [Projeto Qt](https://www.qt.io/qt-for-app
 
 **P. Um projeto do Python pode produzir um executável autônomo?**
 
-R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é executado sob demanda em um ambiente compatível com o Python, como o Visual Studio e servidores Web. No momento, o Visual Studio não fornece meios para criar um executável autônomo, o que, basicamente, é um programa com um interpretador de Python incorporado. No entanto, há vários meios dentro da comunidade do Python para criar executáveis, conforme descrito em [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Usar o arquivo .zip que permite inserção do CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é executado sob demanda em um ambiente compatível com o Python, como o Visual Studio e servidores Web. No momento, o Visual Studio não fornece meios para criar um executável autônomo, o que, basicamente, é um programa com um interpretador de Python incorporado. No entanto, a comunidade do Python forneceu maneiras diferentes de criar executáveis, conforme descrito em [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Usar o arquivo .zip que permite inserção do CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Matriz de recursos
 

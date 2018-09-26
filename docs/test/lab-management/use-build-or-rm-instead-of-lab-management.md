@@ -11,26 +11,26 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845373"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320612"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar o Build ou o Release Management em vez de o Lab Management para o teste automatizado
 
-Se você usar o MTM (Microsoft Test Manager) e o Lab Management para o teste automatizado ou para a automação de compilar-implantar-testar, este tópico explicará como você pode atingir as mesmas metas usando os recursos [Build e Release](/vsts/build-release/) no TFS (Team Foundation Server) e no Visual Studio Team Services (VSTS).
+Se você usar o MTM (Microsoft Test Manager) e o Lab Management para o teste automatizado ou para a automação de compilar-implantar-testar, este tópico explicará como você pode atingir as mesmas metas usando as funcionalidades de [compilar e lançar](/azure/devops/pipelines/index?view=vsts) no TFS (Team Foundation Server) e no Azure Test Plans.
 
 ## <a name="build-deploy-test-automation"></a>Automação de compilar-implantar-testar
 
-O MTM e o Lab Management contam com uma definição de build XAML para automatizar o build, a implantação e o teste de seus aplicativos. A compilação XAML se baseia em vários constructos criados no MTM, como um ambiente de laboratório, conjuntos de teste e configurações do teste e em vários componentes de infraestrutura, como um Controlador de Build, Agentes de Build, Controlador de teste e Agentes de teste para atingir essa meta. Você pode fazer o mesmo com menos etapas usando o Build ou o Release Management no TFS e Team Services.
+O MTM e o Lab Management contam com uma definição de build XAML para automatizar o build, a implantação e o teste de seus aplicativos. A compilação XAML se baseia em vários constructos criados no MTM, como um ambiente de laboratório, conjuntos de teste e configurações do teste e em vários componentes de infraestrutura, como um Controlador de Build, Agentes de Build, Controlador de teste e Agentes de teste para atingir essa meta. Você pode fazer o mesmo com menos etapas usando o Build ou o Release Management no TFS e no Azure Pipelines.
 
 | Etapas | Com Build XAML | Com Build ou Release Management |
 |-------|----------------------|-----------------|
 | Identifique os computadores nos quais implantar o build e executar os testes. | Crie um ambiente de laboratório padrão no MTM com esses computadores. | N/D |
 | Identifique os testes a serem executados. | Crie um conjunto de testes no MTM, crie casos de teste e associe a automação a cada caso de teste. Crie configurações de teste no MTM identificando a função dos computadores no ambiente de laboratório em que os testes devem ser executados. | Crie um conjunto de testes automatizados no MTM da mesma maneira se você planejar gerenciar seus testes por meio de planos de teste. Como alternativa, você poderá ignorar isso se desejar executar testes diretamente dos binários de teste produzidos por seus builds. Não é necessário criar as configurações de teste em nenhum dos casos. |
-| Automatize a implantação e o teste. | Crie uma definição de build XAML usando LabDefaultTemplate.*.xaml. Especifique o build, os conjuntos de teste e o ambiente de laboratório na definição de build. | Crie uma [definição de build ou versão](/vsts/build-release/) com um único ambiente. Execute o mesmo script de implantação (da definição de build XAML) usando a tarefa de linha de comando e execute testes automatizados usando as tarefas de Implantação do Agente de Teste e Executar Testes Funcionais. Especifique a lista de computadores e suas credenciais como entradas para essas tarefas. |
+| Automatize a implantação e o teste. | Crie uma definição de build XAML usando LabDefaultTemplate.*.xaml. Especifique o build, os conjuntos de teste e o ambiente de laboratório na definição de build. | Crie um [pipeline de lançamento ou de build](/azure/devops/pipelines/index?view=vsts) com um único ambiente. Execute o mesmo script de implantação (da definição de build XAML) usando a tarefa de linha de comando e execute testes automatizados usando as tarefas de Implantação do Agente de Teste e Executar Testes Funcionais. Especifique a lista de computadores e suas credenciais como entradas para essas tarefas. |
 
 Alguns dos benefícios de usar o Build ou o Release Management para esse cenário são:
 
@@ -45,17 +45,17 @@ Alguns dos benefícios de usar o Build ou o Release Management para esse cenári
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Gerenciamento de autoatendimento de ambientes SCVMM
 
-O [Centro de Testes no Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) dá suporte à capacidade de gerenciar uma biblioteca de modelos de ambiente, bem como provisionar ambientes sob demanda usando um [servidor SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+O [Centro de Testes no Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) dá suporte à capacidade de gerenciar uma biblioteca de modelos de ambiente, bem como provisionar ambientes sob demanda usando um [servidor SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Os recursos de provisionamento de autoatendimento da Central de Laboratório têm duas metas distintas:
 
 * Fornecer uma maneira mais simples de gerenciar a infraestrutura. Gerenciar a VM e os modelos de ambiente e criar automaticamente redes privadas para isolar os clones de ambientes uns dos outros eram exemplos de gerenciamento de infraestrutura.
 
-* Fornecer uma maneira mais simples para as equipes consumirem as máquinas virtuais em suas atividades de teste e implantação. Disponibilizar os ambientes de laboratório por meio do mesmo modelo de segurança de projeto de equipe e o uso integrado dessas máquinas virtuais nos cenários de teste eram exemplos de consumo fácil.
+* Fornecer uma maneira mais simples para as equipes consumirem as máquinas virtuais em suas atividades de teste e implantação. A disponibilização de ambientes de laboratório por meio do mesmo modelo de segurança de projeto e o uso integrado dessas máquinas virtuais nos cenários de teste foram exemplos de consumo fácil.
 
 No entanto, devido à evolução dos sistemas de gerenciamento de nuvem privada e pública mais avançados como o [Microsoft Azure](https://azure.microsoft.com/) e o [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), não há evolução dos recursos de gerenciamento de infraestrutura no TFS 2017 e posteriores. Em vez disso, o foco no fácil consumo de recursos gerenciado por meio de tais infraestruturas de nuvem continua.
 
-A tabela a seguir resume as atividades típicas que você realizava na Central de Laboratório e como pode realizá-las por meio do SCVMM ou do Azure (se forem atividades de gerenciamento de infraestrutura) ou pelo TFS e pelo Team Services (se forem atividades de teste ou implantação):
+A tabela a seguir resume as atividades típicas que você realiza na Central de Laboratório e como pode realizá-las no SCVMM ou no Azure (se forem atividades de gerenciamento de infraestrutura) ou no TFS e no Azure DevOps Services (se forem atividades de teste ou implantação):
 
 | Etapas | Com a Central de Laboratório | Com Build ou Release Management |
 |-------|----------------------|-----------------|
@@ -68,11 +68,11 @@ A tabela a seguir resume as atividades típicas que você realizava na Central d
 
 Um ambiente de laboratório isolado da rede é um grupo de máquinas virtuais SCVMM que podem ser clonadas com segurança sem causar conflitos de rede. Isso foi feito no MTM usando uma série de instruções que usavam um conjunto de placas de adaptador de rede para configurar as máquinas virtuais em uma rede privada e outro conjunto para configurar as máquinas virtuais em uma rede pública.
 
-No entanto, o VSTS e o TFS, em conjunto com a tarefa de build e implantação do SCVMM, podem ser usados para gerenciar ambientes do SCVMM, provisionar redes virtuais isoladas e implementar cenários de build, implantação e teste. Por exemplo, você pode usar a tarefa para:
+No entanto, o Azure Test Plans e o TFS, em conjunto com a tarefa de build e implantação do SCVMM, podem ser usados para gerenciar ambientes do SCVMM, provisionar redes virtuais isoladas e implementar cenários de compilação, implantação e teste. Por exemplo, você pode usar a tarefa para:
 
 * Criar, restaurar e excluir pontos de verificação
 * Criar novas máquinas virtuais usando um modelo
 * Iniciar e parar máquinas virtuais
 * Executar scripts do PowerShell personalizados para o SCVMM
 
-Para obter mais informações, consulte [Create a virtual network isolated environment for build-deploy-test scenarios](/vsts/build-release/actions/virtual-networks/create-virtual-network) (Criar um ambiente isolado da rede virtual para cenários de build, implantação e teste).
+Para obter mais informações, consulte [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts) (Criar um ambiente isolado da rede virtual para cenários de build, implantação e teste).

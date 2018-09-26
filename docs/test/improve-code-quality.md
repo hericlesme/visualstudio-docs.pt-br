@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180107"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321054"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
 
@@ -38,12 +38,11 @@ As ferramentas de teste do Visual Studio podem ajudar você e sua equipe a desen
 - O [teste de carga](../test/quickstart-create-a-load-test-project.md) simula a carga em um aplicativo para servidores executando testes de unidade e testes de desempenho Web.
 
 > [!NOTE]
-> Teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, em tempo real, como testes de unidade, IntelliTest e testes de interface do usuário codificada só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre edições, consulte [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+> O teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, em tempo real, como testes de unidade, IntelliTest e testes de interface do usuário codificada só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre edições, consulte [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Cenários relacionados
 
-* [Testes exploratórios e manuais (VSTS)](/vsts/manual-test/)
-* [Teste de carga (VSTS)](/vsts/load-test/index)
-* [Testes contínuos (VSTS)](/vsts/build-release/test/index)
-* [Visão geral de DevOps para Team Services e TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Testes exploratórios e manuais (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [Teste de carga (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [Testes contínuos (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Ferramentas de análise de código](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

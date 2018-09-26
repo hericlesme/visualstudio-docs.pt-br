@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844297"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321171"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -40,9 +40,9 @@ Aqui estão exemplos de topologias comuns de ambientes de laboratório:
 |---|---|
 |  ![ícone de câmera para vídeo](../../install/media/video-icon.png)  |    [Assistir a um vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre como gerenciar ambientes de laboratório para teste. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Usar a nuvem com Team Services ou Team Foundation Server Build and Release
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usar a nuvem com o Azure Pipelines ou o Team Foundation Server Build and Release
 
-Você pode executar testes automatizados e a automação de compilar-implantar-testar usando os recursos de [Build and Release](/vsts/build-release/) no TFS (Team Foundation Server) e Visual Studio Team Services. Alguns dos benefícios são:
+Você pode executar testes automatizados e a automação de compilar-implantar-testar usando as funcionalidades de [compilação e lançamento](/azure/devops/pipelines/index?view=vsts) do TFS (Team Foundation Server) e do Azure Test Plans. Alguns dos benefícios são:
 
 * Não é necessário ter um Controlador de Build ou um Controlador de Teste.
 * O Agente de Teste é instalado por meio de uma tarefa como parte do build ou da versão.
@@ -85,12 +85,12 @@ Há dois tipos de ambientes de laboratório que você pode criar com o Lab Manag
 
 - **Modelos de máquina virtual:** um modelo de máquina virtual é uma máquina virtual que teve seu nome e outros identificadores removidos. Quando um modelo de VM é implantado em um ambiente SCVMM, o Microsoft Test Manager gera novos identificadores. Isso permite implantar várias cópias de uma máquina virtual em um mesmo ambiente ou vários ambientes. Em seguida, executar as máquinas virtuais simultaneamente.
 
-- **Máquinas Virtuais Armazenadas:** Uma máquina virtual armazenada na sua biblioteca Projeto de Equipe que inclui identificadores únicos.
+- **Máquinas Virtuais Armazenadas:** uma máquina virtual armazenada em sua biblioteca de projeto que inclui identificadores exclusivos.
 
 > [!NOTE]
 > O Lab Management não dá suporte ao SCVMM 2016.
 
-Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
@@ -119,9 +119,9 @@ Aqui estão alguns dos conceitos adicionais com que deve familiarizar-se antes d
 |Termo|Descrição|
 |----------|-----------------|
 |Centro de laboratório|A área do Microsoft Test Manager em que você cria e gerencia ambientes de laboratório.|
-|Laboratório do Projeto da Equipe|A coleção de ambientes de laboratório que foi configurada para que você possa conectar-se a ela e executar suas máquinas virtuais.|
-|Biblioteca Projeto de Equipe|Um arquivo de máquinas virtuais armazenadas, modelos e ambientes de laboratório armazenados foi importado em um grupo de hosts do seu projeto da equipe. Você pode usar os itens em sua biblioteca com ambientes SCVMM; entretanto, você não pode adicioná-los diretamente em um ambiente padrão. Você não pode executar os itens em sua biblioteca; ao invés disso, você os utiliza para implantar um novo ambiente.|
-|Ambiente implantado|Um ambiente de laboratório foi implantado pelo seu laboratório de projeto da equipe para que possa conectar-se a ele e executar seus computadores.|
+|Laboratório de projeto do Azure DevOps|A coleção de ambientes de laboratório que foi configurada para que você possa conectar-se a ela e executar suas máquinas virtuais.|
+|Biblioteca de projeto do Azure DevOps|Um arquivo de máquinas virtuais armazenadas, modelos e ambientes de laboratório armazenados foi importado em um grupo de hosts do seu projeto. Você pode usar os itens em sua biblioteca com ambientes SCVMM; entretanto, você não pode adicioná-los diretamente em um ambiente padrão. Você não pode executar os itens em sua biblioteca; ao invés disso, você os utiliza para implantar um novo ambiente.|
+|Ambiente implantado|Um ambiente de laboratório foi implantado pelo seu laboratório de projeto para que você possa se conectar a ele e executar seus computadores.|
 
 Para saber mais sobre o Lab Management, veja:
 
@@ -134,7 +134,7 @@ Para saber mais sobre o Lab Management, veja:
 
 Para saber mais sobre como configurar ambientes, veja:
 
-* [Ambientes de nuvem Build and Release](use-build-or-rm-instead-of-lab-management.md)
+* [Ambientes de nuvem de build e de lançamento](use-build-or-rm-instead-of-lab-management.md)
 * [Ambientes de laboratório padrão](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Ambientes SCVMM (virtuais)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)

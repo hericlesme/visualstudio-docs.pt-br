@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381114"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279968"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -104,7 +104,7 @@ Um agente de teste deve ser definido para o estado offline antes de ser removido
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Para excluir um agente de teste de um controlador de teste
 
-1. Se o controlador de teste não estiver registrado em um projeto da equipe, siga estas etapas.
+1. Se o controlador de teste não estiver registrado em um projeto, siga estas etapas.
 
     1. No Visual Studio, abra o arquivo de configurações de teste do seu projeto de teste, selecione **Função**, em seguida, **Gerenciar Controladores de Teste** no menu suspenso do campo **Controlador**.
 
@@ -117,7 +117,7 @@ Um agente de teste deve ser definido para o estado offline antes de ser removido
         > [!NOTE]
         > Remover um agente de teste apenas o desassocia do controlador de teste. Para desinstalar completamente o agente de teste, use **Programas e Recursos** do Painel de Controle no computador do agente de teste.
 
-2. Se o controlador de teste estiver registrado com um projeto de equipe, remova o agente usando o Microsoft Test Manager.
+2. Se o controlador de teste estiver registrado com um projeto, remova o agente usando o Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Alterar as configurações de um agente de teste
 
@@ -135,7 +135,7 @@ Você pode alterar o status e outras configurações para um agente de teste que
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Para alterar as configurações de um agente de teste
 
 > [!NOTE]
-> Se o agente de teste for registrado em um controlador de teste que esteja registrado com um projeto de equipe, altere as configurações no Microsoft Test Manager.
+> Se o agente de teste estiver registrado em um controlador de teste registrado em um projeto, altere as configurações no Microsoft Test Manager.
 
 1. Para configurar e monitorar o controlador de teste e quaisquer agentes registrados de um teste de carga, selecione o menu **Teste de Carga** no Visual Studio e escolha **Gerenciar Controladores de Teste**. Para quaisquer outros testes, abra o arquivo de configurações de teste do seu projeto de teste no Visual Studio, selecione **Função**, em seguida, **Gerenciar Controladores de Teste** no menu suspenso do campo **Controlador**.
 
@@ -153,7 +153,7 @@ Você pode alterar o status e outras configurações para um agente de teste que
 |-------------------------|-----------------|
 |**Importância**|Usado para distribuir a carga quando você usa agentes de teste com níveis de desempenho diferentes. Por exemplo, um agente de teste com uma importância de 100 recebe duas vezes a carga como um agente de teste com uma importância de 50.|
 |**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:** você pode especificar um adaptador de rede ou usar **(Todos sem não atribuídos)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
-|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:** essa configuração está disponível apenas para os agentes de teste que são registrados com um controlador de teste que não é registrado em um projeto de equipe, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
+|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:** essa configuração está disponível apenas para agentes de teste registrados em um controlador de teste que não está registrado em um projeto, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
 
 As alterações de atributo e importância do agente de teste entram em vigor imediatamente, mas não afetam os testes que estão em execução. O Intervalo de Endereços IP entra em vigor depois que o controlador de teste é reiniciado.
 
@@ -164,12 +164,12 @@ As alterações de atributo e importância do agente de teste entram em vigor im
 
 ## <a name="configure-a-test-controller"></a>Configura um controlador de teste
 
-Para configurar um controlador de teste, você deve usar a **Ferramenta de Configuração do Team Test Controller**. Ao configurar seu controlador de teste, você pode registrá-lo com uma coleção de projetos da equipe diferente ou cancelar o registro de seu controlador de teste de uma coleção de projeto da equipe.
+Para configurar um controlador de teste, você deve usar a **Ferramenta de Configuração do Team Test Controller**. Ao configurar seu controlador de teste, você pode registrá-lo em uma coleção de projetos diferente ou cancelar o registro de seu controlador de teste de uma coleção de projetos.
 
-Se quiser registrar seu controlador de teste em sua coleção de projetos do Team Foundation Server, a conta que você usa para o serviço controlador de teste deverá ser membro do grupo Contas de Serviço de Teste de Coleção de Projeto da Coleção de Projeto de Equipe ou a conta usada para executar a ferramenta de configuração do controlador de teste deverá ser um Administrador de Coleção de Projetos.
+Se quiser registrar seu controlador de teste em sua coleção de projetos do Team Foundation Server, a conta que você usa para o serviço do controlador de teste deverá ser membro do grupo Contas de Serviço de Teste de Coleção de Projeto da Coleção de Projeto ou a conta usada para executar a ferramenta de configuração do controlador de teste deverá ser um Administrador de Coleção de Projetos.
 
 > [!NOTE]
-> Se você cancelar o registro de um controlador de teste de uma coleção de projetos da equipe com ambientes existentes em uma coleção de projetos da equipe, os ambientes ainda serão mantidos se tiver movido essa coleção de projetos da equipe e registrado novamente o controlador de teste na coleção de projetos da equipe movida.
+> Se você cancelar o registro de um controlador de teste de uma coleção de projetos com ambientes existentes em uma coleção de projetos, os ambientes ainda serão mantidos se você tiver movido essa coleção de projetos e registrado novamente o controlador de teste na coleção de projetos movida.
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar um controlador de teste
 
@@ -182,7 +182,7 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
     > [!NOTE]
     > As senhas nulas não são compatíveis com contas de usuário.
 
-4. (Opcional) Se você não quiser usar seu controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar com Coleção de Projetos de Equipe**.
+4. (Opcional) Se você não quiser usar seu controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar com Coleção de Projetos**.
 
 5. (Opcional) Para configurar seu controlador de teste para o teste de carga, selecione **Configurar para teste de carregamento**. Em seguida, digite sua instância do SQL Server em **Criar banco de dados de resultados de teste de carga na seguinte instância de SQL Server**.
 

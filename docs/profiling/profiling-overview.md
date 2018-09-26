@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668167"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Visão geral da criação de perfil no Visual Studio
 
@@ -25,7 +26,7 @@ Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md) para saber mais sobre as diversas maneiras de medir o desempenho do aplicativo.
+* [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) para saber mais sobre as diversas maneiras de medir o desempenho do aplicativo.
 
 * [Analisar o uso da CPU](../profiling/cpu-usage.md) para obter informações mais detalhadas sobre a ferramenta de uso de CPU.
 

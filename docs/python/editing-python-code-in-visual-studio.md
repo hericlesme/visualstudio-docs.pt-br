@@ -1,7 +1,7 @@
 ---
 title: Editando o código do Python
-description: A edição de Python no Visual Studio fornece recursos de IntelliSense, trechos de código e navegação, juntamente com formatação, lint e refatoração.
-ms.date: 05/07/2018
+description: A edição de Python no Visual Studio fornece recursos de IntelliSense, snippets de código e navegação, juntamente com formatação, lint e refatoração.
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627132"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774759"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
-Os desenvolvedores passam muito tempo no editor de código, portanto o [Suporte a Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
+Como você passa muito tempo dedicado ao desenvolvimento no editor de códigos, o [Suporte para Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
 
 O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira [Etapa 3 do tutorial: Usar a janela do REPL Interativo](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
 
@@ -147,23 +147,23 @@ Para personalizar as cores, acesse **Ferramentas** > **Opções** > **Ambiente**
 > [!Tip]
 > Para desabilitar a coloração de código, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Avançado** e desmarque **Opções Diversas** > **Colorir nomes com base no tipo**. Consulte [Opções – Opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
-## <a name="code-snippets"></a>Trechos de código
+## <a name="code-snippets"></a>Snippets de código
 
-Trechos de código são fragmentos de código que podem ser inseridos nos arquivos digitando um atalho e pressionando **Tab** ou usando os comandos **Editar** > **IntelliSense** > **Inserir Trecho de Código** e **Envolver Com**, selecionando **Python** e, em seguida, selecionando o trecho desejado.
+Snippets de código são fragmentos de código que podem ser inseridos nos arquivos digitando um atalho e pressionando **Tab** ou usando os comandos **Editar** > **IntelliSense** > **Inserir Snippet de Código** e **Envolver Com**, selecionando **Python** e, em seguida, selecionando o snippet desejado.
 
-Por exemplo, `class` é um atalho para um trecho de código que insere uma definição de classe. Você vê o trecho de código aparecer na lista de conclusão automática ao digitar `class`:
+Por exemplo, `class` é um atalho para um snippet de código que insere uma definição de classe. Você vê o snippet aparecer na lista de conclusão automática ao digitar `class`:
 
-![Trecho de código para o atalho de classe](media/code-editing-code-snippet-class.png)
+![Snippet de código para o atalho de classe](media/code-editing-code-snippet-class.png)
 
 Pressionar **Tab** gera o restante da classe. Em seguida, digite sobre o nome e a lista de bases, movendo entre os campos realçados com **Tab** e pressionando **Enter** para começar a digitar o corpo.
 
-![Destaques em áreas de um trecho de código para você preencher](media/code-editing-code-snippets.png)
+![Destaques em áreas de um snippet de código para você preencher](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Comandos de menu
 
-Ao usar o comando de menu **Editar** > **IntelliSense** > **Inserir Trecho de Código**, primeiro selecione **Python** e, em seguida, um trecho de código:
+Ao usar o comando de menu **Editar** > **IntelliSense** > **Inserir Snippet de Código**, primeiro selecione **Python** e, em seguida, um snippet de código:
 
-![Como selecionar um trecho de código por meio do comando Inserir Trecho de Código](media/code-editing-code-snippet-insert.png)
+![Como selecionar um snippet de código por meio do comando Inserir Snippet de Código](media/code-editing-code-snippet-insert.png)
 
 Da mesma forma, o comando **Editar** > **IntelliSense** > **Envolver com** coloca a seleção atual no editor de texto dentro de um elemento estrutural escolhido. Por exemplo, suponha que você tivesse um trecho de código semelhante ao seguinte:
 
@@ -173,19 +173,19 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-Selecionar esse código e escolher o comando **Envolver com** exibe uma lista de trechos de código disponíveis. A escolha de **def** na lista coloca o código selecionado em uma definição de função, e você pode usar a tecla **Tab** para navegar entre os argumentos e o nome de função realçados:
+Selecionar esse código e escolher o comando **Envolver com** exibe uma lista de snippets de código disponíveis. A escolha de **def** na lista coloca o código selecionado em uma definição de função, e você pode usar a tecla **Tab** para navegar entre os argumentos e o nome de função realçados:
 
-![Usando o comando Envolver com para trechos de código](media/code-editing-code-snippet-surround-with.png)
+![Usando o comando Envolver com para snippets de código](media/code-editing-code-snippet-surround-with.png)
 
-### <a name="examine-available-snippets"></a>Examinar trechos de código disponíveis
+### <a name="examine-available-snippets"></a>Examinar snippets disponíveis
 
-Veja os trechos de código disponíveis no **Gerenciador de Trechos de Código**, abertos usando o comando de menu **Ferramentas** > **Gerenciador de Trechos de Código** e selecionando **Python** como a linguagem:
+Veja os snippets de código disponíveis no **Gerenciador de Snippets de Código**, abertos usando o comando de menu **Ferramentas** > **Gerenciador de Snippets de Código** e selecionando **Python** como a linguagem:
 
-![Gerenciador de Trechos de Código](media/code-editing-code-snippets-manager.png)
+![Gerenciador de Snippets de Código](media/code-editing-code-snippets-manager.png)
 
-Para criar seus próprios trechos de código, confira [Passo a passo: Criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
+Para criar seus próprios snippets de código, confira [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md).
 
-Se você escrever um ótimo trecho de código que gostaria de compartilhar, fique à vontade para postá-lo em linhas gerais e [contar para nós](https://github.com/Microsoft/PTVS/issues). Talvez possamos incluí-lo em uma versão futura do Visual Studio.
+Se você escrever um ótimo snippet de código que gostaria de compartilhar, fique à vontade para postá-lo em linhas gerais e [contar para nós](https://github.com/Microsoft/PTVS/issues). Talvez possamos incluí-lo em uma versão futura do Visual Studio.
 
 ## <a name="navigate-your-code"></a>Navegar pelo seu código
 

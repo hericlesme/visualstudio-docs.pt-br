@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548655"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775027"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
 
@@ -33,7 +33,7 @@ A criação de perfil de interação de camadas pode ser coletada usando qualque
 
 **Coletar dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você deve copiar o arquivo **vs_profiler_***\<Platform>***_***\<Language>***.exe** da pasta *%VSInstallDir%***\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** da pasta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 **Relatórios TIP**
 

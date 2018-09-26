@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251712"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283321"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
@@ -83,7 +83,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
 1. Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.
 
- ![A caixa de diálogo Assistente de monobehavior. ] (../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+ ![A caixa de diálogo Assistente de monobehavior. ](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Gerenciador de Projetos do Unity
 
@@ -93,7 +93,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
 - No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt**+**Shift**+**E**
 
-     ![Exibir a janela Gerenciador de Projetos do Unity. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+     ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-error-list"></a>Lista de Erros do Unity
 
@@ -159,11 +159,11 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 - No Visual Studio, no menu principal, escolha **Depurar > Anexar Depurador do Unity**.
 
-     ![Anexe o depurador do Unity. ] (../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+     ![Anexe o depurador do Unity. ](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
     A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.
 
-     ![Escolha uma instância do Unity à qual se conectar. ] (../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+     ![Escolha uma instância do Unity à qual se conectar. ](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
  **Projeto** O nome do projeto para Unity que está sendo executado nesta instância do Unity.
 
@@ -188,7 +188,7 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar um projeto de DLL gerenciado usado em seu projeto do Unity
 
-1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).
+1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/ff460187.aspx).
 
      ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -217,6 +217,6 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 |Abrir o Assistente do MonoBehavior|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Abrir o Gerenciador de Projetos do Unity|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
 |Acessar a documentação do Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
-|Anexar ao depurador do Unity (player ou editor)|***nenhum padrão***|**Debug.AttachUnityDebugger**|
+|Anexar ao depurador do Unity (player ou editor)|**_nenhum padrão_**|**Debug.AttachUnityDebugger**|
 
  Será possível alterar as combinações de teclas de atalho se não desejar o padrão. Para obter informações sobre como alterá-las, confira [Identificar e personalizar atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

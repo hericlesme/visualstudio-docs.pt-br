@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573135"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320976"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 A ferramenta *VSPerfCmd.exe* é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:  
@@ -53,7 +53,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Interrompe a coleta de dados do processo especificado.|  
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Retoma a criação de perfil do processo especificado após a criação de perfil ser pausada por uma chamada a **VSPerfCmdThreadOff**. Use **ThreadOn** apenas ao criar um perfil com o método de instrumentação.|  
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa a criação de perfil do thread especificado. Use **ThreadOff** apenas ao criar um perfil com o método de instrumentação.|  
-|[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Insere uma marca no arquivo de dados de criação de perfil, com texto opcional.|  
+|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Insere uma marca no arquivo de dados de criação de perfil, com texto opcional.|  
   
 ## <a name="sample-method-options"></a>Opções do método de amostragem  
  As opções a seguir só estarão disponíveis quando você estiver usando o método de criação de perfil de amostragem.  
@@ -63,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Executable*|Inicia o aplicativo especificado e começa a criação de perfil.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|  
 |[Console](../profiling/console.md)|Inicia o comando especificado em uma nova janela de prompt de comando.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo.|  
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Coleta dados de alocação de memória e de tempo de vida do objeto .NET. Use somente com a opção **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Opções do intervalo de amostragem  
@@ -72,9 +72,9 @@ VSPerfCmd [/U] [/options]
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**:***n*]|Realiza a amostragem a cada número especificado de falhas de página (padrão=10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Realiza a amostragem a cada número especificado de chamada do sistema (padrão=10).|  
-|[Timer](../profiling/timer.md)[**:***n*]|Realiza a amostragem a cada número especificado de ciclo do processador (padrão=10000000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Realiza a amostragem a cada número especificado de falhas de página (padrão=10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Realiza a amostragem a cada número especificado de chamada do sistema (padrão=10).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Realiza a amostragem a cada número especificado de ciclo do processador (padrão=10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Opções de componente do serviço e do dispositivo de modo kernel  
  As opções de Administração a seguir oferecem suporte aos componentes do serviço de criação de perfil ou aos drivers de dispositivo de modo kernel. As opções de Administração definem as permissões de criação de perfil e controlam o serviço com perfil criado ou driver de dispositivo.  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|  
+|**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|  
 |**Admin:Security, List**|Lista o estado atual dos serviços de criação de perfil e lista as permissões de usuário.|  
 |**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|  
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|  

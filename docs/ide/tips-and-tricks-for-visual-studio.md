@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065059"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321275"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado para o Visual Studio
 
@@ -76,7 +76,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |Modo de Sugestão do IntelliSense|**Ctrl**+**Alt**+**Espaço** (Ativar/desativar)||
 |Forçar a exibição do IntelliSense|**Ctrl**+**J**||
 |Ações Rápidas|**Ctrl**+**.**||
-|Selecionador de trechos|**Ctrl**+**K**,**X** ou **?**,**Tab** (VB)||
+|Selecionador de snippets|**Ctrl**+**K**,**X** ou **?**,**Tab** (VB)||
 |Envolver com|**Ctrl**+**K**,**S**||
 |Mostrar Informações Rápidas|**Ctrl**+**K**,**I**||
 |Navegar para|**Ctrl**+**,**||
@@ -127,5 +127,5 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 ## <a name="see-also"></a>Consulte também
 
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
-- [Atalhos de teclado (VSTS e TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Atalhos de teclado (Azure DevOps Services e TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
 - [Blog de dicas e truques sobre o Visual Studio](http://blogs.msdn.com/b/zainnab)

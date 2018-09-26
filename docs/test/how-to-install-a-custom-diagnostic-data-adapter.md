@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379283"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321041"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Como instalar um adaptador de dados de diagnóstico personalizado
 
@@ -46,7 +46,7 @@ Se você criou um adaptador de dados de diagnóstico personalizado ou se obteve 
     > [!NOTE]
     > Embora o adaptador de dados de diagnóstico e seu editor de configuração possam ser criados no mesmo projeto e ser compilados no mesmo assembly, você pode usar projetos separados e criar assemblies separados para eles, se preferir.
 
-     Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente quando executar testes, consulte [Coletar dados de diagnóstico em testes manuais (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Para selecionar o adaptador de dados de diagnóstico para um teste, primeiro você precisa selecionar as configurações de um teste existente ou criar um novo no Microsoft Test Manager ou no Visual Studio e, então, selecionar o adaptador de dados de diagnóstico na guia **Dados e Diagnósticos** das configurações de teste selecionadas.
 

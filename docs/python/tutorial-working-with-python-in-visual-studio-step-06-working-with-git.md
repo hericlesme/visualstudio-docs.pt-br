@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511321"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278720"
 ---
 # <a name="step-6-work-with-git"></a>Etapa 6: Trabalhar com o Git
 
 **Etapa anterior: [instalar pacotes e gerenciar o ambiente do Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-O Visual Studio fornece integração direta com repositórios locais do Git e repositórios remotos em serviços como GitHub e Visual Studio Team Services. A integração inclui clonagem de um repositório, confirmação de alterações e gerenciamento de branches.
+O Visual Studio fornece integração direta com repositórios locais do GIT e repositórios remotos em serviços como o GitHub e o Azure Repos. A integração inclui clonagem de um repositório, confirmação de alterações e gerenciamento de branches.
 
 Este artigo fornece uma visão geral básica da criação de um repositório Git local para um projeto existente e visa familiarizar você com alguns dos recursos do Visual Studio relacionados ao Git.
 
@@ -56,7 +56,7 @@ Este artigo fornece uma visão geral básica da criação de um repositório Git
 
 Para ver breves instruções sobre a criação de um projeto de um repositório remoto do Git, confira [Início Rápido: clonar um repositório de código do Python no Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Para obter um tutorial muito mais abrangente, incluindo a manipulação de conflitos de mesclagem, revisão de código com solicitações de pull, troca de base e cherry-picking de alterações entre branches, confira [Introdução ao Git e VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Para obter um tutorial muito mais abrangente, incluindo informações sobre como lidar com conflitos de mesclagem, revisar código com solicitações de pull, trocar a base e fazer cherry-picking de alterações entre branches, confira [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
 
 ## <a name="tutorial-review"></a>Análise do tutorial
 

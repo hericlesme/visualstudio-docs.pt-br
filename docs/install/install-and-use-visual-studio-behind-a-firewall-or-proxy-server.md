@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138416"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280578"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -119,7 +119,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |HTTPS|443 |Usada para exibir, enviar, executar e gerenciar trabalhos ASA <br><br> Usada para navegar em clusters HDI e enviar, diagnosticar e depurar trabalhos HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPS | 443 | Usada para compilar, enviar, exibir, diagnosticar e depurar os trabalhos, usada para navegar em arquivos ADLS, usada para carregar e baixar arquivos |
 | Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de build (por exemplo: instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você desejar usar upstreams públicos com os Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Usado para se conectar com o VSTS |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Usado para conectar-se ao Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Solucionar problemas de erros relacionados à rede

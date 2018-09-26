@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054550"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775098"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054550"
 
   Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Teste**.
 
-  A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Uma compilação é necessária para que esses testes sejam descobertos com precisão. Nas visualizações 15.6, a descoberta baseada em assembly (o detector tradicional) é executada somente depois de compilações. Essa configuração significa que a Detecção de Testes em Tempo Real detecta o máximo de testes possível durante a edição e a detecção baseada em assembly permite que os testes definidos de forma dinâmica apareçam após um build. A Descoberta de Teste em Tempo Real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após uma compilação.
+  A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Uma compilação é necessária para que esses testes sejam descobertos com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a Detecção de Testes em Tempo Real detecta o máximo de testes possível durante a edição e a detecção baseada em assembly permite que os testes definidos de forma dinâmica apareçam após um build. A Descoberta de Teste em Tempo Real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após uma compilação.
 
 ## <a name="test-explorer--plus-symbol"></a>Sinal de "+" (adição) do Gerenciador de Testes
 **O que significa o "+" (sinal de adição) exibido na linha superior do Gerenciador de Testes?**
@@ -93,6 +93,31 @@ Todos os projetos de teste devem incluir a referência ao NuGet do adaptador de 
 O **projeto de teste{} não faz referência a nenhum adaptador do NuGet do .NET. A execução ou a detecção de testes pode não funcionar para esse projeto. Recomendamos fazer referencia aos adaptadores de teste do NuGet em cada projeto de teste do .NET na solução.**
 
 Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Isso melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> Se estiver usando o Adaptador de teste NUnit 2 e não puder migrar para o adaptador de teste NUnit 3, você poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15.8 em **Ferramentas** > **Opções** > **Teste**. 
+
+  ![Comportamento do Adaptador do Gerenciador de Testes nas opções de ferramentas](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>O TestContainer do UWP não foi encontrado
+**Meus testes do UWP não estão mais sendo executadas no Visual Studio 2017 versão 15.7 e posteriores.**
+
+Projetos de teste do UWP recentes especificam uma propriedade de build da plataforma de teste que permite um melhor desempenho para identificar aplicativos de teste. Se tiver um projeto de teste do UWP que foi inicializado antes do Visual Studio versão 15.7, você poderá ver o seguinte erro em **Saída** > **Testes**:
+
+**System.AggregateException: Um ou mais erros ocorreram. ---> System.InvalidOperationException: O seguinte TestContainer não foi encontrado {} em Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+  
+Para corrigir isso:
+- Atualize a propriedade de build do projeto de teste para o seguinte:
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- Atualize a versão do SDK de TestPlatform para o seguinte:
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Como usar sinalizadores de recursos
 **Como faço para ativar sinalizadores de recursos para experimentar os novos recursos de teste?**

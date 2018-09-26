@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573174"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668131"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.
@@ -41,7 +41,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
 ## <a name="create-and-run-a-performance-session"></a>Criar e executar uma sessão de desempenho  
  Para obter os dados que precisa analisar, você deve primeiro criar uma sessão de desempenho e, em seguida, executar a sessão. O **Assistente de Desempenho** permite executar esses dois procedimentos.  
   
- Se não estiver criando perfil de um aplicativo da área de trabalho do Windows ou de um aplicativo ASP.NET, você deverá usar uma das outras ferramentas de criação de perfil. Confira [Introdução às ferramentas de criação de perfil](../profiling/profiling-tools.md).  
+ Se não estiver criando perfil de um aplicativo da área de trabalho do Windows ou de um aplicativo ASP.NET, você deverá usar uma das outras ferramentas de criação de perfil. Confira [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Para criar e executar uma sessão de desempenho  
   
@@ -129,4 +129,4 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
  [Visões gerais](../profiling/overviews-performance-tools.md)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
- [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)
+ [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

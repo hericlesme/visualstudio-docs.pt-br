@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626886"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548225"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo Projeto Web do Django de pesquisas
 
@@ -118,7 +118,7 @@ Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém u
 
 A lista completa de tipos de campo é `CharField` (texto limitado) `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Cada campo utiliza alguns atributos, como `max_length`. O atributo `blank=True` significa que o campo é opcional; `null=true` significa que um valor é opcional. Também há um atributo `choices` que limita valores a valores em uma matriz de tuplas de valor de dados/valor de exibição. (Veja a [Referência de campo de modelo](https://docs.djangoproject.com/en/2.0/ref/models/fields/) na documentação do Django).
 
-Você pode confirmar exatamente o que está armazenado no banco de dados examinando o arquivo *db.sqlite3* no projeto usando uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/). No banco de dados, você verá que um campo de chave estrangeira como `poll` no modelo Escolher está armazenado como `poll_id`; o Django trata o mapeamento automaticamente.
+Você pode confirmar exatamente o que está armazenado no banco de dados examinando o arquivo *db.sqlite3* no projeto usando uma ferramenta como o [navegador SQLite](https://sqlitebrowser.org/). No banco de dados, você verá que um campo de chave estrangeira como `poll` no modelo Escolher está armazenado como `poll_id`; o Django trata o mapeamento automaticamente.
 
 Em geral, trabalhar com seu banco de dados no Django significa trabalhar exclusivamente por meio de seus modelos de forma que o Django possa gerenciar o banco de dados subjacente em seu nome.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Para ver o efeito, execute o aplicativo primeiro para verificar se não há alguma pesquisa. Visite a URL "/seed" e, quando o aplicativo retornar para a página inicial, você verá que as pesquisas ficaram disponíveis. Novamente, fique à vontade para examinar o arquivo *db.sqlite3* bruto com uma ferramenta como o [navegador SQLite](http://sqlitebrowser.org/).
+Para ver o efeito, execute o aplicativo primeiro para verificar se não há alguma pesquisa. Visite a URL "/seed" e, quando o aplicativo retornar para a página inicial, você verá que as pesquisas ficaram disponíveis. Novamente, fique à vontade para examinar o arquivo *db.sqlite3* bruto com uma ferramenta como o [navegador SQLite](https://sqlitebrowser.org/).
 
 ![O aplicativo de pesquisas do Projeto Web do Django com um banco de dados de propagação](media/django/step06-app-with-seeded-database.png)
 
@@ -376,8 +376,8 @@ A execução de um aplicativo Web no computador de desenvolvimento é apenas uma
 
 - Altere o aplicativo de SQLite para um repositório de dados de nível de produção como PostgreSQL, MySQL e SQL Server (que pode ser hospedado no Azure). Conforme descrito em [Quando usar o SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), o SQLite funciona bem para sites de tráfego baixo a médio com menos de 100 mil acessos por dia, mas não é recomendado para volumes maiores. Também é limitado a um único computador, de modo que ele não pode ser usado em qualquer cenário de vários servidores, como balanceamento de carga e replicação geográfica. Para obter informações sobre o suporte do Django para outros bancos de dados, veja [Instalação do banco de dados](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Você também pode usar o [SDK do Azure para Python](azure-sdk-for-python.md) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs.
 
-- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Visual Studio Team Services. Além de trabalhar com o controle de origem (no VSTS, GitHub ou em outro local), você pode fazer o VSTS automaticamente executar os testes de unidade como um pré-requisito para a versão e também configurar o pipeline para implantar em um servidor de teste para testes adicionais antes de implantar em produção. O VSTS, além disso, integra-se com as soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para obter mais informações, consulte:
+- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure Pipelines. Além de trabalhar com o controle do código-fonte (no Azure Repos, no GitHub ou em outro local), você pode fazer com que o Azure Test Plans execute automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. Além disso, o Azure DevOps Services se integra com soluções de monitoramento, como o App Insights, e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para obter mais informações, consulte:
 
-  - [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Criar um pipeline de CI/CD para Python com os Projetos de DevOps do Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Desenvolvimento do Python no Azure com o Visual Studio Team Services (vídeo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

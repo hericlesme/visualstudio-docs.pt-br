@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943112"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280617"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
 
@@ -27,14 +27,14 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Entrar no IDE
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear o Visual Studio usando uma assinatura online
 
-Para desbloquear o Visual Studio usando uma assinatura do MSDN ou do Visual Studio Team Service associada a uma conta da Microsoft ou uma conta corporativa ou de estudante:
+Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma organização do Azure DevOps Services associada a uma conta Microsoft ou uma conta corporativa ou de estudante:
 
 1. Clique no botão **Entrar** no canto superior direito do IDE (ou acesse **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e clique no botão **Entrar**).
 
-1. Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma assinatura do Visual Studio ou uma assinatura do Visual Studio Team Services associada à sua conta.
+1. Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma Assinatura do Visual Studio ou uma organização do Azure DevOps Services associada à sua conta.
 
 > [!IMPORTANT]
-> O Visual Studio procura automaticamente assinaturas online associadas ao se conectar a uma conta do Visual Studio Team Services pela janela de ferramentas do **Team Explorer**. Quando você se conecta a uma conta do Visual Studio Team Services, pode entrar usando contas da Microsoft ou corporativas ou de estudante. Se houver uma assinatura online para aquela conta de usuário, o Visual Studio automaticamente desbloqueará o IDE para você.
+> O Visual Studio procura automaticamente assinaturas online associadas quando você se conecta a uma organização do Azure DevOps Services na janela de ferramentas do **Team Explorer**. Quando se conecta a uma organização do Azure DevOps Services, você pode entrar usando contas da Microsoft e corporativas ou de estudante. Se houver uma assinatura online para aquela conta de usuário, o Visual Studio automaticamente desbloqueará o IDE para você.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
 

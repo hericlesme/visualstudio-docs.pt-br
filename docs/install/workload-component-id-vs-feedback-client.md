@@ -1,6 +1,6 @@
 ---
 title: IDs de carga de trabalho e de componente do Feedback Client do Visual Studio 2017
-description: Usar IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Visual Studio Team Services ou o Team Foundation Server
+description: Use IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Azure DevOps Services ou o Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138773"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281553"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio 2017
 
@@ -43,7 +43,7 @@ Para obter mais informações sobre como usar essas IDs, consulte a página [Usa
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descrição:** o Feedback Client permite que os participantes forneçam comentários detalhados para o Visual Studio Team Services ou o Team Foundation Server.
+**Descrição:** o Feedback Client permite que os stakeholders forneçam comentários detalhados para o Azure DevOps Services ou o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 

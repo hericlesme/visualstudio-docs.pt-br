@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 8e742706117b318a5614484c97b9ecda0b2c3f51
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224156"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283698"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilação e criação no Visual Studio para Mac
 
@@ -44,7 +44,7 @@ O Visual Studio para Mac também pode ser usado para fazer o seguinte:
 
 Consulte o conteúdo do [MSBuild](/visualstudio/msbuild/msbuild) para ver mais informações sobre como usar o MSBuild.
 
-## <a name="building-from-visual-studio-team-services"></a>Como compilar com o Visual Studio Team Services
+## <a name="building-from-azure-pipelines"></a>Compilação no Azure Pipelines
 
 * [Compilar seu aplicativo Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Integração contínua com o Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

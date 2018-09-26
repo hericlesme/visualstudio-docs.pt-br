@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179236"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283204"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar uma regra de extração personalizada para um teste de desempenho Web
 
@@ -31,7 +31,7 @@ Você pode criar suas próprias regras de extração. Para fazer isso, você dev
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Para criar uma regra de extração personalizada
 
-1.  Abra um projeto de teste que contenha um teste de desempenho na Web.
+1.  Abra um projeto de teste que contém um teste de desempenho Web.
 
 2.  (Opcional) Crie um projeto de biblioteca de classes separado no qual armazenar a regra de extração.
 
@@ -44,7 +44,7 @@ Você pode criar suas próprias regras de extração. Para fazer isso, você dev
 
 5.  (Opcional) Crie o novo projeto de biblioteca de classes.
 
-6.  (Opcional) No projeto de teste, adicione uma referência ao projeto de biblioteca de classes que contenha a regra de extração personalizada.
+6.  (Opcional) No projeto de teste, adicione uma referência ao projeto de biblioteca de classes que contém a regra de extração personalizada.
 
 7.  No projeto de teste, abra um teste de desempenho Web no **Editor de Testes de Desempenho Web**.
 

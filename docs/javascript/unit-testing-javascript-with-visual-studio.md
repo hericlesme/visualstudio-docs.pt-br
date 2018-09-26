@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924786"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776087"
 ---
 # <a name="unit-testing-in-nodejs"></a>Teste de unidade no Node.js
 
@@ -147,3 +147,24 @@ Para obter um bom exemplo das implementações `find_tests` e `run_tests`, confi
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 A descoberta das estruturas de teste disponíveis ocorre na inicialização do Visual Studio. Se uma estrutura for adicionada enquanto o Visual Studio estiver em execução, reinicie o Visual Studio para detectar a estrutura. No entanto, você não precisa reiniciar ao fazer alterações na implementação.
+
+## <a name="unit-tests-in-other-project-types"></a>Testes de unidade em outros tipos de projeto
+Você não está limitado a escrever testes de unidade apenas em seus projetos Node.js. Quando você adicionar as propriedades TestFramework e TestRoot a qualquer projeto de C# ou VB, esses testes serão enumerados e você poderá executá-los usando a janela do Gerenciador de Testes.
+
+Para habilitar isso, clique com o botão direito do mouse no nó do projeto no Gerenciador de Soluções, escolha **Descarregar Projeto** e, em seguida, escolha **Editar Projeto**. Em seguida, no arquivo de projeto, adicione os dois elementos a seguir a um grupo de propriedades.
+
+> [!NOTE]
+> Certifique-se de que o grupo de propriedades a que você está adicionando os elementos não tenha uma condição especificada.
+> Isso pode causar um comportamento inesperado.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Em seguida, adicione seus testes à pasta raiz de teste especificada por você e eles ficarão disponíveis para execução na janela do Gerenciador de Testes. Se eles não aparecerem inicialmente, você precisará recompilar o projeto.
+
+> [!NOTE]
+> Atualmente, isso não funciona para projetos do .NET Standard e do .NET Core.

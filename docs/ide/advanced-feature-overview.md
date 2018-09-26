@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282519"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320937"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
 
-O tópico [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve as funcionalidades que podem ser mais apropriadas para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
+O artigo [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve as funcionalidades que podem ser mais apropriadas para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
 
 ## <a name="modular-installation"></a>Instalação modular
 
@@ -56,7 +56,7 @@ Para obter mais informações, confira [Move to the cloud With Visual Studio and
 
 ## <a name="create-apps-for-the-web"></a>Criar aplicativos para a Web
 
-A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando o ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](http://www.asp.net/core/overview) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
+A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](http://www.asp.net/core/overview) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
 
 Para obter mais informações, consulte [Ferramentas da Web modernas](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
@@ -64,7 +64,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 É possível usar o Visual Studio para compilar aplicativos e jogos para macOS, Linux e Windows, bem como para Android, iOS e outros [dispositivos móveis](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
-- Crie aplicativos [.NET Core](/dotnet/core/) executados no Windows, macOS e Linux.
+- Crie aplicativos [.NET Core](/dotnet/core/) executados em Windows, macOS e Linux.
 
 - Crie aplicativos móveis para iOS, Android e Windows em C# e F# usando o [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
@@ -80,7 +80,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Gerenciador de Servidores**, no menu principal, escolha **Exibir** > **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](../data-tools/add-new-connections.md) para obter mais informações sobre como usar o Gerenciador de Servidores.
 
-O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, Banco de Dados SQL do Azure e Azure SQL Data Warehouse. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
+O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
 O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibição dos objetos de banco de dados semelhante ao SQL Server Management Studio. O Pesquisador de Objetos do SQL Server permite realizar trabalhos leves de design e administração de banco de dados, incluindo edição de dados de tabela, comparação de esquemas e execução de consultas usando menus contextuais diretamente no Pesquisador de Objetos do SQL Server e muito mais.
 
@@ -100,19 +100,19 @@ Quando o aplicativo estiver pronto para ser implantado em usuários ou em client
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
-É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Se preferir, use o [VSTS (Visual Studio Team Services)](/vsts/index) para gerenciar o código junto com bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao Git e VSTS (Team Services)](/vsts/git/gitquickstart?tabs=visual-studio) para saber mais sobre como gerenciar repositórios Git no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index?view=vsts) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-O Visual Studio Team Services é um serviço baseado em nuvem para hospedar projetos de software e permitir a colaboração em equipes. O VSTS oferece suporte a sistemas Git e Team Foundation Source Control, bem como as metodologias de desenvolvimento Agile, CMMI e Scrum. O TFVC (Controle de Versão do Team Foundation) usa um repositório de servidor único e centralizado para arquivos de versão e de controle. É sempre feito check-in das alterações locais no servidor central em que outros desenvolvedores podem obter as alterações mais recentes.
+O Azure DevOps Services são serviços baseados em nuvem voltados para planejamento, hospedagem, automatização e implantação de software e que permitem a colaboração em equipes. O Azure DevOps Services dá suporte a repositórios GIT (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado), bem como a pipelines de CI/CD (build/lançamento contínuo) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
 
 O TFS (Team Foundation Server) é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
-Se você tiver uma conta do Visual Studio Team Services ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e espaços de trabalho. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
+Se você tiver uma organização do Azure DevOps Services ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e espaços de trabalho. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
 
-A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no VSTS.
+A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no Azure DevOps Services.
 
 ![Team Explorer para Visual Studio](../ide/media/vs2017_teamexplorer.png)
 
-Também é possível automatizar o processo de build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Para obter mais informações, consulte [Build and release (Build e versão) (VSTS e TFS)](/vsts/build-release/index).
+Também é possível automatizar o processo de build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="extend-visual-studio"></a>Estenda o Visual Studio
 

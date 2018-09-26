@@ -1,7 +1,7 @@
 ---
 title: Gerenciar ambientes e interpretadores Python
 description: Use a janela Ambientes Python para gerenciar ambientes globais, virtuais e conda, para instalar interpretadores e pacotes Python e atribuir ambientes a projetos do Visual Studio.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586561"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320813"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -38,7 +38,7 @@ Se desejar instalar pacotes em um ambiente, confira a [referência da guia Pacot
 
 ### <a name="global-environments"></a>Ambientes globais
 
-Cada instalação do Python (por exemplo, Python 2.7, Python 3.6, Anaconda 4.4.0 etc., confira [Instalar interpretadores do Python](installing-python-interpreters.md)) mantém seu próprio ambiente global. Cada ambiente é composto pelo interpretador do Python específico, sua biblioteca padrão e por um conjunto de pacotes pré-instalados. A instalação de um pacote em um ambiente global o torna disponível para todos os projetos que usam esse ambiente. Se o ambiente estiver em uma área de proteção do sistema de arquivos (dentro de *c:\Arquivos de Programas*, por exemplo), a instalação de pacotes exigirá privilégios de administrador.
+Cada instalação do Python (por exemplo, Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0 etc., confira [Instalar interpretadores do Python](installing-python-interpreters.md)) mantém seu próprio ambiente global. Cada ambiente é composto pelo interpretador do Python específico, sua biblioteca padrão e por um conjunto de pacotes pré-instalados. A instalação de um pacote em um ambiente global o torna disponível para todos os projetos que usam esse ambiente. Se o ambiente estiver em uma área de proteção do sistema de arquivos (dentro de *c:\Arquivos de Programas*, por exemplo), a instalação de pacotes exigirá privilégios de administrador.
 
 Os ambientes globais estão disponíveis para todos os projetos no computador. No Visual Studio, selecione um ambiente global como o padrão, que é usado para todos os projetos, a menos que você escolha especificamente um diferente para um projeto. Para obter mais informações, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Para o Visual Studio 2017 versão 15.6 e anterior, você pode usar ambientes do 
 O Visual Studio 2017 versão 15.7 e posterior detecta ambientes do conda automaticamente e exibe-os na janela **Ambientes do Python**, conforme descrito na próxima seção.
 
 ## <a name="the-python-environments-window"></a>A janela Ambientes do Python
+
+> [!Note]
+> As capturas de tela mostradas nesta seção representam o Visual Studio 15.8. Você pode ver uma interface do usuário ligeiramente diferente dependendo de sua versão do Visual Studio.
 
 Os ambientes conhecidos pelo Visual Studio são exibidos na janela **Ambientes Python**. Para abrir a janela, use um dos seguintes métodos:
 

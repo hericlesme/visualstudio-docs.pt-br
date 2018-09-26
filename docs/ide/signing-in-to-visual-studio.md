@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282220"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284179"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -36,9 +36,9 @@ Veja uma lista completa do que é possível esperar e fazer após entrar:
 
 - **Estender o período de avaliação gratuita do Visual Studio** – É possível usar o Visual Studio Professional ou o Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação gratuita de 30 dias.
 
-- **Desbloquear o Visual Studio se você usa uma conta associada a uma assinatura do MSDN ou do Visual Studio Team Services**. Confira [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Desbloquear o Visual Studio se você usar uma conta associada a uma Assinatura do Visual Studio ou a uma organização do Azure DevOps Services**. Confira [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-- **Conectar-se automaticamente a serviços como o Azure e o Visual Studio Team Services** no IDE sem solicitar credenciais para a mesma conta novamente.
+- **Conectar-se automaticamente a serviços como o Azure e o Azure DevOps Services** no IDE sem solicitar credenciais da mesma conta novamente.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Como entrar no Visual Studio
 

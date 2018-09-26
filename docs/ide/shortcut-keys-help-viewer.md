@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954253"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775213"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de atalho (Help Viewer)
 
@@ -61,7 +61,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Tópico|**Ctrl**+**Tab**|Mude entre guias da esquerda para a direita.|
 |Tópico|**Ctrl**+**Shift**+**Tab**|Mude entre guias da direita para a esquerda.|
 |Tópico|**Ctrl**+**W**|Feche a guia atual.|
-|Tópico|**Ctrl**+***Número***|Mude para uma guia específica, em que o ***número*** está entre 1 e 9 e indica qual guia da sequência.|
+|Tópico|**Ctrl**+**_Número_**|Mude para uma guia específica, em que o **_Número_** está entre 1 e 9 e indica qual guia da sequência.|
 |Tópico|**Ctrl**+**Alt**+**F4**|Feche outras guias de conteúdo.|
 |Tópico|**Ctrl**+**Shift**+**Sinal de adição**|Aumente o zoom em 10%.|
 |Tópico|**Ctrl**+**Sinal de subtração**|Diminua o zoom em 10%.|

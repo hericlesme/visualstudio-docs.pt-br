@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138385"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281085"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -73,7 +73,7 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente estava fechada”
 
-Se você estiver usando o Visual Studio em uma rede privada que tem um firewall, o Visual Studio poderá não ser capaz de se conectar a alguns recursos da rede. Esses recursos podem incluir o VSTS (Visual Studio Team Services) para conexão e licenciamento, o NuGet e os serviços do Azure. Se o Visual Studio falhar ao se conectar a um desses recursos, você deverá ver a seguinte mensagem de erro:
+Se você estiver usando o Visual Studio em uma rede privada que tem um firewall, o Visual Studio poderá não ser capaz de se conectar a alguns recursos da rede. Esses recursos podem incluir o Azure DevOps Services para conexão e licenciamento, o NuGet e os serviços do Azure. Se o Visual Studio falhar ao se conectar a um desses recursos, você deverá ver a seguinte mensagem de erro:
 
   **A conexão subjacente estava fechada: Ocorreu um erro inesperado no envio**
 
@@ -103,7 +103,7 @@ Habilite as conexões para as seguintes URLs:
 
 - cdn.vsassets.io (hospeda conteúdo da rede de distribuição de conteúdo ou CDN)
 
-- &#42;.gallerycdn.vsassets.io (hospeda extensões do VSTS)
+- &#42;.gallerycdn.vsassets.io (hospeda extensões do Azure DevOps Services)
 
 - static2.sharepointonline.com (hospeda recursos que o Visual Studio usa no kit do Office UI Fabric, como fontes)
 

@@ -1,7 +1,7 @@
 ---
 title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 1
 description: Um passo a passo das noções básicas do Flask no contexto de projetos do Visual Studio.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586398"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283412"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -95,7 +95,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 
     ![Janela do Team Explorer para efetuar push para um repositório remoto existente](media/flask/step01-push-to-github.png)
 
-    Se você não tiver um repositório atualmente, as opções **Publicar no GitHub** e **Enviar por Push para o Visual Studio Team Services** permitirão criar um repositório diretamente no Visual Studio.
+    Se você não tiver um repositório, as opções **Publicar no GitHub** e **Enviar por Push para o Azure DevOps** permitirão criar um repositório diretamente no Visual Studio.
 
 1. Ao trabalhar com este tutorial, adquira o hábito de usar periodicamente os controles no Visual Studio para confirmar e enviar alterações por push. Este tutorial envia-lhe lembretes nos pontos apropriados.
 

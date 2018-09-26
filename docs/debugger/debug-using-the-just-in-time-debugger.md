@@ -1,7 +1,7 @@
 ---
 title: Depurar usando o depurador Just-in | Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176435"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168390"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 Depuração Just-In-Time inicia o Visual Studio automaticamente quando uma exceção ou uma falha ocorre em um aplicativo que está em execução fora do Visual Studio. Isso permite que você teste seu aplicativo quando o Visual Studio não está em execução e iniciar a depuração com o Visual Studio quando ocorre um problema.
@@ -48,6 +48,8 @@ Você pode habilitar ou desabilitar a depuração do Visual Studio Just-In-Time 
 4.  No **just-in-habilitar a depuração desses tipos de código** caixa, marque ou desmarque os tipos de programa relevantes: **gerenciado**, **nativo**, ou **Script**.
 
 5.  Clique em **OK**.
+
+    Se você habilitar o Just-in-Time depurador, mas você não vê-lo em uma falha de aplicativo ou uma exceção, consulte [erros de depuração Just-In-Time](#jit_errors).
 
 A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Studio não esteja mais instalado no seu computador. Quando o Visual Studio não estiver instalado, você não é possível desabilitar a depuração do Visual Studio Just-In-Time **opções** caixa de diálogo. Nesse caso, você poderá desabilitar a depuração Just-In-Time editando o Registro do Windows.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  Você pode iniciar a depuração no momento. Se esse fosse um aplicativo real, você precisa descobrir por que o código está lançando a exceção.
 
-## <a name="just-in-time-debugging-errors"></a>Erros da depuração Just-In-Time
- Se você não vir a caixa de diálogo quando o programa falhar, isso pode ser devido a configurações de relatório de erros do Windows em seu computador. Para obter mais informações, consulte [. Configurações WER](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Erros de depuração Just-In-Time
+ Se você não vir a caixa de diálogo quando o programa falhar e precisa habilitar o recurso, isso pode ser devido a configurações de relatório de erros do Windows em seu computador. Certifique-se de adicionar um **desabilitado** valor para as seguintes chaves do registro e definir o valor como 1:
 
- Você pode ver as seguintes mensagens de erro que estão associadas à depuração Just-In-Time.
+* Relatório de erros do HKLM\Software\Microsoft\Windows\Windows
+* Relatório de erros do HKLM\Software\WOW6432Node\Microsoft\Windows\Windows
+ 
+Para obter mais informações sobre essas configurações, consulte [. Configurações WER](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Não é possível anexar ao processo de travamento. O programa especificado não é um programa do Windows ou MS-DOS.**
+Além disso, você pode ver as seguintes mensagens de erro que estão associadas com Just-In-Time de depuração.
 
-     Esse erro ocorre quando você tenta anexar a um processo em execução como outro usuário.
+- **Não é possível anexar ao processo de travamento. O programa especificado não é um programa do Windows ou MS-DOS.**
 
-     Para contornar esse problema, inicie o Visual Studio, abra o **anexar ao processo** caixa de diálogo a **Debug** menu e localize o processo que você deseja depurar no **processos disponíveis**lista. Se você não souber o nome do processo, examine os **depurador do Visual Studio Just-in-** caixa de diálogo e anote a ID de processo. Selecione o processo na **processos disponíveis** lista e clique em **Attach**. No **depurador do Visual Studio Just-in-** caixa de diálogo, clique em **não** para descartar a caixa de diálogo.
+    Esse erro ocorre quando você tenta anexar a um processo em execução como outro usuário.
 
--   **Não foi possível iniciar o depurador porque nenhum usuário está conectado.**
+    Para contornar esse problema, inicie o Visual Studio, abra o **anexar ao processo** caixa de diálogo a **Debug** menu e localize o processo que você deseja depurar no **processos disponíveis**lista. Se você não souber o nome do processo, examine os **depurador do Visual Studio Just-in-** caixa de diálogo e anote a ID de processo. Selecione o processo na **processos disponíveis** lista e clique em **Attach**. No **depurador do Visual Studio Just-in-** caixa de diálogo, clique em **não** para descartar a caixa de diálogo.
 
-     Este erro ocorre quando a depuração Just-In-Time tenta iniciar o Visual Studio em um computador no qual não há nenhum usuário conectado ao console. Como nenhum usuário está conectado, não há sessão de usuário para exibir a caixa de diálogo Depuração Just-In-Time.
+- **Não foi possível iniciar o depurador porque nenhum usuário está conectado.**
 
-     Para corrigir esse problema, conecte-se ao computador.
+    Este erro ocorre quando a depuração Just-In-Time tenta iniciar o Visual Studio em um computador no qual não há nenhum usuário conectado ao console. Como nenhum usuário está conectado, não há sessão de usuário para exibir a caixa de diálogo Depuração Just-In-Time.
 
--   **Classe não registrada.**
+    Para corrigir esse problema, conecte-se ao computador.
 
-     Este erro indica que o depurador tentou criar uma classe COM não registrada, provavelmente devido a um problema de instalação.
+- **Classe não registrada.**
 
-     Para corrigir o problema, use o disco de instalação para reinstalar ou reparar sua instalação do Visual Studio.
+    Este erro indica que o depurador tentou criar uma classe COM não registrada, provavelmente devido a um problema de instalação.
+
+    Para corrigir o problema, use o disco de instalação para reinstalar ou reparar sua instalação do Visual Studio.
 
 ## <a name="see-also"></a>Consulte também
  [Segurança do depurador](../debugger/debugger-security.md) [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, depuração, caixa de diálogo Opções](../debugger/just-in-time-debugging-options-dialog-box.md) [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

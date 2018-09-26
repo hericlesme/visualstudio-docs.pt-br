@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341670"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279070"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -28,7 +28,7 @@ Compilando seu código com frequência, é possível identificar erros rapidamen
 
 Uma compilação bem-sucedida é, essencialmente, uma validação de que o código-fonte do aplicativo contém sintaxe correta e de que todas as referências estáticas a bibliotecas, assemblies e outros componentes foram resolvidas. Isso produz um executável de aplicativo que pode, por sua vez, ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Após o aplicativo ter sido totalmente testado, você pode compilar uma versão de lançamento para ser implantada por seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
 
-Dentro da família de produtos do Visual Studio, há três métodos que você pode usar para compilar um aplicativo: o IDE do Visual Studio, ferramentas de linha de comando do MSBuild e o Team Foundation Build no Visual Studio Team Services:
+Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, o Team Foundation Build e o Azure DevOps Services:
 
 | Método de build | Benefícios |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ Dentro da família de produtos do Visual Studio, há três métodos que você po
 | Linha de comando do MSBuild| – Criar projetos sem instalar o Visual Studio.<br />– Executar builds em multiprocessador para todos os tipos de projeto.<br />– Personalizar a maioria das áreas do sistema de build.|
 | Compilação do Team Foundation | – Automatizar o processo de build como parte de um pipeline de integração contínua/entrega contínua.<br />– Aplicar testes automatizados com cada compilação.<br />– Empregar recursos baseados em nuvem praticamente ilimitados para processos de build.<br />– Modificar o fluxo de trabalho de compilação e, conforme necessário, criar atividades de compilação para realizar tarefas profundamente personalizadas.|
 
-A documentação nesta seção detalha mais o processo de compilação baseado no IDE. Para obter mais informações sobre os outros métodos, consulte [MSBuild](../msbuild/msbuild.md) e [Integração contínua e implantação](/vsts/pipelines/index?view=vsts), respectivamente.
+A documentação nesta seção detalha mais o processo de compilação baseado no IDE. Para obter mais informações sobre os outros métodos, confira [MSBuild](../msbuild/msbuild.md) e [Azure Pipelines](/azure/devops/pipelines/index?view=vsts), respectivamente.
 
 ## <a name="overview-of-building-from-the-ide"></a>Visão geral da compilação no IDE
 

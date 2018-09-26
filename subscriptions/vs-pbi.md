@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do Power BI Pro inclu�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289453"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280461"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
 
@@ -101,4 +101,4 @@ R: Sim.
     - Problemas durante a inscrição?  Confira [Inscrever-se no Power BI como um indivíduo](/power-bi/service-self-service-signup-for-power-bi)
     - Explore os principais problemas, obtenha ajuda da comunidade ou envie um tíquete de suporte na [página de Suporte](https://powerbi.microsoft.com/support/).
 -  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

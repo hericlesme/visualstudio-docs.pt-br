@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054472"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384195"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -64,9 +64,9 @@ Você precisa do:
 
 - Visual Studio Enterprise ou Visual Studio Professional
 
-- O Team Foundation Server 2013 ou posterior, Visual Studio Team Services ou Git
+- Team Foundation Server 2013 ou posterior, Azure DevOps Services ou GIT
 
-- [Skype for Business](/skypeforbusiness/), ou o Lync 2010 ou posterior, para contatar sua equipe no editor de códigos
+- [Skype for Business](/skypeforbusiness/) para entrar em contato com sua equipe no editor de códigos
 
 Para o código C# ou Visual Basic armazenado com o TFVC (Controle de Versão do Team Foundation) ou Git, você obtém detalhes do CodeLens nos níveis de classe e de método (indicadores no *nível do elemento de código*). Se seu repositório Git estiver hospedado no TfGit, você receberá links para itens de trabalho do TFS.
 
@@ -80,7 +80,7 @@ Para arquivo de tipos diferentes de *.cs* ou *.vb*, obtenha detalhes do CodeLens
 
 Os indicadores no nível do elemento de código permitem que você veja quem alterou o código e quais alterações foram feitas. Os indicadores no nível do elemento de código estão disponíveis para o código C# e Visual Basic.
 
-Isto é o que você vê ao usar o TFVC (Controle de Versão do Team Foundation) no Team Foundation Server ou no Visual Studio Team Services:
+Isto é o que você vê ao usar o TFVC (Controle de Versão do Team Foundation) no Team Foundation Server ou no Azure DevOps Services:
 
 ![CodeLens: obter o histórico de alterações do código no TFVC](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 
 - Se seu código estiver armazenado no TFS, certifique-se de que a indexação do código está ativada usando o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- Os indicadores relacionados ao TFS são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme se você tem [permissões de membro da equipe](/vsts/work/scale/multiple-teams).
+- Os indicadores relacionados a DevOps são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme se você tem [permissões de membro da equipe](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você souber que seu código do aplicativo tem testes de unidade, mas os indicadores de teste não forem exibidos, tente criar a solução (**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: Por que eu não vejo os detalhes de item de trabalho para uma confirmação?
 
-**R:** Isso pode acontecer porque o CodeLens não pode localizar os itens de trabalho no TFS. Verifique se você está conectado ao projeto de equipe que tem esses itens de trabalho e se você tem permissões para vê-los. Além disso, os detalhes de item de trabalho poderão não ser exibidos se a descrição de confirmação contiver informações incorretas sobre as IDs de item de trabalho no TFS.
+**R:** Isso pode acontecer porque o CodeLens não consegue localizar os itens de trabalho no Azure Boards nem no TFS. Verifique se você está conectado ao projeto que tem esses itens de trabalho e se tem permissões para vê-los. Além disso, os detalhes do item de trabalho poderão não ser exibidos se a descrição de confirmação contiver informações incorretas sobre as IDs de item de trabalho no Azure Boards ou no TFS.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>P: Por que não vejo os indicadores do Skype?
 
@@ -295,7 +295,7 @@ Para usar o teclado:
 
 4. Pressione **Tab** para acessar a lista **Mostrar configurações de** e, em seguida, pressione **Seta para baixo** para selecionar **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover o HUD do CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover a exibição `head` do CodeLens?
 
 **R:** Sim, escolha o ![ícone de Encaixe](../ide/media/codelensdockwindow.png) para encaixar o CodeLens como uma janela.
 
@@ -315,7 +315,7 @@ Para usar o teclado:
 
      ![Item de menu Atualizar Indicadores da Equipe CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Teste**: [encontre os testes de unidade do código](#Find-unit-tests-for-your-code) para atualizar o indicador **Teste**.
+- **Teste**: [encontre os testes de unidade do código](#associated-unit-tests) para atualizar o indicador **Teste**.
 
 ### <a name="q-whats-local-version"></a>P: O que é "Versão Local"?
 

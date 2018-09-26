@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924736"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774595"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
@@ -58,3 +58,27 @@ Se houver um arquivo *tsconfig* presente na pasta, você poderá clicar com o bo
 
 > [!NOTE]
 > Encontre mais informações sobre *o tsconfig.json* na [Página do manual do TypeScript tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Testes de Unidade
+Você pode habilitar a integração de teste de unidade no Visual Studio especificando uma raiz de teste em seu *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+O executor de teste enumera os pacotes instalados localmente para determinar a estrutura de teste a ser usada.
+Se nenhuma das estruturas com suporte for reconhecida, o executor de teste padrão será *ExportRunner*. As outras estruturas com suporte são:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+Depois de abrir o Gerenciador de Testes (escolha **Teste** > **Windows** > **Gerenciador de Testes**), o Visual Studio detecta e exibe os testes.
+
+> [!NOTE]
+> O executor de teste enumerará somente os arquivos JavaScript na raiz do teste. Se o aplicativo for escrito em TypeScript, você precisará criá-los primeiro.
