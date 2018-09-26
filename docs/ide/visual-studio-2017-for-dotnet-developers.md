@@ -1,7 +1,7 @@
 ---
 title: Aumentar a produtividade de desenvolvimento do .NET
 description: Uma visão geral da navegação, da análise de código, do teste de unidade e de outros recursos para ajudá-lo a escrever um código .NET melhor mais rápido.
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c24aecce518cc62c93fe5e6885d77f64d49cad
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125020"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495785"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 

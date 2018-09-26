@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638707"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029021"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -44,7 +44,7 @@ Todos os modelos de **Projeto Web \<estrutura> em Branco** criam um projeto com 
 | --- | --- |
 | **Projeto Web em Branco do Bottle** | Gera um aplicativo mínimo em *app.py* com uma home page do `/` e uma página `/hello/<name>` que ecoa `<name>` usando um modelo de página embutido muito curto. |
 | **Projeto Web em Branco do Django** | Gera um projeto Django com a estrutura do site principal do Django, mas não aplicativos Django. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 1 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Projeto Web em Branco do Flask** | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Este aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início rápido: use o Visual Studio para criar seu primeiro aplicativo Web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Confira também [Etapa 1 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projeto Web em Branco do Flask** | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Este aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início rápido: use o Visual Studio para criar seu primeiro aplicativo Web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Confira também [Etapa 1 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo da Web
 

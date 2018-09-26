@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513168"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371154"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -761,12 +761,6 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt+Seta para a direita**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift+Alt+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Editor de Detalhes do Team Foundation Build
-
-|Comando|Atalho de teclado|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Gerenciador de Testes
