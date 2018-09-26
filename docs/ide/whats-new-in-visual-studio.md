@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384182"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029102"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
-**Atualizado para a [versão 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Atualizado para a [versão 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Deseja atualizar de uma versão anterior do Visual Studio? Veja o que o Visual Studio 2017 pode oferecer a você: produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
 
@@ -42,7 +42,7 @@ Veja uma recapitulação de alto nível das alterações feitas em relação à 
 * **[Desenvolvimento de IA](#ai-development)**. Com as Visual Studio Tools for AI, é possível usar as funcionalidades de produtividade do Visual Studio para acelerar a inovação em IA. Crie, teste e implante soluções de Aprendizado Profundo/IA que são integradas com o Azure Machine Learning para obter funcionalidades robustas de experimentação.
 
 > [!NOTE]
-> Para obter uma lista completa dos novos recursos e funcionalidades no Visual Studio 2017, consulte as [Notas de versão atuais](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). E para ver ofertas futuras de recursos, consulte as [Notas da versão prévia](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Para obter uma lista completa dos novos recursos e funcionalidades no Visual Studio 2017, consulte as [Notas de versão atuais](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). E para ver ofertas futuras de recursos, consulte as [Notas da versão prévia](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Veja aqui informações mais detalhadas de algumas das melhorias mais importantes e das novas funcionalidades no Visual Studio 2017.
 
@@ -50,7 +50,7 @@ Veja aqui informações mais detalhadas de algumas das melhorias mais importante
 
 ### <a name="a-new-setup-experience"></a>Uma nova experiência de instalação
 
-[Baixar o Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Verificar os requisitos do sistema do Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Baixar o Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Verificar os requisitos do sistema do Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  O Visual Studio facilita e agiliza a instalação de recursos específicos de que você precisa, quando necessário. Além disso, ele também se desinstala completamente.
 
@@ -381,7 +381,7 @@ Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre
 
 ## <a name="see-also"></a>Consulte também
 
-* [Notas de versão do Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Notas de versão do Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](/dotnet/csharp/whats-new)
 * [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)

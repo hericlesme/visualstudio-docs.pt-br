@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283412"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029060"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -36,7 +36,7 @@ Neste tutorial, você aprenderá como:
 No decorrer dessas etapas, você criará uma única solução do Visual Studio que contém três projetos separados. Você criará o projeto usando diferentes modelos de projeto do Flask incluídos com o Visual Studio. Se você mantiver os projetos na mesma solução, poderá facilmente alternar entre diferentes arquivos para comparação.
 
 > [!Note]
-> Este tutorial é diferente do [Início Rápido do Flask](../ide/quickstart-python.md?context=visualstudio/python/default) no qual você saberá mais sobre o Flask e como usar os diferentes modelos de projeto do Flask que fornecem um ponto de início mais amplo para seus próprios projetos. Por exemplo, os modelos de projeto instalam automaticamente o pacote do Flask ao criar um projeto, em vez de precisar instalar o pacote manualmente, conforme mostrado no Início Rápido.
+> Este tutorial é diferente do [Início Rápido do Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) no qual você saberá mais sobre o Flask e como usar os diferentes modelos de projeto do Flask que fornecem um ponto de início mais amplo para seus próprios projetos. Por exemplo, os modelos de projeto instalam automaticamente o pacote do Flask ao criar um projeto, em vez de precisar instalar o pacote manualmente, conforme mostrado no Início Rápido.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
