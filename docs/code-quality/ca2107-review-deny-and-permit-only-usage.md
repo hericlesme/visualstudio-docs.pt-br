@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550106"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859322"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: revisar uso de deny e permit only
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550106"
  Um método contém uma verificação de segurança que especifica a ação de segurança PermitOnly ou Deny.
 
 ## <a name="rule-description"></a>Descrição da regra
- O <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ação de segurança deve ser usada apenas por aqueles que tenham um conhecimento avançado de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
+ O <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ação de segurança deve ser usada apenas por aqueles que tenham um conhecimento avançado de segurança do .NET Framework. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
 
  Negar altera o comportamento padrão, a movimentação de pilha ocorre em resposta a uma exigência de segurança. Ele permite que você especifique as permissões que não devem ser concedidas para a duração do método negando, independentemente das permissões reais dos chamadores na pilha de chamadas. Se a movimentação da pilha detecta um método que é protegido por Negar e se a permissão exigida é incluída nas permissões negadas, a movimentação da pilha falha. PermitOnly também altera o comportamento padrão do exame da pilha. Ele permite que o código especificar somente as permissões que podem ser concedidas, independentemente das permissões dos chamadores. Se a movimentação da pilha detecta um método que é protegido pelo PermitOnly, e se a permissão exigida não está incluída nas permissões que são especificadas pela PermitOnly, a movimentação da pilha falha.
 

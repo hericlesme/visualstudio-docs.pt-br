@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567203"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860285"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
-Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
+Uma solução de linguagem específica do domínio (DSL) gera uma API que você pode usar para ler e atualizar instâncias da DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
 
 ## <a name="the-example-solution-component-diagrams"></a>A solução do exemplo: Diagramas de Componente
  Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.
@@ -32,7 +32,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
  ![Componentes e portas interconectadas](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>A Estrutura da Solução DSL
- O **Dsl** projeto define a API da DSL. O **DslPackage** projeto define como ele se integra ao [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.
+ O **Dsl** projeto define a API da DSL. O **DslPackage** projeto define como ele se integra com o Visual Studio. Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.
 
 ### <a name="the-code-directories"></a>Os diretórios do código
  A maioria do código em cada um desses projetos é gerada a partir **Dsl\DslDefinition.dsl**. O código gerado está no **código gerado pelo** pasta. Para ver um arquivo gerado, clique em **[+]** ao lado de geração **. TT** arquivo.
@@ -53,7 +53,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 
      Por exemplo, se você definir a **possui construtor personalizado** opção de uma classe de domínio e, em seguida, compile a solução, você verá mensagens de erro. Ao clicar duas vezes em uma dessas mensagens de erro, serão exibidos comentários sobre o código gerado que explicam o que o código personalizado deveria fornecer.
 
--   Grave seus próprios modelos de texto para gerar código específico para o aplicativo. É possível usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a diversos projetos e, é possível criar modelos de projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para definir projetos que são inicializados com a própria estrutura de arquivos.
+-   Grave seus próprios modelos de texto para gerar código específico para o aplicativo. Você pode usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a muitos projetos, e você pode criar modelos de projeto do Visual Studio para configurar projetos que são inicializados com sua própria estrutura de arquivos.
 
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados são exibidos na **Dsl** projeto.
@@ -185,10 +185,10 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 
  Configura a caixa de ferramentas instalando protótipos de grupo de elementos nas ferramentas do elemento. Cópias desses protótipos são mescladas com os elementos de destino quando o usuário executa a ferramenta.
 
- É possível substituir `CreateElementPrototype()` para definir um item de caixa de ferramentas que cria um grupo de diversos objetos. Por exemplo, é possível definir um item para representar objetos que possuem subcomponentes. Após alterar o código, redefina a instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para limpar o cache da caixa de ferramentas.
+ É possível substituir `CreateElementPrototype()` para definir um item de caixa de ferramentas que cria um grupo de diversos objetos. Por exemplo, é possível definir um item para representar objetos que possuem subcomponentes. Depois de alterar o código, redefina a instância experimental do Visual Studio para limpar o cache de caixa de ferramentas.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Arquivos gerados no projeto DslPackage
- O DslPackage acopla o modelo DSL ao shell do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], gerenciando comandos da janela, da caixa de ferramentas e do menu. A maioria das classes são derivadas duplas, de modo que é possível substituir qualquer um de seus métodos.
+ DslPackage acopla o modelo DSL ao shell do Visual Studio, gerenciando os comandos de janela, caixa de ferramentas e menus. A maioria das classes são derivadas duplas, de modo que é possível substituir qualquer um de seus métodos.
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Instancia `DocData` e `DocView`. Atende a uma interface padrão que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa para abrir um editor quando o pacote DSL é iniciado. É referenciado no atributo `ProvideEditorFactory` em Package.cs
+ Instancia `DocData` e `DocView`. Ele atende a uma interface padrão que usa o Visual Studio para abrir um editor quando o pacote DSL é iniciado. É referenciado no atributo `ProvideEditorFactory` em Package.cs
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Esse arquivo define como a DSL integra no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Atributos na classe do pacote registram a DSL como o manipulador de arquivos que possuem sua extensão de arquivo, define a caixa de ferramentas e define como abrir uma nova janela. O método Inicializar() é chamado uma vez quando a primeira DSL é chamada para uma instância do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Esse arquivo define como a DSL integra no Visual Studio. Atributos na classe do pacote registram a DSL como o manipulador de arquivos que possuem sua extensão de arquivo, define a caixa de ferramentas e define como abrir uma nova janela. O método Initialize () é chamado uma vez quando a primeira DSL é carregada em uma instância do Visual Studio.
 
  `Source.extension.vsixmanifest`
 

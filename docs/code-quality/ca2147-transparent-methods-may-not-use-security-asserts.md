@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549781"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859530"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: os métodos transparentes talvez não usem declarações de segurança
 |||
@@ -40,7 +40,7 @@ ms.locfileid: "45549781"
 
  No tempo de execução, todas as chamadas para <xref:System.Security.CodeAccessPermission.Assert%2A> no código transparent fará com que um <xref:System.InvalidOperationException> seja lançada. Isso pode ocorrer em ambos os assemblies de 100% transparente e também em assemblies mistos transparente/crítico em que um tipo ou método é declarado transparente, mas inclui um Assert declarativa ou imperativa.
 
- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 introduziu um recurso chamado *transparência*. Tipos, campos, interfaces, classes e métodos individuais podem ser transparente ou crítica.
+ O .NET Framework 2.0 introduziu um recurso denominado *transparência*. Tipos, campos, interfaces, classes e métodos individuais podem ser transparente ou crítica.
 
  O código transparente não é permitido para elevar privilégios de segurança. Portanto, todas as permissões concedidas ou exigidas dele automaticamente são passadas por meio do código para o domínio de aplicativo do chamador ou o host. As elevações exemplos de declarações, LinkDemands, SuppressUnmanagedCode, e `unsafe` código.
 

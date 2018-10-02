@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552052"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860154"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552052"
  Selecione um nome exclusivo quando comparado a outros identificadores no diferenciando maiusculas de minúsculas.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra. A biblioteca não pode ser utilizada em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Não suprima um aviso nessa regra. A biblioteca não pode ser utilizada em todos os idiomas disponíveis no .NET Framework.
 
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
  O exemplo a seguir demonstra uma violação dessa regra.

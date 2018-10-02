@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381853"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860128"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Executando a validação quando ocorre uma alteração
  Se você deseja garantir que o usuário seja avisado imediatamente quando o modelo se tornar inválido, defina um evento de armazenamento que execute a validação. Para obter mais informações sobre eventos de armazenamento, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Além do código de validação, adicione um arquivo de código personalizado ao seu **DslPackage** projeto, com conteúdo semelhante ao exemplo a seguir. Esse código usa o `ValidationController` que é anexado ao documento. Esse controlador mostra os erros de validação na lista de erros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Além do código de validação, adicione um arquivo de código personalizado ao seu **DslPackage** projeto, com conteúdo semelhante ao exemplo a seguir. Esse código usa o `ValidationController` que é anexado ao documento. Esse controlador mostra os erros de validação na lista de erros do Visual Studio.
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  Os manipuladores também são chamados depois de operações Undo ou Redo que afetam os links ou elementos.
 
-##  <a name="custom"></a> Categorias de validação personalizadas
+## <a name="custom"></a> Categorias de validação personalizadas
  Além das categorias de validação padrão, como Menu e Open, você pode definir suas próprias categorias. Você pode invocar essas categorias do código do programa. O usuário não pode invocá-las diretamente.
 
  Um uso típico de categorias personalizadas é definir uma categoria que teste se o modelo satisfaz as pré-condições de uma ferramenta específica.
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> Alternativas de validação
+## <a name="alternatives"></a> Alternativas de validação
  As restrições de validação relatam erros, mas não alteram o modelo. Se, ao contrário, você deseja evitar que o modelo se torne inválido, você pode usar outras técnicas.
 
  No entanto, essas técnicas não são recomendadas. Normalmente, é melhor deixar que o usuário decida como corrigir um modelo inválido.

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283188"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858700"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
@@ -66,7 +66,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
  Para obter detalhes sobre os comandos e ações que você pode usar ao trabalhar com mapas de código, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Mapear a pilha de chamadas
+## <a name="MapStack"></a> Mapear a pilha de chamadas
 
 1.  Inicie a depuração. (Teclado: **F5**)
 
@@ -80,17 +80,17 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
      O mapa será atualizado automaticamente enquanto você continua a depuração. Ver [atualizar o mapa com a próxima pilha de chamadas](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Fazer anotações sobre o código
+## <a name="MakeNotes"></a> Fazer anotações sobre o código
  Adicione comentários para acompanhar o que está acontecendo no código. Para adicionar uma nova linha em um comentário, pressione **Shift + Return**.
 
  ![Adicionar comentário para a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> Atualizar o mapa com a próxima pilha de chamadas
+## <a name="UpdateMap"></a> Atualizar o mapa com a próxima pilha de chamadas
  Execute o aplicativo até o próximo ponto de interrupção ou siga uma função. O mapa adiciona uma nova pilha de chamadas.
 
  ![Atualizar o mapa de código com a próxima pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
+## <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
  Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
 
  Clique duas vezes em um método para ver sua definição de código ou use o menu de atalho para o método. (Teclado: selecione o método no mapa e pressione **F12**)
@@ -114,7 +114,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
  ![Métodos que usam um campo no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> Localizar bugs usando o mapa
+## <a name="FindBugs"></a> Localizar bugs usando o mapa
  Visualizar seu código pode ajudar a localizar bugs com mais rapidez. Por exemplo, suponha que você estiver investigando um bug em um programa de desenho. Quando você desenha uma linha e tenta desfazê-la, nada acontece até que você desenhe outra linha.
 
  Para que você define pontos de interrupção a `clear`, `undo`, e `Repaint` métodos, inicie a depuração e cria um mapa como este:
@@ -127,7 +127,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
  ![Adicionar nova pilha de chamada de método no mapa de códigos](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> Perguntas e respostas
+## <a name="QA"></a> Perguntas e respostas
 
 -   **Nem todas as chamadas aparecem no mapa. Por quê?**
 
@@ -159,7 +159,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
 -   **Pode compartilhar o mapa com outras pessoas?**
 
-     É possível exportar o mapa, enviá-lo a outras pessoas se tiver o Microsoft Outlook ou salvá-lo em sua solução para que você possa verificá-lo no Controle de versão do Team Foundation.
+     Você pode exportar o mapa, enviá-lo para outras pessoas, se você tiver o Microsoft Outlook ou salvá-lo em sua solução, portanto, você pode verificá-lo no controle de origem.
 
      ![Mapa de códigos de pilha de chamada de compartilhamento com outras pessoas](../debugger/media/debuggermap_sharewithothers.png)
 

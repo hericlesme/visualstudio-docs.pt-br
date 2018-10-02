@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567335"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859218"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Como usar transações para atualizar o modelo
 Transações Certifique-se de que as alterações que foram feitas para o armazenamento são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.
 
- Sempre que o código do programa modifica, adiciona ou exclui qualquer elemento no Store em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualização e modelagem, deverá fazê-lo dentro de uma transação. Deve haver uma instância ativa do <xref:Microsoft.VisualStudio.Modeling.Transaction> associado com a Store quando ocorre a alteração. Isso se aplica a todos os elementos de modelo, relações, formas, diagramas e suas propriedades.
+ Sempre que o código do programa modifica, adiciona ou exclui qualquer elemento no Store no Visual Studio SDK de visualização e modelagem, deverá fazê-lo dentro de uma transação. Deve haver uma instância ativa do <xref:Microsoft.VisualStudio.Modeling.Transaction> associado com a Store quando ocorre a alteração. Isso se aplica a todos os elementos de modelo, relações, formas, diagramas e suas propriedades.
 
  O mecanismo de transação ajuda a evitar a estados inconsistentes. Se ocorrer um erro durante uma transação, todas as alterações serão revertidas. Se o usuário executa um comando Desfazer, cada transação recente é tratada como uma única etapa. O usuário não pode desfazer a partes de uma alteração recente, a menos que você explicitamente colocá-los em transações separadas.
 

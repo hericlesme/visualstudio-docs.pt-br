@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566545"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860414"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Como abrir um modelo a partir de um arquivo no código do programa
 Você pode abrir modelos DSL em qualquer aplicativo.
 
- De um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensão, você pode usar o ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a um modelo ou elementos em um modelo e para localizar o modelo se ele foi movido. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ De uma extensão do Visual Studio, você pode usar o ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a um modelo ou elementos em um modelo e para localizar o modelo se ele foi movido. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Estrutura de Destino
  Defina a **estrutura de destino** de seu projeto de aplicativo **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Para definir a estrutura de destino
 
-1.  Abra o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto para o aplicativo no qual você deseja ler um modelo DSL.
+1.  Abra o projeto do Visual Studio para o aplicativo no qual você deseja ler um modelo DSL.
 
 2.  Na **Gerenciador de soluções**, clique com botão direito no projeto e, em seguida, clique em **propriedades**.
 
@@ -36,7 +36,7 @@ Você pode abrir modelos DSL em qualquer aplicativo.
 >  Talvez você precise fazer isso, mesmo se você selecionou **.NET Framework 4** na caixa de diálogo de criação do projeto. A estrutura de destino não deve ser **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Referências
- Você precisa adicionar estas referências ao seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto de aplicativo:
+ Você precisa adicionar estas referências ao projeto de aplicativo do Visual Studio:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

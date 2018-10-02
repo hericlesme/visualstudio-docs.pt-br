@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512464"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860428"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
 É necessário definir os itens da caixa de ferramentas para os elementos que deseja disponibilizar para os usuários adicionarem aos seus modelos. Há dois tipos de ferramentas: ferramentas de elemento e ferramentas de conexão. No designer gerado, um usuário pode selecionar uma ferramenta do elemento para arrastar formas para o diagrama e pode selecionar uma ferramenta de conexão para desenhar links entre as formas. Em geral, as ferramentas do elemento permitem aos usuários adicionarem instâncias de classe de domínio aos seus modelos e as ferramentas de conexão permitem que eles adicionem instâncias de relações de domínio.
 
-##  <a name="ToolboxDef"></a> Como a caixa de ferramentas é definida
+## <a name="ToolboxDef"></a> Como a caixa de ferramentas é definida
  No DSL Explorer, expanda o nó do Editor e o nó abaixo dele. Geralmente aparecerá uma hierarquia que lembra isto:
 
 ```
@@ -77,11 +77,11 @@ O **construtor de Conexão** propriedade de uma ferramenta de conexão faz refer
 
      **Para uma ferramenta de conector:** defina a **construtor de Conexão** propriedade da ferramenta para um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
 
-5.  Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra um arquivo de modelo de amostra. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
+5.  Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
 
-     Se a ferramenta não aparecer, pare o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimental. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. Sobre o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **construir** menu, clique em **recompilar solução**. Em seguida, teste o DSL novamente.
+     Se a ferramenta não aparecer, pare o experimental do Visual Studio. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. Sobre o **construir** menu, clique em **recompilar solução**. Em seguida, teste o DSL novamente.
 
-##  <a name="customizing"></a> Personalizando ferramentas de elemento
+## <a name="customizing"></a> Personalizando ferramentas de elemento
  Por padrão, a ferramenta criará uma única instância da classe especificada, mas é possível variar isso de duas maneiras:
 
 -   Defina as Diretivas de Mescla de Elemento em outras classes, permitindo-lhes aceitar novas instâncias dessa classe e permitindo-lhes criar links adicionais quando o novo elemento é criado. Por exemplo, é possível permitir ao usuário soltar um Comentário em outro elemento, criando dessa maneira um link de referência entre os dois.
@@ -92,7 +92,7 @@ O **construtor de Conexão** propriedade de uma ferramenta de conexão faz refer
 
 -   Escreva um código para personalizar a ferramenta para que ela possa criar grupos de elementos. A ferramenta é inicializada por métodos no ToolboxHelper.cs que podem ser substituídos. Para obter mais informações, consulte [criando grupos de elementos de uma ferramenta](#groups).
 
-##  <a name="groups"></a> Criando grupos de elementos de uma ferramenta
+## <a name="groups"></a> Criando grupos de elementos de uma ferramenta
  Cada ferramenta do elemento contém um protótipo de elementos que ela deve criar. Por padrão, cada ferramenta do elemento cria um único elemento, mas também é possível criar um grupo de objetos relacionados a uma ferramenta. Para isso, é necessário inicializar a ferramenta com um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contém os itens relacionados.
 
  O exemplo a seguir é tomado de um DSL no qual há um Transistor de tipo. Cada Transistor possui três Terminais nomeados. A ferramenta do elemento dos Transistores armazena um protótipo contendo quatro elementos de modelo e três links de relacionamento. Quando o usuário arrasta a ferramenta no diagrama, o protótipo é instalado e conectado à raiz do modelo.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Personalizando ferramentas de Conexão
+## <a name="connections"></a> Personalizando ferramentas de Conexão
  Normalmente, é criada uma ferramenta de elemento ao criar uma nova classe do conector. Como alternativa, é possível sobrecarregar uma ferramenta permitindo que os tipos das duas extremidades determinem o tipo de relação. Por exemplo, é possível definir uma ferramenta de conexão que poderia criar relações pessoa-pessoa e relações pessoa-cidade.
 
  As ferramentas de conexão invocam os construtores de conexão. Use construtores de conexão para especificar como os usuários podem conectar elementos no designer gerado. Os construtores de conexão especificam os elementos que podem ser conectados e o tipo de link que é criada entre eles.

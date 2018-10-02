@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623592"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859387"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 
@@ -48,7 +48,7 @@ Em ambos os casos a criação de um modelo quase sempre resulta em uma redução
 
 ## <a name="use-models-with-other-artifacts"></a>Usar modelos com outros artefatos
 
-Um modelo não é por si só, uma especificação de requisitos ou uma arquitetura. Ele é uma ferramenta para expressar alguns aspectos dessas coisas mais claramente, mas não todos os conceitos necessários durante o design de software podem ser expresso. Os modelos, portanto, devem ser usados junto com outros meios de comunicação, como páginas do OneNote ou parágrafos, documentos do Microsoft Office, itens de trabalho [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)], ou Notas Autoadesivas na parede de sala do projeto. O último item, além de todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
+Um modelo não é por si só, uma especificação de requisitos ou uma arquitetura. Ele é uma ferramenta para expressar alguns aspectos dessas coisas mais claramente, mas não todos os conceitos necessários durante o design de software podem ser expresso. Os modelos, portanto, devem ser usados junto com outros meios de comunicação, como o OneNote páginas ou parágrafos, documentos do Microsoft Office, itens de trabalho no Team Foundation ou Notas Autoadesivas na parede de sala do projeto. O último item, além de todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
 
 Outros aspectos da especificação que normalmente são usados junto com os modelos incluem o seguinte. Dependendo da escala e o estilo do seu projeto, você pode usar vários desses aspectos ou não usar nenhum:
 
@@ -88,7 +88,7 @@ Conforme cada iteração se aproxima, use modelos para ajudar a definir o que de
 
 - No final de cada iteração, mantenha um workshop de requisitos para definir em detalhes os requisitos ou histórias de usuários que serão desenvolvidas na próxima iteração. Convide usuários e participantes de negócios que podem decidir prioridades, bem como os desenvolvedores e testadores de sistema. Permitir a três horas definir requisitos para uma iteração 2 semanas.
 
-- O objetivo do workshop é concordar com o que será realizado no final da próxima iteração de todos. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma lista de pendências de iteração: ou seja, uma lista de desenvolvimento de tarefas no [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] e conjuntos de teste em [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- O objetivo do workshop é concordar com o que será realizado no final da próxima iteração de todos. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma lista de pendências de iteração: ou seja, uma lista de tarefas de desenvolvimento no Team Foundation e conjuntos de testes em [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - O workshop de requisitos, discutiremos o design somente na medida, você precisa determinar as estimativas para as tarefas de desenvolvimento. Caso contrário, mantenha a discussão ao comportamento do sistema que os usuários podem enfrentar diretamente. Manter o modelo de requisitos separado do modelo de arquitetura.
 
@@ -96,7 +96,7 @@ Conforme cada iteração se aproxima, use modelos para ajudar a definir o que de
 
 ### <a name="link-model-to-work-items"></a>Modelo de link a itens de trabalho
 
-Após o workshop de requisitos, elaborar os detalhes do modelo de requisitos e vincule o modelo para tarefas de desenvolvimento. Você pode fazer isso vinculando itens de trabalho [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] aos elementos no modelo.
+Após o workshop de requisitos, elaborar os detalhes do modelo de requisitos e vincule o modelo para tarefas de desenvolvimento. Você pode fazer isso ao vincular itens de trabalho no Team Foundation a elementos no modelo.
 
 Você pode vincular qualquer elemento para itens de trabalho, mas os elementos mais úteis são da seguinte maneira:
 
