@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950726"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858243"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 
-Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a diretiva `assembly` carrega um assembly de modo que seu código do modelo possa usar seus tipos. O efeito é semelhante ao de adicionar uma referência de assembly em um projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+Em um modelo de texto de tempo de design do Visual Studio, o `assembly` diretiva carrega um assembly para que o código de modelo possa usar seus tipos. O efeito é semelhante a adicionar uma referência de assembly em um projeto do Visual Studio.
 
- Para obter uma visão geral de escrever modelos de texto, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
+ Para obter uma visão geral da gravação de modelos de texto, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários para o **referências** de seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto.
+>  Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários para o **referências** do projeto do Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Usando a diretiva de assembly
  A sintaxe da diretiva é a seguinte:
@@ -38,13 +38,13 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../code-quality/in
 
 -   O caminho absoluto do assembly
 
- Você pode usar a sintaxe `$(variableName)` para referenciar variáveis do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como `$(SolutionDir)`, e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
+ Você pode usar o `$(variableName)` sintaxe para fazer referência a variáveis do Visual Studio, como `$(SolutionDir)`, e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclua as referências necessárias no **referências** seção do seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclui as referências necessárias na **referências** seção de seu projeto do Visual Studio. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Assemblies padrão
  Os seguintes assemblies são carregados automaticamente, de modo que não seja necessário gravar diretivas de assembly para eles:
@@ -65,7 +65,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../code-quality/in
 
 -   O assembly que contém seu DSL.
 
-##  <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e o Visual Studio
+## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e o Visual Studio
  Macros do Visual Studio como $ (solutiondir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
 
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:
