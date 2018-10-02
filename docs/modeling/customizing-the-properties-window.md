@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567162"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859296"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
-Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.
+Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) no Visual Studio. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.
 
 ## <a name="names-descriptions-and-categories"></a>Nomes, descrições e categorias
  **Nome e o nome de exibição**. Em sua definição de uma propriedade de domínio, o nome de exibição da propriedade é o nome que aparece em tempo de execução na janela Propriedades. Por outro lado, o nome é usado quando você escreve o código do programa para atualizar a propriedade. O nome deve ser um nome alfanumérico correto do CLR, mas o nome de exibição pode conter espaços.

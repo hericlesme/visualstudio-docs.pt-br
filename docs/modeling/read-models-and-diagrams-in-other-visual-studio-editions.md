@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775575"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859673"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 Quando você abre um modelo em uma versão do Visual Studio que não dá suporte à criação de modelo, o modelo é aberto no modo somente leitura. Nesse modo, você pode alterar o layout dos diagramas, mas você não pode alterar o modelo.
@@ -26,7 +26,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Obtendo acesso a um modelo e diagramas
  Para ler um diagrama de dependência, você deve primeiro usar o Visual Studio para abrir o projeto de modelagem e, em seguida, abra o diagrama dentro dele.
 
- Por esse motivo, se você quiser ler um diagrama de dependência, deve também ter acesso ao projeto de modelagem no qual ele foi criado. Você pode fazer isso acessando o projeto do [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)], ou obtendo uma cópia dos arquivos de projeto.
+ Por esse motivo, se você quiser ler um diagrama de dependência, deve também ter acesso ao projeto de modelagem no qual ele foi criado. Você pode fazer isso acessando o projeto do controle de origem, ou obtendo uma cópia dos arquivos de projeto.
 
 > [!NOTE]
 >  Isso não se aplica ao código gerados a partir de código de diagramas de classe de mapas e .NET. Esses diagramas podem ser exibidos independentemente de um projeto de modelagem.
@@ -53,7 +53,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 
  Você pode salvar essas alterações. Se você quiser fazer as alterações visíveis para outros usuários, você deve pelo menos enviar atualizada **. layout** arquivos.
 
-##  <a name="RelatedTopics"></a> Tópicos relacionados
+## <a name="RelatedTopics"></a> Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|

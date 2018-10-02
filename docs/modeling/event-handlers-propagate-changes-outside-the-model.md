@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776164"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859271"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 
-No SDK de modelagem e visualização, você pode definir manipuladores de eventos do repositório para propagar alterações aos recursos fora do repositório, como variáveis de fora da store, arquivos, modelos em outros repositórios ou outro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensões. Manipuladores de eventos de Store são executados após o término da transação na qual ocorreu o evento de gatilho. Eles também são executados em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de repositório de eventos de armazenamento são mais úteis para atualizar os valores que estão fora do repositório. Diferentemente dos eventos do .NET, manipuladores de eventos de armazenamento são registrados para escutar em uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras de manipular as alterações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
+No SDK de modelagem e visualização, você pode definir manipuladores de eventos do repositório para propagar alterações aos recursos fora do repositório, como variáveis de fora da store, arquivos, modelos em outros repositórios ou outras extensões do Visual Studio. Manipuladores de eventos de Store são executados após o término da transação na qual ocorreu o evento de gatilho. Eles também são executados em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de repositório de eventos de armazenamento são mais úteis para atualizar os valores que estão fora do repositório. Diferentemente dos eventos do .NET, manipuladores de eventos de armazenamento são registrados para escutar em uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras de manipular as alterações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
 
 A superfície de gráfica e outros controles de interface do usuário são exemplos de recursos externos que podem ser manipulados pelo repositório de eventos.
 
