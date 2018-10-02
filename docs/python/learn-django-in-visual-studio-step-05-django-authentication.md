@@ -198,9 +198,9 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da marcação {% crsf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
 
-Resposta: A marca `{% crsf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (crsf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
+Resposta: A marca `{% csrf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 
