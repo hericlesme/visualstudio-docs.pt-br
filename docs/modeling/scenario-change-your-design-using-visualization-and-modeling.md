@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371089"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860505"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -112,7 +112,7 @@ Ambas as equipes também usam validação de dependência para certificar-se de 
 - [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Algumas versões do Visual Studio dão suporte a versões somente leitura dos mapas de código e validação de dependência para visualização e modelagem. Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Algumas versões do Visual Studio dão suporte a versões somente leitura dos mapas de código e validação de dependência para visualização e modelagem. Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Entender e comunicar informações sobre o sistema
 
@@ -169,12 +169,12 @@ O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende e
 |------------------|-------------------|
 |*Diagrama de classe base*<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classes existentes no código.|
 
-###  <a name="ValidatingCode"></a> Manter o código consistente com o Design
+### <a name="ValidatingCode"></a> Manter o código consistente com o Design
  O dinner Now deve se certificar de que os códigos atualizados ficaram consistentes com o design. Eles criam diagramas de dependência que descrevem as camadas de funcionalidade no sistema, especifique as dependências permitidas entre os artefatos de solução deles e associam para essas camadas.
 
 |**Diagrama**|**Descreve**|
 |-----------------|-------------------|
-|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
+|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
 
  Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
 
@@ -224,7 +224,7 @@ Consulte:
 
 ### <a name="TestValidateCheckInCode"></a> Testar, validar e verificar o código
 
-Conforme as equipes concluem cada tarefa, eles verificam o código no controle de versão do Team Foundation e recebem lembretes do Team Foundation Server, caso eles esqueçam. Antes que o Team Foundation Server aceite seus check-ins, as equipes de executar testes de unidade e validação de dependência para verificar o código em relação a seus casos de teste e o design. Usar o Team Foundation Server para executar compilações, testes de unidade automatizados e validação de dependência regularmente. Isso ajuda a garantir que o código atenda aos seguintes critérios:
+Conforme as equipes concluem cada tarefa, eles verificam o código no controle do código-fonte e recebem lembretes do Team Foundation Server, caso eles esqueçam. Antes que o Team Foundation Server aceite seus check-ins, as equipes de executar testes de unidade e validação de dependência para verificar o código em relação a seus casos de teste e o design. Usar o Team Foundation Server para executar compilações, testes de unidade automatizados e validação de dependência regularmente. Isso ajuda a garantir que o código atenda aos seguintes critérios:
 
 - Ele funciona.
 

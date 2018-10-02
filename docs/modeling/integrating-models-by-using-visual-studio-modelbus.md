@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567175"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859946"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrando modelos por meio do Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fornece um método para criar vínculos entre modelos e de outras ferramentas em modelos. Por exemplo, você pode vincular modelos de linguagem específica do domínio (DSL) e modelos UML. É possível criar um conjunto integrado de DSLs.
+Visual Studio ModelBus fornece um método para criar vínculos entre modelos e de outras ferramentas em modelos. Por exemplo, você pode vincular modelos de linguagem específica do domínio (DSL) e modelos UML. É possível criar um conjunto integrado de DSLs.
 
  O ModelBus permite criar uma referência exclusiva para um modelo ou um elemento específico dentro de um modelo. Essa referência pode ser armazenada fora do modelo, por exemplo, em um elemento em outro modelo. Quando, em uma ocasião posterior, uma ferramenta desejar obter acesso ao elemento, a infraestrutura do Model Bus carregará o modelo adequado e retornará o elemento. Se desejar, é possível exibir o modelo ao usuário. Se o arquivo não puder ser acessado em seu local anterior, o ModelBus solicitará ao usuário para encontrá-lo. Se o usuário encontrar o arquivo, o ModelBus fixará todas as referências àquele arquivo.
 
 > [!NOTE]
->  Na implementação atual de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do ModelBus, os modelos vinculados devem ser itens na mesma solução de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+>  A implementação atual do Visual Studio do ModelBus, os modelos vinculados devem ser itens na mesma solução do Visual Studio.
 
  Para obter informações adicionais e código de exemplo, consulte:
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567175"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> Fornecendo acesso a uma DSL
- Antes de ser possível criar referências do ModelBus para um modelo ou seus elementos, é necessário definir um ModelBusAdapter para a DSL. A maneira mais fácil de fazer isso é utilizar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus Extension, que inclui comandos ao Designer de DSL.
+## <a name="provide"></a> Fornecendo acesso a uma DSL
+ Antes de ser possível criar referências do ModelBus para um modelo ou seus elementos, é necessário definir um ModelBusAdapter para a DSL. A maneira mais fácil de fazer isso é usar o modelo do barramento de extensão do Visual Studio, que inclui comandos para o Designer de DSL.
 
-###  <a name="expose"></a> Para expor uma definição de DSL ao Model Bus
+### <a name="expose"></a> Para expor uma definição de DSL ao Model Bus
 
 1.  Faça o download e instale a extensão Visual Studio Model Bus, a menos que já estiver instalada. Para obter mais informações, consulte [SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567175"
  A pasta `ModelBusAdapters\bin\*` contém os assemblies compilados pelo projeto `Dsl` e o projeto `ModelBusAdapters`. Para referenciar essa DSL a partir de outra DSL, esses assemblies devem ser importados.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Garantindo que elementos possam ser referenciados
- Os adaptadores do ModelBus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usam o guid de um elemento para identificá-lo, por padrão. Esses identificadores devem, portanto, ser persistidos no arquivo do modelo.
+ Adaptadores do Visual Studio ModelBus usam o guid de um elemento para identificá-lo, por padrão. Esses identificadores devem, portanto, ser persistidos no arquivo do modelo.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Para garantir que as IDs de elementos serão persistidas
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567175"
 
 -   Substituir `ResolveElementReference` para localizar o elemento correto a partir de uma referência do Model Bus.
 
-##  <a name="editRef"></a> Acessando uma DSL a partir de outra DSL
+## <a name="editRef"></a> Acessando uma DSL a partir de outra DSL
  É possível armazenar referências do model bus em uma propriedade de domínio em uma DSL e, é possível gerar código personalizado que as utiliza. Também é possível permitir ao usuário criar uma referência do model bus selecionando um arquivo de modelo e um elemento dentro dele.
 
  Para habilitar uma DSL use referências para outra DSL, você deve torná-lo um *consumidor* de referências do model bus.
@@ -140,10 +140,10 @@ ms.locfileid: "39567175"
 
 2.  Execute uma das DSLs em modo experimental pressionando F5 ou CTRL+F5.
 
-3.  Em Depuração de projeto na instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], inclua arquivos que são instâncias de cada DSL.
+3.  No projeto de depuração na instância experimental do Visual Studio, adicione os arquivos que são instâncias de cada DSL.
 
     > [!NOTE]
-    > O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus pode resolver apenas referências para modelos que são itens na mesma solução de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.
+    > Visual Studio ModelBus pode resolver apenas referências a modelos de itens na mesma solução do Visual Studio. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.
 
 4.  Crie alguns elementos e vínculos na instância da DSL exposta e salve.
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567175"
 ## <a name="creating-references-in-program-code"></a>Criando Referências no Código do Programa
  Quando desejar armazenar uma referência para um modelo ou um elemento dentro de um modelo, crie uma `ModelBusReference`. Existem dois tipos de `ModelBusReference`: referências de modelo e referências de elemento.
 
- Para criar uma referência de modelo, é necessário o AdapterManager da DSL cujo modelo é uma instância e o nome do arquivo ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] item de projeto do modelo.
+ Para criar uma referência de modelo, é necessário o AdapterManager da DSL do qual o modelo é uma instância e o nome de arquivo ou item de projeto do Visual Studio do modelo.
 
  Para criar uma referência de elemento, é necessário um adaptador para o arquivo de modelo e o elemento ao qual deseja referir.
 
 > [!NOTE]
->  Com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus, é possível criar referências apenas para itens na mesma solução de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+>  Com o Visual Studio ModelBus, você pode criar referências apenas aos itens na mesma solução do Visual Studio.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importe os assemblies da DSL exposta
  No projeto consumidor, inclua referências de projeto para a DSL e os assemblies do ModelBusAdapter da DSL exposta.
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- Uma MBR serializada dessa maneira é independente de contexto. Ao usar o Adaptador do Model Bus baseado em arquivo simples, a MBR contém um caminho de arquivo absoluto. Isso é suficiente se os arquivos do modelo de instância nunca serão movidos. No entanto, os arquivos de modelo geralmente serão itens em um projeto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. A expectativa dos usuários é de poder mover o projeto inteiro para diferentes partes do sistema de arquivos. Eles também esperarão poder manter o projeto sob algum controle de origem e abri-lo em diferentes computadores. Os nomes de caminhos devem, portanto, ser serializados em relação ao local do projeto que contém os arquivos.
+ Uma MBR serializada dessa maneira é independente de contexto. Ao usar o Adaptador do Model Bus baseado em arquivo simples, a MBR contém um caminho de arquivo absoluto. Isso é suficiente se os arquivos do modelo de instância nunca serão movidos. No entanto, os arquivos de modelo geralmente será itens em um projeto do Visual Studio. A expectativa dos usuários é de poder mover o projeto inteiro para diferentes partes do sistema de arquivos. Eles também esperarão poder manter o projeto sob algum controle de origem e abri-lo em diferentes computadores. Os nomes de caminhos devem, portanto, ser serializados em relação ao local do projeto que contém os arquivos.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Serialização relativa a um caminho de arquivo especificado
  Uma `ModelBusReference` contém um `ReferenceContext`, que é um dicionário no qual é possível armazenar informações como o caminho de arquivo relativo ao qual deve ser serializado.
