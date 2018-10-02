@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567227"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860401"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código no tempo de design usando modelos de texto T4
-Modelos de texto T4 em tempo de design permitem que você gere código de programa e outros arquivos no seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
+Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos no projeto do Visual Studio. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
 
  Por exemplo, você pode ter um modelo que define um fluxo de trabalho, como uma tabela ou um diagrama. A partir do modelo, você pode gerar o software que executa o fluxo de trabalho. Quando os requisitos dos seus usuários mudam, é fácil discutir o novo fluxo de trabalho com os usuários. Gerar novamente o código do fluxo de trabalho é mais confiável do que atualizar o código manualmente.
 
 > [!NOTE]
 >  Um *modelo* é uma fonte de dados que descreve um aspecto específico de um aplicativo. Ela pode estar em qualquer formulário, tipo de arquivo ou banco de dados. Ela não precisa estar em qualquer formulário particular, como um modelo UML ou modelo DSL. Os modelos comuns estão na forma de tabelas ou arquivos XML.
 
- Você provavelmente já está familiarizado com a geração de código. Quando você define recursos em um **. resx** do arquivo no seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução, um conjunto de classes e métodos é gerado automaticamente. O arquivo de recursos torna mais fácil e confiável editar os recursos do que se você tivesse que editar as classes e métodos. Com modelos de texto, você pode gerar o código da mesma forma a partir de uma fonte de seu próprio projeto.
+ Você provavelmente já está familiarizado com a geração de código. Quando você define recursos em um **. resx** arquivo em sua solução do Visual Studio, um conjunto de classes e métodos é gerado automaticamente. O arquivo de recursos torna mais fácil e confiável editar os recursos do que se você tivesse que editar as classes e métodos. Com modelos de texto, você pode gerar o código da mesma forma a partir de uma fonte de seu próprio projeto.
 
  Um modelo de texto contém uma mistura do texto que você deseja gerar e o código de programa que gera partes variáveis ​​do texto. O código do programa permite repetir ou omitir condicionalmente partes do texto gerado. O texto gerado pode ser o próprio código de programa que fará parte do seu aplicativo.
 
@@ -40,7 +40,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para criar um modelo T4 em tempo de design no Visual Studio
 
-1.  Criar um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de projeto ou abrir um existente.
+1.  Criar um projeto do Visual Studio ou abrir um existente.
 
      Por exemplo, na **arquivo** menu, escolha **New** > **projeto**.
 
@@ -77,15 +77,15 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
 ### <a name="regenerating-the-code"></a>Gerando novamente o código
  Um modelo será executado, gerando o arquivo subsidiário, em qualquer um dos seguintes casos:
 
--   Edite o modelo e mude o foco para uma janela do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] diferente.
+-   Editar o modelo e, em seguida, altere o foco para uma janela diferente do Visual Studio.
 
 -   Salve o modelo.
 
--   Clique em **transformar todos os modelos** na **Build** menu. Isso transformará todos os modelos na solução [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+-   Clique em **transformar todos os modelos** na **Build** menu. Isso transformará todos os modelos na solução do Visual Studio.
 
 -   Na **Gerenciador de soluções**, no menu de atalho de qualquer arquivo, escolha **executar ferramenta personalizada**. Use esse método para transformar um subconjunto de modelos selecionado.
 
- Você também pode configurar um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para executar os modelos quando os arquivos de dados que eles leem mudarem. Para obter mais informações, consulte [gerando o código automaticamente](#Regenerating).
+ Você também pode configurar um projeto do Visual Studio para que os modelos são executados quando os arquivos de dados que eles leem foram alterados. Para obter mais informações, consulte [gerando o código automaticamente](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Gerando texto variável
  Os modelos de texto permitem que você use o código de programa para alterar o conteúdo do arquivo gerado.
@@ -220,7 +220,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
 <#@ import namespace="System.IO" #>
 ```
 
- A diretiva `assembly` torna o assembly especificado disponível para o código de modelo, da mesma forma como a seção Referências de um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você não precisa incluir uma referência em System.dll, ele é referenciado automaticamente. A diretiva `import` permite que você use os tipos sem usar seus nomes totalmente qualificados, da mesma forma como a diretiva `using` em um arquivo de programa normal.
+ O `assembly` diretiva disponibiliza o assembly especificado para o código de modelo, da mesma maneira que a seção de referências de um projeto do Visual Studio. Você não precisa incluir uma referência em System.dll, ele é referenciado automaticamente. A diretiva `import` permite que você use os tipos sem usar seus nomes totalmente qualificados, da mesma forma como a diretiva `using` em um arquivo de programa normal.
 
  Por exemplo, depois de importar **System.IO**, você poderia escrever:
 
@@ -274,8 +274,8 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
 
  O tipo de `this.Host` (no VB, `Me.Host`) é `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtendo dados do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
- Para usar os serviços fornecidos no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], defina o atributo `hostSpecific` e carregue o assembly `EnvDTE`. Você pode usar ServiceProvider.GetCOMService() para acessar o DTE e outros serviços. Por exemplo:
+### <a name="getting-data-from-visual-studio"></a>Obtendo dados do Visual Studio
+ Para usar os serviços fornecidos no Visual Studio, defina as `hostSpecific` atributo e carregar o `EnvDTE` assembly. Você pode usar ServiceProvider.GetCOMService() para acessar o DTE e outros serviços. Por exemplo:
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -293,8 +293,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Um modelo de texto é executado em seu próprio domínio de aplicativo e os serviços são acessados ​​por empacotamento. Nesse caso, GetCOMService() é mais confiável que GetService().
 
-##  <a name="Regenerating"></a> Gerando o código automaticamente
- Normalmente, vários arquivos em uma solução [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] são gerados com um modelo de entrada. Cada arquivo é gerado a partir do seu próprio modelo, mas todos os modelos se referem ao mesmo modelo.
+## <a name="Regenerating"></a> Gerando o código automaticamente
+ Normalmente, vários arquivos em uma solução do Visual Studio são gerados com um modelo de entrada. Cada arquivo é gerado a partir do seu próprio modelo, mas todos os modelos se referem ao mesmo modelo.
 
  Se o modelo de fonte mudar, você deve executar novamente todos os modelos na solução. Para fazer isso manualmente, escolha **transformar todos os modelos** sobre o **Build** menu.
 
@@ -314,19 +314,19 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Relatório de erros
- Para colocar mensagens de erro e de aviso na janela de erro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode usar estes métodos:
+ Para colocar mensagens de erro e aviso na janela de erro do Visual Studio, você pode usar estes métodos:
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> Convertendo um arquivo existente em um modelo
+## <a name="Converting"></a> Convertendo um arquivo existente em um modelo
  Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles geram, além de um código de programa inserido. Isso sugere um método útil para a criação de um modelo. Primeiro crie um arquivo comum como um protótipo, como um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de arquivo e introduza gradualmente o código de geração que varia o arquivo resultante.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para converter um arquivo existente para um modelo de tempo de design
 
-1.  Para o seu projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], adicione um arquivo do tipo que você deseja gerar, como um arquivo `.cs`, `.vb` ou `.resx`.
+1.  Ao seu projeto do Visual Studio, adicione um arquivo do tipo que você deseja gerar, tais como uma `.cs`, `.vb`, ou `.resx` arquivo.
 
 2.  Teste o novo arquivo para conferir se ele funciona.
 
@@ -367,7 +367,7 @@ Warning("A warning message");
 |---------------|-----------|
 |Escreva e depure um modelo de texto mais avançado, com código que usa funções auxiliares, arquivos e dados externos incluídos.|[Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)|
 |Gere documentos a partir de modelos em tempo de execução.|[Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|Execute geração de texto fora do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Execute a geração de texto fora do Visual Studio.|[Gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transforme dados na forma de uma linguagem específica do domínio.|[Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Grave processadores de diretivas para transformar suas próprias fontes de dados.|[Personalizando a transformação de texto T4](../modeling/customizing-t4-text-transformation.md)|
 

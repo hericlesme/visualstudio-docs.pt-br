@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549839"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859699"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute
 
@@ -40,7 +40,7 @@ ms.locfileid: "45549839"
 
  Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você colocar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (que não seja o chamador imediato) precisa de permissão de código não gerenciado para executar código não gerenciado. Dependendo do membro público ações e manipulação de entrada, ele pode permitir que os chamadores não confiáveis para acessar a funcionalidade normalmente restringido ao código confiável.
 
- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] se baseia em verificações de segurança para impedir que os chamadores tenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora a segurança normal, seu código representa uma ameaça grave se ele pode ser usado para ler ou gravar na memória do processo. Observe que não é limitado a métodos que intencionalmente fornecem acesso para processar a memória; o risco Ele também está presente em qualquer cenário em que código mal-intencionado pode obter o acesso por qualquer meio, por exemplo, fornecendo entrada surpreendente, malformada ou inválida.
+ O .NET Framework se baseia em verificações de segurança para impedir que os chamadores tenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora a segurança normal, seu código representa uma ameaça grave se ele pode ser usado para ler ou gravar na memória do processo. Observe que não é limitado a métodos que intencionalmente fornecem acesso para processar a memória; o risco Ele também está presente em qualquer cenário em que código mal-intencionado pode obter o acesso por qualquer meio, por exemplo, fornecendo entrada surpreendente, malformada ou inválida.
 
  A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou é um membro de um dos seguintes grupos:
 

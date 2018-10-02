@@ -11,17 +11,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178898"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859114"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar seu aplicativo&#39;arquitetura s
 Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus usuários precisa, você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e o comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos de ajudarão-lo a entender a arquitetura existente, discutir as mudanças e comunique suas intenções claramente.
 
- Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver quais edições do Visual Studio dão suporte a esse recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  A finalidade de um modelo é reduzir as ambiguidades que ocorrem nas descrições de linguagem natural e para ajudar você e seus colegas para visualizar o design e para discutir designs alternativos. Um modelo deve ser usado junto com outros documentos ou discussões. Por si só, um modelo não representa uma especificação completa da arquitetura.
 
@@ -34,7 +34,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
 -   [Padrões de design](#Patterns) e as convenções usadas nos designs de componentes. Um padrão descreve uma abordagem específica para alcançar uma meta de programação. Usando os mesmos padrões em todo um design, sua equipe pode reduzir o custo de fazer alterações e desenvolvimento de software novo.
 
-##  <a name="Structure"></a> Design de alto nível
+## <a name="Structure"></a> Design de alto nível
  Um design de alto nível descreve os principais componentes do seu sistema e como eles interagem entre si para atingir as metas do design. As atividades na lista a seguir são envolvidas no desenvolvimento do design de alto nível, embora não necessariamente em uma sequência específica.
 
  Se você estiver atualizando o código existente, você pode começar descrevendo os principais componentes. Verifique se você compreender todas as alterações para os requisitos de usuário e, em seguida, adicionar ou modificar as interações entre os componentes. Se você estiver desenvolvendo um novo sistema, comece Noções básicas sobre os principais recursos das necessidades dos usuários. Você pode, em seguida, explore as sequências de interações para os casos de uso principal e, em seguida, consolidar as sequências em um design do componente.
@@ -47,7 +47,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
 -   Modelo de dados dos componentes e Interfaces. Você pode desenhar diagramas de classe para descrever as informações que são passadas entre componentes e armazenadas dentro dos componentes.
 
-##  <a name="Requirements"></a> Noções básicas sobre os requisitos
+## <a name="Requirements"></a> Noções básicas sobre os requisitos
  O design de alto nível de um aplicativo completo com mais eficiência é desenvolvido em conjunto com um modelo de requisitos ou outra descrição das necessidades dos usuários. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).
 
  Se o sistema que você está desenvolvendo um componente em um sistema maior, parte ou todos os seus requisitos podem ser incorporados em interfaces programáticas.
@@ -66,7 +66,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  A quantidade de detalhes que devem ser colocadas em um requisitos ou um modelo de arquitetura depende a escala do projeto e o tamanho e a distribuição da equipe. Uma pequena equipe em um projeto de curto pode ir não mais do que fazer um rascunho de um diagrama de classe de conceitos de negócios e alguns padrões de design; um projeto grande distribuído em mais de uma região precisariam significativamente mais detalhadamente.
 
-##  <a name="BigDecisions"></a> Padrões de arquitetura
+## <a name="BigDecisions"></a> Padrões de arquitetura
  No início do desenvolvimento de um, você precisa escolher as principais tecnologias e os elementos do qual depende o design. As áreas em que essas opções devem ser feitas incluem o seguinte:
 
 -   Opções de tecnologia, como a escolha entre um banco de dados e um sistema de arquivos e a escolha entre um aplicativo de rede e um cliente da web, de base e assim por diante.
@@ -79,7 +79,7 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  As seleções feitas afetam como usar e interpretar o modelo de arquitetura. Por exemplo, em um sistema que usa um banco de dados, associações em um diagrama de classe podem representar relações ou chaves estrangeiras no banco de dados, enquanto em um sistema baseado em arquivos XML, associações podem indicar referências cruzadas que usam XPath. Em um sistema distribuído, mensagens em um diagrama de sequência podem representar as mensagens durante uma transmissão; em um aplicativo autocontido, eles podem representar chamadas de função.
 
-##  <a name="Patterns"></a> Padrões de design
+## <a name="Patterns"></a> Padrões de design
  Um padrão de design é uma estrutura de tópicos de como criar um aspecto específico do software, especialmente para um que se repete em diferentes partes do sistema. Ao adotar uma abordagem uniforme em todo o projeto, reduzir o custo de design, garantir a consistência na interface do usuário e reduzir o custo da compreensão e alterar o código.
 
  Alguns padrões de design geral como observador são bem conhecidos e amplamente aplicável. Além disso, há padrões que são aplicáveis apenas para seu projeto. Por exemplo, em um sistema de vendas da web, haverá várias operações no código onde as alterações são feitas para um pedido de cliente. Para garantir que o estado do pedido seja exibido corretamente em cada estágio, todas essas operações devem seguir um protocolo específico para atualizar o banco de dados.
