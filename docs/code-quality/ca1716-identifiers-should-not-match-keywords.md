@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550603"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858187"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: os identificadores não devem corresponder a palavras-chave
 |||
@@ -51,4 +51,4 @@ ms.locfileid: "45550603"
  Selecione um nome que não aparece na lista de palavras-chave.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Você pode suprimir um aviso nessa regra, se você estiver convencido de que o identificador não confundir os usuários da API, e que a biblioteca é utilizável em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Se você estiver convencido de que o identificador não confundir os usuários da API, e que a biblioteca é utilizável em todos os idiomas disponíveis no .NET Framework, você pode suprimir um aviso nessa regra.

@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566762"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859088"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
-A API de imutabilidade do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualização e modelagem permite que um programa para bloqueio parte ou todo um modelo de linguagem específica do domínio (DSL) para que ele pode ser lido mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar colegas para anotar e analisar um modelo de DSL, mas pode não permitir que alterem o original.
+A API de imutabilidade do SDK de modelagem e visualização do Visual Studio permite que um programa bloquear a parte ou todo um modelo de linguagem específica do domínio (DSL), para que ele pode ser lido mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar colegas para anotar e analisar um modelo de DSL, mas pode não permitir que alterem o original.
 
  Além disso, como autor de uma DSL, você pode definir um *política de bloqueio.* Uma política de bloqueio define quais bloqueios são permitidas, não permitido ou obrigatório. Por exemplo, quando você publica uma DSL, você pode encorajar os desenvolvedores de terceiros para estendê-lo com novos comandos. Mas você também pode usar uma política de bloqueio para impedir que alterar o status somente leitura de partes especificadas do modelo.
 
@@ -97,7 +97,7 @@ partition.SetLocks(Locks.Delete);
 
  Para definir uma política de bloqueio, você deve:
 
--   Criar uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+-   Crie uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
 -   Adicione essa classe para os serviços que estão disponíveis por meio de sua DSL DocData.
 
