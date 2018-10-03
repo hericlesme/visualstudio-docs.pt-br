@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542587"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243946"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio
 
@@ -105,7 +105,9 @@ O impacto no desempenho geral do passo a passo depende de seu aplicativo. A sobr
 ## <a name="known-issues"></a>Problemas Conhecidos  
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se o destino da plataforma de depuração do aplicativo for definido como x86, o IntelliTrace não tirar instantâneos.
 
-    Solução alternativa:
+    Soluções alternativas:
+    * Se você estiver em atualização de aniversário do Windows 10 (RS1) e abaixo da versão 10.0.14393.2273, [instalar KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Se você estiver no Windows 10 Creators Update (RS2) e abaixo da versão 10.0.15063.1112, [instalar KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Instalar ou atualizar para o Windows 10 Fall Creators Update (RS3). 
     * Como alternativa: 
         1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
