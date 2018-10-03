@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 4ef232e64f308699c73c60cbe5b155f1d4ebb725
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811909"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244097"
 ---
 Se você instalou a implantação da Web usando o Web Platform Installer, você pode implantar o aplicativo diretamente do Visual Studio.
 
