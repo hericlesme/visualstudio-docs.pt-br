@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612734"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788026"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar arquivos de símbolo (.pdb) e de origem no depurador do Visual Studio
 Um arquivo de banco de dados (. PDB) do programa, também chamado de um arquivo de símbolo, mapeia os identificadores que você cria no código-fonte para classes, métodos e outros códigos para os identificadores que são usadas em executáveis compilados do seu projeto. O arquivo .pdb também mapeia as instruções no código-fonte para instruções de execução nos arquivos executáveis. O depurador usa essas informações para determinar duas informações cruciais:
@@ -175,35 +175,35 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma DL
 |**Sempre carregar automaticamente**|Adiciona o arquivo de símbolo à lista de arquivos que são automaticamente carregados pelo depurador.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Definir opções do compilador para arquivos de símbolo  
- Quando você compila seu projeto do IDE do VS e use o padrão de **depurar** configuração de build, o C++ e os compiladores gerenciados criam os arquivos de símbolos apropriados para seu código. Também é possível definir opções de compilador na linha de comando para criar arquivos de símbolo.  
+Quando você compila seu projeto do IDE do VS e use o padrão de **depurar** configuração de build, o C++ e os compiladores gerenciados criam os arquivos de símbolos apropriados para seu código. Também é possível definir opções de compilador na linha de comando para criar arquivos de símbolo.  
   
- **Opções do C++**  
+**Opções do C++**  
   
- Um arquivo de banco de dados do programa (.pdb) contém informações de depuração e estado do projeto que permite a vinculação incremental de uma configuração de depuração do seu programa. Um arquivo. PDB é criado quando você compila com [/ZI ou /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (para C/C++).  
+Um arquivo de banco de dados do programa (.pdb) contém informações de depuração e estado do projeto que permite a vinculação incremental de uma configuração de depuração do seu programa. Um arquivo. PDB é criado quando você compila com [/ZI ou /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (para C/C++).  
   
- Na [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], o [/Fd](/cpp/build/reference/fd-program-database-file-name) opção nomeia o arquivo. PDB criado pelo compilador. Quando você cria um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os assistentes, as **/Fd** opção é definida para criar um arquivo. PDB chamado *projeto*. PDB.  
+Na [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], o [/Fd](/cpp/build/reference/fd-program-database-file-name) opção nomeia o arquivo. PDB criado pelo compilador. Quando você cria um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os assistentes, as **/Fd** opção é definida para criar um arquivo. PDB chamado *projeto*. PDB.  
   
- Se você criar seu aplicativo C/C++ usando um makefile e especificar **/ZI** ou **/Zi** sem **/Fd**, você acabará com dois arquivos. PDB:  
+Se você criar seu aplicativo C/C++ usando um makefile e especificar **/ZI** ou **/Zi** sem **/Fd**, você acabará com dois arquivos. PDB:  
   
--   VC*x*. PDB, onde *x* representa a versão do Visual C++, por exemplo, VC11.pdb. Esse arquivo armazena todas as informações de depuração para arquivos OBJ individuais e reside no mesmo diretório que o makefile do projeto.  
+* VC*x*. PDB, onde *x* representa a versão do Visual C++, por exemplo, VC11.pdb. Esse arquivo armazena todas as informações de depuração para arquivos OBJ individuais e reside no mesmo diretório que o makefile do projeto.  
   
--   PDB esse arquivo armazena todas as informações de depuração para o arquivo the.exe. No C/C++, ele reside no subdiretório \debug.  
+* PDB esse arquivo armazena todas as informações de depuração para o arquivo the.exe. No C/C++, ele reside no subdiretório \debug.  
   
- Cada vez que ele cria um arquivo OBJ, o compilador C/C++ mescla informações de depuração em VC*x*. PDB. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como \<Windows. h >, os typedefs desses cabeçalhos serão armazenados apenas uma vez, em vez de estarem em todos os arquivos OBJ.  
+Cada vez que ele cria um arquivo OBJ, o compilador C/C++ mescla informações de depuração em VC*x*. PDB. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como \<Windows. h >, os typedefs desses cabeçalhos serão armazenados apenas uma vez, em vez de estarem em todos os arquivos OBJ.  
   
- O vinculador cria project.pdb, que contém informações de depuração para o arquivo EXE do projeto. O arquivo Project PDB contém informações de depuração completas, incluindo protótipos de função, não apenas as informações de tipo encontradas no VC*x*. PDB. Ambos os arquivos .pdb permitem atualizações incrementais. O vinculador também insere o caminho no arquivo .pdb do arquivo .exe ou .dll que ele cria.  
+O vinculador cria project.pdb, que contém informações de depuração para o arquivo EXE do projeto. O arquivo Project PDB contém informações de depuração completas, incluindo protótipos de função, não apenas as informações de tipo encontradas no VC*x*. PDB. Ambos os arquivos .pdb permitem atualizações incrementais. O vinculador também insere o caminho no arquivo .pdb do arquivo .exe ou .dll que ele cria.  
   
- O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o caminho para o arquivo .pdb no arquivo EXE ou DLL para localizar o arquivo project.pdb. Se o depurador não é possível localizar o arquivo. PDB nesse local, ou se o caminho for inválido (por exemplo, se o projeto foi movido para outro computador), o depurador pesquisará o caminho que contém o arquivo EXE, os caminhos de símbolo especificados na **opções** caixa de diálogo (**Debugging** pasta **símbolos** nó). O depurador não carregará um arquivo .pdb que não corresponde ao executável que está sendo depurado. Se o depurador não pode localizar um arquivo. PDB, um **localizar símbolos** caixa de diálogo for exibida, que permite que você procure por símbolos ou adicione locais ao caminho de pesquisa.  
+O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o caminho para o arquivo .pdb no arquivo EXE ou DLL para localizar o arquivo project.pdb. Se o depurador não é possível localizar o arquivo. PDB nesse local, ou se o caminho for inválido (por exemplo, se o projeto foi movido para outro computador), o depurador pesquisará o caminho que contém o arquivo EXE, os caminhos de símbolo especificados na **opções** caixa de diálogo (**Debugging** pasta **símbolos** nó). O depurador não carregará um arquivo .pdb que não corresponde ao executável que está sendo depurado. Se o depurador não pode localizar um arquivo. PDB, um **localizar símbolos** caixa de diálogo for exibida, que permite que você procure por símbolos ou adicione locais ao caminho de pesquisa.  
   
- **Opções do .NET framework**  
+**Opções do .NET framework**  
   
- Um arquivo de banco de dados do programa (.pdb) contém informações de depuração e estado do projeto que permite a vinculação incremental de uma configuração de depuração do seu programa. Um arquivo. PDB é criado quando você compila com **/Debug**. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera arquivos. PDB, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você deseja gerar arquivos. PDB para um build de versão que você não deseja que seja depurável. Para obter mais informações, consulte [/debug (opções do compilador c#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Um arquivo de banco de dados do programa (.pdb) contém informações de depuração e estado do projeto que permite a vinculação incremental de uma configuração de depuração do seu programa. Um arquivo. PDB é criado quando você compila com **/Debug**. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera arquivos. PDB, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você deseja gerar arquivos. PDB para um build de versão que você não deseja que seja depurável. Para obter mais informações, consulte [/debug (opções do compilador c#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o caminho para o arquivo .pdb no arquivo EXE ou DLL para localizar o arquivo project.pdb. Se o depurador não é possível localizar o arquivo. PDB nesse local, ou se o caminho é inválido, o depurador pesquisará o caminho que contém o arquivo EXE e, em seguida, os caminhos de símbolo especificados na **opções** caixa de diálogo. Esse caminho é geralmente a **Debugging** pasta o **símbolos** nó. O depurador não carregará um arquivo .pdb que não corresponde ao arquivo executável que está sendo depurado. Se o depurador não pode localizar um arquivo. PDB, um **localizar símbolos** caixa de diálogo for exibida, que permite que você procure por símbolos ou adicione locais ao caminho de pesquisa.  
+O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o caminho para o arquivo .pdb no arquivo EXE ou DLL para localizar o arquivo project.pdb. Se o depurador não é possível localizar o arquivo. PDB nesse local, ou se o caminho é inválido, o depurador pesquisará o caminho que contém o arquivo EXE e, em seguida, os caminhos de símbolo especificados na **opções** caixa de diálogo. Esse caminho é geralmente a **Debugging** pasta o **símbolos** nó. O depurador não carregará um arquivo .pdb que não corresponde ao arquivo executável que está sendo depurado. Se o depurador não pode localizar um arquivo. PDB, um **localizar símbolos** caixa de diálogo for exibida, que permite que você procure por símbolos ou adicione locais ao caminho de pesquisa.  
   
- **Aplicativos da Web**  
+**Aplicativos da Web**  
   
- O arquivo de configuração do aplicativo (Web.config) deve ser definido para o modo de depuração. O modo de depuração faz com que o ASP.NET gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo ASP.NET. Visual Studio define isso automaticamente quando você inicia a depuração, se você tiver criado seu projeto do modelo projetos Web.  
+O arquivo de configuração do aplicativo (Web.config) deve ser definido para o modo de depuração. O modo de depuração faz com que o ASP.NET gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo ASP.NET. Visual Studio define isso automaticamente quando você inicia a depuração, se você tiver criado seu projeto do modelo projetos Web.  
   
 ##  <a name="BKMK_Find_source_files"></a> Localizar arquivos de origem  
   
