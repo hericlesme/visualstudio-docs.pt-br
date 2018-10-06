@@ -1,7 +1,7 @@
 ---
 title: Habilitar a depuração para aplicativos ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
-ms.date: 09/21/17
+ms.date: 09/21/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,215 +19,176 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 438e5a96ef07faf399d06ae517afe313a44673b4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
+ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057844"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817328"
 ---
-# <a name="debug-aspnet-applications-in-visual-studio"></a>Depurar aplicativos ASP.NET no Visual Studio
-
-Você pode depurar aplicativos ASP.NET do Visual Studio.
-
-## <a name="requirements"></a>Requisitos
-
-Para seguir as instruções neste tópico, você precisa:
-
-- IIS Express, que é incluído por padrão no Visual Studio 2012 e versões posteriores
-
-    -ou-
-
-- Local IIS web server (versão 8.0 ou superior) que está configurado corretamente e pode executar o aplicativo ASP.NET sem erros.
-
-Se o servidor for remoto, o depurador remoto deve estar executando no computador remoto. Para depurar em um servidor remoto do IIS, consulte [depuração remota ASP.NET em um computador com IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). 
-
-## <a name="configure-debug-settings"></a>Definir configurações de depuração
-
-### <a name="enable-aspnet-debugging-in-the-project-properties"></a>Habilitar depuração ASP.NET nas propriedades do projeto
-
-1. Abra seu projeto ASP.NET no Visual Studio.
-
-2. Clique com botão direito no projeto no **Gerenciador de soluções**, escolha **Properties**e, em seguida, clique no **Web** guia.
-
-    Para alguns tipos de projeto, selecione **Propriedades > Depurar** em vez disso. Para um projeto de Web Forms ASP.NET, clique com botão direito no projeto e selecione **páginas de Propriedades > Opções de inicialização**.
-  
-3.  Sob **depuradores**, selecione o **ASP.NET** caixa de seleção.
-
-    ![Configurações do depurador](../debugger/media/dbg-aspnet-enable-debugging.png "configurações do depurador")
-
-> [!NOTE]
-> Se você criar um novo projeto ASP.NET (**arquivo > Novo projeto**), as configurações de depuração já estão configuradas corretamente.
-
-### <a name="enable-debugging-in-the-webconfig-file"></a>Habilitar a depuração no arquivo Web. config  
-
-Para depurar um aplicativo web, arquivo de Web. config do aplicativo deve ser configurado corretamente. Se você hospedar o aplicativo no IIS ou IIS Express, é necessário um arquivo Web. config.
-
-Para o ASP.NET Core, o arquivo Web. config é criado automaticamente quando o aplicativo é implantado (se ele não ainda estiver presente).
-
-> [!TIP]
-> O processo de implantação pode atualizar as configurações de Web. config. Portanto, antes de tentar depurar, verifique se a configuração da Web. config no servidor.
-  
-1.  No Visual Studio, abra o arquivo do projeto Web. config.  
-  
-    > [!NOTE]  
-    > Você não pode acessar o arquivo Web. config remotamente usando um navegador da Web. Por razões de segurança, o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] configura o servidor IIS da Microsoft para ajudar a impedir o acesso direto do navegador aos arquivos Web.config. Se você tentar acessar um arquivo de configuração usando um navegador, você obterá um erro de acesso HTTP 403 (proibido).  
-  
-2.  Localize o elemento `configuration/system.web/compilation`. Se o elemento de compilação não existir, crie-o.
-
-    Web.config é um arquivo XML e, assim, contém as seções aninhadas marcadas por aspas.
-  
-3.  Se o elemento `compilation` não contiver um atributo `debug`, adicione o atributo ao elemento.  
-  
-4.  Verifique se o valor do atributo `debug` está definido como `true`.  
-  
-O arquivo Web. config deve ser semelhante ao seguinte exemplo:
-
-> [!NOTE]
-> Este exemplo é um arquivo Web. config parcial. Seções XML adicionais estão geralmente presentes entre a configuração e os elementos System. Web. O elemento de compilação também pode conter outros elementos e atributos.
-  
-#### <a name="example"></a>Exemplo  
-  
-```xml
-<configuration>  
-    ...  
-    <system.web>  
-        <compilation  
-            debug="true"  
-            ...  
-        >  
-        ...  
-        </compilation>  
-    </system.web>  
-</configuration>  
-```
-
-Se você estiver usando um servidor externo em vez do servidor de IIS Express padrão, você também deve verificar se que o `targetFramework` valor do atributo corresponde à configuração no servidor.
-
-> [!IMPORTANT]
-> Para melhor desempenho, defina um aplicativo de produção `debug=false` e especificar um build de versão quando você compila e publica o aplicativo.
-
-## <a name="configure-project-settings-for-the-server"></a>Definir as configurações de projeto para o servidor
-
-Para depurar em um servidor web local, defina as propriedades do projeto. Para depuração em um servidor remoto, siga as instruções mais abrangentes, descritas em [ASP.NET de depuração remota no IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) em vez disso.
-
-1. No **Web** guia do projeto de propriedades, selecione **IIS Express** ou **servidor externo** sob o **Server** configurações. (Para alguns tipos de projeto, essas configurações aparecem sob o **depurar** guia em vez disso.)
-
-    ![Configurações do servidor](../debugger/media/dbg-aspnet-server-settings.png "as configurações do servidor")
-
-    O IIS Express é o servidor padrão para o ASP.NET e normalmente não exige nenhuma configuração especial. Essa é a maneira mais fácil para depurar um aplicativo ASP.NET.
-
-    Para um projeto de Web Forms ASP.NET, clique com botão direito no projeto, escolha **páginas de Propriedades > Opções de inicialização**e selecione **usar o servidor Web padrão** ou **usar servidor personalizado** ( em vez de **servidor externo**).
-
-    ![Configurações do servidor para o aplicativo Web Forms](../debugger/media/dbg-aspnet-server-settings-webforms.png "configurações do servidor para o aplicativo Web Forms")
-
-2. Se você escolher um servidor de externo (personalizado), insira a URL correta na **URL do projeto** (ou **Base URL**) campo.
-
-    Se o servidor externo for IIS local, o IIS deve ser instalado e configurado corretamente. Por exemplo, a versão correta do ASP.NET deve ser configurada no IIS. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Se você quiser testar a implantação, bem como de depuração, consulte [Deploying testar](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
-
-    Se o servidor externo [remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), anexar ao processo em vez disso, e essas configurações do projeto não são usadas para depuração.
-
-## <a name="local-iis-web-server-configure-iis"></a>(Servidor web do IIS local) Configurar o IIS
-
-Para o IIS Express, você não precisa configurar o servidor web (ignore esta seção). O IIS Express é recomendado para testes iniciais.
-
-Se você estiver usando o servidor de web do IIS local, siga estas etapas.
-
-1. Certifique-se de que o IIS está instalado corretamente. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
-
-    * Certifique-se de que você instale a versão correta do ASP.NET no servidor. Use o Web Platform Installer (WebPI) para instalar o ASP.NET 4.5 (no nó do servidor no Windows Server 2012 R2, escolha **obter novos componentes do Web Platform** e, em seguida, pesquise por ASP.NET). Para instalar o ASP.NET Core, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
-
-    > [!NOTE]
-    > Se você estiver usando o Windows Server 2008 R2, instale o ASP.NET 4, em vez de usar este comando:
-
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
-
-2. Abra o **serviços de informações da Internet (IIS) Manager**. (No painel esquerdo do Gerenciador do servidor, selecione **IIS**. O servidor com o botão direito e selecione **serviços de informações da Internet (IIS) Manager**.)
-
-3. Sob **conexões** no painel esquerdo, vá até **Sites**.
-
-4. Clique com botão direito do **Site padrão** nó e selecione **Adicionar aplicativo**.
-
-5. Defina a **Alias** campo **MyASPApp**, aceite o padrão do Pool de aplicativos (**DefaultAppPool**) e defina o **caminho físico** para  **C:\inetpub\myNewFolder** (criar uma nova pasta para o aplicativo).
-
-6. Sob **conexões**, selecione **Pools de aplicativos**. Abra **DefaultAppPool** e defina o campo de pool de aplicativos para o valor correto para seu aplicativo (uso ASP.NET 4 para o ASP.NET 4.5. Use **sem código gerenciado** para ASP.NET Core).
-
-## <a name="local-iis-web-server-deploy-the-app"></a>(Servidor web do IIS local) Implantar o aplicativo
-
-Para o IIS Express, o aplicativo web é implantado automaticamente quando você iniciar a depuração (ignore esta seção).
-
-Se você estiver usando o servidor de web do IIS local, siga estas etapas. Há diferentes maneiras de publicar seu aplicativo no IIS. Nestas etapas, mostramos como criar e usar um perfil de publicação para que você possa implantar usando o sistema de arquivos.
-
-1. Reinicie o Visual Studio como administrador.
-
-    Para implantar usando esse método, você precisa de privilégios de administrador.
-
-2. No Visual Studio, clique com botão direito no projeto e escolha **Publish** (para formulários da Web, use **Publicar Web App**).
-
-3. Escolher **IIS, FTP, etc.** e clique em **publicar**.
-
-    ![Publicar no IIS](../debugger/media/dbg-aspnet-local-iis.png "publicar no IIS")
-
-    Para um aplicativo de formulários da Web, escolha **personalizado** na caixa de diálogo Publicar, insira um nome de perfil e escolha **Okey**.
-
-4. No **método de publicação** campo, escolha **sistema de arquivos**.
-
-5. Para o **local de destino**, clique no **procurar** botão.
-
-6. (ASP.NET Core) Escolher **sistema de arquivos** e selecione a pasta em que você criou anteriormente para o aplicativo.
-
-6. (ASP.NET) Escolher **Local IIS**e selecione o site da web, você criou anteriormente e, em seguida, clique em **abrir**.
-
-    ![Publicar no IIS](../debugger/media/dbg-aspnet-local-iis-select-site.png "publicar no IIS")
-
-    > [!TIP]
-    > Se você vir uma mensagem informando que o servidor web não está configurada corretamente, certifique-se de que a versão correta do ASP.NET é instalada para o IIS.
-
-7. Clique em **próxima** e escolha um **depurar** configuração.
-
-    > [!NOTE]
-    > Se você implantar com uma configuração de versão, isso define `debug=false` no arquivo de Web. config do servidor.
-
-8. Clique em **salve** para salvar as configurações de publicação e, em seguida, clique em **publicar**.
-
-    > [!CAUTION]
-    >  Se você precisar fazer alterações no código ou recompilação, você deve republicar e repita esta etapa. O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
-
-## <a name="set-a-breakpoint-and-start-debugging"></a>Defina um ponto de interrupção e iniciar a depuração
-
-1. Em seu projeto no Visual Studio, definir um ponto de interrupção em algum código que você sabe que será executado.
-
-2. Para iniciar a depuração, pressione **F5** (**Depurar > Iniciar depuração**).
-
-3. Execute ações para executar o código que contém o ponto de interrupção.
-
-    A pausa do depurador em que você definiu o ponto de interrupção.
-
-### <a name="local-iis-troubleshooting-cannot-hit-the-breakpoint"></a>(IIS) local Solução de problemas: Não é possível atingir o ponto de interrupção
+# <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
+
+Você pode depurar aplicativos ASP.NET e ASP.NET Core no Visual Studio. O processo é diferente entre o ASP.NET e ASP.NET Core, e se você executá-lo no IIS Express ou um servidor IIS local. 
+
+>[!NOTE]
+>As seguintes etapas e configurações se aplicam somente a depuração de aplicativos em um servidor local. Servidor de depuração de aplicativos em um IIS remoto usa **anexar ao processo**e ignora essas configurações. Para obter mais informações e instruções para depuração remota de ASP.NET aplicativos no IIS, consulte [depuração remota ASP.NET em um computador IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) ou [ASP.NET Core de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
+
+O servidor interno do IIS Express é incluído com o Visual Studio. O IIS Express é o servidor de depuração padrão para projetos do ASP.NET e ASP.NET Core e é pré-configurado. É a maneira mais fácil para depurar e ideal para depuração e teste inicial. 
+
+Você também pode depurar um aplicativo ASP.NET ou ASP.NET Core em um servidor IIS local (versão 8.0 ou superior) que está configurado para executar o aplicativo. Para depurar no IIS local, você deve atender aos seguintes requisitos: 
+
+<a name="iis"></a>
+- Selecione **tempo de desenvolvimento, suporte ao IIS** durante a instalação do Visual Studio. (Se necessário, execute novamente o instalador do Visual Studio, selecione **modificar**e adicionar esse componente.)
+- Estar executando o Visual Studio como administrador. 
+- Instalar e configurar corretamente o IIS com as versões apropriadas do ASP.NET e/ou ASP.NET Core. Para obter mais informações e instruções, consulte [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou [Host ASP.NET Core no Windows com o IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/index).
+- Verifique se que o aplicativo é executado no IIS sem erros.
+
+## <a name="debug-aspnet-apps"></a>Depurar aplicativos ASP.NET 
+
+O IIS Express é o padrão e é pré-configurado. Se você estiver depurando no IIS Local, verifique se você atende a [requisitos para depuração local do IIS](#iis). 
+
+1. Selecione o projeto do ASP.NET no Visual Studio **Gerenciador de soluções** e clique no **Properties** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
+   
+1. Selecione o **Web** guia.
+   
+1. No **propriedades** painel, em **servidores**, 
+   - Para o IIS Express, selecione **IIS Express** na lista suspensa.
+   - Para o IIS local,
+     1. Selecione **IIS Local** na lista suspensa.
+     1. Ao lado de **URL do projeto** campo, selecione **criar diretório Virtual**, se você ainda não configurou o aplicativo no IIS.
+   
+1. Sob **depuradores**, selecione **ASP.NET**.
+   
+   ![As configurações do depurador ASP.NET](media/dbg-aspnet-enable-debugging2.png "as configurações do depurador ASP.NET")
+   
+1. Use **arquivo** > **salvar itens selecionados** ou **Ctrl**+**S** para salvar as alterações. 
+   
+1. Para depurar o aplicativo, em seu projeto, definir pontos de interrupção no código. Na barra de ferramentas do Visual Studio, verifique se a configuração é definida como **Debug**, e o navegador que você deseja é exibido na **IIS Express (\<nome do navegador >)** ou **IIS Local (\< Nome do navegador >)** no campo de emulador. 
+   
+1. Para iniciar a depuração, selecione **IIS Express (\<nome do navegador >)** ou **IIS Local (\<nome do navegador >)** na barra de ferramentas, selecione **iniciar depuração**partir de **depurar** menu, ou pressione **F5**. O depurador faz uma pausa nos pontos de interrupção. Se o depurador não pode atingir os pontos de interrupção, consulte [solucionar problemas de depuração](#troubleshoot-debugging).
+
+## <a name="debug-aspnet-core-apps"></a>Depurar aplicativos ASP.NET Core 
+
+O IIS Express é o padrão e é pré-configurado. Se você estiver depurando no IIS Local, verifique se você atende a [requisitos para depuração local do IIS](#iis). 
+
+1. Selecione o projeto do ASP.NET Core no Visual Studio **Gerenciador de soluções** e clique no **Properties** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
+
+1. Selecione a guia **Depurar**.
+   
+1. No **propriedades** painel, ao lado **perfil**, 
+   - Para o IIS Express, selecione **IIS Express** na lista suspensa.
+   - Para o IIS local, selecione o nome do aplicativo na lista suspensa ou selecione **New**, crie um novo nome de perfil e selecione **Okey**.
+   
+1. Lado **inicie**, selecione **IIS Express** ou **IIS** na lista suspensa. 
+   
+1. Certifique-se **Iniciar navegador** está selecionado.
+   
+1. Sob **variáveis de ambiente**, verifique se **ASPNETCORE_ENVIRONMENT** está presente com um valor de **desenvolvimento**. Se não, selecione **adicionar** e adicioná-lo.
+   
+   ![Configurações do depurador do ASP.NET Core](../debugger/media/dbg-aspnet-enable-debugging3.png "configurações do depurador do ASP.NET Core")
+   
+1. Use **arquivo** > **salvar itens selecionados** ou **Ctrl**+**S** para salvar as alterações. 
+   
+1. Para depurar o aplicativo, em seu projeto, definir pontos de interrupção no código. Na barra de ferramentas do Visual Studio, verifique se a configuração é definida como **Debug**e qualquer **IIS Express**, ou o novo nome de perfil do IIS, é exibido no campo de emulador. 
+   
+1. Para iniciar a depuração, selecione **IIS Express** ou  **\<nome do perfil do IIS >** na barra de ferramentas, selecione **iniciar depuração** do **depurar** menu, ou pressione **F5**. O depurador faz uma pausa nos pontos de interrupção. Se o depurador não pode atingir os pontos de interrupção, consulte [solucionar problemas de depuração](#troubleshoot-debugging).
+
+## <a name="troubleshoot-debugging"></a>Solucionar problemas de depuração
+
+Se a depuração de IIS local não pode Avançar para o ponto de interrupção, siga estas etapas para solucionar problemas. 
 
 1. Inicie o aplicativo web do IIS e certificar-se de que ele seja executado corretamente. Deixe o aplicativo web em execução.
+   
+2. No Visual Studio, selecione **Depurar > Anexar ao processo** ou pressione **Ctrl**+**Alt**+**P**, e conectar-se ao processo do ASP.NET ou ASP.NET Core (normalmente **w3wp.exe** ou **dotnet.exe**). Para obter mais informações, consulte [anexar ao processo](attach-to-running-processes-with-the-visual-studio-debugger.md) e [como localizar o nome do processo do ASP.NET](how-to-find-the-name-of-the-aspnet-process.md).
 
-2. No Visual Studio, selecione **Depurar > Anexar ao processo** e conecte-se ao processo do ASP.NET (normalmente **w3wp.exe** ou **dotnet.exe**). Para obter mais informações, consulte [anexar ao processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+Se você pode conectar-se e atingir o ponto de interrupção usando **anexar ao processo**, mas não usando **Debug** > **iniciar depuração** ou **F5**, uma configuração provavelmente está incorreta nas propriedades do projeto. Se você usar um arquivo de HOSTS, certifique-se de que também está configurado corretamente.
 
-    Se você for capaz de se conectar usando **anexar ao processo** e pode atingir um ponto de interrupção, mas não é possível iniciar a depuração usando **F5**, em seguida, é provável que uma configuração está incorreta nas propriedades do projeto. Se você estiver usando um arquivo de HOSTS, verifique se ele está configurado corretamente.
+## <a name="configure-debugging-in-the-webconfig-file"></a>Configurar a depuração no arquivo Web. config  
 
+Projetos do ASP.NET possuem *Web. config* arquivos por padrão, que contêm os dois configuração e inicialização informações do aplicativo, incluindo configurações de depuração. O *Web. config* arquivos devem ser configurados corretamente para depuração. O **propriedades** configurações de atualização de seções anteriores a *Web. config* arquivos, mas você também pode configurá-las manualmente. 
+
+> [!NOTE]
+> Projetos do ASP.NET Core não têm inicialmente *Web. config* arquivos, mas use *appSettings. JSON* e *launchsettings. JSON* arquivos de configuração do aplicativo e inicialização informações. Implantar o aplicativo cria uma *Web. config* arquivo ou arquivos no projeto, mas eles normalmente não contêm informações de depuração.
+
+> [!TIP]
+> O processo de implantação pode atualizar o *Web. config* configurações, portanto, antes de tentar a depuração, verificam se o *Web. config* está configurado para depuração.
   
-## <a name="robust-programming"></a>Programação robusta  
-O [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] detecta automaticamente todas as alterações nos arquivos Web.config e aplica novos parâmetros de configuração. Não é necessário reiniciar o computador ou reiniciar o servidor IIS para que as alterações entrem em vigor.  
+**Para configurar manualmente uma *Web. config* arquivo para depuração:**
+
+1. No Visual Studio, abra o projeto do ASP.NET *Web. config* arquivo.  
   
-Um site pode conter vários diretórios e subdiretórios virtuais, e arquivos Web.config podem existir em cada um. Os aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] herdam as configurações de arquivos Web.config em níveis mais altos no caminho da URL. Os arquivos de configuração hierárquicos permitem modificar configurações de vários aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ao mesmo tempo, como, por exemplo, para todos os aplicativos abaixo deles na hierarquia. No entanto, se `debug` é definido em um arquivo inferior na hierarquia, ele substitui o valor mais alto.  
+2. *Web. config* é um arquivo XML, portanto, contém as seções aninhadas marcadas por aspas. Localize o `configuration/system.web/compilation` seção. (Se o `compilation` elemento não existir, crie-o.)
   
-Por exemplo, você poderia especificar `debug="true"` em www.microsoft.com/aaa/Web.config e qualquer aplicativo na pasta aaa ou em qualquer subpasta aaa herdará essa configuração. Portanto, se sua [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo estiver em www.microsoft.com/aaa/bbb, ele herda essa configuração, como todos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos em www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd e assim por diante. A única exceção será se um desses aplicativos substituir a configuração por meio de seu próprio arquivo mais baixo Web.config.  
+3. Certifique-se de que o `debug` de atributo na `compilation` é definido como `true`. (Se o `compilation` elemento não contém uma `debug` do atributo, adicioná-lo e defina-o como `true`.) 
   
+  Se você estiver usando o IIS local em vez do servidor de IIS Express padrão, verifique se o `targetFramework` valor no atributo de `compilation` elemento coincide com a estrutura no servidor IIS.
+  
+  O `compilation` elemento do *Web. config* arquivo deve ser semelhante ao seguinte exemplo:
+
+  > [!NOTE]
+  > Este exemplo é um parcial *Web. config* arquivo. Há seções adicionais geralmente XML o `configuration` e `system.web` elementos e o `compilation` elemento também pode conter outros elementos e atributos.
+  
+  ```xml
+  <configuration>  
+      ...  
+      <system.web>  
+          <compilation  debug="true"  targetFramework="4.6.1" ... > 
+             ...  
+          </compilation>  
+      </system.web>  
+  </configuration>  
+  ```
+
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] detecta automaticamente qualquer alteração feita *Web. config* arquivos e aplica as novas definições de configuração. Você não precisa reiniciar o computador ou o servidor IIS para que as alterações entrem em vigor.  
+  
+Um site pode conter vários diretórios e subdiretórios virtuais, com *Web. config* arquivos em cada um deles. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos herdam definições de configuração de *Web. config* arquivos em níveis mais altos no caminho da URL. O hierárquica *Web. config* configurações do arquivo se aplicam a todos os [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos abaixo na hierarquia. Definindo uma configuração diferente uma *Web. config* inferiores na hierarquia do arquivo substituirá as configurações no arquivo de mais alto.  
+  
+Por exemplo, se você especificar `debug="true"` na *www.microsoft.com/aaa/web.config*, qualquer aplicativo na *aaa* pasta ou qualquer subpasta *aaa* herdará essa configuração, exceto se um desses aplicativos substitui a configuração com sua própria *Web. config* arquivo.  
+  
+## <a name="publish-in-debug-mode-using-the-file-system"></a>Publicar no modo de depuração usando o sistema de arquivos
+
+Há várias maneiras de publicar aplicativos para o IIS. Estas etapas mostram como criar e implantar um perfil de publicação usando o sistema de arquivos de depuração. Para fazer isso, você deve estar executando o Visual Studio como administrador. 
+
 > [!IMPORTANT]
-> Habilitar o modo de depuração muito afeta o desempenho do seu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo. Lembre-se de desabilitar o modo de depuração antes de implantar um aplicativo de versão ou conduzir medidas de desempenho.  
-  
+> Se você alterar seu código ou recompilação, você deve repetir estas etapas para publicar novamente. 
+
+1. No Visual Studio, clique com botão direito no projeto e escolha **publicar**.
+
+3. Escolher **IIS, FTP, etc** e clique em **publicar**.
+
+    ![Publicar no IIS](media/dbg-aspnet-local-iis.png "publicar no IIS")
+
+4. No **CustomProfile** caixa de diálogo, para **método de publicação**, escolha **sistema de arquivos**.
+
+5. Para **local de destino**, selecione **procurar** (**...** ).
+   
+   - Para o ASP.NET, selecione **Local IIS**, selecione o site que você criou para o aplicativo e, em seguida, selecione **abrir**.
+     
+     ![Publicar para o ASP.NET no IIS](media/dbg-aspnet-local-iis1.png "publicar ASP.NET no IIS")
+     
+   - Para o ASP.NET Core, selecione **sistema de arquivos**, selecione a pasta que você configurar para o aplicativo e, em seguida, selecione **abrir**.
+
+1. Selecione **Avançar**. 
+
+1. Sob **Configuration**, selecione **depurar** na lista suspensa.
+
+1. Selecione **Salvar**.
+
+1. No **Publish** caixa de diálogo, certifique-se **CustomProfile** (ou o nome do perfil que você acabou de criar) for exibida, e **LastUsedBuildConfiguration** é definido como  **Depurar**. 
+
+1. Selecione **Publicar**.
+
+    ![Publicar no IIS](media/dbg-aspnet-local-iis-select-site.png "publicar no IIS")
+
+> [!IMPORTANT]
+> Modo de depuração reduz consideravelmente o desempenho do seu aplicativo. Para melhor desempenho, defina `debug="false"` no *Web. config* e especificar um build de versão quando você implanta um aplicativo de produção ou conduzir medidas de desempenho.  
+
 ## <a name="see-also"></a>Consulte também  
 [Depuração do ASP.NET: requisitos do sistema](aspnet-debugging-system-requirements.md)   
 [Como: executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)   
 [Como: localizar o nome do processo do ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
-[Depurar aplicativos Web implantados](debugging-deployed-web-applications.md)   
-[Passo a passo: Depurando um formulário da Web](walkthrough-debugging-a-web-form.md)   
+[Depurar aplicativos web implantados](debugging-deployed-web-applications.md)   
+[Passo a passo: Depurando um formulário da web](walkthrough-debugging-a-web-form.md)   
 [Como: depurar exceções do ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Depurar aplicativos Web: erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)
+[Depurar aplicativos web: erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)
   
