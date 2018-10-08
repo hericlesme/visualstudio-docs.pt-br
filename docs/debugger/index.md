@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 1fd0777cdb30a5a458a0578129cf22607fd8c1e3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 68dfbdab841e425926268e40345d0370e4aeee87
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281202"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542358"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio
 
@@ -110,7 +110,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/view-historical-application-state">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -120,7 +120,7 @@ O depurador do Visual Studio ajuda você a observar o comportamento em tempo de 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Exibir instantâneos do IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>Inspecionar estados anteriores do aplicativo (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
