@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512233"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863940"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e progresso para o Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificação  
@@ -213,7 +213,7 @@ ms.locfileid: "39512233"
  O controle giratório (também conhecido como um "anel de progresso") é um indicador de progresso indeterminado usado principalmente em relação à interface do usuário contextual. Exiba um controle giratório em estreita proximidade com seu conteúdo relacionado, como um cabeçalho de categoria textual, o sistema de mensagens ou o controle.  
   
 ##### <a name="cursor-feedback"></a>Comentários do cursor  
- Operações que levam entre segundos 2 a 7, fornece comentários de cursor. Normalmente, isso significa usar o cursor de espera fornecido pelo sistema operacional. Para obter diretrizes, consulte o artigo do MSDN [Cursors.Wait propriedade](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Operações que levam entre segundos 2 a 7, fornece comentários de cursor. Normalmente, isso significa usar o cursor de espera fornecido pelo sistema operacional. Para obter diretrizes, consulte o artigo do MSDN [Cursors.Wait propriedade](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Locais de indicador de progresso  
   
