@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511986"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863992"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Texto de fonte de ambiente em negrito deve seguir o preenchimento e o espaçamento de altura de linha padrão.  
   
 ## <a name="see-also"></a>Consulte também  
- [MSDN: Fontes (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Texto da Interface do usuário (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: Fontes (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Texto da Interface do usuário (Windows)](/windows/desktop/uxguide/text-ui)
