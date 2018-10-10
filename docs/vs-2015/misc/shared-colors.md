@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464126"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881170"
 ---
 # <a name="shared-colors"></a>Cores compartilhadas
 Inserir introdução aqui.  
@@ -1085,7 +1085,7 @@ Inserir introdução aqui.
 |![Barra de informações](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Barra de informações**|Borda|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Barra de rolagem  
- Barras de rolagem são denominadas pelo ambiente do Visual Studio e não precisará ser o tema. No entanto, você pode decidir o que você deseja aproveitar as cores usadas nas barras de rolagem para que sua interface do usuário apareça sempre consistente com isso esta parte do ambiente do Visual Studio.  
+ Barras de rolagem são denominadas pelo ambiente do Visual Studio e não precisará ser o tema. No entanto, você pode decidir o que você deseja aproveitar as cores usadas nas barras de rolagem para que sua interface do usuário apareça sempre consistente com essa parte do ambiente do Visual Studio.  
   
  ![Corte de funcionários da barra de rolagem](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47587385"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879286"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um aplicativo Web do ASP.NET compilado dinamicamente e coletar dados de memória usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ A versão mais recente deste tópico pode ser encontrada em [como: instrumentar 
 Este tópico descreve como usar as ferramentas de linha de comando de Ferramentas de criação de perfil de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para coletar dados detalhados de alocação de memória .NET e de tempo de vida do objeto para um aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilado dinamicamente usando o método de criação de perfil por instrumentação.  
   
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar as ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Para coletar dados de desempenho de um aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], modifique o arquivo web.config do aplicativo de destino para habilitar a ferramenta [VSInstr.exe](../profiling/vsinstr.md) para instrumentar os arquivos do aplicativo compilado dinamicamente. Use a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para configurar o servidor que hospeda o aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e habilite a criação de perfil de memória do .NET, definindo as variáveis de ambiente adequadas e, em seguida, reinicie o computador.  
   

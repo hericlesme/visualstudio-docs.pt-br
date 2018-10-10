@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587845"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880676"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação de perfil do site rápida com VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
 > [!WARNING]
 >  Os dados TIP (criação de perfil de interação entre camadas) podem ser coletados usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Para coletar dados TIP no Windows 8 ou o Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
+>  Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
   
  Para coletar dados de interação entre camadas com os dados de amostragem:  
   

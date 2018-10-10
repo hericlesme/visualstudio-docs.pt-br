@@ -14,17 +14,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cd00bf08a48c1763ab72e6b30579e81e870c1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462473"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880806"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar ações rápidas com lâmpadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](/visualstudio/).  
   
 As lâmpadas são um novo recurso de produtividade no Visual Studio 2015. Eles são ícones que aparecem no editor do Visual Studio e que você pode clicar para realizar ações rápidas, incluindo a refatoração e correção de erros. As lâmpadas levam a assistência de correção de erros e refatoração para um único ponto focal, em geral, exatamente na linha em que você está digitando.  
   

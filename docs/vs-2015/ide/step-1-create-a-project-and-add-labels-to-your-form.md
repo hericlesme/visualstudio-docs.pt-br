@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a799ebced2f790d94a4062b663b59dfa3fa41c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464259"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880910"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 > [!NOTE]
 >  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, consulte [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-create-a-project-and-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário  
+### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário  
   
 1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   

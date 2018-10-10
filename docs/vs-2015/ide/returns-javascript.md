@@ -17,17 +17,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfe2c3d8e9c91927f7f4d0848b8d180132646614
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733fa3706eb7c8eeef6a8e8243eaeeac6d1b0f78
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464853"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879714"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;Retorna&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](/visualstudio/).  
   
 Especifica informações sobre a documentação para o resultado de uma chamada de método ou função.  
   

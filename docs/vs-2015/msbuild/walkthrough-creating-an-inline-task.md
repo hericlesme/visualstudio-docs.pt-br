@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d5931d0871b0a240b0702d865787171b9acf759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463446"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880988"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Instruções passo a passo: criando uma tarefa embutida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,7 +244,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   
 -   `Files` é um parâmetro de entrada de lista de item obrigatório que tem um valor que é uma lista de arquivos a serem pesquisados em busca da correspondência. Neste exemplo, `Files` é definido como o item `Compile`, que lista os arquivos de origem do projeto.  
   
--   `Result` é um parâmetro de saída que tem um valor que é a lista de arquivos que têm conteúdo que corresponde à expressão regular.  
+-   `Result` é um parâmetro de saída que tem um valor que é a lista de arquivos com o conteúdo que corresponde à expressão regular.  
   
  Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa RegX. A tarefa RegX lê todos os arquivos e retorna a lista de arquivos que correspondem à expressão regular. Essa lista é retornada como o parâmetro de saída `Result`, que é emitido como o item `MatchedFiles` do MSBuild.  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462821"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880118"
 ---
 # <a name="install-visual-studio-2015"></a>Instalar o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -203,7 +203,7 @@ Esta página inclui informações detalhadas para ajudá-lo com a instalação *
 |-----------|-----------------|  
 |[Criar uma instalação do Offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Descreve como instalar o Visual Studio quando você não está conectado à Internet.
 |[Instalar versões do Visual Studio lado a lado](../install/install-visual-studio-versions-side-by-side.md)|Fornece informações sobre como instalar várias versões do Visual Studio no mesmo computador.|  
-|[Usar parâmetros de linha de comando para instalar o Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Lista os parâmetros de linha de comando que você pode usar ao instalar o Visual Studio em um prompt de comando.|  
+|[Usar parâmetros de linha de comando para instalar o Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Lista os parâmetros de linha de comando que você pode usar ao instalar o Visual Studio em um prompt de comando.|  
 |[Desinstalar o Visual Studio](../install/uninstall-visual-studio.md)|Descreve como desinstalar o Visual Studio.|  
 |[Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md)|Fornece informações sobre as opções de implantação do Visual Studio.|  
 |[A Biblioteca de Imagens do Visual Studio](../designers/the-visual-studio-image-library.md)|Fornece informações sobre como instalar os gráficos que podem ser usados em aplicativos do Visual Studio.|  

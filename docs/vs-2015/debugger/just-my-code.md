@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475988"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879974"
 ---
 # <a name="just-my-code"></a>Apenas Meu Código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
 |-|-|  
 |**MyCode**|Código do usuário que você possui e controla.|  
 |**LibraryCode**|Código de não usuário de bibliotecas que você usa com frequência e do qual seu aplicativo depende para funcionar corretamente (por exemplo WinJS ou jQuery).|  
-|**UnrelatedCode**|Código de não usuário que pode ser executado no aplicativo, mas que você não possui e do qual seu aplicativo não depende diretamente para funcionar corretamente (por exemplo, o SDK de publicidade que exibe anúncios). Em projetos da Windows Store, todo código que é carregado no seu aplicativo a partir de um URI HTTP ou HTTPS também é considerado UnrelatedCode.|  
+|**UnrelatedCode**|Código de não usuário que pode ser executado em seu aplicativo, mas você não possui e seu aplicativo não depende diretamente para funcionar corretamente (por exemplo, o SDK de publicidade que exibe anúncios). Em projetos da Windows Store, todo código que é carregado no seu aplicativo a partir de um URI HTTP ou HTTPS também é considerado UnrelatedCode.|  
   
  O depurador do JavaScript classifica automaticamente estes tipos de código:  
   

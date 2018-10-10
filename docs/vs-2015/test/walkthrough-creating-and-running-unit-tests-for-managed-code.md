@@ -19,12 +19,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a134510d67ff66b5508233bda9034e51bbdb050a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463184"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881105"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Instruções passo a passo: criando e executando testes de unidade para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ public void Debit(double amount)
   
 4.  Na caixa **Nome**, insira BankTest e, em seguida, escolha **OK**.  
   
-     O projeto **BankTests** projeto é adicionado á solução **Banco**.  
+     O projeto **BankTests** é adicionado à solução **Bank**.  
   
 5.  No projeto **BankTests** adicione uma referência à solução **Banco**.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473731"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880715"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Você pode baixar as ferramentas remotas diretamente no dispositivo ou no servid
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Para baixar e instalar as ferramentas remotas
   
-1.  No computador servidor ou dispositivo que você deseja depurar (em vez do computador executando o Visual Studio), obtenha a versão correta das ferramentas remotas.
+1.  No dispositivo ou servidor máquina que você deseja depurar (em vez do computador que executa o Visual Studio), obtenha a versão correta das ferramentas remotas.
 
     |Versão|Link|Observações|
     |-|-|-|
@@ -59,7 +59,7 @@ Você pode baixar as ferramentas remotas diretamente no dispositivo ou no servid
     > [!IMPORTANT]
     >  Recomendamos que você instale a versão mais recente das ferramentas remotas que corresponde à sua versão do Visual Studio. Versões incompatíveis não são recomendadas.  
     >   
-    >  Além disso, você deve instalar as ferramentas remotas que têm a mesma arquitetura de sistema operacional no qual você deseja instalá-lo. Em outras palavras, se você deseja depurar um aplicativo de 32 bits em um um computador remoto executando um sistema operacional de 64 bits, você deve instalar a versão de 64 bits das ferramentas remotas no computador remoto.  
+    >  Além disso, você deve instalar as ferramentas remotas que têm a mesma arquitetura de sistema operacional no qual você deseja instalá-lo. Em outras palavras, se você quiser depurar um aplicativo de 32 bits em um computador remoto executando um sistema operacional de 64 bits, você deve instalar a versão de 64 bits das ferramentas remotas no computador remoto.  
   
 3.  Quando você terminar de baixar o arquivo executável, siga as instruções para instalar o aplicativo no computador remoto. Consulte [instruções de instalação](#bkmk_setup)
 

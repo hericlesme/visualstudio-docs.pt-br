@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462368"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880058"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 |SortPriority|REG_DWORD|Definir SortPriority para controlar a ordem na qual os modelos são exibidos na **Adicionar Novo Item** caixa de diálogo. Valores maiores de SortPriority aparecem anteriormente na lista de modelos.|  
   
 ### <a name="registering-file-filters"></a>Filtros de arquivo do registro  
- Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o os **abrir arquivo** caixa de diálogo é:  
+ Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o **abrir arquivo** caixa de diálogo é:  
   
  **Arquivos Visual c# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
   

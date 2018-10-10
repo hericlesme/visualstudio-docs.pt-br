@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474135"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879184"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do Administrador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte o [guia do administrador do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Para obter a documentação mais recente do Visual Studio 2017, consulte o [guia do administrador do Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador de destino atende o [requisitos mínimos de instalação](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Você pode criar um compartilhamento de rede, executando o arquivo de instalação com o argumento /layout (conforme descrito na [criar uma instalação Offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página) e, em seguida, copiá-lo do computador local para o compartilhamento de rede. Se você estiver usando um arquivo ISO, você pode montar o ISO e compartilhá-lo ou copiar o ISO em um compartilhamento de rede.  
   
