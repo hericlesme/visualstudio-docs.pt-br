@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467727"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880223"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Análise para chaves correspondentes  
  Este exemplo mostra o fluxo de controle para correspondência de uma chave de fechamento que o usuário digitou. Nesse processo, o que é usado para colorização de scanner também é usado para determinar o tipo de token e se o token pode disparar uma operação de correspondência de chaves. Se o gatilho for encontrado, o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método é chamado para localizar a chave correspondente. Por fim, as duas chaves são realçadas.  
   
- Mesmo que as chaves são usadas em nomes de gatilhos e analisar as razões, esse processo não é limitado a chaves reais. Há suporte para qualquer par de caracteres que é especificada para ser uma correspondência de par. Os exemplos incluem (e), \< e >, e [e].  
+ Mesmo que as chaves são usadas em nomes de gatilhos e analisar as razões, esse processo não é limitado a chaves reais. Há suporte para qualquer par de caracteres que é especificado como sendo um par correspondente. Os exemplos incluem (e), \< e >, e [e].  
   
  Suponha que o serviço de linguagem dá suporte a chaves correspondentes.  
   

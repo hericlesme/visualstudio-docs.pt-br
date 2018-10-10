@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464466"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879350"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opções, Editor de Texto, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
   
  Você pode usar grupos de referência predefinidos para especificar se determinados arquivos .js do IntelliSense estão no escopo para diferentes projetos JavaScript. Quatro grupos de referência estão disponíveis:  
   
--   Implícitos (*versão* do Windows) para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para aplicativos da [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript.  
+-   Implícitos (*versão* do Windows) para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para aplicativos do [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] que usam JavaScript.  
   
 -   Implícito (Web), para projetos HTML5. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para esses tipos de projeto.  
   

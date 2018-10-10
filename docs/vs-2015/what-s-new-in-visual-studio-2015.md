@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466665"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880364"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>O que&#39;novo no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bem-vindo ao Visual Studio 2015, um conjunto integrado de ferramentas de produti
  E, claro — suporte para aplicativos da área de trabalho clássicos é melhor do que nunca, com muitos aprimoramentos para linguagens, bibliotecas e ferramentas.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Aplicativos móveis de plataforma cruzada em c# com Xamarin para Visual Studio  
- Xamarin é uma estrutura móvel que permite que você escreva código em c# que associa de forma nativa para iOS e Android APIs. Microsoft iniciou uma parceria em conjunto com o Xamarin em sua versão do Xamarin para Visual Studio, uma extensão que habilita você a desenvolver para iOS, Android e Windows Phone em uma única solução com código compartilhado. Com o Xamarin, você usará um idioma e uma base de código com deltas mínimo entre as plataformas.  Xamarin para Visual Studio tem suporte no Visual Studio 2010 e posterior. É a edição de inicial do Xamarin está incluído no Visual Studio 2015. Para começar, consulte [compilar aplicativos com interface do usuário nativa usando Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
+ Xamarin é uma estrutura móvel que permite que você escreva código em c# que associa de forma nativa para iOS e Android APIs. Microsoft iniciou uma parceria em conjunto com o Xamarin em sua versão do Xamarin para Visual Studio, uma extensão que habilita você a desenvolver para iOS, Android e Windows Phone em uma única solução com código compartilhado. Com o Xamarin, você usará um idioma e uma base de código com deltas mínimo entre as plataformas.  Xamarin para Visual Studio tem suporte no Visual Studio 2010 e posterior. A edição de inicial do Xamarin está incluída no Visual Studio 2015. Para começar, consulte [compilar aplicativos com interface do usuário nativa usando Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Aplicativos móveis de plataforma cruzada em HTML/JavaScript com o Apache Cordova  
  Ferramentas do Visual Studio para Apache Cordova é o resultado de uma estreita colaboração entre a Microsoft e de código aberto da comunidade do Apache Cordova. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou Typescript). Você pode direcionar o iOS, Android e Windows com uma única base de código e aproveite a riqueza do IDE do Visual Studio incluindo IntelliSense do JavaScript, o Explorador do DOM, Console do JavaScript, os pontos de interrupção, inspeções, locais, apenas meu código e muito mais.  Com o Visual Studio Tools para Apache Cordova, seus aplicativos têm acesso aos recursos nativos do dispositivo em todas as plataformas por meio do plug-ins que fornecem uma API comum em JavaScript. Para começar, consulte [Introdução ao Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
@@ -280,4 +280,4 @@ Bem-vindo ao Visual Studio 2015, um conjunto integrado de ferramentas de produti
 * [Criar layouts de janela personalizados](./misc/create-custom-window-layouts.md)   
 * [Realizar ações rápidas com lâmpadas](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [O que há de novo para o gerenciamento de ciclo de vida do aplicativo no Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Novidades no Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Novidades no Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

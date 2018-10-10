@@ -14,19 +14,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb31a79af25fbe66112efd6be0aacd9b3c3820d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95b4599c8e3b3a65bdcca4519a6beaa2e1364e96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464242"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879325"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Como criar um relatório de comparação de criador de perfil a partir de um prompt de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A versão mais recente deste tópico pode ser encontrada em [como: criar um relatório de comparação do Profiler em um Prompt de comando](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt).  
   
-Você pode gerar um relatório de Ferramentas de criação de perfil de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que compara os dados de desempenho de dois arquivos de dados de criação de perfil (.VSP /ou .VSPS). O relatório mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra. Os valores no relatório apresentam o delta ou alteração, da linha de base do primeiro arquivo que você especificar. Esse delta é calculado determinando a diferença entre o valor antigo, que é o valor de linha de base e o valor do resultado da nova análise. As comparações de dados do criador de perfil podem ser baseadas nas funções no código, nos módulos no aplicativo, nas linhas, nos IPs (ponteiros de instrução) e nos tipos.  
+Você pode gerar um relatório de Ferramentas de criação de perfil de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que compara os dados de desempenho de dois arquivos de dados de criação de perfil (.VSP /ou .VSPS). O relatório mostra as diferenças, as regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra. Os valores no relatório apresentam o delta ou alteração, da linha de base do primeiro arquivo que você especificar. Esse delta é calculado determinando a diferença entre o valor antigo, que é o valor de linha de base e o valor do resultado da nova análise. As comparações de dados do criador de perfil podem ser baseadas nas funções no código, nos módulos no aplicativo, nas linhas, nos IPs (ponteiros de instrução) e nos tipos.  
   
  Para listar os identificadores dos campos e categorias de comparação, digite a seguinte linha de comando:  
   

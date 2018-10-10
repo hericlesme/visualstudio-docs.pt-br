@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473514"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881144"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -445,12 +445,12 @@ some F# code
 |-|-|  
 |Recurso:|**CollapsibleArea**|  
 |Uso:|Expandir recolhe o texto do controle de conteúdo|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |ExpandText|Expandir|  
 |CollapseText|Recolher|  
 |Recurso:|**Trecho de código**|  
 |Uso:|Texto de controle de trecho de código.  Observação: Conteúdo do trecho de código com espaço "Não-separável" será alterado para o espaço.|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |CopyToClipboard|Copiar para a Área de Transferência|  
 |ViewColorizedText|Exibir colorido|  
 |CombinedVBTabDisplayLanguage|Visual Basic (exemplo)|  
@@ -467,7 +467,7 @@ some F# code
 |LogoFileNameHC|vs_logo_wh.gif|  
 |Recurso:|**Isenção de responsabilidade**|  
 |Uso:|Um conjunto de casos isenção de responsabilidade específicos para a máquina conteúdo traduzido.|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |MT_Editable|Este artigo foi traduzido por máquina. Se você tiver uma conexão de Internet, selecione "Veja este tópico online" para exibir esta página em modo editável junto com o conteúdo original em inglês ao mesmo tempo.|  
 |MT_NonEditable|Este artigo foi traduzido por máquina. Se você tiver uma conexão de Internet, selecione "Veja este tópico online" para exibir esta página em modo editável junto com o conteúdo original em inglês ao mesmo tempo.|  
 |MT_QualityEditable|Este artigo foi traduzido manualmente. Se você tiver uma conexão de Internet, selecione "Veja este tópico online" para exibir esta página em modo editável junto com o conteúdo original em inglês ao mesmo tempo.|  
@@ -476,14 +476,14 @@ some F# code
 |MT_BetaRecycledContents|Este artigo foi traduzido manualmente para uma versão preliminar. Se você tiver uma conexão de Internet, selecione "Veja este tópico online" para exibir esta página em modo editável junto com o conteúdo original em inglês ao mesmo tempo.|  
 |Recurso:|**LinkTable**|  
 |Uso:|Suporte para links do tópico online|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |LinkTableTitle|Tabela de link|  
 |TopicEnuLinkText|Exibir a versão em inglês\</a > deste tópico que está disponível no seu computador.|  
 |TopicOnlineLinkText|Veja este tópico \<href = "{0}" {1}> online\</a >|  
 |OnlineText|Online|  
 |Recurso:|**Controle de áudio de vídeo**|  
 |Uso:|Exibir elementos e o texto para o conteúdo de vídeo|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |MultiMediaNotSupported|Internet Explorer 9 ou posterior deve estar instalado para dar suporte a {0} conteúdo.|  
 |VideoText|exibindo vídeo|  
 |AudioText|fluxo de áudio|  
@@ -491,25 +491,25 @@ some F# code
 |OnlineAudioLinkText|\<p > para ouvir o áudio associado a este tópico, clique em {0} \<href = "{1}" >{2}aqui\</a >.\< / p >|  
 |Recurso:|**Controle de conteúdo não instalado**|  
 |Uso:|Elementos de texto (cadeias de caracteres) usados para a renderização de contentnotinstalled.htm|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |ContentNotInstalledTitle|Nenhum conteúdo foi encontrado no seu computador.|  
 |ContentNotInstalledDownloadContentText|\<p > para baixar o conteúdo em seu computador, \<href = "{0}" {1}> clique na guia gerenciar\</a >.\< / p >|  
 |ContentNotInstalledText|\<p > nenhum conteúdo é instalado em seu computador. Consulte seu administrador para a instalação de conteúdo de ajuda local.  \< /p >|  
 |Recurso:|**Controle de tópico não encontrado**|  
 |Uso:|Elementos de texto (cadeias de caracteres) usados para a renderização de topicnotfound.htm|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |TopicNotFoundTitle|Não é possível localizar o tópico solicitado no seu computador.|  
 |TopicNotFoundViewOnlineText|\<p > o tópico solicitado não foi encontrado no seu computador, mas você pode \<href = "{0}" {1}> Exibir o tópico online\</a >.\< / p >|  
 |TopicNotFoundDownloadContentText|\<p > consulte o painel de navegação para links para tópicos semelhantes, ou \<href = "{0}" {1}> clique na guia gerenciar\</a > para baixar o conteúdo em seu computador.\< / p >|  
 |TopicNotFoundText|\<p > o tópico solicitado não foi encontrado no seu computador.  \< /p >|  
 |Recurso:|**Tópico corrompido de controle**|  
 |Uso:|Elementos de texto (cadeias de caracteres) usados para a renderização de topiccorrupted.htm|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |TopicCorruptedTitle|Não é possível exibir o tópico solicitado.|  
 |TopicCorruptedViewOnlineText|\<p > o Visualizador da Ajuda é não é possível exibir o tópico solicitado. Pode haver um erro no conteúdo do tópico ou uma dependência do sistema subjacente.  \< /p >|  
 |Recurso:|**Controle de página inicial**|  
 |Uso:|Texto de oferecer suporte à exibição do conteúdo do nó de nível superior do Visualizador da Ajuda.|  
-|**Elemento**|**Value**|  
+|**Elemento**|**Valor**|  
 |HomePageTitle|Início do Help Viewer|  
 |HomePageIntroduction|\<p > Bem-vindo ao Microsoft Help Viewer, uma fonte essencial de informações para todos que usam ferramentas, produtos, tecnologias e serviços da Microsoft. O Visualizador da Ajuda fornece acesso a instruções e informações de referência, código de exemplo, artigos técnicos e muito mais. Para localizar o conteúdo que você precisa, procure o sumário, use a pesquisa de texto completo ou navegue pelo conteúdo usando o palavra-chave índice.  \< /p >|  
 |HomePageContentInstallText|\<p >\<br / > Use o \<href = "{0}" {1}> Gerenciar conteúdo\</a > guia para fazer o seguinte:\<ul >\<li > Adicionar conteúdo ao seu computador.\< / li >\<li > Verificar se há atualizações para seu conteúdo local.\< / li >\<li > Remover o conteúdo do seu computador.\< / li >\</ul > \< /p >|  

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463732"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880756"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produtos e serviços de acessibilidade (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
   
  Os endereços Web podem ser alterados, portanto, talvez você não possa se conectar ao site mencionado aqui.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Atendimento ao cliente para pessoas com deficiências auditivas  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Atendimento ao cliente para pessoas com deficiências auditivas  
  Se você tiver algum tipo de deficiência auditiva, o acesso completo aos produtos Microsoft e ao atendimento ao cliente estará disponível por meio de um serviço de telefone de texto (TTY/TDD):  
   
  Para obter atendimento ao cliente, contate o Microsoft Sales Information Center em (800) 892-5234 entre 6:30 AM e 17:30, hora do Pacífico, de segunda a sexta-feira, exceto feriados.  

@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476136"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880884"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionando problemas de referências de serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 ## <a name="error-debugging-service-code"></a>Código de serviço de depuração de erro
  Quando você entrar no código para um serviço WCF no código do cliente, você poderá receber um erro relacionado a ausência de símbolos. Isso pode ocorrer quando um serviço que fazia parte de sua solução foi movido ou removido da solução.
 
- Quando você primeiro adiciona uma referência a um serviço WCF que faz parte da solução atual, uma dependência de compilação explícita é adicionada entre o projeto de serviço e o projeto de cliente de serviço. Isso garante que o cliente sempre acessa binários de serviço atualizado, o que é especialmente importante para cenários como de depuração do código do cliente em código de serviço de depuração.
+ Quando você primeiro adiciona uma referência a um serviço WCF que faz parte da solução atual, uma dependência de compilação explícita é adicionada entre o projeto de serviço e o projeto de cliente de serviço. Isso garante que o cliente sempre acessa binários de serviço atualizado, que é especialmente importante para cenários como de depuração do código do cliente em código de serviço de depuração.
 
- Se o projeto de serviço é removido da solução, essa dependência de compilação explícita é invalidada. Visual Studio não pode mais garantir que o projeto de serviço reconstituído conforme necessário.
+ Se o projeto de serviço é removido da solução, essa dependência de compilação explícita é invalidada. Visual Studio não pode mais garantir que o projeto de serviço é recriado conforme necessário.
 
  Para corrigir esse erro, você deve recriar manualmente o projeto de serviço:
 
