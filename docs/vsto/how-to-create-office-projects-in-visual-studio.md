@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670214"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074046"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como: criar projetos do Office no Visual Studio
   Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e o nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "35670214"
   
     -   Você está criando um projeto de modelo do Word com base em um *. dotx* arquivo. Você deve adicionar a pasta do projeto à lista de locais confiáveis para que você pode executar e depurar o projeto.  
   
-     Para obter mais informações sobre como adicionar um documento aos locais confiáveis, consulte o site Microsoft Office Online [criar, remover ou alterar um local confiável para seus arquivos](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+     Para obter mais informações sobre como adicionar um documento aos locais confiáveis, consulte o site Microsoft Office Online [criar, remover ou alterar um local confiável para seus arquivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)   
