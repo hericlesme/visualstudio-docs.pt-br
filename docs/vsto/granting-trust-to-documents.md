@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670747"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073435"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança a documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que projetos de nível de aplicativo: os manifestos com um certificado de assinatura ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizada em um diretório que é designado como um local confiável.  
@@ -33,7 +33,7 @@ ms.locfileid: "35670747"
 ## <a name="trusted-locations"></a>Locais confiáveis  
  Aplicativos em [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Office 2010 têm centros de relação de confiança em que os usuários podem configurar configurações de segurança e privacidade, como locais confiáveis. Para soluções do Office, o computador local é considerado um local confiável. No entanto, devido a um risco maior, há determinados diretórios que não podem nunca ser confiáveis, como as pastas temporárias para o sistema, para cada usuário e para o Internet Explorer.  
   
- Para obter mais informações sobre a Central de confiabilidade, consulte [configurações de segurança e políticas e no Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Para obter mais informações sobre como criar, gerenciar, remover e configurar pastas confiáveis, consulte [definir configurações de editores confiáveis e de locais confiáveis no 2007 Office system](http://go.microsoft.com/fwlink/?LinkId=89203) e [criar, remover ou alterar um local para seus arquivos confiável](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Para obter mais informações sobre a Central de confiabilidade, consulte [configurações de segurança e políticas e no Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Para obter mais informações sobre como criar, gerenciar, remover e configurar pastas confiáveis, consulte [definir configurações de editores confiáveis e de locais confiáveis no 2007 Office system](http://go.microsoft.com/fwlink/?LinkId=89203) e [criar, remover ou alterar um local para seus arquivos confiável](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Considerações de segurança para soluções do Office  
  Há várias questões de segurança que você considere quais pastas adicionar aos locais confiáveis:  
