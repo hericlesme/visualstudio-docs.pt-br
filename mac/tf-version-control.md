@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279836"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542424"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation 
+# <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
 > [!NOTE]
 > **Observação**: o suporte para o Controle de Versão do Team Foundation atualmente está em versão prévia e algumas funcionalidades ainda não estão funcionando totalmente. Adoraríamos receber seus comentários sobre problemas na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/spaces/41/index.html). Mais alterações ainda estão por vir!
@@ -31,7 +31,7 @@ O Azure Repos fornece dois modelos de controle de versão: o GIT, que é o contr
 
 No Visual Studio para Mac, escolha **Visual Studio > Extensões…** no menu. Na guia **Galeria**, selecione **Controle de Versão > Controle de Versão do Team Foundation para o TFS e VSTS** e clique em **Instalar...**:
 
-  ![Gerenciador de extensões](media/tfvc-install.png) 
+  ![Gerenciador de extensões](media/tfvc-install.png)
 
 Siga os prompts para instalar a extensão. Depois de instalá-la, reinicie o IDE.
 
@@ -39,7 +39,7 @@ Siga os prompts para instalar a extensão. Depois de instalá-la, reinicie o IDE
 
 Periodicamente, são feitas atualizações na extensão do TFVC. Para acessar as atualizações, escolha **Visual Studio > Extensões...** no menu e selecione a guia **Atualizações**. Selecione a extensão na lista e pressione o botão **Atualizar**:
 
-  ![Gerenciador de extensão mostrando a atualização](media/tfvc-update.png) 
+  ![Gerenciador de extensão mostrando a atualização](media/tfvc-update.png)
 
 Pressione **Instalar** na próxima caixa de diálogo para desinstalar o pacote antigo e instalar um novo.
 
@@ -63,7 +63,7 @@ Quando você seleciona um projeto que está hospedado no Azure Repos, é solicit
 
 ### <a name="tfs-authentication"></a>Autenticação do TFS
 
-Para conectar-se ao TFS, insira os detalhes do servidor e suas credenciais da conta. Insira um domínio para usar a autenticação NTLM, caso contrário, deixe em branco para usar a autenticação básica. Selecione **Adicionar Servidor**: 
+Para conectar-se ao TFS, insira os detalhes do servidor e suas credenciais da conta. Insira um domínio para usar a autenticação NTLM, caso contrário, deixe em branco para usar a autenticação básica. Selecione **Adicionar Servidor**:
 
 ![Entrar em um servidor TFS](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ Depois que você se autenticar com êxito, será exibida uma lista de repositór
 
 Essa caixa de diálogo é organizada com os seguintes nós:
 
-- Organização ou coleção do Azure DevOps Services – Exibe todas as organizações conectadas à conta Microsoft com que você fez logon.
+- Organização ou coleção do Azure DevOps – Exibe todas as organizações conectadas à conta Microsoft com que você fez logon.
 - Projetos – Em cada organização ou coleção, você pode ter um número de projetos. Um projeto é onde o código-fonte, os itens de trabalho e os builds automatizados são hospedados.
 
 Neste ponto, você pode pesquisar e filtrar pelo nome de um projeto ou de uma organização.
@@ -124,24 +124,24 @@ Muitas dessas ações estão disponíveis por meio de ações de contexto no pro
 
 Se você ainda não criou um espaço de trabalho, conforme descrito na seção [Criando um espaço de trabalho](#creating-a-new-workspace), o Source Code Explorer estará vazio:
 
-![Source Code Explorer vazio](media/tfvc-setup-empty-sce.png) 
+![Source Code Explorer vazio](media/tfvc-setup-empty-sce.png)
 
 Para configurar seu projeto remoto com um espaço de trabalho local, use as seguintes etapas:
 
 1. Selecione o **Servidor** na caixa de combinação.
 1. Observe que não há "nenhum espaço de trabalho" e o caminho local está como "Não Mapeado". Selecione o link **Não Mapeado** para exibir a caixa de diálogo **Criar Espaço de Trabalho**.
 1. Forneça um nome para o espaço de trabalho e, em seguida, clique em **Adicionar Pasta de Trabalho** para mapear o projeto para uma pasta local no seu computador:
-    
-    ![Caixa de diálogo Criar Espaço de Trabalho, mostrando as opções padrão](media/tfvc-workspace1.png) 
+
+    ![Caixa de diálogo Criar Espaço de Trabalho, mostrando as opções padrão](media/tfvc-workspace1.png)
 
 1. Selecione a pasta "$" para mapear todos os projetos em seu servidor para o mesmo espaço de trabalho ou selecione um projeto individual e clique em **OK**:
-    
-    ![Navegue para a caixa de diálogo de pasta mostrando todos os projetos](media/tfvc-workspace2.png) 
+
+    ![Navegue para a caixa de diálogo de pasta mostrando todos os projetos](media/tfvc-workspace2.png)
 
 1. Selecione o local em seu computador local para onde deseja mapear os projetos e clique em **Selecionar Pasta**.
 1. Confirme os detalhes do novo espaço de trabalho pressionando **OK**
-    
-    ![Caixa de diálogo Criar Espaço de Trabalho, com a pasta de trabalho adicionada](media/tfvc-workspace3.png) 
+
+    ![Caixa de diálogo Criar Espaço de Trabalho, com a pasta de trabalho adicionada](media/tfvc-workspace3.png)
 
 Depois que o espaço de trabalho for configurado, ele poderá ser alterado ou removido clicando no botão **Gerenciar Espaços de Trabalho** no Source Code Explorer.
 
@@ -159,14 +159,15 @@ As opções a seguir podem ser usadas para a autenticação no servidor:
 
 Para usar a autenticação Básica é necessário habilitar **Credenciais de autenticação alternativas** no Azure DevOps Services, seguindo as etapas abaixo:
 
-1. Entre em sua organização do Azure DevOps Services como o proprietário (https://dev.azure.com/{organization}/{project}).
+1. Entre em sua organização do Azure DevOps como o proprietário (https://dev.azure.com/{organization}/{project}).
+
 2. Na barra de ferramentas da organização, selecione o ícone de engrenagem e escolha **Política**:
-    
-    ![Opção de configurações de política selecionada](media/tfvc-auth2.png) 
+
+    ![Opção de configurações de política selecionada](media/tfvc-auth2.png)
 
 3. Examine as configurações de conexão do aplicativo. Altere essas configurações, com base em suas políticas de segurança:
-    
-    ![Opção de configurações de política selecionada](media/tfvc-auth.png)  
+
+    ![Opção de configurações de política selecionada](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Não vejo nada no TFVC
 

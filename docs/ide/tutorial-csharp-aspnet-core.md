@@ -2,7 +2,7 @@
 title: Introdução ao C# e ao ASP.NET Core no Visual Studio
 description: Saiba como criar um aplicativo Web do ASP.NET Core no Visual Studio com C#, passo a passo.
 ms.custom: ''
-ms.date: 08/10/2018
+ms.date: 09/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,22 +15,22 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fb1532a76d9bc530146ba5a0f563bcaa9389226c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627167"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496110"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
-Neste tutorial para desenvolvimento em C# com ASP.NET Core usando o Visual Studio, você criará um aplicativo Web ASP.NET Core em C#, fará alterações, explorará alguns recursos do IDE e executará o aplicativo.
+Neste tutorial para desenvolvimento em C# com ASP.NET Core usando o Visual Studio, você criará um aplicativo Web ASP.NET Core em C#, fará alterações, explorará alguns recursos do IDE e então executará o aplicativo.
 
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-Primeiro, você criará um projeto ASP.NET Core. O tipo de projeto vem com todos os arquivos de modelo, que você precisará para um site, mesmo sem você adicionar nada.
+Primeiro, você criará um projeto ASP.NET Core. O tipo de projeto vem com todos os arquivos de modelo necessários para um site totalmente funcional, mesmo antes que você adicione qualquer coisa.
 
 1. Abra o Visual Studio 2017.
 
@@ -38,7 +38,7 @@ Primeiro, você criará um projeto ASP.NET Core. O tipo de projeto vem com todos
 
 3. Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda **Visual C#**, expanda **Web** e escolha **.NET Core**. No painel central, escolha **Aplicativo Web ASP.NET Core**. Em seguida, nomeie o arquivo *MyCoreApp* e escolha **OK**.
 
-   ![Modelo de projeto do aplicativo Web do ASP.NET Core na caixa de diálogo Novo projeto no IDE do Visual Studio](../ide/media/csharp-aspnet-choose-template-name-mycoreapp-mvc.png)
+   ![Modelo de projeto do aplicativo Web do ASP.NET Core na caixa de diálogo Novo projeto no IDE do Visual Studio](../ide/media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
 ### <a name="add-a-workload-optional"></a>Adicionar uma carga de trabalho (opcional)
 
@@ -48,7 +48,7 @@ Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, voc�
 
 1. Clique no link **Abrir o Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**.
 
-   ![Clique no link Abrir Instalador do Visual Studio na caixa de diálogo Novo Projeto](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Clique no link Abrir Instalador do Visual Studio na caixa de diálogo Novo Projeto](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
 
@@ -66,107 +66,111 @@ Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, voc�
 
 ### <a name="add-a-project-template"></a>Adicionar um modelo de projeto
 
-1. Na caixa de diálogo **Novo Aplicativo Web do ASP.NET Core**, escolha o modelo de projeto **Aplicativo Web (Modelo-Exibição-Controlador)**.
+1. Na caixa de diálogo **Novo Aplicativo Web ASP.NET Core**, escolha o modelo de projeto **Aplicativo Web**.
 
-1. Verifique se o **ASP.NET Core 2.0** aparece no menu suspenso superior. Em seguida, escolha **OK**.
+1. Verifique se o **ASP.NET Core 2.1** aparece no menu suspenso superior. Em seguida, escolha **OK**.
 
-   ![Caixa de diálogo Novo Aplicativo Web ASP.NET Core](../ide/media/new-project-csharp-aspnet-web-app-mvc.png)
+   ![Caixa de diálogo Novo Aplicativo Web ASP.NET Core](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
 
 ### <a name="about-your-solution"></a>Sobre sua solução
 
-Essa solução segue o padrão de arquitetura MVC (Modelo-Exibição-Controlador) que separa um aplicativo em três componentes principais:
-
-* **Modelos** são classes que representam os dados do aplicativo. As classes de modelo usam a lógica de validação para impor regras de negócio aos dados. Normalmente, os objetos de modelo recuperam e armazenam o estado do modelo em um banco de dados.
-* **Exibições** são os componentes que exibem a interface do usuário do aplicativo. Em geral, essa interface do usuário exibe os dados de modelo.
-* **Controladores** são classes que manipulam as solicitações do navegador. Elas recuperam dados de modelo e chamam modelos de exibição que retornam uma resposta. Em um aplicativo MVC, a exibição mostra apenas informações; o controlador manipula e responde à entrada e à interação do usuário.
-
-O padrão MVC ajuda a criar aplicativos que são mais fáceis de testar e atualizar do que aplicativos monolíticos tradicionais.
+Esta solução segue o padrão de design da **Página do Razor**. Ele é diferente do padrão de design [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) que é simplificado para incluir o código do modelo e do controlador na própria página do Razor.
 
 ## <a name="tour-your-solution"></a>Fazer tour da sua solução
 
- 1. O modelo de projeto cria uma solução com um único projeto ASP.NET Core chamado **MyCoreApp**. Expanda o nó do projeto para expor seu conteúdo.
+ 1. O modelo de projeto cria uma solução com um único projeto ASP.NET Core chamado _MyCoreApp_. Escolha a guia **Gerenciador de Soluções** para exibir seu conteúdo.
 
-    ![Gerenciador de Soluções do ASP.NET no Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp-mvc.png)
+    ![A solução do Gerenciador de Soluções do ASP.NET no Visual Studio para o Razor Pages é denominada MyCoreApp](../ide/media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Abra o arquivo *HomeController.cs* da pasta **Controladores**.
+ 1. Expanda a pasta **Páginas** e depois *About.cshtml*.
 
-     ![Arquivo HomeController.cs no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
+     ![O arquivo About.cshtml no Gerenciador de Soluções do Visual Studio](../ide/media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
 
- 1. Exiba o arquivo *HomeController.cs*.
+ 1. Visualize o arquivo **About.cshtml** no editor de códigos.
 
-     ![HomeController.cs na janela de código do Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
+     ![Visualizar o arquivo About.cshtml no editor de códigos do Visual Studio](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
- 1. O projeto também tem uma pasta **Exibições** que contém as subpastas que são mapeadas para cada controlador. Por exemplo, o arquivo de exibição CSHTML (uma extensão de HTML) para o caminho */Home/About* seria em *Views/Home/About.cshtml*. Abra esse arquivo.
+ 1. Escolha o arquivo **About.cshtml.cs**.
 
-     ![Arquivo About.cshtml no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
+     ![Escolher o arquivo About.cs no editor de códigos do Visual Studio](../ide/media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
 
-    Esse arquivo CSHTML usa a sintaxe Razor para renderizar HTML com base em uma combinação de marcas padrão e C# embutido.
+ 1. Visualize o arquivo **About.cs** no editor de códigos.
 
-     ![About.cshtml na janela de código do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
+     ![Visualizar o arquivo About.cshtml no editor de códigos do Visual Studio](../ide/media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
-    >[!NOTE]
-    > Para saber mais sobre o Razor, confira a página [Introdução ao C# e ao ASP.NET Core no Visual Studio usando a sintaxe Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+ 1. O projeto também contém a pasta **wwwroot** que é a raiz do site. Expanda a pasta para exibir seu conteúdo.
 
- 1. O projeto também contém uma pasta **wwwroot** que é a raiz do site. Expanda a pasta para exibir seu conteúdo.
-
-     ![Pasta wwwroot no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
+     ![Pasta wwwroot no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
     Você pode colocar o conteúdo do site estático, como CSS, imagens e bibliotecas JavaScript, diretamente nos caminhos em que deseja.
 
- 1. Há vários arquivos de configuração que gerenciam o projeto, seus pacotes e o aplicativo no tempo de execução. Por exemplo, a [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
+ 1. O projeto também contém os arquivos de configuração que gerenciam o aplicativo web em tempo de execução. A [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
 
-     ![Arquivos de configuração no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
+     ![Arquivos de configuração no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>Executar, depurar e fazer alterações
 
-1. Escolha o botão **IIS Express** no IDE para compilar e executar o aplicativo no modo de Depuração. (Como alternativa, pressione **F5** ou escolha **Depurar > Iniciar depuração** na barra de menus.)
+1. Escolha o botão **IIS Express** no IDE para compilar e executar o aplicativo no modo de Depuração. Como alternativa, pressione **F5** ou escolha **Depurar** > **Iniciar depuração** na barra de menus.
 
-     ![Selecionar o botão IIS Express no Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
+     ![Selecionar o botão IIS Express no Visual Studio](../ide/media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
      > Se você receber uma mensagem de erro que diz **Não é possível se conectar ao servidor Web “IIS Express”**, feche o Visual Studio e abra-o usando a opção **Executar como administrador** clicando com o botão direito do mouse ou no menu de contexto. Em seguida, execute o aplicativo novamente.
 
-1. O Visual Studio abre uma janela do navegador. Selecione **Sobre**.
+1. O Visual Studio abre uma janela do navegador. Você deve vê-los na **Página Inicial** e nas páginas **Sobre** e **Contato** na barra de menus. Se isso não ocorrer, escolha o item de menu "hambúrguer" para exibi-los.
 
-   ![Selecione Sobre na janela do navegador para seu aplicativo](../ide/media/csharp-aspnet-browser-page.png)
+    ![Selecione o item de menu "hambúrguer" na barra de menu em seu aplicativo web](../ide/media/csharp-aspnet-razor-browser-page.png)
 
-   Entre outras coisas, a página **Sobre** no browser renderiza o texto definido no arquivo *HomeController.cs*.
+1. Escolha **Sobre** na barra de menus.
 
-   ![Exiba o texto na página Sobre](../ide/media/csharp-aspnet-browser-page-about.png)
+   ![Selecione Sobre na barra de menus da janela do navegador do seu aplicativo](../ide/media/csharp-aspnet-razor-browser-page-about-menu.png)
 
-1. Mantenha a janela do navegador aberta e retorne ao Visual Studio. Abra *Controllers/HomeController.cs* se ainda não estiver aberto.
+   Entre outras coisas, a página **Sobre** no navegador renderiza o texto definido no arquivo *About.cshtml*.
 
-   ![Abra o arquivo HomeController.cs no Gerenciador de Soluções no Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
+   ![Exiba o texto na página Sobre](../ide/media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Definir um ponto de interrupção na primeira linha do método **Sobre**. Para fazer isso, clique na margem ou defina o cursor na linha e pressione **F9**.
+1. Mantenha a janela do navegador aberta e retorne ao Visual Studio.
 
-   Essa linha define alguns dados na coleção **ViewData** que é renderizada na página CSHTML em *Views/Home/About.cshtml*.
+1. No Visual Studio, escolha **About.cshtml**. Em seguida, exclua a palavra _alterado_ e, em seu lugar, adicione as palavras _arquivo e diretório_.
 
-   ![Defina um ponto de interrupção na primeira linha do método Sobre em About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
+    ![Alterar o texto no arquivo About.cshtml](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
-1. Retorne ao browser e atualize a página **Sobre**. Isso disparará o ponto de interrupção no Visual Studio.
+1. Escolha **About.cshtml.cs**. Em seguida, limpe as diretivas `using` na parte superior do arquivo usando o seguinte atalho:
 
-1. No Visual Studio, passe o mouse sobre o membro **ViewData** para exibir seus dados.
+   Escolha uma das diretivas `using` esmaecidas, e será exibida a lâmpada [Ações Rápidas](../ide/quick-actions.md) logo abaixo da seta ou na margem esquerda. Escolha a lâmpada e, em seguida, escolha **Remover Usings Desnecessários**.
 
-   ![Exiba o membro ViewData do método Sobre para obter mais informações](../ide/media/csharp-aspnet-home-controller-view-breakpoint-info.png)
+   ![Remover usos desnecessários no arquivo About.cshtml.cs](../ide/media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
-1. Remova o ponto de interrupção do aplicativo usando o mesmo método que você usou para adicioná-lo.
+     O Visual Studio exclui as diretivas `using` desnecessárias do arquivo.
 
-1. Abra *Views/Home/About.cshtml*.
+1. Em seguida, no método `OnGet()`, altere o corpo para o código a seguir:
 
-   ![Selecione About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
+     ```csharp
+     public void OnGet()
+     {
+         string directory = Environment.CurrentDirectory;
+     Message = String.Format("Your directory is {0}.", directory);
+     }
+    ```
+1. Observe que dois sublinhados ondulados são exibidos sob **Ambiente** e **Cadeia de caracteres**. Os sublinhados ondulados são exibidos porque esses tipos não estão no escopo.
 
-1. Altere o texto **“adicional”** para **“alterado”** e salve o arquivo.
+   ![Os erros são marcados com sublinhados ondulados no método OnGet](../ide/media/csharp-aspnet-razor-add-new-on-get-method.png)
 
-   ![Altere o texto que mostra “adicional” para “alterado”](../ide/media/csharp-aspnet-about-cshtml-code-change.png)
+    Abra a barra de ferramentas **Lista de Erros** para ver os mesmos erros listados. (Se a barra de ferramentas **Lista de Erros** não for exibida, escolha **Exibir** > **Lista de Erros** na barra de menus superior.)
 
-1. Retornar à janela do navegador para ver o texto atualizado. (Atualize o navegador se o texto que você alterou não aparecer.)
+   ![Lista de Erros no Visual Studio](../ide/media/csharp-aspnet-razor-error-list.png)
 
-    ![Atualizar a janela do navegador para ver o texto alterado](../ide/media/csharp-aspnet-browser-page-about-changed.png)
+1. Vamos corrigir isso. No editor de códigos, coloque o cursor na linha que contém o erro e escolha a lâmpada Ações Rápidas na margem esquerda. No menu suspenso, escolha **using System;** para adicionar essa diretiva no topo do arquivo e resolver os erros.
 
-1. Escolha o botão **Parar depuração** da barra de ferramentas para interromper a depuração. (Como alternativa, pressione **Shift**+**F5** ou escolha **Depurar** > **Parar depuração** na barra de menus.)
+   ![Adicionar a diretiva "using System;"](../ide/media/csharp-aspnet-razor-add-usings.png)
 
-   ![Selecionar o botão Parar Depuração na barra de ferramentas](../ide/media/csharp-aspnet-stop-debugging.png)
+1. Pressione **Ctrl**+**S** para salvar as alterações e atualizar o aplicativo no navegador da web.
+
+1. Na parte superior do site, escolha **Sobre** para ver as alterações.
+
+   ![Exibir a página Sobre atualizada que inclui o texto alterado](../ide/media/csharp-aspnet-razor-browser-page-about-changed.png)
+
+1. Feche o navegador da web, pressione **Shift**+**F5** para interromper o modo de depuração e, em seguida, feche o Visual Studio.
 
 ## <a name="quick-answers-faq"></a>Perguntas frequentes com respostas rápidas
 
@@ -188,9 +192,6 @@ Visual Studio é um pacote de desenvolvimento integrado de ferramentas de produt
 
 Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pouco sobre o C#, o ASP.NET Core e o IDE do Visual Studio. Para saber mais sobre como criar um aplicativo Web ou site em C# com o ASP.NET, continue com os tutoriais a seguir:
 
-> [!div class="nextstepaction"]
-> [Criar um aplicativo Web MVC com o ASP.NET Core](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x)
->
 > [!div class="nextstepaction"]
 > [Criar um aplicativo Web Páginas Razor com o ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 

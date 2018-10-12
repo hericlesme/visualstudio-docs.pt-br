@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com o Tutorial do Python, Etapa 1, criar um projeto
+title: Tutorial sobre como trabalhar com o Python, etapa 1, criar um projeto
 description: Visão geral e Etapa 1 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo pré-requisitos e a criação de um novo projeto do Python.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 215dbce2ccfdce88b6e24fd1802c91fe0f1a6936
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639426"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547887"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabalhar com Python no Visual Studio
 

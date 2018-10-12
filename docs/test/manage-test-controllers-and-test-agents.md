@@ -1,6 +1,6 @@
 ---
 title: Gerenciar controladores e agentes de teste no Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279968"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371024"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -41,17 +41,15 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
     > [!NOTE]
     > Você deve ter um agente de teste já instalado para adicioná-lo a um controlador de teste. Para obter mais informações de como instalar um agente de teste, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-2. Se quiser alterar a maneira como o agente de teste é executado, escolha **Opções de Execução**.
+2. São apresentadas duas opções para executar o agente de teste:
 
-     Você recebe duas opções para como o agente de teste será executado:
+   - **Serviço**: se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo quando o teste for executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
 
-     **Serviço**: se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo quando o teste for executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
+      Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
 
-     Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
+      1. Insira o nome em **Nome de usuário**.
 
-    1. Insira o nome em **Nome de usuário**.
-
-    2. Insira a senha em **Senha**.
+      2. Insira a senha em **Senha**.
 
         |**Informações importantes sobre a conta de usuário**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
         |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
         |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
 
-     **Processo interativo**: se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
+   - **Processo interativo**: se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
 
-     Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
+      Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
 
-    1. Insira o nome em **Nome de usuário**.
+      1. Insira o nome em **Nome de usuário**.
 
-    2. Insira a senha em **Senha**.
+      2. Insira a senha em **Senha**.
 
         > [!NOTE]
         > Se configurar o agente de teste para ser executado como um processo interativo com um usuário diferente do usuário atualmente ativo, você deverá reiniciar o computador e fazer logon como esse usuário diferente para poder iniciar o agente. Além disso, as senhas nulas não são compatíveis com contas de usuário. Se você quiser usar o coletor IntelliTrace ou a emulação de rede, a conta de usuário deverá ser um membro do grupo Administradores.
 
-        |**Informações importantes sobre a conta de usuário**|
-        |--------------------------------------------|
-        |– Senhas nulas não têm suporte com contas de usuário.|
-        |– Se você quiser usar o IntelliTrace ou os dados da emulação de rede e o adaptador de diagnóstico, a conta de usuário deverá ser um membro do grupo Administradores. – Se o computador que está executando o agente de teste tiver um sistema operacional que tenha uma conta de usuário com privilégios mínimos, você também precisará executá-lo como um administrador (elevado).|
-        |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
-        |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
+      3. Para garantir que um computador com um agente de teste possa executar testes após ser reinicializado, você pode configurar o computador para fazer logon automaticamente como o usuário do agente de teste. Selecione **Fazer logon automaticamente**. Isso armazenará o nome de usuário e a senha em um formato criptografado no Registro.
 
-    3. Para garantir que um computador com um agente de teste possa executar testes após ser reinicializado, você pode configurar o computador para fazer logon automaticamente como o usuário do agente de teste. Selecione **Fazer logon automaticamente**. Isso armazenará o nome de usuário e a senha em um formato criptografado no Registro.
-
-    4. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
+      4. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
 
         > [!WARNING]
         > Haverá riscos à segurança se você fizer logon automaticamente ou desabilitar a proteção de tela. Ao ativar o logon automático, você permite que outros usuários iniciem esse computador e permite que eles usem a conta que faz logon automaticamente. Se você desabilitar a proteção de tela, o computador talvez não solicite o logon de um usuário para desbloquear o computador. Isso permite que qualquer pessoa acesse o computador se ela tiver acesso físico a ele. Se habilitar esses recursos em um computador, você deverá verificar se esses computadores estão fisicamente seguros. Por exemplo, esses computadores estão localizados em um laboratório fisicamente seguro. (Se você desmarcar **Certifique-se de que a proteção de tela está desabilitada**, isso não habilitará a proteção de tela.)
@@ -160,7 +151,7 @@ As alterações de atributo e importância do agente de teste entram em vigor im
 (Opcional) Para alterar o status de um agente de teste, selecione o agente na lista e, em seguida, selecione a ação nas opções disponíveis com base no status atual do agente.
 
 > [!NOTE]
-> Se o agente de teste estiver sendo executado como um processo, você gerencia o status do agente de teste no ícone da área de notificação executado no computador em que seu agente de teste está instalado. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo caso ele não esteja sendo executado, escolha **Iniciar** > **Todos os Programas** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Isso adiciona o ícone da área de notificação.
+> Se o agente de teste estiver sendo executado como um processo, você gerencia o status do agente de teste no ícone da área de notificação executado no computador em que seu agente de teste está instalado. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta.
 
 ## <a name="configure-a-test-controller"></a>Configura um controlador de teste
 
@@ -173,7 +164,7 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar um controlador de teste
 
-1. Para executar a ferramenta para reconfigurar seu controlador de teste a qualquer momento, escolha **Iniciar** > **Todos os Programas** >  **Microsoft Visual Studio** > **Ferramenta de Configuração do Controlador de Teste do Microsoft Visual Studio**.
+1. Para executar a ferramenta para reconfigurar o controlador de teste a qualquer momento, escolha **Iniciar** > **Ferramenta de Configuração do Controlador de Teste**.
 
      A caixa de diálogo **Configurar controlador de teste** é exibida.
 
@@ -182,9 +173,9 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
     > [!NOTE]
     > As senhas nulas não são compatíveis com contas de usuário.
 
-4. (Opcional) Se você não quiser usar seu controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar com Coleção de Projetos**.
+4. (Opcional) Se você não quiser usar o controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar controlador de teste com Coleção de Projetos de Equipe**.
 
-5. (Opcional) Para configurar seu controlador de teste para o teste de carga, selecione **Configurar para teste de carregamento**. Em seguida, digite sua instância do SQL Server em **Criar banco de dados de resultados de teste de carga na seguinte instância de SQL Server**.
+5. (Opcional) Para configurar seu controlador de teste para o teste de carga, selecione **Configurar controlador de teste para teste de carga**. Digite sua instância do SQL Server em **Criar banco de dados de resultados de teste de carga na seguinte instância de SQL Server**.
 
 > [!NOTE]
 > Para obter mais informações sobre solução de problemas de controladores de teste, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).

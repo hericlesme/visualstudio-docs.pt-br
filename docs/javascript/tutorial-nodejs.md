@@ -2,7 +2,7 @@
 title: Criar um aplicativo Node.js e Express
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124912"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168338"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 Neste tutorial para desenvolvimento no Visual Studio usando Node.js e Express, você criará um aplicativo Web Node.js simples, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo. Se você ainda não instalou o Visual Studio, clique [aqui](http://visualstudio.microsoft.com) para instalá-lo gratuitamente.
@@ -192,9 +192,11 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
-1. Selecione o destino de depuração na barra de ferramentas Depurar.
+1. Selecione o destino de depuração na barra de ferramentas Depurar, como Edge ou Chrome.
 
     ![Selecionar o destino de depuração](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
 
 1. Pressione **F5** (**Depurar** > **Iniciar Depuração**) para executar o aplicativo.
 
