@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d9515d208f2ab4bb8c429d5063e5134676c71c24
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785951"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101063"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Depuração remota do ASP.NET Core em um computador remoto IIS no Visual Studio 2017
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexar a seu aplicativo em execução do Visual Studio.
@@ -147,12 +147,7 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 
 Neste tutorial, estamos usando o Visual Studio 2017.
 
-Se você tiver dificuldade para abrir a página com o download do depurador remoto, consulte [desbloquear o download do arquivo](../debugger/remote-debugging.md#unblock_msvsmon) para obter ajuda.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> Em alguns cenários, pode ser mais eficiente para executar o depurador remoto de um compartilhamento de arquivos. Para obter mais informações, consulte [executar o depurador remoto de um compartilhamento de arquivos](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
