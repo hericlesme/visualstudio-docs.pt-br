@@ -3,49 +3,47 @@ title: O benefício Opsgility nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
 description: Conheça o benefício de treinamento Opsgility incluído com a assinatura selecionada do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280890"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495525"
 ---
-# <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>O benefício Opsgility nas assinaturas do Visual Studio
+# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do Opsgility em assinaturas do Visual Studio
 
-Assinaturas selecionadas do Visual Studio incluem um ano de acesso ao treinamento sob demanda, e um desconto de 15% em treinamento supervisionado, além de acesso a laboratórios práticos, caminhos de certificação e muito mais.
+Assinaturas selecionadas do Visual Studio incluem até seis meses de acesso ao treinamento especializado e sob demanda com acesso a ambientes de laboratório ao vivo e caminhos de aprendizagem de certificação.
 
 ## <a name="activation-steps"></a>Etapas de ativação
 1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Localize o bloco Opsgility na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
-
-3.  Para usar o benefício Opsgility, clique no link **Obter Código** na parte inferior do bloco do benefício.   Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar** para continuar.
+2.  Para usar o benefício Skill Me Up, clique no link **Obter Código** na parte inferior do bloco do benefício.   Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar** para continuar.
     > [!div class="mx-imgBorder"]
     > ![Bloco do benefício Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-4.  Você será redirecionado à página de aterrissagem [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Treinamento online da Opsgility para Visual Studio Enterprise).  (Talvez seja oferecida uma oportunidade de iniciar uma sessão de chat com um especialista do suporte.  Se você não quiser iniciar o chat, minimize a janela.)  Preencha as informações de contato solicitadas e clique em **Registrar**.
+3.  Você será redirecionado à página de aterrissagem [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Treinamento online da Opsgility para Visual Studio Enterprise).  (Talvez seja oferecida uma oportunidade de iniciar uma sessão de chat com um especialista do suporte.  Se você não quiser iniciar o chat, minimize a janela.)  Preencha as informações de contato solicitadas e clique em **Registrar**.
     > [!div class="mx-imgBorder"]
     > ![Página de aterrissagem do benefício Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
 
-5.  E isso é tudo!  Você está pronto para começar a aprendizagem.  Para ajudá-lo a começar, há uma lista de faixas de aprendizagem sugeridas no lado esquerdo da página.  Aproveite!
+4.  E isso é tudo!  Você está pronto para começar a aprendizagem.  Para ajudá-lo a começar, há uma lista de faixas de aprendizagem sugeridas no lado esquerdo da página.  Aproveite!
     > [!div class="mx-imgBorder"]
     > ![Página inicial do benefício Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+| Nível de assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail | 12 meses       |  Nº  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Seis meses                                                            |Nº  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Seis meses                                             |  Nº  Disponível apenas para novos assinantes         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Seis meses                                              | Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Dev Essentials | NA  | 3 meses |Nº  Disponível apenas para novos assinantes |
+| Visual Studio Dev Essentials | NA  | 3 meses | Nº  Disponível apenas para novos assinantes  |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
 *Exclui: MPN (Microsoft Partner Network), MVP (Microsoft Valued Partner), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*

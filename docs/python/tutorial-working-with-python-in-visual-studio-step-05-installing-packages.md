@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com o Tutorial do Python, etapa 5, instalar pacotes
+title: Tutorial sobre como trabalhar com o Python, etapa 5, instalar pacotes
 description: Etapa 5 de um passo a passo básico das funcionalidades do Python no Visual Studio, demonstrando os recursos do Visual Studio para gerenciar pacotes em um ambiente Python.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2b4464e60b155a9c9ef7f35d24084ce3d38b2d9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fdc37c35d2563780804c38fb6a74e1574cfaa6ad
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513215"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546663"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Etapa 5: Instalar pacotes no ambiente do Python
 

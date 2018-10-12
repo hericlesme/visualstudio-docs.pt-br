@@ -2,7 +2,7 @@
 title: Usar o Visual Studio para criar um aplicativo Web ASP.NET Core em C#
 description: Saiba como criar um aplicativo Web simples do Olá, Mundo no Visual Studio com C# e ASP.NET Core, passo a passo.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135587"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028930"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -39,9 +39,9 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. Veja como.
 
 1. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web** e escolha **OK**.
 
-  ![Exibir o arquivo .gif animado que mostra como criar um projeto ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Exibir o arquivo .gif animado que mostra como criar um projeto ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Logo depois, o Visual Studio abre o arquivo de projeto.
+   Logo depois, o Visual Studio abre o arquivo de projeto.
 
    > [!NOTE]
    > Se você não vir a categoria de modelo de projeto **.NET Core**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo.
@@ -58,13 +58,15 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. Veja como.
 
 Em seguida, você criará e executará o aplicativo Web "Olá, Mundo". Veja como.
 
-1. No **Gerenciador de Soluções**, expanda a pasta **Páginas** e, em seguida, escolha **About.cshtml**.
+1. No Visual Studio, no **Gerenciador de Soluções**, expanda a pasta **Páginas**. Em seguida, escolha **About.cshtml**.
 
-   Este arquivo corresponde a uma página chamada **Sobre** no aplicativo Web.
+   ![Escolha o arquivo About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Este arquivo corresponde a uma página chamada **Sobre** no aplicativo web, que é executada no navegador da web.
 
    ![A página Sobre no aplicativo Web](../ide/media/csharp-aspnet-about-page.png)
 
-1. Altere o texto de "informações adicionais" para dizer "**Olá, Mundo!**".
+1. No editor de código do Visual Studio, altere o texto de "informações adicionais" para dizer "**Olá, Mundo!**".
 
 1. No **Gerenciador de Soluções**, expanda **About.cshtml** e, em seguida, escolha **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Em seguida, você criará e executará o aplicativo Web "Olá, Mundo". Veja como
 
 1. Escolha **IIS Express** ou pressione **Ctrl**+**F5** para executar o aplicativo e abri-lo em um navegador da Web.
 
-  ![Exibir o arquivo .gif animado que mostra como criar e executar um aplicativo Web ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Exibir o arquivo .gif animado que mostra como criar e executar um aplicativo Web ASP.NET Core C# no Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Se você receber uma mensagem de erro que diz **Não é possível se conectar ao servidor Web “IIS Express”**, feche o Visual Studio e abra-o usando a opção **Executar como administrador** clicando com o botão direito do mouse ou no menu de contexto. Em seguida, execute o aplicativo novamente.
 
-1. Verifique se a página **About** inclui o texto atualizado.
+1. No navegador da Web, verifique se a página **Sobre** inclui o texto atualizado.
 
 1. Feche o navegador da Web.
 

@@ -1,5 +1,5 @@
 ---
-title: Usar o build ou o gerenciamento de versão para testes automatizados no Visual Studio
+title: Usar o gerenciamento de build ou de versão para testes automatizados
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320612"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135585"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar o Build ou o Release Management em vez de o Lab Management para o teste automatizado
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Use os Azure Test Plans, em vez do Lab Management, para executar os testes automatizados
 
 Se você usar o MTM (Microsoft Test Manager) e o Lab Management para o teste automatizado ou para a automação de compilar-implantar-testar, este tópico explicará como você pode atingir as mesmas metas usando as funcionalidades de [compilar e lançar](/azure/devops/pipelines/index?view=vsts) no TFS (Team Foundation Server) e no Azure Test Plans.
 
@@ -64,7 +64,7 @@ A tabela a seguir resume as atividades típicas que você realiza na Central de 
 | Conecte-se aos computadores. | Abra o ambiente de laboratório no Visualizador de ambiente. | Use o console de administração do SCVMM diretamente para se conectar às máquinas virtuais. Como alternativa, use o endereço IP ou os nomes DNS das máquinas virtuais para abrir as sessões de área de trabalho remota. |
 | Crie um ponto de verificação de um ambiente ou restaure um ambiente para limpar o ponto de verificação. | Abra o ambiente de laboratório no Visualizador de ambiente. Selecione a opção de criar um ponto de verificação ou restaurar para um ponto de verificação anterior. | Use o console de administração do SCVMM diretamente para executar essas operações nas máquinas virtuais. Ou, para executar estas etapas como parte de uma automação e inclua as tarefas de ponto de verificação da [extensão de Integração do SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte do ambiente em uma definição de versão. |
 
-## <a name="creation-of-network-isolated-environments"></a>Criação de ambientes isolados da rede
+## <a name="create-network-isolated-environments"></a>Criar ambientes de rede isolados
 
 Um ambiente de laboratório isolado da rede é um grupo de máquinas virtuais SCVMM que podem ser clonadas com segurança sem causar conflitos de rede. Isso foi feito no MTM usando uma série de instruções que usavam um conjunto de placas de adaptador de rede para configurar as máquinas virtuais em uma rede privada e outro conjunto para configurar as máquinas virtuais em uma rede pública.
 

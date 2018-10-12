@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320813"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551254"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -78,7 +78,7 @@ O Visual Studio 2017 versão 15.7 e posterior detecta ambientes do conda automat
 ## <a name="the-python-environments-window"></a>A janela Ambientes do Python
 
 > [!Note]
-> As capturas de tela mostradas nesta seção representam o Visual Studio 15.8. Você pode ver uma interface do usuário ligeiramente diferente dependendo de sua versão do Visual Studio.
+> As capturas de tela mostradas nesta seção representam o Visual Studio 15.8. Você pode ver uma interface do usuário diferente dependendo de sua versão do Visual Studio.
 
 Os ambientes conhecidos pelo Visual Studio são exibidos na janela **Ambientes Python**. Para abrir a janela, use um dos seguintes métodos:
 
