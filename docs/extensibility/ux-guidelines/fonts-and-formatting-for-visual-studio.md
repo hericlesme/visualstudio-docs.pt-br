@@ -81,9 +81,9 @@ MyWindow window = new MyWindow();
 window.ShowModal()  
 ```
   
- `ShowModal` Retorna um bool? (booliano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor retornado será true se a caixa de diálogo foi fechada com **Okey**.  
+ `ShowModal` Retorna um bool? (booleano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor retornado será true se a caixa de diálogo foi fechada com **Okey**.  
   
- Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela de janela Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e lementar. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
+ Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e lementar. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
