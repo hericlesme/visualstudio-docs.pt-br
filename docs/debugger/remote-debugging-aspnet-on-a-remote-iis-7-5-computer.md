@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780982"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101069"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota ASP.NET em um computador remoto IIS
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexar a seu aplicativo em execução do Visual Studio.
@@ -166,12 +166,7 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 
 Neste tutorial, estamos usando o Visual Studio 2017.
 
-Se você tiver dificuldade para abrir a página com o download do depurador remoto, consulte [desbloquear o download do arquivo](../debugger/remote-debugging.md#unblock_msvsmon) para obter ajuda.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> Em alguns cenários, pode ser mais eficiente para executar o depurador remoto de um compartilhamento de arquivos. Para obter mais informações, consulte [executar o depurador remoto de um compartilhamento de arquivos](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
